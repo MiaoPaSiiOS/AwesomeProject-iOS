@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarCrypto_Example' do
+  pod 'DarkStarCrypto', :path => '../'
+
+  target 'DarkStarCrypto_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

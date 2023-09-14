@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarUIComponents (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarUIComponents (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarUIComponents:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarUIComponents: a5e37b31787c1761b7151321a61797308b021669
+
+PODFILE CHECKSUM: 1a4203409e0686b345ab7043876d7f22c2d66254
+
+COCOAPODS: 1.11.3

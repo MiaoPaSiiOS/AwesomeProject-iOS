@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarUIKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarUIKit: 103d451f902d07914cfa7c0d9e10e0f2583cc508
+
+PODFILE CHECKSUM: 01c325a48313622d02a87cf1333ccdbf748f704d
+
+COCOAPODS: 1.11.3

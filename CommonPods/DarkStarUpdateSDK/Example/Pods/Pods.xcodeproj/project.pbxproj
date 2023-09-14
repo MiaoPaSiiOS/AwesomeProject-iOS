@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132E06FF20E945813C274614C2DEF6D1 /* Pods-DarkStarUpdateSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DAC908CE683086525F06F56C6CE022 /* Pods-DarkStarUpdateSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F41C35B00EA0FFBE548EF57AC2F4443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2863390E1C35C9F055B833E9DCB4A6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		365A2A08AA68CFD9F656ECC81F2E46D3 /* DarkStarUpdateSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3181C9F016506AA17BFC93C8B9CC11 /* DarkStarUpdateSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		863A78380970A2A145EB5645AA125DE7 /* Pods-DarkStarUpdateSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBD1E4603DC40984EDB0E369A352F8E /* Pods-DarkStarUpdateSDK_Example-dummy.m */; };
+		AE841B9AA725F92E4EDE7712B136EC5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BDFED2C329D6DB1D7DC84FCEF946D3D1 /* Pods-DarkStarUpdateSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C09CE13E3DEAA726DCDC90C94CDD6AC7 /* Pods-DarkStarUpdateSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C71F4E0D40E484F461E6A1588B1870C9 /* Pods-DarkStarUpdateSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0415C19F2995ACA9C2844A149F559DBD /* Pods-DarkStarUpdateSDK_Tests-dummy.m */; };
+		D20EAF4AE98982200DB7D07B75C83A1A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F1B34C49E25795EA57D7A0670D561 /* ReplaceMe.m */; };
+		DB3BAC87373DE59D4EF3570C7BDE71F0 /* DarkStarUpdateSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EA3F8313573462EC4D5CEF7061C342 /* DarkStarUpdateSDK-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CFECC20B08AAF7E9A8EA41F811C3C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D404D61232D553BF5C5B0EA73FE7B82A;
+			remoteInfo = "Pods-DarkStarUpdateSDK_Example";
+		};
+		77B48E009BCBDF281AD843DE89F2A170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 410E8BC09DBFC3C971C8ECC5BE830D3E;
+			remoteInfo = DarkStarUpdateSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03326B9F535730CD1AE99BB67EC9F4A3 /* Pods-DarkStarUpdateSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkStarUpdateSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0353C2FD93FFD2A4FB774E8154FDE98E /* Pods-DarkStarUpdateSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarUpdateSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0415C19F2995ACA9C2844A149F559DBD /* Pods-DarkStarUpdateSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkStarUpdateSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		06DAC908CE683086525F06F56C6CE022 /* Pods-DarkStarUpdateSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkStarUpdateSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		06EA3F8313573462EC4D5CEF7061C342 /* DarkStarUpdateSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DarkStarUpdateSDK-dummy.m"; sourceTree = "<group>"; };
+		0C8E4B56FFED4AF14D621D9FABD977CF /* Pods-DarkStarUpdateSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkStarUpdateSDK_Tests"; path = Pods_DarkStarUpdateSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16056C9DF0DCE0EEAC99B4500B314745 /* Pods-DarkStarUpdateSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarUpdateSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		226E2C96012D41CD5BB711682DF54550 /* DarkStarUpdateSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DarkStarUpdateSDK-Info.plist"; sourceTree = "<group>"; };
+		30B031CE0A8F2F39A4D401612AB9A437 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3ACA5114CD5A4CB1D61128C279026533 /* Pods-DarkStarUpdateSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarUpdateSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C033946FF0105BD86B9013D8FCFA37A /* DarkStarUpdateSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarkStarUpdateSDK.debug.xcconfig; sourceTree = "<group>"; };
+		3DD3AAA7DD7C7E4E798447E87FF24239 /* Pods-DarkStarUpdateSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DarkStarUpdateSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		42E80E13E30A2B56277F7F7195D2F7A6 /* DarkStarUpdateSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarkStarUpdateSDK.release.xcconfig; sourceTree = "<group>"; };
+		513DA5B29B287381B33D09ED11BCD7AD /* Pods-DarkStarUpdateSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarUpdateSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6292D9A9FC32E37433883F6E025E04DC /* DarkStarUpdateSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DarkStarUpdateSDK.modulemap; sourceTree = "<group>"; };
+		66CC0BFC5DDDB56E4B10EF80DA6C7E84 /* DarkStarUpdateSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DarkStarUpdateSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6888D07A659A3DFE000520695AB63044 /* Pods-DarkStarUpdateSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkStarUpdateSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77AD9D90BD0D357208914B8A13559CE6 /* Pods-DarkStarUpdateSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkStarUpdateSDK_Example.modulemap"; sourceTree = "<group>"; };
+		8D32E35EA52EC9487B6148D18E15E864 /* DarkStarUpdateSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DarkStarUpdateSDK; path = DarkStarUpdateSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		994B3316290BF3B30C3633303BCFD883 /* Pods-DarkStarUpdateSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkStarUpdateSDK_Example"; path = Pods_DarkStarUpdateSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4BAA93F63193149FBF5A60EAA2D0CCD /* Pods-DarkStarUpdateSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkStarUpdateSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A57297BDE3A4B98812ED3AA5D5638876 /* DarkStarUpdateSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarkStarUpdateSDK-prefix.pch"; sourceTree = "<group>"; };
+		AEBD1E4603DC40984EDB0E369A352F8E /* Pods-DarkStarUpdateSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkStarUpdateSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		C09CE13E3DEAA726DCDC90C94CDD6AC7 /* Pods-DarkStarUpdateSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkStarUpdateSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DB1E029CEDBA9A1F8EA6DBADE1723847 /* Pods-DarkStarUpdateSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarUpdateSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		E39F1B34C49E25795EA57D7A0670D561 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = DarkStarUpdateSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		E9AD3ADAF189BD1C886EB34D9C12B8D0 /* Pods-DarkStarUpdateSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarUpdateSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		EAE30B90877CB5DDA67AD75364584904 /* Pods-DarkStarUpdateSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarUpdateSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EEC0C895E2B4BF58A10E44425E6F1C22 /* Pods-DarkStarUpdateSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarUpdateSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EF3181C9F016506AA17BFC93C8B9CC11 /* DarkStarUpdateSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarkStarUpdateSDK-umbrella.h"; sourceTree = "<group>"; };
+		F3AC928717C93ABAD58A0CF6CEDA26B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A141B0E249DF56D54925B4A1EC12ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE841B9AA725F92E4EDE7712B136EC5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72D32ACA78C27E0852CE3318599B51A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2863390E1C35C9F055B833E9DCB4A6BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB013B89FB54DF518450D70E8782A878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41C35B00EA0FFBE548EF57AC2F4443 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2834D7527DA333C5AC3ECA12CB5FBC0B /* DarkStarUpdateSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E39F1B34C49E25795EA57D7A0670D561 /* ReplaceMe.m */,
+				BE41589B5E922C6861D572B350B4FD96 /* Pod */,
+				C61F3700CDA04A723A19D72A694E2890 /* Support Files */,
+			);
+			name = DarkStarUpdateSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2BE0A379B828191F617F9929E083AEA1 /* Pods-DarkStarUpdateSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6888D07A659A3DFE000520695AB63044 /* Pods-DarkStarUpdateSDK_Tests.modulemap */,
+				A4BAA93F63193149FBF5A60EAA2D0CCD /* Pods-DarkStarUpdateSDK_Tests-acknowledgements.markdown */,
+				0353C2FD93FFD2A4FB774E8154FDE98E /* Pods-DarkStarUpdateSDK_Tests-acknowledgements.plist */,
+				0415C19F2995ACA9C2844A149F559DBD /* Pods-DarkStarUpdateSDK_Tests-dummy.m */,
+				E9AD3ADAF189BD1C886EB34D9C12B8D0 /* Pods-DarkStarUpdateSDK_Tests-Info.plist */,
+				C09CE13E3DEAA726DCDC90C94CDD6AC7 /* Pods-DarkStarUpdateSDK_Tests-umbrella.h */,
+				3ACA5114CD5A4CB1D61128C279026533 /* Pods-DarkStarUpdateSDK_Tests.debug.xcconfig */,
+				513DA5B29B287381B33D09ED11BCD7AD /* Pods-DarkStarUpdateSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-DarkStarUpdateSDK_Tests";
+			path = "Target Support Files/Pods-DarkStarUpdateSDK_Tests";
+			sourceTree = "<group>";
+		};
+		4F45ECCB54AD7FFAB4CA45975989BA7D /* Pods-DarkStarUpdateSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				77AD9D90BD0D357208914B8A13559CE6 /* Pods-DarkStarUpdateSDK_Example.modulemap */,
+				03326B9F535730CD1AE99BB67EC9F4A3 /* Pods-DarkStarUpdateSDK_Example-acknowledgements.markdown */,
+				16056C9DF0DCE0EEAC99B4500B314745 /* Pods-DarkStarUpdateSDK_Example-acknowledgements.plist */,
+				AEBD1E4603DC40984EDB0E369A352F8E /* Pods-DarkStarUpdateSDK_Example-dummy.m */,
+				3DD3AAA7DD7C7E4E798447E87FF24239 /* Pods-DarkStarUpdateSDK_Example-frameworks.sh */,
+				DB1E029CEDBA9A1F8EA6DBADE1723847 /* Pods-DarkStarUpdateSDK_Example-Info.plist */,
+				06DAC908CE683086525F06F56C6CE022 /* Pods-DarkStarUpdateSDK_Example-umbrella.h */,
+				EAE30B90877CB5DDA67AD75364584904 /* Pods-DarkStarUpdateSDK_Example.debug.xcconfig */,
+				EEC0C895E2B4BF58A10E44425E6F1C22 /* Pods-DarkStarUpdateSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-DarkStarUpdateSDK_Example";
+			path = "Target Support Files/Pods-DarkStarUpdateSDK_Example";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6890F0887BDE7F8DD070AC43652EF356 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2834D7527DA333C5AC3ECA12CB5FBC0B /* DarkStarUpdateSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6ACB54EC7F5390EA561E96BEFE9D8224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D32E35EA52EC9487B6148D18E15E864 /* DarkStarUpdateSDK */,
+				994B3316290BF3B30C3633303BCFD883 /* Pods-DarkStarUpdateSDK_Example */,
+				0C8E4B56FFED4AF14D621D9FABD977CF /* Pods-DarkStarUpdateSDK_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE41589B5E922C6861D572B350B4FD96 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				66CC0BFC5DDDB56E4B10EF80DA6C7E84 /* DarkStarUpdateSDK.podspec */,
+				F3AC928717C93ABAD58A0CF6CEDA26B1 /* LICENSE */,
+				30B031CE0A8F2F39A4D401612AB9A437 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C61F3700CDA04A723A19D72A694E2890 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6292D9A9FC32E37433883F6E025E04DC /* DarkStarUpdateSDK.modulemap */,
+				06EA3F8313573462EC4D5CEF7061C342 /* DarkStarUpdateSDK-dummy.m */,
+				226E2C96012D41CD5BB711682DF54550 /* DarkStarUpdateSDK-Info.plist */,
+				A57297BDE3A4B98812ED3AA5D5638876 /* DarkStarUpdateSDK-prefix.pch */,
+				EF3181C9F016506AA17BFC93C8B9CC11 /* DarkStarUpdateSDK-umbrella.h */,
+				3C033946FF0105BD86B9013D8FCFA37A /* DarkStarUpdateSDK.debug.xcconfig */,
+				42E80E13E30A2B56277F7F7195D2F7A6 /* DarkStarUpdateSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DarkStarUpdateSDK";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6890F0887BDE7F8DD070AC43652EF356 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6ACB54EC7F5390EA561E96BEFE9D8224 /* Products */,
+				D05869B225D66DDCD08865C52872FBF7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D05869B225D66DDCD08865C52872FBF7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F45ECCB54AD7FFAB4CA45975989BA7D /* Pods-DarkStarUpdateSDK_Example */,
+				2BE0A379B828191F617F9929E083AEA1 /* Pods-DarkStarUpdateSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8A7E0D654D846ED262D1B3F9054C4DE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132E06FF20E945813C274614C2DEF6D1 /* Pods-DarkStarUpdateSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F68BA0EC522AD0EC26EBAD8B8CCD7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFED2C329D6DB1D7DC84FCEF946D3D1 /* Pods-DarkStarUpdateSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94C47CB1517E55E14E27E81D5F646B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365A2A08AA68CFD9F656ECC81F2E46D3 /* DarkStarUpdateSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		410E8BC09DBFC3C971C8ECC5BE830D3E /* DarkStarUpdateSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFFDC93C1512BCBFEF8217AA8F4ED9B4 /* Build configuration list for PBXNativeTarget "DarkStarUpdateSDK" */;
+			buildPhases = (
+				F94C47CB1517E55E14E27E81D5F646B7 /* Headers */,
+				0BC42F0EACC8816DD48DEEBFCF25FD62 /* Sources */,
+				DB013B89FB54DF518450D70E8782A878 /* Frameworks */,
+				5A0E8AD0E2C777CB1848FEFF942DB9E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkStarUpdateSDK;
+			productName = DarkStarUpdateSDK;
+			productReference = 8D32E35EA52EC9487B6148D18E15E864 /* DarkStarUpdateSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8DA68B28DDC8A60A9DEFC4B00CD78FA /* Pods-DarkStarUpdateSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBFE0CA8DAC605C44DC7950EA8F6C2B /* Build configuration list for PBXNativeTarget "Pods-DarkStarUpdateSDK_Tests" */;
+			buildPhases = (
+				A1F68BA0EC522AD0EC26EBAD8B8CCD7C /* Headers */,
+				D3CC431FF9249F6CC1CAF356011868D3 /* Sources */,
+				1A141B0E249DF56D54925B4A1EC12ADF /* Frameworks */,
+				FC827452E634A08A76E7B3D560E6561D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E401B3667761B38DE859AD2AB86C5AB /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkStarUpdateSDK_Tests";
+			productName = Pods_DarkStarUpdateSDK_Tests;
+			productReference = 0C8E4B56FFED4AF14D621D9FABD977CF /* Pods-DarkStarUpdateSDK_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D404D61232D553BF5C5B0EA73FE7B82A /* Pods-DarkStarUpdateSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E6CC8F5DC1943DD381C805BAD0EFBB /* Build configuration list for PBXNativeTarget "Pods-DarkStarUpdateSDK_Example" */;
+			buildPhases = (
+				8A7E0D654D846ED262D1B3F9054C4DE0 /* Headers */,
+				A1AA5602E4B2C876AEEAF8D7296E7E2E /* Sources */,
+				72D32ACA78C27E0852CE3318599B51A2 /* Frameworks */,
+				AFC217363D575A4051BBB72F78F1C2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				659AE896F79203AA9111BF8854CFC2E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkStarUpdateSDK_Example";
+			productName = Pods_DarkStarUpdateSDK_Example;
+			productReference = 994B3316290BF3B30C3633303BCFD883 /* Pods-DarkStarUpdateSDK_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6ACB54EC7F5390EA561E96BEFE9D8224 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				410E8BC09DBFC3C971C8ECC5BE830D3E /* DarkStarUpdateSDK */,
+				D404D61232D553BF5C5B0EA73FE7B82A /* Pods-DarkStarUpdateSDK_Example */,
+				B8DA68B28DDC8A60A9DEFC4B00CD78FA /* Pods-DarkStarUpdateSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A0E8AD0E2C777CB1848FEFF942DB9E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC217363D575A4051BBB72F78F1C2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC827452E634A08A76E7B3D560E6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BC42F0EACC8816DD48DEEBFCF25FD62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3BAC87373DE59D4EF3570C7BDE71F0 /* DarkStarUpdateSDK-dummy.m in Sources */,
+				D20EAF4AE98982200DB7D07B75C83A1A /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1AA5602E4B2C876AEEAF8D7296E7E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863A78380970A2A145EB5645AA125DE7 /* Pods-DarkStarUpdateSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CC431FF9249F6CC1CAF356011868D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71F4E0D40E484F461E6A1588B1870C9 /* Pods-DarkStarUpdateSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E401B3667761B38DE859AD2AB86C5AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DarkStarUpdateSDK_Example";
+			target = D404D61232D553BF5C5B0EA73FE7B82A /* Pods-DarkStarUpdateSDK_Example */;
+			targetProxy = 3CFECC20B08AAF7E9A8EA41F811C3C99 /* PBXContainerItemProxy */;
+		};
+		659AE896F79203AA9111BF8854CFC2E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarkStarUpdateSDK;
+			target = 410E8BC09DBFC3C971C8ECC5BE830D3E /* DarkStarUpdateSDK */;
+			targetProxy = 77B48E009BCBDF281AD843DE89F2A170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B1A18559E8F2837EA3ED8A441C8493C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC0C895E2B4BF58A10E44425E6F1C22 /* Pods-DarkStarUpdateSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Example/Pods-DarkStarUpdateSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Example/Pods-DarkStarUpdateSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E79F5135EFE47AF4BE1EFF1B18384EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513DA5B29B287381B33D09ED11BCD7AD /* Pods-DarkStarUpdateSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Tests/Pods-DarkStarUpdateSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Tests/Pods-DarkStarUpdateSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A295CF26967B0D4216C181F8831F69F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E80E13E30A2B56277F7F7195D2F7A6 /* DarkStarUpdateSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarUpdateSDK;
+				PRODUCT_NAME = DarkStarUpdateSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B78D13E4232ED6295E12771BC4DAAB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACA5114CD5A4CB1D61128C279026533 /* Pods-DarkStarUpdateSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Tests/Pods-DarkStarUpdateSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Tests/Pods-DarkStarUpdateSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EC7AB59845587E64467B7530B988C510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE30B90877CB5DDA67AD75364584904 /* Pods-DarkStarUpdateSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Example/Pods-DarkStarUpdateSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarUpdateSDK_Example/Pods-DarkStarUpdateSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF668749F35ECD9D77CAACABCE7D77D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C033946FF0105BD86B9013D8FCFA37A /* DarkStarUpdateSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarkStarUpdateSDK/DarkStarUpdateSDK.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarUpdateSDK;
+				PRODUCT_NAME = DarkStarUpdateSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBFE0CA8DAC605C44DC7950EA8F6C2B /* Build configuration list for PBXNativeTarget "Pods-DarkStarUpdateSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78D13E4232ED6295E12771BC4DAAB13 /* Debug */,
+				4E79F5135EFE47AF4BE1EFF1B18384EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E6CC8F5DC1943DD381C805BAD0EFBB /* Build configuration list for PBXNativeTarget "Pods-DarkStarUpdateSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7AB59845587E64467B7530B988C510 /* Debug */,
+				4B1A18559E8F2837EA3ED8A441C8493C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFFDC93C1512BCBFEF8217AA8F4ED9B4 /* Build configuration list for PBXNativeTarget "DarkStarUpdateSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF668749F35ECD9D77CAACABCE7D77D1 /* Debug */,
+				A295CF26967B0D4216C181F8831F69F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

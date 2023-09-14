@@ -1,0 +1,6 @@
+framework module Pods_DarkStarAudioRecorderKit_Tests {
+  umbrella header "Pods-DarkStarAudioRecorderKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

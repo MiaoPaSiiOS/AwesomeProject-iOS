@@ -1,0 +1,6 @@
+framework module DarkStarGeneralTools {
+  umbrella header "DarkStarGeneralTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

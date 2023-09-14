@@ -1,0 +1,6 @@
+framework module Pods_DarkStarUIComponents_Tests {
+  umbrella header "Pods-DarkStarUIComponents_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

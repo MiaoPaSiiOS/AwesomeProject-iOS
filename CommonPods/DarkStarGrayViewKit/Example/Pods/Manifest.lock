@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarGrayViewKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarGrayViewKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarGrayViewKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
+
+PODFILE CHECKSUM: 81ae00f4374037760f4fb1d77ed63bb3751bc837
+
+COCOAPODS: 1.11.3

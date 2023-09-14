@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarUpdateSDK (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarUpdateSDK (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarUpdateSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarUpdateSDK: 8e5b279209366ced1a2395e7e3f0f10603089813
+
+PODFILE CHECKSUM: 0fb523063f0dea26fff9888c57ee5906e2365dcc
+
+COCOAPODS: 1.11.3

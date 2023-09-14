@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarConfiguration (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarConfiguration (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarConfiguration:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarConfiguration: 4cbf9c640b3d49208f897b2b5b5fd62569ffec52
+
+PODFILE CHECKSUM: 9e19db90f38532e0ff1fdce250ec2d171426ffd9
+
+COCOAPODS: 1.11.3

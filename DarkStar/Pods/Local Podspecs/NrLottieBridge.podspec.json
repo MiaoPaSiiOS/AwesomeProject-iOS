@@ -1,0 +1,32 @@
+{
+  "name": "NrLottieBridge",
+  "version": "0.1.1",
+  "summary": "A short description of NrlottieBridge.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitee.com/tuay-orn/NrLottieBridge",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "C2021900@pccc.bankcomm.com"
+  },
+  "source": {
+    "git": "https://gitee.com/tuay-orn/NrLottieBridge.git",
+    "tag": "0.1.1"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "NrLottieBridge/Classes/**/*",
+  "dependencies": {
+    "lottie-ios": [
+
+    ],
+    "SnapKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

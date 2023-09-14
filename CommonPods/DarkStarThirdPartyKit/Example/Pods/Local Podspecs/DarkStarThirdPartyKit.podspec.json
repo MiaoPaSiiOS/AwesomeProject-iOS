@@ -1,0 +1,22 @@
+{
+  "name": "DarkStarThirdPartyKit",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarThirdPartyKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarThirdPartyKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarThirdPartyKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarThirdPartyKit/Classes/**/*"
+}

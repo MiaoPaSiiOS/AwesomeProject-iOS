@@ -1,0 +1,247 @@
+{
+  "name": "DarkStarUIComponents",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarUIComponents.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarUIComponents",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarUIComponents.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarUIComponents/Classes/DarkStarUIComponents.h",
+  "public_header_files": "DarkStarUIComponents/Classes/DarkStarUIComponents.h",
+  "subspecs": [
+    {
+      "name": "ActionSheet",
+      "source_files": "DarkStarUIComponents/Classes/ActionSheet",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "AlertController",
+      "source_files": "DarkStarUIComponents/Classes/AlertController",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ],
+        "TTTAttributedLabel": [
+
+        ]
+      }
+    },
+    {
+      "name": "CardSwitch",
+      "source_files": "DarkStarUIComponents/Classes/CardSwitch",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "CircleView",
+      "source_files": "DarkStarUIComponents/Classes/CircleView",
+      "dependencies": {
+        "DarkStarQMUI/QMUIAnimation": [
+
+        ]
+      }
+    },
+    {
+      "name": "CollectionViewLayout",
+      "source_files": "DarkStarUIComponents/Classes/CollectionViewLayout"
+    },
+    {
+      "name": "DialogBase",
+      "source_files": "DarkStarUIComponents/Classes/DialogBase",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "DialogDate",
+      "source_files": "DarkStarUIComponents/Classes/DialogDate",
+      "dependencies": {
+        "DarkStarUIComponents/DialogBase": [
+
+        ]
+      }
+    },
+    {
+      "name": "DialogMultiChoice",
+      "resource_bundles": {
+        "NrDialogMultiChoiceAssets": [
+          "DarkStarUIComponents/Classes/DialogMultiChoice/Assets/*.*"
+        ]
+      },
+      "source_files": "DarkStarUIComponents/Classes/DialogMultiChoice",
+      "dependencies": {
+        "DarkStarUIComponents/DialogBase": [
+
+        ]
+      }
+    },
+    {
+      "name": "DialogSingleChoice",
+      "source_files": "DarkStarUIComponents/Classes/DialogSingleChoice",
+      "dependencies": {
+        "DarkStarUIComponents/DialogBase": [
+
+        ]
+      }
+    },
+    {
+      "name": "DownSheetView",
+      "source_files": "DarkStarUIComponents/Classes/DownSheetView",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "EdgeInsetsLabel",
+      "source_files": "DarkStarUIComponents/Classes/EdgeInsetsLabel",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Float",
+      "source_files": "DarkStarUIComponents/Classes/Float",
+      "resource_bundles": {
+        "NrFloatAssets": [
+          "DarkStarUIComponents/Classes/Float/Assets/*.*"
+        ]
+      },
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ],
+        "DarkStarUIComponents/ScrollView": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "FloatingView",
+      "source_files": "DarkStarUIComponents/Classes/FloatingView",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "GestureView",
+      "source_files": "DarkStarUIComponents/Classes/GestureView"
+    },
+    {
+      "name": "GridView",
+      "source_files": "DarkStarUIComponents/Classes/GridView",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "iCarouselLoopView",
+      "source_files": "DarkStarUIComponents/Classes/iCarouselLoopView",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "iCarousel": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "NrButton",
+      "source_files": "DarkStarUIComponents/Classes/NrButton",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "RotateView",
+      "source_files": "DarkStarUIComponents/Classes/RotateView"
+    },
+    {
+      "name": "ScrollView",
+      "source_files": "DarkStarUIComponents/Classes/ScrollView",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "SMSwipeView",
+      "source_files": "DarkStarUIComponents/Classes/SMSwipeView",
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "SRSTextField",
+      "source_files": "DarkStarUIComponents/Classes/SRSTextField",
+      "resource_bundles": {
+        "NrSRSTextFieldAssets": [
+          "DarkStarUIComponents/Classes/SRSTextField/Assets/*.*"
+        ]
+      },
+      "dependencies": {
+        "DarkStarBaseKit": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    }
+  ]
+}

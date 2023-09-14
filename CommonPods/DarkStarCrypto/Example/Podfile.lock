@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarCrypto (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarCrypto (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarCrypto:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
+
+PODFILE CHECKSUM: 6e6ddc33ec4c26a59fe6c6f41f4d0fbe6b9adaf9
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module DarkStarThirdPartyKit {
+  umbrella header "DarkStarThirdPartyKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

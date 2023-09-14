@@ -1,0 +1,6 @@
+framework module Pods_DarkStarUIComponents_Example {
+  umbrella header "Pods-DarkStarUIComponents_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

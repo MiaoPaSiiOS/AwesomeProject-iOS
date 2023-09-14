@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarGeneralTools (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarGeneralTools (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarGeneralTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarGeneralTools: 59ba02f257736d854ea71bcdd16b5984101faa48
+
+PODFILE CHECKSUM: 6297c65230e647a561c83bb6aa691241f42aed10
+
+COCOAPODS: 1.11.3

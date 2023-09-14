@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarQMUI (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarQMUI (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarQMUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarQMUI: 0cab78f010587c9c6f8ffcdea5405031fe5c505b
+
+PODFILE CHECKSUM: 5602d5579841c4837c79912a0b94fc1f82f5c46c
+
+COCOAPODS: 1.11.3

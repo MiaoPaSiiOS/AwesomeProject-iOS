@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarAudioRecorderKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarAudioRecorderKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarAudioRecorderKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarAudioRecorderKit: be95d54253148e6dcc8f9d3816e6c099f58820ab
+
+PODFILE CHECKSUM: de9c3ba19cbd104a0e25f86241765c7e73e3a30d
+
+COCOAPODS: 1.11.3

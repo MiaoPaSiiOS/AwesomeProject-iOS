@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarThirdPartyKit_Example' do
+  pod 'DarkStarThirdPartyKit', :path => '../'
+
+  target 'DarkStarThirdPartyKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

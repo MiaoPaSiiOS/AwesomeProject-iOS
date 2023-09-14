@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarScanKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarScanKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarScanKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
+
+PODFILE CHECKSUM: ed862441c2a45dbb31cd9ef91a18dbc2da67e245
+
+COCOAPODS: 1.11.3

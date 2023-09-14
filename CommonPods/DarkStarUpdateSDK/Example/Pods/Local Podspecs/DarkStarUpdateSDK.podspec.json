@@ -1,0 +1,22 @@
+{
+  "name": "DarkStarUpdateSDK",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarUpdateSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarUpdateSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarUpdateSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarUpdateSDK/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_DarkStarScanKit_Example {
+  umbrella header "Pods-DarkStarScanKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

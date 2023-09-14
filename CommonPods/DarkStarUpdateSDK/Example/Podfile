@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarUpdateSDK_Example' do
+  pod 'DarkStarUpdateSDK', :path => '../'
+
+  target 'DarkStarUpdateSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

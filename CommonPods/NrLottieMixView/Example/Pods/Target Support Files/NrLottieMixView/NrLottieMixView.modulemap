@@ -1,0 +1,6 @@
+framework module NrLottieMixView {
+  umbrella header "NrLottieMixView-umbrella.h"
+
+  export *
+  module * { export * }
+}

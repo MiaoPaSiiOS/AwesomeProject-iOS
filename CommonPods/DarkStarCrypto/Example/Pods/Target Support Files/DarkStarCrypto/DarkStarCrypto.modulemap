@@ -1,0 +1,6 @@
+framework module DarkStarCrypto {
+  umbrella header "DarkStarCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}

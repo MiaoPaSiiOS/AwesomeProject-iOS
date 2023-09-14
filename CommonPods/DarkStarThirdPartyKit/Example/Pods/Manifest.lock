@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarThirdPartyKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarThirdPartyKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarThirdPartyKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarThirdPartyKit: 1a5974e857598502eec76491b63207edd97b98a8
+
+PODFILE CHECKSUM: 484a2cb5a33f9ffb265c366943a2944a2885a8ef
+
+COCOAPODS: 1.11.3

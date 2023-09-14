@@ -1,0 +1,6 @@
+framework module Pods_DarkStarGrayViewKit_Tests {
+  umbrella header "Pods-DarkStarGrayViewKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

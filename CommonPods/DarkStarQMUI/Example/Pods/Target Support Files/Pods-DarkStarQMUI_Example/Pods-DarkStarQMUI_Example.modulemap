@@ -1,0 +1,6 @@
+framework module Pods_DarkStarQMUI_Example {
+  umbrella header "Pods-DarkStarQMUI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

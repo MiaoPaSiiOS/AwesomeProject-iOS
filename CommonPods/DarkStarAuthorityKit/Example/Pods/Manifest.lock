@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarAuthorityKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarAuthorityKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarAuthorityKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
+
+PODFILE CHECKSUM: a4676b7d7fc6b04fb834473cb56ce41d18a1a4ed
+
+COCOAPODS: 1.11.3

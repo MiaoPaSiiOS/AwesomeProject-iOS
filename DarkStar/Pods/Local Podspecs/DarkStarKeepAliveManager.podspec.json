@@ -1,0 +1,27 @@
+{
+  "name": "DarkStarKeepAliveManager",
+  "version": "0.1.0",
+  "summary": "APP保活功能.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarKeepAliveManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarKeepAliveManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarKeepAliveManager/Classes/**/*",
+  "dependencies": {
+    "DarkStarBaseKit": [
+
+    ]
+  }
+}

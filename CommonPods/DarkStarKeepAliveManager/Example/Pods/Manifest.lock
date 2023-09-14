@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarKeepAliveManager (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarKeepAliveManager (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarKeepAliveManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarKeepAliveManager: 220e3dd6a030a9a52201259bce4cadd4d811aede
+
+PODFILE CHECKSUM: 241f30a23eef4864e595400526db005188e00199
+
+COCOAPODS: 1.11.3

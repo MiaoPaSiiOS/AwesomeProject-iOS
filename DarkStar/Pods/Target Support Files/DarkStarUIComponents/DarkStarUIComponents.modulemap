@@ -1,0 +1,6 @@
+framework module DarkStarUIComponents {
+  umbrella header "DarkStarUIComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

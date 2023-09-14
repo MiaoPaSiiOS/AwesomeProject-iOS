@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarUIKit_Example' do
+  pod 'DarkStarUIKit', :path => '../'
+
+  target 'DarkStarUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

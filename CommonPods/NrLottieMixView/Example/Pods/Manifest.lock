@@ -1,0 +1,33 @@
+PODS:
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - NrLottieMixView (0.1.0):
+    - lottie-ios (= 2.5.3)
+    - Masonry
+    - SDWebImage
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+
+DEPENDENCIES:
+  - NrLottieMixView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  NrLottieMixView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  NrLottieMixView: f65cec3ef1bf7e4cbaa77bc629b81148e5a9ef0f
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+
+PODFILE CHECKSUM: 6e10ee9433393188bc915028ea1542d7c4be6156
+
+COCOAPODS: 1.11.3

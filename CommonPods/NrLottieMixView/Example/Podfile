@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'NrLottieMixView_Example' do
+  pod 'NrLottieMixView', :path => '../'
+
+
+  target 'NrLottieMixView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,33 @@
+{
+  "name": "NrLottieMixView",
+  "version": "0.1.0",
+  "summary": "A short description of NrLottieMixView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://gitee.com/tuay-orn/NrLottieMixView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "C2021900@pccc.bankcomm.com"
+  },
+  "source": {
+    "git": "https://gitee.com/tuay-orn/NrLottieMixView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "NrLottieMixView/Classes/**/*",
+  "dependencies": {
+    "lottie-ios": [
+      "2.5.3"
+    ],
+    "Masonry": [
+
+    ],
+    "SDWebImage": [
+
+    ]
+  }
+}

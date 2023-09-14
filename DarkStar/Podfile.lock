@@ -1,0 +1,255 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - DarkStarAudioRecorderKit (0.1.0):
+    - DarkStarAuthorityKit
+  - DarkStarAuthorityKit (0.1.0)
+  - DarkStarBaseKit (0.1.0)
+  - DarkStarConfiguration (0.1.0):
+    - FMDB
+    - MJExtension
+    - SIAlertView
+  - DarkStarCrypto (0.1.0)
+  - DarkStarGeneralTools (0.1.0):
+    - DarkStarAuthorityKit
+    - RegExCategories
+  - DarkStarGrayViewKit (0.1.0)
+  - DarkStarKeepAliveManager (0.1.0):
+    - DarkStarBaseKit
+  - DarkStarQMUI (0.1.0):
+    - DarkStarQMUI/QMUIAnimation (= 0.1.0)
+    - DarkStarQMUI/QMUILab (= 0.1.0)
+    - DarkStarQMUI/QMUIWeakObjectContainer (= 0.1.0)
+    - DarkStarQMUI/UIKitExtensions (= 0.1.0)
+  - DarkStarQMUI/QMUIAnimation (0.1.0)
+  - DarkStarQMUI/QMUILab (0.1.0):
+    - DarkStarQMUI/QMUIWeakObjectContainer
+    - DarkStarQMUI/UIKitExtensions
+  - DarkStarQMUI/QMUIWeakObjectContainer (0.1.0)
+  - DarkStarQMUI/UIKitExtensions (0.1.0)
+  - DarkStarScanKit (0.1.0)
+  - DarkStarThirdPartyKit (0.1.0):
+    - Masonry
+  - DarkStarUIComponents (0.1.0):
+    - DarkStarUIComponents/ActionSheet (= 0.1.0)
+    - DarkStarUIComponents/AlertController (= 0.1.0)
+    - DarkStarUIComponents/CardSwitch (= 0.1.0)
+    - DarkStarUIComponents/CircleView (= 0.1.0)
+    - DarkStarUIComponents/CollectionViewLayout (= 0.1.0)
+    - DarkStarUIComponents/DialogBase (= 0.1.0)
+    - DarkStarUIComponents/DialogDate (= 0.1.0)
+    - DarkStarUIComponents/DialogMultiChoice (= 0.1.0)
+    - DarkStarUIComponents/DialogSingleChoice (= 0.1.0)
+    - DarkStarUIComponents/DownSheetView (= 0.1.0)
+    - DarkStarUIComponents/EdgeInsetsLabel (= 0.1.0)
+    - DarkStarUIComponents/Float (= 0.1.0)
+    - DarkStarUIComponents/FloatingView (= 0.1.0)
+    - DarkStarUIComponents/GestureView (= 0.1.0)
+    - DarkStarUIComponents/GridView (= 0.1.0)
+    - DarkStarUIComponents/iCarouselLoopView (= 0.1.0)
+    - DarkStarUIComponents/NrButton (= 0.1.0)
+    - DarkStarUIComponents/RotateView (= 0.1.0)
+    - DarkStarUIComponents/ScrollView (= 0.1.0)
+    - DarkStarUIComponents/SMSwipeView (= 0.1.0)
+    - DarkStarUIComponents/SRSTextField (= 0.1.0)
+  - DarkStarUIComponents/ActionSheet (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+  - DarkStarUIComponents/AlertController (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+    - TTTAttributedLabel
+  - DarkStarUIComponents/CardSwitch (0.1.0):
+    - Masonry
+  - DarkStarUIComponents/CircleView (0.1.0):
+    - DarkStarQMUI/QMUIAnimation
+  - DarkStarUIComponents/CollectionViewLayout (0.1.0)
+  - DarkStarUIComponents/DialogBase (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+  - DarkStarUIComponents/DialogDate (0.1.0):
+    - DarkStarUIComponents/DialogBase
+  - DarkStarUIComponents/DialogMultiChoice (0.1.0):
+    - DarkStarUIComponents/DialogBase
+  - DarkStarUIComponents/DialogSingleChoice (0.1.0):
+    - DarkStarUIComponents/DialogBase
+  - DarkStarUIComponents/DownSheetView (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+  - DarkStarUIComponents/EdgeInsetsLabel (0.1.0):
+    - DarkStarBaseKit
+  - DarkStarUIComponents/Float (0.1.0):
+    - DarkStarBaseKit
+    - DarkStarUIComponents/ScrollView
+    - Masonry
+  - DarkStarUIComponents/FloatingView (0.1.0):
+    - DarkStarBaseKit
+  - DarkStarUIComponents/GestureView (0.1.0)
+  - DarkStarUIComponents/GridView (0.1.0):
+    - Masonry
+  - DarkStarUIComponents/iCarouselLoopView (0.1.0):
+    - DarkStarBaseKit
+    - iCarousel
+    - Masonry
+    - SDWebImage
+  - DarkStarUIComponents/NrButton (0.1.0):
+    - DarkStarBaseKit
+  - DarkStarUIComponents/RotateView (0.1.0)
+  - DarkStarUIComponents/ScrollView (0.1.0):
+    - Masonry
+  - DarkStarUIComponents/SMSwipeView (0.1.0):
+    - DarkStarBaseKit
+  - DarkStarUIComponents/SRSTextField (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+  - DarkStarUIKit (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+    - MJRefresh
+  - DarkStarUpdateSDK (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - iCarousel (1.8.3)
+  - JXCategoryView (1.6.1)
+  - lottie-ios (3.2.3)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.4.1)
+  - MJRefresh (3.7.5)
+  - NrLottieBridge (0.1.1):
+    - lottie-ios
+    - SnapKit
+  - RegExCategories (1.0)
+  - SDWebImage (5.15.6):
+    - SDWebImage/Core (= 5.15.6)
+  - SDWebImage/Core (5.15.6)
+  - SIAlertView (1.3)
+  - SnapKit (5.6.0)
+  - TTTAttributedLabel (2.0.0)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0)
+  - DarkStarAudioRecorderKit (from `../CommonPods/DarkStarAudioRecorderKit/`)
+  - DarkStarAuthorityKit (from `../CommonPods/DarkStarAuthorityKit/`)
+  - DarkStarBaseKit (from `../CommonPods/DarkStarBaseKit/`)
+  - DarkStarConfiguration (from `../CommonPods/DarkStarConfiguration/`)
+  - DarkStarCrypto (from `../CommonPods/DarkStarCrypto/`)
+  - DarkStarGeneralTools (from `../CommonPods/DarkStarGeneralTools/`)
+  - DarkStarGrayViewKit (from `../CommonPods/DarkStarGrayViewKit/`)
+  - DarkStarKeepAliveManager (from `../CommonPods/DarkStarKeepAliveManager/`)
+  - DarkStarQMUI (from `../CommonPods/DarkStarQMUI/`)
+  - DarkStarScanKit (from `../CommonPods/DarkStarScanKit/`)
+  - DarkStarThirdPartyKit (from `../CommonPods/DarkStarThirdPartyKit/`)
+  - DarkStarUIComponents (from `../CommonPods/DarkStarUIComponents/`)
+  - DarkStarUIKit (from `../CommonPods/DarkStarUIKit/`)
+  - DarkStarUpdateSDK (from `../CommonPods/DarkStarUpdateSDK/`)
+  - FMDB
+  - JXCategoryView
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - NrLottieBridge (from `../CommonPods/NrLottieBridge/`)
+  - SDWebImage
+  - YYCache
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FMDB
+    - iCarousel
+    - JXCategoryView
+    - lottie-ios
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RegExCategories
+    - SDWebImage
+    - SIAlertView
+    - SnapKit
+    - TTTAttributedLabel
+    - YYCache
+
+EXTERNAL SOURCES:
+  DarkStarAudioRecorderKit:
+    :path: "../CommonPods/DarkStarAudioRecorderKit/"
+  DarkStarAuthorityKit:
+    :path: "../CommonPods/DarkStarAuthorityKit/"
+  DarkStarBaseKit:
+    :path: "../CommonPods/DarkStarBaseKit/"
+  DarkStarConfiguration:
+    :path: "../CommonPods/DarkStarConfiguration/"
+  DarkStarCrypto:
+    :path: "../CommonPods/DarkStarCrypto/"
+  DarkStarGeneralTools:
+    :path: "../CommonPods/DarkStarGeneralTools/"
+  DarkStarGrayViewKit:
+    :path: "../CommonPods/DarkStarGrayViewKit/"
+  DarkStarKeepAliveManager:
+    :path: "../CommonPods/DarkStarKeepAliveManager/"
+  DarkStarQMUI:
+    :path: "../CommonPods/DarkStarQMUI/"
+  DarkStarScanKit:
+    :path: "../CommonPods/DarkStarScanKit/"
+  DarkStarThirdPartyKit:
+    :path: "../CommonPods/DarkStarThirdPartyKit/"
+  DarkStarUIComponents:
+    :path: "../CommonPods/DarkStarUIComponents/"
+  DarkStarUIKit:
+    :path: "../CommonPods/DarkStarUIKit/"
+  DarkStarUpdateSDK:
+    :path: "../CommonPods/DarkStarUpdateSDK/"
+  NrLottieBridge:
+    :path: "../CommonPods/NrLottieBridge/"
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
+  DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
+  DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
+  DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
+  DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
+  DarkStarGeneralTools: f5eddfdaade3e40ee58c17d8719a7d2da555a94a
+  DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
+  DarkStarKeepAliveManager: 89038da2bde01617a61695c9091727466554e383
+  DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
+  DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
+  DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
+  DarkStarUIComponents: 541808b7c4b8b5530de11ed00ae9ff6e5390b9b3
+  DarkStarUIKit: dc389c7ca4187ed5945653ceb35f184b3bfc43b5
+  DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  NrLottieBridge: ecc2fd4c2d9a4958ba20b1a6b4e0a5cb3034cf69
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
+  SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
+  SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: 11763f5c6c12f186f2f1db85ddb3176d20778209
+
+COCOAPODS: 1.11.3
