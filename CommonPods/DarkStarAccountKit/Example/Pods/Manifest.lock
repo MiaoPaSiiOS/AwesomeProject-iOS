@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarAccountKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarAccountKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarAccountKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarAccountKit: 04477ff355f4409640822d577ad0fd876b74b777
+
+PODFILE CHECKSUM: b5d8a523f7016a3a8577e1f9603d20a3bf1cf706
+
+COCOAPODS: 1.11.3

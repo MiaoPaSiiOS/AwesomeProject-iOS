@@ -232,7 +232,32 @@ result = (CGFloat)(intNumber + (count/2)/scale);\
 
 
 
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark - 常用Block定义
+typedef void (^IUVoidBlock)(void);
+typedef BOOL (^IUBoolBlock)(void);
+typedef int  (^IUIntBlock) (void);
+typedef id   (^IUIDBlock)  (void);
 
+typedef void (^IUVoidBlock_int)(int);
+typedef BOOL (^IUBoolBlock_int)(int);
+typedef int  (^IUIntBlock_int) (int);
+typedef id   (^IUIDBlock_int)  (int);
+
+typedef void (^IUVoidBlock_string)(NSString *);
+typedef BOOL (^IUBoolBlock_string)(NSString *);
+typedef int  (^IUIntBlock_string) (NSString *);
+typedef id   (^IUIDBlock_string)  (NSString *);
+
+typedef void (^IUVoidBlock_id)(id);
+typedef BOOL (^IUBoolBlock_id)(id);
+typedef int  (^IUIntBlock_id) (id);
+typedef id   (^IUIDBlock_id)  (id);
 
 
 

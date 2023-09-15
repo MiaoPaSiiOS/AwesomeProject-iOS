@@ -7,6 +7,7 @@
 
 #import "REHomeViewController.h"
 #import <DarkStarFeedKit/DarkStarFeedKit.h>
+#import <DarkStarAccountKit/DarkStarAccountKit.h>
 #import <CTMediator/CTMediator.h>
 
 @interface REHomeViewController ()
@@ -19,8 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     DS_CREATE_UI({
-        DS_BUTTON_WITH_ACTION(@"TouchIDLogin", TouchIDLogin)
-        DS_BUTTON_WITH_ACTION(@"AppleIDLogin", AppleIDLogin)
+        DS_BUTTON_WITH_ACTION(@"登录方式：TouchID", TouchIDLogin)
+        DS_BUTTON_WITH_ACTION(@"登录方式：AppleID", AppleIDLogin)
         DS_BUTTON_WITH_ACTION(@"goToFeed", goToFeed)
         DS_BUTTON_WITH_ACTION(@"openWebOfBaidu", openWebOfBaidu)
         DS_BUTTON_WITH_ACTION(@"openWebOfLocalHtml", openWebOfLocalHtml)
@@ -33,27 +34,21 @@
 }
 
 - (void)TouchIDLogin {
-//    NSDictionary *parameters = @{ @"touchIDType" : @"1",
-//                                  @"popStyle" : @"present",
-//    };
-//    [[CTMediator sharedInstance] mediator_TouchIDApp:parameters.mutableCopy completion:^(id response) {
-//
-//    }];
+    NSDictionary *parameters = @{ @"touchIDType" : @"1",
+                                  @"popStyle" : @"present",
+    };
+    [[CTMediator sharedInstance] mediator_TouchIDApp:parameters.mutableCopy completion:^(id response) {
+
+    }];
 }
 
 - (void)AppleIDLogin {
-//    if (@available(iOS 13.0, *)) {
-//        [[AMENAppleIDLoginManager sharedInstance] setAppleIDLoginBindBlock:^(ASAuthorizationAppleIDCredential *_Nonnull credential, BOOL isBind, NSDictionary *_Nonnull param) {
-//            NSMutableDictionary *paramDic = [NSMutableDictionary dictionary];
-//            [paramDic setDictionary:param];
-//    //        if (isBind) {
-//    //            [strongSelf.loginReq sendLoginReq:paramDic withLoginWays:BCMLoginWaysAppleId withParametersBlock:nil];
-//    //        } else {
-//    //            [strongSelf goThirdLoginBindWithLoginWay:BCMLoginWaysAppleId andToken:isEmptyString([param valueForKey:@"UN"]) andParam:param];
-//    //        }
-//        }];
-//        [[AMENAppleIDLoginManager sharedInstance] signInWithApple];
-//    }
+    NSDictionary *parameters = @{ @"touchIDType" : @"1",
+                                  @"popStyle" : @"present",
+    };
+    [[CTMediator sharedInstance] mediator_AppleIDApp:parameters.mutableCopy completion:^(id response) {
+
+    }];
 }
 
 

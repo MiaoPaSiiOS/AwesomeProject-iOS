@@ -15,6 +15,12 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - CTMediator (48)
+  - DarkStarAccountKit (0.1.0):
+    - CTMediator
+    - DarkStarBaseKit
+    - DarkStarNetWorkKit
+    - DarkStarUIKit
+    - MBProgressHUD
   - DarkStarAudioRecorderKit (0.1.0):
     - DarkStarAuthorityKit
   - DarkStarAuthorityKit (0.1.0)
@@ -173,6 +179,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
   - CTMediator
+  - DarkStarAccountKit (from `../CommonPods/DarkStarAccountKit/`)
   - DarkStarAudioRecorderKit (from `../CommonPods/DarkStarAudioRecorderKit/`)
   - DarkStarAuthorityKit (from `../CommonPods/DarkStarAuthorityKit/`)
   - DarkStarBaseKit (from `../CommonPods/DarkStarBaseKit/`)
@@ -224,6 +231,8 @@ SPEC REPOS:
     - YYText
 
 EXTERNAL SOURCES:
+  DarkStarAccountKit:
+    :path: "../CommonPods/DarkStarAccountKit/"
   DarkStarAudioRecorderKit:
     :path: "../CommonPods/DarkStarAudioRecorderKit/"
   DarkStarAuthorityKit:
@@ -264,6 +273,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
+  DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
@@ -301,6 +311,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 53cbb6e2ca32a5f1e28cbfb944991eabe759141a
+PODFILE CHECKSUM: 78b428d26a1a6f6ca6f90f62d6c60988cde66e52
 
 COCOAPODS: 1.11.3
