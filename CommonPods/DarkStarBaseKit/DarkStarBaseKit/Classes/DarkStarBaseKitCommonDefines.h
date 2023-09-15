@@ -263,6 +263,35 @@ CGSizeRemoveFloatMin(CGSize size) {
     return result;
 }
 
+CG_INLINE CGSize
+CGSizePixelRound(CGSize size) {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    return CGSizeMake(round(size.width * scale) / scale,
+                      round(size.height * scale) / scale);
+}
+
+CG_INLINE CGFloat
+CGFloatPixelRound(CGFloat value) {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    return round(value * scale) / scale;
+}
+
+/// floor point value for pixel-aligned
+CG_INLINE CGFloat
+CGFloatPixelFloor(CGFloat value) {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    return floor(value * scale) / scale;
+}
+
+/// floor UIEdgeInset for pixel-aligned
+CG_INLINE UIEdgeInsets
+UIEdgeInsetPixelFloor(UIEdgeInsets insets) {
+    insets.top = CGFloatPixelFloor(insets.top);
+    insets.left = CGFloatPixelFloor(insets.left);
+    insets.bottom = CGFloatPixelFloor(insets.bottom);
+    insets.right = CGFloatPixelFloor(insets.right);
+    return insets;
+}
 #pragma mark - CGRect
 
 /// 判断一个 CGRect 是否存在 NaN

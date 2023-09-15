@@ -33,13 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取Pod库中的指定NSBundle（Pod库中可能存在多个.bundle文件）
 /// @param bundleName bundle名
 /// @param podName pod名
-+ (nullable NSBundle *)ds_bundleName:(NSString *)bundleName inPod:(NSString *)podName;
++ (nullable NSBundle *)ds_bundleName:(nullable NSString *)bundleName inPod:(nullable NSString *)podName;
 
 
 /// 获取指定bundle中的图片
 /// @param name 图片名
 /// @param bundle bundle
-+ (nullable UIImage *)ds_imageNamed:(NSString *)name inBundle:(NSBundle *)bundle;
++ (nullable UIImage *)ds_imageNamed:(nullable NSString *)name inBundle:(nullable NSBundle *)bundle;
 
 @end
 

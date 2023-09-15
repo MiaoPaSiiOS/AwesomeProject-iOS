@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarNetWorkKit_Example' do
+  pod 'DarkStarNetWorkKit', :path => '../'
+
+  target 'DarkStarNetWorkKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

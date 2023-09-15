@@ -43,5 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 随机排序
 - (void)ds_shuffle;
 
+- (void)insertObjects:(NSArray *)objects atIndex:(NSUInteger)index;
+
 @end
 NS_ASSUME_NONNULL_END

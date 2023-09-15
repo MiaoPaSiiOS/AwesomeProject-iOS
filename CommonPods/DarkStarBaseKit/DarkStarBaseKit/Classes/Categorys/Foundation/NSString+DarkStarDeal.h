@@ -74,6 +74,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)ds_md5;
 
++ (NSString *)stringWithUTF32Char:(UTF32Char)char32;
+
++ (NSString *)stringWithUTF32Chars:(const UTF32Char *)char32 length:(NSUInteger)length;
+
+- (void)enumerateUTF32CharInRange:(NSRange)range usingBlock:(void (^)(UTF32Char char32, NSRange range, BOOL *stop))block;
+
+- (NSString *)stringByURLEncode;
+
+- (NSString *)stringByURLDecode;
+
+- (NSString *)stringByAppendingNameScale:(CGFloat)scale;
+- (NSString *)stringByAppendingPathScale:(CGFloat)scale;
+- (CGFloat)pathScale;
 @end
 
 NS_ASSUME_NONNULL_END

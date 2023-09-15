@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarDataStoreKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarDataStoreKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarDataStoreKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarDataStoreKit: 02dd44f63eb615443d949d73c082940dc8491b29
+
+PODFILE CHECKSUM: 9624afd8eb42c2ec474106aa28c7c76e76554ff4
+
+COCOAPODS: 1.11.3

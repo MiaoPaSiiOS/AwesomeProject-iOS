@@ -78,6 +78,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param borderLineJoin 边界线相交类型
 - (nullable UIImage *)ds_imageByRoundCornerRadius:(CGFloat)radius corners:(UIRectCorner)corners borderWidth:(CGFloat)borderWidth borderColor:(nullable UIColor *)borderColor borderLineJoin:(CGLineJoin)borderLineJoin;
 
+
+- (nullable UIImage *)ds_imageByRoundCornerRadius:(CGFloat)radius;
+
 /// 图片裁剪，默认全圆角
 /// @param radius 圆角值
 /// @param borderWidth 边框宽度
@@ -235,6 +238,21 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable UIImage *)ds_imageWithSize:(CGSize)size drawBlock:(void (^)(CGContextRef context))drawBlock;
 
 
+
+/**
+ Create a square image from apple emoji.
+ 
+ @discussion It creates a square image from apple emoji, image's scale is equal
+ to current screen's scale. The original emoji image in `AppleColorEmoji` font
+ is in size 160*160 px.
+ 
+ @param emoji single emoji, such as @"😄".
+ 
+ @param size  image's size.
+ 
+ @return Image from emoji, or nil when an error occurs.
+ */
++ (nullable UIImage *)imageWithEmoji:(NSString *)emoji size:(CGFloat)size;
 
 @end
 

@@ -255,4 +255,17 @@
     return [self convertRect:self.bounds toView:view];
 }
 
+#pragma mark - 获取UIView所属视图控制器
+- (UIViewController *)ds_viewController {
+    UIResponder *nextResponder = [self nextResponder];
+    
+    while (nextResponder != nil) {
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+        nextResponder = [nextResponder nextResponder];
+    }
+    
+    return nil;
+}
 @end

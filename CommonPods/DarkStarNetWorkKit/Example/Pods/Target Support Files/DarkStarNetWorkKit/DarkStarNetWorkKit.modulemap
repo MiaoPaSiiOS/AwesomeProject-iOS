@@ -1,0 +1,6 @@
+framework module DarkStarNetWorkKit {
+  umbrella header "DarkStarNetWorkKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,13 +1,17 @@
 ${PODS_ROOT}/Target Support Files/Pods-DarkStar/Pods-DarkStar-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAudioRecorderKit/DarkStarAudioRecorderKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAuthorityKit/DarkStarAuthorityKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarBaseKit/DarkStarBaseKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarConfiguration/DarkStarConfiguration.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarCrypto/DarkStarCrypto.framework
+${BUILT_PRODUCTS_DIR}/DarkStarDataStoreKit/DarkStarDataStoreKit.framework
+${BUILT_PRODUCTS_DIR}/DarkStarFeedKit/DarkStarFeedKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGeneralTools/DarkStarGeneralTools.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGrayViewKit/DarkStarGrayViewKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarKeepAliveManager/DarkStarKeepAliveManager.framework
+${BUILT_PRODUCTS_DIR}/DarkStarNetWorkKit/DarkStarNetWorkKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarQMUI/DarkStarQMUI.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarScanKit/DarkStarScanKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarThirdPartyKit/DarkStarThirdPartyKit.framework
@@ -21,11 +25,15 @@ ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/NrLottieBridge/NrLottieBridge.framework
+${BUILT_PRODUCTS_DIR}/RealReachability/RealReachability.framework
 ${BUILT_PRODUCTS_DIR}/RegExCategories/RegExCategories.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SIAlertView/SIAlertView.framework
+${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework
+${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
 ${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

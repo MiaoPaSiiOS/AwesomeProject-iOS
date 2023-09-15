@@ -1,0 +1,77 @@
+{
+  "name": "DarkStarFeedKit",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarFeedKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarFeedKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarFeedKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarFeedKit/Classes/**/*",
+  "resource_bundles": {
+    "DarkStarFeedKit": [
+      "DarkStarFeedKit/Assets/*"
+    ],
+    "DarkStarFeedKit-Twitter": [
+      "DarkStarFeedKit/Assets-Twitter/*"
+    ],
+    "DarkStarFeedKit-Weibo": [
+      "DarkStarFeedKit/Assets-Weibo/*"
+    ],
+    "DarkStarFeedKit-QQ": [
+      "DarkStarFeedKit/Assets-QQ/*"
+    ]
+  },
+  "dependencies": {
+    "CTMediator": [
+
+    ],
+    "YYText": [
+
+    ],
+    "YYModel": [
+
+    ],
+    "YYCache": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "JXCategoryView": [
+
+    ],
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarUIKit": [
+
+    ],
+    "DarkStarNetWorkKit": [
+
+    ],
+    "DarkStarGeneralTools": [
+
+    ],
+    "DarkStarUIComponents/CircleView": [
+
+    ],
+    "DarkStarUIComponents/NrButton": [
+
+    ],
+    "DarkStarUIComponents/GestureView": [
+
+    ]
+  }
+}

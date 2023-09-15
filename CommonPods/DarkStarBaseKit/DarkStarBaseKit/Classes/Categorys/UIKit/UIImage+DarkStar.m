@@ -2,6 +2,7 @@
 
 #import "UIImage+DarkStar.h"
 #import <Accelerate/Accelerate.h>
+#import <CoreText/CoreText.h>
 
 @implementation UIImage (DarkStar)
 
@@ -631,6 +632,16 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
+- (nullable UIImage *)ds_imageByRoundCornerRadius:(CGFloat)radius
+{
+    return [self ds_imageByRoundCornerRadius:radius
+                                     corners:UIRectCornerAllCorners
+                                 borderWidth:0
+                                 borderColor:[UIColor whiteColor]
+                              borderLineJoin:kCGLineJoinMiter];
+}
+
 - (nullable UIImage *)ds_imageByRoundCornerRadius:(CGFloat)radius borderWidth:(CGFloat)borderWidth borderColor:(nullable UIColor *)borderColor
 {
     return [self ds_imageByRoundCornerRadius:radius
@@ -1315,5 +1326,32 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
     return image;
 }
 
++ (UIImage *)imageWithEmoji:(NSString *)emoji size:(CGFloat)size {
+    if (emoji.length == 0) return nil;
+    if (size < 1) return nil;
+    
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CTFontRef font = CTFontCreateWithName(CFSTR("AppleColorEmoji"), size * scale, NULL);
+    if (!font) return nil;
+    
+    NSAttributedString *str = [[NSAttributedString alloc] initWithString:emoji attributes:@{ (__bridge id)kCTFontAttributeName:(__bridge id)font, (__bridge id)kCTForegroundColorAttributeName:(__bridge id)[UIColor whiteColor].CGColor }];
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate(NULL, size * scale, size * scale, 8, 0, colorSpace, kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
+    CGContextSetInterpolationQuality(ctx, kCGInterpolationHigh);
+    CTLineRef line = CTLineCreateWithAttributedString((__bridge CFTypeRef)str);
+    CGRect bounds = CTLineGetBoundsWithOptions(line, kCTLineBoundsUseGlyphPathBounds);
+    CGContextSetTextPosition(ctx, 0, -bounds.origin.y);
+    CTLineDraw(line, ctx);
+    CGImageRef imageRef = CGBitmapContextCreateImage(ctx);
+    UIImage *image = [[UIImage alloc] initWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
+    
+    CFRelease(font);
+    CGColorSpaceRelease(colorSpace);
+    CGContextRelease(ctx);
+    if (line)CFRelease(line);
+    if (imageRef) CFRelease(imageRef);
+    
+    return image;
+}
 
 @end

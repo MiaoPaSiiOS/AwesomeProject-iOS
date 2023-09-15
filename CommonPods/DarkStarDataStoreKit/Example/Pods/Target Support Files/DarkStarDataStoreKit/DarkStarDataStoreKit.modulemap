@@ -1,0 +1,6 @@
+framework module DarkStarDataStoreKit {
+  umbrella header "DarkStarDataStoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

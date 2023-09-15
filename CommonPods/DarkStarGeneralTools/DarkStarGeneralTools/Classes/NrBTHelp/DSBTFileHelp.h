@@ -20,10 +20,10 @@
  iPhone在重启时，会丢弃所有的tmp文件。
  
  */
+
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface DSBTFileHelp : NSObject
-
 #pragma mark - 沙盒目录相关
 // 沙盒的主目录路径
 + (nullable NSString *)homeDir;
@@ -161,27 +161,21 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)sizeFormattedOfFileAtPath:(NSString *)path;
 // 获取文件夹大小，返回格式化后的数值
 + (NSString *)sizeFormattedOfDirectoryAtPath:(NSString *)path;
+#pragma mark - 写入文件内容
+// 写入文件内容
++ (BOOL)writeFileAtPath:(NSString *)path content:(id _Nullable)content;
+// 写入文件内容（异步）
++ (void)asyncWriteFileAtPath:(NSString *)path
+                     content:(id _Nullable)content
+                    complete:(void(^_Nullable)(BOOL success))complete;
 
 #pragma mark - 获取文件内容
-/**
- 同步获取存储的文件内容
- 
- @param path 文件路径
- @param name 文件名称
- @return 文件内容
- */
-+ (nullable id)syncFetchFile:(nullable NSString *)path name:(nullable NSString *)name;
+// 获取存储的文件内容(以NSString方式存储)
++ (nullable id)syncFetchFileAsString:(nullable NSString *)path;
+// 获取存储的文件内容(以NSString方式存储)
++ (void)asyncFetchFileAsString:(nullable NSString *)path
+                      complete:(void(^ _Nullable)(id _Nullable content))complete;
 
-/**
- 异步获取存储的文件内容
- 
- @param path 文件路径
- @param name 文件名称
- @param complete 文件内容回调
- */
-+ (void)asyncFetchFile:(nullable NSString *)path
-                  name:(nullable NSString *)name
-              complete:(void(^ _Nullable)(id _Nullable content))complete;
 
 @end
 
@@ -200,13 +194,13 @@ NS_ASSUME_NONNULL_END
               completeHandler:(void(^)(BOOL success, NSDictionary *datas))completeHandler {
      NSString *fileName = [jsonUrl qmui_md5];
      NSString *filePath = [self jsonCacheDataPath:fileName];
-     [DSBTFileHelp asyncFetchFileAsString:filePath complete:^(id  _Nullable content) {
+     [AMENFileManager asyncFetchFileAsString:filePath complete:^(id  _Nullable content) {
          if (!content || ![content isKindOfClass:[NSString class]]) {
              if (completeHandler) {
                  completeHandler(NO, nil);
              }
              // 删除缓存数据
-             [DSBTFileHelp asyncRemoveItemAtPath:filePath complete:nil];
+             [AMENFileManager asyncRemoveItemAtPath:filePath complete:nil];
              return;
          }
          NSDictionary *dictionary = [self dictionaryWithJsonString:content];
@@ -230,10 +224,10 @@ NS_ASSUME_NONNULL_END
                      NSString *JSONString = [AMENUIDataManager base64Dencode:content];
                      NSDictionary *dictionary = [AMENUIDataManager dictionaryWithJsonString:JSONString];
                      if (dictionary) {
-                         if (![DSBTFileHelp isExistsAtPath:filePath]) {
-                             [DSBTFileHelp createFileAtPath:filePath];
+                         if (![AMENFileManager isExistsAtPath:filePath]) {
+                             [AMENFileManager createFileAtPath:filePath];
                          }
-                         [DSBTFileHelp asyncWriteFileAtPath:filePath content:[self JSONString:dictionary] complete:nil];
+                         [AMENFileManager asyncWriteFileAtPath:filePath content:[self JSONString:dictionary] complete:nil];
                          if (completeHandler) {
                              completeHandler(YES, dictionary);
                          }
@@ -265,10 +259,10 @@ NS_ASSUME_NONNULL_END
 
  #pragma mark - Private Method
  + (NSString *)cacheJSONDataFoldPath {
-     if (![DSBTFileHelp isExistsAtPath:[[DSBTFileHelp documentsDir] stringByAppendingPathComponent:kUIDataPageFold]]) {
-         [DSBTFileHelp createDirectoryAtPath:[[DSBTFileHelp documentsDir] stringByAppendingPathComponent:kUIDataPageFold]];
+     if (![AMENFileManager isExistsAtPath:[[AMENFileManager documentsDir] stringByAppendingPathComponent:kUIDataPageFold]]) {
+         [AMENFileManager createDirectoryAtPath:[[AMENFileManager documentsDir] stringByAppendingPathComponent:kUIDataPageFold]];
      }
-     return [[DSBTFileHelp documentsDir] stringByAppendingPathComponent:kUIDataPageFold];
+     return [[AMENFileManager documentsDir] stringByAppendingPathComponent:kUIDataPageFold];
  }
 
  /// page

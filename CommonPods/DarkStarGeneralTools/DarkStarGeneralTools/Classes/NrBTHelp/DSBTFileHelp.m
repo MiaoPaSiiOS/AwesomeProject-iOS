@@ -1,9 +1,4 @@
-//
-//  DSBTFileHelp.m
-//  NrDataStoreFramework
-//
-//  Created by zhuyuhui on 2021/11/5.
-//
+
 
 #import "DSBTFileHelp.h"
 
@@ -135,7 +130,7 @@
 
 + (BOOL)createFileAtPath:(NSString *)path content:(id _Nullable)content overwrite:(BOOL)overwrite {
     // 如果文件夹路径不存在，那么先创建文件夹
-    NSString *directoryPath = [self directoryAtPath:path];//根据path获取所在文件夹
+    NSString *directoryPath = [self directoryAtPath:path];
     if (![self isExistsAtPath:directoryPath]) {
         // 创建文件夹
         if (![self createDirectoryAtPath:directoryPath]) {
@@ -151,7 +146,7 @@
     // 创建文件
     BOOL isSuccess = [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
     if (content) {
-        [self syncSaveFile:content path:path name:nil encrypt:NO];
+        [self writeFileAtPath:path content:content];
     }
     return isSuccess;
 }
@@ -180,10 +175,6 @@
 
 #pragma mark - 删除文件(夹)
 + (BOOL)removeItemAtPath:(NSString *)path {
-    if (![self isExistsAtPath:path]) {
-        NSLog(@"删除文件(夹)：文件不存在%@",path);
-        return YES;
-    }
     NSError *error;
     BOOL isSuccess = [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
     if (error) {
@@ -423,41 +414,49 @@
 }
 
 #pragma mark - 写入文件内容
-/**
- 同步存储文件
- 
- @param content 文件内容, 支持基本数据类型, 字符串、数组、字典
- @param path 文件存储位置
- @param name 文件名称
- @param encrypt 是否加密
- @return 是否成功存储
- */
-+ (BOOL)syncSaveFile:(nullable id)content
-                path:(nullable NSString *)path
-                name:(nullable NSString *)name encrypt:(BOOL)encrypt;
-{
-    NSMutableDictionary *parmers = [NSMutableDictionary dictionary];
-    [parmers setValue:content forKey:@"content"];
-    return [parmers writeToFile:path atomically:YES];;
++ (BOOL)writeFileAtPath:(NSString *)path content:(id _Nullable)content {
+    if (!content) {
+        NSLog(@"非法的文件内容: 文件内容不能为nil");
+        return NO;
+    }
+    if ([self isExistsAtPath:path]) {
+        if ([content isKindOfClass:[NSMutableArray class]]) {
+            return [(NSMutableArray *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSArray class]]) {
+            return [(NSArray *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSMutableData class]]) {
+            return [(NSMutableData *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSData class]]) {
+            return [(NSData *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSMutableDictionary class]]) {
+            return [(NSMutableDictionary *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSDictionary class]]) {
+            return [(NSDictionary *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSJSONSerialization class]]) {
+            return [(NSDictionary *)content writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSMutableString class]]) {
+            return [[((NSString *)content) dataUsingEncoding:NSUTF8StringEncoding] writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[NSString class]]) {
+            return [[((NSString *)content) dataUsingEncoding:NSUTF8StringEncoding] writeToFile:path atomically:YES];
+        }else if ([content isKindOfClass:[UIImage class]]) {
+            return [UIImagePNGRepresentation((UIImage *)content) writeToFile:path atomically:YES];
+        }else if ([content conformsToProtocol:@protocol(NSCoding)]) {
+            return [NSKeyedArchiver archiveRootObject:content toFile:path];
+        }else {
+            [NSException raise:@"非法的文件内容" format:@"文件类型%@异常，无法被处理。", NSStringFromClass([content class])];
+            return NO;
+        }
+    }else {
+        return NO;
+    }
+    return YES;
 }
 
-/**
- 异步存储文件
- 
- @param content 文件内容, 支持基本数据类型, 字符串、数组、字典
- @param path 文件存储位置
- @param name 文件名称
- @param encrypt 是否加密
- @param complete 是否成功存储的回调
- */
-+ (void)asyncSaveFile:(nullable id)content
-                 path:(nullable NSString *)path
-                 name:(nullable NSString *)name
-              encrypt:(BOOL)encrypt
-             complete:(void(^ _Nullable)(BOOL success))complete;
-{
++ (void)asyncWriteFileAtPath:(NSString *)path
+                     content:(id _Nullable)content
+                    complete:(void(^_Nullable)(BOOL success))complete {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        BOOL isSuccess = [self syncSaveFile:content path:path name:name encrypt:encrypt];
+        BOOL isSuccess = [self writeFileAtPath:path content:content];
         if (complete) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 complete(isSuccess);
@@ -467,37 +466,18 @@
 }
 
 #pragma mark - 获取文件内容
-/**
- 同步获取存储的文件内容
- 
- @param path 文件路径
- @param name 文件名称
- @return 文件内容
- */
-+ (nullable id)syncFetchFile:(nullable NSString *)path name:(nullable NSString *)name;
-{
++ (nullable id)syncFetchFileAsString:(nullable NSString *)path {
     if (![self isExistsAtPath:path]) {
         return nil;
     }
-    NSMutableDictionary *parmers = [NSMutableDictionary dictionaryWithContentsOfFile:path];
-    id content = parmers[@"content"];
-    return content;
+    NSString * str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    return str;
 }
 
-
-/**
- 异步获取存储的文件内容
- 
- @param path 文件路径
- @param name 文件名称
- @param complete 文件内容回调
- */
-+ (void)asyncFetchFile:(nullable NSString *)path
-                  name:(nullable NSString *)name
-              complete:(void(^ _Nullable)(id _Nullable content))complete;
-{
++ (void)asyncFetchFileAsString:(nullable NSString *)path
+                      complete:(void(^ _Nullable)(id _Nullable content))complete {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        id content = [self syncFetchFile:path name:name];
+        id content = [self syncFetchFileAsString:path];
         if (complete) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 complete(content);
@@ -505,6 +485,77 @@
         }
     });
 }
+//
+//+ (NSString *)readFileAtPathAsString:(NSString *)path{
+//    NSError *error;
+//    NSString *string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+//    if (error) {
+//        NSLog(@"readFileAtPathAsString: Error\n%@",error);
+//    }
+//    return string;
+//}
+//
+//+ (NSArray *)readFileAtPathAsArray:(NSString *) path{
+//    return [NSArray arrayWithContentsOfFile:path];
+//}
+//
+//+ (NSMutableArray *)readFileAtPathAsMutableArray:(NSString *)path {
+//    return [NSMutableArray arrayWithContentsOfFile:path];
+//}
+//
+//+ (NSDictionary *)readFileAtPathAsDictionary:(NSString *)path {
+//    return [NSDictionary dictionaryWithContentsOfFile:path];
+//}
+//
+//+ (NSMutableDictionary *)readFileAtPathAsMutableDictionary:(NSString *)path {
+//    return [NSMutableDictionary dictionaryWithContentsOfFile:path];
+//}
+//
+//+ (NSObject *)readFileAtPathAsCustomModel:(NSString *)path {
+//    return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//}
+//
+//+ (UIImage *)readFileAtPathAsImage:(NSString *)path {
+//    NSData *data = [self readFileAtPathAsData:path];
+//    if (data) {
+//        return [UIImage imageWithData:data];
+//    }
+//    return nil;
+//}
+//
+//+ (NSJSONSerialization *)readFileAtPathAsJSON:(NSString *)path {
+//    NSData *data = [self readFileAtPathAsData:path];
+//    if(data) {
+//        NSError *error;
+//        NSJSONSerialization *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+//        if (error) {
+//            NSLog(@"readFileAtPathAsJSON Error:\n%@",error);
+//            return nil;
+//        }
+//        if([NSJSONSerialization isValidJSONObject:json]) {
+//            return json;
+//        }
+//    }
+//    return nil;
+//}
+//
+//+(NSData *)readFileAtPathAsData:(NSString *)path {
+//    NSError *error;
+//    NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMapped error:&error];
+//    if (error) {
+//        NSLog(@"readFileAtPathAsData: Error\n%@",error);
+//    }
+//    return data;
+//}
+//
+//+(NSMutableData *)readFileAtPathAsMutableData:(NSString *)path {
+//    NSError *error;
+//    NSMutableData *data = [NSMutableData dataWithContentsOfFile:path options:NSDataReadingMapped error:&error];
+//    if (error) {
+//        NSLog(@"readFileAtPathAsMutableData: Error\n%@",error);
+//    }
+//    return data;
+//}
 
 
 
@@ -531,3 +582,4 @@
     return [NSString stringWithFormat:sizeFormat, convertedValue, tokens[multiplyFactor]];
 }
 @end
+

@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarNetWorkKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarNetWorkKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarNetWorkKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarNetWorkKit: 989d818e2c3d59f9808217304a724ea0a3bfea23
+
+PODFILE CHECKSUM: 99573f6d256b8696a7c26b8ce5a67c9815862463
+
+COCOAPODS: 1.11.3

@@ -109,5 +109,11 @@
     }
 }
 
+- (void)insertObjects:(NSArray *)objects atIndex:(NSUInteger)index {
+    NSUInteger i = index;
+    for (id obj in objects) {
+        [self insertObject:obj atIndex:i++];
+    }
+}
 
 @end

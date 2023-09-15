@@ -6,6 +6,8 @@
 //
 
 #import "REHomeViewController.h"
+#import <DarkStarFeedKit/DarkStarFeedKit.h>
+#import <CTMediator/CTMediator.h>
 
 @interface REHomeViewController ()
 
@@ -16,16 +18,111 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    DS_CREATE_UI({
+        DS_BUTTON_WITH_ACTION(@"TouchIDLogin", TouchIDLogin)
+        DS_BUTTON_WITH_ACTION(@"AppleIDLogin", AppleIDLogin)
+        DS_BUTTON_WITH_ACTION(@"goToFeed", goToFeed)
+        DS_BUTTON_WITH_ACTION(@"openWebOfBaidu", openWebOfBaidu)
+        DS_BUTTON_WITH_ACTION(@"openWebOfLocalHtml", openWebOfLocalHtml)
+        DS_BUTTON_WITH_ACTION(@"openWebOfLocalHtml_SRSJSTest2", openWebOfLocalHtml_SRSJSTest2)
+    }, self.nrView);
+
+}
+- (void)goToFeed {
+    [[CTMediator sharedInstance] mediator_showFeedViewController:@{}];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)TouchIDLogin {
+//    NSDictionary *parameters = @{ @"touchIDType" : @"1",
+//                                  @"popStyle" : @"present",
+//    };
+//    [[CTMediator sharedInstance] mediator_TouchIDApp:parameters.mutableCopy completion:^(id response) {
+//
+//    }];
 }
-*/
+
+- (void)AppleIDLogin {
+//    if (@available(iOS 13.0, *)) {
+//        [[AMENAppleIDLoginManager sharedInstance] setAppleIDLoginBindBlock:^(ASAuthorizationAppleIDCredential *_Nonnull credential, BOOL isBind, NSDictionary *_Nonnull param) {
+//            NSMutableDictionary *paramDic = [NSMutableDictionary dictionary];
+//            [paramDic setDictionary:param];
+//    //        if (isBind) {
+//    //            [strongSelf.loginReq sendLoginReq:paramDic withLoginWays:BCMLoginWaysAppleId withParametersBlock:nil];
+//    //        } else {
+//    //            [strongSelf goThirdLoginBindWithLoginWay:BCMLoginWaysAppleId andToken:isEmptyString([param valueForKey:@"UN"]) andParam:param];
+//    //        }
+//        }];
+//        [[AMENAppleIDLoginManager sharedInstance] signInWithApple];
+//    }
+}
+
+
+
+- (void)loadCacheData {
+//    [AMENUIDataManager achieveJSONCacheDataWithJsonUrl:@"https://gitee.com/api/v5/repos/tuay-orn/amen-data-mock/contents/json%2Fjd_browseHistory_1.json" completeHandler:^(BOOL success, NSDictionary * _Nonnull datas) {
+//        if (success) {
+//            NSLog(@"获取缓存数据-成功 \n%@",datas);
+//            [AMENShareUtil showMessageWithTitle:[NSString stringWithFormat:@"%@",datas]];
+//        } else {
+//            NSLog(@"获取缓存数据-失败");
+//        }
+//    }];
+}
+
+- (void)loadDataFromServer {
+//    [AMENUIDataManager achieveJSONDataWithJsonUrl:@"https://gitee.com/api/v5/repos/tuay-orn/amen-data-mock/contents/json%2Fjd_browseHistory_1.json" completeHandler:^(BOOL success, NSDictionary * _Nonnull datas) {
+//        if (success) {
+//            NSLog(@"获取服务器数据-成功 \n%@",datas);
+//            [AMENShareUtil showMessageWithTitle:[NSString stringWithFormat:@"%@",datas]];
+//        } else {
+//            NSLog(@"获取服务器数据-失败");
+//        }
+//    }];
+}
+
+- (void)openWebOfBaidu {
+//    [[CTMediator sharedInstance] mediator_pushWebViewController:@{
+//        @"url":@"https://www.baidu.com"
+//    }];
+}
+
+- (void)openWebOfLocalHtml {
+//    NSString *basePath = [NSString stringWithFormat: @"%@/%@", [[NSBundle mainBundle] bundlePath], @"www.amen.com"];
+//    NSURL *baseUrl = [NSURL fileURLWithPath:basePath isDirectory:YES];
+//    NSString *filePath = [NSString stringWithFormat: @"file://%@/index.html#/?xxx=%@&sss=%@", basePath, @"xxx", @"sss"];
+//    NSURL *fileUrl = [NSURL URLWithString:filePath];
+//    [[CTMediator sharedInstance] mediator_pushWebViewController:@{
+//        @"closeWhiteList":@"1",
+//        @"loadType":@"1",
+//        @"fileURL":fileUrl,
+//        @"readAccessURL":baseUrl
+//    }];
+//
+    
+}
+
+- (void)openWebOfLocalHtml_SRSJSTest2 {
+//    NSString *basePath = [NSString stringWithFormat: @"%@/%@", [[NSBundle mainBundle] bundlePath], @"SRSJSTest2"];
+//    NSURL *baseUrl = [NSURL fileURLWithPath:basePath isDirectory:YES];
+//    NSString *filePath = [NSString stringWithFormat: @"file://%@/test.html#/?xxx=%@&sss=%@", basePath, @"xxx", @"sss"];
+//    NSURL *fileUrl = [NSURL URLWithString:filePath];
+//    [[CTMediator sharedInstance] mediator_pushWebViewController:@{
+//        @"closeWhiteList":@"1",
+//        @"loadType":@"1",
+//        @"fileURL":fileUrl,
+//        @"readAccessURL":baseUrl
+//    }];
+//    NSString *basePath = [NSString stringWithFormat: @"%@/%@", [[NSBundle mainBundle] bundlePath], @"SDBridgeOCTest"];
+//    NSURL *baseUrl = [NSURL fileURLWithPath:basePath isDirectory:YES];
+//    NSString *filePath = [NSString stringWithFormat: @"file://%@/index.html#/?xxx=%@&sss=%@", basePath, @"xxx", @"sss"];
+//    NSURL *fileUrl = [NSURL URLWithString:filePath];
+//    [[CTMediator sharedInstance] mediator_pushWebViewController:@{
+//        @"closeWhiteList":@"1",
+//        @"loadType":@"1",
+//        @"fileURL":fileUrl,
+//        @"readAccessURL":baseUrl
+//    }];
+}
+
 
 @end

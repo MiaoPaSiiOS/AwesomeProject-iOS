@@ -128,6 +128,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGRect)ds_frameFromView:(UIView *)view;
 
+
+#pragma mark - 获取UIView所属视图控制器
+- (UIViewController *)ds_viewController;
 @end
 
 NS_ASSUME_NONNULL_END

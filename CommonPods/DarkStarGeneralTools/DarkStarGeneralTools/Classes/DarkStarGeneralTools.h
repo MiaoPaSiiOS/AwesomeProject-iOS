@@ -26,9 +26,6 @@
 #import <DarkStarGeneralTools/DSDeepLinkModel.h>
 #endif
 
-#if __has_include(<DarkStarGeneralTools/DSFileManager.h>)
-#import <DarkStarGeneralTools/DSFileManager.h>
-#endif
 
 #if __has_include(<DarkStarGeneralTools/DSGCDHeader.h>)
 #import <DarkStarGeneralTools/DSGCDHeader.h>

@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarFeedKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarFeedKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarFeedKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarFeedKit: 160d792b406d77aa54b94aca826ef66141ae08c0
+
+PODFILE CHECKSUM: 364dee970f239f8d199bd0b16ed242dd381c8fc3
+
+COCOAPODS: 1.11.3

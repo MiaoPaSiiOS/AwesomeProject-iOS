@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - CTMediator (48)
   - DarkStarAudioRecorderKit (0.1.0):
     - DarkStarAuthorityKit
   - DarkStarAuthorityKit (0.1.0)
@@ -23,12 +24,31 @@ PODS:
     - MJExtension
     - SIAlertView
   - DarkStarCrypto (0.1.0)
+  - DarkStarDataStoreKit (0.1.0):
+    - SSZipArchive
+  - DarkStarFeedKit (0.1.0):
+    - CTMediator
+    - DarkStarBaseKit
+    - DarkStarGeneralTools
+    - DarkStarNetWorkKit
+    - DarkStarUIComponents/CircleView
+    - DarkStarUIComponents/GestureView
+    - DarkStarUIComponents/NrButton
+    - DarkStarUIKit
+    - JXCategoryView
+    - SDWebImage
+    - YYCache
+    - YYModel
+    - YYText
   - DarkStarGeneralTools (0.1.0):
     - DarkStarAuthorityKit
     - RegExCategories
   - DarkStarGrayViewKit (0.1.0)
   - DarkStarKeepAliveManager (0.1.0):
     - DarkStarBaseKit
+  - DarkStarNetWorkKit (0.1.0):
+    - AFNetworking
+    - RealReachability
   - DarkStarQMUI (0.1.0):
     - DarkStarQMUI/QMUIAnimation (= 0.1.0)
     - DarkStarQMUI/QMUILab (= 0.1.0)
@@ -133,25 +153,37 @@ PODS:
   - NrLottieBridge (0.1.1):
     - lottie-ios
     - SnapKit
+  - RealReachability (1.4.1):
+    - RealReachability/Connection (= 1.4.1)
+    - RealReachability/Ping (= 1.4.1)
+  - RealReachability/Connection (1.4.1)
+  - RealReachability/Ping (1.4.1)
   - RegExCategories (1.0)
   - SDWebImage (5.15.6):
     - SDWebImage/Core (= 5.15.6)
   - SDWebImage/Core (5.15.6)
   - SIAlertView (1.3)
   - SnapKit (5.6.0)
+  - SSZipArchive (2.4.3)
   - TTTAttributedLabel (2.0.0)
   - YYCache (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
+  - CTMediator
   - DarkStarAudioRecorderKit (from `../CommonPods/DarkStarAudioRecorderKit/`)
   - DarkStarAuthorityKit (from `../CommonPods/DarkStarAuthorityKit/`)
   - DarkStarBaseKit (from `../CommonPods/DarkStarBaseKit/`)
   - DarkStarConfiguration (from `../CommonPods/DarkStarConfiguration/`)
   - DarkStarCrypto (from `../CommonPods/DarkStarCrypto/`)
+  - DarkStarDataStoreKit (from `../CommonPods/DarkStarDataStoreKit/`)
+  - DarkStarFeedKit (from `../CommonPods/DarkStarFeedKit/`)
   - DarkStarGeneralTools (from `../CommonPods/DarkStarGeneralTools/`)
   - DarkStarGrayViewKit (from `../CommonPods/DarkStarGrayViewKit/`)
   - DarkStarKeepAliveManager (from `../CommonPods/DarkStarKeepAliveManager/`)
+  - DarkStarNetWorkKit (from `../CommonPods/DarkStarNetWorkKit/`)
   - DarkStarQMUI (from `../CommonPods/DarkStarQMUI/`)
   - DarkStarScanKit (from `../CommonPods/DarkStarScanKit/`)
   - DarkStarThirdPartyKit (from `../CommonPods/DarkStarThirdPartyKit/`)
@@ -171,6 +203,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - CTMediator
     - FMDB
     - iCarousel
     - JXCategoryView
@@ -179,12 +212,16 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - RealReachability
     - RegExCategories
     - SDWebImage
     - SIAlertView
     - SnapKit
+    - SSZipArchive
     - TTTAttributedLabel
     - YYCache
+    - YYModel
+    - YYText
 
 EXTERNAL SOURCES:
   DarkStarAudioRecorderKit:
@@ -197,12 +234,18 @@ EXTERNAL SOURCES:
     :path: "../CommonPods/DarkStarConfiguration/"
   DarkStarCrypto:
     :path: "../CommonPods/DarkStarCrypto/"
+  DarkStarDataStoreKit:
+    :path: "../CommonPods/DarkStarDataStoreKit/"
+  DarkStarFeedKit:
+    :path: "../CommonPods/DarkStarFeedKit/"
   DarkStarGeneralTools:
     :path: "../CommonPods/DarkStarGeneralTools/"
   DarkStarGrayViewKit:
     :path: "../CommonPods/DarkStarGrayViewKit/"
   DarkStarKeepAliveManager:
     :path: "../CommonPods/DarkStarKeepAliveManager/"
+  DarkStarNetWorkKit:
+    :path: "../CommonPods/DarkStarNetWorkKit/"
   DarkStarQMUI:
     :path: "../CommonPods/DarkStarQMUI/"
   DarkStarScanKit:
@@ -220,14 +263,18 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
+  DarkStarDataStoreKit: fdd86c2480e05907dfe78749ecf588d0cefd54fe
+  DarkStarFeedKit: 48ec77c3b4d24c62bd9738c6a1cfa38024a07071
   DarkStarGeneralTools: f5eddfdaade3e40ee58c17d8719a7d2da555a94a
   DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
-  DarkStarKeepAliveManager: 89038da2bde01617a61695c9091727466554e383
+  DarkStarKeepAliveManager: 869d5308de178737b1a8bb2774896ea63daf9e43
+  DarkStarNetWorkKit: 00b2a95a21eca49a4a54f7ecea931ef00985a042
   DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
   DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
@@ -243,13 +290,17 @@ SPEC CHECKSUMS:
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   NrLottieBridge: ecc2fd4c2d9a4958ba20b1a6b4e0a5cb3034cf69
+  RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
   RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
   SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 11763f5c6c12f186f2f1db85ddb3176d20778209
+PODFILE CHECKSUM: 53cbb6e2ca32a5f1e28cbfb944991eabe759141a
 
 COCOAPODS: 1.11.3
