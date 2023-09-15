@@ -166,5 +166,12 @@
     [self ds_showAlertSheetWithTitle:nil message:nil buttonTitles:btnTitleArr buttonColors:nil alertClick:clickBlock alertCancle:cancleBlock];
 }
 
-
+- (UIEdgeInsets)safeAreaInsetsForDevice {
+    if (@available(iOS 11.0, *)) {
+        // 获取底部安全区域的边距
+        return self.view.safeAreaInsets;
+    }
+    // 对于不支持安全区域的iOS版本，返回UIEdgeInsetsZero
+    return UIEdgeInsetsZero;
+}
 @end

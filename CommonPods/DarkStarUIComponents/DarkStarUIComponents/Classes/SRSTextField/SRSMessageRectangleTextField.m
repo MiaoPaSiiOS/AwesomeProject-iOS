@@ -228,7 +228,7 @@
 - (UIButton *)clearBtnImage {
     if (!_clearBtnImage) {
         _clearBtnImage = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_clearBtnImage setBackgroundImage:[NSObject ds_imageNamed:@"clear" inBundle:[NSObject ds_bundleName:@"NrSRSTextFieldAssets" inPod:@"NrUIComponents"]] forState:UIControlStateNormal];
+        [_clearBtnImage setBackgroundImage:[NSBundle ds_imageNamed:@"clear" inBundle:[NSBundle ds_bundleName:@"NrSRSTextFieldAssets" inPod:@"NrUIComponents"]] forState:UIControlStateNormal];
         [_clearBtnImage addTarget:self action:@selector(clearBtnClick) forControlEvents:UIControlEventTouchUpInside];
         _clearBtnImage.alpha = 0;
     }

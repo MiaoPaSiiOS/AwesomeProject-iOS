@@ -33,10 +33,11 @@ TODO: Add long description of the pod here.
   s.source_files = 'DarkStarFeedKit/Classes/**/*'
   
    s.resource_bundles = {
-     'DarkStarFeedKit' => ['DarkStarFeedKit/Assets/*'],
-     'DarkStarFeedKit-Twitter' => ['DarkStarFeedKit/Assets-Twitter/*'],
-     'DarkStarFeedKit-Weibo' => ['DarkStarFeedKit/Assets-Weibo/*'],
-     'DarkStarFeedKit-QQ' => ['DarkStarFeedKit/Assets-QQ/*']
+     'DarkStarFeedKit-temp' => ['DarkStarFeedKit/AssetsExt/*'],
+     'DarkStarFeedKit' => ['DarkStarFeedKit/Assets/main/*'],
+     'DarkStarFeedKit-Twitter' => ['DarkStarFeedKit/Assets/Twitter/*'],
+     'DarkStarFeedKit-Weibo' => ['DarkStarFeedKit/Assets/Weibo/*'],
+     'DarkStarFeedKit-QQ' => ['DarkStarFeedKit/Assets/QQ/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

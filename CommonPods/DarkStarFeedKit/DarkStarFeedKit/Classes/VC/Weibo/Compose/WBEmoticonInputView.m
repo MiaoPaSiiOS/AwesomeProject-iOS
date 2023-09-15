@@ -285,7 +285,7 @@ static NSInteger const kOnePageCount = 20;
 - (instancetype)init {
     self = [super init];
     
-    self.frame = CGRectMake(0, 0, kScreenWidth, kViewHeight + 44);
+    self.frame = CGRectMake(0, 0, kScreenWidth, kViewHeight + SafeAreaInsetsConstantForDeviceWithNotch.bottom);
     self.container = [[UIView alloc] init];
     self.container.frame = CGRectMake(0, 0, kScreenWidth, kViewHeight);
     

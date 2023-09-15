@@ -20,17 +20,20 @@
   },
   "source_files": "DarkStarFeedKit/Classes/**/*",
   "resource_bundles": {
+    "DarkStarFeedKit-temp": [
+      "DarkStarFeedKit/AssetsExt/*"
+    ],
     "DarkStarFeedKit": [
-      "DarkStarFeedKit/Assets/*"
+      "DarkStarFeedKit/Assets/main/*"
     ],
     "DarkStarFeedKit-Twitter": [
-      "DarkStarFeedKit/Assets-Twitter/*"
+      "DarkStarFeedKit/Assets/Twitter/*"
     ],
     "DarkStarFeedKit-Weibo": [
-      "DarkStarFeedKit/Assets-Weibo/*"
+      "DarkStarFeedKit/Assets/Weibo/*"
     ],
     "DarkStarFeedKit-QQ": [
-      "DarkStarFeedKit/Assets-QQ/*"
+      "DarkStarFeedKit/Assets/QQ/*"
     ]
   },
   "dependencies": {

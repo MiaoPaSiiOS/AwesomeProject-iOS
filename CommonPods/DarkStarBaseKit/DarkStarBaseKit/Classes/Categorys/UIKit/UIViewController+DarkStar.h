@@ -48,6 +48,8 @@ typedef void(^DarkStarAlertCancleBlock)(void);
 /// AlertSheet系统提示，无title，无message，无colors
 - (void)ds_showAlertSheetWithButtonTitles:(NSArray *)btnTitleArr   alertClick:(DarkStarAlertClickIndexBlock)clickBlock alertCancle:(DarkStarAlertCancleBlock)cancleBlock;
 
+- (UIEdgeInsets)safeAreaInsetsForDevice;
+
 @end
 
 

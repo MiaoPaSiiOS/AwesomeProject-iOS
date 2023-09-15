@@ -82,7 +82,7 @@
     _textView.top = 0;
     _textView.size = CGSizeMake(self.nrView.width, self.nrView.height);
     _textView.textContainerInset = UIEdgeInsetsMake(0, 16, 12, 16);
-    _textView.contentInset = UIEdgeInsetsMake(0, 0, kToolbarHeight + 44, 0);
+    _textView.contentInset = UIEdgeInsetsMake(0, 0, kToolbarHeight + SafeAreaInsetsConstantForDeviceWithNotch.bottom, 0);
     _textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _textView.extraAccessoryViewHeight = kToolbarHeight;
     _textView.showsVerticalScrollIndicator = NO;
@@ -128,7 +128,6 @@
     _toolbar.backgroundColor = [UIColor whiteColor];
     _toolbar.size = CGSizeMake(self.nrView.width, kToolbarHeight);
     _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-
     
     _toolbarBackground = [UIView new];
     _toolbarBackground.backgroundColor = kHexColor(0xF9F9F9);
@@ -198,7 +197,7 @@
     _toolbarTopicButton.centerX = one * 2.5;
     _toolbarEmoticonButton.centerX = one * 3.5;
     _toolbarExtraButton.centerX = one * 4.5;
-    _toolbar.bottom = kScreenHeight - kStatusHeight - 44;
+    _toolbar.bottom = kScreenHeight - self.appBar.height - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
     [self.nrView addSubview:_toolbar];
 }
 
@@ -271,10 +270,10 @@
 - (void)keyboardChangedWithTransition:(YYTextKeyboardTransition)transition {
     CGRect toFrame = [[YYTextKeyboardManager defaultManager] convertRect:transition.toFrame toView:self.nrView];
     if (transition.animationDuration == 0) {
-        _toolbar.bottom = CGRectGetMinY(toFrame) - 44;
+        _toolbar.bottom = CGRectGetMinY(toFrame) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
     } else {
         [UIView animateWithDuration:transition.animationDuration delay:0 options:transition.animationOption | UIViewAnimationOptionBeginFromCurrentState animations:^{
-            self->_toolbar.bottom = CGRectGetMinY(toFrame) - 44;
+            self->_toolbar.bottom = CGRectGetMinY(toFrame) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
         } completion:NULL];
     }
 }
@@ -305,6 +304,7 @@
     if (!_navbarCancleButton) {
         _navbarCancleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _navbarCancleButton.size = CGSizeMake(60, 44);
+        _navbarCancleButton.right = kScreenWidth - 12;
         _navbarCancleButton.clipsToBounds = YES;
         _navbarCancleButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarCancleButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -318,6 +318,8 @@
     if (!_navbarPublishButton) {
         _navbarPublishButton = [[UIButton alloc] init];
         _navbarPublishButton.size = CGSizeMake(70, 30);
+        _navbarPublishButton.top = (44 - 30)/2;
+        _navbarPublishButton.left = 12;
         _navbarPublishButton.clipsToBounds = YES;
         _navbarPublishButton.layer.cornerRadius = _toolbarPOIButton.height / 2;
         _navbarPublishButton.layer.borderColor = kHexColor(0xe4e4e4).CGColor;

@@ -76,7 +76,7 @@
 }
 
 - (UIImage *)imageName:(NSString *)name {
-    return [NSObject ds_imageNamed:name inBundle:[NSObject ds_bundleName:@"NrDialogMultiChoiceAssets" inPod:@"NrUIComponents"]];
+    return [NSBundle ds_imageNamed:name inBundle:[NSBundle ds_bundleName:@"NrDialogMultiChoiceAssets" inPod:@"NrUIComponents"]];
 }
 
 #pragma mark - 懒加载

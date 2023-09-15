@@ -95,7 +95,7 @@ static CGFloat SRSFloatWindowMaxHeight = 445.f;
 - (void)defaultTypeInit {
     //NrPOD_IMAGE(@"circle_close", Nr_BUNDLE(@"NrFloatAssets", @"NrUIComponents"))
     //NrPOD_IMAGE(@"cross_close", Nr_BUNDLE(@"NrFloatAssets", @"NrUIComponents"))
-    UIImage *buttonImage = [NSObject ds_imageNamed:@"circle_close" inBundle:[NSObject ds_bundleName:@"NrFloatAssets" inPod:@"NrUIComponents"]];
+    UIImage *buttonImage = [NSBundle ds_imageNamed:@"circle_close" inBundle:[NSBundle ds_bundleName:@"NrFloatAssets" inPod:@"NrUIComponents"]];
     
     [self.dismissButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     
@@ -111,7 +111,7 @@ static CGFloat SRSFloatWindowMaxHeight = 445.f;
 }
 
 - (void)customTypeInit {
-    UIImage *buttonImage = [NSObject ds_imageNamed:@"cross_close" inBundle:[NSObject ds_bundleName:@"NrFloatAssets" inPod:@"NrUIComponents"]];
+    UIImage *buttonImage = [NSBundle ds_imageNamed:@"cross_close" inBundle:[NSBundle ds_bundleName:@"NrFloatAssets" inPod:@"NrUIComponents"]];
     
     [self.dismissButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
     
