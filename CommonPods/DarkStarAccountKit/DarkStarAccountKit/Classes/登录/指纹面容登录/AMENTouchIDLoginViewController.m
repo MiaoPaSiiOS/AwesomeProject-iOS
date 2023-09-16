@@ -30,7 +30,7 @@ typedef enum {// 按钮tag
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
-    self.nrView.backgroundColor = kHexColor(0xffffff);
+    self.dsView.backgroundColor = kHexColor(0xffffff);
     _isFaceIDDevice = [AMENTouchIDInfoUtil returnTheResultOfFaceID];
     if (_isFaceIDDevice) {
         self.title = @"面容ID登录";
@@ -60,7 +60,7 @@ typedef enum {// 按钮tag
     userHead.center = CGPointMake(kScreenWidth / 2, userHead.height / 2 + 20 + 40);
     //用户头像，根据userId获取用户头像
     userHead.image = [DSAccountTool imageNamed:@"gestureHead"];
-    [self.nrView addSubview:userHead];
+    [self.dsView addSubview:userHead];
 
     // 用户名
     UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 16)];
@@ -69,7 +69,7 @@ typedef enum {// 按钮tag
     nameLb.textAlignment = NSTextAlignmentCenter;
     nameLb.textColor = [UIColor blackColor];
     nameLb.text = @"176****6897";
-    [self.nrView addSubview:nameLb];
+    [self.dsView addSubview:nameLb];
 
     // 中间指纹按钮
     UIButton *touchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -93,7 +93,7 @@ typedef enum {// 按钮tag
     userHead.center = CGPointMake(kScreenWidth / 2, userHead.height / 2 + 20 + 40);
     //用户头像，根据userId获取用户头像
     userHead.image = [DSAccountTool imageNamed:@"gestureHead"];
-    [self.nrView addSubview:userHead];
+    [self.dsView addSubview:userHead];
 
     // 用户名
     UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 16)];
@@ -102,7 +102,7 @@ typedef enum {// 按钮tag
     nameLb.textAlignment = NSTextAlignmentCenter;
     nameLb.textColor = [UIColor blackColor];
     nameLb.text = @"176****6897";
-    [self.nrView addSubview:nameLb];
+    [self.dsView addSubview:nameLb];
 
     // 中间指纹按钮
     UIButton *touchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -130,7 +130,7 @@ typedef enum {// 按钮tag
     [btn setBackgroundImage:image forState:UIControlStateNormal];
     [btn.titleLabel setFont:font];
     [btn addTarget:self action:@selector(clickButtonWithSender:) forControlEvents:UIControlEventTouchUpInside];
-    [self.nrView addSubview:btn];
+    [self.dsView addSubview:btn];
 }
 
 #pragma mark - button点击事件

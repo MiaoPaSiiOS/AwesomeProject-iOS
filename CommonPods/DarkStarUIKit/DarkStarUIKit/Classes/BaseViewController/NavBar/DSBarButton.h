@@ -1,6 +1,6 @@
 
 
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @class DSBarButtonItem;
 @interface DSBarButton : DSDataView
 /**

@@ -7,11 +7,11 @@
 
 #ifndef DarkStarBaseKit_h
 #define DarkStarBaseKit_h
-
 #import "DarkStarBaseKitDefines.h"
 #import "DarkStarBaseKitCommonDefines.h"
 #import "DarkStarCategorysHeader.h"
-#import "DarkStarUIHelper.h"
+
+#import "DSDeviceInfo.h"
 
 #import "DSDataView.h"
 #import "DSNavItem.h"

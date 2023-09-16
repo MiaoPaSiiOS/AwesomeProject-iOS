@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "NrQMUI.h"
+#import "DarkStarQMUI.h"
 #import "QMUIAnimationHelper.h"
 #import "QMUIDisplayLinkAnimation.h"
 #import "QMUIEasings.h"

@@ -56,7 +56,7 @@
     self.appBar.hidden = YES;
     self.enableRefresh = YES;
     self.dataArray = [[NSMutableArray alloc] init];
-    [self.nrView mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.dsView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.mas_offset(0);
     }];
     // Do any additional setup after loading the view.
@@ -447,7 +447,7 @@
             kStrongSelf
             [strongSelf initialRequest];
         }];
-        [self.nrView addSubview:_errorView];
+        [self.dsView addSubview:_errorView];
     }
     return _errorView;
 }
@@ -456,7 +456,7 @@
     if (!_emptyView) {
         _emptyView = [[AULoadErrorView alloc] initWithFrame:self.recylerView.bounds];
         _emptyView.type = AULoadNoData;
-        [self.nrView addSubview:_errorView];
+        [self.dsView addSubview:_errorView];
     }
     return _emptyView;
 }

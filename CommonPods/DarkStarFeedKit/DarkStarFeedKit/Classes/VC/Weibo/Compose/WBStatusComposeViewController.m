@@ -80,7 +80,7 @@
     if (_textView) return;
     _textView = [YYTextView new];
     _textView.top = 0;
-    _textView.size = CGSizeMake(self.nrView.width, self.nrView.height);
+    _textView.size = CGSizeMake(self.dsView.width, self.dsView.height);
     _textView.textContainerInset = UIEdgeInsetsMake(0, 16, 12, 16);
     _textView.contentInset = UIEdgeInsetsMake(0, 0, kToolbarHeight + SafeAreaInsetsConstantForDeviceWithNotch.bottom, 0);
     _textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -119,14 +119,14 @@
         _textView.placeholderAttributedText = atr;
     }
     
-    [self.nrView addSubview:_textView];
+    [self.dsView addSubview:_textView];
 }
 
 - (void)_initToolbar {
     if (_toolbar) return;
     _toolbar = [UIView new];
     _toolbar.backgroundColor = [UIColor whiteColor];
-    _toolbar.size = CGSizeMake(self.nrView.width, kToolbarHeight);
+    _toolbar.size = CGSizeMake(self.dsView.width, kToolbarHeight);
     _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
     _toolbarBackground = [UIView new];
@@ -198,7 +198,7 @@
     _toolbarEmoticonButton.centerX = one * 3.5;
     _toolbarExtraButton.centerX = one * 4.5;
     _toolbar.bottom = kScreenHeight - self.appBar.height - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
-    [self.nrView addSubview:_toolbar];
+    [self.dsView addSubview:_toolbar];
 }
 
 - (UIButton *)_toolbarButtonWithImage:(NSString *)imageName highlight:(NSString *)highlightImageName {
@@ -268,7 +268,7 @@
 
 #pragma mark @protocol YYTextKeyboardObserver
 - (void)keyboardChangedWithTransition:(YYTextKeyboardTransition)transition {
-    CGRect toFrame = [[YYTextKeyboardManager defaultManager] convertRect:transition.toFrame toView:self.nrView];
+    CGRect toFrame = [[YYTextKeyboardManager defaultManager] convertRect:transition.toFrame toView:self.dsView];
     if (transition.animationDuration == 0) {
         _toolbar.bottom = CGRectGetMinY(toFrame) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
     } else {

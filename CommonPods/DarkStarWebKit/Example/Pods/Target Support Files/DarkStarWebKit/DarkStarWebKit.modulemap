@@ -1,0 +1,6 @@
+framework module DarkStarWebKit {
+  umbrella header "DarkStarWebKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

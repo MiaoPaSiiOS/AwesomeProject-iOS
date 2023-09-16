@@ -1,6 +1,6 @@
 
 #import "DSKeepAliveBGTool.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @implementation DSKeepAliveBGTool
 
 #pragma mark - Public

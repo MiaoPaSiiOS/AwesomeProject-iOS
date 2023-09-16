@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+    <title>JS交互测试页面</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <script type="text/javascript" src="js/SRSJSBridge.js"></script>
+    <style>
+      /*! suit-test v0.1.0 | MIT License | github.com/suitcss */
+
+      .Test {
+        background: #fff;
+        counter-reset: test-describe;
+      }
+
+      .Test-describe:before {
+        content: counter(test-describe);
+        counter-increment: test-describe;
+      }
+
+      .Test-describe {
+        counter-reset: test-it;
+      }
+
+      .Test-it:before {
+        content: counter(test-describe) "." counter(test-it);
+        counter-increment: test-it;
+      }
+
+      .Test-title {
+        font-size: 2em;
+        font-family: sans-serif;
+        padding: 20px;
+        margin: 20px 0;
+        background: #eee;
+        color: #999;
+      }
+
+      .Test-describe,
+      .Test-it {
+        background: #eee;
+        border-left: 5px solid #666;
+        color: #666;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 0.75em 20px;
+      }
+
+      .Test-describe {
+        font-size: 1.5em;
+        margin: 60px 0 20px;
+      }
+
+      .Test-describe:before,
+      .Test-it:before {
+        color: #999;
+        display: inline-block;
+        margin-right: 10px;
+        min-width: 30px;
+        text-transform: uppercase;
+      }
+
+      /* Custom helpers */
+
+      /**
+       * Test whether the body's margin has been removed
+       */
+
+      body {
+        background: red;
+      }
+
+      /**
+       * Highlight the bounds of direct children of a test block
+       */
+
+      .Test-run--highlightEl > * {
+        outline: 1px solid #add8e6;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="password"
+      readonly="true"
+      id="first_password"
+      onfocus="JSNativeShowSecurityKeyboard('first_password')"
+      onclick="JSNativeShowSecurityKeyboard('first_password')"
+    />
+    <br />
+    <br />
+    <br />
+
+    <button
+      type="button"
+      name="input_finish"
+      onclick="JSNativeHideSecurityKeyboard()"
+    >
+      隐藏键盘
+    </button>
+    <br />
+    <br />
+    <br />
+    <button
+      type="button"
+      name="clear"
+      onclick="JSNativeCLearSecurityKeyboard()"
+    >
+      清空
+    </button>
+  </body>
+
+  <script>
+    var currentFocusedInpuId;
+
+    function JSNativeCLearSecurityKeyboard() {
+      var parameters = {};
+      srsCallNative(
+        "JSNativeClearSecurityKeyboard",
+        parameters,
+        "CLearSecurityKeyboardCallback"
+      );
+    }
+
+    function JSNativeHideSecurityKeyboard() {
+      srsCallNative("JSNativeHideSecurityKeyboard", {}, "");
+    }
+
+    function JSNativeShowSecurityKeyboard(id) {
+      var parameters = {
+        isEncrypt: "1",
+        serverRandom: "eIBN+Mq51n5c95vloutCDw==",
+        keyboardType: "2",
+        isOrder: "1",
+        minLen: "1",
+        maxLen: "10",
+        onTextChange: "onTextChangeCallback",
+        keyboardHidden: "keyboardHiddenCallback",
+        focusInputId: id,
+      };
+
+      srsCallNative(
+        "JSNativeShowSecurityKeyboard",
+        parameters,
+        "ShowSecurityKeyboardCallback"
+      );
+      currentFocusedInpuId = id;
+    }
+
+    function ShowSecurityKeyboardCallback(content) {
+      alert(JSON.stringify(content));
+    }
+
+    function CLearSecurityKeyboardCallback(content) {
+      var password = document.getElementById(currentFocusedInpuId);
+      password.length = 0;
+      alert(JSON.stringify(content));
+    }
+
+    function onTextChangeCallback(content) {
+      alert(JSON.stringify(content));
+    }
+
+    function keyboardHiddenCallback(content) {
+      alert(JSON.stringify(content));
+    }
+  </script>
+</html>

@@ -30,7 +30,7 @@
     }
 }
 
-- (void)setType:(AULoadErrorType)type {
+- (void)setType:(AresJsbWebErrorViewType)type {
     _type = type;
     [self removeAllSubviews];
     switch (type) {

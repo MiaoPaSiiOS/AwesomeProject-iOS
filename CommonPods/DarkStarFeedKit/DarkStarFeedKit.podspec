@@ -48,6 +48,7 @@ TODO: Add long description of the pod here.
   s.dependency 'YYModel'
   s.dependency 'YYCache'
   s.dependency 'SDWebImage'
+  s.dependency 'Masonry'
   s.dependency 'JXCategoryView'
   s.dependency 'DarkStarBaseKit'
   s.dependency 'DarkStarUIKit'

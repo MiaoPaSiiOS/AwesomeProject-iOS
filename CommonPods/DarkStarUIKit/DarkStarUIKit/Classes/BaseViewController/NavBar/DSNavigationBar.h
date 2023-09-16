@@ -5,7 +5,7 @@
 //  Created by zhuyuhui on 2022/6/16.
 //
 
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 #import "DSBarButtonItem.h"
 #import "DSBarButton.h"
 #import "DSBarItem.h"

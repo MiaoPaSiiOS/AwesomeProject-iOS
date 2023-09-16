@@ -8,7 +8,7 @@
 #import "DSListTabView.h"
 #import "Masonry.h"
 #import "MJRefresh.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @implementation DSListTabView
 
 - (instancetype)initWithFrame:(CGRect)frame {

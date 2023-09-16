@@ -1,0 +1,772 @@
+{
+    "PAGEWHITELIST": [
+        {
+            "DOMAIN": "iqiyi.com"
+        },
+        {
+            "DOMAIN": "unionpayintl.com"
+        },
+        {
+            "DOMAIN": "nifa.org.cn"
+        },
+        {
+            "DOMAIN": "yokosojapanpass.com"
+        },
+        {
+            "DOMAIN": "bestdo.com"
+        },
+        {
+            "DOMAIN": "toptastewin.com"
+        },
+        {
+            "DOMAIN": "unitedmoney.com"
+        },
+        {
+            "DOMAIN": "ismarthealth.com"
+        },
+        {
+            "DOMAIN": "meituan.com"
+        },
+        {
+            "DOMAIN": "vmall.com"
+        },
+        {
+            "DOMAIN": "zhihu.com"
+        },
+        {
+            "DOMAIN": "ringout.cn"
+        },
+        {
+            "DOMAIN": "lixiang.com"
+        },
+        {
+            "DOMAIN": "ecpic.com.cn"
+        },
+        {
+            "DOMAIN": "zhongan.com"
+        },
+        {
+            "DOMAIN": "chidaoni.com"
+        },
+        {
+            "DOMAIN": "chidaoni.net"
+        },
+        {
+            "DOMAIN": "bitautoimg.com"
+        },
+        {
+            "DOMAIN": "bitauto.com"
+        },
+        {
+            "DOMAIN": "pin-dao.cn"
+        },
+        {
+            "DOMAIN": "wjx.cn"
+        },
+        {
+            "DOMAIN": "rongyi.com"
+        },
+        {
+            "DOMAIN": "ofpay.com"
+        },
+        {
+            "DOMAIN": "ximalaya.com"
+        },
+        {
+            "DOMAIN": "yjt-health.com"
+        },
+        {
+            "DOMAIN": "tuhu.cn"
+        },
+        {
+            "DOMAIN": "ikang.com"
+        },
+        {
+            "DOMAIN": "qq.com"
+        },
+        {
+            "DOMAIN": "gtimg.com"
+        },
+        {
+            "DOMAIN": "vipbank.club"
+        },
+        {
+            "DOMAIN": "yiche.com"
+        },
+        {
+            "DOMAIN": "huawei.com"
+        },
+        {
+            "DOMAIN": "benlai.com"
+        },
+        {
+            "DOMAIN": "benlailife.com"
+        },
+        {
+            "DOMAIN": "fuwu.nhsa.gov.cn"
+        },
+        {
+            "DOMAIN": "ybdzpz.ybj.beijing.gov.cn"
+        },
+        {
+            "DOMAIN": "ybj.hainan.gov.cn"
+        },
+        {
+            "DOMAIN": "ylbzj.hebei.gov.cn"
+        },
+        {
+            "DOMAIN": "dzpzzt.ybj.shandong.gov.cn"
+        },
+        {
+            "DOMAIN": "dzpz.ybj.jiangxi.gov.cn"
+        },
+        {
+            "DOMAIN": "dzpz.hsa.gd.gov.cn"
+        },
+        {
+            "DOMAIN": "taobao.com"
+        },
+        {
+            "DOMAIN": "117.73.252.216:9000"
+        },
+        {
+            "DOMAIN": "mi.com"
+        },
+        {
+            "DOMAIN": "mi-img.com"
+        },
+        {
+            "DOMAIN": "xiaomi.com"
+        },
+        {
+            "DOMAIN": "mipay.com"
+        },
+        {
+            "DOMAIN": "mifile.com"
+        },
+        {
+            "DOMAIN": "yiyouliao.com"
+        },
+        {
+            "DOMAIN": "126.net"
+        },
+        {
+            "DOMAIN": "suning.com"
+        },
+        {
+            "DOMAIN": "pipi.cn"
+        },
+        {
+            "DOMAIN": "runworld.cn"
+        },
+        {
+            "DOMAIN": "maoyan.com"
+        },
+        {
+            "DOMAIN": "alipay.com"
+        },
+        {
+            "DOMAIN": "apr.mycoach.cn"
+        },
+        {
+            "DOMAIN": "yijiuplus.com"
+        },
+        {
+            "DOMAIN": "trvok.com"
+        },
+        {
+            "DOMAIN": "ddxq.mobi"
+        },
+        {
+            "DOMAIN": "pizzahut.com.cn"
+        },
+        {
+            "DOMAIN": "boc.cn"
+        },
+        {
+            "DOMAIN": "lecake.com"
+        },
+        {
+            "DOMAIN": "apple.com"
+        },
+        {
+            "DOMAIN": "weibo.com"
+        },
+        {
+            "DOMAIN": "chengzijianzhan.com"
+        },
+        {
+            "DOMAIN": "tkhealthcare.com"
+        },
+        {
+            "DOMAIN": "gmec.top"
+        },
+        {
+            "DOMAIN": "meituan.net"
+        },
+        {
+            "DOMAIN": "hihonor.com"
+        },
+        {
+            "DOMAIN": "aihuishou.com"
+        },
+        {
+            "DOMAIN": "amexpressnetwork.com"
+        },
+        {
+            "DOMAIN": "chehejia.com"
+        },
+        {
+            "DOMAIN": "diningcity.asia"
+        },
+        {
+            "DOMAIN": "ybdzpz.chutianyun.gov.cn"
+        },
+        {
+            "DOMAIN": "dzpz.ylbzj.cq.gov.cn"
+        },
+        {
+            "DOMAIN": "ybj.zjzwfw.gov.cn"
+        },
+        {
+            "DOMAIN": "dzpz.ylbz.nx.gov.cn"
+        },
+        {
+            "DOMAIN": "111.40.188.200:8002"
+        },
+        {
+            "DOMAIN": "jd.com"
+        },
+        {
+            "DOMAIN": "americanexpress.com.cn"
+        },
+        {
+            "DOMAIN": "cignacmb.com"
+        },
+        {
+            "DOMAIN": "sino-life.com"
+        },
+        {
+            "DOMAIN": "epub360.cn"
+        },
+        {
+            "DOMAIN": "bankcomm.com"
+        },
+        {
+            "DOMAIN": "m.zuzuche.com"
+        },
+        {
+            "DOMAIN": "files.hzins.com"
+        },
+        {
+            "DOMAIN": "m.elong.com"
+        },
+        {
+            "DOMAIN": "m.paixie.net"
+        },
+        {
+            "DOMAIN": "m.lashou.com"
+        },
+        {
+            "DOMAIN": "95516.com"
+        },
+        {
+            "DOMAIN": "unionpay.com"
+        },
+        {
+            "DOMAIN": "zztb.life.cntaiping.com"
+        },
+        {
+            "DOMAIN": "pay.95559.com.cn"
+        },
+        {
+            "DOMAIN": "unionpaysecure.com"
+        },
+        {
+            "DOMAIN": "wx.bocommlife.com"
+        },
+        {
+            "DOMAIN": "cps.hzins.com"
+        },
+        {
+            "DOMAIN": "jinrong.suning.com"
+        },
+        {
+            "DOMAIN": "chanpin.metlife.com.cn"
+        },
+        {
+            "DOMAIN": "picc.ebaocloud.com.cn"
+        },
+        {
+            "DOMAIN": "wap.95559.com.cn"
+        },
+        {
+            "DOMAIN": "bcfundapp.finchina.com"
+        },
+        {
+            "DOMAIN": "95559.com.cn"
+        },
+        {
+            "DOMAIN": "files.huizecdn.com"
+        },
+        {
+            "DOMAIN": "daijia.kuaidadi.com"
+        },
+        {
+            "DOMAIN": "page.kuaidadi.com"
+        },
+        {
+            "DOMAIN": "dj.kuaidadi.com"
+        },
+        {
+            "DOMAIN": "assets.kuaidadi.com"
+        },
+        {
+            "DOMAIN": "img.kuaidadi.com"
+        },
+        {
+            "DOMAIN": "at.alicdn.com"
+        },
+        {
+            "DOMAIN": "omgup.xiaojukeji.com"
+        },
+        {
+            "DOMAIN": "tms.xiaojukeji.com"
+        },
+        {
+            "DOMAIN": "common.diditaxi.com.cn"
+        },
+        {
+            "DOMAIN": "webapp.didistatic.com"
+        },
+        {
+            "DOMAIN": "webapi.amap.com"
+        },
+        {
+            "DOMAIN": "api.map.baidu.com"
+        },
+        {
+            "DOMAIN": "bankcomm.dragonpass.com.cn"
+        },
+        {
+            "DOMAIN": "fbb.aviva-cofco.com.cn"
+        },
+        {
+            "DOMAIN": "pay.aviva-cofco.com.cn"
+        },
+        {
+            "DOMAIN": "m.creatby.com"
+        },
+        {
+            "DOMAIN": "bcm.idoupiao.com"
+        },
+        {
+            "DOMAIN": "bcmadmin.idoupiao.com"
+        },
+        {
+            "DOMAIN": "spdbimg.idoupiao.com"
+        },
+        {
+            "DOMAIN": "sandbox.idoupiao.com"
+        },
+        {
+            "DOMAIN": "abnormal.oss-cn-shanghai.aliyuncs.com"
+        },
+        {
+            "DOMAIN": "img.jinbaozheng.com"
+        },
+        {
+            "DOMAIN": "bcmuat.idoupiao.com"
+        },
+        {
+            "DOMAIN": "bcmfilm.idoupiao.com"
+        },
+        {
+            "DOMAIN": "bcmimg.idoupiao.com"
+        },
+        {
+            "DOMAIN": "bcmbox.idoupiao.com"
+        },
+        {
+            "DOMAIN": "ojjqzz83h.qnssl.com"
+        },
+        {
+            "DOMAIN": "ojjoy0s9w.qnssl.com"
+        },
+        {
+            "DOMAIN": "ojljqad2c.qnssl.com"
+        },
+        {
+            "DOMAIN": "c.19ego.cn"
+        },
+        {
+            "DOMAIN": "mbankcomm.wbiao.cn"
+        },
+        {
+            "DOMAIN": "m.bankcomm.wbiao.cn"
+        },
+        {
+            "DOMAIN": "m.wbiao.cn"
+        },
+        {
+            "DOMAIN": "api.map.baidu.com"
+        },
+        {
+            "DOMAIN": "wbiao.cn"
+        },
+        {
+            "DOMAIN": "h5kh.htsec.com"
+        },
+        {
+            "DOMAIN": "cps.qixin18.com"
+        },
+        {
+            "DOMAIN": "api.qixin18.com"
+        },
+        {
+            "DOMAIN": "elemecdn.com"
+        },
+        {
+            "DOMAIN": "ele.me"
+        },
+        {
+            "DOMAIN": "weixin.answern.com"
+        },
+        {
+            "DOMAIN": "htsec.com"
+        },
+        {
+            "DOMAIN": "www.wine9.com"
+        },
+        {
+            "DOMAIN": "www.wjx.cn"
+        },
+        {
+            "DOMAIN": "pro.wenjuan"
+        },
+        {
+            "DOMAIN": "msc.jd.com"
+        },
+        {
+            "DOMAIN": "spendinfo2017.e75.cn"
+        },
+        {
+            "DOMAIN": "womai.com"
+        },
+        {
+            "DOMAIN": "a.huizuche.com"
+        },
+        {
+            "DOMAIN": "bankcomm.chinaeast.cloudapp.chinacloudapi.cn"
+        },
+        {
+            "DOMAIN": "diditaxi.com.cn"
+        },
+        {
+            "DOMAIN": "v.ubox.cn"
+        },
+        {
+            "DOMAIN": "didistatic.com"
+        },
+        {
+            "DOMAIN": "xiaojukeji.com"
+        },
+        {
+            "DOMAIN": "didichuxing.com"
+        },
+        {
+            "DOMAIN": "kuaidadi.com"
+        },
+        {
+            "DOMAIN": "amap.com"
+        },
+        {
+            "DOMAIN": "libs.baidu.com"
+        },
+        {
+            "DOMAIN": "maidanba.uboxol.com"
+        },
+        {
+            "DOMAIN": "www.wjx.cn"
+        },
+        {
+            "DOMAIN": "gift.colourfulchina.com"
+        },
+        {
+            "DOMAIN": "rewards.yourright.com.cn"
+        },
+        {
+            "DOMAIN": "dangaoss.com"
+        },
+        {
+            "DOMAIN": "bi-collector.oneapm.com"
+        },
+        {
+            "DOMAIN": "baidu.com"
+        },
+        {
+            "DOMAIN": "tjs.sjs.sinajs.cn"
+        },
+        {
+            "DOMAIN": "open.cootekservice.com"
+        },
+        {
+            "DOMAIN": "www.sobot.com"
+        },
+        {
+            "DOMAIN": "visa.uncle-ad.com"
+        },
+        {
+            "DOMAIN": "maoffers.cn"
+        },
+        {
+            "DOMAIN": "www.uncle-ad.com"
+        },
+        {
+            "DOMAIN": "maoffers.cn"
+        },
+        {
+            "DOMAIN": "unionpaycards.nn.cagoe.com"
+        },
+        {
+            "DOMAIN": "www.allianz360.com"
+        },
+        {
+            "DOMAIN": "ntalker.com"
+        },
+        {
+            "DOMAIN": "flowerplus.cn"
+        },
+        {
+            "DOMAIN": "alicdn.com"
+        },
+        {
+            "DOMAIN": "baidu.com"
+        },
+        {
+            "DOMAIN": "s3.pstatp.com"
+        },
+        {
+            "DOMAIN": "thirdwx.qlogo.cn"
+        },
+        {
+            "DOMAIN": "aliyuncs.com"
+        },
+        {
+            "DOMAIN": "zuzuche.com"
+        },
+        {
+            "DOMAIN": "veinteractive.com"
+        },
+        {
+            "DOMAIN": "baifendian.com"
+        },
+        {
+            "DOMAIN": "live800.com"
+        },
+        {
+            "DOMAIN": "mediav.com"
+        },
+        {
+            "DOMAIN": "scarabresearch.com"
+        },
+        {
+            "DOMAIN": "gridsumdissector.com"
+        },
+        {
+            "DOMAIN": "ggoogle-analytics.com"
+        },
+        {
+            "DOMAIN": "googleadservices.com"
+        },
+        {
+            "DOMAIN": "googletagmanager.com"
+        },
+        {
+            "DOMAIN": "webdissector.com"
+        },
+        {
+            "DOMAIN": "google.com"
+        },
+        {
+            "DOMAIN": "doubleclick.net"
+        },
+        {
+            "DOMAIN": "hotjar.com"
+        },
+        {
+            "DOMAIN": "openapi.alipay.com"
+        },
+        {
+            "DOMAIN": "dentsuaegsnetwork.trioisobardev.com"
+        },
+        {
+            "DOMAIN": "dangaoss.com.cn"
+        },
+        {
+            "DOMAIN": "dragonpass.com.cn"
+        },
+        {
+            "DOMAIN": "credit.me"
+        },
+        {
+            "DOMAIN": "pay.page"
+        },
+        {
+            "DOMAIN": "npay.meituan.com"
+        },
+        {
+            "DOMAIN": "duiba.com.cn"
+        },
+        {
+            "DOMAIN": "unionpaytravel.cagoe.com"
+        },
+        {
+            "DOMAIN": "m.tuniu.com"
+        },
+        {
+            "DOMAIN": "dataroaming.xunliandata.com"
+        },
+        {
+            "DOMAIN": "cuxiao.m.suning.com"
+        },
+        {
+            "DOMAIN": "bcm.toptastewin.com"
+        },
+        {
+            "DOMAIN": "mastercard.com"
+        },
+        {
+            "DOMAIN": "visa.com.cn"
+        },
+        {
+            "DOMAIN": "maoffer.cn"
+        },
+        {
+            "DOMAIN": "cagoe.com"
+        },
+        {
+            "DOMAIN": "visa.uncle-ad.com"
+        },
+        {
+            "DOMAIN": "xunliandata.com"
+        },
+        {
+            "DOMAIN": "ebay.com"
+        },
+        {
+            "DOMAIN": "www.mcomp.com.cn"
+        },
+        {
+            "DOMAIN": "open.ximalaya.com"
+        },
+        {
+            "DOMAIN": "huijimall.com"
+        },
+        {
+            "DOMAIN": "2018annualaccount.comeyes.com"
+        },
+        {
+            "DOMAIN": "manulife-sinochem.com"
+        },
+        {
+            "DOMAIN": "aegonthtf.com"
+        },
+        {
+            "DOMAIN": "taikanglife.com"
+        },
+        {
+            "DOMAIN": "yongcheng.com"
+        },
+        {
+            "DOMAIN": "bocommlife.com"
+        },
+        {
+            "DOMAIN": "metlife.com.cn"
+        },
+        {
+            "DOMAIN": "ebaocloud.com.cn"
+        },
+        {
+            "DOMAIN": "cntaiping.com"
+        },
+        {
+            "DOMAIN": "hzins.com"
+        },
+        {
+            "DOMAIN": "huizecdn.com"
+        },
+        {
+            "DOMAIN": "qixin18.com"
+        },
+        {
+            "DOMAIN": "aviva-cofco.com.cn"
+        },
+        {
+            "DOMAIN": "allianz360.com"
+        }
+    ],
+    "STATUS": "1",
+    "useLocalCache": "0",
+    "signature": "8f7ac226f28365d4b8837d0053735bea",
+    "PAGEMERCHANTLIST": [
+        {
+            "DOMAIN": "imeituan:\/\/"
+        },
+        {
+            "DOMAIN": "shaismy:\/\/"
+        },
+        {
+            "DOMAIN": "xmyoudo.com"
+        },
+        {
+            "DOMAIN": "androidamap:\/\/"
+        },
+        {
+            "DOMAIN": "baidumap:\/\/"
+        },
+        {
+            "DOMAIN": "iosamap:\/\/"
+        },
+        {
+            "DOMAIN": "bocom:\/\/"
+        },
+        {
+            "DOMAIN": "maps:\/\/"
+        },
+        {
+            "DOMAIN": "uppaywallet:\/\/"
+        },
+        {
+            "DOMAIN": "upwrp:\/\/"
+        },
+        {
+            "DOMAIN": "weixin:\/\/"
+        },
+        {
+            "DOMAIN": "wine9:\/\/"
+        },
+        {
+            "DOMAIN": "benlai:\/\/"
+        },
+        {
+            "DOMAIN": "alipays:\/\/"
+        },
+        {
+            "DOMAIN": "ehi:\/\/"
+        }
+    ],
+    "LMF": "1",
+    "MSG": "交易成功!",
+    "PAGESPECIALLIST": [
+        {
+            "DOMAIN": "about:blank"
+        },
+        {
+            "DOMAIN": "emp:\/\/"
+        },
+        {
+            "DOMAIN": "tel:"
+        }
+    ]
+}

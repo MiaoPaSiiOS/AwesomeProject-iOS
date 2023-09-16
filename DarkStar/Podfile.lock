@@ -42,6 +42,7 @@ PODS:
     - DarkStarUIComponents/NrButton
     - DarkStarUIKit
     - JXCategoryView
+    - Masonry
     - SDWebImage
     - YYCache
     - YYModel
@@ -143,9 +144,19 @@ PODS:
     - Masonry
   - DarkStarUIKit (0.1.0):
     - DarkStarBaseKit
+    - FDFullscreenPopGesture
     - Masonry
     - MJRefresh
   - DarkStarUpdateSDK (0.1.0)
+  - DarkStarWebKit (0.1.0):
+    - DarkStarBaseKit
+    - DarkStarNetWorkKit
+    - DarkStarQMUI
+    - DarkStarUIKit
+    - Masonry
+    - MBProgressHUD
+    - SDWebImage
+  - FDFullscreenPopGesture (1.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -197,6 +208,7 @@ DEPENDENCIES:
   - DarkStarUIComponents (from `../CommonPods/DarkStarUIComponents/`)
   - DarkStarUIKit (from `../CommonPods/DarkStarUIKit/`)
   - DarkStarUpdateSDK (from `../CommonPods/DarkStarUpdateSDK/`)
+  - DarkStarWebKit (from `../CommonPods/DarkStarWebKit/`)
   - FMDB
   - JXCategoryView
   - Masonry
@@ -211,6 +223,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - CTMediator
+    - FDFullscreenPopGesture
     - FMDB
     - iCarousel
     - JXCategoryView
@@ -267,6 +280,8 @@ EXTERNAL SOURCES:
     :path: "../CommonPods/DarkStarUIKit/"
   DarkStarUpdateSDK:
     :path: "../CommonPods/DarkStarUpdateSDK/"
+  DarkStarWebKit:
+    :path: "../CommonPods/DarkStarWebKit/"
   NrLottieBridge:
     :path: "../CommonPods/NrLottieBridge/"
 
@@ -280,7 +295,7 @@ SPEC CHECKSUMS:
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
   DarkStarDataStoreKit: fdd86c2480e05907dfe78749ecf588d0cefd54fe
-  DarkStarFeedKit: c8f949a8fbbba7dcff55395720ba333b9b23eda1
+  DarkStarFeedKit: 40b58919064c1ca54754af559c2b236789f2f467
   DarkStarGeneralTools: f5eddfdaade3e40ee58c17d8719a7d2da555a94a
   DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
   DarkStarKeepAliveManager: 869d5308de178737b1a8bb2774896ea63daf9e43
@@ -289,8 +304,10 @@ SPEC CHECKSUMS:
   DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
   DarkStarUIComponents: 541808b7c4b8b5530de11ed00ae9ff6e5390b9b3
-  DarkStarUIKit: dc389c7ca4187ed5945653ceb35f184b3bfc43b5
+  DarkStarUIKit: dd6bc8655228bdc785c65eb92a4b7b7082249030
   DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
+  DarkStarWebKit: 04fa5a7474adccc611afa54887a4b2f0f3c86d34
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
@@ -311,6 +328,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 78b428d26a1a6f6ca6f90f62d6c60988cde66e52
+PODFILE CHECKSUM: 8fc899567d8691427e55f25756349a65a1a14ce0
 
 COCOAPODS: 1.11.3

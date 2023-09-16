@@ -8,7 +8,7 @@
 #import "DSListCollectionView.h"
 #import "Masonry.h"
 #import "MJRefresh.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @implementation DSListCollectionView
 
 - (instancetype)initWithFrame:(CGRect)frame {

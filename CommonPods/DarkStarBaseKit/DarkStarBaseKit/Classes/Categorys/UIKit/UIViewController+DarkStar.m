@@ -91,7 +91,7 @@
         [self presentViewController:alertController animated:YES completion:nil];
     });
 }
-- (void)ds_showAlertControllerWithTitle:(nullable id)title message:(nullable id)message buttonTitles:(NSArray *)btnTitleArr alertClick:(DarkStarAlertClickIndexBlock)clickBlock
+- (void)ds_showAlertControllerWithTitle:(nullable id)title message:(nullable id)message buttonTitles:(NSArray *)btnTitleArr alertClick:(nullable DarkStarAlertClickIndexBlock)clickBlock
 {
     [self ds_showAlertControllerWithTitle:title message:message buttonTitles:btnTitleArr buttonColors:nil alertClick:clickBlock];
 }

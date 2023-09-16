@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarWebKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarWebKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarWebKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarWebKit: 2bd0a630fc7219f4749dc15613dfe4e03f235f18
+
+PODFILE CHECKSUM: 2ca7e91f0c5c74c7b369fbe3bf6384490f90f083
+
+COCOAPODS: 1.11.3

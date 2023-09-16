@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSInteger, AULoadErrorType) {
+typedef NS_ENUM(NSInteger, AresJsbWebErrorViewType) {
     AULoadNoData = 0,               //无数据
     AULoadServerError = 1,          //服务器错误
     AULoadNetworkNotReachable = 2,  //无网络连接
@@ -21,7 +21,7 @@ typedef void(^RefreshBlock)(AULoadErrorView *loadErrorView);
 
 @property(nonatomic, strong) RefreshBlock refreshHandle;
 
-@property(nonatomic, assign) AULoadErrorType type;
+@property(nonatomic, assign) AresJsbWebErrorViewType type;
 
 //设置视图内部内容偏移
 - (void)setMOffset:(CGFloat)offset;

@@ -6,7 +6,7 @@
 //
 
 #import "FeedappChildQQViewScreen.h"
-
+#import "Masonry.h"
 @interface FeedappChildQQViewScreen ()
 
 @end
@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.appBar.hidden = YES;
-    [self.nrView mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.dsView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.mas_offset(0);
     }];
     // Do any additional setup after loading the view.

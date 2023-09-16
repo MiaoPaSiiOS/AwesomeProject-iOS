@@ -8,7 +8,7 @@
 #import "DSCollectionViewController.h"
 #import "Masonry.h"
 #import "MJRefresh.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @interface DSCollectionViewController ()
 
 @end
@@ -29,7 +29,7 @@
 
 - (void)createTableView {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    [self createTableViewWithFrame:self.nrView.bounds layout:layout];
+    [self createTableViewWithFrame:self.dsView.bounds layout:layout];
 }
 
 - (void)createTableViewWithFrame:(CGRect)frame layout:(UICollectionViewLayout *)layout {
@@ -42,7 +42,7 @@
     self.recylerView = [self preferredRecylerView:viewClass withFrame:frame collectionViewLayout:layout];
     [self setEnableFooterRefresh:self.enableFooterRefresh];
     [self setEnableHeaderRefresh:self.enableHeaderRefresh];
-    [self.nrView addSubview:self.recylerView];
+    [self.dsView addSubview:self.recylerView];
     [self.recylerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.mas_offset(0);
     }];

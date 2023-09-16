@@ -8,7 +8,7 @@
 #import "DSTableViewController.h"
 #import "Masonry.h"
 #import "MJRefresh.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @interface DSTableViewController ()
 
 @end
@@ -29,7 +29,7 @@
 }
 
 - (void)createTableViewWithStyle:(UITableViewStyle)style {
-    [self createTableViewWithFrame:self.nrView.bounds style:style];
+    [self createTableViewWithFrame:self.dsView.bounds style:style];
 }
 
 - (void)createTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style {
@@ -42,7 +42,7 @@
     self.recylerView = [self preferredRecylerView:viewClass withFrame:frame style:style];
     [self setEnableFooterRefresh:self.enableFooterRefresh];
     [self setEnableHeaderRefresh:self.enableHeaderRefresh];
-    [self.nrView addSubview:self.recylerView];
+    [self.dsView addSubview:self.recylerView];
     [self.recylerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.bottom.mas_offset(0);
     }];

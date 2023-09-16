@@ -36,14 +36,14 @@
 #import "UIView+DarkStarGlowView.h"
 #import "UIView+DarkStarShake.h"
 #import "UIViewController+DarkStar.h"
-#import "DarkStarBaseKit.h"
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 #import "DarkStarBaseKitCommonDefines.h"
 #import "DarkStarBaseKitDefines.h"
 #import "DarkStarDataType.h"
-#import "DarkStarUIHelper.h"
 #import "DSDataView.h"
 #import "DSItem.h"
 #import "DSNavItem.h"
+#import "DSDeviceInfo.h"
 
 FOUNDATION_EXPORT double DarkStarBaseKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DarkStarBaseKitVersionString[];

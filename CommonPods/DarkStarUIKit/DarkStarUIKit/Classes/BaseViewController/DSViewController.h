@@ -6,36 +6,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
-#import "DarkStarBaseKit.h"
 #import "DSNavigationBar.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DSViewController : UIViewController
-/**
- *    @brief    自定义导航条
- */
-@property(nonatomic, strong) DSNavigationBar *appBar;
-/**
- *    @brief    是否隐藏自定义导航条
- */
-@property(nonatomic, assign) BOOL hideNavBar;
-/**
- *    @brief    是否显示返回按钮
- */
-@property(nonatomic, assign) BOOL navShowBack;
-/**
- *    @brief    标题栏的logo图片，如果有标题的话则此图片隐藏
- */
-@property (nonatomic, strong) UIImage *navLogoImg;
-/**
- *    @brief    标题元素的属性(字体大小，字体颜色，logo图片偏移量)
- */
-@property (nonatomic, strong) DSNavItem *topItem;
-/**
- *    @brief    内容视图【层级在自定义导航条下边】
- */
-@property (nonatomic, strong) UIView *nrView;
+/// 自定义导航条
+@property(nonatomic, strong, readonly) DSNavigationBar *appBar;
+
+/// 是否显示返回按钮
+@property(nonatomic, assign) BOOL dsBackBtnHidden;
+/// 是否可以侧滑返回
+@property(nonatomic, assign) BOOL dsInteractivePopDisabled;
+/// 标题元素的属性(字体大小，字体颜色，logo图片偏移量)
+@property(nonatomic, strong) DSNavItem *topItem;
+/// 内容视图【层级在自定义导航条下边】
+@property(nonatomic, strong) UIView *dsView;
 /**
  *  init时调用，初始化一些基础数据，属性，可重载
  */

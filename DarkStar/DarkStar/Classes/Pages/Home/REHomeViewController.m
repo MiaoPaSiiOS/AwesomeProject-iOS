@@ -26,7 +26,7 @@
         DS_BUTTON_WITH_ACTION(@"openWebOfBaidu", openWebOfBaidu)
         DS_BUTTON_WITH_ACTION(@"openWebOfLocalHtml", openWebOfLocalHtml)
         DS_BUTTON_WITH_ACTION(@"openWebOfLocalHtml_SRSJSTest2", openWebOfLocalHtml_SRSJSTest2)
-    }, self.nrView);
+    }, self.dsView);
 
 }
 - (void)goToFeed {
