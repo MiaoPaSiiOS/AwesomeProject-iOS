@@ -22,6 +22,16 @@
     return self.view;
 }
 
+- (void)listDidAppear {
+    
+    // 获取网络数据
+    [self getInfo];
+
+    // 获取缓存
+    [self getCacheData];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"文件列表";
@@ -40,16 +50,6 @@
         make.bottom.left.right.mas_offset(0);
         make.top.mas_offset(0);
     }];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    // 获取网络数据
-    [self getInfo];
-
-    // 获取缓存
-    [self getCacheData];
 }
 
 - (void)getInfo {

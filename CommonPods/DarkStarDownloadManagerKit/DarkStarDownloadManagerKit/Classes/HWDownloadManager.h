@@ -29,3 +29,12 @@
 - (void)deleteTaskAndCache:(HWDownloadModel *)model;
 
 @end
+
+/*
+ 
+ // 应用处于后台，所有下载任务完成调用
+ - (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
+     [HWDownloadManager shareManager].backgroundSessionCompletionHandler = completionHandler;
+ }
+
+ */

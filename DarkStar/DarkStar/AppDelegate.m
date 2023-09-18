@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <DoraemonKit/DoraemonKit.h>
 #import "REUITabBarController.h"
 #import "RELoginViewController.h"
 #import "REUINavigationController.h"
@@ -33,6 +34,10 @@
     /// 初始化UI后配置
     [self _configureApplication:application initialParamsAfterInitUI:launchOptions];
 
+    
+#ifdef DEBUG
+    [[DoraemonManager shareInstance] install];
+#endif
     return YES;
 }
 

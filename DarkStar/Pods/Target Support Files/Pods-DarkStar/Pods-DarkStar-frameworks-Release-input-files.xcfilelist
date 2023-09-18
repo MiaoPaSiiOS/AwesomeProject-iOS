@@ -23,8 +23,10 @@ ${BUILT_PRODUCTS_DIR}/DarkStarUIComponents/DarkStarUIComponents.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarUIKit/DarkStarUIKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarUpdateSDK/DarkStarUpdateSDK.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarWebKit/DarkStarWebKit.framework
+${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework
 ${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework
 ${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework

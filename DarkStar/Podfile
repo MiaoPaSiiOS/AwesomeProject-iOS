@@ -45,4 +45,5 @@ target 'DarkStar' do
   pod 'YYCache'
   pod 'JXCategoryView'
   pod 'CTMediator'
+  pod 'DoraemonKit'
 end

@@ -176,10 +176,24 @@ PODS:
     - MBProgressHUD
     - MJExtension
     - SDWebImage
+  - DoraemonKit (3.1.3):
+    - DoraemonKit/Core (= 3.1.3)
+  - DoraemonKit/Core (3.1.3):
+    - FMDB
+    - GCDWebServer
+    - GCDWebServer/WebDAV
+    - GCDWebServer/WebUploader
   - FDFullscreenPopGesture (1.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - GCDWebServer/WebDAV (3.5.4):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.5.4):
+    - GCDWebServer/Core
   - iCarousel (1.8.3)
   - JXCategoryView (1.6.1)
   - lottie-ios (3.2.3)
@@ -232,6 +246,7 @@ DEPENDENCIES:
   - DarkStarUIKit (from `../CommonPods/DarkStarUIKit/`)
   - DarkStarUpdateSDK (from `../CommonPods/DarkStarUpdateSDK/`)
   - DarkStarWebKit (from `../CommonPods/DarkStarWebKit/`)
+  - DoraemonKit
   - FMDB
   - JXCategoryView
   - Masonry
@@ -246,8 +261,10 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - CTMediator
+    - DoraemonKit
     - FDFullscreenPopGesture
     - FMDB
+    - GCDWebServer
     - iCarousel
     - JXCategoryView
     - lottie-ios
@@ -339,8 +356,10 @@ SPEC CHECKSUMS:
   DarkStarUIKit: 1c1ae9ff1f9dcd9cbb201c59d3e5dd23da5ab674
   DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
   DarkStarWebKit: e430aeac413c910b233f991ef5200370a7cda691
+  DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
@@ -360,6 +379,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: cffb88bbd63b3587bb0477731498e2280fc4776b
+PODFILE CHECKSUM: de108683c0af287b5b6a43fe648df34a6a9fc368
 
 COCOAPODS: 1.11.3

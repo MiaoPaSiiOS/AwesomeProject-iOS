@@ -14,6 +14,10 @@
 @end
 
 @implementation DisplayHWCacheViewScreen
+- (void)listDidAppear {
+    // 获取缓存
+    [self getCacheData];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,11 +28,6 @@
     [self addNotification];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    // 获取缓存
-    [self getCacheData];
-}
 
 - (void)creatControl
 {

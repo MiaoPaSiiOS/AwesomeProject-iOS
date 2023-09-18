@@ -13,13 +13,16 @@
 
 @implementation DisplayHWDownloadingViewScreen
 
+- (void)listDidAppear {
+    // 获取缓存
+    [self getCacheData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 添加通知
     [self addNotification];
-    
-    // 获取缓存
-    [self getCacheData];
+
 }
 
 - (void)addNotification
@@ -33,7 +36,7 @@
 - (void)getCacheData
 {
     // 获取所有未下载完成的数据
-    self.dataSource = [[[HWDataBaseManager shareManager] getAllUnDownloadedData] mutableCopy];
+    self.dataSource = [[[HWDataBaseManager shareManager] getAllDownloadingData] mutableCopy];
     [self reloadTableView];
 }
 
