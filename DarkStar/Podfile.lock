@@ -24,6 +24,13 @@ PODS:
   - DarkStarAudioRecorderKit (0.1.0):
     - DarkStarAuthorityKit
   - DarkStarAuthorityKit (0.1.0)
+  - DarkStarAwesomeKit (0.1.0):
+    - CTMediator
+    - DarkStarBaseKit
+    - DarkStarUIComponents/NrButton
+    - DarkStarUIKit
+    - Masonry
+    - MJExtension
   - DarkStarBaseKit (0.1.0)
   - DarkStarConfiguration (0.1.0):
     - FMDB
@@ -198,6 +205,7 @@ DEPENDENCIES:
   - DarkStarAccountKit (from `../CommonPods/DarkStarAccountKit/`)
   - DarkStarAudioRecorderKit (from `../CommonPods/DarkStarAudioRecorderKit/`)
   - DarkStarAuthorityKit (from `../CommonPods/DarkStarAuthorityKit/`)
+  - DarkStarAwesomeKit (from `../CommonPods/DarkStarAwesomeKit/`)
   - DarkStarBaseKit (from `../CommonPods/DarkStarBaseKit/`)
   - DarkStarConfiguration (from `../CommonPods/DarkStarConfiguration/`)
   - DarkStarCrypto (from `../CommonPods/DarkStarCrypto/`)
@@ -256,6 +264,8 @@ EXTERNAL SOURCES:
     :path: "../CommonPods/DarkStarAudioRecorderKit/"
   DarkStarAuthorityKit:
     :path: "../CommonPods/DarkStarAuthorityKit/"
+  DarkStarAwesomeKit:
+    :path: "../CommonPods/DarkStarAwesomeKit/"
   DarkStarBaseKit:
     :path: "../CommonPods/DarkStarBaseKit/"
   DarkStarConfiguration:
@@ -299,6 +309,7 @@ SPEC CHECKSUMS:
   DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
+  DarkStarAwesomeKit: 81d0de3dc579db554f004513b173de534f2883e3
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
@@ -337,6 +348,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: c3f74495f69756592f7a14e70c2746ebbdd1ec9a
+PODFILE CHECKSUM: f40f399c6acd008b62b75e3526f92dba0b12677b
 
 COCOAPODS: 1.11.3

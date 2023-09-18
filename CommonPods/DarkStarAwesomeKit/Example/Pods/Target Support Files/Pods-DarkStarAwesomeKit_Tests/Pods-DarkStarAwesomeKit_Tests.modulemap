@@ -1,0 +1,6 @@
+framework module Pods_DarkStarAwesomeKit_Tests {
+  umbrella header "Pods-DarkStarAwesomeKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

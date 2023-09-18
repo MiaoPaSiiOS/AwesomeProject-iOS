@@ -1,0 +1,1 @@
+../../../NrBaseCoreKit/NrBaseCoreKit/Classes/Categorys/UIKit/UIView+NrShake.h

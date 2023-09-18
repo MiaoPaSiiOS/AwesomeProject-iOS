@@ -1,0 +1,6 @@
+framework module NrUIComponents {
+  umbrella header "NrUIComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

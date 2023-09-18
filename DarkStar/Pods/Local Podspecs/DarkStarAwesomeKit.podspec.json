@@ -1,0 +1,50 @@
+{
+  "name": "DarkStarAwesomeKit",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarAwesomeKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarAwesomeKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarAwesomeKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarAwesomeKit/Classes/**/*",
+  "resource_bundles": {
+    "DarkStarAwesomeKit": [
+      "DarkStarAwesomeKit/Assets/*"
+    ],
+    "DarkStarAwesomeKit-Ext": [
+      "DarkStarAwesomeKit/AssetsExt/*"
+    ]
+  },
+  "dependencies": {
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarUIKit": [
+
+    ],
+    "DarkStarUIComponents/NrButton": [
+
+    ],
+    "CTMediator": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "MJExtension": [
+
+    ]
+  }
+}

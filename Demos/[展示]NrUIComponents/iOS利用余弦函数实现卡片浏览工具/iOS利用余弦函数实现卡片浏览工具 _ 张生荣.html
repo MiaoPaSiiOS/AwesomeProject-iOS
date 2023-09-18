@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS利用余弦函数实现卡片浏览工具 / 张生荣</title>
+
+    <meta name="description" content="iOS利用余弦函数实现卡片浏览工具 本文实例为大家分享了iOS利用余弦函数实现卡片浏览工具的具体代码,供大家参考,具体内容如下 一.实现效果 通过拖拽屏幕实现卡片移动,左右两侧的卡片随着拖动变小,中间的变大.效果如下: 二.原理说明 1.上面的动画效果是根据余弦函数的曲线特性实现的,先看一下函数曲线y=cos(x),在区间-π/2 到 π/2的范围内,y的值在x的0的是后是最大的,左右则越来越小. 2.可以将被滚动的卡片的高度按照0.0~1.0的比例放大缩小,效果如下: 3.放置到手机屏幕上的效果如下: 三.代码 封装每个卡片为C">
+  
+
+  <!-- <link rel="shortcut icon" href="/favicon.png"> -->  
+  <link href="//pic.ikafan.com/staticx/zhangshengrong/1/assets/css/bootstrap.css?1" rel="stylesheet">
+  <link href="//pic.ikafan.com/staticx/zhangshengrong/1/assets/css/style.css?1" rel="stylesheet">
+  <script src="//pic.ikafan.com/staticx/zhangshengrong/1/assets/js/run_prettify.js?ac"></script>
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed/" />
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e15b27147cbbb3c88d119658babaf133";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+ 
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header id="header" class="container">
+    
+      <div id="logo">
+        <a href="/"><img src="//pic.ikafan.com/staticx/zhangshengrong/1/assets/logo.png" title="" /></a>
+      </div><!-- /logo -->
+
+      <nav id="menu" class="navbar navbar-inverse hidden-xs">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><i class="glyphicon glyphicon-home"></i></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/category/javascript%e6%8a%80%e5%b7%a7/">javascript</a></li>
+            <li><a href="/category/java/">java</a></li>
+            <li><a href="/category/python/">python</a></li>
+            <li><a href="/category/android/">Android</a></li>
+            <li><a href="/category/ios/">IOS</a></li>
+            <li><a href="/category/php%e6%8a%80%e5%b7%a7/">php</a></li>
+          </ul>
+        </div>
+        <form method="post" id="searchform" action="/search/">
+             <input type="text" value="" name="keyword" id="keyword" title="search" /><input type="submit" value="Search" id="searchsubmit" />
+        </form>
+      </nav><!-- /nav -->
+
+    </header>
+    <!-- /header -->
+
+
+    
+    <div class="container">
+      <div class="row">    
+<div id="main" class="col-md-12">
+
+<h1 class="mtitle">iOS利用余弦函数实现卡片浏览工具</h1>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9051032955849697"
+     data-ad-slot="3737842878"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    	<section>
+		<article class="clearfix">
+		<p>本文实例为大家分享了iOS利用余弦函数实现卡片浏览工具的具体代码，供大家参考，具体内容如下</p>
+<p><strong>一、实现效果</strong></p>
+<p>通过拖拽屏幕实现卡片移动，左右两侧的卡片随着拖动变小，中间的变大。效果如下：</p>
+<p><img src="https://zsrimg.ikafan.com/file_images/article/202004/202004211424201.gif" /><img src="https://zsrimg.ikafan.com/file_images/article/202004/202004211424202.gif" /></p>
+<p><strong>二、原理说明</strong></p>
+<p>1、上面的动画效果是根据余弦函数的曲线特性实现的,先看一下函数曲线y=cos(x),在区间-π/2 到&nbsp;π/2的范围内，y的值在x的0的是后是最大的，左右则越来越小。</p>
+<p><img src="https://zsrimg.ikafan.com/file_images/article/202004/202004211424203.png" /></p>
+<p>2、可以将被滚动的卡片的高度按照0.0~1.0的比例放大缩小,效果如下:</p>
+<p><img src="https://zsrimg.ikafan.com/file_images/article/202004/202004211424204.png" /></p>
+<p>3、放置到手机屏幕上的效果如下:</p>
+<p><img src="https://zsrimg.ikafan.com/file_images/article/202004/202004211424205.png" /></p>
+<p><strong>三、代码</strong></p>
+<p>封装每个卡片为Card.h</p>
+<p>卡片显示在CardSwitchView.h上</p>
+<p>代码思路是假设控件的中心为原点，中轴线为x轴和y轴，当卡片的中心为距离y轴越近时，卡片长度缩短的比例越趋近1.0，当卡片中线距离y轴越远时，卡片长度缩短的比例越趋近0；</p>
+<p>如下图所示假设方块从位置1到位置2向左移动了长度a（写代码时需要做角度和长度的转换）,那么在曲线上b的值为cos(a),假设b=0.8,那么就在位置2的时候把高度缩短为原来的0.8倍，以此类推越趋近于控件中轴线的位置卡片越长。（这里角度和长度的转换倍数依情况而定）</p>
+<pre class="prettyprint linenums">
+//
+// CardSwitchView.m
+// CardSwitchDemo
+//
+// Created by Apple on 2016/11/9.
+// Copyright &copy; 2016年 Apple. All rights reserved.
+//
+
+#import "CardSwitchView.h"
+#import "Card.h"
+
+//播放器界面的的宽度所占的比例
+static float viewScale = 0.70f;
+
+@interface CardSwitchView ()&lt;UIScrollViewDelegate&gt;
+{
+ //用于切换的ScrollView
+ UIScrollView *_scrollView;
+ //用于保存各个视图
+ NSMutableArray *_cards;
+ //滚动之前的位置
+ CGFloat _startPointX;
+ //滚动之后的位置
+ CGFloat _endPointX;
+ //需要居中显示的index
+ NSInteger _currentIndex;
+}
+@end
+
+@implementation CardSwitchView
+
+-(instancetype)initWithFrame:(CGRect)frame
+{
+ if (self = [super initWithFrame:frame]) {
+ [self buildLayout];
+ }
+ return self;
+}
+
+-(void)buildLayout
+{
+ //初始化ScrollView
+ _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+ _scrollView.delegate = self;
+ _scrollView.showsHorizontalScrollIndicator = false;
+ [self addSubview:_scrollView];
+
+ //初始化其他参数
+ _cards = [[NSMutableArray alloc] init];
+ _currentIndex = 0;
+}
+
+#pragma mark -
+#pragma mark 视图Frame配置
+
+//卡片宽度
+-(float)cardWidth
+{
+ return viewScale*self.bounds.size.width;
+}
+
+//卡片间隔
+-(float)margin
+{
+ return (self.bounds.size.width - [self cardWidth])/4;
+}
+//卡片起始位置
+-(float)startX
+{
+ return (self.bounds.size.width - [self cardWidth])/2.0f;
+}
+
+#pragma mark -
+#pragma mark 配置轮播图片
+-(void)setCardNumber:(NSInteger)cardNumber
+{
+ _cardNumber = cardNumber;
+ //初始化各个播放器位置
+ for (NSInteger i = 0; i&lt;cardNumber; i++ ) {
+ //第一步 在ScrollView上添加卡片
+ float viewX = [self startX] + i*([self cardWidth] + [self margin]);
+ Card* card = [[Card alloc] initWithFrame:CGRectMake(viewX, 0, [self cardWidth], self.bounds.size.height)];
+ card.layer.borderWidth = 1.0f;
+ card.index = i;
+ [_scrollView addSubview:card];
+ [_cards addObject:card];
+ [_scrollView setContentSize:CGSizeMake(card.frame.origin.x + [self cardWidth] + 2*[self margin], 0)];
+ }
+ //更新卡片的大小
+ [self updateCardTransform];
+}
+
+#pragma mark -
+#pragma mark ScrollView代理方法
+//开始拖动时保存起始位置
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+ _startPointX = scrollView.contentOffset.x;
+}
+
+//当ScrollView拖动时 变换每个view的大小，并保证居中屏幕的view高度最高
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+ [self updateCardTransform];
+}
+
+//滚动结束，自动回弹到居中卡片
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+ //滚动到视图中间位置
+ dispatch_async(dispatch_get_main_queue(), ^{
+ [self scrollToCurrentCard];
+ });
+}
+
+//卡片自动居中
+-(void)scrollToCurrentCard
+{
+ _endPointX = _scrollView.contentOffset.x;
+ //设置滚动最小生效范围，滚动超过scrollMiniDistance 即视为有切换卡片的意向
+ float scrollMiniDistance = self.bounds.size.width/30.0f;
+ if (_startPointX - _endPointX &gt; scrollMiniDistance) {
+ NSLog(@"向右滑动屏幕");
+ if (_currentIndex != 0) {
+  _currentIndex -= 1;
+ }
+ }else if (_endPointX - _startPointX &gt; scrollMiniDistance)
+ {
+ NSLog(@"向左滑动屏幕");
+ if (_currentIndex != _cards.count - 1) {
+  _currentIndex += 1;
+ }
+ }
+ float viewX = [self startX] + _currentIndex*([self cardWidth] + [self margin]);
+ float needX = viewX - [self startX];
+ [_scrollView setContentOffset:CGPointMake(needX, 0) animated:true];
+}
+
+//更新每个卡片的大小
+-(void)updateCardTransform
+{
+ for (Card *card in _cards) {
+ //获取卡片所在index
+ //获取ScrollView滚动的位置
+ CGFloat scrollOffset = _scrollView.contentOffset.x;
+ //获取卡片中间位置滚动的相对位置
+ CGFloat cardCenterX = card.center.x - scrollOffset;
+ //获取卡片中间位置和父视图中间位置的间距，目标是间距越大卡片越短
+ CGFloat apartLength = fabs(self.bounds.size.width/2.0f - cardCenterX);
+ //移动的距离和屏幕宽度的的比例
+ CGFloat apartScale = apartLength/self.bounds.size.width;
+ //把卡片移动范围固定到 -π/4到 +π/4这一个范围内
+ CGFloat scale = fabs(cos(apartScale * M_PI/4));
+ //设置卡片的缩放
+ card.transform = CGAffineTransformMakeScale(1.0, scale);
+ }
+}
+
+@end</pre>
+<p>Demo下载</p>
+<p><a href="https://github.com/mengxianliang/XLCardSwitch" rel="external nofollow noreferrer">GitHub项目</a></p>
+<p>以上就是本文的全部内容，希望对大家的学习有所帮助，也希望大家多多支持我们。</p>		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9051032955849697"
+     data-ad-slot="3737842878"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		<div id="time"><strong>时间：</strong> 2020-04-19</div>
+		</article>
+
+		<!-- social network share -->
+
+<!-- 		<div id="tags">
+            <strong>Tags:</strong>         </div> -->
+	</section>
+	
+	
+											
+				<section>
+					<header>
+						<h2 class="title">
+			                <a href="https://www.zhangshengrong.com/p/Wx1JVAz21o/" rel="bookmark">iOS实现卡片式滚动效果 iOS实现电影选片效果</a>
+						</h2>
+					</header>
+					<article class="clearfix">
+																		<div class="summary">
+							本文实例为大家分享了iOS实现卡片式滚动效果的具体代码,供大家参考,具体内容如下 先来张效果图吧: 直接上源码了就(工作比较忙,就不一一解释了,有问题可以Q一同讨论,793136807): CardScrollView.h #import &lt;UIKit/UIKit.h&gt; @interface CardView : UIView @property (nonatomic, assign) CGFloat zoomRate; @property (nonatomic, strong) NSStri						</div>
+					</article>
+				</section>
+
+							
+				<section>
+					<header>
+						<h2 class="title">
+			                <a href="https://www.zhangshengrong.com/p/boNwZmGMaw/" rel="bookmark">iOS实现3D卡片式轮播效果</a>
+						</h2>
+					</header>
+					<article class="clearfix">
+																		<a href="https://www.zhangshengrong.com/p/boNwZmGMaw/" class="thumbnail">
+							<img src="/assets/blank.gif" data-echo="//zsrimg.ikafan.com/file_images/article/202002/202022185100648.gif">
+													</a>
+												<div class="summary">
+							本文实例为大家分享了iOS实现3D卡片式轮播效果的具体代码,供大家参考,具体内容如下 效果: 参考UITableView的UITableViewDataSource和UITableViewDelegate两个方法实现:支持五险轮播,可以加载本地图片,也可以加载网络图片,可以根据自己的需求自定义 Demo地址 UITableViewDelegate /** * 当前显示cell的Size(中间页显示大小) * * @param flowView &lt;#flowView description#&gt;						</div>
+					</article>
+				</section>
+
+							
+				<section>
+					<header>
+						<h2 class="title">
+			                <a href="https://www.zhangshengrong.com/p/LKa40q9laQ/" rel="bookmark">iOS实现卡片堆叠效果</a>
+						</h2>
+					</header>
+					<article class="clearfix">
+																		<div class="summary">
+							本文实例为大家分享了iOS实现卡片堆叠效果的具体代码,供大家参考,具体内容如下 如图,这就是最终效果. 去年安卓5.0发布的时候,当我看到安卓全新的Material Design设计语言后,真的是喜欢的不得了,这种设计语言不同于偏平式设计以及卡片式设计.简约,自然.直到15年初,偶然看到CM团队已经发布了好多基于安卓5.0的ROM,恰巧有我手机对应的版本,便迫不及待的刷了固件,体验了一把. 不得不说的是,安卓的这个版本简直历史性变革,更加流畅,好用,而且在开发者模式下,发现这个版本移除了Dalv						</div>
+					</article>
+				</section>
+
+							
+				<section>
+					<header>
+						<h2 class="title">
+			                <a href="https://www.zhangshengrong.com/p/3mNmdybYaj/" rel="bookmark">iOS UICollectionView实现卡片效果</a>
+						</h2>
+					</header>
+					<article class="clearfix">
+																		<div class="summary">
+							现在使用卡片效果的app很多,之前公司让实现一种卡片效果,就写了一篇关于实现卡片的文章.文章最后附有demo 实现上我选择了使用UICollectionView :用UICollectionViewFlowLayout来定制样式:下面看看具体实现 具体实现 1.创建UICollectionView - (void)createCollectionView { CGFloat pading = 0 * SCREEN_WIDTH/375; LHLeftCollocationView * layout						</div>
+					</article>
+				</section>
+
+							
+				<section>
+					<header>
+						<h2 class="title">
+			                <a href="https://www.zhangshengrong.com/p/bYXxqdOL1Z/" rel="bookmark">iOS自定义View实现卡片滑动</a>
+						</h2>
+					</header>
+					<article class="clearfix">
+																		<a href="https://www.zhangshengrong.com/p/bYXxqdOL1Z/" class="thumbnail">
+							<img src="/assets/blank.gif" data-echo="//zsrimg.ikafan.com/file_images/article/202002/2020221105121900.gif">
+													</a>
+												<div class="summary">
+							本文实例为大家分享了iOS自定义View实现卡片滑动效果的具体代码,供大家参考,具体内容如下 说明 控件基于UIView封装完成,采用UIPanGestureRecognizer监听自身的触摸事件,以此处理各种滑动动画操作. 内容之间可以循环切换,采用类似tableView加载机制,达到复用效果 效果 代码实现 #import &lt;UIKit/UIKit.h&gt; @class SMSwipeView; @protocol SMSwipeDelegate &lt;NSObject&gt; @requ						</div>
+					</article>
+				</section>
+
+				
+	
+
+
+	
+
+		<!-- <h3>iOS利用余弦函数实现卡片浏览工具的其他相关文章</h3> -->
+
+												<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/zAaO2WZ1db/" rel="bookmark">Android自定义View实现等级滑动条的实例</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/zAaO2WZ1db/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201704/2017419104403738.gif&#063;2017319104428">
+							</a>
+						<div class="summary">
+				 Android自定义View实现等级滑动条的实例 实现效果图: 思路: 首先绘制直线,然后等分直线绘制点: 绘制点的时候把X值存到集合中. 然后绘制背景图片,以及图片上的数字. 点击事件down的时候,换小图片为大图片.move的时候跟随手指移动. up的时候根据此时的X计算最近的集合中的点,然后自动吸附回去. 1,自定义属性 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;resources&gt; &lt;de			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/Mr1Wyq4ANG/" rel="bookmark">Android自定义View实现左右滑动选择出生年份</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/Mr1Wyq4ANG/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201606/201667110443156.gif&#063;20165711515">
+							</a>
+						<div class="summary">
+				自定义view的第三篇,模仿的是微博运动界面的个人出生日期设置view,先看看我的效果图: 支持设置初始年份,左右滑动选择出生年份,对应的TextView的值也会改变.这个动画效果弄了好久,感觉还是比较生硬,与微博那个还是有点区别.大家有改进的方案,欢迎一起交流. 自定义View四部曲,这里依旧是这个套路,看看怎么实现的. 1.自定义view的属性: 在res/values/ 下建立一个attrs.xml , 在里面定义我们的属性以及声明我们的整个样式. &lt;?xml version=&quot;1.			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/281omvVyNw/" rel="bookmark">Android自定义View仿探探卡片滑动效果</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/281omvVyNw/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201901/2019116145133927.gif&#063;2019016145145">
+							</a>
+						<div class="summary">
+				Android自定义View仿探探卡片滑动这种效果网上有很多人已经讲解了实现思路,大多都用的是RecyclerView来实现的,但是我们今天来换一种实现思路,只用一个自定义的ViewGroup来搞定这个实现. 下面我们先看一下实现的效果: 这个自定义View用法也很简单,首先从github上下载或者fork这个项目,在布局中添加: &lt;com.liyafeng.view.swipecard.SwipeCardLayout android:id=&quot;@+id/scl_layout&quot; a			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/rG1Vqe6X39/" rel="bookmark">Android自定义View仿IOS圆盘时间选择器</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/rG1Vqe6X39/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201703/2017031411152818.jpg">
+							</a>
+						<div class="summary">
+				通过自定义view实现仿iOS实现滑动两端的点选择时间的效果 效果图 自定义的view代码 public class Ring_Slide2 extends View { private static final double RADIAN = 180 / Math.PI; private int max_progress; // 设置最大进度 private int cur_progress; //设置锚点1当前进度 private int cur_progress2; //设置锚点2进度 p			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/v710P5Ey1M/" rel="bookmark">Android自定义view仿IOS开关效果</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/v710P5Ey1M/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201906/2019615120607400.gif&#063;201951512617">
+							</a>
+						<div class="summary">
+				本文主要讲解如何在 Android 下实现高仿 iOS 的开关按钮,并非是在 Android 自带的 ToggleButton 上修改,而是使用 API 提供的 onDraw.onMeasure.Canvas 方法,纯手工绘制.基本原理就是在 Canvas 上叠着放两张图片,上面的图片根据手指触摸情况,不断移动,实现开关效果. 废话不说,上效果图,看看怎么样 样式如下: 网上也有实现这种效果的,但是大都滑动没中间消失的动画,或者是很复杂,今天用简单的绘图方式实现,重点就在onDraw里绘图. 功			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/w4N7GZjNrl/" rel="bookmark">自定义滑动按钮为例图文剖析Android自定义View绘制</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/w4N7GZjNrl/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201603/2016321150714641.png&#063;201622115722">
+							</a>
+						<div class="summary">
+				自定义View一直是横在Android开发者面前的一道坎. 一.View和ViewGroup的关系 从View和ViewGroup的关系来看,ViewGroup继承View. View的子类,多是功能型的控件,提供绘制的样式,比如imageView,TextView等,而ViewGroup的子类,多用于管理控件的大小,位置,如LinearLayout,RelativeLayout等,从下图可以看出 从实际应用中看,他们又是组合关系,我们在布局中,常常是一个ViewGroup嵌套多个ViewGro			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/AvN6mqpamx/" rel="bookmark">Android自定义View实现多片叶子旋转滑动（五）</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/AvN6mqpamx/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201703/201732394927433.gif&#063;201722394935">
+							</a>
+						<div class="summary">
+				上一篇&lt;Android 自定义View(四) 叶子飘动+旋转效果&gt;实现了单片叶子的滑动及旋转,下面实现多片叶子的滑动旋转功能 实现思路比较简单,就是添加一个叶子Leaf类,储存每片叶子的信息, 然后随机产生叶子的坐标及旋转角度,最后实时获取每片叶子信息,添加到画布中 1.Leaf.java 叶子类 private class Leaf { // 叶子的坐标 float x, y; // 旋转角度 int rotateAngle; // 起始时间(ms) long startTime; } 2.			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/KWa3LbLNop/" rel="bookmark">android自定义View滑动删除效果</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/KWa3LbLNop/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201703/201734104836769.gif&#063;201724104844">
+							</a>
+						<div class="summary">
+				View滑动删除效果图 实现功能 1.可以向左滑动,右侧出现删除 2.向左滑动如果删除出现一大半,松手打开删除,反之关闭删除 3.应用场景           微信消息的删除功能 实现原理 1.外面是一个ListView 2.条目是一个自定义控件继承ViewGroup     1).左边一个TextView,右侧屏幕外也有一个TextView     2).所以继承ViewGroup 实现步骤 1.创建一个SlideDeleteView类 1).构造方法要关联 public class Slid			</div>
+		</article>
+	</section>
+						<section>
+		<header>
+			<h2 class="title">
+                <a href="https://www.zhangshengrong.com/p/OQNzeVPEaR/" rel="bookmark">iOS 自定义返回按钮保留系统滑动返回功能</a>
+			</h2>
+		</header>
+		<article class="clearfix">
+									<a href="https://www.zhangshengrong.com/p/OQNzeVPEaR/" class="thumbnail">
+				<img src="//zsrimg.ikafan.com/file_images/article/201701/2017012015351630.gif">
+							</a>
+						<div class="summary">
+				先给大家展示下效果图:  1.简介 使用苹果手机,最喜欢的就是用它的滑动返回.作为一个开发者,我们在编写很多页面的时候,总是会因为这样那样的原因使得系统的滑动返回不可用.使用导航栏push出一个控制器,我们在控制器中自定义了一个返回按钮.这样系统默认的滑动返回手势效果就没有了. 2.解决方法 [1]从A这个控制器push到B这个控制器,我们想要自定义B的返回按钮,我们可以在A中设置 self.navigationItem.backBarButtonItem = [[UIBarButtonItem			</div>
+		</article>
+	</section>
+	
+	<!-- /related -->
+	
+
+
+</div>
+<!-- /main -->
+
+
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <div id="copyright">
+      <div class="pull-left">
+        &#169; 2022 张生荣        | info#zhangshengrong.com        | 22 q. 0.046 s.
+      </div>
+
+    </div>
+
+  </div><!--/.wrapper -->
+
+
+  <!-- <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script> -->
+  <script src="/assets/js/echo.js"></script>
+	<script>
+	    echo.init({
+	      offset: 100,
+	      throttle: 250,
+	      unload: false,
+	      callback: function (element, op) {
+	        console.log(element, 'has been', op + 'ed')
+	      }
+	    });
+	 </script>
+	<script>
+	var ac_referer = '' + document.referrer;
+	try {ac_referer = '' + top.document.referrer} catch (ex) {ac_referer = '' + document.referrer}
+	var ac_referer_raw = ac_referer;
+	ac_referer = ac_referer.substring(0, 600);
+	ac_referer = encodeURIComponent(ac_referer);
+	var ac_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+	var ac_script = document.createElement('script');
+	ac_script.src = ac_protocol + document.domain + '/vlog/?ref=' + ac_referer;
+	document.getElementsByTagName('head')[0].appendChild(ac_script);
+	// document.writeln('<sc' + 'ript type="text/jav'+'ascr'+'ipt" src="' + ac_protocol + document.domain + '/vlog/?ref=' + ac_referer + '"></scr' + 'ipt>');
+	</script>	 
+  <div style=" display: none ";>
+  <script src="https://s22.cnzz.com/z_stat.php?id=1273206234&web_id=1273206234" language="JavaScript"></script>
+  
+  </div>
+
+
+</body>
+</html>

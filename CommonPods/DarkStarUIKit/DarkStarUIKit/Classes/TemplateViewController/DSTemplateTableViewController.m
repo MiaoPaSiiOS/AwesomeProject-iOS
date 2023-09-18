@@ -46,14 +46,19 @@
         DSTemplate *model = [self.templates ds_objectWithIndex:indexPath.row];
         if (!isStringEmptyOrNil(model.classStr)) {
             Class cla = NSClassFromString(model.classStr);
-            if (cla && [cla isKindOfClass:DSViewController.class]) {
+            if (!cla) return;
+            if ([cla isSubclassOfClass:DSViewController.class]) {
+                NSLog(@"'cla' 是 DSViewController 或其子类的类");
                 DSViewController *vc = [[cla alloc] init];
                 vc.extParmers = model.extParmers;
+                [self.navigationController pushViewController:vc animated:YES];
+            } else if ([cla isSubclassOfClass:UIViewController.class]) {
+                NSLog(@"'cla' 是 UIViewController 或其子类的类");
+                UIViewController *vc = [[cla alloc] init];
                 [self.navigationController pushViewController:vc animated:YES];
             }
         }
     }
-
 }
 
 @end

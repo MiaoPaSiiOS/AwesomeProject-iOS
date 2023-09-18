@@ -1,0 +1,1 @@
+../../../NrBaseCoreKit/NrBaseCoreKit/Classes/DataObject/NrDataView.h

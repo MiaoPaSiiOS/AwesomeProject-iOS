@@ -1,0 +1,49 @@
+source 'https://gitee.com/tuay-orn/private-pods.git'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+#use_frameworks!
+#use_modular_headers!
+
+#install! 'cocoapods', :deterministic_uuids => false
+
+#inhibit_all_warnings!
+
+workspace 'CLDemo.xcworkspace' 
+
+target 'CLDemo-OC' do
+  project 'CLDemo-OC/CLDemo-OC.xcodeproj'
+
+  pod 'Masonry'
+  pod 'DateTools'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'SDWebImage'
+  pod 'SDWebImageWebPCoder'
+  pod 'pop'
+  pod 'NrBaseCoreKit'
+end
+
+target 'CLDemo-Swift' do
+  project 'CLDemo-Swift/CLDemo-Swift.xcodeproj'
+
+  pod 'SnapKit'
+  pod 'lottie-ios'
+  pod 'DateToolsSwift'
+  pod 'SwiftyJSON'
+  pod 'CryptoSwift'
+  pod 'Kingfisher'
+  pod 'TZImagePickerController'
+
+end
+
+#post_install do |installer|
+#  installer.pods_project.targets.each do |target|
+#    target.build_configurations.each do |config|
+#      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 12.0
+#        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+#      end
+#    end
+#  end
+#end
+

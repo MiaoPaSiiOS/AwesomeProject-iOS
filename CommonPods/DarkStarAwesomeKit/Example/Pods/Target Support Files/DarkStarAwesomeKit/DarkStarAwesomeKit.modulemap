@@ -1,0 +1,6 @@
+framework module DarkStarAwesomeKit {
+  umbrella header "DarkStarAwesomeKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

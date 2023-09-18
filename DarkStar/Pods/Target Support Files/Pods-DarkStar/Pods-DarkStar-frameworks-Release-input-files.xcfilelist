@@ -4,6 +4,7 @@ ${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAccountKit/DarkStarAccountKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAudioRecorderKit/DarkStarAudioRecorderKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAuthorityKit/DarkStarAuthorityKit.framework
+${BUILT_PRODUCTS_DIR}/DarkStarAwesomeKit/DarkStarAwesomeKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarBaseKit/DarkStarBaseKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarConfiguration/DarkStarConfiguration.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarCrypto/DarkStarCrypto.framework

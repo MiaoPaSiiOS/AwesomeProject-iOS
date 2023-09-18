@@ -1,0 +1,6 @@
+framework module NrGeneralTools {
+  umbrella header "NrGeneralTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

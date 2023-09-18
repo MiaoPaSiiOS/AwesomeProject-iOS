@@ -9,7 +9,7 @@
 #import <DarkStarFeedKit/DarkStarFeedKit.h>
 #import <DarkStarAccountKit/DarkStarAccountKit.h>
 #import <DarkStarWebKit/DarkStarWebKit.h>
-
+#import <DarkStarAwesomeKit/DarkStarAwesomeKit.h>
 #import <CTMediator/CTMediator.h>
 
 @interface REHomeViewController ()
@@ -26,9 +26,15 @@
         DS_BUTTON_WITH_ACTION(@"登录方式：AppleID", AppleIDLogin)
         DS_BUTTON_WITH_ACTION(@"微博、推特Feed流展示", goToFeed)
         DS_BUTTON_WITH_ACTION(@"webview相关", openWebView)
+        DS_BUTTON_WITH_ACTION(@"Awesome", goAwesome)
     }, self.dsView);
 
 }
+
+-(void)goAwesome {
+    [[CTMediator sharedInstance] mediator_pushAwesomeKitController:@{}];
+}
+
 - (void)goToFeed {
     [[CTMediator sharedInstance] mediator_showFeedViewController:@{}];
 }

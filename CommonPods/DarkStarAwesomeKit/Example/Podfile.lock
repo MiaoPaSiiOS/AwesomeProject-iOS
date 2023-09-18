@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarAwesomeKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarAwesomeKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarAwesomeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarAwesomeKit: 08e91dd01aab00381ec33a76bd1c45ff1959d6df
+
+PODFILE CHECKSUM: 0c5e12f4f0f5b04c05e4f7038170cd93dbd12ed7
+
+COCOAPODS: 1.11.3
