@@ -29,7 +29,9 @@
             @"extParmers":@{}
         },
         @{
-            @"title":@"加载Bundle中的资源文件(文件夹：SRSJSTest2)",@"classStr":@"",@"extParmers":@{}
+            @"title":@"[展示]标签-宽度不固定",
+            @"classStr":@"DisplayCustomCollectionTagScreen",
+            @"extParmers":@{}
         },
         @{
             @"title":@"加载Bundle中的资源文件(文件夹：SDBridgeOCTest)",@"classStr":@"",@"extParmers":@{}

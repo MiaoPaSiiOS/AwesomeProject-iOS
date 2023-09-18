@@ -24,6 +24,10 @@
 #import "DisplayHWSettingViewScreen.h"
 #import "HWDownloadButton.h"
 #import "HWHomeCell.h"
+#import "DisplayCustomCollectionTagScreen.h"
+#import "CustomCollectionTagCell.h"
+#import "CustomCollectionTagSectionHeader.h"
+#import "CustomCollectionTagShapeView.h"
 #import "ESTabBarController.h"
 #import "ESTabBarView.h"
 

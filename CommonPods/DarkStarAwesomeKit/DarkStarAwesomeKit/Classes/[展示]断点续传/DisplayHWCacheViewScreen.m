@@ -44,7 +44,7 @@
 
 - (void)downloadingBtnOnClick
 {
-    [self.navigationController pushViewController:[[DisplayHWDownloadingViewScreen alloc] init] animated:YES];
+//    [self.navigationController pushViewController:[[DisplayHWDownloadingViewScreen alloc] init] animated:YES];
 }
 
 - (void)addNotification

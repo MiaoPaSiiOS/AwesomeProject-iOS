@@ -1,6 +1,0 @@
-framework module NrHWDownloadManager {
-  umbrella header "NrHWDownloadManager-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module NrBaseCoreKit {
-  umbrella header "NrBaseCoreKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
