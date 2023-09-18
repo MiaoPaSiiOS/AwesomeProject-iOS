@@ -63,7 +63,11 @@
             @"classStr":@"CLFoldClockViewController",
             @"extParmers":@{}
         },
-        
+        @{
+            @"title":@"[展示]UICollectionView装饰视图",
+            @"classStr":@"CLDecorationViewController",
+            @"extParmers":@{}
+        },
     ]];
     
 }

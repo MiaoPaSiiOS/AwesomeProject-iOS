@@ -51,6 +51,8 @@ TODO: Add long description of the pod here.
   s.dependency 'CTMediator'
   s.dependency 'Masonry'
   s.dependency 'MJExtension'
+  s.dependency 'MJRefresh'
+  s.dependency 'SDWebImage'
   s.dependency 'JXCategoryView'
   s.dependency 'YYModel'
   s.dependency 'pop'
