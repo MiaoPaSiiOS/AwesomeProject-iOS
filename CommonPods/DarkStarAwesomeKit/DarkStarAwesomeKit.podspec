@@ -46,6 +46,7 @@ TODO: Add long description of the pod here.
   s.dependency 'DarkStarUIComponents/DialogSingleChoice'
   s.dependency 'DarkStarUIComponents/CollectionViewLayout'
   s.dependency 'DarkStarUIComponents/CardSwitch'
+  s.dependency 'DarkStarGeneralTools'
   
   s.dependency 'DarkStarDownloadManagerKit'
   s.dependency 'CTMediator'

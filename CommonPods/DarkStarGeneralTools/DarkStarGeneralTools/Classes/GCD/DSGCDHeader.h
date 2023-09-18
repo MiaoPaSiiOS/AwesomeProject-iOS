@@ -12,5 +12,6 @@
 #import "GCDGroup.h"
 #import "GCDSemaphore.h"
 #import "GCDTimer.h"
+#import "CLGCDTimerManagerOC.h"
 
 #endif /* DSGCDHeader_h */

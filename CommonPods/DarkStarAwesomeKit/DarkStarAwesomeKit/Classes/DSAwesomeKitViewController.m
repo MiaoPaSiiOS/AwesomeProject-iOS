@@ -78,6 +78,41 @@
             @"classStr":@"CLCustomTransitionController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]折线图",
+            @"classStr":@"CLLineChartController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]转子动画",
+            @"classStr":@"CLRotateAnimationController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]自定义密码框",
+            @"classStr":@"CLPasswordViewController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]自定义输入工具条",
+            @"classStr":@"CLInputToolbarController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]键盘密码工具条",
+            @"classStr":@"CLInputPasswordController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]卡片视图",
+            @"classStr":@"CLCardController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]波浪视图",
+            @"classStr":@"CLWaveViewController",
+            @"extParmers":@{}
+        },
         
     ]];
     
