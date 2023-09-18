@@ -58,8 +58,12 @@
             @"classStr":@"CLXLClockViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]时钟翻页效果",
+            @"classStr":@"CLFoldClockViewController",
+            @"extParmers":@{}
+        },
         
-
     ]];
     
 }
