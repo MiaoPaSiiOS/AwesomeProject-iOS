@@ -36,7 +36,7 @@
 #import "UIView+DarkStarGlowView.h"
 #import "UIView+DarkStarShake.h"
 #import "UIViewController+DarkStar.h"
-#import <DarkStarBaseKit/DarkStarBaseKit.h>
+#import "DarkStarBaseKit.h"
 #import "DarkStarBaseKitCommonDefines.h"
 #import "DarkStarBaseKitDefines.h"
 #import "DarkStarDataType.h"

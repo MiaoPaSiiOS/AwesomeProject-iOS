@@ -6,37 +6,32 @@
 //
 
 #import "AreaJsbWKWebViewController.h"
-#import "MBProgressHUD.h"
-#import "DarkStarNetWorkKit.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <DarkStarNetWorkKit/DarkStarNetWorkKit.h>
 
 #import "AreaJsbWKWebViewController+JSMethods.h"
 #import "AreaJsbWKWebViewController+JSApplePay.h"
 #import "AresJsbWebTitleView.h"
 #import "AresJsbWebErrorView.h"
 
-#import "AMENWebKitGlobal.h"
-#import "AmenJsbWKWebViewCookieManager.h"
+#import "DSWebKitGlobal.h"
+#import "DSWKWebViewCookieManager.h"
 
 #define kAreaJsbWebCallBack  @"webCallBack"
 #define kAreaJsbNativeMethod  @"nativeMethod"
 
 
-typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
-    WebViewCustomNaviBarTypeBackImg, // 返回图片按钮
-    WebViewCustomNaviBarTypeCloseImg, // 关闭图片按钮
-    WebViewCustomNaviBarTypeCloseStr // 关闭文字按钮
-};
-
 @interface AreaJsbWKWebViewController ()<WKNavigationDelegate, WKUIDelegate>
+/// 重新加载 url
+@property(nonatomic, copy) NSString *strReloadUrl;
+/// 加载成功 当前页面URL
+@property(nonatomic, copy) NSString *currentURL;
 /// 获取原生页面跳到web页面的url
 @property(nonatomic, copy) NSString *tmpURL;
-/// 加载成功 当前页面URL
-@property(nonatomic, copy, readwrite) NSString *currentURL;
 
 #pragma mark - url拦截器
 @property(nonatomic, copy) NSString *interceptUrl;
 @property(nonatomic, assign) BOOL interceptResult;
-
 
 #pragma mark - 标题
 @property(nonatomic, strong) AresJsbWebTitleView *aTitleView;
@@ -87,12 +82,12 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
     [self initTitleView];
     [self initMetaBtn];
 
-    self.tmpURL = self.requestFullURL;
+    self.tmpURL = self.reqModel.requestFullURL;
     self.currentURL = @"";
     
     [self loadRequest];
     
-    self.firstLoad = YES;
+    self.firstLoad = YES;    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -106,7 +101,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
     }
     
     // 刷新
-    if (self.isNeedReload) {
+    if (self.reqModel.isNeedReload) {
         [self loadRequest];
     }
     
@@ -120,9 +115,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if(self.forbiddenGesture) {
-        self.dsInteractivePopDisabled = YES;
-    }
+    self.dsInteractivePopDisabled = self.reqModel.forbiddenGesture;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -137,7 +130,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 }
 
 - (void)dealloc {
-    [AmenJsbWKWebView setUserAgentWithWKWebView:self.baseWebView];
+    [AresJsbWKWebView setUserAgentWithWKWebView:self.baseWebView];
 }
 
 #pragma mark - Nav
@@ -145,26 +138,25 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 
 #pragma mark - loadRequest
 - (void)loadRequest {
-    if (self.loadType == AmenJsbWKWebViewLoadRequest) {
+    if (self.reqModel.loadType == AresJsbWKWebViewLoadRequest) {
         if (!isStringEmptyOrNil(self.strReloadUrl)) {
-            self.requestFullURL = self.strReloadUrl;
+            self.reqModel.requestFullURL = self.strReloadUrl;
         }
         //URL 中含空格将其转码
-        if ([self.requestFullURL containsString:@" "]) {
-            self.requestFullURL = [self.requestFullURL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        if ([self.reqModel.requestFullURL containsString:@" "]) {
+            self.reqModel.requestFullURL = [self.reqModel.requestFullURL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         }
-        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:self.requestFullURL] cachePolicy:(NSURLRequestReloadIgnoringLocalAndRemoteCacheData) timeoutInterval:30];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:self.reqModel.requestFullURL] cachePolicy:(NSURLRequestReloadIgnoringLocalAndRemoteCacheData) timeoutInterval:30];
         [self.baseWebView loadRequest:request];
 
-    } else if (self.loadType == AmenJsbWKWebViewLoadFileURL) {
-        [self.baseWebView loadFileURL:self.fileURL allowingReadAccessToURL:self.readAccessURL];
+    } else if (self.reqModel.loadType == AresJsbWKWebViewLoadFileURL) {
+        [self.baseWebView loadFileURL:self.reqModel.fileURL allowingReadAccessToURL:self.reqModel.readAccessURL];
         
-    } else if (self.loadType == AmenJsbWKWebViewLoadHTMLString) {
-        [self.baseWebView loadHTMLString:self.htmlString baseURL:self.baseURL];
+    } else if (self.reqModel.loadType == AresJsbWKWebViewLoadHTMLString) {
+        [self.baseWebView loadHTMLString:self.reqModel.htmlString baseURL:self.reqModel.baseURL];
         
-    } else if (self.loadType == AmenJsbWKWebViewLoadData) {
-        [self.baseWebView loadData:self.data MIMEType:self.MIMEType characterEncodingName:self.characterEncodingName baseURL:self.baseURL];
-        
+    } else if (self.reqModel.loadType == AresJsbWKWebViewLoadData) {
+        [self.baseWebView loadData:self.reqModel.data MIMEType:self.reqModel.MIMEType characterEncodingName:self.reqModel.characterEncodingName baseURL:self.reqModel.baseURL];
     }
 }
 
@@ -268,7 +260,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 
 #pragma mark - 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler {
-    [AmenJsbWKWebViewCookieManager copyWKHTTPCookieStoreToNSHTTPCookieStorageForWebView:webView withResponse:navigationResponse withCompletion:nil];
+    [DSWKWebViewCookieManager copyWKHTTPCookieStoreToNSHTTPCookieStorageForWebView:webView withResponse:navigationResponse withCompletion:nil];
 
     self.interceptResult = [self interceptLoadingURL:navigationResponse.response.URL];
     if (self.interceptResult) {
@@ -341,8 +333,8 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
         kStrongSelf
         if (!error && [currentURL isKindOfClass:[NSString class]]) {
             strongSelf.currentURL = currentURL;
-            if (![AMENWebKitGlobal parentString:strongSelf.currentURL containsString:@"loadError"] &&
-                ![AMENWebKitGlobal parentString:strongSelf.currentURL containsString:@"loadNetworkError"]) {
+            if (![DSWebKitGlobal parentString:strongSelf.currentURL containsString:@"loadError"] &&
+                ![DSWebKitGlobal parentString:strongSelf.currentURL containsString:@"loadNetworkError"]) {
                 strongSelf.strReloadUrl = strongSelf.currentURL;
             } else {
                 NSString *jsStr = [NSString stringWithFormat:@"setURL('%@')",strongSelf.strReloadUrl];
@@ -479,7 +471,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
     NSRange range = [urlStr rangeOfString:@"://"];
     if (range.location != NSNotFound) {
         NSString *urlSchemeStr = [urlStr substringToIndex:(range.location + range.length)];
-        NSArray *merchantUrlScheme = [AMENWebKitGlobal sharedInstance].pageMerchantList;
+        NSArray *merchantUrlScheme = [DSWebKitGlobal sharedInstance].pageMerchantList;
         if ([merchantUrlScheme containsObject:urlSchemeStr]) { //只要在后台配置的协议白名单中，拦截跳转
             if ([[UIApplication sharedApplication] canOpenURL:url]) { //已经在本地协议白名单中，直接跳转
                 [[UIApplication sharedApplication] openURL:url];
@@ -487,7 +479,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
                 BOOL isSuccess = [[UIApplication sharedApplication] openURL:url];
                 if (!isSuccess) {
                     NSString *messageStr = nil;
-                    NSDictionary *paramsDic = [AMENWebKitGlobal parseParams:url.query];
+                    NSDictionary *paramsDic = [DSWebKitGlobal parseParams:url.query];
                     if (paramsDic) {
                         NSString *nameValueStr = paramsDic[@"name"];
                         if (isStringEmptyOrNil(nameValueStr)) {
@@ -519,12 +511,12 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
     }
     
     //不在网络白名单内的
-    if (!self.closeWhiteList && ![AMENWebKitGlobal SpecialIOSListFlag:strUrl] && ![AMENWebKitGlobal DomainFlag:strUrl]) {
+    if (!self.reqModel.closeWhiteList && ![DSWebKitGlobal SpecialIOSListFlag:strUrl] && ![DSWebKitGlobal DomainFlag:strUrl]) {
         NSArray *array = [NSArray arrayWithObjects:@"取消",@"浏览器打开", nil];
         
         NSMutableString *mStr = @"即将打开外部页面，外部页面不受我们控制哦，使用时请注意安全".mutableCopy;
         [mStr appendFormat:@"\n测试环境下信息, 链接:%@", strUrl];
-        if (![AMENWebKitGlobal DomainFlag:strUrl]) {
+        if (![DSWebKitGlobal DomainFlag:strUrl]) {
             [mStr appendString:@", 该链接不在白名单中"];
         }
         [self ds_showAlertControllerWithTitle:nil message:mStr.copy buttonTitles:array alertClick:^(NSInteger clickNumber) {
@@ -540,6 +532,7 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 
 #pragma mark - JS 方法
 - (void)webPageReloade {
+//    总的来说，这段代码是用于在特定情况下触发一个名为 'pageshow' 的自定义事件，并传递了一个包含 'persisted' 属性的附加信息。这个事件的具体处理方式需要在代码的其他部分进行定义和监听。
     NSString *jsString = @"var event = new CustomEvent('pageshow', {detail:{persisted:'true'}}); window.dispatchEvent(event);";
     [self.baseWebView evaluateJavaScript:jsString completionHandler:^(id _Nullable content, NSError * _Nullable error) {}];
 }
@@ -632,9 +625,8 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 
 #pragma mark - 加载网页失败时处理
 - (void)loadWebViewResultWithSuccess:(BOOL)success {
-    if (!self.forbiddenGesture) {
-        self.dsInteractivePopDisabled = YES;
-    }
+    self.dsInteractivePopDisabled = self.reqModel.forbiddenGesture;
+
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
     
@@ -674,9 +666,8 @@ typedef NS_ENUM (NSUInteger, WebViewCustomNaviBarType) {
 #pragma mark - JSHandle
 - (void)JSHandleMeta:(NSDictionary *)dict {
     [super JSHandleMeta:dict];
-    NSString *nativeMethodStr = [NSString stringWithFormat:@"%@",[dict objectForKey:kAreaJsbNativeMethod]];
-    NSString *callBack = [NSString stringWithFormat:@"%@",[dict objectForKey:kAreaJsbWebCallBack]];
-    
+//    NSString *nativeMethodStr = [NSString stringWithFormat:@"%@",[dict objectForKey:kAreaJsbNativeMethod]];
+//    NSString *callBack = [NSString stringWithFormat:@"%@",[dict objectForKey:kAreaJsbWebCallBack]];
     NSDictionary *paramsDict = [dict objectForKey:@"parameters"];
     NSLog(@"%@",paramsDict);
 }

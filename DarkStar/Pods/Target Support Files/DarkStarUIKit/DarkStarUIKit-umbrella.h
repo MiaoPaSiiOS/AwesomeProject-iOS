@@ -22,6 +22,9 @@
 #import "DSListTabView.h"
 #import "DSCollectionViewController.h"
 #import "DSTableViewController.h"
+#import "DSTemplate.h"
+#import "DSTemplateTableCell.h"
+#import "DSTemplateTableViewController.h"
 
 FOUNDATION_EXPORT double DarkStarUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DarkStarUIKitVersionString[];

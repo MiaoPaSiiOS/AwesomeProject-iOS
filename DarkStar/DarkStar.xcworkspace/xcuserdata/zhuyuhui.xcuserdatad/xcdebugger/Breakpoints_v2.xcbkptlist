@@ -3,22 +3,4 @@
    uuid = "D6495F5B-88B9-44A8-836F-5F12177E5669"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C0472D53-816A-4FA0-A600-3099272D7134"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../CommonPods/DarkStarAccountKit/DarkStarAccountKit/Classes/&#x767b;&#x5f55;/&#x6307;&#x7eb9;&#x9762;&#x5bb9;&#x767b;&#x5f55;/AMENTouchIDLoginViewController.m"
-            startingColumnNumber = "9"
-            endingColumnNumber = "31"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

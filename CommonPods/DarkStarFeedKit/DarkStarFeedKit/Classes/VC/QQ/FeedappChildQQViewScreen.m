@@ -6,7 +6,7 @@
 //
 
 #import "FeedappChildQQViewScreen.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 @interface FeedappChildQQViewScreen ()
 
 @end

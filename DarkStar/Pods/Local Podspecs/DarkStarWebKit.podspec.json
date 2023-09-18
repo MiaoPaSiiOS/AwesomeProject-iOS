@@ -31,10 +31,16 @@
     "Masonry": [
 
     ],
+    "MJExtension": [
+
+    ],
     "SDWebImage": [
 
     ],
     "MBProgressHUD": [
+
+    ],
+    "CTMediator": [
 
     ],
     "DarkStarBaseKit": [

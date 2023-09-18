@@ -7,49 +7,59 @@
 
 #import "Target_AmenWebKit.h"
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
+#import <MJExtension/MJExtension.h>
 #import "AreaJsbWKWebViewController.h"
+#import "AreaJsbWKWebViewDemoController.h"
 
 @implementation Target_AmenWebKit
 
 - (void)Action_pushWebViewController:(nullable NSDictionary *)parameter;
 {
-    AreaJsbWKWebViewController *webController = [[AreaJsbWKWebViewController alloc] init];
-    webController.closeWhiteList    = parameter[@"closeWhiteList"] ? [parameter[@"closeWhiteList"] boolValue] : NO;
-    webController.isNeedReload      = parameter[@"isNeedReload"] ? [parameter[@"isNeedReload"] boolValue] : NO;
-    webController.forbiddenGesture  = parameter[@"forbiddenGesture"] ? [parameter[@"forbiddenGesture"] boolValue] : NO;
+    AreaJsbRequestModel *reqModel = [[AreaJsbRequestModel alloc] init];
+    reqModel.closeWhiteList    = parameter[@"closeWhiteList"] ? [parameter[@"closeWhiteList"] boolValue] : NO;
+    reqModel.isNeedReload      = parameter[@"isNeedReload"] ? [parameter[@"isNeedReload"] boolValue] : NO;
+    reqModel.forbiddenGesture  = parameter[@"forbiddenGesture"] ? [parameter[@"forbiddenGesture"] boolValue] : NO;
     
     NSString *loadType = parameter[@"loadType"];
     if (isStringEmptyOrNil(loadType)) {
         if (isStringEmptyOrNil(parameter[@"url"])) return;
-        webController.loadType          = AmenJsbWKWebViewLoadRequest;
-        webController.requestFullURL    = parameter[@"url"];
+        reqModel.loadType          = AresJsbWKWebViewLoadRequest;
+        reqModel.requestFullURL    = parameter[@"url"];
 
     } else if ([loadType isEqualToString:@"1"]) {
         if (!parameter[@"fileURL"] || ![parameter[@"fileURL"] isKindOfClass:NSURL.class]) return;
         if (!parameter[@"readAccessURL"] || ![parameter[@"readAccessURL"] isKindOfClass:NSURL.class]) return;
-        webController.loadType      = AmenJsbWKWebViewLoadFileURL;
-        webController.fileURL       = parameter[@"fileURL"];
-        webController.readAccessURL = parameter[@"readAccessURL"];
+        reqModel.loadType      = AresJsbWKWebViewLoadFileURL;
+        reqModel.fileURL       = parameter[@"fileURL"];
+        reqModel.readAccessURL = parameter[@"readAccessURL"];
 
     } else if ([loadType isEqualToString:@"2"]) {
         if (isStringEmptyOrNil(parameter[@"htmlString"])) return;
-        webController.loadType      = AmenJsbWKWebViewLoadHTMLString;
-        webController.baseURL       = parameter[@"baseURL"];
-        webController.htmlString    = parameter[@"htmlString"];
+        reqModel.loadType      = AresJsbWKWebViewLoadHTMLString;
+        reqModel.baseURL       = parameter[@"baseURL"];
+        reqModel.htmlString    = parameter[@"htmlString"];
 
     } else if ([loadType isEqualToString:@"3"]) {
         if (!parameter[@"data"] || ![parameter[@"data"] isKindOfClass:NSData.class]) return;
         if (!parameter[@"baseURL"] || ![parameter[@"baseURL"] isKindOfClass:NSURL.class]) return;
         if (isStringEmptyOrNil(parameter[@"MIMEType"])) return;
         if (isStringEmptyOrNil(parameter[@"characterEncodingName"])) return;
-        webController.loadType      = AmenJsbWKWebViewLoadData;
-        webController.characterEncodingName = parameter[@"characterEncodingName"];
-        webController.data          = parameter[@"data"];
-        webController.MIMEType      = parameter[@"MIMEType"];
-        webController.baseURL       = parameter[@"baseURL"];
+        reqModel.loadType      = AresJsbWKWebViewLoadData;
+        reqModel.characterEncodingName = parameter[@"characterEncodingName"];
+        reqModel.data          = parameter[@"data"];
+        reqModel.MIMEType      = parameter[@"MIMEType"];
+        reqModel.baseURL       = parameter[@"baseURL"];
     }
 
+
+
+    AreaJsbWKWebViewController *webController = [[AreaJsbWKWebViewController alloc] init];
+    webController.reqModel = reqModel;
     [self.ds_topViewController.navigationController pushViewController:webController animated:YES];
 }
 
+- (void)Action_pushWebViewDemoController:(nullable NSDictionary *)parameter {
+    AreaJsbWKWebViewDemoController *webController = [[AreaJsbWKWebViewDemoController alloc] init];
+    [self.ds_topViewController.navigationController pushViewController:webController animated:YES];
+}
 @end

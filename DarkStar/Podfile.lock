@@ -67,6 +67,8 @@ PODS:
     - DarkStarQMUI/UIKitExtensions
   - DarkStarQMUI/QMUIWeakObjectContainer (0.1.0)
   - DarkStarQMUI/UIKitExtensions (0.1.0)
+  - DarkStarResourceKit (0.1.0):
+    - DarkStarBaseKit
   - DarkStarScanKit (0.1.0)
   - DarkStarThirdPartyKit (0.1.0):
     - Masonry
@@ -144,17 +146,20 @@ PODS:
     - Masonry
   - DarkStarUIKit (0.1.0):
     - DarkStarBaseKit
+    - DarkStarResourceKit
     - FDFullscreenPopGesture
     - Masonry
     - MJRefresh
   - DarkStarUpdateSDK (0.1.0)
   - DarkStarWebKit (0.1.0):
+    - CTMediator
     - DarkStarBaseKit
     - DarkStarNetWorkKit
     - DarkStarQMUI
     - DarkStarUIKit
     - Masonry
     - MBProgressHUD
+    - MJExtension
     - SDWebImage
   - FDFullscreenPopGesture (1.1)
   - FMDB (2.7.5):
@@ -203,6 +208,7 @@ DEPENDENCIES:
   - DarkStarKeepAliveManager (from `../CommonPods/DarkStarKeepAliveManager/`)
   - DarkStarNetWorkKit (from `../CommonPods/DarkStarNetWorkKit/`)
   - DarkStarQMUI (from `../CommonPods/DarkStarQMUI/`)
+  - DarkStarResourceKit (from `../CommonPods/DarkStarResourceKit/`)
   - DarkStarScanKit (from `../CommonPods/DarkStarScanKit/`)
   - DarkStarThirdPartyKit (from `../CommonPods/DarkStarThirdPartyKit/`)
   - DarkStarUIComponents (from `../CommonPods/DarkStarUIComponents/`)
@@ -270,6 +276,8 @@ EXTERNAL SOURCES:
     :path: "../CommonPods/DarkStarNetWorkKit/"
   DarkStarQMUI:
     :path: "../CommonPods/DarkStarQMUI/"
+  DarkStarResourceKit:
+    :path: "../CommonPods/DarkStarResourceKit/"
   DarkStarScanKit:
     :path: "../CommonPods/DarkStarScanKit/"
   DarkStarThirdPartyKit:
@@ -301,12 +309,13 @@ SPEC CHECKSUMS:
   DarkStarKeepAliveManager: 869d5308de178737b1a8bb2774896ea63daf9e43
   DarkStarNetWorkKit: 00b2a95a21eca49a4a54f7ecea931ef00985a042
   DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
+  DarkStarResourceKit: ef31e632492cff66b055dbaf47ae3d081dddf91b
   DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
   DarkStarUIComponents: 541808b7c4b8b5530de11ed00ae9ff6e5390b9b3
-  DarkStarUIKit: dd6bc8655228bdc785c65eb92a4b7b7082249030
+  DarkStarUIKit: 1c1ae9ff1f9dcd9cbb201c59d3e5dd23da5ab674
   DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
-  DarkStarWebKit: 04fa5a7474adccc611afa54887a4b2f0f3c86d34
+  DarkStarWebKit: e430aeac413c910b233f991ef5200370a7cda691
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
@@ -328,6 +337,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 8fc899567d8691427e55f25756349a65a1a14ce0
+PODFILE CHECKSUM: c3f74495f69756592f7a14e70c2746ebbdd1ec9a
 
 COCOAPODS: 1.11.3

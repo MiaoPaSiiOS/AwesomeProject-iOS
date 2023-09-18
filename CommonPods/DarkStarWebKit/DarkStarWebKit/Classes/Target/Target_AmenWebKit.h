@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Target_AmenWebKit : NSObject
 
+- (void)Action_pushWebViewDemoController:(nullable NSDictionary *)parameter;
+
 - (void)Action_pushWebViewController:(nullable NSDictionary *)parameter;
 
 @end

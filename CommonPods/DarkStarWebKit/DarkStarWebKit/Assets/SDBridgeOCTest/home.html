@@ -1,65 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0"
-    />
-    <title>主页</title>
-    <style>
-      div {
-        border: 1px red solid;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="SDBridge">web contentweb</div>
-  </body>
-  <script>
-    console.log("Javascript: Hello World.");
-    const bridge = window.WebViewJavascriptBridge;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+  <title>主页</title>
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+
+    .JSGetAppInfo {
+      border: 1px red solid;
+      padding: 10px;
+    }
+
+    .JSGetAppInfo-Result {
+      min-height: 100px;
+      word-break: break-word;
+      background-color: antiquewhite;
+    }
+
+    .JSCallJSByNative {
+      border: 1px red solid;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="JSGetAppInfo">
+    <div>点击调用原生: JSGetAppInfo</div>
+    <div class="JSGetAppInfo-Result"></div>
+  </div>
+  <div class="JSCallJSByNative">
+    <div class="ChangeDivBorderColor">
+      点击：js通过原生调用js方法-改变边框
+    </div>
+  </div>
+</body>
+<script>
+  console.log("Javascript: Hello World.");
+
+  const bridge = window.WebViewJavascriptBridge;
+
+  var jSGetAppInfoEle = document.getElementsByClassName("JSGetAppInfo")[0];
+  jSGetAppInfoEle.addEventListener("click", function () {
     // JS tries to call the native method to judge whether it has been loaded successfully and let itself know whether its user is in android app or IOS app
     bridge.callHandler(
       "JSGetAppInfo",
       { strType: "allInfo" },
       function (response) {
-        console.log(instanceof response);
+        console.log(response);
         let data = response.data;
         console.log("Javascript was loaded by IOS and successfully loaded.");
-        document.getElementById("SDBridge").innerHTML =
+        document.getElementsByClassName("JSGetAppInfo-Result")[0].innerText =
           JSON.stringify(response);
-        alert(JSON.stringify(response));
       }
     );
+  });
 
-    // JS register method is called by native
-    bridge.registerHandler("GetToken", function (data, responseCallback) {
-      console.log(data);
-      document.getElementById("SDBridge").innerText =
-        "JS get native data:" + JSON.stringify(data);
-      let result = { token: "I am javascript's token" };
-      //JS gets the data and returns it to the native
+  var changeDivBorderColorEle = document.getElementsByClassName("ChangeDivBorderColor")[0];
+  changeDivBorderColorEle.addEventListener("click", function () {
+    // JS tries to call the native method to judge whether it has been loaded successfully and let itself know whether its user is in android app or IOS app
+    bridge.callHandler(
+      "JSCallJSByNative",
+      { jsMethod: "ChangeDivBorderColor", jsParameters: {} },
+      function (response) {
+        console.log(response);
+        let data = response.data;
+        console.log("Javascript was loaded by IOS and successfully loaded.");
+      }
+    );
+  });
+
+
+
+  // JS register method is called by native
+  bridge.registerHandler("ChangeDivBorderColor", function (data, responseCallback) {
+    console.log(data);
+    // 使用 style 属性修改 CSS 样式
+    jSGetAppInfoEle.style.border = "10px red solid";
+    let result = { token: "I am javascript's token" };
+    //JS gets the data and returns it to the native
+    responseCallback(result);
+  });
+
+
+
+  // JS register method is called by native
+  bridge.registerHandler("GetToken", function (data, responseCallback) {
+    console.log(data);
+    document.getElementById("SDBridge").innerText =
+      "JS get native data:" + JSON.stringify(data);
+    let result = { token: "I am javascript's token" };
+    //JS gets the data and returns it to the native
+    responseCallback(result);
+  });
+  bridge.registerHandler("AsyncCall", function (data, responseCallback) {
+    console.log(data);
+    document.getElementById("SDBridge").innerText =
+      "JS get native data:" + JSON.stringify(data);
+    // Call await function must with  (async () => {})();
+    (async () => {
+      const callback = await generatorLogNumber(1);
+      let result = { token: callback };
       responseCallback(result);
+    })();
+  });
+  function generatorLogNumber(n) {
+    return new Promise((res) => {
+      setTimeout(() => {
+        res("Javascript async/await callback Ok");
+      }, 1000);
     });
-    bridge.registerHandler("AsyncCall", function (data, responseCallback) {
-      console.log(data);
-      document.getElementById("SDBridge").innerText =
-        "JS get native data:" + JSON.stringify(data);
-      // Call await function must with  (async () => {})();
-      (async () => {
-        const callback = await generatorLogNumber(1);
-        let result = { token: callback };
-        responseCallback(result);
-      })();
-    });
-    function generatorLogNumber(n) {
-      return new Promise((res) => {
-        setTimeout(() => {
-          res("Javascript async/await callback Ok");
-        }, 1000);
-      });
-    }
-  </script>
+  }
+
+</script>
+
 </html>

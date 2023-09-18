@@ -13,6 +13,7 @@
 #import "DSViewController.h"
 #import "DSTableViewController.h"
 #import "DSCollectionViewController.h"
+#import "DSTemplateTableViewController.h"
 #import "DSListCollectionView.h"
 #import "DSListTabView.h"
 

@@ -11,6 +11,7 @@
 @implementation AreaJsbWKWebViewController (JSMethods)
 
 - (void)registerOtherWebCode {
+    [self JSCallJSByNative];
     [self JSShowWating];
     [self JSGetAppInfo];
     [self JSGetNavigationBarHeight];
@@ -28,6 +29,19 @@
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     });
 }
+#pragma mark - JS通过调用该方法去 调用 JS 中注册的事件
+-(void)JSCallJSByNative{
+    kWeakSelf
+    [self registerHandler:@"JSCallJSByNative" handler:^(id  _Nonnull data, WVJBResponseCallback  _Nonnull responseCallback) {
+        kStrongSelf
+        NSDictionary *parameters = data;
+        NSString *jsMethod = [parameters valueForKey:@"jsMethod"];
+        NSDictionary *jsParameters = [parameters valueForKey:@"jsParameters"];
+        [strongSelf callHandler:jsMethod data:jsParameters responseCallback:nil];
+    }];
+}
+
+
 #pragma mark - 等待层
 -(void)JSShowWating{
     kWeakSelf

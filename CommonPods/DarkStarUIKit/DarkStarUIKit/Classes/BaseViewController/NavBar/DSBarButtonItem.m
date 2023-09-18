@@ -6,6 +6,7 @@
 //
 
 #import "DSBarButtonItem.h"
+#import <DarkStarResourceKit/DarkStarResourceKit.h>
 @implementation DSBarButtonItem
 
 - (instancetype)init {
@@ -46,7 +47,7 @@
         self.target = nTarget;
         self.action = nAction;
         self.style = DSBarButtonItemStyleBack;
-        self.img = [UIImage imageNamed:@"nr_nav_goBack_black"];
+        self.img = [DSResourceTool imageNamed:@"nr_nav_goBack_black"];
         @try {
             NSArray *imgs = [self backImages];
             if (imgs && imgs.count == 2) {

@@ -6,7 +6,7 @@
 //
 
 #import "DSNavigationBar.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 @interface DSNavigationBar ()
 @property (nonatomic, strong) DSDataView *topView;

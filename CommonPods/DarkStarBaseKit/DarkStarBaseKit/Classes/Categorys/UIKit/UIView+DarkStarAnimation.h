@@ -23,7 +23,7 @@
 @property (nonatomic) CGFloat  scale;
 
 /**
- *  CGAffineTransformMakeRotation
+ *  CGAffineTransformMakeRotation angle表示旋转角度（大于0顺时针，小于0逆时针），M_PI_2表示90度。
  */
 @property (nonatomic) CGFloat  angle;
 

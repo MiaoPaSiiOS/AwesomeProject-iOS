@@ -6,7 +6,7 @@
 //
 
 #import "AresJsbWebErrorView.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 
 @interface AresJsbWebErrorView ()<UIGestureRecognizerDelegate >

@@ -24,6 +24,7 @@ target 'DarkStar' do
   pod 'DarkStarNetWorkKit', :path => '../CommonPods/DarkStarNetWorkKit/'
   pod 'DarkStarAccountKit', :path => '../CommonPods/DarkStarAccountKit/'
   pod 'DarkStarWebKit', :path => '../CommonPods/DarkStarWebKit/'
+  pod 'DarkStarResourceKit', :path => '../CommonPods/DarkStarResourceKit/'
   
   #NrLottieBridge使用Swift版本，NrLottieMixView使用OC版本；这两个库不能同时用
   pod 'NrLottieBridge', :path => '../CommonPods/NrLottieBridge/'

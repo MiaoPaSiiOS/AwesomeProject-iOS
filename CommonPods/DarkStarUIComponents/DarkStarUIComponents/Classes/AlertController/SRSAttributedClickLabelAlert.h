@@ -1,7 +1,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 #import "TTTAttributedLabel.h"
 

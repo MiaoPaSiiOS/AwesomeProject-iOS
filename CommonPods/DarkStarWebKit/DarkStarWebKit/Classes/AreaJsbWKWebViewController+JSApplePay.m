@@ -1,5 +1,5 @@
 //
-//  AmenJsbWKWebViewController+JSApplePay.m
+//  AresJsbWKWebViewController+JSApplePay.m
 //  Amen
 //
 //  Created by zhuyuhui on 2022/7/1.

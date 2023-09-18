@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) DSNavItem *topItem;
 /// 内容视图【层级在自定义导航条下边】
 @property(nonatomic, strong) UIView *dsView;
+
+@property(nonatomic, strong) NSDictionary *extParmers;
 /**
  *  init时调用，初始化一些基础数据，属性，可重载
  */

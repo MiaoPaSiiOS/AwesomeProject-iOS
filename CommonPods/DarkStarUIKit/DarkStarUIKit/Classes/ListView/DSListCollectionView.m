@@ -6,7 +6,7 @@
 //
 
 #import "DSListCollectionView.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import "MJRefresh.h"
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 @implementation DSListCollectionView

@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 
 typedef void(^ClickActionBlock)(NSInteger index);

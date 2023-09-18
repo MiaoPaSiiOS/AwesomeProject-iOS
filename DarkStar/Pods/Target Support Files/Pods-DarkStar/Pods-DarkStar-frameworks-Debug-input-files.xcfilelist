@@ -14,6 +14,7 @@ ${BUILT_PRODUCTS_DIR}/DarkStarGrayViewKit/DarkStarGrayViewKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarKeepAliveManager/DarkStarKeepAliveManager.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarNetWorkKit/DarkStarNetWorkKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarQMUI/DarkStarQMUI.framework
+${BUILT_PRODUCTS_DIR}/DarkStarResourceKit/DarkStarResourceKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarScanKit/DarkStarScanKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarThirdPartyKit/DarkStarThirdPartyKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarUIComponents/DarkStarUIComponents.framework

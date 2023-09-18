@@ -8,7 +8,7 @@
 #import "FeedappViewController.h"
 #import "JXCategoryView.h"
 #import "SDWebImage.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import "FeedappChildWeiboViewScreen.h"
 #import "FeedappChildTwitterViewScreen.h"
 #import "FeedappChildQQViewScreen.h"
