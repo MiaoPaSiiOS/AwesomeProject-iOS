@@ -38,6 +38,11 @@
             @"classStr":@"DisplayNrCardSwitchScreen",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]SwipeTest",
+            @"classStr":@"CLSwipeViewController",
+            @"extParmers":@{}
+        },
     ]];
     
 }

@@ -1,6 +1,0 @@
-framework module NrViewKit {
-  umbrella header "NrViewKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

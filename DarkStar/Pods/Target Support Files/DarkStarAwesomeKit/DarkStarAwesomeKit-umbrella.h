@@ -17,6 +17,8 @@
 #import "DSAwesomeKitTool.h"
 #import "DisplayNrCardSwitchCell.h"
 #import "DisplayNrCardSwitchScreen.h"
+#import "CLSwipeViewController.h"
+#import "SMSwipeView.h"
 #import "DisplayHWBaseCacheViewScreen.h"
 #import "DisplayHWCacheViewScreen.h"
 #import "DisplayHWDownloadingViewScreen.h"
