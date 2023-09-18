@@ -43,6 +43,17 @@
             @"classStr":@"CLSwipeViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]ScrollView线性滚动",
+            @"classStr":@"CLScrollerViewLinerController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]仿系统指南针",
+            @"classStr":@"CLSystemCompassViewController",
+            @"extParmers":@{}
+        },
+
     ]];
     
 }
