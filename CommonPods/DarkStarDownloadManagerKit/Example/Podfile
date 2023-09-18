@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DarkStarDownloadManagerKit_Example' do
+  pod 'DarkStarDownloadManagerKit', :path => '../'
+
+  target 'DarkStarDownloadManagerKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

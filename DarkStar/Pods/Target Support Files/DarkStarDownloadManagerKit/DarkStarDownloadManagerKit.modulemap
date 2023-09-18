@@ -1,0 +1,6 @@
+framework module DarkStarDownloadManagerKit {
+  umbrella header "DarkStarDownloadManagerKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

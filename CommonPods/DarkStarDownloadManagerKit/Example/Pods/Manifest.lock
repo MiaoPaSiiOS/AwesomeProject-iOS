@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarDownloadManagerKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarDownloadManagerKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarDownloadManagerKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarDownloadManagerKit: 4bea1a75dcabbc5eb631911a4e61ccb17277aee2
+
+PODFILE CHECKSUM: 30ec310217d8dd44d4946c9aa4c19a36b37a815e
+
+COCOAPODS: 1.11.3

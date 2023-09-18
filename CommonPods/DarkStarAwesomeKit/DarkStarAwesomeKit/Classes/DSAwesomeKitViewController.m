@@ -19,10 +19,14 @@
     self.title = @"AwesomeKitDemo";
     self.templates = [DSTemplate mj_objectArrayWithKeyValuesArray:@[
         @{
-            @"title":@"[展示]自定义tabbar",@"classStr":@"ESTabBarController",@"extParmers":@{}
+            @"title":@"[展示]自定义tabbar",
+            @"classStr":@"ESTabBarController",
+            @"extParmers":@{}
         },
         @{
-            @"title":@"加载Bundle中的资源文件(文件夹：'www.amen.com')",@"classStr":@"",@"extParmers":@{}
+            @"title":@"[展示]断点续传",
+            @"classStr":@"DisplayHWDownloadRootScreen",
+            @"extParmers":@{}
         },
         @{
             @"title":@"加载Bundle中的资源文件(文件夹：SRSJSTest2)",@"classStr":@"",@"extParmers":@{}

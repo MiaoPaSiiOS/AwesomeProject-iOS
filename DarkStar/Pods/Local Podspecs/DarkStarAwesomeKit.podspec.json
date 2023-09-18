@@ -37,6 +37,12 @@
     "DarkStarUIComponents/NrButton": [
 
     ],
+    "DarkStarUIComponents/DialogSingleChoice": [
+
+    ],
+    "DarkStarDownloadManagerKit": [
+
+    ],
     "CTMediator": [
 
     ],
@@ -44,6 +50,12 @@
 
     ],
     "MJExtension": [
+
+    ],
+    "JXCategoryView": [
+
+    ],
+    "YYModel": [
 
     ]
   }

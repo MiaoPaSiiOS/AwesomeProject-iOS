@@ -43,7 +43,11 @@ TODO: Add long description of the pod here.
   s.dependency 'DarkStarBaseKit'
   s.dependency 'DarkStarUIKit'
   s.dependency 'DarkStarUIComponents/NrButton'
+  s.dependency 'DarkStarUIComponents/DialogSingleChoice'
+  s.dependency 'DarkStarDownloadManagerKit'
   s.dependency 'CTMediator'
   s.dependency 'Masonry'
   s.dependency 'MJExtension'
+  s.dependency 'JXCategoryView'
+  s.dependency 'YYModel'
 end

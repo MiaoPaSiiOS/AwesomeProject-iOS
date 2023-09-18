@@ -9,6 +9,7 @@ ${BUILT_PRODUCTS_DIR}/DarkStarBaseKit/DarkStarBaseKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarConfiguration/DarkStarConfiguration.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarCrypto/DarkStarCrypto.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarDataStoreKit/DarkStarDataStoreKit.framework
+${BUILT_PRODUCTS_DIR}/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarFeedKit/DarkStarFeedKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGeneralTools/DarkStarGeneralTools.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGrayViewKit/DarkStarGrayViewKit.framework
