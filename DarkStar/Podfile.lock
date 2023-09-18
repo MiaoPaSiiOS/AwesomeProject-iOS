@@ -36,6 +36,7 @@ PODS:
     - JXCategoryView
     - Masonry
     - MJExtension
+    - pop
     - YYModel
   - DarkStarBaseKit (0.1.0)
   - DarkStarConfiguration (0.1.0):
@@ -206,6 +207,7 @@ PODS:
   - NrLottieBridge (0.1.1):
     - lottie-ios
     - SnapKit
+  - pop (1.0.12)
   - RealReachability (1.4.1):
     - RealReachability/Connection (= 1.4.1)
     - RealReachability/Ping (= 1.4.1)
@@ -274,6 +276,7 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - pop
     - RealReachability
     - RegExCategories
     - SDWebImage
@@ -339,7 +342,7 @@ SPEC CHECKSUMS:
   DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
-  DarkStarAwesomeKit: 9f32ca7ffecd6cad47fb522373278e2d83bf2c3c
+  DarkStarAwesomeKit: 220f3fa5797f659f5caf020b6d347739878c90e1
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
@@ -370,6 +373,7 @@ SPEC CHECKSUMS:
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   NrLottieBridge: ecc2fd4c2d9a4958ba20b1a6b4e0a5cb3034cf69
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
   RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9

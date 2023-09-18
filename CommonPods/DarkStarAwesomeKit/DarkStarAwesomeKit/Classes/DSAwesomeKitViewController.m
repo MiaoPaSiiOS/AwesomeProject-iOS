@@ -53,6 +53,12 @@
             @"classStr":@"CLSystemCompassViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]锤子时钟效果",
+            @"classStr":@"CLXLClockViewController",
+            @"extParmers":@{}
+        },
+        
 
     ]];
     

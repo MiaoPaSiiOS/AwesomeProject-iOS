@@ -38,6 +38,9 @@
 #import "CustomCollectionTagShapeView.h"
 #import "ESTabBarController.h"
 #import "ESTabBarView.h"
+#import "CLXLClockViewController.h"
+#import "XLClock.h"
+#import "XLClockHand.h"
 
 FOUNDATION_EXPORT double DarkStarAwesomeKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DarkStarAwesomeKitVersionString[];

@@ -53,4 +53,5 @@ TODO: Add long description of the pod here.
   s.dependency 'MJExtension'
   s.dependency 'JXCategoryView'
   s.dependency 'YYModel'
+  s.dependency 'pop'
 end
