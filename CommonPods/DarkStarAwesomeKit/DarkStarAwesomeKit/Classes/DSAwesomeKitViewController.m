@@ -68,6 +68,17 @@
             @"classStr":@"CLDecorationViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]模态交互式转场",
+            @"classStr":@"CLTransitionController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]自定义转场动画",
+            @"classStr":@"CLCustomTransitionController",
+            @"extParmers":@{}
+        },
+        
     ]];
     
 }

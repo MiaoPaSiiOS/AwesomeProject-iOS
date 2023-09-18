@@ -1124,12 +1124,12 @@
 		5BE66869268484B70095F82E /* CLPresentTransitionAnimated */ = {
 			isa = PBXGroup;
 			children = (
-				5BE6686A268484B70095F82E /* CLAnimatedTransitioning.m */,
-				5BE6686B268484B70095F82E /* CLDrivenInteractiveTransition.m */,
-				5BE6686C268484B70095F82E /* CLTransitioningDelegate.h */,
-				5BE6686D268484B70095F82E /* CLTransitionEnum.h */,
 				5BE6686E268484B70095F82E /* CLAnimatedTransitioning.h */,
+				5BE6686A268484B70095F82E /* CLAnimatedTransitioning.m */,
 				5BE6686F268484B70095F82E /* CLDrivenInteractiveTransition.h */,
+				5BE6686B268484B70095F82E /* CLDrivenInteractiveTransition.m */,
+				5BE6686D268484B70095F82E /* CLTransitionEnum.h */,
+				5BE6686C268484B70095F82E /* CLTransitioningDelegate.h */,
 				5BE66870268484B70095F82E /* CLTransitioningDelegate.m */,
 			);
 			path = CLPresentTransitionAnimated;
