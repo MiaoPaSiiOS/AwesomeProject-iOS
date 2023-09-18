@@ -15,6 +15,8 @@
 #import "CTMediator+DarkStarAwesomeKit.h"
 #import "Target_DarkStarAwesomeKit.h"
 #import "DSAwesomeKitTool.h"
+#import "DisplayNrCardSwitchCell.h"
+#import "DisplayNrCardSwitchScreen.h"
 #import "DisplayHWBaseCacheViewScreen.h"
 #import "DisplayHWCacheViewScreen.h"
 #import "DisplayHWDownloadingViewScreen.h"

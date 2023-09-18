@@ -34,7 +34,9 @@
             @"extParmers":@{}
         },
         @{
-            @"title":@"加载Bundle中的资源文件(文件夹：SDBridgeOCTest)",@"classStr":@"",@"extParmers":@{}
+            @"title":@"[展示]NrCardSwitch",
+            @"classStr":@"DisplayNrCardSwitchScreen",
+            @"extParmers":@{}
         },
     ]];
     
