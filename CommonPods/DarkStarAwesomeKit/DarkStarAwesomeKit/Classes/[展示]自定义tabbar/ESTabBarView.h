@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ESTabBarView : UIView
 
-@property (nonatomic, strong) NSMutableArray<NrUIButton*> * btnArray;
+@property (nonatomic, strong) NSMutableArray<DSUIButton*> * btnArray;
 
 @property (nonatomic, weak) id<HomeTabBarViewDelegate>  delegate;
 

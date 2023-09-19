@@ -106,11 +106,11 @@
             [datas addObject:[NSString stringWithFormat:@"%d",i]];
         }
         kWeakSelf
-        NrSingleChoiceDialog *dialogView = [[NrSingleChoiceDialog alloc] init];
+        DSSingleChoiceDialog *dialogView = [[DSSingleChoiceDialog alloc] init];
         dialogView.info = @"选择同时下载文件数";
         dialogView.showDatas = datas;
         dialogView.selectedItem = [NSString stringWithFormat:@"%ld",(long)self.downloadMaxConcurrentCount];
-        [dialogView setDidSelectedIndex:^(NrSingleChoiceDialog * _Nonnull dialog, NSInteger selectedIndex) {
+        [dialogView setDidSelectedIndex:^(DSSingleChoiceDialog * _Nonnull dialog, NSInteger selectedIndex) {
             kStrongSelf
             strongSelf.downloadMaxConcurrentCount = [datas[selectedIndex] integerValue];
             [strongSelf.recylerView reloadData];
@@ -130,11 +130,11 @@
         [datas addObject:@"允许使用流量下载"];
         [datas addObject:@"仅WIFi网络下载"];
         kWeakSelf
-        NrSingleChoiceDialog *dialogView = [[NrSingleChoiceDialog alloc] init];
+        DSSingleChoiceDialog *dialogView = [[DSSingleChoiceDialog alloc] init];
         dialogView.info = @"传输网络设置";
         dialogView.showDatas = datas;
         dialogView.selectedItem = [NSString stringWithFormat:@"%ld",(long)self.downloadMaxConcurrentCount];
-        [dialogView setDidSelectedIndex:^(NrSingleChoiceDialog * _Nonnull dialog, NSInteger selectedIndex) {
+        [dialogView setDidSelectedIndex:^(DSSingleChoiceDialog * _Nonnull dialog, NSInteger selectedIndex) {
             kStrongSelf
             strongSelf.downloadAllowsCellularAccess = selectedIndex == 0 ? YES:NO;
             [strongSelf.recylerView reloadData];

@@ -11,7 +11,7 @@
 #endif
 
 #import "DarkStarAudioRecorderKit.h"
-#import "NrAudioRecorder.h"
+#import "DSAudioRecorder.h"
 
 FOUNDATION_EXPORT double DarkStarAudioRecorderKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DarkStarAudioRecorderKitVersionString[];

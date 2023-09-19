@@ -16,13 +16,13 @@
 
 @class T1StatusCell;
 
-@interface T1StatusMediaView : NrControl
+@interface T1StatusMediaView : DSControl
 @property (nonatomic, strong) NSArray<UIImageView *> *imageViews;
 @property (nonatomic, weak) T1StatusCell *cell;
 @end
 
 
-@interface T1StatusQuoteView : NrControl
+@interface T1StatusQuoteView : DSControl
 @property (nonatomic, strong) YYLabel *nameLabel;
 @property (nonatomic, strong) YYLabel *textLabel;
 @property (nonatomic, weak) T1StatusCell *cell;
@@ -51,12 +51,12 @@
 
 
 
-@interface T1StatusView : NrControl
+@interface T1StatusView : DSControl
 @property (nonatomic, strong) UIView *topLine;
 @property (nonatomic, strong) UIImageView *socialIconView;
 @property (nonatomic, strong) YYLabel *socialLabel;
 
-@property (nonatomic, strong) NrControl *avatarView;
+@property (nonatomic, strong) DSControl *avatarView;
 @property (nonatomic, strong) UIView *conversationTopJoin;
 @property (nonatomic, strong) UIView *conversationBottomJoin;
 

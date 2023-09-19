@@ -9,7 +9,7 @@
 #import <DarkStarUIComponents/DarkStarUIComponents.h>
 
 @interface YYPhotoProgress()
-@property(nonatomic, strong) NrCircleView *circle;
+@property(nonatomic, strong) DSCircleView *circle;
 @property(nonatomic, strong) UILabel *percentL;
 @end
 
@@ -20,7 +20,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.circle = [NrCircleView circleViewWithFrame:self.bounds lineWidth:5 lineColor:UIColor.blackColor clockWise:YES startAngle:0];
+        self.circle = [DSCircleView circleViewWithFrame:self.bounds lineWidth:5 lineColor:UIColor.blackColor clockWise:YES startAngle:0];
         [self addSubview:self.circle];
         [self addSubview:self.percentL];
     }

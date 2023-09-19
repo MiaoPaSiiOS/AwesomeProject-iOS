@@ -6,8 +6,8 @@
 //
 
 #import "DSEnvironmentTool.h"
-#import "MJExtension.h"
-#import "SIAlertView.h"
+#import <MJExtension/MJExtension.h>
+#import <SIAlertView/SIAlertView.h>
 #import "DSDBTool.h"
 #import "DSAppConfiguration.h"
 

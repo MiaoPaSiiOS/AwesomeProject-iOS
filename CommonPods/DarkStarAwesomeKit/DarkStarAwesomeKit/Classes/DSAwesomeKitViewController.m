@@ -34,8 +34,8 @@
             @"extParmers":@{}
         },
         @{
-            @"title":@"[展示]NrCardSwitch",
-            @"classStr":@"DisplayNrCardSwitchScreen",
+            @"title":@"[展示]DSCardSwitch",
+            @"classStr":@"DisplayDSCardSwitchScreen",
             @"extParmers":@{}
         },
         @{

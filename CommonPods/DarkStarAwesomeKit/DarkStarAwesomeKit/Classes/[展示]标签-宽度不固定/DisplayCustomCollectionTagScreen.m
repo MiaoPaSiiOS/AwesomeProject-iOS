@@ -11,16 +11,16 @@
 #import "CustomCollectionTagCell.h"
 #import "CustomCollectionTagSectionHeader.h"
 
-@interface DisplayCustomCollectionTagScreen ()<NrCollectionCustomTagLayoutDelegate>
+@interface DisplayCustomCollectionTagScreen ()<DSCollectionCustomTagLayoutDelegate>
 @property(nonatomic, strong) NSMutableArray *dataSource;
-@property(nonatomic, strong) NrCollectionCustomTagLayout *tagLayout;
+@property(nonatomic, strong) DSCollectionCustomTagLayout *tagLayout;
 @end
 
 @implementation DisplayCustomCollectionTagScreen
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tagLayout = [[NrCollectionCustomTagLayout alloc] init];
+    self.tagLayout = [[DSCollectionCustomTagLayout alloc] init];
     self.tagLayout.delegate = self;
     self.tagLayout.itemHeight = 30;
     self.tagLayout.sectionInset = UIEdgeInsetsMake((10), (15), (10), (15));
@@ -69,8 +69,8 @@
     // Do any additional setup after loading the view.
 }
 
-#pragma mark - NrCollectionCustomTagLayoutDelegate
-- (CGFloat)NrCollectionCustomTagLayout:(NrCollectionCustomTagLayout *)layout tagWidthForItemAt:(NSIndexPath *)indexPath {
+#pragma mark - DSCollectionCustomTagLayoutDelegate
+- (CGFloat)DSCollectionCustomTagLayout:(DSCollectionCustomTagLayout *)layout tagWidthForItemAt:(NSIndexPath *)indexPath {
     CGFloat maxTagWidth = layout.collectionView.width - self.tagLayout.sectionInset.left - self.tagLayout.sectionInset.right;
     CGFloat minTagWidth = (maxTagWidth - self.tagLayout.minimumInteritemSpacing * 2) / 3;
     NSString *text = [self rowTextViewAtIndexPath:indexPath];
@@ -82,7 +82,7 @@
     return textW;
 }
 
-- (CGSize)NrCollectionCustomTagLayout:(NrCollectionCustomTagLayout *)layout sizeForSupplementaryElementOfKind:(nonnull NSString *)kind section:(NSInteger)section {
+- (CGSize)DSCollectionCustomTagLayout:(DSCollectionCustomTagLayout *)layout sizeForSupplementaryElementOfKind:(nonnull NSString *)kind section:(NSInteger)section {
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         if (self.dataSource.count <= 0) {
             return CGSizeZero;

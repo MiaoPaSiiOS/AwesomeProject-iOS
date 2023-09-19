@@ -11,7 +11,7 @@
 #import <DarkStarUIComponents/DarkStarUIComponents.h>
 #import "AmenFeedTool.h"
 @interface AUMoreFailedView ()
-@property (nonatomic, strong) NrUIButton * retryButton;
+@property (nonatomic, strong) DSUIButton * retryButton;
 @end
 @implementation AUMoreFailedView
 
@@ -25,7 +25,7 @@
 }
 
 - (void)buildUI {
-    self.retryButton = [[NrUIButton alloc] init];
+    self.retryButton = [[DSUIButton alloc] init];
     self.retryButton.layer.borderColor = kHexAColor(0x4586ff, 1).CGColor;
     self.retryButton.layer.borderWidth = 1;
     self.retryButton.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:12];
@@ -34,7 +34,7 @@
     [self.retryButton setTitleColor:kHexColor(0x4586ff) forState:UIControlStateNormal];
     [self.retryButton setTitleColor:kHexAColor(0x4586ff,0.5) forState:UIControlStateHighlighted];
     [self.retryButton setImage:[AmenFeedTool imageNamed:@"activites_reset_icon"] forState:UIControlStateNormal];
-    self.retryButton.imagePosition = NrUIButtonImagePositionLeft;
+    self.retryButton.imagePosition = DSUIButtonImagePositionLeft;
     self.retryButton.spacingBetweenImageAndTitle = 4;
     [self.retryButton addTarget:self action:@selector(retryButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.retryButton];

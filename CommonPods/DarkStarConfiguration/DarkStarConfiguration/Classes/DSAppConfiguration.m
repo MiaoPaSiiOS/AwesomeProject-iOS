@@ -6,7 +6,7 @@
 //
 
 #import "DSAppConfiguration.h"
-#import "MJExtension.h"
+#import <MJExtension/MJExtension.h>
 #import "DSDBTool.h"
 
 static DSAppConfiguration *_shareconfiguration = nil;

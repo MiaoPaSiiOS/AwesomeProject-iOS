@@ -16,6 +16,6 @@
 #import "DSDataView.h"
 #import "DSNavItem.h"
 #import "DSItem.h"
-#import "DarkStarDataType.h"
+#import "DSDataType.h"
 
 #endif /* DarkStarBaseKit_h */

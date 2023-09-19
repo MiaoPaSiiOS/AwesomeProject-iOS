@@ -6,8 +6,8 @@
 //
 
 #import "DSDBTool.h"
-#import "FMDB.h"
-#import "MJExtension.h"
+#import <FMDB/FMDB.h>
+#import <MJExtension/MJExtension.h>
 
 static FMDatabaseQueue *_queue;
 static DSDBTool *_shareDatabase = nil;

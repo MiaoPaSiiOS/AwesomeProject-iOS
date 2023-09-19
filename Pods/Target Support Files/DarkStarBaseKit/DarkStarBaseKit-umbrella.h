@@ -39,10 +39,10 @@
 #import "DarkStarBaseKit.h"
 #import "DarkStarBaseKitCommonDefines.h"
 #import "DarkStarBaseKitDefines.h"
-#import "DarkStarDataType.h"
 #import "DSDataView.h"
 #import "DSItem.h"
 #import "DSNavItem.h"
+#import "DSDataType.h"
 #import "DSDeviceInfo.h"
 
 FOUNDATION_EXPORT double DarkStarBaseKitVersionNumber;

@@ -698,16 +698,16 @@
     
     NSMutableArray *picViews = [NSMutableArray new];
     for (int i = 0; i < 9; i++) {
-        NrControl *imageView = [NrControl new];
+        DSControl *imageView = [DSControl new];
         imageView.size = CGSizeMake(100, 100);
         imageView.hidden = YES;
         imageView.clipsToBounds = YES;
         imageView.backgroundColor = kWBCellHighlightColor;
         imageView.exclusiveTouch = YES;
-        imageView.touchBlock = ^(NrControl *view, NrGestureRecognizerState state, NSSet *touches, UIEvent *event) {
+        imageView.touchBlock = ^(DSControl *view, DSGestureRecognizerState state, NSSet *touches, UIEvent *event) {
             kStrongSelf
             if (![strongSelf.cell.delegate respondsToSelector:@selector(cell:didClickImageAtIndex:)]) return;
-            if (state == NrGestureRecognizerStateEnded) {
+            if (state == DSGestureRecognizerStateEnded) {
                 UITouch *touch = touches.anyObject;
                 CGPoint p = [touch locationInView:view];
                 if (CGRectContainsPoint(view.bounds, p)) {
@@ -858,7 +858,7 @@
     int picsCount = (int)pics.count;
     
     for (int i = 0; i < 9; i++) {
-        NrControl *picView = _picViews[i];
+        DSControl *picView = _picViews[i];
         UIImageView *imageView = picView.imageView;
         if (i >= picsCount) {
             [imageView sd_cancelCurrentImageLoad];

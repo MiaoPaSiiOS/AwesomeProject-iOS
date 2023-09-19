@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) ESTabBarView * tabbarView;
 
-@property (nonatomic, strong) NrUIButton * giftBtn;
+@property (nonatomic, strong) DSUIButton * giftBtn;
 
 @property (nonatomic, assign) CGFloat initBottomValue;
 @end
@@ -77,13 +77,13 @@
 }
 
 - (void)initBtn{
-    self.giftBtn = [[NrUIButton alloc] initWithFrame:CGRectMake(0, 0, 52, 52)];
+    self.giftBtn = [[DSUIButton alloc] initWithFrame:CGRectMake(0, 0, 52, 52)];
     [self.giftBtn setBackgroundImage:[DSAwesomeKitTool imageNamed:@"tabbar_btn_bg"] forState:UIControlStateNormal];
     [self.giftBtn setTitle:@"福袋" forState:UIControlStateNormal];
     [self.giftBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.giftBtn setImage:[DSAwesomeKitTool imageNamed:@"tabbar_gift"] forState:UIControlStateNormal];
     self.giftBtn.titleLabel.font = [UIFont systemFontOfSize:11 weight:UIFontWeightRegular];
-    self.giftBtn.imagePosition = NrUIButtonImagePositionTop;
+    self.giftBtn.imagePosition = DSUIButtonImagePositionTop;
     self.giftBtn.spacingBetweenImageAndTitle = 3;
     [self.view addSubview:self.giftBtn];
     self.giftBtn.centerX = self.view.width / 2.0;

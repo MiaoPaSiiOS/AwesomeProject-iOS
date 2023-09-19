@@ -70,14 +70,14 @@
     self.btnArray = [NSMutableArray new];
     CGFloat w = kScreenWidth / 5;
     for (int i=0; i<titles.count; i++) {
-        NrUIButton * btn = [[NrUIButton alloc] initWithFrame:CGRectMake(i * w, 0, w, self.tabbarHeight)];
+        DSUIButton * btn = [[DSUIButton alloc] initWithFrame:CGRectMake(i * w, 0, w, self.tabbarHeight)];
         [btn setTitle:titles[i] forState:UIControlStateNormal];
         [btn setTitle:titles[i] forState:UIControlStateSelected];
         [btn setTitleColor:kRGBColor(51, 51, 51) forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         [btn setImage:[DSAwesomeKitTool imageNamed:itemImgNor[i]] forState:UIControlStateNormal];
         [btn setImage:[DSAwesomeKitTool imageNamed:[itemImgNor[i] stringByAppendingString:@"_sel"]]  forState:UIControlStateSelected];
-        btn.imagePosition = NrUIButtonImagePositionTop;
+        btn.imagePosition = DSUIButtonImagePositionTop;
         btn.spacingBetweenImageAndTitle = 5;
         btn.titleLabel.font = [UIFont systemFontOfSize:11 weight:UIFontWeightRegular];
         btn.tag = i;
@@ -89,14 +89,14 @@
 }
 
 - (void)selectIndex:(NSInteger)index{
-    for (NrUIButton * btn in self.btnArray) {
+    for (DSUIButton * btn in self.btnArray) {
         btn.selected = NO;
     }
     self.btnArray[index].selected = YES;
 }
 
 
-- (void)btnClick:(NrUIButton*)btn{
+- (void)btnClick:(DSUIButton*)btn{
     if (btn.tag == 2) {
         return;
     }

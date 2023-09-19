@@ -34,10 +34,10 @@
     _imageViews = imageViews;
     
     kWeakSelf
-    self.touchBlock = ^(NrControl *view, NrGestureRecognizerState state, NSSet *touches, UIEvent *event) {
+    self.touchBlock = ^(DSControl *view, DSGestureRecognizerState state, NSSet *touches, UIEvent *event) {
         kStrongSelf
         if (!strongSelf) return;
-        if (state != NrGestureRecognizerStateEnded) return;
+        if (state != DSGestureRecognizerStateEnded) return;
         
         UITouch *touch = touches.anyObject;
         CGPoint point = [touch locationInView:strongSelf];
@@ -48,7 +48,7 @@
             }
         }
     };
-    self.longPressBlock = ^(NrControl *view, CGPoint point) {
+    self.longPressBlock = ^(DSControl *view, CGPoint point) {
         kStrongSelf
         if (!strongSelf) return;
         NSUInteger index = [strongSelf imageIndexForPoint:point];
@@ -177,16 +177,16 @@
     [self addSubview:_textLabel];
     
     kWeakSelf
-    self.touchBlock = ^(NrControl *view, NrGestureRecognizerState state, NSSet *touches, UIEvent *event) {
+    self.touchBlock = ^(DSControl *view, DSGestureRecognizerState state, NSSet *touches, UIEvent *event) {
         kStrongSelf
         if (!strongSelf) return;
-        if (state == NrGestureRecognizerStateBegan) {
+        if (state == DSGestureRecognizerStateBegan) {
             strongSelf.backgroundColor = kT1CellBGHighlightColor;
-        } else if (state != NrGestureRecognizerStateMoved) {
+        } else if (state != DSGestureRecognizerStateMoved) {
             strongSelf.backgroundColor = [UIColor clearColor];
         }
         
-        if (state == NrGestureRecognizerStateEnded) {
+        if (state == DSGestureRecognizerStateEnded) {
             UITouch *t = touches.anyObject;
             CGPoint p = [t locationInView:strongSelf];
             if (CGRectContainsPoint(strongSelf.bounds, p)) {
@@ -530,7 +530,7 @@
     _socialIconView.userInteractionEnabled = NO;
     [self addSubview:_socialIconView];
     
-    _avatarView = [NrControl new];
+    _avatarView = [DSControl new];
     _avatarView.clipsToBounds = YES;
     _avatarView.layer.cornerRadius = 4;
     _avatarView.layer.borderWidth = LINE_HEIGHT;
@@ -627,16 +627,16 @@
     [self addSubview:_topLine];
     
 
-    self.touchBlock = ^(NrControl *view, NrGestureRecognizerState state, NSSet *touches, UIEvent *event) {
+    self.touchBlock = ^(DSControl *view, DSGestureRecognizerState state, NSSet *touches, UIEvent *event) {
         kStrongSelf
         if (!strongSelf) return;
-        if (state == NrGestureRecognizerStateBegan) {
+        if (state == DSGestureRecognizerStateBegan) {
             strongSelf.backgroundColor = kT1CellBGHighlightColor;
-        } else if (state != NrGestureRecognizerStateMoved) {
+        } else if (state != DSGestureRecognizerStateMoved) {
             strongSelf.backgroundColor = [UIColor clearColor];
         }
         
-        if (state == NrGestureRecognizerStateEnded) {
+        if (state == DSGestureRecognizerStateEnded) {
             UITouch *t = touches.anyObject;
             CGPoint p = [t locationInView:strongSelf];
             if (CGRectContainsPoint(strongSelf.bounds, p)) {
@@ -647,16 +647,16 @@
         }
     };
     
-    _avatarView.touchBlock = ^(NrControl *view, NrGestureRecognizerState state, NSSet *touches, UIEvent *event) {
+    _avatarView.touchBlock = ^(DSControl *view, DSGestureRecognizerState state, NSSet *touches, UIEvent *event) {
         kStrongSelf
         if (!strongSelf) return;
-        if (state == NrGestureRecognizerStateBegan) {
+        if (state == DSGestureRecognizerStateBegan) {
             strongSelf.avatarView.alpha = 0.7;
-        } else if (state != NrGestureRecognizerStateMoved) {
+        } else if (state != DSGestureRecognizerStateMoved) {
             strongSelf.avatarView.alpha = 1;
         }
         
-        if (state == NrGestureRecognizerStateEnded) {
+        if (state == DSGestureRecognizerStateEnded) {
             UITouch *t = touches.anyObject;
             CGPoint p = [t locationInView:strongSelf];
             if (CGRectContainsPoint(strongSelf.bounds, p)) {

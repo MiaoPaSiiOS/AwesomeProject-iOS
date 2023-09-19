@@ -8,6 +8,6 @@
 #ifndef DarkStarAudioRecorderKit_h
 #define DarkStarAudioRecorderKit_h
 
-#import "NrAudioRecorder.h"
+#import "DSAudioRecorder.h"
 
 #endif /* DarkStarAudioRecorderKit_h */
