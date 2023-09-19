@@ -1,6 +1,0 @@
-framework module DarkStarConfiguration {
-  umbrella header "DarkStarConfiguration-umbrella.h"
-
-  export *
-  module * { export * }
-}

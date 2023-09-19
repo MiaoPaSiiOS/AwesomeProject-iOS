@@ -1,6 +1,0 @@
-framework module DarkStarUpdateSDK {
-  umbrella header "DarkStarUpdateSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

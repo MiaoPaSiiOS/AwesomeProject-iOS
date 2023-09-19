@@ -1,6 +1,0 @@
-framework module DarkStarAccountKit {
-  umbrella header "DarkStarAccountKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

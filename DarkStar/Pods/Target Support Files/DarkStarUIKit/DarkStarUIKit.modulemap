@@ -1,6 +1,0 @@
-framework module DarkStarUIKit {
-  umbrella header "DarkStarUIKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

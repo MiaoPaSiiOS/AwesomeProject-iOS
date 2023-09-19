@@ -1,6 +1,0 @@
-framework module DarkStarAudioRecorderKit {
-  umbrella header "DarkStarAudioRecorderKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

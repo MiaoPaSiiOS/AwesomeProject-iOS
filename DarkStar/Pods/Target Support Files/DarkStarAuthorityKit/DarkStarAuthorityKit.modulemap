@@ -1,6 +1,0 @@
-framework module DarkStarAuthorityKit {
-  umbrella header "DarkStarAuthorityKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module NrLottieBridge {
-  umbrella header "NrLottieBridge-umbrella.h"
-
-  export *
-  module * { export * }
-}

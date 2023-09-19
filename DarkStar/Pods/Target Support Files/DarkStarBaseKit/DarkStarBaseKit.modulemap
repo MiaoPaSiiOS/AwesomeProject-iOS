@@ -1,6 +1,0 @@
-framework module DarkStarBaseKit {
-  umbrella header "DarkStarBaseKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
