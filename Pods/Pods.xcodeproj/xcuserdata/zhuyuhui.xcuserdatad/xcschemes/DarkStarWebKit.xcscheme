@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED361721434A17CC030A82649D9E7DAF"
-               BuildableName = "libDarkStarWebKit.a"
+               BuildableName = "DarkStarWebKit.framework"
                BlueprintName = "DarkStarWebKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

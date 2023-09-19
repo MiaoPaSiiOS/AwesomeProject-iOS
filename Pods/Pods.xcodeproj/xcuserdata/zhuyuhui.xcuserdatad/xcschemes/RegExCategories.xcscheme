@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6F65E3BC3C44923E6D2DE23A2BC0450E"
-               BuildableName = "libRegExCategories.a"
+               BuildableName = "RegExCategories.framework"
                BlueprintName = "RegExCategories"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

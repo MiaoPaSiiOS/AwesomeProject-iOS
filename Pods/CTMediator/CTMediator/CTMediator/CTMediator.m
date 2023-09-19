@@ -6,7 +6,7 @@
 //  Copyright © 2016年 casa. All rights reserved.
 //
 
-#import "CTMediator.h"
+#import <CTMediator/CTMediator.h>
 #import <objc/runtime.h>
 #import <CoreGraphics/CoreGraphics.h>
 

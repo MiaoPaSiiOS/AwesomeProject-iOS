@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58D5E236E4689687DBA88FF555852C0A"
-               BuildableName = "libSIAlertView.a"
+               BuildableName = "SIAlertView.framework"
                BlueprintName = "SIAlertView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

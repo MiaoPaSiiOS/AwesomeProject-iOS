@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "32940653E9437D38B30A768EE13037B8"
-               BuildableName = "libDarkStarThirdPartyKit.a"
+               BuildableName = "DarkStarThirdPartyKit.framework"
                BlueprintName = "DarkStarThirdPartyKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

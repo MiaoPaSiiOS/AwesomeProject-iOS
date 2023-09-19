@@ -9,5 +9,6 @@
 #define DarkStarResourceKit_h
 
 #import "DSResourceTool.h"
+#import "DSCacheManger.h"
 
 #endif /* DarkStarResourceKit_h */

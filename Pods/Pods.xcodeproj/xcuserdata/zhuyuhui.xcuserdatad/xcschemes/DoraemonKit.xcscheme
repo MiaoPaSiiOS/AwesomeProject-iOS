@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1C740322617D8EE2F874BD31781B7702"
-               BuildableName = "libDoraemonKit.a"
+               BuildableName = "DoraemonKit.framework"
                BlueprintName = "DoraemonKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

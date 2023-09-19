@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D43E8320CBC66B9F1F564420CA84F05F"
-               BuildableName = "libDarkStarPhotoBrowserKit.a"
+               BuildableName = "DarkStarPhotoBrowserKit.framework"
                BlueprintName = "DarkStarPhotoBrowserKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -10,6 +10,22 @@
 
 #import <UIKit/UIKit.h>
 
+#if __has_include(<DarkStarUIComponents/NSObject+RETip.h>)
+#import <DarkStarUIComponents/NSObject+RETip.h>
+#endif
+
+#if __has_include(<DarkStarUIComponents/RERectCornerView.h>)
+#import <DarkStarUIComponents/RERectCornerView.h>
+#endif
+
+#if __has_include(<DarkStarUIComponents/UIView+REAddErrorView.h>)
+#import <DarkStarUIComponents/UIView+REAddErrorView.h>
+#endif
+
+#if __has_include(<DarkStarUIComponents/PNCGifWaitView.h>)
+#import <DarkStarUIComponents/PNCGifWaitView.h>
+#endif
+
 #if __has_include(<DarkStarUIComponents/NrActionSheet.h>)
 #import <DarkStarUIComponents/NrActionSheet.h>
 #endif

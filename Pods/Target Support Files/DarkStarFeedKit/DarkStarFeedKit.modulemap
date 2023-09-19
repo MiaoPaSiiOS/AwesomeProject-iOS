@@ -1,0 +1,6 @@
+framework module DarkStarFeedKit {
+  umbrella header "DarkStarFeedKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

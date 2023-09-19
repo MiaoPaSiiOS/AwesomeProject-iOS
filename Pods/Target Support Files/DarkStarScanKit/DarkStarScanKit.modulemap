@@ -1,0 +1,6 @@
+framework module DarkStarScanKit {
+  umbrella header "DarkStarScanKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

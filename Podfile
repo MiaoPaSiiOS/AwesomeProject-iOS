@@ -7,6 +7,8 @@ workspace 'DSDemo.xcworkspace'
 target 'DSDemo-OC' do
   project 'DSDemo-OC/DSDemo-OC.xcodeproj'
 
+  use_frameworks!
+  
   pod 'DarkStarConfiguration', :path => './CommonPods/DarkStarConfiguration/'
   pod 'DarkStarBaseKit', :path => './CommonPods/DarkStarBaseKit/'
   pod 'DarkStarUIKit', :path => './CommonPods/DarkStarUIKit/'

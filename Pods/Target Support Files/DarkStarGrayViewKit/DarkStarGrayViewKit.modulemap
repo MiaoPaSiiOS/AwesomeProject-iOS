@@ -1,0 +1,6 @@
+framework module DarkStarGrayViewKit {
+  umbrella header "DarkStarGrayViewKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

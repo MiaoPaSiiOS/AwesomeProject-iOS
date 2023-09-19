@@ -3,7 +3,7 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
-#import "TTTAttributedLabel.h"
+#import <TTTAttributedLabel/TTTAttributedLabel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

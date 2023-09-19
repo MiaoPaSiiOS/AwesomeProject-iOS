@@ -1,0 +1,6 @@
+framework module DarkStarPhotoBrowserKit {
+  umbrella header "DarkStarPhotoBrowserKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

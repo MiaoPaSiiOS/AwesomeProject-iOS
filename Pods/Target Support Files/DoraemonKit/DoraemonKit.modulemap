@@ -1,4 +1,4 @@
-module DoraemonKit {
+framework module DoraemonKit {
   umbrella header "DoraemonKit-umbrella.h"
 
   export *

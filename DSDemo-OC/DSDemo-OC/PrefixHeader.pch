@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  DSDemo-OC
+//
+//  Created by zhuyuhui on 2023/9/19.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
+#import <DarkStarConfiguration/DSAppConfiguration.h>
+#import <DarkStarConfiguration/DSEnvironmentTool.h>
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <AFNetworking/AFNetworking.h>
+#import "SDWebImage/UIImageView+WebCache.h"
+
+#import "REUINavigationController.h"
+#import "REGlobal.h"
+#import "KLNetWorkManager.h"
+#import "REAPIHeader.h"
+
+#import "RENotificationConfig.h"
+#import "NoticeDefine.h"
+#import "REUIConfig.h"
+#import "UIStyleConfig.h"
+
+
+#import "AppDelegate.h"
+
+
+#endif /* PrefixHeader_pch */

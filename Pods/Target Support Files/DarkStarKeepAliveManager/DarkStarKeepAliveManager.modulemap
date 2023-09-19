@@ -1,0 +1,6 @@
+framework module DarkStarKeepAliveManager {
+  umbrella header "DarkStarKeepAliveManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

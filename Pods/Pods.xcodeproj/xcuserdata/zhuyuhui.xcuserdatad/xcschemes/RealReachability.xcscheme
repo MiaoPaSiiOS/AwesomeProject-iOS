@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D877AA5CCB5772505261462171EF8A75"
-               BuildableName = "libRealReachability.a"
+               BuildableName = "RealReachability.framework"
                BlueprintName = "RealReachability"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

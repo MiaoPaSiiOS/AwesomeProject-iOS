@@ -1,1 +1,0 @@
-../../../../CommonPods/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit/Classes/CLPhotoBrowserAnimation/CLPhotoBrowserPresentationController.h

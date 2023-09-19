@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0BA90121FD6CD78CCA2C9B6785F9306"
-               BuildableName = "libNrLottieBridge.a"
+               BuildableName = "NrLottieBridge.framework"
                BlueprintName = "NrLottieBridge"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

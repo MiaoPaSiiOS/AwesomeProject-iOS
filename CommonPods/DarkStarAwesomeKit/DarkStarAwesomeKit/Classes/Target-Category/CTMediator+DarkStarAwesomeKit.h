@@ -5,7 +5,7 @@
 //  Created by zhuyuhui on 2022/7/1.
 //
 
-#import "CTMediator.h"
+#import <CTMediator/CTMediator.h>
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 

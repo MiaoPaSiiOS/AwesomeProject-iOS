@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D9A3505C1B01E0BA8525A98 /* libPods-DSDemo-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EE4CB1EB90981477249EF8 /* libPods-DSDemo-OC.a */; };
 		AFFA09232AB9A233008D2CAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09222AB9A233008D2CAD /* AppDelegate.m */; };
 		AFFA09262AB9A233008D2CAD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09252AB9A233008D2CAD /* SceneDelegate.m */; };
 		AFFA09292AB9A233008D2CAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09282AB9A233008D2CAD /* ViewController.m */; };
@@ -15,10 +14,26 @@
 		AFFA092E2AB9A235008D2CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFA092D2AB9A235008D2CAD /* Assets.xcassets */; };
 		AFFA09312AB9A235008D2CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFA092F2AB9A235008D2CAD /* LaunchScreen.storyboard */; };
 		AFFA09342AB9A235008D2CAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09332AB9A235008D2CAD /* main.m */; };
+		AFFA09EF2AB9A6A8008D2CAD /* DataEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09752AB9A6A7008D2CAD /* DataEncrypt.m */; };
+		AFFA09F02AB9A6A8008D2CAD /* KLUploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09782AB9A6A7008D2CAD /* KLUploadFile.m */; };
+		AFFA09F12AB9A6A8008D2CAD /* KLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09792AB9A6A7008D2CAD /* KLResponse.m */; };
+		AFFA09F22AB9A6A8008D2CAD /* KLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA097A2AB9A6A7008D2CAD /* KLRequest.m */; };
+		AFFA09F32AB9A6A8008D2CAD /* KLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA097C2AB9A6A7008D2CAD /* KLRequestGenerator.m */; };
+		AFFA09F42AB9A6A8008D2CAD /* KLNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09822AB9A6A7008D2CAD /* KLNetWorkManager.m */; };
+		AFFA0A052AB9A6A8008D2CAD /* REHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09B12AB9A6A7008D2CAD /* REHomeViewController.m */; };
+		AFFA0A062AB9A6A8008D2CAD /* REStrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09B52AB9A6A7008D2CAD /* REStrollViewController.m */; };
+		AFFA0A072AB9A6A8008D2CAD /* REShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09B82AB9A6A7008D2CAD /* REShopCartViewController.m */; };
+		AFFA0A082AB9A6A8008D2CAD /* RENewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09BA2AB9A6A7008D2CAD /* RENewsViewController.m */; };
+		AFFA0A092AB9A6A8008D2CAD /* REMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09BE2AB9A6A8008D2CAD /* REMineViewController.m */; };
+		AFFA0A0A2AB9A6A8008D2CAD /* RESettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C12AB9A6A8008D2CAD /* RESettingViewController.m */; };
+		AFFA0A0B2AB9A6A8008D2CAD /* REUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C32AB9A6A8008D2CAD /* REUITabBarController.m */; };
+		AFFA0A0C2AB9A6A8008D2CAD /* REUITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C42AB9A6A8008D2CAD /* REUITabBar.m */; };
+		AFFA0A0D2AB9A6A8008D2CAD /* REUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C52AB9A6A8008D2CAD /* REUINavigationController.m */; };
+		AFFA0A112AB9A6A8008D2CAD /* REGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09D22AB9A6A8008D2CAD /* REGlobal.m */; };
+		F0B598C0EBB794000805254D /* Pods_DSDemo_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19212673F58B728C025538F /* Pods_DSDemo_OC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18EE4CB1EB90981477249EF8 /* libPods-DSDemo-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSDemo-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BCF3E3FB7F0164776EF12A /* Pods-DSDemo-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-OC.debug.xcconfig"; path = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		925B340A2AEDC3EB80B7230A /* Pods-DSDemo-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-OC.release.xcconfig"; path = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.release.xcconfig"; sourceTree = "<group>"; };
 		AFFA091E2AB9A233008D2CAD /* DSDemo-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSDemo-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +48,45 @@
 		AFFA09302AB9A235008D2CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFFA09322AB9A235008D2CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFA09332AB9A235008D2CAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFFA09752AB9A6A7008D2CAD /* DataEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEncrypt.m; sourceTree = "<group>"; };
+		AFFA09762AB9A6A7008D2CAD /* DataEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEncrypt.h; sourceTree = "<group>"; };
+		AFFA09782AB9A6A7008D2CAD /* KLUploadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLUploadFile.m; sourceTree = "<group>"; };
+		AFFA09792AB9A6A7008D2CAD /* KLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLResponse.m; sourceTree = "<group>"; };
+		AFFA097A2AB9A6A7008D2CAD /* KLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLRequest.m; sourceTree = "<group>"; };
+		AFFA097B2AB9A6A7008D2CAD /* KLNetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNetWorkManager.h; sourceTree = "<group>"; };
+		AFFA097C2AB9A6A7008D2CAD /* KLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLRequestGenerator.m; sourceTree = "<group>"; };
+		AFFA097D2AB9A6A7008D2CAD /* KLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRequest.h; sourceTree = "<group>"; };
+		AFFA097E2AB9A6A7008D2CAD /* KLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLResponse.h; sourceTree = "<group>"; };
+		AFFA097F2AB9A6A7008D2CAD /* KLUploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLUploadFile.h; sourceTree = "<group>"; };
+		AFFA09802AB9A6A7008D2CAD /* KLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRequestGenerator.h; sourceTree = "<group>"; };
+		AFFA09812AB9A6A7008D2CAD /* REAPIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REAPIHeader.h; sourceTree = "<group>"; };
+		AFFA09822AB9A6A7008D2CAD /* KLNetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNetWorkManager.m; sourceTree = "<group>"; };
+		AFFA09B12AB9A6A7008D2CAD /* REHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REHomeViewController.m; sourceTree = "<group>"; };
+		AFFA09B22AB9A6A7008D2CAD /* REHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REHomeViewController.h; sourceTree = "<group>"; };
+		AFFA09B42AB9A6A7008D2CAD /* REStrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REStrollViewController.h; sourceTree = "<group>"; };
+		AFFA09B52AB9A6A7008D2CAD /* REStrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REStrollViewController.m; sourceTree = "<group>"; };
+		AFFA09B72AB9A6A7008D2CAD /* REShopCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REShopCartViewController.h; sourceTree = "<group>"; };
+		AFFA09B82AB9A6A7008D2CAD /* REShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REShopCartViewController.m; sourceTree = "<group>"; };
+		AFFA09BA2AB9A6A7008D2CAD /* RENewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENewsViewController.m; sourceTree = "<group>"; };
+		AFFA09BB2AB9A6A8008D2CAD /* RENewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENewsViewController.h; sourceTree = "<group>"; };
+		AFFA09BD2AB9A6A8008D2CAD /* REMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMineViewController.h; sourceTree = "<group>"; };
+		AFFA09BE2AB9A6A8008D2CAD /* REMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMineViewController.m; sourceTree = "<group>"; };
+		AFFA09C02AB9A6A8008D2CAD /* RESettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESettingViewController.h; sourceTree = "<group>"; };
+		AFFA09C12AB9A6A8008D2CAD /* RESettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESettingViewController.m; sourceTree = "<group>"; };
+		AFFA09C32AB9A6A8008D2CAD /* REUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REUITabBarController.m; sourceTree = "<group>"; };
+		AFFA09C42AB9A6A8008D2CAD /* REUITabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REUITabBar.m; sourceTree = "<group>"; };
+		AFFA09C52AB9A6A8008D2CAD /* REUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REUINavigationController.m; sourceTree = "<group>"; };
+		AFFA09C62AB9A6A8008D2CAD /* REUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REUITabBarController.h; sourceTree = "<group>"; };
+		AFFA09C72AB9A6A8008D2CAD /* REUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REUINavigationController.h; sourceTree = "<group>"; };
+		AFFA09C82AB9A6A8008D2CAD /* REUITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REUITabBar.h; sourceTree = "<group>"; };
+		AFFA09D22AB9A6A8008D2CAD /* REGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGlobal.m; sourceTree = "<group>"; };
+		AFFA09DE2AB9A6A8008D2CAD /* REGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGlobal.h; sourceTree = "<group>"; };
+		AFFA09E22AB9A6A8008D2CAD /* RENotificationConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENotificationConfig.h; sourceTree = "<group>"; };
+		AFFA09E32AB9A6A8008D2CAD /* NoticeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeDefine.h; sourceTree = "<group>"; };
+		AFFA09E42AB9A6A8008D2CAD /* REUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REUIConfig.h; sourceTree = "<group>"; };
+		AFFA09E52AB9A6A8008D2CAD /* UIStyleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleConfig.h; sourceTree = "<group>"; };
+		AFFA0A182AB9A880008D2CAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F19212673F58B728C025538F /* Pods_DSDemo_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSDemo_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D9A3505C1B01E0BA8525A98 /* libPods-DSDemo-OC.a in Frameworks */,
+				F0B598C0EBB794000805254D /* Pods_DSDemo_OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +114,7 @@
 		57A5ADBDD6496ECC91338A22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18EE4CB1EB90981477249EF8 /* libPods-DSDemo-OC.a */,
+				F19212673F58B728C025538F /* Pods_DSDemo_OC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +140,7 @@
 		AFFA09202AB9A233008D2CAD /* DSDemo-OC */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA095A2AB9A6A7008D2CAD /* Classes */,
 				AFFA09212AB9A233008D2CAD /* AppDelegate.h */,
 				AFFA09222AB9A233008D2CAD /* AppDelegate.m */,
 				AFFA09242AB9A233008D2CAD /* SceneDelegate.h */,
@@ -97,8 +152,149 @@
 				AFFA092F2AB9A235008D2CAD /* LaunchScreen.storyboard */,
 				AFFA09322AB9A235008D2CAD /* Info.plist */,
 				AFFA09332AB9A235008D2CAD /* main.m */,
+				AFFA0A182AB9A880008D2CAD /* PrefixHeader.pch */,
 			);
 			path = "DSDemo-OC";
+			sourceTree = "<group>";
+		};
+		AFFA095A2AB9A6A7008D2CAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09742AB9A6A7008D2CAD /* Crypt */,
+				AFFA09772AB9A6A7008D2CAD /* Network */,
+				AFFA09AF2AB9A6A7008D2CAD /* Pages */,
+				AFFA09CF2AB9A6A8008D2CAD /* Global */,
+				AFFA09E12AB9A6A8008D2CAD /* BaseDefine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AFFA09742AB9A6A7008D2CAD /* Crypt */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09762AB9A6A7008D2CAD /* DataEncrypt.h */,
+				AFFA09752AB9A6A7008D2CAD /* DataEncrypt.m */,
+			);
+			path = Crypt;
+			sourceTree = "<group>";
+		};
+		AFFA09772AB9A6A7008D2CAD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA097B2AB9A6A7008D2CAD /* KLNetWorkManager.h */,
+				AFFA09822AB9A6A7008D2CAD /* KLNetWorkManager.m */,
+				AFFA097D2AB9A6A7008D2CAD /* KLRequest.h */,
+				AFFA097A2AB9A6A7008D2CAD /* KLRequest.m */,
+				AFFA09802AB9A6A7008D2CAD /* KLRequestGenerator.h */,
+				AFFA097C2AB9A6A7008D2CAD /* KLRequestGenerator.m */,
+				AFFA097E2AB9A6A7008D2CAD /* KLResponse.h */,
+				AFFA09792AB9A6A7008D2CAD /* KLResponse.m */,
+				AFFA097F2AB9A6A7008D2CAD /* KLUploadFile.h */,
+				AFFA09782AB9A6A7008D2CAD /* KLUploadFile.m */,
+				AFFA09812AB9A6A7008D2CAD /* REAPIHeader.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AFFA09AF2AB9A6A7008D2CAD /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09B02AB9A6A7008D2CAD /* Home */,
+				AFFA09B32AB9A6A7008D2CAD /* Stroll */,
+				AFFA09B62AB9A6A7008D2CAD /* ShopCart */,
+				AFFA09B92AB9A6A7008D2CAD /* News */,
+				AFFA09BC2AB9A6A8008D2CAD /* Mine */,
+				AFFA09C22AB9A6A8008D2CAD /* MainTab */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AFFA09B02AB9A6A7008D2CAD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09B22AB9A6A7008D2CAD /* REHomeViewController.h */,
+				AFFA09B12AB9A6A7008D2CAD /* REHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AFFA09B32AB9A6A7008D2CAD /* Stroll */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09B42AB9A6A7008D2CAD /* REStrollViewController.h */,
+				AFFA09B52AB9A6A7008D2CAD /* REStrollViewController.m */,
+			);
+			path = Stroll;
+			sourceTree = "<group>";
+		};
+		AFFA09B62AB9A6A7008D2CAD /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09B72AB9A6A7008D2CAD /* REShopCartViewController.h */,
+				AFFA09B82AB9A6A7008D2CAD /* REShopCartViewController.m */,
+			);
+			path = ShopCart;
+			sourceTree = "<group>";
+		};
+		AFFA09B92AB9A6A7008D2CAD /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09BB2AB9A6A8008D2CAD /* RENewsViewController.h */,
+				AFFA09BA2AB9A6A7008D2CAD /* RENewsViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		AFFA09BC2AB9A6A8008D2CAD /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09BD2AB9A6A8008D2CAD /* REMineViewController.h */,
+				AFFA09BE2AB9A6A8008D2CAD /* REMineViewController.m */,
+				AFFA09BF2AB9A6A8008D2CAD /* Setting */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AFFA09BF2AB9A6A8008D2CAD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09C02AB9A6A8008D2CAD /* RESettingViewController.h */,
+				AFFA09C12AB9A6A8008D2CAD /* RESettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		AFFA09C22AB9A6A8008D2CAD /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09C72AB9A6A8008D2CAD /* REUINavigationController.h */,
+				AFFA09C52AB9A6A8008D2CAD /* REUINavigationController.m */,
+				AFFA09C82AB9A6A8008D2CAD /* REUITabBar.h */,
+				AFFA09C42AB9A6A8008D2CAD /* REUITabBar.m */,
+				AFFA09C62AB9A6A8008D2CAD /* REUITabBarController.h */,
+				AFFA09C32AB9A6A8008D2CAD /* REUITabBarController.m */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		AFFA09CF2AB9A6A8008D2CAD /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09DE2AB9A6A8008D2CAD /* REGlobal.h */,
+				AFFA09D22AB9A6A8008D2CAD /* REGlobal.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		AFFA09E12AB9A6A8008D2CAD /* BaseDefine */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA09E22AB9A6A8008D2CAD /* RENotificationConfig.h */,
+				AFFA09E32AB9A6A8008D2CAD /* NoticeDefine.h */,
+				AFFA09E42AB9A6A8008D2CAD /* REUIConfig.h */,
+				AFFA09E52AB9A6A8008D2CAD /* UIStyleConfig.h */,
+			);
+			path = BaseDefine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +308,7 @@
 				AFFA091A2AB9A233008D2CAD /* Sources */,
 				AFFA091B2AB9A233008D2CAD /* Frameworks */,
 				AFFA091C2AB9A233008D2CAD /* Resources */,
-				370F803F00392F1C1768DFF7 /* [CP] Copy Pods Resources */,
+				EE74023C8292E60367DEB0CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,23 +365,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		370F803F00392F1C1768DFF7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7E3492C60C5AC7F141EEDCA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +387,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE74023C8292E60367DEB0CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,10 +411,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFA0A092AB9A6A8008D2CAD /* REMineViewController.m in Sources */,
+				AFFA0A082AB9A6A8008D2CAD /* RENewsViewController.m in Sources */,
 				AFFA09292AB9A233008D2CAD /* ViewController.m in Sources */,
+				AFFA09F02AB9A6A8008D2CAD /* KLUploadFile.m in Sources */,
 				AFFA09232AB9A233008D2CAD /* AppDelegate.m in Sources */,
+				AFFA0A112AB9A6A8008D2CAD /* REGlobal.m in Sources */,
 				AFFA09342AB9A235008D2CAD /* main.m in Sources */,
+				AFFA0A0D2AB9A6A8008D2CAD /* REUINavigationController.m in Sources */,
+				AFFA0A0C2AB9A6A8008D2CAD /* REUITabBar.m in Sources */,
+				AFFA0A0B2AB9A6A8008D2CAD /* REUITabBarController.m in Sources */,
+				AFFA0A0A2AB9A6A8008D2CAD /* RESettingViewController.m in Sources */,
+				AFFA0A062AB9A6A8008D2CAD /* REStrollViewController.m in Sources */,
+				AFFA09EF2AB9A6A8008D2CAD /* DataEncrypt.m in Sources */,
+				AFFA0A052AB9A6A8008D2CAD /* REHomeViewController.m in Sources */,
 				AFFA09262AB9A233008D2CAD /* SceneDelegate.m in Sources */,
+				AFFA09F32AB9A6A8008D2CAD /* KLRequestGenerator.m in Sources */,
+				AFFA09F12AB9A6A8008D2CAD /* KLResponse.m in Sources */,
+				AFFA09F42AB9A6A8008D2CAD /* KLNetWorkManager.m in Sources */,
+				AFFA09F22AB9A6A8008D2CAD /* KLRequest.m in Sources */,
+				AFFA0A072AB9A6A8008D2CAD /* REShopCartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG6B48G9LT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSDemo-OC/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSDemo-OC/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -372,6 +585,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +595,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/libwebp/src",
+				);
 			};
 			name = Debug;
 		};
@@ -393,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG6B48G9LT;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSDemo-OC/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSDemo-OC/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -400,6 +619,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,6 +629,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/libwebp/src",
+				);
 			};
 			name = Release;
 		};
