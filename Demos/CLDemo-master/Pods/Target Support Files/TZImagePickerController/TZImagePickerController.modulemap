@@ -1,4 +1,4 @@
-module TZImagePickerController {
+framework module TZImagePickerController {
   umbrella header "TZImagePickerController-umbrella.h"
 
   export *

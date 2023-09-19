@@ -290,7 +290,7 @@
 		5BEF4CFC2881013100A15433 /* CLTruncationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4CFB2881013100A15433 /* CLTruncationController.swift */; };
 		5BEF4CFE2881028D00A15433 /* CLTruncationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4CFD2881028D00A15433 /* CLTruncationLabel.swift */; };
 		5BEF4D002881047D00A15433 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4CFF2881047D00A15433 /* NSAttributedString+Extension.swift */; };
-		C010E9D2E10B3C83DC2DFA27 /* libPods-CLDemo-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8254A72163DF7A29F742753 /* libPods-CLDemo-Swift.a */; };
+		A1107903CADD99E7231086F9 /* Pods_CLDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9606C4C02C864BD23FA2822 /* Pods_CLDemo_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -588,7 +588,7 @@
 		5BEF4CFD2881028D00A15433 /* CLTruncationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTruncationLabel.swift; sourceTree = "<group>"; };
 		5BEF4CFF2881047D00A15433 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		6B6549039237527F047D3A8E /* Pods-CLDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
-		C8254A72163DF7A29F742753 /* libPods-CLDemo-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLDemo-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9606C4C02C864BD23FA2822 /* Pods_CLDemo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLDemo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -596,8 +596,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C010E9D2E10B3C83DC2DFA27 /* libPods-CLDemo-Swift.a in Frameworks */,
 				5B58C57226846B34001736D7 /* libmp3lame.a in Frameworks */,
+				A1107903CADD99E7231086F9 /* Pods_CLDemo_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2016,7 +2016,7 @@
 		6B688C6DBA40FB3A51DC8FA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8254A72163DF7A29F742753 /* libPods-CLDemo-Swift.a */,
+				C9606C4C02C864BD23FA2822 /* Pods_CLDemo_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2042,7 +2042,7 @@
 				5B4895EE268097510046AF31 /* Sources */,
 				5B4895EF268097510046AF31 /* Frameworks */,
 				5B4895F0268097510046AF31 /* Resources */,
-				82C1B3F56A3A3875C33AB06A /* [CP] Copy Pods Resources */,
+				88BB98547243FB1BE9051D60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2144,21 +2144,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		82C1B3F56A3A3875C33AB06A /* [CP] Copy Pods Resources */ = {
+		88BB98547243FB1BE9051D60 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CLDemo-Swift/Pods-CLDemo-Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F236344929B87783A0A711BF /* [CP] Check Pods Manifest.lock */ = {
@@ -2595,7 +2595,7 @@
 				DEVELOPMENT_TEAM = 533J5B8T42;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CLDemo-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2622,7 +2622,7 @@
 				DEVELOPMENT_TEAM = 533J5B8T42;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "CLDemo-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

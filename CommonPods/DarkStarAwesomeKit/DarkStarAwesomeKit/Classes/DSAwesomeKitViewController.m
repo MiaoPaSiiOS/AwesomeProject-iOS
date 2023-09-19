@@ -118,6 +118,16 @@
             @"classStr":@"CLPhotoBrowserTableViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]广播轮播",
+            @"classStr":@"CLBroadcastController",
+            @"extParmers":@{}
+        },
+        @{
+            @"title":@"[展示]气泡拖拽",
+            @"classStr":@"CLBubbleViewController",
+            @"extParmers":@{}
+        },
         
     ]];
     

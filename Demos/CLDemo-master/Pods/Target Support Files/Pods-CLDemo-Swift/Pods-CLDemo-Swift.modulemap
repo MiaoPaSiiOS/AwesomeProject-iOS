@@ -1,4 +1,4 @@
-module Pods_CLDemo_Swift {
+framework module Pods_CLDemo_Swift {
   umbrella header "Pods-CLDemo-Swift-umbrella.h"
 
   export *

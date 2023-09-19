@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCB5EA80CC733D89D54DAEB30E93351D"
-               BuildableName = "libDateToolsSwift.a"
+               BuildableName = "DateToolsSwift.framework"
                BlueprintName = "DateToolsSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

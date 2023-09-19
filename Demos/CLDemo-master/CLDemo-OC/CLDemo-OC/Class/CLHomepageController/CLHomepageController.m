@@ -41,7 +41,7 @@
 #import "CLScrollerViewLinerController.h"
 #import "CLSwipeViewController.h"
 #import "CLClipImageViewController.h"
-
+#import "CLCurriculumController.h"
 
 @interface CLHomepageController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -106,7 +106,7 @@
     if (_arrayDS == nil) {
         _arrayDS = [[NSMutableArray alloc] init];
         
-        [_arrayDS addObject: [[CLHomepageModel alloc] initName:@"裁剪图片" controllerClass:[CLClipImageViewController class]]];
+        [_arrayDS addObject: [[CLHomepageModel alloc] initName:@"裁剪图片" controllerClass:[CLCurriculumController class]]];
         [_arrayDS addObject: [[CLHomepageModel alloc] initName:@"SwipeTest" controllerClass:[CLSwipeViewController class]]];
         [_arrayDS addObject: [[CLHomepageModel alloc] initName:@"ScrollView线性滚动" controllerClass:[CLScrollerViewLinerController class]]];
         [_arrayDS addObject: [[CLHomepageModel alloc] initName:@"豆瓣卡片堆叠" controllerClass:[CLDBKPDDViewController class]]];

@@ -26,7 +26,7 @@ end
 
 target 'CLDemo-Swift' do
   project 'CLDemo-Swift/CLDemo-Swift.xcodeproj'
-
+  use_frameworks!
   pod 'SnapKit'
   pod 'lottie-ios'
   pod 'DateToolsSwift'
