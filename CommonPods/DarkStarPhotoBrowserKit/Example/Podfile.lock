@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarPhotoBrowserKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarPhotoBrowserKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarPhotoBrowserKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarPhotoBrowserKit: 3782f50315110486252b42336b84471a295412a1
+
+PODFILE CHECKSUM: 78882dd80122c67cafd5e25546ef844a7538547f
+
+COCOAPODS: 1.11.3

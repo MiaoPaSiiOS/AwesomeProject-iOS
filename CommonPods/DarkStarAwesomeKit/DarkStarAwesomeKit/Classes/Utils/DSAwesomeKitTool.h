@@ -12,8 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DSAwesomeKitTool : NSObject
 + (NSBundle *)AssetsBundle;
 
-+ (UIImage *)imageNamed:(NSString *)name;
++ (nullable UIImage *)imageNamed:(NSString *)name;
 
++ (nullable UIImage *)imageNamed:(NSString *)name inDirectory:(nullable NSString *)subpath;
+
++ (nullable NSString *)imagePathWithNamed:(NSString *)name inDirectory:(nullable NSString *)subpath;
 @end
 
 NS_ASSUME_NONNULL_END

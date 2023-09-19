@@ -49,6 +49,7 @@ TODO: Add long description of the pod here.
   s.dependency 'DarkStarGeneralTools'
   
   s.dependency 'DarkStarDownloadManagerKit'
+  s.dependency 'DarkStarPhotoBrowserKit'
   s.dependency 'CTMediator'
   s.dependency 'Masonry'
   s.dependency 'MJExtension'

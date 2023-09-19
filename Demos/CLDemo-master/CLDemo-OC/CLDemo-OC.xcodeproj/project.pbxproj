@@ -1198,12 +1198,12 @@
 		5BE668912684865C0095F82E /* CLPhotoBrowserAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				5BE668922684865C0095F82E /* CLPhotoBrowserPresentationController.h */,
 				5BE668932684865C0095F82E /* CLPhotoBrowserAnimatedTransitioning.h */,
-				5BE668942684865C0095F82E /* CLPhotoBrowserTransitioningDelegate.m */,
 				5BE668952684865C0095F82E /* CLPhotoBrowserAnimatedTransitioning.m */,
+				5BE668922684865C0095F82E /* CLPhotoBrowserPresentationController.h */,
 				5BE668962684865C0095F82E /* CLPhotoBrowserPresentationController.m */,
 				5BE668972684865C0095F82E /* CLPhotoBrowserTransitioningDelegate.h */,
+				5BE668942684865C0095F82E /* CLPhotoBrowserTransitioningDelegate.m */,
 			);
 			path = CLPhotoBrowserAnimation;
 			sourceTree = "<group>";

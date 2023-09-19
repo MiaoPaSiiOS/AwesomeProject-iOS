@@ -113,6 +113,11 @@
             @"classStr":@"CLWaveViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]图片浏览器",
+            @"classStr":@"CLPhotoBrowserTableViewController",
+            @"extParmers":@{}
+        },
         
     ]];
     

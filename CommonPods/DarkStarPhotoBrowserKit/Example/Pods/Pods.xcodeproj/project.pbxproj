@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D02F048A9048B67B124C3D32EB669A /* Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E61BB3082E14FC7868D467B94F5D9FF /* Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40289A72F2895BD46F351C68A24FF729 /* Pods-DarkStarPhotoBrowserKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37585F46B62211E3C088AE2BFC01C76A /* Pods-DarkStarPhotoBrowserKit_Example-dummy.m */; };
+		4BE847C97B7C8651D8BDEC97B4F83734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6AB7A0AEE05F44154475B7723C8826AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		730DCC1655801C930927A914364739BA /* Pods-DarkStarPhotoBrowserKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 298B310E60EFD4A768641B61FCE62162 /* Pods-DarkStarPhotoBrowserKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		980F78CB9FB87D58B8E5CA8186AACB18 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A47E1D779BE06854BD416123A67AA4 /* ReplaceMe.m */; };
+		9E620F3DDDD9FEDBD4934608EB04B2F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D0E67ABEA28BBBF9CF0063C9E148B6EF /* Pods-DarkStarPhotoBrowserKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5C4BEFECCC8D001D83FD97FBA1E37 /* Pods-DarkStarPhotoBrowserKit_Tests-dummy.m */; };
+		D5DE5438A0864A5525EAED0A3FC0F7ED /* DarkStarPhotoBrowserKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B28ECBC80BABF2481115E042BFCCA20 /* DarkStarPhotoBrowserKit-dummy.m */; };
+		E4B9637AB8D7B15F922EE6334C503B7C /* DarkStarPhotoBrowserKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFE9428A7CC22DA60AF7ECCCEBD0E0A /* DarkStarPhotoBrowserKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		513E9E4734F66C2397DABA3C1E33524D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F2813FF89AA4074CF755BE7631D0D3;
+			remoteInfo = "Pods-DarkStarPhotoBrowserKit_Example";
+		};
+		E7C2BEB9B181DCB6781B0231BB0A739D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D43E8320CBC66B9F1F564420CA84F05F;
+			remoteInfo = DarkStarPhotoBrowserKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E61BB3082E14FC7868D467B94F5D9FF /* Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		12B0C0E3EE7EE92970D53D5BDF4DE1F8 /* DarkStarPhotoBrowserKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarkStarPhotoBrowserKit.release.xcconfig; sourceTree = "<group>"; };
+		1FA28B708B601B65DF07F8261345F648 /* Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2025462080ECEF4FF219594FFDB501F5 /* Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		22A47E1D779BE06854BD416123A67AA4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = DarkStarPhotoBrowserKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		2961B57CFAF47DF5591242F79BB64952 /* DarkStarPhotoBrowserKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DarkStarPhotoBrowserKit.modulemap; sourceTree = "<group>"; };
+		298B310E60EFD4A768641B61FCE62162 /* Pods-DarkStarPhotoBrowserKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DarkStarPhotoBrowserKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		30AFFF3B291964EA9CF6C75853EE174C /* DarkStarPhotoBrowserKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DarkStarPhotoBrowserKit.debug.xcconfig; sourceTree = "<group>"; };
+		37585F46B62211E3C088AE2BFC01C76A /* Pods-DarkStarPhotoBrowserKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkStarPhotoBrowserKit_Example-dummy.m"; sourceTree = "<group>"; };
+		407C4FF47796DA89807472223F882A2E /* Pods-DarkStarPhotoBrowserKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarPhotoBrowserKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		42236C92CD093A0DD7C49800675895A5 /* Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4AF5480D1B9B26254A8D648EBB502C7E /* Pods-DarkStarPhotoBrowserKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarPhotoBrowserKit_Example-Info.plist"; sourceTree = "<group>"; };
+		536992ADFB1852F724CA706F6CF81926 /* Pods-DarkStarPhotoBrowserKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkStarPhotoBrowserKit_Example"; path = Pods_DarkStarPhotoBrowserKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ABD24852FCAD53EE379DD54753B4D1 /* Pods-DarkStarPhotoBrowserKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DarkStarPhotoBrowserKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		660223B99E3BC92EC356F7C45A423947 /* Pods-DarkStarPhotoBrowserKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarPhotoBrowserKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6B28ECBC80BABF2481115E042BFCCA20 /* DarkStarPhotoBrowserKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DarkStarPhotoBrowserKit-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75EFA6F0084FFCE01511B93760F97588 /* DarkStarPhotoBrowserKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarkStarPhotoBrowserKit-prefix.pch"; sourceTree = "<group>"; };
+		7818EAFABB0D50227A88E24CA5E95F7C /* Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		96C3A80FAA4EF0A49FE7C156C9E4EFEE /* Pods-DarkStarPhotoBrowserKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarPhotoBrowserKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AFC3E691F1D301E8BF06878FF06559F /* Pods-DarkStarPhotoBrowserKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DarkStarPhotoBrowserKit_Tests"; path = Pods_DarkStarPhotoBrowserKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF5C4BEFECCC8D001D83FD97FBA1E37 /* Pods-DarkStarPhotoBrowserKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DarkStarPhotoBrowserKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A53FA77CA82925B5938838580FD2AB62 /* DarkStarPhotoBrowserKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DarkStarPhotoBrowserKit-Info.plist"; sourceTree = "<group>"; };
+		A9F3DEDEA375C7E383F881B705F5D077 /* DarkStarPhotoBrowserKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DarkStarPhotoBrowserKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AADEE32DAE137D1AC3ADEAC85156724D /* Pods-DarkStarPhotoBrowserKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DarkStarPhotoBrowserKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B03AE90C3A6348F389DBB796FA1356CA /* Pods-DarkStarPhotoBrowserKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkStarPhotoBrowserKit_Tests.modulemap"; sourceTree = "<group>"; };
+		CC93BF813B41343EA1F2800AE9D06720 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CCF8734C84B60AD09820B8DA0A0AE358 /* Pods-DarkStarPhotoBrowserKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DarkStarPhotoBrowserKit_Example.modulemap"; sourceTree = "<group>"; };
+		CF1DC2626FE4618D52A2047FFF0D0303 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CF9DA396D599109F31FEDB30BD3FE7DC /* DarkStarPhotoBrowserKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DarkStarPhotoBrowserKit; path = DarkStarPhotoBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFE9428A7CC22DA60AF7ECCCEBD0E0A /* DarkStarPhotoBrowserKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DarkStarPhotoBrowserKit-umbrella.h"; sourceTree = "<group>"; };
+		FF3853C51F896FD488C9E48F1640194C /* Pods-DarkStarPhotoBrowserKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DarkStarPhotoBrowserKit_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F5B074E4BA21FD43E3CB1F2026119EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE847C97B7C8651D8BDEC97B4F83734 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF782460411DED66064A0B9AFC445DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E620F3DDDD9FEDBD4934608EB04B2F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88F8D553722AA36261865665933D8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB7A0AEE05F44154475B7723C8826AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01828621F1F45807B11E5C442CDD786A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2961B57CFAF47DF5591242F79BB64952 /* DarkStarPhotoBrowserKit.modulemap */,
+				6B28ECBC80BABF2481115E042BFCCA20 /* DarkStarPhotoBrowserKit-dummy.m */,
+				A53FA77CA82925B5938838580FD2AB62 /* DarkStarPhotoBrowserKit-Info.plist */,
+				75EFA6F0084FFCE01511B93760F97588 /* DarkStarPhotoBrowserKit-prefix.pch */,
+				DFFE9428A7CC22DA60AF7ECCCEBD0E0A /* DarkStarPhotoBrowserKit-umbrella.h */,
+				30AFFF3B291964EA9CF6C75853EE174C /* DarkStarPhotoBrowserKit.debug.xcconfig */,
+				12B0C0E3EE7EE92970D53D5BDF4DE1F8 /* DarkStarPhotoBrowserKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DarkStarPhotoBrowserKit";
+			sourceTree = "<group>";
+		};
+		1DC83951C6889B128BFB70A6D1020AD8 /* Pods-DarkStarPhotoBrowserKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8734C84B60AD09820B8DA0A0AE358 /* Pods-DarkStarPhotoBrowserKit_Example.modulemap */,
+				1FA28B708B601B65DF07F8261345F648 /* Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.markdown */,
+				2025462080ECEF4FF219594FFDB501F5 /* Pods-DarkStarPhotoBrowserKit_Example-acknowledgements.plist */,
+				37585F46B62211E3C088AE2BFC01C76A /* Pods-DarkStarPhotoBrowserKit_Example-dummy.m */,
+				61ABD24852FCAD53EE379DD54753B4D1 /* Pods-DarkStarPhotoBrowserKit_Example-frameworks.sh */,
+				4AF5480D1B9B26254A8D648EBB502C7E /* Pods-DarkStarPhotoBrowserKit_Example-Info.plist */,
+				298B310E60EFD4A768641B61FCE62162 /* Pods-DarkStarPhotoBrowserKit_Example-umbrella.h */,
+				AADEE32DAE137D1AC3ADEAC85156724D /* Pods-DarkStarPhotoBrowserKit_Example.debug.xcconfig */,
+				660223B99E3BC92EC356F7C45A423947 /* Pods-DarkStarPhotoBrowserKit_Example.release.xcconfig */,
+			);
+			name = "Pods-DarkStarPhotoBrowserKit_Example";
+			path = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Example";
+			sourceTree = "<group>";
+		};
+		218543A500DA9741512D849014288402 /* Pods-DarkStarPhotoBrowserKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B03AE90C3A6348F389DBB796FA1356CA /* Pods-DarkStarPhotoBrowserKit_Tests.modulemap */,
+				42236C92CD093A0DD7C49800675895A5 /* Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.markdown */,
+				7818EAFABB0D50227A88E24CA5E95F7C /* Pods-DarkStarPhotoBrowserKit_Tests-acknowledgements.plist */,
+				9CF5C4BEFECCC8D001D83FD97FBA1E37 /* Pods-DarkStarPhotoBrowserKit_Tests-dummy.m */,
+				FF3853C51F896FD488C9E48F1640194C /* Pods-DarkStarPhotoBrowserKit_Tests-Info.plist */,
+				0E61BB3082E14FC7868D467B94F5D9FF /* Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h */,
+				96C3A80FAA4EF0A49FE7C156C9E4EFEE /* Pods-DarkStarPhotoBrowserKit_Tests.debug.xcconfig */,
+				407C4FF47796DA89807472223F882A2E /* Pods-DarkStarPhotoBrowserKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-DarkStarPhotoBrowserKit_Tests";
+			path = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Tests";
+			sourceTree = "<group>";
+		};
+		4BF291BA96E5BAE159F0281CA818F2E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9DA396D599109F31FEDB30BD3FE7DC /* DarkStarPhotoBrowserKit */,
+				536992ADFB1852F724CA706F6CF81926 /* Pods-DarkStarPhotoBrowserKit_Example */,
+				9AFC3E691F1D301E8BF06878FF06559F /* Pods-DarkStarPhotoBrowserKit_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		927EB6DD67B16E1FEDD098E8F5AC1F31 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DDC191A15AA36863DBB90D490641315 /* DarkStarPhotoBrowserKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9DDC191A15AA36863DBB90D490641315 /* DarkStarPhotoBrowserKit */ = {
+			isa = PBXGroup;
+			children = (
+				22A47E1D779BE06854BD416123A67AA4 /* ReplaceMe.m */,
+				FB578543B90F1878D2CB376530557787 /* Pod */,
+				01828621F1F45807B11E5C442CDD786A /* Support Files */,
+			);
+			name = DarkStarPhotoBrowserKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				927EB6DD67B16E1FEDD098E8F5AC1F31 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4BF291BA96E5BAE159F0281CA818F2E9 /* Products */,
+				F58514B1186248D7CBF1A112169D0122 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F58514B1186248D7CBF1A112169D0122 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DC83951C6889B128BFB70A6D1020AD8 /* Pods-DarkStarPhotoBrowserKit_Example */,
+				218543A500DA9741512D849014288402 /* Pods-DarkStarPhotoBrowserKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB578543B90F1878D2CB376530557787 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A9F3DEDEA375C7E383F881B705F5D077 /* DarkStarPhotoBrowserKit.podspec */,
+				CC93BF813B41343EA1F2800AE9D06720 /* LICENSE */,
+				CF1DC2626FE4618D52A2047FFF0D0303 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		926FFCC95D4D888260494E0F17E2204E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730DCC1655801C930927A914364739BA /* Pods-DarkStarPhotoBrowserKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9898107FE62DA15E79ED89CCF6E2FA96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D02F048A9048B67B124C3D32EB669A /* Pods-DarkStarPhotoBrowserKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD32F6D37FEF534C9D0F9C0A8560511 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B9637AB8D7B15F922EE6334C503B7C /* DarkStarPhotoBrowserKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37F2813FF89AA4074CF755BE7631D0D3 /* Pods-DarkStarPhotoBrowserKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B42D092B0B6981D162932D00B3E58E2 /* Build configuration list for PBXNativeTarget "Pods-DarkStarPhotoBrowserKit_Example" */;
+			buildPhases = (
+				926FFCC95D4D888260494E0F17E2204E /* Headers */,
+				B9B83F72AFEA61B61DF703651CA9D4B9 /* Sources */,
+				B88F8D553722AA36261865665933D8A3 /* Frameworks */,
+				B3C80344C03BC1DA90D17429DEF59105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4465126AA3B18E3DAD1AC68DFB83D80C /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkStarPhotoBrowserKit_Example";
+			productName = Pods_DarkStarPhotoBrowserKit_Example;
+			productReference = 536992ADFB1852F724CA706F6CF81926 /* Pods-DarkStarPhotoBrowserKit_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D9BFAECC5A043BCB5A2D1B4A2657BF6 /* Pods-DarkStarPhotoBrowserKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C900FD8C70B02A99C89F4F4BDFA7AA /* Build configuration list for PBXNativeTarget "Pods-DarkStarPhotoBrowserKit_Tests" */;
+			buildPhases = (
+				9898107FE62DA15E79ED89CCF6E2FA96 /* Headers */,
+				1C6E5A5F2AC989BF16360B33F82D4EF5 /* Sources */,
+				AF782460411DED66064A0B9AFC445DBD /* Frameworks */,
+				85A7586D738E3ED9D40D77B8E38CE070 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EF37E0FE56EC0C2171DBDE693AD6BB7 /* PBXTargetDependency */,
+			);
+			name = "Pods-DarkStarPhotoBrowserKit_Tests";
+			productName = Pods_DarkStarPhotoBrowserKit_Tests;
+			productReference = 9AFC3E691F1D301E8BF06878FF06559F /* Pods-DarkStarPhotoBrowserKit_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D43E8320CBC66B9F1F564420CA84F05F /* DarkStarPhotoBrowserKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9E22B7B178D54E6FB01E2826B96C605 /* Build configuration list for PBXNativeTarget "DarkStarPhotoBrowserKit" */;
+			buildPhases = (
+				BBD32F6D37FEF534C9D0F9C0A8560511 /* Headers */,
+				D89E8A518BC87571359F92093F44B3B8 /* Sources */,
+				8F5B074E4BA21FD43E3CB1F2026119EE /* Frameworks */,
+				BF76F85AE3B769BB13F7904B467B34C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkStarPhotoBrowserKit;
+			productName = DarkStarPhotoBrowserKit;
+			productReference = CF9DA396D599109F31FEDB30BD3FE7DC /* DarkStarPhotoBrowserKit */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4BF291BA96E5BAE159F0281CA818F2E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D43E8320CBC66B9F1F564420CA84F05F /* DarkStarPhotoBrowserKit */,
+				37F2813FF89AA4074CF755BE7631D0D3 /* Pods-DarkStarPhotoBrowserKit_Example */,
+				5D9BFAECC5A043BCB5A2D1B4A2657BF6 /* Pods-DarkStarPhotoBrowserKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A7586D738E3ED9D40D77B8E38CE070 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C80344C03BC1DA90D17429DEF59105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF76F85AE3B769BB13F7904B467B34C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C6E5A5F2AC989BF16360B33F82D4EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E67ABEA28BBBF9CF0063C9E148B6EF /* Pods-DarkStarPhotoBrowserKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B83F72AFEA61B61DF703651CA9D4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40289A72F2895BD46F351C68A24FF729 /* Pods-DarkStarPhotoBrowserKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89E8A518BC87571359F92093F44B3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DE5438A0864A5525EAED0A3FC0F7ED /* DarkStarPhotoBrowserKit-dummy.m in Sources */,
+				980F78CB9FB87D58B8E5CA8186AACB18 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4465126AA3B18E3DAD1AC68DFB83D80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DarkStarPhotoBrowserKit;
+			target = D43E8320CBC66B9F1F564420CA84F05F /* DarkStarPhotoBrowserKit */;
+			targetProxy = E7C2BEB9B181DCB6781B0231BB0A739D /* PBXContainerItemProxy */;
+		};
+		4EF37E0FE56EC0C2171DBDE693AD6BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DarkStarPhotoBrowserKit_Example";
+			target = 37F2813FF89AA4074CF755BE7631D0D3 /* Pods-DarkStarPhotoBrowserKit_Example */;
+			targetProxy = 513E9E4734F66C2397DABA3C1E33524D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61546DE3CA989F20FD41C8F87DCDCB4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B0C0E3EE7EE92970D53D5BDF4DE1F8 /* DarkStarPhotoBrowserKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarPhotoBrowserKit;
+				PRODUCT_NAME = DarkStarPhotoBrowserKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8D79C3BFF3F4B8CE7DBDEAAC4705D69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AFFF3B291964EA9CF6C75853EE174C /* DarkStarPhotoBrowserKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarPhotoBrowserKit;
+				PRODUCT_NAME = DarkStarPhotoBrowserKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB2A0194EF31DA7B066859347EFCEC76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407C4FF47796DA89807472223F882A2E /* Pods-DarkStarPhotoBrowserKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Tests/Pods-DarkStarPhotoBrowserKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Tests/Pods-DarkStarPhotoBrowserKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA91E26459D5637BD2B436063E5EEBF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660223B99E3BC92EC356F7C45A423947 /* Pods-DarkStarPhotoBrowserKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Example/Pods-DarkStarPhotoBrowserKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Example/Pods-DarkStarPhotoBrowserKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF61322127EC7C2C2A074F6653CB528D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AADEE32DAE137D1AC3ADEAC85156724D /* Pods-DarkStarPhotoBrowserKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Example/Pods-DarkStarPhotoBrowserKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Example/Pods-DarkStarPhotoBrowserKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1E07D09EB0D9C1A9E609DC67C141E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C3A80FAA4EF0A49FE7C156C9E4EFEE /* Pods-DarkStarPhotoBrowserKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Tests/Pods-DarkStarPhotoBrowserKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DarkStarPhotoBrowserKit_Tests/Pods-DarkStarPhotoBrowserKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B42D092B0B6981D162932D00B3E58E2 /* Build configuration list for PBXNativeTarget "Pods-DarkStarPhotoBrowserKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF61322127EC7C2C2A074F6653CB528D /* Debug */,
+				BA91E26459D5637BD2B436063E5EEBF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C900FD8C70B02A99C89F4F4BDFA7AA /* Build configuration list for PBXNativeTarget "Pods-DarkStarPhotoBrowserKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E07D09EB0D9C1A9E609DC67C141E85 /* Debug */,
+				AB2A0194EF31DA7B066859347EFCEC76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9E22B7B178D54E6FB01E2826B96C605 /* Build configuration list for PBXNativeTarget "DarkStarPhotoBrowserKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D79C3BFF3F4B8CE7DBDEAAC4705D69E /* Debug */,
+				61546DE3CA989F20FD41C8F87DCDCB4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

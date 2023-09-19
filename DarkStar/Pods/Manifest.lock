@@ -29,6 +29,7 @@ PODS:
     - DarkStarBaseKit
     - DarkStarDownloadManagerKit
     - DarkStarGeneralTools
+    - DarkStarPhotoBrowserKit
     - DarkStarUIComponents/CardSwitch
     - DarkStarUIComponents/CollectionViewLayout
     - DarkStarUIComponents/DialogSingleChoice
@@ -77,6 +78,10 @@ PODS:
   - DarkStarNetWorkKit (0.1.0):
     - AFNetworking
     - RealReachability
+  - DarkStarPhotoBrowserKit (0.1.0):
+    - Masonry
+    - SDWebImage
+    - SDWebImageWebPCoder
   - DarkStarQMUI (0.1.0):
     - DarkStarQMUI/QMUIAnimation (= 0.1.0)
     - DarkStarQMUI/QMUILab (= 0.1.0)
@@ -202,6 +207,15 @@ PODS:
     - GCDWebServer/Core
   - iCarousel (1.8.3)
   - JXCategoryView (1.6.1)
+  - libwebp (1.2.4):
+    - libwebp/demux (= 1.2.4)
+    - libwebp/mux (= 1.2.4)
+    - libwebp/webp (= 1.2.4)
+  - libwebp/demux (1.2.4):
+    - libwebp/webp
+  - libwebp/mux (1.2.4):
+    - libwebp/demux
+  - libwebp/webp (1.2.4)
   - lottie-ios (3.2.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
@@ -220,6 +234,9 @@ PODS:
   - SDWebImage (5.15.6):
     - SDWebImage/Core (= 5.15.6)
   - SDWebImage/Core (5.15.6)
+  - SDWebImageWebPCoder (0.11.0):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.15)
   - SIAlertView (1.3)
   - SnapKit (5.6.0)
   - SSZipArchive (2.4.3)
@@ -245,6 +262,7 @@ DEPENDENCIES:
   - DarkStarGrayViewKit (from `../CommonPods/DarkStarGrayViewKit/`)
   - DarkStarKeepAliveManager (from `../CommonPods/DarkStarKeepAliveManager/`)
   - DarkStarNetWorkKit (from `../CommonPods/DarkStarNetWorkKit/`)
+  - DarkStarPhotoBrowserKit (from `../CommonPods/DarkStarPhotoBrowserKit/`)
   - DarkStarQMUI (from `../CommonPods/DarkStarQMUI/`)
   - DarkStarResourceKit (from `../CommonPods/DarkStarResourceKit/`)
   - DarkStarScanKit (from `../CommonPods/DarkStarScanKit/`)
@@ -274,6 +292,7 @@ SPEC REPOS:
     - GCDWebServer
     - iCarousel
     - JXCategoryView
+    - libwebp
     - lottie-ios
     - Masonry
     - MBProgressHUD
@@ -283,6 +302,7 @@ SPEC REPOS:
     - RealReachability
     - RegExCategories
     - SDWebImage
+    - SDWebImageWebPCoder
     - SIAlertView
     - SnapKit
     - SSZipArchive
@@ -320,6 +340,8 @@ EXTERNAL SOURCES:
     :path: "../CommonPods/DarkStarKeepAliveManager/"
   DarkStarNetWorkKit:
     :path: "../CommonPods/DarkStarNetWorkKit/"
+  DarkStarPhotoBrowserKit:
+    :path: "../CommonPods/DarkStarPhotoBrowserKit/"
   DarkStarQMUI:
     :path: "../CommonPods/DarkStarQMUI/"
   DarkStarResourceKit:
@@ -345,7 +367,7 @@ SPEC CHECKSUMS:
   DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
-  DarkStarAwesomeKit: 19cb042a7e01f1ffb32322e074d31fc5a9e16374
+  DarkStarAwesomeKit: ce456f6f63a9d2910c155d5bed949e1e288aaef7
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
@@ -356,6 +378,7 @@ SPEC CHECKSUMS:
   DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
   DarkStarKeepAliveManager: 869d5308de178737b1a8bb2774896ea63daf9e43
   DarkStarNetWorkKit: 00b2a95a21eca49a4a54f7ecea931ef00985a042
+  DarkStarPhotoBrowserKit: 506c07a143bdd079cdc52395dadda9772b27deb6
   DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
   DarkStarResourceKit: ef31e632492cff66b055dbaf47ae3d081dddf91b
   DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
@@ -370,6 +393,7 @@ SPEC CHECKSUMS:
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  libwebp: f62cb61d0a484ba548448a4bd52aabf150ff6eef
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -380,6 +404,7 @@ SPEC CHECKSUMS:
   RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
   RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
+  SDWebImageWebPCoder: 295a6573c512f54ad2dd58098e64e17dcf008499
   SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
@@ -388,6 +413,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: de108683c0af287b5b6a43fe648df34a6a9fc368
+PODFILE CHECKSUM: 30446b58a5eda2503aad25a72399595434baf683
 
 COCOAPODS: 1.11.3
