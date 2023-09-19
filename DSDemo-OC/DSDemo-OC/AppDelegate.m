@@ -156,7 +156,7 @@
 //        if ([AAM isLogin]) {
 //            self.window.rootViewController = [[AmenTabBarController alloc] init];
 //        } else {
-//            UIViewController *screen = [[CTMediator sharedInstance] mediator_AmenLoginViewController:nil];
+//            UIViewController *screen = [[CTMediator sharedInstance] mediator_DSLoginViewController:nil];
 //            self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:screen];
 //        }
 //    }

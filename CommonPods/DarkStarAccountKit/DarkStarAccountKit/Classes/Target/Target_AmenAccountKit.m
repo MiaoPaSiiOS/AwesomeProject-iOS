@@ -9,17 +9,17 @@
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 
 //TouchID
-#import "AMENTouchIDLoginViewController.h"
-#import "AMENTouchIDSettingViewController.h"
+#import "DSTouchIDLoginViewController.h"
+#import "DSTouchIDSettingViewController.h"
 
 //声纹
-#import "AMENVocalLoginViewController.h"
-#import "AMENVocalSetViewController.h"
-#import "AMENVocalPrintSecretViewController.h"
-#import "AMENVocalPrintInfoUtil.h"
+#import "DSVocalLoginViewController.h"
+#import "DSVocalSetViewController.h"
+#import "DSVocalPrintSecretViewController.h"
+#import "DSVocalPrintInfoUtil.h"
 
 //
-#import "AMENAppleIDLoginManager.h"
+#import "DSAppleIDLoginManager.h"
 @implementation Target_AmenAccountKit
 #pragma mark - TouchID
 - (void)Action_TouchIDApp:(nullable NSDictionary *)routerParameters;
@@ -35,7 +35,7 @@
 
 - (void)pushTouchIDLoginViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
     if (isDictEmptyOrNil(parameter)) return;
-    AMENTouchIDLoginViewController *vocalLoginVC = [[AMENTouchIDLoginViewController alloc] init];
+    DSTouchIDLoginViewController *vocalLoginVC = [[DSTouchIDLoginViewController alloc] init];
     vocalLoginVC.touchIDLoginBlock = ^(BOOL success, NSString *error) {
         if (callback) {
             callback(@{
@@ -59,7 +59,7 @@
 - (void)pushTouchIDSettingViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
     if (isDictEmptyOrNil(parameter)) return;
     UINavigationController *nvc = [self findNavFromParmer:parameter];
-    AMENTouchIDSettingViewController *vc = [[AMENTouchIDSettingViewController alloc] init];
+    DSTouchIDSettingViewController *vc = [[DSTouchIDSettingViewController alloc] init];
     [nvc pushViewController:vc animated:YES];
 }
 
@@ -77,14 +77,14 @@
         [self pushVocalPrintSecretViewController:routerParameters callback:callback];
     } else if ([type isEqualToString:@"3"]) {
         UINavigationController *nvc = [self findNavFromParmer:routerParameters];
-        AMENVocalSetViewController *vc = [[AMENVocalSetViewController alloc] init];
+        DSVocalSetViewController *vc = [[DSVocalSetViewController alloc] init];
         [nvc pushViewController:vc animated:YES];
     }
 }
 
 
 - (void)getVocalPrintInfo:(nullable IUBoolBlock_id)callback {
-    [AMENVocalPrintInfoUtil vocalOpenStatusDes:^(NSDictionary * _Nullable dict) {
+    [DSVocalPrintInfoUtil vocalOpenStatusDes:^(NSDictionary * _Nullable dict) {
         if (isDictEmptyOrNil(dict)) {
             NSDictionary *callBackDict = @{@"VocalRouterModuleAction" : @"vocalPrintInfoResponse"};
             if (callback) {
@@ -110,7 +110,7 @@
 
 - (void)pushVocalLoginViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
     if (isDictEmptyOrNil(parameter)) return;
-    AMENVocalLoginViewController *vocalLoginVC = [[AMENVocalLoginViewController alloc] init];
+    DSVocalLoginViewController *vocalLoginVC = [[DSVocalLoginViewController alloc] init];
     vocalLoginVC.vocalLoginBlock = ^(BOOL success, NSString *error) {
         if (callback) {
             callback(@{
@@ -134,7 +134,7 @@
 - (void)pushVocalPrintSecretViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
     if (isDictEmptyOrNil(parameter)) return;
     UINavigationController *nvc = [self findNavFromParmer:parameter];
-    AMENVocalPrintSecretViewController *vc = [[AMENVocalPrintSecretViewController alloc] init];
+    DSVocalPrintSecretViewController *vc = [[DSVocalPrintSecretViewController alloc] init];
     [nvc pushViewController:vc animated:YES];
 }
 
@@ -144,7 +144,7 @@
 {
     IUBoolBlock_id callback = routerParameters[@"callback"];
     if (@available(iOS 13.0, *)) {
-        [[AMENAppleIDLoginManager sharedInstance] setAppleIDLoginBindBlock:^(ASAuthorizationAppleIDCredential *_Nonnull credential, BOOL isBind, NSDictionary *_Nonnull param) {
+        [[DSAppleIDLoginManager sharedInstance] setAppleIDLoginBindBlock:^(ASAuthorizationAppleIDCredential *_Nonnull credential, BOOL isBind, NSDictionary *_Nonnull param) {
             NSMutableDictionary *paramDic = [NSMutableDictionary dictionary];
             [paramDic setDictionary:param];
             if (callback) {
@@ -154,7 +154,7 @@
                 });
             }
         }];
-        [[AMENAppleIDLoginManager sharedInstance] signInWithApple];
+        [[DSAppleIDLoginManager sharedInstance] signInWithApple];
     } else {
         if (callback) {
             callback(@{
