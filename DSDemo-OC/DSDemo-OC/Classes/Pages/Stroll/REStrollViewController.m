@@ -16,6 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self refresh];
+}
+
+- (void)refresh {
+    [DSGifWaitView showWaitViewInController:self style:BlueWaitStyle];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [DSGifWaitView hideWaitViewInController:self];
+        [self.dsView showErrorViewWithType:DSErrorTypeEmptyData target:self action:@selector(refresh)];
+    });
 }
 
 /*

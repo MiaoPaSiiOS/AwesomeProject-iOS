@@ -11,6 +11,7 @@
 #import <DarkStarResourceKit/DarkStarResourceKit.h>
 
 @interface DSErrorView()
+@property(nonatomic, strong) UIImageView *iconImgView;
 @property(nonatomic, strong) UILabel *customTextLab;
 @end
 
@@ -53,35 +54,38 @@
 
 #pragma mark - UnavailableNetwork
 - (void)setupUnavailableNetwork {
-    [self addSubview:self.customTextLab];
-    [self.customTextLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_offset(0);
-        make.centerY.mas_offset(-30);
-    }];
-    self.customTextLab.text = @"网络异常~~~";
+    [self setupCommonViewWithIcon:@"NetworkNotReachableImage" text:@"网络异常~~~"];
 }
 
 #pragma mark - EmptyData
 - (void)setupEmptyData {
-    [self addSubview:self.customTextLab];
-    [self.customTextLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_offset(0);
-        make.centerY.mas_offset(-30);
-    }];
-    self.customTextLab.text = @"暂无数据";
-
+    [self setupCommonViewWithIcon:@"SystemErrorImage" text:@"暂无数据~~~"];
 }
 
 #pragma mark - SeverError
 - (void)setupSeverError {
+    [self setupCommonViewWithIcon:@"SystemErrorImage" text:@"服务异常~~~"];
+}
+
+#pragma mark - SeverError
+- (void)setupCommonViewWithIcon:(NSString *)icon text:(NSString *)text {
+    [self addSubview:self.iconImgView];
+    [self.iconImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_offset(0);
+        make.top.mas_offset(30);
+    }];
+    
     [self addSubview:self.customTextLab];
     [self.customTextLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.iconImgView.mas_bottom).offset(10);
+        make.centerX.mas_offset(0);
         make.left.mas_offset(12);
         make.right.mas_offset(-12);
-        make.centerY.mas_offset(-30);
     }];
-    self.customTextLab.text = @"请求失败，请稍后重试";
+    self.iconImgView.image = [DSResourceTool imageNamed:icon];
+    self.customTextLab.text = text;
 }
+
 
 #pragma mark - 要显示的文案
 - (void)setCustomText:(NSString *)customText {
@@ -98,6 +102,12 @@
 }
 
 #pragma mark - 懒加载
+- (UIImageView *)iconImgView {
+    if (!_iconImgView) {
+        _iconImgView = [[UIImageView alloc] init];
+    }
+    return _iconImgView;
+}
 - (UILabel *)customTextLab {
     if (!_customTextLab) {
         _customTextLab = [[UILabel alloc] init];
