@@ -1,0 +1,25 @@
+${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarAccountKit/DarkStarAccountKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarAccountKit/DarkStarAccountKit-Ext.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarAwesomeKit/DarkStarAwesomeKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarAwesomeKit/DarkStarAwesomeKit-Ext.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit-Ext.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarFeedKit/DarkStarFeedKit-temp.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarFeedKit/DarkStarFeedKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarFeedKit/DarkStarFeedKit-Twitter.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarFeedKit/DarkStarFeedKit-Weibo.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarFeedKit/DarkStarFeedKit-QQ.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarKeepAliveManager/DarkStarKeepAliveManager.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarResourceKit/DarkStarResourceKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarResourceKit/DarkStarResourceKit-Ext.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarUIComponents/NrDialogMultiChoiceAssets.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarUIComponents/NrFloatAssets.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarUIComponents/NrSRSTextFieldAssets.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarUpdateSDK/DarkStarUpdateSDK.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarWebKit/DarkStarWebKit.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DarkStarWebKit/DarkStarWebKit-Ext.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle
+${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/SIAlertView/SIAlertView/SIAlertView.bundle

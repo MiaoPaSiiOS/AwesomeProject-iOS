@@ -1,0 +1,1 @@
+../../../../CommonPods/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit/Classes/CLPhotoBrowserAnimation/CLPhotoBrowserTransitioningDelegate.h

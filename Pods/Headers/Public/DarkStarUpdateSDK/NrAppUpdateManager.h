@@ -1,0 +1,1 @@
+../../../../CommonPods/DarkStarUpdateSDK/DarkStarUpdateSDK/Classes/NrAppUpdateManager.h

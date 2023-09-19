@@ -1,0 +1,6 @@
+module Pods_DSDemo_Swift {
+  umbrella header "Pods-DSDemo-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

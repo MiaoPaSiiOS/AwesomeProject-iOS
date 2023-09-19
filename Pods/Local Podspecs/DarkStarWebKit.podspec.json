@@ -1,0 +1,59 @@
+{
+  "name": "DarkStarWebKit",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarWebKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarWebKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarWebKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarWebKit/Classes/**/*",
+  "resource_bundles": {
+    "DarkStarWebKit": [
+      "DarkStarWebKit/Assets/*"
+    ],
+    "DarkStarWebKit-Ext": [
+      "DarkStarWebKit/AssetsExt/*"
+    ]
+  },
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "CTMediator": [
+
+    ],
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarUIKit": [
+
+    ],
+    "DarkStarNetWorkKit": [
+
+    ],
+    "DarkStarQMUI": [
+
+    ]
+  }
+}

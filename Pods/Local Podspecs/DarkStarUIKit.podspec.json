@@ -1,0 +1,39 @@
+{
+  "name": "DarkStarUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of DarkStarUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhuyuhui434@gmail.com/DarkStarUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhuyuhui434@gmail.com": "zhuyuhui@odianyun.com"
+  },
+  "source": {
+    "git": "https://github.com/zhuyuhui434@gmail.com/DarkStarUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DarkStarUIKit/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "FDFullscreenPopGesture": [
+
+    ],
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarResourceKit": [
+
+    ]
+  }
+}
