@@ -12,7 +12,7 @@ typedef NS_ENUM(NSUInteger, PNCGifWaitingStyle) {
     ClearColorStyle
 };
 
-@interface PNCGifWaitView : UIView
+@interface DSGifWaitView : UIView
 
 //等待层显示在viewController
 +(void)showWaitViewInController:(UIViewController *)vc style:(PNCGifWaitingStyle)style;

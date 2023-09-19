@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'DarkStarBaseKit'
   s.dependency 'DarkStarUIKit'
-  s.dependency 'DarkStarUIComponents/NrButton'
+  s.dependency 'DarkStarUIComponents/Button'
   s.dependency 'DarkStarUIComponents/DialogSingleChoice'
   s.dependency 'DarkStarUIComponents/CollectionViewLayout'
   s.dependency 'DarkStarUIComponents/CardSwitch'

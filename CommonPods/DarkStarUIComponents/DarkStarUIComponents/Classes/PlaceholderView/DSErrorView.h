@@ -1,5 +1,5 @@
 //
-//  REErrorView.h
+//  DSErrorView.h
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/6/1.
@@ -7,18 +7,18 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, REErrorType) {
-    REErrorTypeDefault,
-    REErrorTypeUnavailableNetwork,
-    REErrorTypeEmptyData,
-    REErrorTypeSeverError,
+typedef NS_ENUM(NSUInteger, DSErrorType) {
+    DSErrorTypeDefault,
+    DSErrorTypeUnavailableNetwork,
+    DSErrorTypeEmptyData,
+    DSErrorTypeSeverError,
 };
 
-@interface REErrorView : UIView
+@interface DSErrorView : UIView
 /**
  当前错误类型【默认为Default】
  */
-@property (nonatomic, assign) REErrorType errorType;
+@property (nonatomic, assign) DSErrorType errorType;
 /**
  要显示的文案【为nil使用默认文案】
  */

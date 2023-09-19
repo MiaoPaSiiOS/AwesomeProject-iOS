@@ -1,5 +1,5 @@
 //
-//  RERectCornerView.h
+//  DSCornerView.h
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/4/20.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RERectCornerView : UIView
+@interface DSCornerView : UIView
 @property(nonatomic, assign) UIRectCorner reCorner;
 @property(nonatomic, assign) CGFloat reRadius;
 @property(nonatomic, strong) UIColor *reBackgroundColor;

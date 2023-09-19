@@ -1,22 +1,20 @@
 //
-//  REErrorView.m
+//  DSErrorView.m
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/6/1.
 //
 
-#import "REErrorView.h"
+#import "DSErrorView.h"
 #import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 #import <DarkStarResourceKit/DarkStarResourceKit.h>
 
-static const NSUInteger kErrorViewTag = 1024;
-
-@interface REErrorView()
+@interface DSErrorView()
 @property(nonatomic, strong) UILabel *customTextLab;
 @end
 
-@implementation REErrorView
+@implementation DSErrorView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -27,20 +25,20 @@ static const NSUInteger kErrorViewTag = 1024;
     return self;
 }
 
-- (void)setErrorType:(REErrorType)errorType {
+- (void)setErrorType:(DSErrorType)errorType {
     [self removeAllSubviews];
     switch (errorType) {
-        case REErrorTypeDefault:
+        case DSErrorTypeDefault:
             [self setupDefault];
             break;
-        case REErrorTypeUnavailableNetwork:
+        case DSErrorTypeUnavailableNetwork:
             [self setupUnavailableNetwork];
             break;
             
-        case REErrorTypeEmptyData:
+        case DSErrorTypeEmptyData:
             [self setupEmptyData];
             break;
-        case REErrorTypeSeverError:
+        case DSErrorTypeSeverError:
             [self setupSeverError];
             break;
         default:

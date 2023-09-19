@@ -31,10 +31,10 @@ PODS:
     - DarkStarDownloadManagerKit
     - DarkStarGeneralTools
     - DarkStarPhotoBrowserKit
+    - DarkStarUIComponents/Button
     - DarkStarUIComponents/CardSwitch
     - DarkStarUIComponents/CollectionViewLayout
     - DarkStarUIComponents/DialogSingleChoice
-    - DarkStarUIComponents/NrButton
     - DarkStarUIKit
     - JXCategoryView
     - Masonry
@@ -60,9 +60,9 @@ PODS:
     - DarkStarBaseKit
     - DarkStarGeneralTools
     - DarkStarNetWorkKit
+    - DarkStarUIComponents/Button
     - DarkStarUIComponents/CircleView
     - DarkStarUIComponents/GestureView
-    - DarkStarUIComponents/NrButton
     - DarkStarUIKit
     - JXCategoryView
     - Masonry
@@ -102,9 +102,11 @@ PODS:
   - DarkStarUIComponents (0.1.0):
     - DarkStarUIComponents/ActionSheet (= 0.1.0)
     - DarkStarUIComponents/AlertController (= 0.1.0)
+    - DarkStarUIComponents/Button (= 0.1.0)
     - DarkStarUIComponents/CardSwitch (= 0.1.0)
     - DarkStarUIComponents/CircleView (= 0.1.0)
     - DarkStarUIComponents/CollectionViewLayout (= 0.1.0)
+    - DarkStarUIComponents/CornerView (= 0.1.0)
     - DarkStarUIComponents/DialogBase (= 0.1.0)
     - DarkStarUIComponents/DialogDate (= 0.1.0)
     - DarkStarUIComponents/DialogMultiChoice (= 0.1.0)
@@ -116,11 +118,13 @@ PODS:
     - DarkStarUIComponents/GestureView (= 0.1.0)
     - DarkStarUIComponents/GridView (= 0.1.0)
     - DarkStarUIComponents/iCarouselLoopView (= 0.1.0)
-    - DarkStarUIComponents/NrButton (= 0.1.0)
+    - DarkStarUIComponents/PlaceholderView (= 0.1.0)
     - DarkStarUIComponents/RotateView (= 0.1.0)
     - DarkStarUIComponents/ScrollView (= 0.1.0)
     - DarkStarUIComponents/SMSwipeView (= 0.1.0)
     - DarkStarUIComponents/SRSTextField (= 0.1.0)
+    - DarkStarUIComponents/Toast (= 0.1.0)
+    - DarkStarUIComponents/Waitview (= 0.1.0)
   - DarkStarUIComponents/ActionSheet (0.1.0):
     - DarkStarBaseKit
     - Masonry
@@ -128,11 +132,16 @@ PODS:
     - DarkStarBaseKit
     - Masonry
     - TTTAttributedLabel
+  - DarkStarUIComponents/Button (0.1.0):
+    - DarkStarBaseKit
   - DarkStarUIComponents/CardSwitch (0.1.0):
     - Masonry
   - DarkStarUIComponents/CircleView (0.1.0):
     - DarkStarQMUI/QMUIAnimation
   - DarkStarUIComponents/CollectionViewLayout (0.1.0)
+  - DarkStarUIComponents/CornerView (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
   - DarkStarUIComponents/DialogBase (0.1.0):
     - DarkStarBaseKit
     - Masonry
@@ -161,8 +170,10 @@ PODS:
     - iCarousel
     - Masonry
     - SDWebImage
-  - DarkStarUIComponents/NrButton (0.1.0):
+  - DarkStarUIComponents/PlaceholderView (0.1.0):
     - DarkStarBaseKit
+    - DarkStarResourceKit
+    - Masonry
   - DarkStarUIComponents/RotateView (0.1.0)
   - DarkStarUIComponents/ScrollView (0.1.0):
     - Masonry
@@ -171,6 +182,13 @@ PODS:
   - DarkStarUIComponents/SRSTextField (0.1.0):
     - DarkStarBaseKit
     - Masonry
+  - DarkStarUIComponents/Toast (0.1.0):
+    - DarkStarBaseKit
+    - Masonry
+    - MBProgressHUD
+  - DarkStarUIComponents/Waitview (0.1.0):
+    - DarkStarBaseKit
+    - DarkStarResourceKit
   - DarkStarUIKit (0.1.0):
     - DarkStarBaseKit
     - DarkStarResourceKit
@@ -389,13 +407,13 @@ SPEC CHECKSUMS:
   DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
-  DarkStarAwesomeKit: ce456f6f63a9d2910c155d5bed949e1e288aaef7
+  DarkStarAwesomeKit: a742171dab287fb1e474d3586793ea8c7f032b07
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
   DarkStarDataStoreKit: fdd86c2480e05907dfe78749ecf588d0cefd54fe
   DarkStarDownloadManagerKit: cdb2faf2af557712e99b3898d67746452d697504
-  DarkStarFeedKit: 40b58919064c1ca54754af559c2b236789f2f467
+  DarkStarFeedKit: f00d4235cd7a42b81d6cbe761a6d8ee7b01f8d00
   DarkStarGeneralTools: f5eddfdaade3e40ee58c17d8719a7d2da555a94a
   DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
   DarkStarKeepAliveManager: 869d5308de178737b1a8bb2774896ea63daf9e43
@@ -405,7 +423,7 @@ SPEC CHECKSUMS:
   DarkStarResourceKit: ef31e632492cff66b055dbaf47ae3d081dddf91b
   DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
-  DarkStarUIComponents: 541808b7c4b8b5530de11ed00ae9ff6e5390b9b3
+  DarkStarUIComponents: fab80d0910b94ee4fece3a71ae3fafd809e554fc
   DarkStarUIKit: 1c1ae9ff1f9dcd9cbb201c59d3e5dd23da5ab674
   DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
   DarkStarWebKit: e430aeac413c910b233f991ef5200370a7cda691

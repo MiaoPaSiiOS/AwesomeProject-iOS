@@ -22,6 +22,60 @@
   "public_header_files": "DarkStarUIComponents/Classes/DarkStarUIComponents.h",
   "subspecs": [
     {
+      "name": "Waitview",
+      "source_files": "DarkStarUIComponents/Classes/Waitview",
+      "dependencies": {
+        "DarkStarResourceKit": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "PlaceholderView",
+      "source_files": "DarkStarUIComponents/Classes/PlaceholderView",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ],
+        "DarkStarResourceKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "CornerView",
+      "source_files": "DarkStarUIComponents/Classes/CornerView",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Toast",
+      "source_files": "DarkStarUIComponents/Classes/Toast",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "DarkStarBaseKit": [
+
+        ]
+      }
+    },
+    {
       "name": "ActionSheet",
       "source_files": "DarkStarUIComponents/Classes/ActionSheet",
       "dependencies": {
@@ -196,8 +250,8 @@
       }
     },
     {
-      "name": "NrButton",
-      "source_files": "DarkStarUIComponents/Classes/NrButton",
+      "name": "Button",
+      "source_files": "DarkStarUIComponents/Classes/Button",
       "dependencies": {
         "DarkStarBaseKit": [
 

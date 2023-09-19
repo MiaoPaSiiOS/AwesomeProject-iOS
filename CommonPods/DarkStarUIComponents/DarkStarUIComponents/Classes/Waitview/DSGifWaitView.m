@@ -1,10 +1,10 @@
 
 
-#import "PNCGifWaitView.h"
+#import "DSGifWaitView.h"
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 #import <DarkStarResourceKit/DarkStarResourceKit.h>
 
-@interface PNCGifWaitView ()
+@interface DSGifWaitView ()
 
 @property(strong,nonatomic)UIView *supView;
 @property(strong,nonatomic)UIImageView *WaitImgView;
@@ -12,15 +12,15 @@
 
 @end
 
-@implementation PNCGifWaitView
+@implementation DSGifWaitView
 
 #pragma  mark -  等待层覆盖在 UIViewController 上导航栏以下部分
 +(void)showWaitViewInController:(UIViewController *)vc style:(PNCGifWaitingStyle)style
 {
-    PNCGifWaitView *waitView = (PNCGifWaitView *)[vc.view viewWithTag:9001];
+    DSGifWaitView *waitView = (DSGifWaitView *)[vc.view viewWithTag:9001];
    
     if (waitView==nil) {
-        PNCGifWaitView *waitView = [[PNCGifWaitView alloc]initWithSuperViewController:vc style:style];
+        DSGifWaitView *waitView = [[DSGifWaitView alloc]initWithSuperViewController:vc style:style];
         [waitView show];
     }
   
@@ -29,10 +29,10 @@
 #pragma  mark -  等待层覆盖在 UIViewController 上导航栏以下部分 __旋转90度
 +(void)showWaitViewInController:(UIViewController *)vc style:(PNCGifWaitingStyle)style isRotate:(BOOL)rotate
 {
-    PNCGifWaitView *waitView = (PNCGifWaitView *)[vc.view viewWithTag:9001];
+    DSGifWaitView *waitView = (DSGifWaitView *)[vc.view viewWithTag:9001];
     
     if (waitView==nil) {
-        PNCGifWaitView *waitView = [[PNCGifWaitView alloc]initWithSuperViewController:vc style:style isRotate:YES];
+        DSGifWaitView *waitView = [[DSGifWaitView alloc]initWithSuperViewController:vc style:style isRotate:YES];
         [waitView show];
     }
     waitView.isRotate = YES;
@@ -48,14 +48,14 @@
         superView=window;
     }
     
-    PNCGifWaitView *waitView =[[PNCGifWaitView alloc]initWithSuperView:superView style:style isRotate:isRotate];
+    DSGifWaitView *waitView =[[DSGifWaitView alloc]initWithSuperView:superView style:style isRotate:isRotate];
     [waitView show];
 }
 
 
 +(void)hideWaitViewInController:(UIViewController *)vc
 {
-    PNCGifWaitView *waitView = (PNCGifWaitView *)[vc.view viewWithTag:9001];
+    DSGifWaitView *waitView = (DSGifWaitView *)[vc.view viewWithTag:9001];
     if (waitView != nil) {
         [waitView hide];
     }
@@ -73,7 +73,7 @@
         superView=window;
     }
     
-    PNCGifWaitView *waitView =[[PNCGifWaitView alloc]initWithSuperView:superView style:style];
+    DSGifWaitView *waitView =[[DSGifWaitView alloc]initWithSuperView:superView style:style];
     [waitView show];
     return waitView;
 }
@@ -87,7 +87,7 @@
         superView=window;
     }
     
-    PNCGifWaitView *waitView =[[PNCGifWaitView alloc]initWithSuperView:superView style:style];
+    DSGifWaitView *waitView =[[DSGifWaitView alloc]initWithSuperView:superView style:style];
     [waitView show];
 }
 
@@ -100,7 +100,7 @@
         superView=window;
     }
     
-    PNCGifWaitView *waitView=(PNCGifWaitView *)[superView viewWithTag:9001];
+    DSGifWaitView *waitView=(DSGifWaitView *)[superView viewWithTag:9001];
     [waitView hide];
 }
 #pragma 隐藏刷新加载的透明蒙版
@@ -113,14 +113,14 @@
         superView=window;
     }
     
-    PNCGifWaitView *waitView=(PNCGifWaitView *)[superView viewWithTag:9003];
+    DSGifWaitView *waitView=(DSGifWaitView *)[superView viewWithTag:9003];
     [waitView hide];
 }
 #pragma 为了配合长登录 增加倒8
 + (void)hideLongLoginWaitView {
     
     UIWindow * window = [[UIApplication sharedApplication] keyWindow];
-    PNCGifWaitView * waitView = (PNCGifWaitView *)[window viewWithTag:9002];
+    DSGifWaitView * waitView = (DSGifWaitView *)[window viewWithTag:9002];
     if (waitView) {
         [waitView hide];
     }

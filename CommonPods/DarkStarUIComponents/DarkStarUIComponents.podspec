@@ -52,28 +52,28 @@ TODO: Add long description of the pod here.
 #  end
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-#  s.subspec 'PCWaitview' do |ss|
-#    ss.source_files = 'DarkStarUIComponents/Classes/PCWaitview'
-#    ss.dependency 'DarkStarResourceKit'
-#    ss.dependency 'DarkStarBaseKit'
-#  end
-#  s.subspec 'PlaceholderView' do |ss|
-#    ss.source_files = 'DarkStarUIComponents/Classes/PlaceholderView'
-#    ss.dependency 'Masonry'
-#    ss.dependency 'DarkStarBaseKit'
-#    ss.dependency 'DarkStarResourceKit'
-#  end
-#  s.subspec 'RectCornerView' do |ss|
-#    ss.source_files = 'DarkStarUIComponents/Classes/RectCornerView'
-#    ss.dependency 'Masonry'
-#    ss.dependency 'DarkStarBaseKit'
-#  end
-#  s.subspec 'Toast' do |ss|
-#    ss.source_files = 'DarkStarUIComponents/Classes/Toast'
-#    ss.dependency 'Masonry'
-#    ss.dependency 'MBProgressHUD'
-#    ss.dependency 'DarkStarBaseKit'
-#  end
+  s.subspec 'Waitview' do |ss|
+    ss.source_files = 'DarkStarUIComponents/Classes/Waitview'
+    ss.dependency 'DarkStarResourceKit'
+    ss.dependency 'DarkStarBaseKit'
+  end
+  s.subspec 'PlaceholderView' do |ss|
+    ss.source_files = 'DarkStarUIComponents/Classes/PlaceholderView'
+    ss.dependency 'Masonry'
+    ss.dependency 'DarkStarBaseKit'
+    ss.dependency 'DarkStarResourceKit'
+  end
+  s.subspec 'CornerView' do |ss|
+    ss.source_files = 'DarkStarUIComponents/Classes/CornerView'
+    ss.dependency 'Masonry'
+    ss.dependency 'DarkStarBaseKit'
+  end
+  s.subspec 'Toast' do |ss|
+    ss.source_files = 'DarkStarUIComponents/Classes/Toast'
+    ss.dependency 'Masonry'
+    ss.dependency 'MBProgressHUD'
+    ss.dependency 'DarkStarBaseKit'
+  end
   s.subspec 'ActionSheet' do |ss|
     ss.source_files = 'DarkStarUIComponents/Classes/ActionSheet'
     ss.dependency 'Masonry'
@@ -148,8 +148,8 @@ TODO: Add long description of the pod here.
     ss.dependency 'iCarousel'
     ss.dependency 'SDWebImage'
   end
-  s.subspec 'NrButton' do |ss|
-    ss.source_files = 'DarkStarUIComponents/Classes/NrButton'
+  s.subspec 'Button' do |ss|
+    ss.source_files = 'DarkStarUIComponents/Classes/Button'
     ss.dependency 'DarkStarBaseKit'
   end
   s.subspec 'RotateView' do |ss|

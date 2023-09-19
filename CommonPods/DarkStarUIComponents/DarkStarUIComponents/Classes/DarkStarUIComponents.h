@@ -14,16 +14,16 @@
 #import <DarkStarUIComponents/NSObject+RETip.h>
 #endif
 
-#if __has_include(<DarkStarUIComponents/RERectCornerView.h>)
-#import <DarkStarUIComponents/RERectCornerView.h>
+#if __has_include(<DarkStarUIComponents/DSCornerView.h>)
+#import <DarkStarUIComponents/DSCornerView.h>
 #endif
 
-#if __has_include(<DarkStarUIComponents/UIView+REAddErrorView.h>)
-#import <DarkStarUIComponents/UIView+REAddErrorView.h>
+#if __has_include(<DarkStarUIComponents/UIView+DSErrorView.h>)
+#import <DarkStarUIComponents/UIView+DSErrorView.h>
 #endif
 
-#if __has_include(<DarkStarUIComponents/PNCGifWaitView.h>)
-#import <DarkStarUIComponents/PNCGifWaitView.h>
+#if __has_include(<DarkStarUIComponents/DSGifWaitView.h>)
+#import <DarkStarUIComponents/DSGifWaitView.h>
 #endif
 
 #if __has_include(<DarkStarUIComponents/DSActionSheet.h>)

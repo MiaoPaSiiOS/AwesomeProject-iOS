@@ -55,7 +55,7 @@ TODO: Add long description of the pod here.
   s.dependency 'DarkStarNetWorkKit'
   s.dependency 'DarkStarGeneralTools'
   s.dependency 'DarkStarUIComponents/CircleView'
-  s.dependency 'DarkStarUIComponents/NrButton'
+  s.dependency 'DarkStarUIComponents/Button'
   s.dependency 'DarkStarUIComponents/GestureView'
   
 end

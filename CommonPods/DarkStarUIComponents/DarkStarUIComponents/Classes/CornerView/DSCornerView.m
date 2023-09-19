@@ -1,18 +1,18 @@
 //
-//  RERectCornerView.m
+//  DSCornerView.m
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/4/20.
 //
 
-#import "RERectCornerView.h"
+#import "DSCornerView.h"
 #import <Masonry/Masonry.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
-@interface RERectCornerView()
+@interface DSCornerView()
 @property(nonatomic, strong) UIView *background;
 @end
 
-@implementation RERectCornerView
+@implementation DSCornerView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
