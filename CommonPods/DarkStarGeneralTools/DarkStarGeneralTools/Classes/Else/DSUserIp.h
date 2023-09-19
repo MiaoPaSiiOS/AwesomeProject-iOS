@@ -1,5 +1,5 @@
 //
-//  REUserIp.h
+//  DSUserIp.h
 //  REBBC
 //
 //  Created by sunbiao on 2023/2/22.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface REUserIp : NSObject
+@interface DSUserIp : NSObject
 + (NSString *)getIPAddress;
 @end
 

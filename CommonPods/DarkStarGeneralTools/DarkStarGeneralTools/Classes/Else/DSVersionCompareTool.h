@@ -1,5 +1,5 @@
 //
-//  REVersionCompareTool.h
+//  DSVersionCompareTool.h
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/4/12.
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, BCMVersionJudgeType) {
 };
 
 
-@interface REVersionCompareTool : NSObject
+@interface DSVersionCompareTool : NSObject
 
 + (NSComparisonResult)compareVersionWithFirst:(NSString *)firstVersion second:(NSString *)secondVersion;
 

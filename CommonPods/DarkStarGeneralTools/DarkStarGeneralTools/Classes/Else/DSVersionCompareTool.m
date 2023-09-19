@@ -1,13 +1,13 @@
 //
-//  REVersionCompareTool.m
+//  DSVersionCompareTool.m
 //  REWLY
 //
 //  Created by zhuyuhui on 2023/4/12.
 //
 
-#import "REVersionCompareTool.h"
+#import "DSVersionCompareTool.h"
 
-@implementation REVersionCompareTool
+@implementation DSVersionCompareTool
 
 + (NSComparisonResult)compareVersionWithFirst:(NSString *)firstVersion second:(NSString *)secondVersion {
     NSArray *firstVersions = [firstVersion componentsSeparatedByString:@"."];

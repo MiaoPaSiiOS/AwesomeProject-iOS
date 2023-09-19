@@ -64,12 +64,12 @@
 #import <DarkStarGeneralTools/DSRegEx.h>
 #endif
 
-#if __has_include(<DarkStarGeneralTools/REUserIp.h>)
-#import <DarkStarGeneralTools/REUserIp.h>
+#if __has_include(<DarkStarGeneralTools/DSUserIp.h>)
+#import <DarkStarGeneralTools/DSUserIp.h>
 #endif
 
-#if __has_include(<DarkStarGeneralTools/REVersionCompareTool.h>)
-#import <DarkStarGeneralTools/REVersionCompareTool.h>
+#if __has_include(<DarkStarGeneralTools/DSVersionCompareTool.h>)
+#import <DarkStarGeneralTools/DSVersionCompareTool.h>
 #endif
 
 #endif /* DarkStarGeneralTools_h */

@@ -20,7 +20,6 @@
 		01673DEC980140AA73005BF67D58D271 /* DoraemonNetworkUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FBF967FE7D7DABCD910D3D0762CFD9 /* DoraemonNetworkUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		016D5716CC464FE4A3051302684E4401 /* DSEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 86911AC4630160BDF599756B2E8CFC14 /* DSEnvironment.m */; };
 		0175DE2B19D176FFDF2C707BDC9D7BA9 /* JXCategoryCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F3DCF9A7D4C470EC3A7B9121E589F3 /* JXCategoryCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01C25BC04B30EB70CDAC02DBDF4FF9B7 /* DSValidateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C07AEF312E96D670F12D760E825852 /* DSValidateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01CD07B2C48FEA8C7DF177F3CEA547D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C63C57CB4357D5A4BDC4EE49D19758 /* Images.xcassets */; };
 		01DFCA4A32774B9FD8825959552061B5 /* DarkStarAwesomeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDD624F27EF57598A64E3C526FBAB092 /* DarkStarAwesomeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01F13DD132346FEB988F1D8D0AFF48CC /* CLCustomTransitionAnimatedTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EABCA015B0F2EF9FF5107CD58945C9 /* CLCustomTransitionAnimatedTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,9 +87,9 @@
 		07462D0992A3EBCC1D363993199FE529 /* DSCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEF30D93FD3BC03B809D9FEBCC1BC75 /* DSCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0771E712BAD4A73796DB54C7514F21B6 /* PGGCryptoAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 43045F6161DC18450DAC34130D922286 /* PGGCryptoAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0781BB5771CAF0D9592BC48B94F736B9 /* DoraemonMemoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB80F0FFFD39A8D8D4C063D11255CFFD /* DoraemonMemoryUtil.m */; };
-		0792EF59FC264E206E3AA28142A7A539 /* DSJailBreakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C7AA6AC04B0F859DD9B1784B8A3980 /* DSJailBreakChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A49382122A7829178503015FF020D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF205EE8E10BF41736E1CBD472FC843 /* UIKit.framework */; };
 		07D0C83E864B2030D150EF298DC3A188 /* DSLocationManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 336AF1063EA15FCED1A5EE5FAC211DF1 /* DSLocationManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D7B9DD22B10DF5A01E0BECE88DA7C2 /* NSMutableAttributedString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 374F816031F80BD488E84542EADE7477 /* NSMutableAttributedString+DSAttrConfig.m */; };
 		0805C8C269C641432FBA504D9CD29869 /* DSGridViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BC19BA60EADC2BF71432E4F18994CCAB /* DSGridViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08205F4D873D631B89578CF1D6402706 /* NrAppUpdateResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4798DA85E371E5BFB2121424502FED1F /* NrAppUpdateResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0830CC4E0122DFF5AA3AE034DF971C2E /* WBModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 292456AFA740C9BB7A3709CBE6385F3E /* WBModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +107,7 @@
 		096A10D5C427F4A35B4E3BEB81B0FE8A /* UIView+DSErrorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2BCF8CFDD06FF4A8D3707445A2F2BA /* UIView+DSErrorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		096FA64FD785275E2E9393F844372C84 /* DoraemonTimeProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A30820C3EA219F9BED547AC8F446D87 /* DoraemonTimeProfiler.m */; };
 		0979527AF20896B40CBC7C37419EB9F4 /* DoraemonNSUserDefaultsEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C67B1FED9A792C52527D67A67F45F727 /* DoraemonNSUserDefaultsEditViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0981F118D4D1D7624BA58CD931F7D2AC /* NSString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E83E9BB233F2F4383303615E5A1FB1EE /* NSString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		098521D7E71E4BD6B7B9B49DF0D5DD5E /* AresJsbUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CDF08EDC06FE15734C8470662937B4 /* AresJsbUIWebView.m */; };
 		0996F4878535DA713506162873722837 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01DA2CCA1880A5B22537FA0D710570 /* Ellipse.swift */; };
 		09A3D7232192C1D64F2E34E84547E740 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B60BC5D1A1306F8CB5CFBCF860EAA7 /* UIPasteboard+YYText.m */; };
@@ -122,10 +122,9 @@
 		0A83C3A5F51F057D788FF9D03D74B11C /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5207A6725044B5B56F4422E748711314 /* GCDWebServerURLEncodedFormRequest.m */; };
 		0A939B3550D5133EA86B974F15207AB4 /* WBStatusComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41219E00EB542E6E75CD893AB0E4614C /* WBStatusComposeViewController.m */; };
 		0AA920855A60887EC9C457C938D0A01A /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FE1ED624021168A118336D5D1B373D /* TTTAttributedLabel-dummy.m */; };
-		0AB8FF2B0F6F93299354E061422B2419 /* DSNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF21605511C7EDD2D16ED527E4CA4C9 /* DSNumberFormatter.m */; };
-		0AC4E3175B78FE4032D8EF5E5F8E8AE5 /* DSGCDHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFB1B171C3D3A74D757316749F9B062 /* DSGCDHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AD07DDF41B2BC493532A51AF363BE26 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1701F44457C42B6A6CB605B8D0A35B /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ADC896941269BBF078569F462AA34BB /* DoraemonCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8EE4AEB47B3DCDF486D350B6737FFC /* DoraemonCrashViewController.m */; };
+		0ADE79076F880FAB070D3EF7B8CF9A05 /* DSCGContextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A89D6A8BD40CBF1E8C9BF109AC0FA67C /* DSCGContextConfig.m */; };
 		0AE5ED3F71A359B80E5626F778135003 /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19745A29F2C6A85981C33C29B65D155D /* CompatibleAnimationKeypath.swift */; };
 		0B100034BA9AA9661F674F76B40B5DDB /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72842153C2BFDE4613FB0627CD6C4B7B /* ECB.swift */; };
 		0B209CAE3494E85581E3EDEAF4FB09BC /* DSAddressBookManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F23346CFA5A83B818F4D523915B6E1 /* DSAddressBookManger.m */; };
@@ -142,7 +141,6 @@
 		0C746A924940817A769071BC6674D6D8 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ED777A899ECA467641D11F80C3E2F5 /* ImageAsset.swift */; };
 		0C98CFC8A3665BDC03BEFC9145752C4A /* DoraemonUIProfileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2218E2F4DA3B23171FA9AD9E9D5DC1 /* DoraemonUIProfileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C9A1A296FED03C056FCE6C1D8365741 /* tree_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1034D082641380247A31D002D8FF555D /* tree_dec.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
-		0CAF3546144EA8D20D874A51164BE200 /* DSRGBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 168F89BDB8876DBB9A54BFD97E11AE0C /* DSRGBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CB13CFBEBE32E856104AB740826CA1D /* Integer+DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B933BB34391C8A0AB184D77ECDD42A /* Integer+DateTools.swift */; };
 		0CB5CBACB10A964A22FB4B3F0995594A /* CLPhotoBrowserTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 124F55336D29BEC4F5B3C8EDC1F2BD43 /* CLPhotoBrowserTransitioningDelegate.m */; };
 		0CB9F5DD9270D85DB7BCAE9C499F3BD1 /* DarkStarResourceKit-DarkStarResourceKit-Ext in Resources */ = {isa = PBXBuildFile; fileRef = BE86D009BF9501B835615D1AFE17F4ED /* DarkStarResourceKit-DarkStarResourceKit-Ext */; };
@@ -153,7 +151,6 @@
 		0DBD9261DBA53CE5E49F12F4C196600A /* DSSingleChoiceDialogReusingView.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B8D8FECEF28D2D77ECBFCA2B29A389 /* DSSingleChoiceDialogReusingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DCECA163EA1EDA867CB9D04E9BEBB85 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EED03A1A94785E92D5863E9C8B65DF5 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E0C25AF5B69AE4FAE58D955DDAEC1E8 /* PGGCryptoSha.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FB7F554022A3FABFE7A854357C53DE /* PGGCryptoSha.m */; };
-		0E0C2EF2FD88F6E6AAE2F902C24F22A8 /* DSFontAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB592F5B003E786580B6072FDEC9FE /* DSFontAttr.m */; };
 		0E2BE2EB15FD07C5609F184CCD33E5D5 /* UIScrollView+DarkStar.h in Headers */ = {isa = PBXBuildFile; fileRef = 610245F58BE9A8D6E0E8B0EDF26C1882 /* UIScrollView+DarkStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E5FCFF2914E7068842E0A97DE0385B5 /* vp8_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = A87CA976733DC409F6C1C79F6AE2DF8C /* vp8_dec.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0E7B8151DD457FA0F8C77A1893F53FB8 /* DoraemonColorPickView.h in Headers */ = {isa = PBXBuildFile; fileRef = A02495CD895768DAC7CD366F3C7D702C /* DoraemonColorPickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,7 +166,6 @@
 		100CD24D90FB52E1C579671D673F39F7 /* SDGraphicsImageRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6291982EA842C734A8E3E7EA44213195 /* SDGraphicsImageRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		102DED2CBE7111EEA9531FD845F5557C /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F388E44DD08EE9D3B5B3D359B0C35F3 /* HMAC+Foundation.swift */; };
 		105A99E2501333F606071B246597B1AF /* DoraemonNetFlowOscillogramViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DF19D46985290950959569B0B0DE39 /* DoraemonNetFlowOscillogramViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10606141F5CA65E3F7EAEAA80C10DF32 /* CLGCDTimerManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED45C1555CDEC202BED9B9A75F9B0462 /* CLGCDTimerManagerOC.m */; };
 		1068C8FAF20018B4E84BC38C9F7410C8 /* AnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE91113732E03DB34C17BE1F1603546 /* AnimationKeypath.swift */; };
 		107536ECD87C033E63226890C552A30D /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E03E92E013C88DB921B161DB71BE218 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10C59F538D7C8E81C1AD33E2D340E5B4 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 13971311E3D0ACDA119A2678E9A233BF /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +178,7 @@
 		112FB8A8F7C147F5E622EE4D9C83BF85 /* JXCategoryDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F15B5AC5E1B009917F22D23BCB31B6 /* JXCategoryDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11478E28BBF8C5D080F6B6584D449660 /* DoraemonHierarchyHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = B79DE4A042C5CD434D118C5FE4DDE7A2 /* DoraemonHierarchyHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		115483CB926B8BCF5050894FBB28DDFF /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA666BBD8F7D6B5E4A6132CCD2E58A10 /* FMDB-dummy.m */; };
+		117F6706C63C4B9FB3FBA1631BD75E7F /* DSBTIconHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDA179868CBC7B6E789F50B85309480 /* DSBTIconHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11858DF194F25787F6EC03F5047DA11F /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5769DCE30AB6D7BEB6D1CE69DD2181C8 /* SDWebImageCompat.m */; };
 		11CC04A7BF675D403966894DFE9F4CFC /* DoraemonMockBaseListView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08ED36FF55A3A82005AEAA9608F3A80 /* DoraemonMockBaseListView.m */; };
 		11EC3B6BF2F6C781D8C20146B3A1984B /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D244EFF5ADF3FB5DB31C8CF006C9B /* ConstraintMakerEditable.swift */; };
@@ -210,14 +207,17 @@
 		140129CA6BC95EA43F3C1B932C571806 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E08B1E7C7A127A6F6D5E3A706DAC3D75 /* UIScrollView+MJRefresh.m */; };
 		140C1CBD9FBCD8E8B9E48F013F11196D /* PGGCryptoDES.m in Sources */ = {isa = PBXBuildFile; fileRef = A12EC4ABE58A3E085273550466563C06 /* PGGCryptoDES.m */; };
 		14154D1B397961D880ED3A98E8132675 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
+		145C476A14B21F03708C97A566563427 /* DSBTFileHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D84C33811911CFA3C4489AC84FF62CA /* DSBTFileHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1460F021837F8114063BA7E12B11A671 /* UIWebView+DSGray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E31A509E91A32B1B910F3529257E671 /* UIWebView+DSGray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		147E028C8EFF31849DB9FFDDF1D52A40 /* DSVocalSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF318281BE74F088B551C8BC997275 /* DSVocalSetViewController.m */; };
 		148B99C518AFBC2C50D30690512693B2 /* [展示]ScrollView线性滚动.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2368B810393204E7EC9CD092644D24F6 /* [展示]ScrollView线性滚动.gif */; };
 		1495CFDD65CB7838DA858E3AAF0B2256 /* DarkStarFeedKit-DarkStarFeedKit-QQ in Resources */ = {isa = PBXBuildFile; fileRef = C00C8620C3B0AEC9CF385FD6D4CC59A5 /* DarkStarFeedKit-DarkStarFeedKit-QQ */; };
 		14A60D360CF278FBA1CB22CDD8B67E46 /* JXCategoryTitleVerticalZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E20B98976683C472EC67A44D1601F456 /* JXCategoryTitleVerticalZoomView.m */; };
+		14E5E1E59E0D2EC7DC552D9A04BDC6AA /* DSJailBreakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C7AA6AC04B0F859DD9B1784B8A3980 /* DSJailBreakChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14F096423CFECA8F911FAF6EB56CC79E /* NSTimer+DarkStar.h in Headers */ = {isa = PBXBuildFile; fileRef = 126FC821CB5FE30B8910A5D37B0962A8 /* NSTimer+DarkStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15286AAF883EDE2AE44DA50E15DD8B07 /* DoraemonFileSyncViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E4468F3DE6C95E01B7CBBF6B2F6EA6 /* DoraemonFileSyncViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1535C824C2BD9B31F8198B8FD70845E8 /* ESTabBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B33016A6845FEB5568AB53348E2B0C /* ESTabBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		153CD7EC6A630FA692C3F2386AE87E2D /* DSGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B2D9C45A4DDEC6D1957ADBAF9A3F98 /* DSGradientColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15403651F98F13777E17C04018CFDC5D /* PGGCryptoMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F324539A23893C27E475C8FEBF0174 /* PGGCryptoMD5.m */; };
 		1556C994FC79A6B8C569F27B1129FF03 /* CLPhotoBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FF3ADA004ABC580C87FC1246FC4631 /* CLPhotoBrowserTableViewController.m */; };
 		156F5A7715654F4C1DE218FD99D709BE /* lottie-ios-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DFD362A56A0BE7F874CF449CE3954 /* lottie-ios-framework-dummy.m */; };
@@ -267,7 +267,6 @@
 		18D34B5AE6CD4C6A33A71274ED65ACA5 /* DoraemonCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D31F54B4EF015AC989DBA58B5DBE3 /* DoraemonCopyLabel.m */; };
 		18D9240AA0692F9D32602B296247A8FF /* DoraemonNetworkInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = F204D06485D930C251576A1F597A8EBB /* DoraemonNetworkInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18DBC718E7A443C0E553BF085942A201 /* DSMultiChoiceDialogCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C16B9BFA02806847DB66DF4744F68C44 /* DSMultiChoiceDialogCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18F4DBBFE176198BD7E5AD644961BDB2 /* DSBTScaleHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE70BB9A73CE982B1D83FB0F1E26D9E /* DSBTScaleHelp.m */; };
 		18FB6126002D63BDE51F54ABEF5C65E3 /* thread_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBAB3E33629995B48E5F17C895F6B72 /* thread_utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		190F65D1CDB862E4A323D551965CDC4B /* DoraemonColorPickMagnifyLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C9638E7252A68D205942DFF7165F19 /* DoraemonColorPickMagnifyLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1925F32A1371B9FBE58A63AF24A7F4D2 /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62746CB849F2EC0496EA7A426C08F3D /* KeyedDecodingContainerExtensions.swift */; };
@@ -276,12 +275,14 @@
 		1952FB44D78F55A20E1A939AAB0324B0 /* DoraemonDBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCD88D15992BA812627C70C9E8F7A80 /* DoraemonDBTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		198B5EAE60E490B0D10E3DE3CE993072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		199A559BDB807F1F096D8EC5A4FB5C5F /* DoraemonHealthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3DCF2F58FDE61E7847B473A0B0841E /* DoraemonHealthViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BA9E3AA5E45EDCA75955112C3D9C73 /* DSBTScaleHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F321494E23BD15604FD9F44A591C6FCA /* DSBTScaleHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19D9E3BF12F4EEBED80AE6CA7D99618E /* DarkStarResourceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF266574B650811179A2DF59F163230 /* DarkStarResourceKit-dummy.m */; };
 		19E1A97EB6CEA626EA89FD2CCB67B458 /* UIView+DarkStarShake.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9637A169FC35EE9CA8E1983DCA531C /* UIView+DarkStarShake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19E329EA9DEA0BB287636718B8460089 /* DSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 875C7CBF3D5F8B58914D3001546AAB6A /* DSNavigationBar.m */; };
 		1A1C05A80C6FE33050BA2205C0032DF1 /* Words and Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF406939CA6C9402CD186B924848B9 /* Words and Bits.swift */; };
 		1A22E52FCCE4D6650A3E10C6769E56A5 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14FA3C3D5F54CF6F9B9986EC951CE1 /* SizeExtensions.swift */; };
 		1A4AA2A8652629C682624BD183350091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
+		1A5451BB239A7D7AA1A7415EF38A8188 /* DSParagraphAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB07A685ABED37884B17EEC1BC1079 /* DSParagraphAttr.m */; };
 		1A76361C2474F36E8BA278DF8A679C92 /* YYPhotoProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D08B983384E8A6C20D7CF980748BDC9A /* YYPhotoProgress.m */; };
 		1A78FDB6B7C3E6908EC1215F579AD57B /* DoraemonHomeCloseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00DA39EB65CAD74AA2B19834D91D50 /* DoraemonHomeCloseCell.m */; };
 		1A944F92A9C5CD6EC60D59CB74792E03 /* DoraemonWeakNetworkDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7FC251E8DEE9A8E152E2C002F0F603 /* DoraemonWeakNetworkDetailView.m */; };
@@ -318,6 +319,7 @@
 		1CB281FFB355AA5314A3647FAD4A5C1A /* AreaJsbRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85773F4AF92258DAB2DADD16560C6328 /* AreaJsbRequestModel.m */; };
 		1CDD69773E8BA44C2303CC4A6BD388F7 /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BDDEC0D988A13A1A9D10A80278725C /* SDImageCodersManager.m */; };
 		1CF3C5E5B7BCC2E13A49DCD4C1B1486C /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = AD731D9214C0EA649B27612BC0007C77 /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D10AFC7BEEAD3C35F66D8F48A155CE3 /* DSNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBC3E12557ED9F69FE83005CAA53C32 /* DSNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D1CFEB2BB5C6E60D1B10B8AC7C778E9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA316AF2B1A8FA17BF03DF42BC32937C /* MobileCoreServices.framework */; };
 		1D21B30253BF77F6E38F16CFC0A65663 /* polyfills-83c9f0eea3aa0edfd89e.js in Sources */ = {isa = PBXBuildFile; fileRef = 438D2570834015BD5C50E5C0C6C4141C /* polyfills-83c9f0eea3aa0edfd89e.js */; };
 		1DB7CC00C0848D4BB848B380CC253A38 /* SystemCompassView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6EEDC3FCE07AFCD8936E7B4E85F167 /* SystemCompassView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -342,7 +344,6 @@
 		1F59E5DE8BB9666556CCCC90C5C1099F /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 306476094E13047D8E6DFA783F2A4D92 /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F63E36FF9D71C3C5704397313B8FA46 /* SDWebImageWebPCoderDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC4EC92148EC26EC0D537603966C13 /* SDWebImageWebPCoderDefine.m */; };
 		1F6E1BB0EA5422266FAB83EB250B478B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68761E33A4BDCD780E8C206EF4BEB84C /* Filter.swift */; };
-		1FB93A3B2092814F6AE244B8C633F75A /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E148E20294446316A1B1314D08A80F5 /* GCDSemaphore.m */; };
 		1FC85B90A3E3B56E82ADA5E41310A05B /* [展示]标签-宽度不固定.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3AB03DFF65FE6AA461D998129CEFAF51 /* [展示]标签-宽度不固定.gif */; };
 		1FD4F094351EBDFD4B35554511029C4D /* visualmenufunctionlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 4323A75E9E049E096321CF5B05189AAA /* visualmenufunctionlist.json */; };
 		1FEB4A11EC86C8E06FBFF7D077C099A6 /* DoraemonHealthInstructionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0197A919128ED92BB14273AA612345 /* DoraemonHealthInstructionsView.m */; };
@@ -378,9 +379,11 @@
 		2241435E9FD8888D5C5002A791C6CA49 /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 79C23A16211759C9987FF8815CC2AAB1 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2263A1BF28DF651000365FEE71D43144 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B1B9188397A36D92BDABB09CA6B52 /* YYModel-dummy.m */; };
 		226B93960BE4681C259CD1EAC011FF4D /* DoraemonNSLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9770F5FCFA5845A98849B7A3E3D9E7 /* DoraemonNSLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22999954A5F3E1AF96F1A187CA9EFFCB /* DSBTIconHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E83D0B6623F025E26E9A696743545 /* DSBTIconHelp.m */; };
 		22AD28E260EF21FECAAEF40B04E8E020 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E6161D74F89A84292C4C4D4A5417F2 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AFF13915F3BB03EEC3AA62390654D2 /* DoraemonBaseBigTitleView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD0C30701624F7059829AD0A90B4F528 /* DoraemonBaseBigTitleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B3926A7EA5A578D17FA62654BB83AB /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2D648B64F54D98319ECAF4A747A05D /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F684FD1A36A08B9A8D1494CDE71A45 /* DSAttrStringConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 052E3E9073915A39AAB3F1A24184963A /* DSAttrStringConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		231A928C0784CC86D792DFECC9FF4CBD /* DoraemonVisualInfoWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAF086EA33660F17F06039D74039ED9 /* DoraemonVisualInfoWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2322F0B677EEE0C10D82011EE368478D /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE50EF3C67BB6900590EBF653D3FBDD /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		232638D8C502A3E9C21AC68156207CAA /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = A4AEA82F0AF468595A3BE470CF4F497C /* alpha_processing.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -399,6 +402,7 @@
 		241D55CDC98E2EAF47BC2C5A34B728FB /* SectionCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494AB4CE38450F3FA5C85BA14162C92 /* SectionCardModel.m */; };
 		2439A72FF8CC2F6818F57515861105FE /* DoraemonKitManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB265B473C1285234CAABBE735F220F /* DoraemonKitManagerViewController.m */; };
 		243C958E64DF7F837848D9E7ED19BEC2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68F32B7868519C408D361C3F070F31 /* Box.swift */; };
+		2444CDF96F4A3C6A5B5543D2BF24EF03 /* DSBTFileHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841EF4C39EAECD4CB568BBF6829CFF2 /* DSBTFileHelp.m */; };
 		244A02F1D3D3A14D0CFD9D370409A107 /* GradientFillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5832E0B4CED352A67B5D7A7A852871F2 /* GradientFillNode.swift */; };
 		244DF95641F73FD80DD7637D88866699 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F129BFF5A35C6BF9A19E06253FBDFAF /* LayerDebugging.swift */; };
 		247641F1EC0385B266BA2E3A0BE9BA0E /* NSURLSessionConfiguration+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F5D6A0C544F6AFC91BB1623BE42B51 /* NSURLSessionConfiguration+Doraemon.m */; };
@@ -418,7 +422,6 @@
 		25CFDE950C4FE330BF29E5A09257DCEE /* webpack-1d3e45bf15d10b268413.js in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3EC24A735809FC4BEBDED6FB1B08D /* webpack-1d3e45bf15d10b268413.js */; };
 		25E63055A9B50C3C7D39634EDCB0CB59 /* DoraemonHierarchyDetailTitleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB562A3EB72C32C93691D8C90DD9AA9 /* DoraemonHierarchyDetailTitleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25F6385224F6A6B63C2C227BA5F221E2 /* JXCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035DB413F2FF264871BD90A930E9F52A /* JXCategoryIndicatorTriangleView.m */; };
-		25FEBEA50911613CA38C2A587B2DBB49 /* DSFontAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = FA81F721C50EF9A0E4DE78C0EC896097 /* DSFontAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2619C125AB881F7ACA174C16ABA6916B /* SectionCardDecorationReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 313305EE99D3A361471C06642B5961A2 /* SectionCardDecorationReusableView.m */; };
 		26302998E9277C53DB4C526DD0BF4527 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB5DC5D4230CB4B02F607EF87057EB /* Indicator.swift */; };
 		263DC4A725214F284471FBCF4152C12B /* DSSingleChoiceDialogReusingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0208FD558546A7F799DCB4C60BE18224 /* DSSingleChoiceDialogReusingView.m */; };
@@ -554,6 +557,7 @@
 		31A3A4598C607D404A537D11F873FC06 /* DoraemonSandboxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D8AF62F84D081109CD348ED7263F6 /* DoraemonSandboxModel.m */; };
 		31DD5F53B51FE6359C4EDD25B58D6A9B /* msa_macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F2055E19015C23FC614798EC05B2E9 /* msa_macro.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3206FF2FB793ACB6BB0EABD5CDF075BD /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3568C2F44FF395F37392FD45F94953 /* SDImageLoader.m */; };
+		3210EA1690D41D5FE22A92290FF1CEA7 /* DSRGBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 168F89BDB8876DBB9A54BFD97E11AE0C /* DSRGBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		321C2B3D9664CC72C9C0B6372BDB1196 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		3222C64FC5BFCDC4D8A289E06EF69B23 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB8280B1D95DB2D59E01CEDC0BD9E0 /* SDWebImageDownloaderOperation.m */; };
 		322CDEB2EBE50D13F41DF2AC088F5F8B /* DoraemonToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6A1C98892B9DE1F0D78C93155C44B /* DoraemonToastUtil.m */; };
@@ -598,11 +602,11 @@
 		35E98AFD5F2D817E8941122BEEE98F42 /* DarkStarDataStoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB8F06B477CD666760A520844435E6D /* DarkStarDataStoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35EE80BD221E570D46D385C0AAF86733 /* Doraemon.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4F63B28C695C8F2180D6C932469BCFF /* Doraemon.strings */; };
 		35F616E4754F28AD43428A1D869D18D9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B03AE607EFAB017539536DA8104950C7 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35FAB6EBDDC258D90C13C05D233198F1 /* DSIrregularElementsCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E24DF6A86AAAFBFD432CD11784045 /* DSIrregularElementsCreator.m */; };
 		35FEB8DD9F7AA14A6A3D3D97D724936D /* DoraemonURLSessionDemux.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF6F61B4603BEFBDF86F444E19555 /* DoraemonURLSessionDemux.m */; };
 		3603A6ADFBF64245E2E6DF689AF31E15 /* DoraemonMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B96C0F060A2AA18549D6EBE859B16328 /* DoraemonMemoryViewController.m */; };
 		363F14824CD9169F21682393FA2B9941 /* DSResourceTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 6207890AC52C9404EDEEF3F15E26946C /* DSResourceTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		364741294824A1BC27F6B0359B29506C /* DSAudioRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F31B3B1997321635348F73C700362E2 /* DSAudioRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369AB533F0522371F720083E19FCCD2B /* DSBTTimerHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7D792B5D0807217D5F28BCCA03EE84 /* DSBTTimerHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A49354FB1D7DD44239C42247032B71 /* DoraemonNSLogListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C75B578CDA81F065E18D4D3BDADE7E /* DoraemonNSLogListCell.m */; };
 		36FEE1A27797EA524DB2675636E42F73 /* JXCategoryIndicatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F1A89A721FA3517A91A43657910583 /* JXCategoryIndicatorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36FF25463274964929A60CAEC991CB31 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F6E0D78E150F86BCB0A7487953772 /* AnimationContainer.swift */; };
@@ -622,6 +626,7 @@
 		3831ACB642E93F8F319205F41A758F70 /* 10.css in Sources */ = {isa = PBXBuildFile; fileRef = 87B4B1650758C23119F62274BB110AF3 /* 10.css */; };
 		38547E887622109BEB25ECF5CF7977B7 /* DoraemonDeleteLocalDataPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC994D34300B947BF8BDB987DCC24B2 /* DoraemonDeleteLocalDataPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		386A22DBCE86E903CB1231EE81ED9925 /* DSGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C6B86DC0A26B09A883B89AE2632682 /* DSGridView.m */; };
+		389E774334B99F6E6D82EF7E917E2140 /* DarkStarGeneralTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B57D3006DCA4D82AB906A0C4E6F28 /* DarkStarGeneralTools-dummy.m */; };
 		38A5FEE8CB796C4F78945CBB7DA9AB0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		38B01083A6F2CA8ABF7CADB9F82453C6 /* quant.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA437B5DBDA7F0B365D57836A0555E1 /* quant.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		38BD6E1FB249330F3CD16BDC0B609182 /* CLPhotoBrowserPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EBE227A72B847813699386E453F4E3 /* CLPhotoBrowserPresentationController.m */; };
@@ -650,7 +655,6 @@
 		3A9A99CD7C5581B045FE71868F64F80C /* bit_writer_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 4177A80D1FB4C617510932B127D4179A /* bit_writer_utils.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		3AD24669DEC6BE428E47CE6533DF2A6D /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C73292E8133020B277B7232EF78AA /* PathOutputNode.swift */; };
 		3ADBBEAD5BEFDE811CB606454B5886B6 /* doraemon_file_sync_banner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E81A1E73560C55860405B3345E4B46 /* doraemon_file_sync_banner@2x.png */; };
-		3AE36E3C18A2219B86A00ACAD453808E /* DSParagraphAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDB07A685ABED37884B17EEC1BC1079 /* DSParagraphAttr.m */; };
 		3AEDC48E8372F76BFD377B36ED4D9BC4 /* 3305752-ec6ff7754661ca09.webp in Sources */ = {isa = PBXBuildFile; fileRef = 106AF72D3DA5DE483E8B8EBDFDEB9BBA /* 3305752-ec6ff7754661ca09.webp */; };
 		3AF3955860EFA6A1172F6C8CD7A2D36C /* JXCategoryListContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 050385147093C954C02D46CAAE247363 /* JXCategoryListContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B02067F2689F7EA727F9435A2AA0336 /* cost_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 626CB174814D55286E9F1F978F67A1B6 /* cost_neon.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -682,7 +686,6 @@
 		3D72CB7DFA7FD5BFA3D34EBAEFBC5BBA /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C4ED89060F83E00E4EA1BDB2F7A27ED /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D7431FC3190649E6990BF3FD55E08A1 /* DoraemonColorPickMagnifyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A1ED2866482A194DE11282A40C8F4D /* DoraemonColorPickMagnifyLayer.m */; };
 		3D7A125AB74E8883A4A82519E2C3A827 /* HWDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F35A5A588025A283F43D964926309C5B /* HWDownloadButton.m */; };
-		3D80C4541D13B59ABA666C4458D09BA4 /* DarkStarGeneralTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD249B4FD917B19E590C666C892C678 /* DarkStarGeneralTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA5F6308B854C1B4C271C57F9F3C12C /* DoraemonNSUserDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A613B99550EA547555ACE67749560486 /* DoraemonNSUserDefaultsViewController.m */; };
 		3DCC73E65EB3AA7EBF1BC7062879DFCB /* DoraemonColorPickPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B3576C4AF4FD03A182E0B6B475E303 /* DoraemonColorPickPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DDFDC3B7949E5EACA2693C2467CD2F8 /* DoraemonHierarchyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2506169A852520A8CE197F8C815A40FE /* DoraemonHierarchyDetailViewController.m */; };
@@ -753,7 +756,6 @@
 		42BE4417ABDCD43233C41CF267134F18 /* CTMediator+HandyTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A28AB24C1FAF374BAE5BEFF09546189A /* CTMediator+HandyTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C4D32B8206802F163A1ABAB967DDD8 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 41156A1059627317B07097CC7CAA045D /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42FD35803FCEAE118A626A6A3D6B5B0D /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6313C6FB2795108C130823456E672A2F /* FloatValueProvider.swift */; };
-		432BD19957FD146C82422E36E6073685 /* DSValidateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B39A428532BF9825E1B2736FCAA391 /* DSValidateUtils.m */; };
 		434D38F9F1707A0734501C274AF892F3 /* DoraemonMemoryOscillogramWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F769C5B5D769B02ACCBEFE1DDA23FFA /* DoraemonMemoryOscillogramWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43C24DB7474D3198B58E7FF2DFA8CABB /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1DB25D72522B00660C1724A3E5696 /* ShapeRenderLayer.swift */; };
 		43C9C62D11B9B41A5D98347E3A5E9F08 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BF17E5905E379E6723D64E7BF3330E /* MJRefreshBackFooter.m */; };
@@ -769,6 +771,7 @@
 		4527AFF6DD802E9098350532319ECDD4 /* DoraemonCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677AD9501C505232896C5844BC3AB7D /* DoraemonCacheManager.m */; };
 		45383AB6AC0052CCFF12DA9F5D407D30 /* DSCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB70DA197A04DB2517908AD40A61F34 /* DSCornerView.m */; };
 		453BBA0784071A00D3C5F009E2A402D3 /* encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 605658F14A5FFA9C97A7E487203CECA7 /* encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45641352C0E31FEAAE37FDB473FE3962 /* DSGCDHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFB1B171C3D3A74D757316749F9B062 /* DSGCDHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4572BB49AE185CA2B46CD08D077EF93A /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = B528DC60D7283CA6FA039FB00E6B460A /* types.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45740CCD7880CC23A015AF5D381B6D99 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D211B7A9E54CD26A47CA91CC388DCE /* Comparable.swift */; };
 		4590A61A218A48115349E5755C19E072 /* SDWebImageDownloaderDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53934ABA6CC9C08FA9CA91A1EF389A /* SDWebImageDownloaderDecryptor.m */; };
@@ -789,7 +792,6 @@
 		46AAB30F655EE79ADAFFBFA63AABF60C /* JXCategoryIndicatorCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1E2447C7C0017ADA0F716214C6CC3A /* JXCategoryIndicatorCellModel.m */; };
 		46DD027649A9B8AC7767CC89C4BB2821 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BC07DAF1EB8498DF84F7946702F5F /* String+MD5.swift */; };
 		46E7F7D08262D97139D6FEF6589A9CF6 /* alpha_processing_mips_dsp_r2.c in Sources */ = {isa = PBXBuildFile; fileRef = A231FC071D2B4976E0424B5FB1F39C16 /* alpha_processing_mips_dsp_r2.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
-		46E881F61C2A6E6A87B2EBA998AE6FF6 /* GCDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 962FE53D720E3C88BB0A512A9DC3094C /* GCDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4701C30C5484883681B8A6B5AC05E0B8 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D764EF5796E73C4B63E4D88D329EDCAD /* Rectangle.swift */; };
 		4729D35274760FCADB4ED8B572750C37 /* YYTextTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F92677C14B39510D53C13AF93E57C7EF /* YYTextTransaction.m */; };
 		472CBD0DBF0B0A520606D31C6AA56711 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC56EAF35BECDDB6DC941E3408716ACF /* GCDWebUploader.bundle */; };
@@ -812,6 +814,7 @@
 		4895A39518776F9E62835C6D0F40253F /* SectionCardDecorationCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F26416632C7F633DF5C47F9321AB91 /* SectionCardDecorationCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		489B2AAB080219A3675F518F4967B4A5 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8AE0925D5195D1CD811569FB862669 /* TZLocationManager.m */; };
 		489E43447EA4045376B0F8809DB2690E /* rescaler_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = E7DFD3D20180480ED49C607FD128AA97 /* rescaler_sse2.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		48A8B5AA39BAE47E09CA69DAF9C0F885 /* NSAttributedString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D337F3FF1C2F1FB2B6520ED5B016DF /* NSAttributedString+DSAttrConfig.m */; };
 		48C65452FED6533924086B32AC139828 /* JXCategoryTitleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4BC97528D67060AA9636654D4B42C9 /* JXCategoryTitleImageView.m */; };
 		4903F1C49D147BB75FDE43DF178F9433 /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DF8367DF028F50663FD0A13DE882C5 /* CompoundBezierPath.swift */; };
 		491CB93BD965FC1E2079CFB6CD3BAADA /* DisplayHWBaseCacheViewScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B68EA2D3F39ABBA7890E39CB93186C9 /* DisplayHWBaseCacheViewScreen.m */; };
@@ -827,7 +830,6 @@
 		49D8ADB122D980F80B0722CBDF1382DB /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2D3F208D03AFEEEB4CA86B9EF96493 /* Interpolatable.swift */; };
 		49E34B6665E1BD16CEB67989F4F74434 /* FeedappViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6434351708D774A8EAE709E285103138 /* FeedappViewController.m */; };
 		49FDD54C76574F99194A7E36F8A761A8 /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = AD18B9502C3559F95E2DE4551686C2DB /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A036D37B961967477AE94F6470CB8A2 /* DSCGContextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9780B890B8EB7C51404B1D59CD20DA2B /* DSCGContextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A06045B3421A24098F750A7CB581ACF /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFDC4D62A9D931CAC88602BF6E6597D /* ConstraintAttributes.swift */; };
 		4A0DB35728A426251AF33C46DEF51206 /* JXCategoryIndicatorTriangleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BE9759E3CF963217D7C24895FFBD37 /* JXCategoryIndicatorTriangleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A1307D7EE8D53EC62887AE30A26D5BF /* UIImage+Doraemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C33C763F70F3B106BD91A37B7099FBD /* UIImage+Doraemon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -862,8 +864,8 @@
 		4C7655EA497308DB160F167A4A319477 /* SDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5483423F7C4D4298A6E2B5C7E6ACE099 /* SDWeakProxy.m */; };
 		4C779642006361AF6C58B36F880C10DF /* DSIconEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EDD90FA623A3E35ADE6D59BFDB27CE /* DSIconEdgeInsetsLabel.m */; };
 		4CA096A22FAD0BE1A20F41C138453733 /* predictor_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 32CC134B490DA16F71CBF933C70F1883 /* predictor_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
-		4CA0FA89D1C2629D6808EA7B3C3FDD38 /* NSMutableAttributedString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 374F816031F80BD488E84542EADE7477 /* NSMutableAttributedString+DSAttrConfig.m */; };
 		4CA157573AA5D262A71BC820944F0BE1 /* DSUploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B8BD0E07473D51BD7810997E2E1DD7 /* DSUploadFile.m */; };
+		4CDDED39C680A1D65D7449EA58DD86CC /* DSNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF21605511C7EDD2D16ED527E4CA4C9 /* DSNumberFormatter.m */; };
 		4CF12052AC9E83345345B9985C91E824 /* mux.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C72B5430420B5BC97605C6CC5D297D /* mux.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D0B871485F59FCEEF1BD09CAA0691DF /* DSWebViewCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3022DD4ABD92F264296FBAA968D169E5 /* DSWebViewCacheManager.m */; };
 		4D11518BC763C5562D399AC6383A717A /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF985DFDB95D267FE08A915A4CD8F3 /* InterpolatableExtensions.swift */; };
@@ -889,6 +891,7 @@
 		4EBAEB451CFF360569270972EC4EB8F3 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A1F638D0E9BD443334732603DFCDA /* ImageFormat.swift */; };
 		4ED8FE6262C93E61DEAC2B65150154E0 /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1EEE2992CFC50647C93088FD039698E /* EmoticonQQ.bundle */; };
 		4EFA4CC15FD689D555700D855577874F /* vp8i_enc.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C3E7AB55E7F5BD6E58CE278E1A3396 /* vp8i_enc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F1B33775EE51D475960787B12FF4A37 /* NSString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 39872547AB53B29D65188BE10E0F8E1F /* NSString+DSAttrConfig.m */; };
 		4F2C83917C8059FF04D4CA65921B33E8 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E78D754039691776BB4B98327CA183E /* Keyframe.swift */; };
 		4F57CDB9B6BFBED0BA64E0C19ADCE5B7 /* CLPhotoBrowserAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A2686E686209A86BD11DAF6DCD6A9869 /* CLPhotoBrowserAnimatedTransitioning.m */; };
 		4F99D5A9D2D9474B824126232B12A984 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3125B1560E0C5A5B025384778D822706 /* ConstraintPriority.swift */; };
@@ -913,6 +916,7 @@
 		519322097CF14AC6851A0BD11E0DF338 /* CTMediator+AmenWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EBF64363F4F62C945AD79DF7BF7F90 /* CTMediator+AmenWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51B0F07C06E639F20478ED573C27857D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F18341A953948C5A1EE1153E4E3ED /* CoreGraphics.framework */; };
 		51DBC3A875B441638A68683D52AA4B9C /* DoraemonColorPickInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8541E0CD15A985E6119F3B0FB95C6E29 /* DoraemonColorPickInfoView.m */; };
+		51E79AC33AA5DE65FCB492061965F492 /* DSBTTimerHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 031A9C7D3475B94F126017E1CAEF92BF /* DSBTTimerHelp.m */; };
 		5205C3A5BF17F6D10F0C13C423E2336D /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC72D7548CBFF6BF8870F879C08550 /* GroupNode.swift */; };
 		52090EE7A03D73C331269330AC615874 /* CLPhotoBrowserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 798A1A881C988A56B6943BDD5CF59E8E /* CLPhotoBrowserCollectionViewCell.m */; };
 		521A0BACA291B1DD3C81B12754D6DF93 /* DoraemonTimeProfilerCore.c in Sources */ = {isa = PBXBuildFile; fileRef = F7EBB8DE1E1CD620CBD3EC25296CB4ED /* DoraemonTimeProfilerCore.c */; };
@@ -936,6 +940,7 @@
 		5413C79E6F805EE245A0E85FDEE80FC8 /* AreaJsbWKWebViewDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C748AF9CBA38A7CCD6F84D308FC07B /* AreaJsbWKWebViewDemoController.m */; };
 		541AAE1EC336E5BA2D43CEAD725A7E98 /* CLFoldClockViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EE0F7E55E354A69AADF50DE9D2C04F /* CLFoldClockViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		542D323021CCE7E0FE4E62AB32A9DCC5 /* DoraemonOscillogramWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E598D954701C63798F2D4B316BC6668 /* DoraemonOscillogramWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		543F9E3EC599307957CF241A44686441 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E148E20294446316A1B1314D08A80F5 /* GCDSemaphore.m */; };
 		5446BEBB604F139AA623ED4D839C518B /* DoraemonHierarchySwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98C472E23DE7E34F8DCB553E4355F77 /* DoraemonHierarchySwitchCell.m */; };
 		5450E0FCCC6158ACF085B6B5C87B50EE /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF1CE38D43E0331AF4EB864C1470B /* Vectors.swift */; };
 		5473017CA1F7144A285E06C2F3CF6530 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C90813C5F12C4E7D0490417111DE32 /* TextAnimator.swift */; };
@@ -971,13 +976,13 @@
 		5741438E0E45F870641819E2FF895A9C /* TimeChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD43CC0DAAE7AFF059B2B44DD3E6265 /* TimeChunk.swift */; };
 		575F14AB451CB9558FE8C20E2A789996 /* cost_mips_dsp_r2.c in Sources */ = {isa = PBXBuildFile; fileRef = 83D9897E07979B8FD50D625CA38F248F /* cost_mips_dsp_r2.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		57744CA757400E7183DFC0D37EFB5214 /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1149AEBC98B55B258B28E52D484AFEB0 /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A392294B67531FCA2C3FFC689C79E1 /* DSAttributedStringConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F82BFFBF03EB6491A2A90F77DD51E35 /* DSAttributedStringConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57B8D9E5B8A83FD681C59D45683E89B0 /* JXCategoryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C14823435D3E5E9C9484B8E5606FBB /* JXCategoryImageView.m */; };
 		57C1FEF7F8462E3E76742A7B478285C0 /* DoraemonChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 509561F41D22973B3BA94B165090A4A2 /* DoraemonChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57D2FF3208D48EA30E23D6020A18DDF5 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 34AA27180CE14B7C6DBE568203CCBB5B /* NSObject+MJClass.m */; };
 		57F296C598E1595D1EBB6C55593DB439 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9E63D9B213C8EAADD0A3D72FB60A9 /* ShapeNode.swift */; };
 		57F3C5BC428B20E2AA3E77A8788B7334 /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 327F926A6DB318D2E0D6ED716F116DEC /* enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		57F913906FE82D421D710579974826C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
-		5802CC0F67DB692A0644E39F0653D52F /* DSJailBreakChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E73D59719170D052766517730F22F4 /* DSJailBreakChecker.m */; };
 		5825B8D0F101CD3B53A101C48606DA30 /* CLRoundAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 155D73BF272AB7B1968F118A4EA28D25 /* CLRoundAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5829EC9201C35ABF6578926636CECA34 /* DoraemonCPUPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 749CB708F826A6987172F0270957F215 /* DoraemonCPUPlugin.m */; };
 		58399A099D90D35A763405848D0ACE7F /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A555AC8B1CCF1E8B7550EFCD582EB /* Checksum.swift */; };
@@ -1020,6 +1025,7 @@
 		5B3C0BE9FDC31577CDCB794D4050E79A /* RegExCategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E25962766F1D23CC0C5C8714D9EBD999 /* RegExCategories-dummy.m */; };
 		5B59315E7937597DC3FC3DC52FDFCF05 /* DSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F128F7DEF2F2633F770B3C332B93B1 /* DSCircleView.m */; };
 		5B675A0B069BBAAD4F0C9B41556C3F10 /* DoraemonJavaScriptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE9B80B63A8A6B813430ABC3B35E18 /* DoraemonJavaScriptPlugin.m */; };
+		5B883E7BC317E277E80156141438D7F8 /* DSIrregularElementsCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E24DF6A86AAAFBFD432CD11784045 /* DSIrregularElementsCreator.m */; };
 		5B9AA08846B770D0B6DE480B94C6C01C /* Pods-DSDemo-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C37087D6CF0C5CBBCD2DAA683C620CB /* Pods-DSDemo-Swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5BCE743555E4595376F4A5185FDDED93 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2EC31D4E38309181E36FB0D233B16 /* PrecompAsset.swift */; };
 		5BD9B8F29305B757F6A464B789E1C1B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
@@ -1177,6 +1183,7 @@
 		6798692229753EB141D7A1BB37D6C00F /* T1Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 964D6C2AFA53EF23474C03E287754CB3 /* T1Helper.m */; };
 		67E8BD61B087AD3436CB7D398D230FEF /* AresJsbUIWebView+JsbRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A07D1898304C65C2856646666894C1 /* AresJsbUIWebView+JsbRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F4A677A5CFEA2D9477AB1ACD710A32 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E8DB294236DD53AD132F9AFAEF02AD /* SDImageLoadersManager.m */; };
+		6829AA9FA223FDE29512543681EA2227 /* DSVersionCompareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A806DBCE969C7EFD3823E538FC13B81 /* DSVersionCompareTool.m */; };
 		683841F65D036A2154A6516A8EA6BACC /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7C784FEDD9311107EBAF02FDA551E /* PKCS7.swift */; };
 		6849F88C3544FA40A7D48D76644CF08C /* MJRefreshStateTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94608AD5436929A1325DD9267AE112E2 /* MJRefreshStateTrailer.m */; };
 		68A2C78F1BC84268E9D96102981EB8E3 /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914B0BA01FEA66CD6FC1A7E85D7C6E3E /* StrokeNode.swift */; };
@@ -1191,16 +1198,15 @@
 		696053D7476C4BAC464FFB412891A47F /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B0D3B7E41795CB487AC727506F9AD /* AnimationPublic.swift */; };
 		696A0FEAC6EF40E187D6FA746930AD95 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD708EA6026F78D363043A3DD679FA5 /* SwiftyJSON-dummy.m */; };
 		6987DF9FD6C9E2243B8106B93D0C171E /* UIView+TZLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 52099AC83FCCA3606AB9B81C484657BA /* UIView+TZLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69956D4F9F4D728AEB8EC6D7C3357C17 /* GCDGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DF617995A72DA2BD122FE51CAB2791 /* GCDGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6999E4D6F0B6DEF507EF8F7FCC0F863A /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F637FB9CE644A13C25D19ACB821B16 /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		69B460D9E3EA738300B9D072FA4B271A /* PGGCryptoHMACMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7EC15B372BCEE5FEE10DD80495FE2 /* PGGCryptoHMACMD5.m */; };
 		69B54670653FB602BB36212266F7E02A /* DoraemonCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A2FA224965C57C82A97B40560C481E /* DoraemonCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69B9764671BD2AC1072264A143049122 /* DoraemonHealthBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A34671D8E17FE086360F6D3654E7486 /* DoraemonHealthBtnView.m */; };
 		69F64429EE35D5E1005CE17282BBA2AF /* Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080CB984F1151897202DC01BC6E5806 /* Prime Test.swift */; };
 		6A0410555D6CC011AC6D962290B78E89 /* NSURLSession+CorrectedResumeData.h in Headers */ = {isa = PBXBuildFile; fileRef = D42F662A236A05BED30A2B79DC3F6A0D /* NSURLSession+CorrectedResumeData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A6C242480E5078F0A8DC20B185D6B65 /* GCDGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DF617995A72DA2BD122FE51CAB2791 /* GCDGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A8631FF4ADC11C4EFE07CF75762EA0C /* DoraemonTimeProfilerRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CFE4CE850612DF164E34E7CDD98D27 /* DoraemonTimeProfilerRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A8CAEBD0E665325B6BCCE567CABCF2C /* WBStatusComposeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F64433A42177CB9EDA123F9006B8C3 /* WBStatusComposeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A94D66D6F381D5A45894AEB582B36E5 /* DarkStarGeneralTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54080B34C00C713CCD6C157FC4F62F28 /* DarkStarGeneralTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ACB4CCF4162EBAA923E8E636DE89A5B /* DoraemonANRTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B613F6AC3EB96DDDA6528B755210FB /* DoraemonANRTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AEE24ADB10BD09887DCAE50D1782677 /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE67060D63837D4AD9A90C6AEAE1D /* mz_strm_mem.c */; };
 		6AF52D60A63753DB7565A6BD164DFD57 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F097AE459731D4A30D8DDC7577886 /* AnimatedSwitch.swift */; };
@@ -1213,6 +1219,7 @@
 		6B5E98C5FEACBFA9AF4C87CE96DE2514 /* DSListTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D507F261EC00A07B2F7B1137534105 /* DSListTabView.m */; };
 		6B6A8B61A9EBE6FA564F12B73FBADE8D /* CLScrollerViewLinerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0C8F7D6D4D871D68CD6DEFAFA76451 /* CLScrollerViewLinerController.m */; };
 		6B787A30F9F4DA254DFE063E35BBDC73 /* DoraemonXAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1DBA8EF5370A325E0DB543415DC65B /* DoraemonXAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B7D455DA4BF9AB16037000871FC2294 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 814E07FEDE55F949BB300662B5F0F46A /* GCDGroup.m */; };
 		6B85ACC9D9B9C7B6E302F56FDC1F089D /* CTMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 591F8F1DB90A4A45717CB1FFE04A4120 /* CTMediator-dummy.m */; };
 		6B915D601D0A0784F559993557CD9EA7 /* DarkStarNetWorkKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E15225528A942F2C8B9511962E316 /* DarkStarNetWorkKit-dummy.m */; };
 		6BBB94C6965498CDC5343A746DC8BA6F /* quant_levels_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 8178A94E2084404A7B42816847004896 /* quant_levels_utils.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -1242,7 +1249,6 @@
 		6E06D3CC44FF406F352DA400BEEA0E01 /* testData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8985DA4CD8BF94991192965A095C164F /* testData.plist */; };
 		6E28ADE42D49CD6B44AB7CCC4F8B913A /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 400710298ED6CB998C0A2C14219D69C6 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E2E9C1BB3BF8B75B3D744220A6006EE /* DoraemonVisualInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A5298AE567A2D9403082BD5199D52835 /* DoraemonVisualInfoWindow.m */; };
-		6E4FF6C27EAD276D9584F7DB52DC1AFF /* DSAttrStringConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 052E3E9073915A39AAB3F1A24184963A /* DSAttrStringConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E53C4BD3C9E79F41F2CEDB51C3E9730 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 805F88796350DD0977ECA2A39C36AAE6 /* POPLayerExtras.mm */; };
 		6E55730D46B2064887D68341E4CF6CF3 /* DSCardSwitchFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3135EB48AE7632108778A09BB6A6679F /* DSCardSwitchFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E5E1559FBB6FCA5629C7EC4E68AC9D2 /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BBA1EEB94B5A53F15824E306C5A667D /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1251,8 +1257,8 @@
 		6EA15BE5C17442DB634AFC72D7E817A7 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72BA217D911FD35ABF7B62F0731E7 /* AnimationKeypathExtension.swift */; };
 		6EA7F0077086A0DBC4EF55FF71C31B59 /* DarkStarFeedKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D01CE8B3D17A4B8B20C19D63DB03BB9B /* DarkStarFeedKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F0E4280485A8C3936B83C77488FE39B /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319441762401319AD8B5DAD31DDB0E69 /* SingleValueProvider.swift */; };
-		6F38E957B2CEF02DC666599FA3287954 /* DSCGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FA51FA56F494662263135A75EDD00 /* DSCGContext.m */; };
 		6F5C9FADA370F43C86D283ED9B55EE84 /* libwebp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674B733337244B94C207602ED26CD16 /* libwebp-dummy.m */; };
+		6F61ADC27CA952D6D48975D4E5B0D928 /* DSDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDD0F88B9D32ACACB0DFC45AB6FFFF4 /* DSDateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F7EB9D9F2393848133FF29A85B1B4B9 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 532BF169B6EF160CF4704D026AF24897 /* GCDWebServerFileRequest.m */; };
 		6F82DADB7092BDCC55E68F212A7030D3 /* DoraemonCrashSignalExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A614C559B5D2752A81A5F814C895A2 /* DoraemonCrashSignalExceptionHandler.m */; };
 		6FC24725935512B56890D076CA1399FB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12365F3BF5E2F93DB74857D84E6763C /* UIButton+Kingfisher.swift */; };
@@ -1263,7 +1269,6 @@
 		703A0CA59A9969FF566326F51603DF0F /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = FE49D34DB405A044B96883C67F85DDD8 /* ReachStateWWAN.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7059BDF5886AAA9E844949303840F34F /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA2B31EB02B41AAB68014634757E13 /* ConstraintDSL.swift */; };
 		70901E1779B623407F0BDF6CBB8B8A36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64761067FC7FD7AAFB49C2A8AC03A308 /* Images.xcassets */; };
-		70AF378AD36FD983F37A8B4200276BA0 /* REVersionCompareTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E36BD21FF58A0479C902C16E280D4A9B /* REVersionCompareTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70CEE4424BB3F2CB8A93AEE819B262F5 /* DSEdgeInsetsLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 39004F99898012A4C744FE62C61FDB8D /* DSEdgeInsetsLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70E7BD51ED1C3D862D291AC027C10033 /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 845565528EDE80490D9138EA94D20C08 /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70FB587E40E353D7805524C65B0368EE /* YYTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 030B6AB88A71E55656FF099E1C90FB84 /* YYTextRunDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1278,16 +1283,15 @@
 		71DC881DC5089B07BA03F7B6A8296628 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CED8AFF06BFE25DDDFDEF85FBBDBC67 /* SDImageTransformer.m */; };
 		71EDC198100E30B5EB98DC1FE572BAA0 /* DSNETShareUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8F7E73BB6F10D1C975B36BE546719F /* DSNETShareUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71FD8C73DBFFAD7ED170D0444777A2F2 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF792FDE6B55F3AD28E646D1F71CF87 /* AnimationTime.swift */; };
-		720E10B4A9C41FBF07D80CC56F9CBE98 /* DSBTIconHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E83D0B6623F025E26E9A696743545 /* DSBTIconHelp.m */; };
-		72123B86F6040D5D43D74C96B5F595B0 /* REVersionCompareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D5991593C600F9C92FA3CBFC2E291 /* REVersionCompareTool.m */; };
 		721639FA27DCCAA52D3F42C37F0C7A8F /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A122B282CC0D8D7C3E1EEA6378CC891 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		722D9B6DD56370DD77E6F06F27AD91B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A562484F5574BBF158ED8896B7D003 /* QuartzCore.framework */; };
-		725AB51623C176B2B4385939BE5FC6A3 /* DSRegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930C6C4C9CC30339647FB6DCE1E6BED /* DSRegEx.m */; };
 		725D8B4EDCCBBFC5EFA76296D31553C2 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3777D8EAAA632CA07065C5BD2397172 /* AnimatedButton.swift */; };
 		7274BA40ED7DD247B4C86AF1CA1731AD /* SnapKit-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 479ACFB488E087FA9368DE6E7EF21C73 /* SnapKit-library-dummy.m */; };
 		727A6339DB79CA2545DCC45C0CFDD736 /* DoraemonKitManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AC53C66B214F0FDDBB9CBE4517E62B /* DoraemonKitManagerCell.m */; };
 		728787502D07BD1C06724E316F38072E /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = F20ABC8089217BC5260CEA383C092050 /* utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		728CC3876A9A82C9C99A3D4BBEC334B3 /* CLGCDTimerManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED45C1555CDEC202BED9B9A75F9B0462 /* CLGCDTimerManagerOC.m */; };
 		7299473ADB4BF5E2A09B225709D3CAF5 /* DisplayCustomCollectionTagScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C03E5FA3292D50F42B79EF51FBFDF1DD /* DisplayCustomCollectionTagScreen.m */; };
+		72AE3D1EE4298201AD786131F44C9CF2 /* DSAttrStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A8F4A7855728A6CBE666DDE80AD18 /* DSAttrStringConfig.m */; };
 		72D305A220656108C5A3A16C5B64DA9A /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = 092C6ECF533D488EC85BC40DE96D9443 /* ReachStateUnReachable.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72EBBA565A2EF42190859E12E30C7DDC /* DoraemonFileSyncPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B16AD63527E8495E648C91EF7B12F862 /* DoraemonFileSyncPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72ECCA95E694168B94E79CF50B007A4A /* DoraemonQRScanView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED56DA4A6BFADCEE543DBBA4A60C1283 /* DoraemonQRScanView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1342,7 +1346,7 @@
 		77A01C4F7C6F4FF11B9B05ABDB6C003F /* SRSJSTest2 in Resources */ = {isa = PBXBuildFile; fileRef = 5AA77AC5F9E0F4BE05EEA787A2FE9F5A /* SRSJSTest2 */; };
 		77A4DFFF45E09987CDBFDEF0D370F9BA /* SRSTextField+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C410992222BC79B890B61A124DA8AB8D /* SRSTextField+Private.m */; };
 		77B1AB63E45BE2FF38508A0222928158 /* DoraemonLargeImagePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1604529F2ACDE662E6D5FC08C696B7 /* DoraemonLargeImagePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77D48871A2E0CD6C675E6A36DA46ABDF /* DSBTScaleHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F321494E23BD15604FD9F44A591C6FCA /* DSBTScaleHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D03C33C9917C6442EC891803595443 /* DSUserIp.m in Sources */ = {isa = PBXBuildFile; fileRef = E477DDD10DECFC2FB1093283FDB192C1 /* DSUserIp.m */; };
 		77FF7F2D8E188D8F4A3F6E37D1D10C3F /* UIImageView+DSGray.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC04E5AEB64A11DE806A0FD58C05BBC /* UIImageView+DSGray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78035BC6DB0AC0CEBCA79D05EB67CD37 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6555EC3C3128FD1208EDB3A5D931E5 /* RequestModifier.swift */; };
 		7812583F3AA445C6A254C5E537223125 /* NrLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F1199F22CE8ACBC789D52A3A388E55 /* NrLottieView.swift */; };
@@ -1389,7 +1393,6 @@
 		7B6D96F1A79BA42865A67A7BF071338C /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06A1847412C696864E58584FB8E9A2 /* String+FoundationExtension.swift */; };
 		7B72CABB3EDF7837743CA88CAA0D5B2A /* HWDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F87EF0BD66D40DCF6B1622581EC68D24 /* HWDataBaseManager.m */; };
 		7B96E479AFBF412429F812FB2B6F117E /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C6F35E4683195B5FE22811E004004B /* UILayoutSupport+Extensions.swift */; };
-		7B9C12553F6AF21361B9D703A89B2F20 /* DSForegroundColorAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = 634E0151A6B023EE4CA61D5FC99F0155 /* DSForegroundColorAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BAB21E54B636C457AFBD75C429C475C /* MJRefreshNormalTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A99347C3431383A3C318F257910390 /* MJRefreshNormalTrailer.m */; };
 		7BE76DEBDB8246EB8DA3925278F25E74 /* DoraemonFPSPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6AC11E0C6EC63A48A28591D2C30E33 /* DoraemonFPSPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BEC80B515B2BBA34813F40F1DE68CAD /* DoraemonNetFlowDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79308C6C77B8BF2B20AF74981EF57791 /* DoraemonNetFlowDetailViewController.m */; };
@@ -1410,6 +1413,7 @@
 		7D39317027A1384778951876EDDAEA9D /* DoraemonNetFlowListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FC4978BB6F5C040A86D879DBF298BC /* DoraemonNetFlowListViewController.m */; };
 		7D4F2CA0917E5E8FE4D79CF18487CC99 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A0D436130EC54BE1391586AE7EF0F /* ReachStateWWAN.m */; };
 		7D5558F836531F39C091476290865594 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108BA614E3A5FB18F108043E934741C /* StrokeRenderer.swift */; };
+		7D6E5576A8EA3B3309442CB6149410A1 /* DSFontAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB592F5B003E786580B6072FDEC9FE /* DSFontAttr.m */; };
 		7D87AF5EE55ADA92C64B611BCB338A61 /* DoraemonCrashUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB6FA1E85901D9361CC18D89BF69F58 /* DoraemonCrashUncaughtExceptionHandler.m */; };
 		7DAD5514FBAA129335C668C4FEEB8E78 /* PHAsset+DarkStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43BFFD21851D4FCDA49C89BCAEB336 /* PHAsset+DarkStar.m */; };
 		7DCB3A64CE2232AA298374A9BD4A6BC2 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C17138E8A49002057A50015089373 /* FillI.swift */; };
@@ -1483,10 +1487,12 @@
 		83E9F3ACC0DBF53CF8352513FD8D8DE4 /* DoraemonCrashUncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D19C300AA5C4109D2559E26DD5C9E3 /* DoraemonCrashUncaughtExceptionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EF8C39809C4597A6D406E39A48A3B2 /* AUMoreFailedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5C48C856C09F13533BBB194DD5C94C /* AUMoreFailedView.m */; };
 		841E858A9E543EC42E0E63566FB63B7B /* DarkStarWebKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B7BD80868965745BC90C2CEA643E26 /* DarkStarWebKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		843DD47A9D06F8C5079AA9B39D7942AC /* NSMutableAttributedString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C1D3C614DA431B61DB517867F4A71E /* NSMutableAttributedString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84410845B2ABD77DD0AF56A54540E37B /* ImageBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4B07BD4F897846042709C44694997 /* ImageBinder.swift */; };
 		845D01C478573C9D5763A82636633035 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F53F2A912B3A903648181476B1626 /* SHA2.swift */; };
 		84C7BDDC39D7823866A54FDFB356205A /* DoraemonHierarchySwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 02455FEFFCE75AB83613D4439391E8D0 /* DoraemonHierarchySwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EB4D16AFD3084150C215CADF0A6C46 /* SDAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A34B66382A014C2EC30D53781E9011F2 /* SDAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84ED91721ADFB08F489EB6766F766E2A /* DSFontAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = FA81F721C50EF9A0E4DE78C0EC896097 /* DSFontAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		853A4989D5FB6362909754991EE1811E /* DoraemonCrashViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00632997AEEF818DEB34189E1E3F289E /* DoraemonCrashViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8553618EDE28E84A8C1094764CB35CA8 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBDF8CC770E6AF9FC9BB2298A43AB83 /* MJPropertyKey.m */; };
 		855B56D0A4BED180568AA5D198E2752F /* DarkStarAuthorityKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D791F42EAD5F09A6D2819A2AE1A43D /* DarkStarAuthorityKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1528,6 +1534,7 @@
 		88A39116C63A4119C81D8BB5586002EE /* DoraemonBuriedPointManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7852243D0BF8CDB4DFC1ED4A15AAE170 /* DoraemonBuriedPointManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88B2D7894C0544C07BD9B9291357B8B9 /* 2-9636b13945b9ccf345bc98d0d81074eb.jpg in Sources */ = {isa = PBXBuildFile; fileRef = EA2760B994189B8FED00DAA0C12454B6 /* 2-9636b13945b9ccf345bc98d0d81074eb.jpg */; };
 		88E4E9C5E7E1894A3A9843A94149801F /* DSPhoneCodeLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5951A88EBC72CB6E5C92103FCD4EAC /* DSPhoneCodeLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88E8BA348022BA531695BA997AA4066B /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C4A1CA25EE5DBD01A2A2D6C9EEE0E7 /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89028882FE5D6C2F5578AC5305C934FE /* JXCategoryBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3927CE785FF87A5F03111040AA479085 /* JXCategoryBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8933E8560DE2CF0FD98F5A84A2D77BCB /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01DA2CCA1880A5B22537FA0D710570 /* Ellipse.swift */; };
 		894D36194388E10BEC30BEACEEDA8057 /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DDA3C044BF4BEDCD78353107FECCB /* KeyframeExtensions.swift */; };
@@ -1553,14 +1560,12 @@
 		8B79A57B9D3079D8B1BBF9BB3ABF189A /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CEEB7C13E0D0A194CB4ECCF0DB406D /* Marker.swift */; };
 		8B8818EC3E1D8E4F985840C49F2483CA /* DisplayDSCardSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DCC85F046469BF521AC37F77C67F31 /* DisplayDSCardSwitchCell.m */; };
 		8B9C60185BED75B6A159FF8F301597F9 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A22D04A2332BDD386DCC1F0CBBF565 /* TextDocument.swift */; };
-		8B9D793AB9375BFD02A67258EFCA3939 /* DSKernAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD34DBED689B43815B4148F23338D66 /* DSKernAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BA23FB05E6ED018994B031619455124 /* DoraemonHealthStartingTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = A25AB7117AFFB97E37B84A14F4BC34D4 /* DoraemonHealthStartingTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCAA5D32B8124D932A465D9D0A12EEC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60C6BDA171E133D769DACE1252C7082 /* CoreText.framework */; };
 		8BED9820DD726AA1BC4D4F904D93FAD2 /* DoraemonNSURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBD96DE7D4495902432F45028F48FD8 /* DoraemonNSURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF8C2A65F12F9B0D4B05795C0B71CAD /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 043A5C4183EF9BCD249DE43A8741A373 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C0780D23E773D5210CC37D793986B9B /* JXCategoryIndicatorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A7D8C491846697675AA88FCA49465 /* JXCategoryIndicatorImageView.m */; };
 		8C199BD13B4C3D85175EC13E6E254D36 /* DoraemonOscillogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD82D09FFE2543876BC3D2DD281A25 /* DoraemonOscillogramViewController.m */; };
-		8C2312A4FE7810633931A47E223F2424 /* DSRGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F098E07DEAC0766223055CABF0E81FA /* DSRGBColor.m */; };
 		8C417B958C0312EF0EFBB343BFCAC98A /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDFD57F07A2167C75C85A89D20BFB4C /* LayoutConstraintItem.swift */; };
 		8C4CFB5AB023A005482656A944A36779 /* LayerTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E98A683ACB8652675CDB1030F4BA55 /* LayerTextProvider.swift */; };
 		8C7FC577E15BE149BA81A552C7F6401A /* DoraemonHealthEndInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D11686D957AB40B73299F112DA1C5B /* DoraemonHealthEndInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1623,14 +1628,16 @@
 		915B43FC3CDDA34F286634626818978B /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8873475BD714BF517749A240520070 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9172A3B0274003E12CB4D0E7ADE70C64 /* rescaler_msa.c in Sources */ = {isa = PBXBuildFile; fileRef = CE63349A439A91AF208DFCE826113E22 /* rescaler_msa.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		91789B67B373154A155CA53289654F3A /* random_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 0382F3A22D4211BBB24CF60BE76D14CA /* random_utils.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		91857D8AD85AF5B49FC1DF404C2325DF /* DSGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F1F996A2965038424BE953E180B0 /* DSGradientColor.m */; };
 		918AD88A49B79CD1B13BAD5415FE5621 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8E24237B635B61A511E5D515ACE7DC /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91B2FDC1E0949CA73602B7E9D2EFB76A /* SDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4DF798CED9632DC461AEB65F620BD6 /* SDAssociatedObject.m */; };
 		91CBD73148792D7BABB9D9EACC6969FA /* muxedit.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C67A47403032BF9409C26D7C4D81A /* muxedit.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		91E6B10CD7B6B473907DCA964F4AAA32 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C9854BF93C0B443A349E840B9782FB /* StarNode.swift */; };
 		91FA9B0B979126725F7F5CFBE97F6B56 /* DoraemonMockScene.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C10185A82A08E7361D0952139DB3B6 /* DoraemonMockScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92208E40E23E4576D6B6E69F58B8CD5E /* CTMediator+AmenAccountKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 511B250713A188BBD3FAE29A2B7172DD /* CTMediator+AmenAccountKit.m */; };
+		927A11D717BC05EA5B4D27B41C0CC282 /* DSParagraphAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = D933844E44FB60C9FC7465AA20DE88C9 /* DSParagraphAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928C3BEE71404731CEF07B0A9BDEC1CC /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 384258C899A8D5858B88C9E71FD95327 /* GCDQueue.m */; };
 		92A4C8D608A8A1A2B0E41C51CF142092 /* DisplayHWDownloadRootScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE9246F88A132FA052CDF314110867 /* DisplayHWDownloadRootScreen.m */; };
-		92A6A4381F2A00FDECC55F424E360E78 /* DSDeepLinkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C84FA3D80CE48062D30DFB5BBB33220 /* DSDeepLinkModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92BBCBBD8F0B2D84EDFFE48AC6930C8F /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EB6742DF0E541201056B63EF91C4E /* CurveVertex.swift */; };
 		92D9294068123985C265D5A592BC417C /* frame_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B4FB3B57C98D91B71FA906EC6A9333D /* frame_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		92F06956E80AA663A2957384A41D262F /* DoraemonChartAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CC9A849B3335E78892B733DA964670 /* DoraemonChartAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1650,7 +1657,6 @@
 		93DBDF961295424A11801289E7641E26 /* ISO10126Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BD6F2C173533ABF5E7D76CF3922AA9 /* ISO10126Padding.swift */; };
 		93E0483A16959B77B35B63C1ACBA1E79 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BE6F84E3CC4FB2442A72DF9DB46BB4C /* mz_strm.c */; };
 		9413DC925212F8856074BBF48E043BF8 /* AmenFeedTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EB2C59E061B50F174EA27C065A5A66 /* AmenFeedTool.m */; };
-		942E1AC66B02D25F61E815DDD650F047 /* NSString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 39872547AB53B29D65188BE10E0F8E1F /* NSString+DSAttrConfig.m */; };
 		9433E53ABEDB7E4396A1B6D3FD53EBFF /* SRSMessageSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C56DCC30B749454362DCC0A04E8714 /* SRSMessageSingle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		947A404F0322CEAEBFDFBB29D7D9E5D2 /* DoraemonStartTimeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BA5B27A962666143775837BF902901 /* DoraemonStartTimeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		947FABDB68A7949F9A34838B65CBA891 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CEDCD4B02D83E3140966CC043D87C /* KingfisherManager.swift */; };
@@ -1658,7 +1664,6 @@
 		94B546B6DD5AF7E80D65B5B9ABEDDD06 /* DoraemonMockPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 48791FE4A2B649B14C76B1AB4272AFE8 /* DoraemonMockPlugin.m */; };
 		94C075BEABADC3C2DD90CCF1025A9AEA /* DarkStarAuthorityKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEDE13CE14B436C5662440227483B5B /* DarkStarAuthorityKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94DE71A3DA015C84D984FF9526578702 /* DSAwesomeKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B3CA18337412D452799A499FF15400 /* DSAwesomeKitTool.m */; };
-		94F6CF80FBDFA9CE8C80710ADFD050C6 /* NSMutableAttributedString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C1D3C614DA431B61DB517867F4A71E /* NSMutableAttributedString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94F795087AD408537F2B90FE6B77A79C /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FAAE5878C0612B0374A31AE483B24C8 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9502830038D0B096ECCA0653E2650992 /* doraemon_file_sync@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4D73A7CCB6E05034DDEAF17E6BD3BE /* doraemon_file_sync@3x.png */; };
 		95034632AF88729DEFB0F0F3203359B6 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A50E3A6C7970B77C54B3CA2A2CA09A /* ImageDownloader.swift */; };
@@ -1670,7 +1675,6 @@
 		95699F8911FBA7275C587FEACB4285C2 /* DSDBTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5B07143A0D57EE6194BCD97419DDAC /* DSDBTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		957DE9075F03B78BB631A0250C2ED849 /* WBEmoticonInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF39C63279C5D137350BC7EE6C4F037 /* WBEmoticonInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95B42190B6C2C9C9516EE7BDC0B04352 /* DSRotateViewHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3979CACEBC4BEBEA750610E5B3D9F88A /* DSRotateViewHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95B77245103ED637B17E0B0DEC93CDE4 /* DSBTFileHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841EF4C39EAECD4CB568BBF6829CFF2 /* DSBTFileHelp.m */; };
 		95BA1F2D0D49B1B564795767F0A6EC13 /* HWDownloadNoti.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFA7A7EAE2BFA95F4C3886DCF0DDFBC /* HWDownloadNoti.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95CD467AD982ACD4D38D024FD4056FF5 /* DoraemonMockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F044FBD5B6F8C55A5AE26F048F958C8F /* DoraemonMockViewController.m */; };
 		95DB0BFE02EB2D757054DEED9DD571EF /* SDAnimatedImagePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C3A48AB3B55A2791E926DF0E241277 /* SDAnimatedImagePlayer.m */; };
@@ -1678,6 +1682,7 @@
 		95F943F5B0E99C573DD3647735F7DCC9 /* DarkStarThirdPartyKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E563293AC781C548489624A923F6BC18 /* DarkStarThirdPartyKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96190394BA842229611B1631C5C89044 /* UIImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A56CC869F66A5AEA3EC16E23F372AF9 /* UIImage+WebP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96237BC0A55BAB82767EA81969830474 /* T1Model.h in Headers */ = {isa = PBXBuildFile; fileRef = E609C9B4B6AC2DA084BC93D4ADEF8518 /* T1Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		964680D64D0061D4C8E5540A10E5FCB9 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 477DB79E662896D41E9069CAEA43872F /* GCDTimer.m */; };
 		964FCD007237782B77E89B951EDB7A8E /* near_lossless_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = F0D7F59D4D1ECE87B6CD6CE10878CDF0 /* near_lossless_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		9650F391C65B0B9DD21CE48465891AE3 /* DSRotateView.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD4BB8278ABA9249F70608FA2270444 /* DSRotateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9665B9D98FAF23E7AFC4CAAA8C07AC24 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCC436C27791E26E417FACD16DAAE94 /* MBProgressHUD.m */; };
@@ -1685,7 +1690,6 @@
 		9696BBB983B6C7095202017B76DB9380 /* CLCustomTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 684747B29EA943978FB487FB0F2108CB /* CLCustomTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96D7E0DF17022B0D446EE1E7D0F0C0D9 /* Bitwise Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B60CD3F7B333F399491945E0F05B0FF /* Bitwise Ops.swift */; };
 		96E00E9D3CCC2D25BBC98BB5B9943818 /* DoraemonViewCheckView.h in Headers */ = {isa = PBXBuildFile; fileRef = A14B22E277A27B04D487BCD19355CD8B /* DoraemonViewCheckView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96F75BE9E4A156732D72A336C4A62AF3 /* DSDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = CCDD0F88B9D32ACACB0DFC45AB6FFFF4 /* DSDateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96FDE6BEAD92C8D8B4647B948440C202 /* Target_AmenFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FDA704916C1BAE9945A0DA3F85CD6 /* Target_AmenFeed.m */; };
 		97133A7965AB34AE212F911FA31600CB /* DoraemonSandboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4DD86E8E9E14C656432EDC90AD8B52 /* DoraemonSandboxCell.m */; };
 		97318966849344124AE5FBED82036459 /* vp8i_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8485C35FD0EB165E13909A70109862A7 /* vp8i_dec.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1694,6 +1698,7 @@
 		9745EF4D30FE51A1D2711422C0303455 /* DoraemonNetFlowHttpModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9D5B837BB9E2DE08B335F9F743912B /* DoraemonNetFlowHttpModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		974A941F5582637AFB2E7E2CDC5F032C /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C415A74993C78AD055ABEE414B48427 /* mz_strm_buf.c */; };
 		976999C42735C2F403A06737C5778B4A /* UIView+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 49863DB0BA50F11A19D7F09FA2F6818B /* UIView+Doraemon.m */; };
+		976A3BC7D8F9C11FFC2CBBBB51AB81D9 /* NSAttributedString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F937B0799189840C64DA1B7D0E283B /* NSAttributedString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9770B88E58A30717FCC9186CAFACD081 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C9854BF93C0B443A349E840B9782FB /* StarNode.swift */; };
 		97A4D5B5F2C06DFB3A0AB70793C19005 /* JXCategoryImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0229C3F7CB11F643F89A017C1C269BE2 /* JXCategoryImageCellModel.m */; };
 		97A55C920B88432D3A7176E0692437DD /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF272AF60E6F2B569CE1607AA7B238F /* Star.swift */; };
@@ -1705,6 +1710,7 @@
 		983CF8A5665E14EF9C7E814D23479008 /* DoraemonHierarchyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9A0F5AD9353288C1910729F844DEF8 /* DoraemonHierarchyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		983F2F6C8457DCA72E593A9EA9120DF6 /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F40B3209ECA59BE5ADCF52F9948611A /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		983FF208A473BA6D3044D95BAFD5980C /* NSBezierPath+SDRoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B29A802DBA525653D71605F3DA0ABE0 /* NSBezierPath+SDRoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9843D27C1A28B9EC803BBE9FA3B27A84 /* DSValidateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C07AEF312E96D670F12D760E825852 /* DSValidateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9850072AA759A67A8920A0C9A62C5D6B /* DKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9675ED66C459F5B3A5B38296E99CD37 /* DKPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9871FC41530C2C04FD3335801C12AEB7 /* DoraemonHealthBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F098E04CA6B7696B7FC65B0994A7FEA /* DoraemonHealthBgView.m */; };
 		989251FA43F189E714805EBF11C5A7A2 /* DisplayHWCacheViewScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 442381FAF5F261B4D959D4D479E88838 /* DisplayHWCacheViewScreen.m */; };
@@ -1726,14 +1732,13 @@
 		9A5724FD3D13E0E30AA1308AD01E6DEE /* CLWaveViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F01402936C46D2804E04BBCCAE5EF0 /* CLWaveViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A65B633B92D0039CBAFB247F3411EEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		9A87BD4BF8180F9CD5215DD2DA69CD8B /* XLFoldLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E965BB3056E98A3C52DDA7236F371A1 /* XLFoldLabel.m */; };
-		9A8D7E34D34EF267CBF78AE7C7D70DDE /* DSBTTimerHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 031A9C7D3475B94F126017E1CAEF92BF /* DSBTTimerHelp.m */; };
 		9A90562C2404F221223BFEBCC0675ADD /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = B7BB479DFE446FAF03BAF7DF2631A4FA /* dec_sse2.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		9AA43D0B700325F582CA354DBAF8452C /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CED745B7FEE9D9D90D369D046C62307 /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AB7259C61E128F6CEA3C54F596B8787 /* DarkStarWebKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D748CB2AD1D8A0AB08AEBD8C407F9F5 /* DarkStarWebKit-dummy.m */; };
 		9ABB2B5E04F43867CD84CF7B9DFC9014 /* CALayer+SetRect.h in Headers */ = {isa = PBXBuildFile; fileRef = D65F3A11D4EA783A36DF43FC206D6007 /* CALayer+SetRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AF3103660A6813D592178441B5CB91D /* CLPhotoBrowserImageScaleHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FF5FA214E110863C0C2575E6FBF921 /* CLPhotoBrowserImageScaleHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AF5EB5BC8D2C9C2CF7982FAFD099460 /* NSBezierPath+SDRoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0596AF15C75C3C35A80BCAF0289BC /* NSBezierPath+SDRoundedCorners.m */; };
-		9AFC26672053944AB6D4006BBD6D18EF /* GCDSemaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CA0A3ADF89D694128F3BB5C56DD026 /* GCDSemaphore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B63DE5A6AB0C928BE0AEBB399EEC5E8 /* DSCGContextObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9780B890B8EB7C51404B1D59CD20DA2B /* DSCGContextObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B7149F9CFABA71DE1F0959F086E73BB /* Floating Point Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D13E39AD7BDCE1036C637E3C9D8CC7 /* Floating Point Conversion.swift */; };
 		9B8A74CE67D79729D291CCC1E1DC766D /* DSAwesomeKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1389C6D1CEB8EC25A958E2B7F1F261BE /* DSAwesomeKitViewController.m */; };
 		9BD9B346BA6BF75B108E540F545C4ECE /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C1A2E23E17E7BBFD5F133660A591F4 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1749,7 +1754,6 @@
 		9C77B1B5465024167E62444E3C64301E /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E890A4D75EDA374D634E6592A91B4CE0 /* LayerImageProvider.swift */; };
 		9C909A3FBE7BEAD10C77A6DACDE9937C /* DoraemonStartTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3378807F831716467A1F48C5802FF /* DoraemonStartTimeViewController.m */; };
 		9CBD04637DA504291B465719BDEDDAD9 /* UIImage+DSGray.h in Headers */ = {isa = PBXBuildFile; fileRef = 5871417512AD3AF7DBA9C9D5D8CEFC90 /* UIImage+DSGray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CC0AD64485AA3469085DA0E220F98A6 /* REUserIp.h in Headers */ = {isa = PBXBuildFile; fileRef = C905731A31C3FE85F8F90E67C551E487 /* REUserIp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CCB4B231AF67B6C11130AA6A07D1DF5 /* backward_references_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = B9F166E998DFE20657E75EC41D9A244D /* backward_references_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		9D3F785EF233800E7799DF24BA3D55E7 /* DSAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 132B1E6F9C3688DF4DC47535CE0FB999 /* DSAudioRecorder.m */; };
 		9D5FE6CD99D23FA193014DB4221842E4 /* CLPhotoBrowserImageScaleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BC0FCD431A7E989A52488590C5ED80 /* CLPhotoBrowserImageScaleHelper.m */; };
@@ -1783,14 +1787,14 @@
 		9FBBBCC22BCF360835B1E4DDA3316AD7 /* animi.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B6A3D4877637C8E1C21934ADB23DA8 /* animi.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9FCFC89548EF68CD0A225EDD0F357793 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5BF89E6393A37D54C50DDAABC16E8 /* LottieView.swift */; };
 		9FE00C731FAA1D1E0A79E701F79A8C4D /* DoraemonKitManagerResetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAFA8DFAC08C8237649A4DA15582786 /* DoraemonKitManagerResetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FE224A3A3CFDAF513049F6677D69FF1 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 384258C899A8D5858B88C9E71FD95327 /* GCDQueue.m */; };
 		A01881771F9977D54483A62DB0D06011 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7950C1DDD37D2B0C62968DBE141F42A0 /* ImageDrawing.swift */; };
 		A01BCFE5C6858F5606F2D17DF3357E9D /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41611065D1A5A6B6190B1EE31B29A6C /* ConstraintPriorityTarget.swift */; };
 		A01FBA704BE5827E08099591C35B69F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A562484F5574BBF158ED8896B7D003 /* QuartzCore.framework */; };
+		A023E67415E67003463C50FECC6508A2 /* GCDSemaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CA0A3ADF89D694128F3BB5C56DD026 /* GCDSemaphore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A03DF2D395369D1E31F8C79ADB29D901 /* UIImageView+DoraemonSDImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF1E232E2E636DD4372F4D6973CE93 /* UIImageView+DoraemonSDImage.m */; };
-		A041D3BFA32DEBD9B53E923224E30BF4 /* DSCGContextConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 181ABA0CAA7B4C38C5639F902C74109B /* DSCGContextConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0433A06D27B03EBE541B67831CFB1AB /* DoraemonFPSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2CE07649DC36E3FB491FAD56A80ACF /* DoraemonFPSUtil.m */; };
 		A0469BBA8E53438B4DAE23D62E715780 /* CLDecorationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B142FA7E7A3AD3E6688274EDFAB65EF /* CLDecorationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04EC9F4F463050E66BFA54C63D1EF20 /* GCDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 962FE53D720E3C88BB0A512A9DC3094C /* GCDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A070AB4A11B6A59F37105D05172F694E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C91858A7F64ABD28A11AEDE9016A0E /* Images.xcassets */; };
 		A074C90267B63E29371AF6158DC87FCA /* XLFoldClockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14ED6C7BB1A0842F0639C4E4163D1A /* XLFoldClockItem.m */; };
 		A088435E7C6C611A6A662CA6735F6288 /* DSMultiChoiceDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C199FD6364B7F905B055BF46B91220ED /* DSMultiChoiceDialog.m */; };
@@ -1824,7 +1828,6 @@
 		A311662547EF4EBF839CDE2B150E5799 /* DSPhoneLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B7C423C186DE8CC0F736B06814CB69 /* DSPhoneLoginViewController.m */; };
 		A3449DF2B3F374895AE3345AF4AEAF34 /* DoraemonMockUploadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E46380F80BCD36C7D9DF085F26A7D82 /* DoraemonMockUploadViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A35F6F824AC1F946B58973FDA0504E03 /* DoraemonCopyLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E82C001CFDD32FC46FC2CB5266B7DD88 /* DoraemonCopyLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A36EC2D3BD134E930F972C4597ABEF18 /* DSRegEx.h in Headers */ = {isa = PBXBuildFile; fileRef = CACED5C89D3CF62FB7F38D1286A45123 /* DSRegEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A374A0802BDE31BE9E5E58860D464B1A /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41611065D1A5A6B6190B1EE31B29A6C /* ConstraintPriorityTarget.swift */; };
 		A3A6BF5E7FD50D29921D95E08719AFDC /* DoraemonKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7707C43CB2D2F0C045572152651EE350 /* DoraemonKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3D6F813835211C82B4602E5B6D08A3E /* TZImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FDE294E08D583C8815E187A8C5F651 /* TZImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1836,7 +1839,7 @@
 		A4552EA025D6CBD8C9B6EF3DE7E2D4D1 /* DSMediaManger.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEFAD499754D3507918244E89C5300D /* DSMediaManger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4780566DA15B2EA3A1902AFC5E47810 /* alpha_processing_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = EF3EF332CB16652B7B5C57D2BEB9ED85 /* alpha_processing_sse2.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		A484DD655A9A3078CA0869855DB4CB79 /* DoraemonBaseBigTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B94D37644F577463503E197A1E35D42 /* DoraemonBaseBigTitleView.m */; };
-		A4E85F025EF3F611F9325FC67CE0ECBB /* DSGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B2D9C45A4DDEC6D1957ADBAF9A3F98 /* DSGradientColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F3A53E0B43806FA3FFA51D89DEBA29 /* DSRegEx.h in Headers */ = {isa = PBXBuildFile; fileRef = CACED5C89D3CF62FB7F38D1286A45123 /* DSRegEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4FC3A35468F0C93C606618917CA7EB6 /* SDGraphicsImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB683783C74D56064436FBE7AF06CAD8 /* SDGraphicsImageRenderer.m */; };
 		A50F1DC22BEF6B269ACAD9E66CF74458 /* DoraemonHealthPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B90F51BF4017229E5588F0E5FF0891B2 /* DoraemonHealthPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A513020D0333ADB3FA5936F0EB4EF6A0 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 98731B2D18EA407173520AF01E353606 /* SDWebImageError.m */; };
@@ -1925,8 +1928,8 @@
 		AB8A55FA23243DF9142F00D87A0F7685 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1C01CFCA17FDA929F9EFBF7131428 /* PreCompLayerModel.swift */; };
 		ABA7637B9E0BF21EB12C57856962D2B0 /* 14.css in Sources */ = {isa = PBXBuildFile; fileRef = 493032781C97D97A64B1F2DD8F2C9BEA /* 14.css */; };
 		ABCE1F26EC1BE7C12004B1E61B72657A /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051280AB1E88587ABF503F1999513A2 /* SDWebImageCacheKeyFilter.m */; };
+		ABDDD54267D7FC0F30333ADE58E80A7C /* DSForegroundColorAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F52D0EB549CA94C5D6E213F81965 /* DSForegroundColorAttr.m */; };
 		AC29EE5318026D0BAF479C904536378F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A011F91A126EA6C8CF578FC5C27078E /* UIRefreshControl+AFNetworking.m */; };
-		AC2AF965A5235AFC311102377B71C068 /* DSIrregularElementsCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 59668C74CFAE07024FDA080AB949395A /* DSIrregularElementsCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC2E33799D5414C9E383F9729AF39BB9 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3074709575EA3711600ECAC83FB05F26 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC88CB2FDB5288673CCB5CCFC6A14D8E /* DoraemonXAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE644FE7AC68132E8A98742C15C465 /* DoraemonXAxis.m */; };
 		AC8FF952399BF857C1D658A2CF5450E6 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8541257744CE497494156A9E0BE87352 /* ConstraintLayoutGuide.swift */; };
@@ -1979,6 +1982,7 @@
 		B063B8521C7D1432D9B559AC0D560BA6 /* SIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB44E92E1A63469724F57FB49E45FEF2 /* SIAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0668722925DD0AB4477FCE36BFFF139 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F40C1C64B188ED5E267BF30BBC378 /* AVAssetImageDataProvider.swift */; };
 		B06B6D4A4F0F40687F378F822EF75870 /* CALayer+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2A00C43A54CCA4520133E12965FC1A /* CALayer+Animation.m */; };
+		B07281A491E3F476387B8D233C140F4A /* DSKernAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE17CB639F325A878C2F5045414E532 /* DSKernAttr.m */; };
 		B079E03681D7A4AAEF07AFE49B511C5D /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60C6F0F1031A17D72ECD957C2EDB6D95 /* POPAnimationExtras.mm */; };
 		B07AEB5BA48BF40FBD6C42BB0483C099 /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C87C19924EB30D424CD39275A9DDD4 /* LayerModel.swift */; };
 		B07D4B6464707BE5E623C40E42F45320 /* 4019ea4c-cd40-4a17-b83b-3f4fc407d499.webp in Sources */ = {isa = PBXBuildFile; fileRef = C4B3764445EE0CE4690CAA15E83B93A9 /* 4019ea4c-cd40-4a17-b83b-3f4fc407d499.webp */; };
@@ -1986,8 +1990,8 @@
 		B090A4F3EB18FA0BF10D1F302B46D2AF /* SDWebImageWebPCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5C6CC218D09327D5971D2643A3BA15 /* SDWebImageWebPCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0A514ED5163FE118199A61500F8F354 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9E63D9B213C8EAADD0A3D72FB60A9 /* ShapeNode.swift */; };
 		B0B5369B0A399E2344089CC9C96281AD /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE92617932F9C79C6B4A154206AA7CC /* ReachStateWIFI.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B0B96D0225318E27842AF8A1D7D5A928 /* NSAttributedString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F937B0799189840C64DA1B7D0E283B /* NSAttributedString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0C6B106D336CB81CAEFC64ADD6DB2C1 /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE94BB3150E100264B3679ECD22E270 /* InvertedMatteLayer.swift */; };
+		B0E2F30152AEF59CCDEB50A5C9A31FA5 /* DSUserIp.h in Headers */ = {isa = PBXBuildFile; fileRef = C309CB9992192EBAB1EEA7E2C6150E40 /* DSUserIp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0F32F28D07A3A3508E357C1D8432451 /* DarkStarQMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF3973545F59647036173A39E1C1DF8 /* DarkStarQMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B136AA60745C13C9D0728F5280B99874 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1343E17464E0ACD6824F79ECBB7C7 /* CoreFoundation.framework */; };
 		B13C5F6373B42CC4F2D984DA76A54306 /* UIColor+DoraemonHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 769121E94F71F41AC3048394283F107B /* UIColor+DoraemonHierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2002,7 +2006,6 @@
 		B1F5D41C13BC28BBDA50D6DBE57BE384 /* DoraemonYAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AAA8FB526F9642FA685B5722B09496 /* DoraemonYAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1FE72B2BDBD3432860F67B6909D6FE9 /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE94BB3150E100264B3679ECD22E270 /* InvertedMatteLayer.swift */; };
 		B20DA4F947668BEEE2FF11645E457730 /* 873997b8-035a-4465-a373-f38c83838108.webp in Sources */ = {isa = PBXBuildFile; fileRef = DC7DA3664C09B1BD695323F64F1DDCE0 /* 873997b8-035a-4465-a373-f38c83838108.webp */; };
-		B20E615C3CF4EF366EC757DC4476CC4A /* DSForegroundColorAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F52D0EB549CA94C5D6E213F81965 /* DSForegroundColorAttr.m */; };
 		B224B0A0DC1887CDDF31C90EE1423240 /* DoraemonH5Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0D3E641BC970B939E2B1929390EE80 /* DoraemonH5Plugin.m */; };
 		B226525A301A7EA27566C547AA254A7A /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 685993F08C9ABDCAF9A7DBE702DDD648 /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B251A545DC2A2BBA2E3853A4C95B720D /* DoraemonThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0F165AB3AC0108AFA56B5CCAE8EF4 /* DoraemonThreadSafeMutableArray.m */; };
@@ -2010,11 +2013,11 @@
 		B2876B1049300BE2353BE38D30349ADF /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E0A92A088042F27438DAA2288E1A47 /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B288211BC7E8EDCEEA7D38C574651D7B /* DoraemonKit-DoraemonKit in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F3B6C7D4AD810C6DDF4A69D741EE2 /* DoraemonKit-DoraemonKit */; };
 		B2A7662E208091ABAD120E4D7D83B550 /* AULoadErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24106AF2262281FE63FA26C9F15A24 /* AULoadErrorView.m */; };
-		B2D3350121C66B6A91ABBF1C3E714656 /* NSString+DSAttrConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E83E9BB233F2F4383303615E5A1FB1EE /* NSString+DSAttrConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2D522B596436A9D08A52C4344FE41BF /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 966A69034A86C1CE1ADFC06B57FB910B /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3025935B8519BF9203902B9D3459140 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = EF52D3B18E440B5462A891438CCE9569 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B314F8C1D9A95F4C7ABBBF152B2CB511 /* DSRegisterCodeValidateViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1535BC3BAE13F6FB79D1D3A8444401EC /* DSRegisterCodeValidateViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B334C834A1509C54B8BE3C4153A3E3B9 /* DSNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8857B9A78F562EF40946D99ACFD1BE /* DSNavItem.m */; };
+		B335D4B019D89A4CCCE48157904A1479 /* DarkStarGeneralTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54080B34C00C713CCD6C157FC4F62F28 /* DarkStarGeneralTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36F0348D906FE519BAAB24EDBBE1C0C /* UIView+TZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D047F07724F81AFEB4C546E06BDE47 /* UIView+TZLayout.m */; };
 		B377E6057817EB68C1BE2412344F7A0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		B39FB1C208246F556DADAB79936C9687 /* SectionCardDecorationReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2E3D854795E8B44D800699DC13503D /* SectionCardDecorationReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2049,6 +2052,7 @@
 		B664DB09216CAB148B6A64C7319BCB46 /* JXCategoryViewAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1D25105355563AF99CEA6BC29D1024 /* JXCategoryViewAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6797230E0A4B13A1C2BEA9781B2BACC /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 691DC808B176AB85283C3C118605815B /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B68B3C65B71BDDB487690FEA9B8C5E7D /* DoraemonSubThreadUICheckViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D61065CA54A95AAA0EBE0FA098ADBC95 /* DoraemonSubThreadUICheckViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6974E2A6B29E1EF57401439AEAD9C56 /* DSKernAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD34DBED689B43815B4148F23338D66 /* DSKernAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6A67D31AC88819A10F90F57340FE3F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		B6C79BFB24210F0545559AF905E82EB3 /* HWDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D57491D013F48723979034872207A96 /* HWDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6FEF9BA0B0F24308495C607938C3313 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B5F9E33223F35CE9E42ED2ED438D2 /* Color.swift */; };
@@ -2107,6 +2111,7 @@
 		BB418FE292BD67B916F7C1BF748006BA /* DoraemonSandboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FE7547AB012EC0D63B1F9F868236E3 /* DoraemonSandboxViewController.m */; };
 		BB56FCDAFF4F329445D299DAD21EDD50 /* JXCategoryListContainerRTLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6880255FFE3163D62669DE7FE7E29FD4 /* JXCategoryListContainerRTLCell.m */; };
 		BB9C05132ED3FC87ED17EF78ACA5ED65 /* commons.js in Sources */ = {isa = PBXBuildFile; fileRef = 09C2DE544C75BC0FE1F4AFEC3F4C2F74 /* commons.js */; };
+		BB9E682700A2BBD01604FA9AA7529707 /* DSIrregularElementsCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 59668C74CFAE07024FDA080AB949395A /* DSIrregularElementsCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBA67AA1303C38F1F501D1F1686CE637 /* filters_msa.c in Sources */ = {isa = PBXBuildFile; fileRef = 09327BA377B11459E1E1CCCE06142D65 /* filters_msa.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		BBBA60CF749DA3D6E98DFF4F4645C1BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		BBD1019E010629482A195D11EF6D9C01 /* CLPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEEBFEF7C9917D310D9B0C08D5D522 /* CLPhotoCollectionViewCell.m */; };
@@ -2128,7 +2133,6 @@
 		BD587188F47CAF2E7040846534950AD9 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0165C3510D083517E5BFE4ACF01F7DFB /* RealReachability.m */; };
 		BD5E0CD41DA825F8A60B327156B523D2 /* DoraemonWeakNetworkLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F3E848E88CBC000E1112ECC176865D /* DoraemonWeakNetworkLevelView.m */; };
 		BD949276A18621C2F39B43B22FB6EF8A /* Date+Inits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6703964BE70DA3C2699DC5ABE045A5 /* Date+Inits.swift */; };
-		BD968882B4E9B95CAA89049E26D618A0 /* REUserIp.m in Sources */ = {isa = PBXBuildFile; fileRef = C16CB2B508FF036A3A6ADA0CF9D8D982 /* REUserIp.m */; };
 		BD99ED927AFBB872519AA853DED5FF98 /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0C3661232EFF408C461409FB7F7431 /* SDWebImageDefine.m */; };
 		BDA3816739485EA84802A79B633F3DA1 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AA57CBC3B654D1EE8BCCF9C050486 /* ImageModifier.swift */; };
 		BDA7C56C6077D17501758CE3CB851DBB /* DoraemonViewMetricsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5F489FEB42C6EB74D4497106066C7 /* DoraemonViewMetricsPlugin.m */; };
@@ -2140,11 +2144,10 @@
 		BE30EF28A53161910C44F2B0DE13D66D /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811582371FC49919CA5EF7E5022B5A24 /* PassThroughOutputNode.swift */; };
 		BE3562E4C809F689F29BC0B03FA7F79F /* JXCategoryIndicatorBallView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC749E77F2F8E15BB5F732AD12DAD3E /* JXCategoryIndicatorBallView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE4413CCB5A449409D40869F2C108525 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79205C0CC64BE2A51CC2365FF39BA68B /* KeypathSearchable.swift */; };
-		BE4FF25231932E98906BCC7D3AE3EE94 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 477DB79E662896D41E9069CAEA43872F /* GCDTimer.m */; };
 		BE59F07775A4E23D459AF7B75AB5B6CA /* DoraemonHierarchySelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9F227327688B8834F6898082C1F651 /* DoraemonHierarchySelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE672E83CBAAF58D857B17FE5835FA66 /* DSAttributedStringConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F82BFFBF03EB6491A2A90F77DD51E35 /* DSAttributedStringConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE828A2B8EE35B2779B120CA3F09B2C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		BE89B643EB97893BA0D01245E08B898C /* DSDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C093E262DDDA2BB9F04F56B908F1A816 /* DSDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE8C6BE5B2F19B245ADD57122F4F28EB /* DSRegEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 7930C6C4C9CC30339647FB6DCE1E6BED /* DSRegEx.m */; };
 		BE96F9BCB0C742E26C2CAE1420FB59E6 /* HWToolBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D2F48B2B6B7D61D071DA2F1261D689 /* HWToolBox.m */; };
 		BEA16F31B83890F60E556A7352AE2AED /* SDImageHEICCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F7770243180484D6C17D4B0962813A94 /* SDImageHEICCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB0D6422237B4D0FC10545C05281CED /* DoraemonCPUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2CBAAE36D7DFFA1C978A5B81305203 /* DoraemonCPUViewController.m */; };
@@ -2193,7 +2196,6 @@
 		C2612F6C12C8F083C73929E6A846F2F3 /* DoraemonKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7833476CBE92DD1D7FBFA3870D2F5B8C /* DoraemonKit-dummy.m */; };
 		C281D07C15627FA3FCFD19B538FAE890 /* DKHierarchyInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDFD1D38D220E5F336FBC951243DCD8 /* DKHierarchyInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C28D372AC5034CF8D221A2F65F9AC142 /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3376E77E7B98B54A7614A355AD7AD47F /* SDAnimatedImage.m */; };
-		C2BABF233AD159E77C99353D0586B321 /* DSBTFileHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D84C33811911CFA3C4489AC84FF62CA /* DSBTFileHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2D688D266B19A90FA777C15809FD13A /* DoraemonNetFlowSummaryTotalDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3C6A148E8C2C2AA2AC98A801B01AFC /* DoraemonNetFlowSummaryTotalDataView.m */; };
 		C2E4C0F50FAA3DA7A6A9B9C0B0F8BC0E /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2E760E232D2D6BF87D46EEA311E368 /* ConstraintConstantTarget.swift */; };
 		C2E780210265557BD180F18E34DFF5B1 /* UIViewController+DoraemonUIProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D409E91DE9BFE986AB5FA612D1A49B5 /* UIViewController+DoraemonUIProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2202,7 +2204,6 @@
 		C3505E809779EB1ADA0DB834115E7566 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBB5E09D325426A49C777683CA88428 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C359DBF25B986E25EDDC6FFC4937CAC9 /* DoraemonCrashListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1E7FD4E934A81444AA2CC9D6B674D1 /* DoraemonCrashListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3611BB88EE7B82B8A2704CABBED7BD7 /* AnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0362C0436512D45A5EC0E6491F39A43 /* AnimationViewInitializers.swift */; };
-		C3766C042DDBFABBD845784489CB4CBD /* DSNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBC3E12557ED9F69FE83005CAA53C32 /* DSNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C382BF2345F76B0D5618A87B946F091A /* NSString+DarkStarValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 80383FAAB08BB24665D13267E6645494 /* NSString+DarkStarValid.m */; };
 		C3AD8939DFFF5D48F954FA35F2B10B76 /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAFC9D7C36B2FF900424CB91BC6E520 /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3EA925F7BB0EB130A3D81D3D02EF46C /* DoraemonHierarchyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5121ABE92487FDFE7CD3F116A1227ED4 /* DoraemonHierarchyHeaderView.m */; };
@@ -2281,15 +2282,16 @@
 		CB75A242B6C1A5396E19C7B5CD2D60E0 /* DoraemonCellInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE436B3FFC7DD0AF8BCCE148B246F77 /* DoraemonCellInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB7C766DD6B486A3A546D0744E457E15 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E8DA046AB91DB4A330617A65FE3317 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB8F4747C8B140283F5AE201D13DE422 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F59FFF40F3CFD58791D1455B197537 /* NSString+MJExtension.m */; };
-		CB99225143C560BEA34EA7A5C038B7F7 /* DSBTIconHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDA179868CBC7B6E789F50B85309480 /* DSBTIconHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBB32CFAE23D8740ED7F3ABE8C6E8A27 /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = BD57FF035A2770BC0FC6F8EE9706EAE6 /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBBD2F963AC5044809DDD31FB26D36CF /* DoraemonNSLogListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EF42B5A6ECF84E121D5A61CC7B3C35C5 /* DoraemonNSLogListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBD87502A3050192694CBF4AE017F2FA /* dec_mips32.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BD8842E929DF8E251BCC9C1D0C5B306 /* dec_mips32.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		CBFBCC0D98716761E30DEC0F7BF8CC8A /* DSCGContextConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 181ABA0CAA7B4C38C5639F902C74109B /* DSCGContextConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC0659410C2A8F42F61859CAC7A52A88 /* DoraemonTimeProfilerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C36E5718FE97CB95C9EAD347CDBB3B6C /* DoraemonTimeProfilerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC0BC1340E653CE47CD31094BA54AF33 /* AreaJsbWKWebViewDemoController.h in Headers */ = {isa = PBXBuildFile; fileRef = 458E54DEB082CD054F97F1EF2274876A /* AreaJsbWKWebViewDemoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC18542F7988F336371C670EE2A28AFC /* s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58301F17D5AEE4631E7658D4D4BFDA24 /* s.txt */; };
 		CC1AF0C171D116313BDB91474D9A2AC1 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A2C2886C0B5BC057CA860BBA186549 /* GCDWebServer.m */; };
 		CC2CA81EF32D5EB5163EC1DC5F51C6F2 /* MJRefreshTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE23CFF6CD3C75B2056842803495F9B /* MJRefreshTrailer.m */; };
+		CC47ABF1E6B0DA43F9D3C6564426C3B8 /* DarkStarGeneralTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD249B4FD917B19E590C666C892C678 /* DarkStarGeneralTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC62A76D76C0B1BF104240D979F5B66B /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B69800517CF8A8E11A7C5D5CF71F26 /* SDWebImageDownloader.m */; };
 		CC71CB74CE6A959EE34C994204B7AD8A /* UIButton+SRSTimeMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEE2FE4E475D02A5E04CAB65943CC7 /* UIButton+SRSTimeMinus.m */; };
 		CC79FEEDAD922C9B86AFA8BAC04D30DD /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D39AD023D38799793F832B9D1A77 /* AnimationView.swift */; };
@@ -2309,7 +2311,6 @@
 		CE37C09DA03BDB16D8085B6FB539A396 /* s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1338D4264C58437850B61805470B1F9A /* s.txt */; };
 		CE643D3A1760573843100BD1EC53F499 /* DoraemonChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 631EF25B88DF356EBCFC9E4117C735F8 /* DoraemonChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE75BA87F6D89310681A4F2D93185480 /* DashPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9DE59D58027487DA1C8D38D87FB2C0 /* DashPattern.swift */; };
-		CE7B078ED6C927BE99DE9D3BD437F412 /* DSDeepLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42564D7A87FE3B7E3456703CFA120F27 /* DSDeepLinkModel.m */; };
 		CE85F92F8C10B918D10EB2C9FABEBEB3 /* UIColor+JXAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4A4080844A49107546F9BEEA6C6B16 /* UIColor+JXAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE90BD9DCBAE283BA8EC91A5DD0D008B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		CEEC504690B84B4C13E52506913978DE /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5ABB79A8FCF97B241A6511D734EDD3 /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -2332,6 +2333,7 @@
 		D0D75E7FC9D5A8E97A8F57976726D9C4 /* z_stat.php in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D4948A36D5BDEE622C758B6380E /* z_stat.php */; };
 		D0DE271EEDA44608C45FD3F037DDA367 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E17B66AC2063C13BA59293D5CE988B /* GCDWebServerResponse.m */; };
 		D109763FECECE3C03FFB4E87673FBF4C /* quant_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D223C5E2EADFCDB7BCF7B375453FBF7 /* quant_dec.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		D113F3F40990B98A91CD5DEA467BC213 /* DSVersionCompareTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9474C2058939A14999078B658F12A149 /* DSVersionCompareTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1157ADEE9470E414ACBF99BD9C89A29 /* 13.css in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4B6B80A6E687A9F325324EB8B5FCB /* 13.css */; };
 		D11C51E79BF4136F72E6C2381A9C8A89 /* UIViewController+DoraemonHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A4A550085B8C0CE03417853C49A2BC /* UIViewController+DoraemonHierarchy.m */; };
 		D1415BD429435D9291B6766D8F64EED9 /* CLPhotoCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CFDE7D6EA0541C0F529E9F733867DD5C /* CLPhotoCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2385,6 +2387,7 @@
 		D58A94540A41BB62DAD13902F9A82980 /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4457F223D85310782AABD3AB49D760A /* ColorValueProvider.swift */; };
 		D59B336B05E949BD35E6FD2B617AF04A /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EB6742DF0E541201056B63EF91C4E /* CurveVertex.swift */; };
 		D5A58E45FCE792A732E5A278F0BABFEF /* dec_msa.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E4F9E1D0D1AF400FB333011E6EB8C /* dec_msa.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		D5B14BFB9EE2FBCA8170CB5BF2D1E60A /* DSJailBreakChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E73D59719170D052766517730F22F4 /* DSJailBreakChecker.m */; };
 		D5C2F18D01F90DF9ACAD8A1CC06B44BB /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17726ED6669A83FE7E8E8AD5822837CA /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5F1DE1B8000B5D3D1DA6FC1C505509E /* RealReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA51E8B08E3C593DC7ECCEBDDA01D13F /* RealReachability-dummy.m */; };
 		D5FED10C4BEA3E00A84BF29829784181 /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19745A29F2C6A85981C33C29B65D155D /* CompatibleAnimationKeypath.swift */; };
@@ -2405,7 +2408,6 @@
 		D71F9C553CDFE30719D1CD177711A03A /* DoraemonViewCheckPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88862E4FC994DFDAEB144A1606B2D345 /* DoraemonViewCheckPlugin.m */; };
 		D7276138E642E99E5985C26BB3F30647 /* WBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82111CED3A82230002E012A74F73E8D9 /* WBModel.m */; };
 		D771A128B0B235C8ADCAE5BA0E8926C8 /* dec_clip_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E3760F1412F97B6B6E41C74BA2EDB2B /* dec_clip_tables.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
-		D7872BFC19AB58F92B1FA6579259919A /* DSAttrStringConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 227A8F4A7855728A6CBE666DDE80AD18 /* DSAttrStringConfig.m */; };
 		D7A6DADC7382372B68EB360550C16F10 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4164AE972EC8790879035186AE17D6AB /* TZPhotoPreviewCell.m */; };
 		D7E5F90335CCA2E025EF1DF540FC7633 /* DarkStarDataStoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C546DABC318D45C2A2D4C13FD6536862 /* DarkStarDataStoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7F28353EE852C6F0019191BBFF1D445 /* 12.js in Sources */ = {isa = PBXBuildFile; fileRef = 58A4D1578B8B44635C6F1052FABEA8AB /* 12.js */; };
@@ -2417,7 +2419,6 @@
 		D87B6A6F137C88691BA9E32788A2EFE9 /* DSListTabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 626F92F34D0BC2C22E6363E3E97A31E1 /* DSListTabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8877C2A8AD845E28A3B27031C82BE65 /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31CD36CD86829B4E326B88E8B3CD27 /* AnyValueContainer.swift */; };
 		D88960BCB46B4380ABA48FFD1BFBE000 /* LRUAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724898E63C0DDE1DE7232A118D7B4A44 /* LRUAnimationCache.swift */; };
-		D898D76572787642ACBB8DE3FAA77779 /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C4A1CA25EE5DBD01A2A2D6C9EEE0E7 /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8CC2279BC5BE5CD2ACA84ED50A389E3 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = C49AFA2DB697EBDBF499B290A6D5F7D2 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D8E9317783D722D3D466DE4718C2E975 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDFD57F07A2167C75C85A89D20BFB4C /* LayoutConstraintItem.swift */; };
 		D8EE41B1FA04DFE4B04A17D1E93927D9 /* random_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AB53CE93581A7506434E61785589E2 /* random_utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -2468,6 +2469,7 @@
 		DD232AD68E570D569678E3B5D393C482 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A9451AAF8475F6D9FDA8EB2D158DDC /* YYTextView.m */; };
 		DD2DDC0A1E8243EABCD0124A483D7F07 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 33687E5238FDA0873C360CB994F680C6 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3A6BF6CD657055268FC46E6D5E8A67 /* DSiCarouselLoopView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EF286B979B6FCD100FAFDECF0BCE87 /* DSiCarouselLoopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD4D5D20B7A19ECACE31CABFD1A4548C /* DSForegroundColorAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = 634E0151A6B023EE4CA61D5FC99F0155 /* DSForegroundColorAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD5F2FAB32FC2E150EE346573DEB2677 /* SRSAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD0C18D64782892D5E1970185EF9B48 /* SRSAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDC45345C85E2E6BA5F8D583659CC19C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
 		DDF4F537B50A872C424AFBD56388D5AD /* DSGrayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1073D0C0D05376DD1F15B111D5B4BB42 /* DSGrayManager.m */; };
@@ -2479,6 +2481,7 @@
 		DE72F1F59C231AC8BB8FDF7DF303C59C /* NSDictionary+DarkStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2626246E94411B7B981272C70CE6FD23 /* NSDictionary+DarkStar.m */; };
 		DE872F15041FBD860D0411EED7410E38 /* DSTemplateTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0421A6AC28F96CA26677F9560BF7DBD3 /* DSTemplateTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE8E0315E0990AE5417CA7CD3A80335A /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = B12D14BF38FA686038D8E978C1DBAFB9 /* dec.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		DEA3393EF90CB8117C4C3A4EAB8757DE /* DSDeepLinkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C84FA3D80CE48062D30DFB5BBB33220 /* DSDeepLinkModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEACA0FC05E4D7C4698BBEA10ED242B0 /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCACF3B9125924BEEC0846574564B93 /* YYTextRubyAnnotation.m */; };
 		DEACC6A1ACBAB0C5DDFDBC152C932EDC /* CLCustomTransitionAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C5734035FB2C3600BF6B6701C2FA98 /* CLCustomTransitionAnimationController.m */; };
 		DECBB5EAD7DC8CC787618184C8311B19 /* DoraemonNetFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81532122CA4B972E4C0CE0E491D070F7 /* DoraemonNetFlowViewController.m */; };
@@ -2486,6 +2489,7 @@
 		DEF6067C15E87F02403C0892880A4634 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D5251570878EF1D96E9C858FE71BBE /* UIView+WebCache.m */; };
 		DF14CA8AC9E47DC5774A70909C879F2B /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB7990D9A655B6CA08BEBA5D97E9B74 /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DF3105D977A1DC65A81895C91C58018B /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0672E98D97F9E8831277B67267795A /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF31E3538C70F98734E5017B41998DEB /* DSRGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F098E07DEAC0766223055CABF0E81FA /* DSRGBColor.m */; };
 		DF375533EEBB6673C66FF786555B4229 /* DKHierarchyPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9085C3F9C232CC4D3009C76DC97F86CC /* DKHierarchyPickerView.m */; };
 		DF3AAC7D684CE22F6E14D96150E925A5 /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5667DB2861078FAEAC7F328A82486232 /* FSMStateUtil.m */; };
 		DF592CB48B3B9704FF385AD9F079BE4D /* rescaler_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 97666F708ECFA29CD713FC007B33AC35 /* rescaler_neon.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -2502,7 +2506,6 @@
 		E034FC7CB2EF33223EEABACA1F3F0071 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B96EB6765A7C7C7C41E4A62A23240A /* PathElement.swift */; };
 		E036B3EA0CDA68A116485CB1F9C70D3A /* JXCategoryTitleImageCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 819B1D8F1894F2D6FD1C2BF5DF88472D /* JXCategoryTitleImageCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E03E40B30BF2B3406865F889D5F5CF66 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7107330BB36C122A48B61F10584BE703 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E05A63C60ECAE28DF3B0D74BE9AE531E /* DSParagraphAttr.h in Headers */ = {isa = PBXBuildFile; fileRef = D933844E44FB60C9FC7465AA20DE88C9 /* DSParagraphAttr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E05CEE654E3EF7860D846D5903BCDAF2 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AF1CE38D43E0331AF4EB864C1470B /* Vectors.swift */; };
 		E0611E16F99D65E7C5606C1A1C98BFE1 /* DSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21601D5D46D1294FB776CB6A418EEAE2 /* DSDownloadManager.m */; };
 		E062B0ED17CE7109E1A45F5497C4E9E9 /* CustomCollectionTagSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8C0E19D879321E329F6E939D8A8EF /* CustomCollectionTagSectionHeader.m */; };
@@ -2512,6 +2515,7 @@
 		E0A43D2BCC2AA382CE373EAB0218BA6D /* 13.js in Sources */ = {isa = PBXBuildFile; fileRef = 6921B2D0AC50149099070948D389087C /* 13.js */; };
 		E0C54919E34187D7D2C2BFF8DF10CB93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F18341A953948C5A1EE1153E4E3ED /* CoreGraphics.framework */; };
 		E0E685FAE206F3B820ACB5C764969D56 /* cost.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EF91CF3476A6EB80EA40021C9BDB7B /* cost.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
+		E1694EF2BFD390D4D156DC58B8673EA6 /* DSCGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 565FA51FA56F494662263135A75EDD00 /* DSCGContext.m */; };
 		E1733C821315D89438CE3676746F0D53 /* JXCategoryNumberCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D20910F2853E68ACC96828121A37E112 /* JXCategoryNumberCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E18B982E733DB624D99176EB4D42300C /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2CD45BD5E5ECC7267BFDCD8B9F2F5 /* ImageDataProcessor.swift */; };
 		E1BCDDEF7C00EB84E6726605E707B166 /* sharpyuv_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 0ED373E00519FDFF958592E16A4199CD /* sharpyuv_neon.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -2529,12 +2533,10 @@
 		E2A21B62C03F954FAE8457F21CC3179B /* muxread.c in Sources */ = {isa = PBXBuildFile; fileRef = BAF0DBCBBA51BD285CBA44E84928BD1F /* muxread.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		E2B0BE0EA979A317CF9E2C8FE51A0007 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = AC5CC46EA7747FB594D451E016C9B3F9 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2F38B30F76C121CE386DB03DB10F31A /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C10C2BB613D5DE0A045BF594A9D7B0A /* rescaler.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
-		E2F6EA1A8E7225DC39E32057F809BE22 /* NSAttributedString+DSAttrConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D337F3FF1C2F1FB2B6520ED5B016DF /* NSAttributedString+DSAttrConfig.m */; };
 		E2FA36524C65345B88DF41A42C4C69CD /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DF09DDA59B7CCE3C1C8599D2449C2B /* NodePropertyMap.swift */; };
 		E30E899EBB3D613E910154B30D0EDEAD /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F31646A163D1A18F9BFD1216B62A41 /* KingfisherOptionsInfo.swift */; };
 		E3274A0ADEF45DDBECC6D5FC50268F6E /* DarkStarGrayViewKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2736A5F4917042E277A64FD0A9D0BEAC /* DarkStarGrayViewKit-dummy.m */; };
 		E3427250AF1B6B32563674E746ADB1B5 /* JXCategoryTitleVerticalZoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1F9F998F5710EFBDAF8D46A997B17C /* JXCategoryTitleVerticalZoomCell.m */; };
-		E36923E86CDEF0DCFBA3FFBB095726BF /* DSBTTimerHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7D792B5D0807217D5F28BCCA03EE84 /* DSBTTimerHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3911253FDE902B1092044B964D2827E /* SDJavascriptCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD05E8ADEFE564E7D9A1EA0D76EC61C /* SDJavascriptCode.m */; };
 		E39DC0BC5E6EC4CD04724F03A2D65AA6 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6B20CD5BBBCF3613011942CF6DB5F5 /* TZAssetCell.m */; };
 		E3B0B596F63FB5A9CABBEA8B99EE2C64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF205EE8E10BF41736E1CBD472FC843 /* UIKit.framework */; };
@@ -2542,6 +2544,7 @@
 		E3DFF5BD888E7946BC2A544AA407ACEC /* lossless_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = DADBE7143289306BA0A168AD22A198CC /* lossless_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		E3F6C1670742908DEFBC37EE72082871 /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A06BE03F91904B3E117068D531A858 /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E3FF9B183FCFB35C462C8C7A5F3C5696 /* YYTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 926BE01EE4F60805A3406D4616628DE2 /* YYTextUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3FFD6372281C3F63666818D2EB27297 /* DSCGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0FF825D24CDDA3EE549B89C1C453E7 /* DSCGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E433CA7D3F6A9AA4B78446186D262AC3 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54012E465C33B63075E2A87178CFF47 /* ConstraintLayoutSupport.swift */; };
 		E454A040D6CBB3FCA12EA080896F6D42 /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70753282AF255C2C5966B2850FDA8593 /* BlockModeOptions.swift */; };
 		E486A3BA649A542BEA044E93B47345FE /* DoraemonNSUserDefaultsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 828EB9E9C28045BC5E37FC65D8E5BE03 /* DoraemonNSUserDefaultsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2594,7 +2597,6 @@
 		E844B77E2BF0466086789F376249CEBD /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC72D7548CBFF6BF8870F879C08550 /* GroupNode.swift */; };
 		E852128B1F237919F64133AD7B01063F /* UIView+DSRotateAnimationProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D954A81BEC2B98CFDA0CBEDBC59C19 /* UIView+DSRotateAnimationProtocol.m */; };
 		E8774A2C25EF604CCDD9CFF26B550FAA /* JXCategoryImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BE6F4DB72F76FF99CD6B147B17B62C /* JXCategoryImageCell.m */; };
-		E880633B1D0B77222F41B8317C09980D /* DarkStarGeneralTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B57D3006DCA4D82AB906A0C4E6F28 /* DarkStarGeneralTools-dummy.m */; };
 		E880786FF0A312B32A0604060D46E71C /* DSCreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4766D22FAD70568D88F846AEC8018DAC /* DSCreditCardViewController.m */; };
 		E88175134815F584DF18411A3455D158 /* DoraemonResponseImageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA4CA7BF69D3314CE2B8BB20AA2458 /* DoraemonResponseImageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E898F995C3DB70B80D17E2CDB2B74F3E /* CLLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 910398C41F45476C13C36CA9FEF31C27 /* CLLineChartView.m */; };
@@ -2614,7 +2616,6 @@
 		E970C35AD7BD111B33938D106556853C /* WBStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DFB3EC256D3DE5DBC00984E4189935 /* WBStatusHelper.m */; };
 		E9AB3CC6164A7573ABE0453240A52DE6 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B464272BE3A7C71F1A564B613F9161 /* GroupOutputNode.swift */; };
 		E9B9C47E3D0AAA3A870BBCF93D2DD46F /* DoraemonMockAPIModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FC483BECFB04F80694CF5B224B807649 /* DoraemonMockAPIModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9E3D5BAFA24819363740946D6757E30 /* CLGCDTimerManagerOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F029EEDB25330DD743F77EF2C80D8E1 /* CLGCDTimerManagerOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA0A2EF03FBA48A57D9BFB34BF82CDBA /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC26B05EA82DB6A6507C7E4BC6A3E83 /* ConstraintMakerRelatable+Extensions.swift */; };
 		EA0A73661F0E683F8DBBD505288FDE1F /* Date+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565EDB4710D82D1BC47F70DC7AD0EAB /* Date+TimeAgo.swift */; };
 		EA0EFF44CB7153C100D8AB96574D3453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4EF6333651533699609325E5785600 /* Foundation.framework */; };
@@ -2626,11 +2627,8 @@
 		EA56815500AD62F588EFD6A9D10B0A99 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0EE19736477EE67562BC31FADC37B /* Authenticator.swift */; };
 		EA61CC2FA4E32959E8756F041B77BABD /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FFDA9A9BA50697D23358CBFB45C7F4 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA9EC975EE0D4C89232529B16567BF6F /* YYText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42AF2D1B98F9E0365DBEE46982A6A9A /* YYText-dummy.m */; };
-		EAC4D542E7160C10E47189AEF44C09EA /* DSGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349F1F996A2965038424BE953E180B0 /* DSGradientColor.m */; };
 		EADABC0A33249A86DCF8B5001F4C741B /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A0ED0EBD8D50061EE565F3E5136B91 /* Mask.swift */; };
 		EAEE20117ABE5388BFA2BE6BB04069FA /* CTMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7B3B818AFA1A9247BB1BF5E2623B51 /* CTMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAF159CE394FDB163211898FA4DC7517 /* DSDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B06588E04D40110EF24AA7F89A54B5 /* DSDateFormatter.m */; };
-		EB029FC27CCD2B1BA9FE584DFA0A3B95 /* DSKernAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE17CB639F325A878C2F5045414E532 /* DSKernAttr.m */; };
 		EB13459A6C6B3D7321510B1381B9E1E6 /* DSPhoneLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE55F7B64444BF54CCF469B88F1F0B3 /* DSPhoneLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB180AE5EB2D58488A9B3593195011E4 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E97A50F64AD5C05EBA8576E3E6C1E72 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB60FF0826A3AC55AA8B004AA33B1FDB /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812AE83885CFF7ECCD56F2E25E59E3DC /* ItemsExtension.swift */; };
@@ -2676,7 +2674,6 @@
 		EE981DEC76FB08F325285896ACF426ED /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B22DFA3FA95A69334FFBF29DBE720390 /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE99C6A2C4F09FA11F3E44904D5E75B9 /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 378489D0A9BDB968A4848EDAAFD56E58 /* SDImageHEICCoder.m */; };
 		EE9AD245A6C59B592A3D6DB7CCEA9755 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DC583134382E6F006909163B0E27F4 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		EEA55B7CCFE73A6FC1E0FB8768A7CF66 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 814E07FEDE55F949BB300662B5F0F46A /* GCDGroup.m */; };
 		EEA99188F894C20C319CF43CFC9235EA /* analysis_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BC3CB7C2D6D8C2FFD2357065C3872 /* analysis_enc.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
 		EEDEB797B765671BFA739FF2232F9091 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EBF538867FB63F2A28C9F619755020 /* StringExtensions.swift */; };
 		EF5FF45358588082DE6462C538FA0304 /* SRSFloatElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C5405FA7C92F047A8C853AE1F4BEBB /* SRSFloatElementView.m */; };
@@ -2744,6 +2741,7 @@
 		F5F2AD394D122396E5AB3C41C351463B /* DSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B17A5DF6B73595462A06D117CD036 /* DSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F60E9987037C5AE159C9BEA55BB89B63 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = C834A5B8EA8B487D098B6B6A39FCB480 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F614101E97FB644CAFDF8A35BEA1B200 /* UIView+DoraemonViewMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C02FF5FE91F56F9458C6AFB2C1A45D5F /* UIView+DoraemonViewMetrics.m */; };
+		F6462CD49175BED49835834B86CEA7C2 /* DSValidateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B39A428532BF9825E1B2736FCAA391 /* DSValidateUtils.m */; };
 		F64C88AE567C6D13B2949E79469D58A3 /* SDWebImageOptionsProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 442C01539B14070CB4708E981B57FAA2 /* SDWebImageOptionsProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6527E8AA412C4AA31ED44495F40DEBB /* TZAuthLimitedFooterTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF3D666FCA397875BFA50E187851275 /* TZAuthLimitedFooterTipView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F65AE247196CD03E1C45C2D4382A8D6D /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 862727E6DEEC3E517D3C443432CBA262 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2759,8 +2757,8 @@
 		F76833EABA4C3476B8887F4C8BABE6A9 /* DoraemonStartTimeProfilerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BB369C4056FB149B5BD2A683CDEB3300 /* DoraemonStartTimeProfilerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7709E660191D333AE628DB8479103BC /* JXCategoryIndicatorLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B3DE494BAB490F57432D14EB43CA06 /* JXCategoryIndicatorLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7730345A4113F212351824231ED81D1 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A7EA7BC100656A67CE0B62DDB3E2F0 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7759DFF2B200E6EBADEDE3D286AF88D /* CLGCDTimerManagerOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F029EEDB25330DD743F77EF2C80D8E1 /* CLGCDTimerManagerOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F782E0BD36B1111604D70974B981FFCF /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5568668B14A59C99FA8251DF645CAA6 /* ValueContainer.swift */; };
-		F79A5A3D4398F68991DC826BD8BBD43D /* DSCGContextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A89D6A8BD40CBF1E8C9BF109AC0FA67C /* DSCGContextConfig.m */; };
 		F79B4268BB666984E03F6518EBA7EF95 /* DoraemonNSUserDefaultsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1B84A5309D90DBD3A5E8235BB3A764 /* DoraemonNSUserDefaultsPlugin.m */; };
 		F7B12FA63D97BB568D84CBD00C6F847F /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4553454B67C235821B1F21B21803812E /* POPPropertyAnimation.mm */; };
 		F7C6027D28116B7F3905B3F0252E8333 /* DKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C8AB11699841BE2DAFC098C2989E /* DKPickerView.m */; };
@@ -2769,7 +2767,9 @@
 		F80FBC40CBEB5DCCB9EA99AD2F016D1E /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DED107C5178B5D108C12981B29EF135 /* ShapeItem.swift */; };
 		F81B97E1A401E1ED666F486B6E73B66E /* NSTextAttachment+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04EDAFD4426D4993905FB62D034E88 /* NSTextAttachment+Kingfisher.swift */; };
 		F88A3B72CE14F8147FF10433894DC26D /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C4A335D263453E6BAD939CBE6CD0D /* UInt8+Extension.swift */; };
+		F89564CD02E82C21ABDB8BF18F68ED82 /* DSDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B06588E04D40110EF24AA7F89A54B5 /* DSDateFormatter.m */; };
 		F8A3FF9283B382E4122BB777A1C0C63A /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEE102AD47236AA06CF6F6AB40A184A /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8CF017E2CA1B73B4642C5E71713AC9A /* DSBTScaleHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE70BB9A73CE982B1D83FB0F1E26D9E /* DSBTScaleHelp.m */; };
 		F8E34AFF4FBB58ABD3165D0A86F741EA /* DoraemonDBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167A737C0666705E8BE7B24A397B382D /* DoraemonDBTableViewController.m */; };
 		F8F2F061D279005956DDBA0E741A1069 /* DarkStarConfiguration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BAFFCE19B2D7EB07B7A659F9DB05530 /* DarkStarConfiguration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F904A8732B6421ADFB36F8BEA8436FFE /* DoraemonFPSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C4000AE592206464E2F330BDE6CEED /* DoraemonFPSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2818,7 +2818,6 @@
 		FC7FBB1B768C44534B5368C983D4EB21 /* DoraemonMockSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F60236693DF0974B2EF87FD54E33BEA3 /* DoraemonMockSearchView.m */; };
 		FCC4C37BF999AEF7BF40D1B5C1061142 /* JXCategoryTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 246F396FF71BF724096C7F2BFC912D0D /* JXCategoryTitleCell.m */; };
 		FCC9CA13BF7927A65EC4CE3A9E082742 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512910FF905F24A2B0CB792DB1CA528C /* Date+Format.swift */; };
-		FD1C3C743F0C5E7CCC5764BD22A971F7 /* DSCGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0FF825D24CDDA3EE549B89C1C453E7 /* DSCGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD5386D402DBFB6CB3114D5214C07829 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = A40978909E7B2CF3408E649484CAC801 /* POPAnimationEvent.mm */; };
 		FD68CF6DFA57ED426A33BFD8BBD354AB /* DoraemonAppInfoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B060972763EEBD2A8F24A33016CB652 /* DoraemonAppInfoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD6E621DDDEF11E4A0CF5C38064AD511 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC53806D1900562B6578DBA717DE8DD /* Placeholder.swift */; };
@@ -2835,6 +2834,7 @@
 		FF29AD5B45E84AD4683B005EC4DE4934 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F92DC72DBB062A59EF7F98AA8D7193 /* Operators.swift */; };
 		FF3DD3E1C03866E551E46998F005AA9F /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122826BA1CEE8DE600BCBBFD9D92730 /* UIImage+WebP.m */; };
 		FF480E229C1184496748120AF476B9C5 /* sharpyuv_gamma.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DD903D8FD20D4810D5AC7BBE993BFF /* sharpyuv_gamma.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF5BA5E3F06C13C33840BD260406D958 /* DSDeepLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42564D7A87FE3B7E3456703CFA120F27 /* DSDeepLinkModel.m */; };
 		FF769872B242F9CCA599B640DB4EA881 /* DSBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F953A1C6A4556B46C1C56EE3B8A8DC6E /* DSBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF8DA7F39B13A3AAD9CFAD6F4D1DA94F /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC9615C223B71E1D0060FC0F6023DF7 /* ConstraintLayoutGuideDSL.swift */; };
 		FF8EEA8ADE90EEE14A41CC71E17CB4FB /* DoraemonUIProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CBAA3195B1EEE781D0FA8FA78CA6FC /* DoraemonUIProfileManager.m */; };
@@ -4644,6 +4644,7 @@
 		3A56CC869F66A5AEA3EC16E23F372AF9 /* UIImage+WebP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "SDWebImageWebPCoder/Classes/UIImage+WebP.h"; sourceTree = "<group>"; };
 		3A74FF71EF43B68E9965B8E559F78430 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3A7898C5660B8EAEE2FB5AAE718A6257 /* [展示]UICollectionView装饰视图.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; path = "[展示]UICollectionView装饰视图.gif"; sourceTree = "<group>"; };
+		3A806DBCE969C7EFD3823E538FC13B81 /* DSVersionCompareTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSVersionCompareTool.m; sourceTree = "<group>"; };
 		3A8CDFC83B5D1B37B77893A1F45385F8 /* MJExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.release.xcconfig; sourceTree = "<group>"; };
 		3A93514DB0319FD12E5492AA35D1CFFE /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		3AABCEA888BE2D60DF328496EAB097FC /* YYCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYCache.modulemap; sourceTree = "<group>"; };
@@ -5733,6 +5734,7 @@
 		93C3A48AB3B55A2791E926DF0E241277 /* SDAnimatedImagePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImagePlayer.m; path = SDWebImage/Core/SDAnimatedImagePlayer.m; sourceTree = "<group>"; };
 		94456EA8EA4D777E94C2E6763B8CA3F0 /* DoraemonWeakNetworkViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonWeakNetworkViewController.m; path = iOS/DoraemonKit/Src/Core/Plugin/Performance/WeakNetwork/DoraemonWeakNetworkViewController.m; sourceTree = "<group>"; };
 		94608AD5436929A1325DD9267AE112E2 /* MJRefreshStateTrailer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateTrailer.m; path = MJRefresh/Custom/Trailer/MJRefreshStateTrailer.m; sourceTree = "<group>"; };
+		9474C2058939A14999078B658F12A149 /* DSVersionCompareTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSVersionCompareTool.h; sourceTree = "<group>"; };
 		947BE091375B9E8D8C2CA6166C088DE3 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
 		948F0CEC466A8BA6AA7D7AF5D4F5020F /* DoraemonViewCheckManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonViewCheckManager.h; path = iOS/DoraemonKit/Src/Core/Plugin/UI/ViewCheck/Function/DoraemonViewCheckManager.h; sourceTree = "<group>"; };
 		9492F235E7FBA85D1EF2A23C03E39B7C /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
@@ -6265,7 +6267,6 @@
 		C11B630C7C59AAADA04F9D2C56D56033 /* DSAwesomeKitTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSAwesomeKitTool.h; sourceTree = "<group>"; };
 		C14CBB859325FC9467E8E1298188FB18 /* Date+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Bundle.swift"; path = "DateToolsSwift/DateTools/Date+Bundle.swift"; sourceTree = "<group>"; };
 		C16B9BFA02806847DB66DF4744F68C44 /* DSMultiChoiceDialogCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSMultiChoiceDialogCell.h; path = DarkStarUIComponents/Classes/DialogMultiChoice/DSMultiChoiceDialogCell.h; sourceTree = "<group>"; };
-		C16CB2B508FF036A3A6ADA0CF9D8D982 /* REUserIp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = REUserIp.m; sourceTree = "<group>"; };
 		C16F8CC05ADF46702BF915C8DF208840 /* CardCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CardCollectionView.h; sourceTree = "<group>"; };
 		C199FD6364B7F905B055BF46B91220ED /* DSMultiChoiceDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DSMultiChoiceDialog.m; path = DarkStarUIComponents/Classes/DialogMultiChoice/DSMultiChoiceDialog.m; sourceTree = "<group>"; };
 		C1A05826A51C8370B82D59EC1C44DDE2 /* DoraemonHierarchyDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonHierarchyDetailViewController.h; path = iOS/DoraemonKit/Src/Core/Plugin/UI/Hierarchy/UserInterface/DoraemonHierarchyDetailViewController.h; sourceTree = "<group>"; };
@@ -6279,6 +6280,7 @@
 		C2D87C26E2D469AD01A923A2C0227E70 /* VectorsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VectorsExtensions.swift; path = "lottie-swift/src/Private/Utility/Primitives/VectorsExtensions.swift"; sourceTree = "<group>"; };
 		C2F025CE8EC71E6DDA3623DAFD3E932E /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
 		C2F9F0BFF69DE0C9EFD4FA52F1D51B4D /* Multiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplication.swift; path = Sources/CryptoSwift/CS_BigInt/Multiplication.swift; sourceTree = "<group>"; };
+		C309CB9992192EBAB1EEA7E2C6150E40 /* DSUserIp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DSUserIp.h; sourceTree = "<group>"; };
 		C31D364293E61037BDDA2B65B7E8EECB /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		C326B1F2214F04673F9FB30056A04F53 /* SRSTitleLeftTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRSTitleLeftTextField.h; path = DarkStarUIComponents/Classes/SRSTextField/SRSTitleLeftTextField.h; sourceTree = "<group>"; };
 		C32A122C6BBCEB7EDEB335E506929FB4 /* AreaJsbWKWebViewController+JSMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AreaJsbWKWebViewController+JSMethods.h"; path = "DarkStarWebKit/Classes/AreaJsbWKWebViewController+JSMethods.h"; sourceTree = "<group>"; };
@@ -6360,7 +6362,6 @@
 		C8C0596AF15C75C3C35A80BCAF0289BC /* NSBezierPath+SDRoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+SDRoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.m"; sourceTree = "<group>"; };
 		C8E9DEDC3098A9408E9609DE83652110 /* DarkStarBaseKitDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DarkStarBaseKitDefines.h; path = DarkStarBaseKit/Classes/DarkStarBaseKitDefines.h; sourceTree = "<group>"; };
 		C8EF063223628D28C6F53D3389EEE150 /* JXCategoryTitleVerticalZoomCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JXCategoryTitleVerticalZoomCell.h; path = Sources/VerticalZoomTitle/JXCategoryTitleVerticalZoomCell.h; sourceTree = "<group>"; };
-		C905731A31C3FE85F8F90E67C551E487 /* REUserIp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = REUserIp.h; sourceTree = "<group>"; };
 		C90B81442BD5FE8808AED16A2CBD235D /* iCarousel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iCarousel-Info.plist"; sourceTree = "<group>"; };
 		C90C95268C2DE84B6E23BB7E94E138B9 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		C9296A19D3F3EBC03B15264B095B37F9 /* JXCategoryIndicatorLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryIndicatorLineView.m; path = Sources/Indicator/IndicatorViews/JXCategoryIndicatorLineView.m; sourceTree = "<group>"; };
@@ -6532,7 +6533,6 @@
 		D774D396D7527F160AC5019F92D12037 /* CustomCollectionTagShapeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CustomCollectionTagShapeView.h; sourceTree = "<group>"; };
 		D7CBAA3195B1EEE781D0FA8FA78CA6FC /* DoraemonUIProfileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DoraemonUIProfileManager.m; path = iOS/DoraemonKit/Src/Core/Plugin/Performance/UIProfile/Function/DoraemonUIProfileManager.m; sourceTree = "<group>"; };
 		D7E44F4FD89DD1706865AD65B80C6C5A /* DoraemonNetFlowDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DoraemonNetFlowDataSource.h; path = iOS/DoraemonKit/Src/Core/Plugin/Performance/NetFlow/Function/DoraemonNetFlowDataSource.h; sourceTree = "<group>"; };
-		D80D5991593C600F9C92FA3CBFC2E291 /* REVersionCompareTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = REVersionCompareTool.m; sourceTree = "<group>"; };
 		D84C3B9E3E0F7F7BF5631AE7F2593D48 /* pop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.release.xcconfig; sourceTree = "<group>"; };
 		D84E6BA8C526BCCC0FDFB4664B9EBC25 /* NSObject+DarkStar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+DarkStar.h"; sourceTree = "<group>"; };
 		D87582E972FCFF692DBBE00A8BCCC6DA /* DSCornerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DSCornerView.h; path = DarkStarUIComponents/Classes/CornerView/DSCornerView.h; sourceTree = "<group>"; };
@@ -6649,7 +6649,6 @@
 		E31D73249592AEFF5E647770BA612905 /* MJRefreshTrailer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshTrailer.h; path = MJRefresh/Base/MJRefreshTrailer.h; sourceTree = "<group>"; };
 		E347E705C0F00A10C40F5DC49157AAFF /* SnapKit-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SnapKit-framework.release.xcconfig"; sourceTree = "<group>"; };
 		E368B696D987569015654EFDE7EFB615 /* DarkStarWebKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DarkStarWebKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E36BD21FF58A0479C902C16E280D4A9B /* REVersionCompareTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = REVersionCompareTool.h; sourceTree = "<group>"; };
 		E37B703CEFF4B0DEE2B0B9D654098C75 /* SDImageWebPCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageWebPCoder.m; path = SDWebImageWebPCoder/Classes/SDImageWebPCoder.m; sourceTree = "<group>"; };
 		E391EEC650F0BD4D820FB0305091419F /* LocalConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocalConnection.h; path = RealReachability/Connection/LocalConnection.h; sourceTree = "<group>"; };
 		E3B723776EBBA0B3270CF943F2A86461 /* DateToolsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateToolsSwift-umbrella.h"; sourceTree = "<group>"; };
@@ -6667,6 +6666,7 @@
 		E45DF9679F804FF4B3C75381CADD62AD /* 696ce119d3eb5fe94ac42480ddfff2b4.webp */ = {isa = PBXFileReference; includeInIndex = 1; path = 696ce119d3eb5fe94ac42480ddfff2b4.webp; sourceTree = "<group>"; };
 		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E461F6D56ACE867B32DEE73DE2BD054D /* AresJsbUIWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AresJsbUIWebView.h; sourceTree = "<group>"; };
+		E477DDD10DECFC2FB1093283FDB192C1 /* DSUserIp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSUserIp.m; sourceTree = "<group>"; };
 		E486B38F3B6ADA1652103C9D10BE14ED /* DSLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DSLoginViewController.m; sourceTree = "<group>"; };
 		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B47C1932749B006BDBCA603D18D672 /* GCDWebDAVServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebDAVServer.m; path = GCDWebDAVServer/GCDWebDAVServer.m; sourceTree = "<group>"; };
@@ -7812,7 +7812,7 @@
 				809D71EC89D9450ED870B7B4CFC13A8D /* CGContextObject */,
 				4E9045C21B121D9B9A2C74CD16252EDC /* DateFormatter */,
 				B2FBDEFDA7A5191EE70F573D77453B20 /* DeepLinkModel */,
-				E88AF3C3A2EBEA000339E9B2DD5A2891 /* Else */,
+				201136392D760F0A96A14E7E19BCC020 /* Else */,
 				9F769358C0893672018A678591627182 /* GCD */,
 				018CEBDB0DAB32322CB54161DBD73FB5 /* IrregularElementsCreator */,
 				028F23686E46121F4CC1B256E5D57CE0 /* JailBreakChecker */,
@@ -8291,6 +8291,18 @@
 			);
 			name = "Pods-DSDemo-OC";
 			path = "Target Support Files/Pods-DSDemo-OC";
+			sourceTree = "<group>";
+		};
+		201136392D760F0A96A14E7E19BCC020 /* Else */ = {
+			isa = PBXGroup;
+			children = (
+				C309CB9992192EBAB1EEA7E2C6150E40 /* DSUserIp.h */,
+				E477DDD10DECFC2FB1093283FDB192C1 /* DSUserIp.m */,
+				9474C2058939A14999078B658F12A149 /* DSVersionCompareTool.h */,
+				3A806DBCE969C7EFD3823E538FC13B81 /* DSVersionCompareTool.m */,
+			);
+			name = Else;
+			path = DarkStarGeneralTools/Classes/Else;
 			sourceTree = "<group>";
 		};
 		21B43F178D5B69371A8595CC90E71274 /* FDFullscreenPopGesture */ = {
@@ -13096,18 +13108,6 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
-		E88AF3C3A2EBEA000339E9B2DD5A2891 /* Else */ = {
-			isa = PBXGroup;
-			children = (
-				C905731A31C3FE85F8F90E67C551E487 /* REUserIp.h */,
-				C16CB2B508FF036A3A6ADA0CF9D8D982 /* REUserIp.m */,
-				E36BD21FF58A0479C902C16E280D4A9B /* REVersionCompareTool.h */,
-				D80D5991593C600F9C92FA3CBFC2E291 /* REVersionCompareTool.m */,
-			);
-			name = Else;
-			path = DarkStarGeneralTools/Classes/Else;
-			sourceTree = "<group>";
-		};
 		E8AF384A77D00B899EFD47625B543866 /* [展示]仿系统指南针 */ = {
 			isa = PBXGroup;
 			children = (
@@ -13620,6 +13620,48 @@
 				40539D8A56994CE7C326C17BD9E7E436 /* DarkStarAudioRecorderKit.h in Headers */,
 				D29752F22D71B3F564B363164AA4CA51 /* DarkStarAudioRecorderKit-umbrella.h in Headers */,
 				364741294824A1BC27F6B0359B29506C /* DSAudioRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF6374284468F293123F65151E431E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7759DFF2B200E6EBADEDE3D286AF88D /* CLGCDTimerManagerOC.h in Headers */,
+				CC47ABF1E6B0DA43F9D3C6564426C3B8 /* DarkStarGeneralTools.h in Headers */,
+				B335D4B019D89A4CCCE48157904A1479 /* DarkStarGeneralTools-umbrella.h in Headers */,
+				57A392294B67531FCA2C3FFC689C79E1 /* DSAttributedStringConfig.h in Headers */,
+				22F684FD1A36A08B9A8D1494CDE71A45 /* DSAttrStringConfig.h in Headers */,
+				145C476A14B21F03708C97A566563427 /* DSBTFileHelp.h in Headers */,
+				117F6706C63C4B9FB3FBA1631BD75E7F /* DSBTIconHelp.h in Headers */,
+				19BA9E3AA5E45EDCA75955112C3D9C73 /* DSBTScaleHelp.h in Headers */,
+				369AB533F0522371F720083E19FCCD2B /* DSBTTimerHelp.h in Headers */,
+				E3FFD6372281C3F63666818D2EB27297 /* DSCGContext.h in Headers */,
+				CBFBCC0D98716761E30DEC0F7BF8CC8A /* DSCGContextConfig.h in Headers */,
+				9B63DE5A6AB0C928BE0AEBB399EEC5E8 /* DSCGContextObject.h in Headers */,
+				6F61ADC27CA952D6D48975D4E5B0D928 /* DSDateFormatter.h in Headers */,
+				DEA3393EF90CB8117C4C3A4EAB8757DE /* DSDeepLinkModel.h in Headers */,
+				84ED91721ADFB08F489EB6766F766E2A /* DSFontAttr.h in Headers */,
+				DD4D5D20B7A19ECACE31CABFD1A4548C /* DSForegroundColorAttr.h in Headers */,
+				45641352C0E31FEAAE37FDB473FE3962 /* DSGCDHeader.h in Headers */,
+				153CD7EC6A630FA692C3F2386AE87E2D /* DSGradientColor.h in Headers */,
+				BB9E682700A2BBD01604FA9AA7529707 /* DSIrregularElementsCreator.h in Headers */,
+				14E5E1E59E0D2EC7DC552D9A04BDC6AA /* DSJailBreakChecker.h in Headers */,
+				B6974E2A6B29E1EF57401439AEAD9C56 /* DSKernAttr.h in Headers */,
+				1D10AFC7BEEAD3C35F66D8F48A155CE3 /* DSNumberFormatter.h in Headers */,
+				927A11D717BC05EA5B4D27B41C0CC282 /* DSParagraphAttr.h in Headers */,
+				A4F3A53E0B43806FA3FFA51D89DEBA29 /* DSRegEx.h in Headers */,
+				3210EA1690D41D5FE22A92290FF1CEA7 /* DSRGBColor.h in Headers */,
+				B0E2F30152AEF59CCDEB50A5C9A31FA5 /* DSUserIp.h in Headers */,
+				9843D27C1A28B9EC803BBE9FA3B27A84 /* DSValidateUtils.h in Headers */,
+				D113F3F40990B98A91CD5DEA467BC213 /* DSVersionCompareTool.h in Headers */,
+				69956D4F9F4D728AEB8EC6D7C3357C17 /* GCDGroup.h in Headers */,
+				A04EC9F4F463050E66BFA54C63D1EF20 /* GCDQueue.h in Headers */,
+				A023E67415E67003463C50FECC6508A2 /* GCDSemaphore.h in Headers */,
+				88E8BA348022BA531695BA997AA4066B /* GCDTimer.h in Headers */,
+				976A3BC7D8F9C11FFC2CBBBB51AB81D9 /* NSAttributedString+DSAttrConfig.h in Headers */,
+				843DD47A9D06F8C5079AA9B39D7942AC /* NSMutableAttributedString+DSAttrConfig.h in Headers */,
+				0981F118D4D1D7624BA58CD931F7D2AC /* NSString+DSAttrConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14579,48 +14621,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B758B225DAEDE7D137F89F4C83CA48E9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9E3D5BAFA24819363740946D6757E30 /* CLGCDTimerManagerOC.h in Headers */,
-				3D80C4541D13B59ABA666C4458D09BA4 /* DarkStarGeneralTools.h in Headers */,
-				6A94D66D6F381D5A45894AEB582B36E5 /* DarkStarGeneralTools-umbrella.h in Headers */,
-				BE672E83CBAAF58D857B17FE5835FA66 /* DSAttributedStringConfig.h in Headers */,
-				6E4FF6C27EAD276D9584F7DB52DC1AFF /* DSAttrStringConfig.h in Headers */,
-				C2BABF233AD159E77C99353D0586B321 /* DSBTFileHelp.h in Headers */,
-				CB99225143C560BEA34EA7A5C038B7F7 /* DSBTIconHelp.h in Headers */,
-				77D48871A2E0CD6C675E6A36DA46ABDF /* DSBTScaleHelp.h in Headers */,
-				E36923E86CDEF0DCFBA3FFBB095726BF /* DSBTTimerHelp.h in Headers */,
-				FD1C3C743F0C5E7CCC5764BD22A971F7 /* DSCGContext.h in Headers */,
-				A041D3BFA32DEBD9B53E923224E30BF4 /* DSCGContextConfig.h in Headers */,
-				4A036D37B961967477AE94F6470CB8A2 /* DSCGContextObject.h in Headers */,
-				96F75BE9E4A156732D72A336C4A62AF3 /* DSDateFormatter.h in Headers */,
-				92A6A4381F2A00FDECC55F424E360E78 /* DSDeepLinkModel.h in Headers */,
-				25FEBEA50911613CA38C2A587B2DBB49 /* DSFontAttr.h in Headers */,
-				7B9C12553F6AF21361B9D703A89B2F20 /* DSForegroundColorAttr.h in Headers */,
-				0AC4E3175B78FE4032D8EF5E5F8E8AE5 /* DSGCDHeader.h in Headers */,
-				A4E85F025EF3F611F9325FC67CE0ECBB /* DSGradientColor.h in Headers */,
-				AC2AF965A5235AFC311102377B71C068 /* DSIrregularElementsCreator.h in Headers */,
-				0792EF59FC264E206E3AA28142A7A539 /* DSJailBreakChecker.h in Headers */,
-				8B9D793AB9375BFD02A67258EFCA3939 /* DSKernAttr.h in Headers */,
-				C3766C042DDBFABBD845784489CB4CBD /* DSNumberFormatter.h in Headers */,
-				E05A63C60ECAE28DF3B0D74BE9AE531E /* DSParagraphAttr.h in Headers */,
-				A36EC2D3BD134E930F972C4597ABEF18 /* DSRegEx.h in Headers */,
-				0CAF3546144EA8D20D874A51164BE200 /* DSRGBColor.h in Headers */,
-				01C25BC04B30EB70CDAC02DBDF4FF9B7 /* DSValidateUtils.h in Headers */,
-				6A6C242480E5078F0A8DC20B185D6B65 /* GCDGroup.h in Headers */,
-				46E881F61C2A6E6A87B2EBA998AE6FF6 /* GCDQueue.h in Headers */,
-				9AFC26672053944AB6D4006BBD6D18EF /* GCDSemaphore.h in Headers */,
-				D898D76572787642ACBB8DE3FAA77779 /* GCDTimer.h in Headers */,
-				B0B96D0225318E27842AF8A1D7D5A928 /* NSAttributedString+DSAttrConfig.h in Headers */,
-				94F6CF80FBDFA9CE8C80710ADFD050C6 /* NSMutableAttributedString+DSAttrConfig.h in Headers */,
-				B2D3350121C66B6A91ABBF1C3E714656 /* NSString+DSAttrConfig.h in Headers */,
-				9CC0AD64485AA3469085DA0E220F98A6 /* REUserIp.h in Headers */,
-				70AF378AD36FD983F37A8B4200276BA0 /* REVersionCompareTool.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BB6B5A348197862817CCE4DF7CE23A8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -15254,8 +15254,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 243A13928EBD42F7A0210ECA5945F7B3 /* Build configuration list for PBXNativeTarget "DarkStarGeneralTools" */;
 			buildPhases = (
-				B758B225DAEDE7D137F89F4C83CA48E9 /* Headers */,
-				1E9D94D37C86FBED465C898B13219ABD /* Sources */,
+				1FF6374284468F293123F65151E431E8 /* Headers */,
+				3105C3FC9B904B88AEED0D38F9B38BC0 /* Sources */,
 				FE2716D307D2517BBBA1077E269E9C44 /* Frameworks */,
 				84BCD32BDEAA39D797BF9FD55AE62AFB /* Resources */,
 			);
@@ -17798,44 +17798,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E9D94D37C86FBED465C898B13219ABD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10606141F5CA65E3F7EAEAA80C10DF32 /* CLGCDTimerManagerOC.m in Sources */,
-				E880633B1D0B77222F41B8317C09980D /* DarkStarGeneralTools-dummy.m in Sources */,
-				D7872BFC19AB58F92B1FA6579259919A /* DSAttrStringConfig.m in Sources */,
-				95B77245103ED637B17E0B0DEC93CDE4 /* DSBTFileHelp.m in Sources */,
-				720E10B4A9C41FBF07D80CC56F9CBE98 /* DSBTIconHelp.m in Sources */,
-				18F4DBBFE176198BD7E5AD644961BDB2 /* DSBTScaleHelp.m in Sources */,
-				9A8D7E34D34EF267CBF78AE7C7D70DDE /* DSBTTimerHelp.m in Sources */,
-				6F38E957B2CEF02DC666599FA3287954 /* DSCGContext.m in Sources */,
-				F79A5A3D4398F68991DC826BD8BBD43D /* DSCGContextConfig.m in Sources */,
-				EAF159CE394FDB163211898FA4DC7517 /* DSDateFormatter.m in Sources */,
-				CE7B078ED6C927BE99DE9D3BD437F412 /* DSDeepLinkModel.m in Sources */,
-				0E0C2EF2FD88F6E6AAE2F902C24F22A8 /* DSFontAttr.m in Sources */,
-				B20E615C3CF4EF366EC757DC4476CC4A /* DSForegroundColorAttr.m in Sources */,
-				EAC4D542E7160C10E47189AEF44C09EA /* DSGradientColor.m in Sources */,
-				35FAB6EBDDC258D90C13C05D233198F1 /* DSIrregularElementsCreator.m in Sources */,
-				5802CC0F67DB692A0644E39F0653D52F /* DSJailBreakChecker.m in Sources */,
-				EB029FC27CCD2B1BA9FE584DFA0A3B95 /* DSKernAttr.m in Sources */,
-				0AB8FF2B0F6F93299354E061422B2419 /* DSNumberFormatter.m in Sources */,
-				3AE36E3C18A2219B86A00ACAD453808E /* DSParagraphAttr.m in Sources */,
-				725AB51623C176B2B4385939BE5FC6A3 /* DSRegEx.m in Sources */,
-				8C2312A4FE7810633931A47E223F2424 /* DSRGBColor.m in Sources */,
-				432BD19957FD146C82422E36E6073685 /* DSValidateUtils.m in Sources */,
-				EEA55B7CCFE73A6FC1E0FB8768A7CF66 /* GCDGroup.m in Sources */,
-				9FE224A3A3CFDAF513049F6677D69FF1 /* GCDQueue.m in Sources */,
-				1FB93A3B2092814F6AE244B8C633F75A /* GCDSemaphore.m in Sources */,
-				BE4FF25231932E98906BCC7D3AE3EE94 /* GCDTimer.m in Sources */,
-				E2F6EA1A8E7225DC39E32057F809BE22 /* NSAttributedString+DSAttrConfig.m in Sources */,
-				4CA0FA89D1C2629D6808EA7B3C3FDD38 /* NSMutableAttributedString+DSAttrConfig.m in Sources */,
-				942E1AC66B02D25F61E815DDD650F047 /* NSString+DSAttrConfig.m in Sources */,
-				BD968882B4E9B95CAA89049E26D618A0 /* REUserIp.m in Sources */,
-				72123B86F6040D5D43D74C96B5F595B0 /* REVersionCompareTool.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		20B56021D2C150E7556D2390B645C2CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -17969,6 +17931,44 @@
 			files = (
 				2FC8701DE289F3C40F67C4ADE1E172D1 /* SIAlertView.m in Sources */,
 				16660A5B5C21E18BFDAAA2D15ACF5D1F /* SIAlertView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3105C3FC9B904B88AEED0D38F9B38BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728CC3876A9A82C9C99A3D4BBEC334B3 /* CLGCDTimerManagerOC.m in Sources */,
+				389E774334B99F6E6D82EF7E917E2140 /* DarkStarGeneralTools-dummy.m in Sources */,
+				72AE3D1EE4298201AD786131F44C9CF2 /* DSAttrStringConfig.m in Sources */,
+				2444CDF96F4A3C6A5B5543D2BF24EF03 /* DSBTFileHelp.m in Sources */,
+				22999954A5F3E1AF96F1A187CA9EFFCB /* DSBTIconHelp.m in Sources */,
+				F8CF017E2CA1B73B4642C5E71713AC9A /* DSBTScaleHelp.m in Sources */,
+				51E79AC33AA5DE65FCB492061965F492 /* DSBTTimerHelp.m in Sources */,
+				E1694EF2BFD390D4D156DC58B8673EA6 /* DSCGContext.m in Sources */,
+				0ADE79076F880FAB070D3EF7B8CF9A05 /* DSCGContextConfig.m in Sources */,
+				F89564CD02E82C21ABDB8BF18F68ED82 /* DSDateFormatter.m in Sources */,
+				FF5BA5E3F06C13C33840BD260406D958 /* DSDeepLinkModel.m in Sources */,
+				7D6E5576A8EA3B3309442CB6149410A1 /* DSFontAttr.m in Sources */,
+				ABDDD54267D7FC0F30333ADE58E80A7C /* DSForegroundColorAttr.m in Sources */,
+				91857D8AD85AF5B49FC1DF404C2325DF /* DSGradientColor.m in Sources */,
+				5B883E7BC317E277E80156141438D7F8 /* DSIrregularElementsCreator.m in Sources */,
+				D5B14BFB9EE2FBCA8170CB5BF2D1E60A /* DSJailBreakChecker.m in Sources */,
+				B07281A491E3F476387B8D233C140F4A /* DSKernAttr.m in Sources */,
+				4CDDED39C680A1D65D7449EA58DD86CC /* DSNumberFormatter.m in Sources */,
+				1A5451BB239A7D7AA1A7415EF38A8188 /* DSParagraphAttr.m in Sources */,
+				BE8C6BE5B2F19B245ADD57122F4F28EB /* DSRegEx.m in Sources */,
+				DF31E3538C70F98734E5017B41998DEB /* DSRGBColor.m in Sources */,
+				77D03C33C9917C6442EC891803595443 /* DSUserIp.m in Sources */,
+				F6462CD49175BED49835834B86CEA7C2 /* DSValidateUtils.m in Sources */,
+				6829AA9FA223FDE29512543681EA2227 /* DSVersionCompareTool.m in Sources */,
+				6B7D455DA4BF9AB16037000871FC2294 /* GCDGroup.m in Sources */,
+				928C3BEE71404731CEF07B0A9BDEC1CC /* GCDQueue.m in Sources */,
+				543F9E3EC599307957CF241A44686441 /* GCDSemaphore.m in Sources */,
+				964680D64D0061D4C8E5540A10E5FCB9 /* GCDTimer.m in Sources */,
+				48A8B5AA39BAE47E09CA69DAF9C0F885 /* NSAttributedString+DSAttrConfig.m in Sources */,
+				07D7B9DD22B10DF5A01E0BECE88DA7C2 /* NSMutableAttributedString+DSAttrConfig.m in Sources */,
+				4F1B33775EE51D475960787B12FF4A37 /* NSString+DSAttrConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

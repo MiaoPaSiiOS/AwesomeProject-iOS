@@ -1,15 +1,15 @@
 //
-//  REUserIp.m
+//  DSUserIp.m
 //  REBBC
 //
 //  Created by sunbiao on 2023/2/22.
 //  Copyright © 2023 RE. All rights reserved.
 //
 
-#import "REUserIp.h"
+#import "DSUserIp.h"
 #import <ifaddrs.h>   //获取IP
 #import <arpa/inet.h>
-@implementation REUserIp
+@implementation DSUserIp
 
 //只能获取WIFI下的IP地址
 + (NSString *)getIPAddress {
