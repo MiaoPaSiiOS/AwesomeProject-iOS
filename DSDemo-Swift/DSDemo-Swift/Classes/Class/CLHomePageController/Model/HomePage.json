@@ -56,10 +56,6 @@
     "class": "CLDrawerController"
   },
   {
-    "title": "自定义转场动画",
-    "class": "CLCustomTransitionController"
-  },
-  {
     "title": "动画按钮",
     "class": "CLAnimationButtonController"
   },
@@ -72,6 +68,10 @@
     "class": "CLHistogramConroller"
   },
   {
+    "title": "跑马灯",
+    "class": "CLDrawMarqueeController"
+  },
+  {
     "title": "转盘菜单",
     "class": "CLWheelMenuController"
   },
@@ -80,8 +80,16 @@
     "class": "CLScrollAnimationController"
   },
   {
-    "title": "跑马灯",
-    "class": "CLDrawMarqueeController"
+    "title": "自定义弹窗",
+    "class": "CLPopupController"
+  },
+  {
+    "title": "翻转动画",
+    "class": "CLFlipController"
+  },
+  {
+    "title": "广播轮播",
+    "class": "CLBroadcastViewController"
   },
   {
     "title": "评分控件",
@@ -92,20 +100,8 @@
     "class": "CLTagsController"
   },
   {
-    "title": "自定义弹窗",
-    "class": "CLPopupController"
-  },
-  {
     "title": "游标卡尺",
     "class": "CLVernierCaliperController"
-  },
-  {
-    "title": "翻转动画",
-    "class": "CLFlipController"
-  },
-  {
-    "title": "广播轮播",
-    "class": "CLBroadcastViewController"
   },
   {
     "title": "转子动画",
@@ -134,5 +130,9 @@
   {
     "title": "过渡动画",
     "class": "CLTransitionViewController"
+  },
+  {
+    "title": "自定义转场动画",
+    "class": "CLCustomTransitionController"
   },
 ]

@@ -23,8 +23,8 @@ class CLWheelMenuView: UIView {
         var centerHole: CGFloat = 10
         var animationDuration: TimeInterval = 0.35
         var defaultOpen: Bool = true
-        var closeImage: UIImage = #imageLiteral(resourceName: "close")
-        var openImage: UIImage = #imageLiteral(resourceName: "menu")
+        var closeImage: UIImage = UIImage(named: "smile")!
+        var openImage: UIImage = UIImage(named: "heart")!
     }
     weak var dataSource: CLWheelMenuViewDataSource?
     weak var delegate: CLWheelMenuViewDelegate?

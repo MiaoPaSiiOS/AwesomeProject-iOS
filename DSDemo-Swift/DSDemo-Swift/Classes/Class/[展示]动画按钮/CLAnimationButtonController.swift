@@ -15,7 +15,7 @@ class CLAnimationButtonController: CLController {
         let starButton = CLAnimationButton(frame: CGRect(x: (view.bounds.maxX - 100) * 0.5, y: 160, width: 100, height: 100), image: UIImage(named: "star")!)
         starButton.addTarget(self, action: #selector(tappedButtonAction), for: .touchUpInside)
         view.addSubview(starButton)
-
+        starButton.duration = 5;
         let likeButton = CLAnimationButton(frame: .zero, image: UIImage(named: "like")!)
         likeButton.addTarget(self, action: #selector(tappedButtonAction), for: .touchUpInside)
         view.addSubview(likeButton)

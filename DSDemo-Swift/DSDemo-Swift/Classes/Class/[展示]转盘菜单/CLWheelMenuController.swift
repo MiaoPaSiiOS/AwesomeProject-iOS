@@ -12,27 +12,27 @@ class CLWheelMenuController: CLController {
     private lazy var items: [CLWheelMenuItem] = {
         var array = [CLWheelMenuItem]()
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "pig"), selectedImage: #imageLiteral(resourceName: "pig"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "Hamster"), selectedImage: #imageLiteral(resourceName: "Hamster"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "cat"), selectedImage: #imageLiteral(resourceName: "cat"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "fox"), selectedImage: #imageLiteral(resourceName: "fox"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "bear"), selectedImage: #imageLiteral(resourceName: "bear"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "orangeCat"), selectedImage: #imageLiteral(resourceName: "orangeCat"))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-2")!)
             array.append(item)
         }
         return array
@@ -40,27 +40,27 @@ class CLWheelMenuController: CLController {
     private lazy var items1: [CLWheelMenuItem] = {
         var array = [CLWheelMenuItem]()
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "pig"), selectedImage: #imageLiteral(resourceName: "pig"), backgroundColor: UIColor.red.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image: UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.red.withAlphaComponent(0.4))
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "Hamster"), selectedImage: #imageLiteral(resourceName: "Hamster"), backgroundColor: UIColor.cyan.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image: UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.cyan.withAlphaComponent(0.4))
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "cat"), selectedImage: #imageLiteral(resourceName: "cat"), backgroundColor: UIColor.blue.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image: UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.blue.withAlphaComponent(0.4))
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "fox"), selectedImage: #imageLiteral(resourceName: "fox"), backgroundColor: UIColor.orange.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image: UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.orange.withAlphaComponent(0.4))
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "bear"), selectedImage: #imageLiteral(resourceName: "bear"), backgroundColor: UIColor.green.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image:UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.green.withAlphaComponent(0.4))
             array.append(item)
         }
         do {
-            let item = CLWheelMenuItem(image: #imageLiteral(resourceName: "orangeCat"), selectedImage: #imageLiteral(resourceName: "orangeCat"), backgroundColor: UIColor.purple.withAlphaComponent(0.4))
+            let item = CLWheelMenuItem(image: UIImage(named: "Hexagon-1")!, selectedImage: UIImage(named: "Hexagon-1")!, backgroundColor: UIColor.purple.withAlphaComponent(0.4))
             array.append(item)
         }
         return array

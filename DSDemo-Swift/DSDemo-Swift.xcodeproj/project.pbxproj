@@ -204,6 +204,51 @@
 		AFFA11002ABA9812008D2CAD /* HexagonalPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FA2ABA9812008D2CAD /* HexagonalPattern.swift */; };
 		AFFA11012ABA9812008D2CAD /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FB2ABA9812008D2CAD /* HexagonalItemView.swift */; };
 		AFFA11022ABA9812008D2CAD /* CLiWatchAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FC2ABA9812008D2CAD /* CLiWatchAnimationController.swift */; };
+		AFFA111A2ABAA6B4008D2CAD /* CLPlayVideoitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11052ABAA6B4008D2CAD /* CLPlayVideoitem.swift */; };
+		AFFA111B2ABAA6B4008D2CAD /* 7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11072ABAA6B4008D2CAD /* 7.mp4 */; };
+		AFFA111C2ABAA6B4008D2CAD /* 6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11082ABAA6B4008D2CAD /* 6.mp4 */; };
+		AFFA111D2ABAA6B4008D2CAD /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11092ABAA6B4008D2CAD /* 4.mp4 */; };
+		AFFA111E2ABAA6B4008D2CAD /* 5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110A2ABAA6B4008D2CAD /* 5.mp4 */; };
+		AFFA111F2ABAA6B4008D2CAD /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110B2ABAA6B4008D2CAD /* 1.mp4 */; };
+		AFFA11202ABAA6B4008D2CAD /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110C2ABAA6B4008D2CAD /* 2.mp4 */; };
+		AFFA11212ABAA6B4008D2CAD /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110D2ABAA6B4008D2CAD /* 3.mp4 */; };
+		AFFA11222ABAA6B4008D2CAD /* 14.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110E2ABAA6B4008D2CAD /* 14.mp4 */; };
+		AFFA11232ABAA6B4008D2CAD /* 15.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA110F2ABAA6B4008D2CAD /* 15.mp4 */; };
+		AFFA11242ABAA6B4008D2CAD /* 11.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11102ABAA6B4008D2CAD /* 11.mp4 */; };
+		AFFA11252ABAA6B4008D2CAD /* 10.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11112ABAA6B4008D2CAD /* 10.mp4 */; };
+		AFFA11262ABAA6B4008D2CAD /* 12.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11122ABAA6B4008D2CAD /* 12.mp4 */; };
+		AFFA11272ABAA6B4008D2CAD /* 13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11132ABAA6B4008D2CAD /* 13.mp4 */; };
+		AFFA11282ABAA6B4008D2CAD /* 8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11142ABAA6B4008D2CAD /* 8.mp4 */; };
+		AFFA11292ABAA6B4008D2CAD /* 9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11152ABAA6B4008D2CAD /* 9.mp4 */; };
+		AFFA112A2ABAA6B4008D2CAD /* CLPlayVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11162ABAA6B4008D2CAD /* CLPlayVideoCell.swift */; };
+		AFFA112B2ABAA6B5008D2CAD /* CLPlayVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11172ABAA6B4008D2CAD /* CLPlayVideoController.swift */; };
+		AFFA112C2ABAA6B5008D2CAD /* CLVideoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11182ABAA6B4008D2CAD /* CLVideoOperation.swift */; };
+		AFFA112D2ABAA6B5008D2CAD /* CLVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11192ABAA6B4008D2CAD /* CLVideoPlayer.swift */; };
+		AFFA11432ABAA84E008D2CAD /* CLGifOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA112F2ABAA84E008D2CAD /* CLGifOperation.swift */; };
+		AFFA11442ABAA84E008D2CAD /* CLPlayGifItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11302ABAA84E008D2CAD /* CLPlayGifItem.swift */; };
+		AFFA11452ABAA84E008D2CAD /* CLPlayGifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11312ABAA84E008D2CAD /* CLPlayGifCell.swift */; };
+		AFFA11462ABAA84E008D2CAD /* CLGifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11322ABAA84E008D2CAD /* CLGifPlayer.swift */; };
+		AFFA11472ABAA84E008D2CAD /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11342ABAA84E008D2CAD /* 4.gif */; };
+		AFFA11482ABAA84E008D2CAD /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11352ABAA84E008D2CAD /* 5.gif */; };
+		AFFA11492ABAA84E008D2CAD /* 7.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11362ABAA84E008D2CAD /* 7.gif */; };
+		AFFA114A2ABAA84E008D2CAD /* 6.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11372ABAA84E008D2CAD /* 6.gif */; };
+		AFFA114B2ABAA84E008D2CAD /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11382ABAA84E008D2CAD /* 2.gif */; };
+		AFFA114C2ABAA84E008D2CAD /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11392ABAA84E008D2CAD /* 3.gif */; };
+		AFFA114D2ABAA84E008D2CAD /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113A2ABAA84E008D2CAD /* 1.gif */; };
+		AFFA114E2ABAA84E008D2CAD /* 8.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113B2ABAA84E008D2CAD /* 8.gif */; };
+		AFFA114F2ABAA84E008D2CAD /* 9.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113C2ABAA84E008D2CAD /* 9.gif */; };
+		AFFA11502ABAA84E008D2CAD /* 14.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113D2ABAA84E008D2CAD /* 14.gif */; };
+		AFFA11512ABAA84E008D2CAD /* 12.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113E2ABAA84E008D2CAD /* 12.gif */; };
+		AFFA11522ABAA84E008D2CAD /* 13.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA113F2ABAA84E008D2CAD /* 13.gif */; };
+		AFFA11532ABAA84E008D2CAD /* 11.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11402ABAA84E008D2CAD /* 11.gif */; };
+		AFFA11542ABAA84E008D2CAD /* 10.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11412ABAA84E008D2CAD /* 10.gif */; };
+		AFFA11552ABAA84E008D2CAD /* CLPlayGifController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11422ABAA84E008D2CAD /* CLPlayGifController.swift */; };
+		AFFA115F2ABABC97008D2CAD /* CLScrollComputingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11572ABABC97008D2CAD /* CLScrollComputingValue.swift */; };
+		AFFA11602ABABC97008D2CAD /* CLScrollAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11582ABABC97008D2CAD /* CLScrollAnimationController.swift */; };
+		AFFA11612ABABC97008D2CAD /* CLWheelMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA115A2ABABC97008D2CAD /* CLWheelMenuItem.swift */; };
+		AFFA11622ABABC97008D2CAD /* CLWheelMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA115B2ABABC97008D2CAD /* CLWheelMenuController.swift */; };
+		AFFA11632ABABC97008D2CAD /* CLWheelMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA115D2ABABC97008D2CAD /* CLWheelMenuCell.swift */; };
+		AFFA11642ABABC97008D2CAD /* CLWheelMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA115E2ABABC97008D2CAD /* CLWheelMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +456,51 @@
 		AFFA10FA2ABA9812008D2CAD /* HexagonalPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalPattern.swift; sourceTree = "<group>"; };
 		AFFA10FB2ABA9812008D2CAD /* HexagonalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalItemView.swift; sourceTree = "<group>"; };
 		AFFA10FC2ABA9812008D2CAD /* CLiWatchAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLiWatchAnimationController.swift; sourceTree = "<group>"; };
+		AFFA11052ABAA6B4008D2CAD /* CLPlayVideoitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayVideoitem.swift; sourceTree = "<group>"; };
+		AFFA11072ABAA6B4008D2CAD /* 7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.mp4; sourceTree = "<group>"; };
+		AFFA11082ABAA6B4008D2CAD /* 6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.mp4; sourceTree = "<group>"; };
+		AFFA11092ABAA6B4008D2CAD /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.mp4; sourceTree = "<group>"; };
+		AFFA110A2ABAA6B4008D2CAD /* 5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.mp4; sourceTree = "<group>"; };
+		AFFA110B2ABAA6B4008D2CAD /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		AFFA110C2ABAA6B4008D2CAD /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		AFFA110D2ABAA6B4008D2CAD /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.mp4; sourceTree = "<group>"; };
+		AFFA110E2ABAA6B4008D2CAD /* 14.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 14.mp4; sourceTree = "<group>"; };
+		AFFA110F2ABAA6B4008D2CAD /* 15.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 15.mp4; sourceTree = "<group>"; };
+		AFFA11102ABAA6B4008D2CAD /* 11.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11.mp4; sourceTree = "<group>"; };
+		AFFA11112ABAA6B4008D2CAD /* 10.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.mp4; sourceTree = "<group>"; };
+		AFFA11122ABAA6B4008D2CAD /* 12.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12.mp4; sourceTree = "<group>"; };
+		AFFA11132ABAA6B4008D2CAD /* 13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 13.mp4; sourceTree = "<group>"; };
+		AFFA11142ABAA6B4008D2CAD /* 8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.mp4; sourceTree = "<group>"; };
+		AFFA11152ABAA6B4008D2CAD /* 9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.mp4; sourceTree = "<group>"; };
+		AFFA11162ABAA6B4008D2CAD /* CLPlayVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayVideoCell.swift; sourceTree = "<group>"; };
+		AFFA11172ABAA6B4008D2CAD /* CLPlayVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayVideoController.swift; sourceTree = "<group>"; };
+		AFFA11182ABAA6B4008D2CAD /* CLVideoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVideoOperation.swift; sourceTree = "<group>"; };
+		AFFA11192ABAA6B4008D2CAD /* CLVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVideoPlayer.swift; sourceTree = "<group>"; };
+		AFFA112F2ABAA84E008D2CAD /* CLGifOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGifOperation.swift; sourceTree = "<group>"; };
+		AFFA11302ABAA84E008D2CAD /* CLPlayGifItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayGifItem.swift; sourceTree = "<group>"; };
+		AFFA11312ABAA84E008D2CAD /* CLPlayGifCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayGifCell.swift; sourceTree = "<group>"; };
+		AFFA11322ABAA84E008D2CAD /* CLGifPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGifPlayer.swift; sourceTree = "<group>"; };
+		AFFA11342ABAA84E008D2CAD /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
+		AFFA11352ABAA84E008D2CAD /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
+		AFFA11362ABAA84E008D2CAD /* 7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7.gif; sourceTree = "<group>"; };
+		AFFA11372ABAA84E008D2CAD /* 6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 6.gif; sourceTree = "<group>"; };
+		AFFA11382ABAA84E008D2CAD /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		AFFA11392ABAA84E008D2CAD /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
+		AFFA113A2ABAA84E008D2CAD /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		AFFA113B2ABAA84E008D2CAD /* 8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8.gif; sourceTree = "<group>"; };
+		AFFA113C2ABAA84E008D2CAD /* 9.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9.gif; sourceTree = "<group>"; };
+		AFFA113D2ABAA84E008D2CAD /* 14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 14.gif; sourceTree = "<group>"; };
+		AFFA113E2ABAA84E008D2CAD /* 12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 12.gif; sourceTree = "<group>"; };
+		AFFA113F2ABAA84E008D2CAD /* 13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13.gif; sourceTree = "<group>"; };
+		AFFA11402ABAA84E008D2CAD /* 11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11.gif; sourceTree = "<group>"; };
+		AFFA11412ABAA84E008D2CAD /* 10.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10.gif; sourceTree = "<group>"; };
+		AFFA11422ABAA84E008D2CAD /* CLPlayGifController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPlayGifController.swift; sourceTree = "<group>"; };
+		AFFA11572ABABC97008D2CAD /* CLScrollComputingValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLScrollComputingValue.swift; sourceTree = "<group>"; };
+		AFFA11582ABABC97008D2CAD /* CLScrollAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLScrollAnimationController.swift; sourceTree = "<group>"; };
+		AFFA115A2ABABC97008D2CAD /* CLWheelMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWheelMenuItem.swift; sourceTree = "<group>"; };
+		AFFA115B2ABABC97008D2CAD /* CLWheelMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWheelMenuController.swift; sourceTree = "<group>"; };
+		AFFA115D2ABABC97008D2CAD /* CLWheelMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWheelMenuCell.swift; sourceTree = "<group>"; };
+		AFFA115E2ABABC97008D2CAD /* CLWheelMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWheelMenuView.swift; sourceTree = "<group>"; };
 		D66BCA6BB96EDD03E3981907 /* Pods-DSDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -656,26 +746,30 @@
 		AFFA0CDC2ABA7E82008D2CAD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA10662ABA8672008D2CAD /* [展示]抽屉效果 */,
+				AFFA0FE12ABA8323008D2CAD /* [展示]动画按钮 */,
+				AFFA0FE52ABA8323008D2CAD /* [展示]动画渐变 */,
 				AFFA0FDB2ABA8323008D2CAD /* [展示]断点续传 */,
+				AFFA105B2ABA8672008D2CAD /* [展示]翻转动画 */,
 				AFFA10D72ABA923F008D2CAD /* [展示]蜂窝布局 */,
+				AFFA0FEB2ABA8324008D2CAD /* [展示]广播轮播 */,
 				AFFA10932ABA8724008D2CAD /* [展示]汉字转拼音 */,
+				AFFA11562ABABC97008D2CAD /* [展示]滑动动画 */,
 				AFFA10912ABA8724008D2CAD /* [展示]灰度图 */,
 				AFFA10042ABA834F008D2CAD /* [展示]聊天框架 */,
+				AFFA105E2ABA8672008D2CAD /* [展示]跑马灯 */,
 				AFFA0FD52ABA80A6008D2CAD /* [展示]切换语言 */,
 				AFFA10BF2ABA9133008D2CAD /* [展示]三级联动+模糊搜索 */,
 				AFFA0FE72ABA8323008D2CAD /* [展示]修改字号 */,
 				AFFA10792ABA8723008D2CAD /* [展示]夜间模式 */,
+				AFFA10AB2ABA8961008D2CAD /* [展示]柱状图 */,
+				AFFA11592ABABC97008D2CAD /* [展示]转盘菜单 */,
 				AFFA10F52ABA9812008D2CAD /* [展示]iWatch动画 */,
 				AFFA10B52ABA8F84008D2CAD /* [展示]UILabel截断 */,
+				AFFA112E2ABAA84E008D2CAD /* [展示]UITableView 播放Gif */,
+				AFFA11042ABAA6B4008D2CAD /* [展示]UITableView 多视频播放 */,
 				AFFA0E192ABA7E85008D2CAD /* Base */,
-				AFFA0FE52ABA8323008D2CAD /* CLAnimatedGradientController */,
-				AFFA0FE12ABA8323008D2CAD /* CLAnimationButtonController */,
-				AFFA0FEB2ABA8324008D2CAD /* CLBroadcastViewController */,
 				AFFA0F802ABA7FE6008D2CAD /* CLChatContactController */,
-				AFFA10662ABA8672008D2CAD /* CLDrawerController */,
-				AFFA105E2ABA8672008D2CAD /* CLDrawMarqueeController */,
-				AFFA105B2ABA8672008D2CAD /* CLFlipController */,
-				AFFA10AB2ABA8961008D2CAD /* CLHistogramConroller */,
 				AFFA0E0D2ABA7E85008D2CAD /* CLHomePageController */,
 				AFFA0F862ABA8010008D2CAD /* CLMealController */,
 				AFFA0F892ABA801F008D2CAD /* CLMeController */,
@@ -975,13 +1069,13 @@
 			path = "[展示]断点续传";
 			sourceTree = "<group>";
 		};
-		AFFA0FE12ABA8323008D2CAD /* CLAnimationButtonController */ = {
+		AFFA0FE12ABA8323008D2CAD /* [展示]动画按钮 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FE22ABA8323008D2CAD /* CLAnimationButton */,
 				AFFA0FE42ABA8323008D2CAD /* CLAnimationButtonController.swift */,
 			);
-			path = CLAnimationButtonController;
+			path = "[展示]动画按钮";
 			sourceTree = "<group>";
 		};
 		AFFA0FE22ABA8323008D2CAD /* CLAnimationButton */ = {
@@ -992,12 +1086,12 @@
 			path = CLAnimationButton;
 			sourceTree = "<group>";
 		};
-		AFFA0FE52ABA8323008D2CAD /* CLAnimatedGradientController */ = {
+		AFFA0FE52ABA8323008D2CAD /* [展示]动画渐变 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FE62ABA8323008D2CAD /* CLAnimatedGradientController.swift */,
 			);
-			path = CLAnimatedGradientController;
+			path = "[展示]动画渐变";
 			sourceTree = "<group>";
 		};
 		AFFA0FE72ABA8323008D2CAD /* [展示]修改字号 */ = {
@@ -1017,14 +1111,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AFFA0FEB2ABA8324008D2CAD /* CLBroadcastViewController */ = {
+		AFFA0FEB2ABA8324008D2CAD /* [展示]广播轮播 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FEC2ABA8324008D2CAD /* CLInfiniteView */,
 				AFFA0FF02ABA8324008D2CAD /* CLBroadcastViewController.swift */,
 				AFFA0FF12ABA8324008D2CAD /* CLCarouselView */,
 			);
-			path = CLBroadcastViewController;
+			path = "[展示]广播轮播";
 			sourceTree = "<group>";
 		};
 		AFFA0FEC2ABA8324008D2CAD /* CLInfiniteView */ = {
@@ -1232,23 +1326,23 @@
 			path = Item;
 			sourceTree = "<group>";
 		};
-		AFFA105B2ABA8672008D2CAD /* CLFlipController */ = {
+		AFFA105B2ABA8672008D2CAD /* [展示]翻转动画 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA105C2ABA8672008D2CAD /* CLFlipView.swift */,
 				AFFA105D2ABA8672008D2CAD /* CLFlipController.swift */,
 			);
-			path = CLFlipController;
+			path = "[展示]翻转动画";
 			sourceTree = "<group>";
 		};
-		AFFA105E2ABA8672008D2CAD /* CLDrawMarqueeController */ = {
+		AFFA105E2ABA8672008D2CAD /* [展示]跑马灯 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA105F2ABA8672008D2CAD /* CLDrawMarqueeController.swift */,
 				AFFA10602ABA8672008D2CAD /* CLMarqueeCollectionView */,
 				AFFA10642ABA8672008D2CAD /* CLDrawMarqueeView */,
 			);
-			path = CLDrawMarqueeController;
+			path = "[展示]跑马灯";
 			sourceTree = "<group>";
 		};
 		AFFA10602ABA8672008D2CAD /* CLMarqueeCollectionView */ = {
@@ -1269,14 +1363,14 @@
 			path = CLDrawMarqueeView;
 			sourceTree = "<group>";
 		};
-		AFFA10662ABA8672008D2CAD /* CLDrawerController */ = {
+		AFFA10662ABA8672008D2CAD /* [展示]抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA10672ABA8672008D2CAD /* CLDrawerTestController.swift */,
 				AFFA10682ABA8672008D2CAD /* CLDrawerController.swift */,
 				AFFA10692ABA8672008D2CAD /* CLDrawerTransition */,
 			);
-			path = CLDrawerController;
+			path = "[展示]抽屉效果";
 			sourceTree = "<group>";
 		};
 		AFFA10692ABA8672008D2CAD /* CLDrawerTransition */ = {
@@ -1323,13 +1417,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AFFA10AB2ABA8961008D2CAD /* CLHistogramConroller */ = {
+		AFFA10AB2ABA8961008D2CAD /* [展示]柱状图 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA10AC2ABA8961008D2CAD /* CLHistogramView */,
 				AFFA10B02ABA8961008D2CAD /* CLHistogramConroller.swift */,
 			);
-			path = CLHistogramConroller;
+			path = "[展示]柱状图";
 			sourceTree = "<group>";
 		};
 		AFFA10AC2ABA8961008D2CAD /* CLHistogramView */ = {
@@ -1509,6 +1603,103 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		AFFA11042ABAA6B4008D2CAD /* [展示]UITableView 多视频播放 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11162ABAA6B4008D2CAD /* CLPlayVideoCell.swift */,
+				AFFA11172ABAA6B4008D2CAD /* CLPlayVideoController.swift */,
+				AFFA11052ABAA6B4008D2CAD /* CLPlayVideoitem.swift */,
+				AFFA11182ABAA6B4008D2CAD /* CLVideoOperation.swift */,
+				AFFA11192ABAA6B4008D2CAD /* CLVideoPlayer.swift */,
+				AFFA11062ABAA6B4008D2CAD /* video */,
+			);
+			path = "[展示]UITableView 多视频播放";
+			sourceTree = "<group>";
+		};
+		AFFA11062ABAA6B4008D2CAD /* video */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11072ABAA6B4008D2CAD /* 7.mp4 */,
+				AFFA11082ABAA6B4008D2CAD /* 6.mp4 */,
+				AFFA11092ABAA6B4008D2CAD /* 4.mp4 */,
+				AFFA110A2ABAA6B4008D2CAD /* 5.mp4 */,
+				AFFA110B2ABAA6B4008D2CAD /* 1.mp4 */,
+				AFFA110C2ABAA6B4008D2CAD /* 2.mp4 */,
+				AFFA110D2ABAA6B4008D2CAD /* 3.mp4 */,
+				AFFA110E2ABAA6B4008D2CAD /* 14.mp4 */,
+				AFFA110F2ABAA6B4008D2CAD /* 15.mp4 */,
+				AFFA11102ABAA6B4008D2CAD /* 11.mp4 */,
+				AFFA11112ABAA6B4008D2CAD /* 10.mp4 */,
+				AFFA11122ABAA6B4008D2CAD /* 12.mp4 */,
+				AFFA11132ABAA6B4008D2CAD /* 13.mp4 */,
+				AFFA11142ABAA6B4008D2CAD /* 8.mp4 */,
+				AFFA11152ABAA6B4008D2CAD /* 9.mp4 */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		AFFA112E2ABAA84E008D2CAD /* [展示]UITableView 播放Gif */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA112F2ABAA84E008D2CAD /* CLGifOperation.swift */,
+				AFFA11302ABAA84E008D2CAD /* CLPlayGifItem.swift */,
+				AFFA11312ABAA84E008D2CAD /* CLPlayGifCell.swift */,
+				AFFA11322ABAA84E008D2CAD /* CLGifPlayer.swift */,
+				AFFA11332ABAA84E008D2CAD /* gif */,
+				AFFA11422ABAA84E008D2CAD /* CLPlayGifController.swift */,
+			);
+			path = "[展示]UITableView 播放Gif";
+			sourceTree = "<group>";
+		};
+		AFFA11332ABAA84E008D2CAD /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11342ABAA84E008D2CAD /* 4.gif */,
+				AFFA11352ABAA84E008D2CAD /* 5.gif */,
+				AFFA11362ABAA84E008D2CAD /* 7.gif */,
+				AFFA11372ABAA84E008D2CAD /* 6.gif */,
+				AFFA11382ABAA84E008D2CAD /* 2.gif */,
+				AFFA11392ABAA84E008D2CAD /* 3.gif */,
+				AFFA113A2ABAA84E008D2CAD /* 1.gif */,
+				AFFA113B2ABAA84E008D2CAD /* 8.gif */,
+				AFFA113C2ABAA84E008D2CAD /* 9.gif */,
+				AFFA113D2ABAA84E008D2CAD /* 14.gif */,
+				AFFA113E2ABAA84E008D2CAD /* 12.gif */,
+				AFFA113F2ABAA84E008D2CAD /* 13.gif */,
+				AFFA11402ABAA84E008D2CAD /* 11.gif */,
+				AFFA11412ABAA84E008D2CAD /* 10.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		AFFA11562ABABC97008D2CAD /* [展示]滑动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11572ABABC97008D2CAD /* CLScrollComputingValue.swift */,
+				AFFA11582ABABC97008D2CAD /* CLScrollAnimationController.swift */,
+			);
+			path = "[展示]滑动动画";
+			sourceTree = "<group>";
+		};
+		AFFA11592ABABC97008D2CAD /* [展示]转盘菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA115A2ABABC97008D2CAD /* CLWheelMenuItem.swift */,
+				AFFA115B2ABABC97008D2CAD /* CLWheelMenuController.swift */,
+				AFFA115C2ABABC97008D2CAD /* CLWheelMenuView */,
+			);
+			path = "[展示]转盘菜单";
+			sourceTree = "<group>";
+		};
+		AFFA115C2ABABC97008D2CAD /* CLWheelMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA115D2ABABC97008D2CAD /* CLWheelMenuCell.swift */,
+				AFFA115E2ABABC97008D2CAD /* CLWheelMenuView.swift */,
+			);
+			path = CLWheelMenuView;
+			sourceTree = "<group>";
+		};
 		C8473876A766088FE8D17C16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1580,21 +1771,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFA11532ABAA84E008D2CAD /* 11.gif in Resources */,
+				AFFA11482ABAA84E008D2CAD /* 5.gif in Resources */,
+				AFFA11202ABAA6B4008D2CAD /* 2.mp4 in Resources */,
+				AFFA114F2ABAA84E008D2CAD /* 9.gif in Resources */,
+				AFFA111F2ABAA6B4008D2CAD /* 1.mp4 in Resources */,
+				AFFA114B2ABAA84E008D2CAD /* 2.gif in Resources */,
+				AFFA111C2ABAA6B4008D2CAD /* 6.mp4 in Resources */,
 				AFFA0CD92AB9F798008D2CAD /* hanyupinyin in Resources */,
+				AFFA11272ABAA6B4008D2CAD /* 13.mp4 in Resources */,
 				AFFA103B2ABA8350008D2CAD /* send_timeout.json in Resources */,
 				AFFA09532AB9A25E008D2CAD /* LaunchScreen.storyboard in Resources */,
 				AFFA0CD82AB9F798008D2CAD /* sentencepinyin.txt in Resources */,
+				AFFA11512ABAA84E008D2CAD /* 12.gif in Resources */,
+				AFFA11252ABAA6B4008D2CAD /* 10.mp4 in Resources */,
+				AFFA11262ABAA6B4008D2CAD /* 12.mp4 in Resources */,
 				AFFA0FBB2ABA805F008D2CAD /* food.json in Resources */,
 				AFFA10D02ABA9133008D2CAD /* CLIngredients.json in Resources */,
 				AFFA0FD02ABA805F008D2CAD /* loading.json in Resources */,
 				AFFA103A2ABA8350008D2CAD /* recoredWave_dk.json in Resources */,
+				AFFA114C2ABAA84E008D2CAD /* 3.gif in Resources */,
+				AFFA11502ABAA84E008D2CAD /* 14.gif in Resources */,
+				AFFA111E2ABAA6B4008D2CAD /* 5.mp4 in Resources */,
+				AFFA11292ABAA6B4008D2CAD /* 9.mp4 in Resources */,
 				AFFA0CDA2AB9F798008D2CAD /* sentencepinyin in Resources */,
+				AFFA11242ABAA6B4008D2CAD /* 11.mp4 in Resources */,
+				AFFA11542ABAA84E008D2CAD /* 10.gif in Resources */,
+				AFFA114E2ABAA84E008D2CAD /* 8.gif in Resources */,
 				AFFA103D2ABA8350008D2CAD /* data-right.json in Resources */,
+				AFFA11522ABAA84E008D2CAD /* 13.gif in Resources */,
+				AFFA11492ABAA84E008D2CAD /* 7.gif in Resources */,
+				AFFA11282ABAA6B4008D2CAD /* 8.mp4 in Resources */,
 				AFFA0CD72AB9F798008D2CAD /* hanyupinyin.txt in Resources */,
+				AFFA11232ABAA6B4008D2CAD /* 15.mp4 in Resources */,
 				AFFA09502AB9A25E008D2CAD /* Assets.xcassets in Resources */,
 				AFFA10AA2ABA8724008D2CAD /* CLHanziPinyinController.xib in Resources */,
 				AFFA103C2ABA8350008D2CAD /* data-left.json in Resources */,
+				AFFA11222ABAA6B4008D2CAD /* 14.mp4 in Resources */,
+				AFFA111D2ABAA6B4008D2CAD /* 4.mp4 in Resources */,
 				AFFA0F092ABA7E88008D2CAD /* HomePage.json in Resources */,
+				AFFA114D2ABAA84E008D2CAD /* 1.gif in Resources */,
+				AFFA111B2ABAA6B4008D2CAD /* 7.mp4 in Resources */,
+				AFFA11472ABAA84E008D2CAD /* 4.gif in Resources */,
+				AFFA11212ABAA6B4008D2CAD /* 3.mp4 in Resources */,
+				AFFA114A2ABAA84E008D2CAD /* 6.gif in Resources */,
 				AFFA094E2AB9A25C008D2CAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1648,6 +1868,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFA112A2ABAA6B4008D2CAD /* CLPlayVideoCell.swift in Sources */,
 				AFFA0BD82AB9F796008D2CAD /* Result+Extension.swift in Sources */,
 				AFFA10D22ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift in Sources */,
 				AFFA10CF2ABA9133008D2CAD /* CLIngredients.swift in Sources */,
@@ -1655,6 +1876,7 @@
 				AFFA10762ABA8673008D2CAD /* CLDrawerTransitionDelegate.swift in Sources */,
 				AFFA10FD2ABA9812008D2CAD /* HexagonalItemViewAppearance.swift in Sources */,
 				AFFA10782ABA8673008D2CAD /* CLDrawerPresentationController.swift in Sources */,
+				AFFA112C2ABAA6B5008D2CAD /* CLVideoOperation.swift in Sources */,
 				AFFA10B32ABA8961008D2CAD /* CLHistogramIndexView.swift in Sources */,
 				AFFA10EB2ABA923F008D2CAD /* CLHoneycombLayout.swift in Sources */,
 				AFFA103E2ABA8350008D2CAD /* CLIntrinsicTableView.swift in Sources */,
@@ -1664,6 +1886,7 @@
 				AFFA0BC82AB9F796008D2CAD /* CLCalculateHepler.swift in Sources */,
 				AFFA0BD62AB9F796008D2CAD /* String+Extension.swift in Sources */,
 				AFFA11012ABA9812008D2CAD /* HexagonalItemView.swift in Sources */,
+				AFFA11602ABABC97008D2CAD /* CLScrollAnimationController.swift in Sources */,
 				AFFA10EA2ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift in Sources */,
 				AFFA0BC92AB9F796008D2CAD /* NSAttributedString+Extension.swift in Sources */,
 				AFFA10512ABA8350008D2CAD /* CLChatImageProgressView.swift in Sources */,
@@ -1679,8 +1902,11 @@
 				AFFA0BD32AB9F796008D2CAD /* NSDecimalNumber+Extension.swift in Sources */,
 				AFFA10412ABA8350008D2CAD /* CLChatRecordTipsView.swift in Sources */,
 				AFFA0BD02AB9F796008D2CAD /* UIView+Extension.swift in Sources */,
+				AFFA111A2ABAA6B4008D2CAD /* CLPlayVideoitem.swift in Sources */,
 				AFFA0BD72AB9F796008D2CAD /* NSMutableAttributedString+Extension.swift in Sources */,
+				AFFA11642ABABC97008D2CAD /* CLWheelMenuView.swift in Sources */,
 				AFFA10542ABA8351008D2CAD /* CLChatCell.swift in Sources */,
+				AFFA11632ABABC97008D2CAD /* CLWheelMenuCell.swift in Sources */,
 				AFFA0BE12AB9F797008D2CAD /* CLGCDTimer.swift in Sources */,
 				AFFA10752ABA8673008D2CAD /* CLDrawerController.swift in Sources */,
 				AFFA0BE02AB9F796008D2CAD /* Array+Extension.swift in Sources */,
@@ -1697,6 +1923,8 @@
 				AFFA0FF82ABA8324008D2CAD /* CLBreakPointResumeCell.swift in Sources */,
 				AFFA10F02ABA923F008D2CAD /* CLHoneycombCell.swift in Sources */,
 				AFFA0FCC2ABA805F008D2CAD /* CLYearMonthDayDataPickerView.swift in Sources */,
+				AFFA11622ABABC97008D2CAD /* CLWheelMenuController.swift in Sources */,
+				AFFA11442ABAA84E008D2CAD /* CLPlayGifItem.swift in Sources */,
 				AFFA10592ABA8351008D2CAD /* CLChatVoiceItem.swift in Sources */,
 				AFFA0BC62AB9F796008D2CAD /* Regex.swift in Sources */,
 				AFFA0FF92ABA8324008D2CAD /* CLAnimationButton.swift in Sources */,
@@ -1742,6 +1970,8 @@
 				AFFA0BC72AB9F796008D2CAD /* CLUserDefaultStorage.swift in Sources */,
 				AFFA0BC52AB9F796008D2CAD /* CLConst.swift in Sources */,
 				AFFA0FFE2ABA8324008D2CAD /* CLInfiniteView.swift in Sources */,
+				AFFA11432ABAA84E008D2CAD /* CLGifOperation.swift in Sources */,
+				AFFA11452ABAA84E008D2CAD /* CLPlayGifCell.swift in Sources */,
 				AFFA0FC92ABA805F008D2CAD /* CLHourMinuteDataPickerView.swift in Sources */,
 				AFFA0FCA2ABA805F008D2CAD /* CLDurationDataPickerView.swift in Sources */,
 				AFFA10522ABA8350008D2CAD /* CLChatImageCell.swift in Sources */,
@@ -1766,6 +1996,7 @@
 				AFFA0FC82ABA805F008D2CAD /* CLPopupDataPickerController.swift in Sources */,
 				AFFA0FF72ABA8324008D2CAD /* CLBreakPointResumeController.swift in Sources */,
 				AFFA0FF52ABA8324008D2CAD /* CLBreakPointResumeManager.swift in Sources */,
+				AFFA115F2ABABC97008D2CAD /* CLScrollComputingValue.swift in Sources */,
 				AFFA0FCD2ABA805F008D2CAD /* CLOnePickerView.swift in Sources */,
 				AFFA10D52ABA9133008D2CAD /* CLIngredientRightTitleHead.swift in Sources */,
 				AFFA0FC52ABA805F008D2CAD /* CLPopupMomentumController.swift in Sources */,
@@ -1788,14 +2019,17 @@
 				AFFA0BD92AB9F796008D2CAD /* Data+Extension.swift in Sources */,
 				AFFA0F082ABA7E88008D2CAD /* CLHomePageModel.swift in Sources */,
 				AFFA0CD52AB9F798008D2CAD /* CLRecorder.m in Sources */,
+				AFFA11462ABAA84E008D2CAD /* CLGifPlayer.swift in Sources */,
 				AFFA10F42ABA923F008D2CAD /* CLHoneycombScrollViewController.swift in Sources */,
 				AFFA0BD12AB9F796008D2CAD /* UIImage+Extension.swift in Sources */,
 				AFFA0F8B2ABA8020008D2CAD /* CLMeController.swift in Sources */,
+				AFFA11612ABABC97008D2CAD /* CLWheelMenuItem.swift in Sources */,
 				AFFA0F0D2ABA7E88008D2CAD /* CLTabBarController.swift in Sources */,
 				AFFA10722ABA8672008D2CAD /* CLMarqueeView.swift in Sources */,
 				AFFA10B12ABA8961008D2CAD /* CLHistogramView.swift in Sources */,
 				AFFA0FCE2ABA805F008D2CAD /* CLPopupOneInputController.swift in Sources */,
 				AFFA10A72ABA8724008D2CAD /* CLGrayscaleController.swift in Sources */,
+				AFFA112B2ABAA6B5008D2CAD /* CLPlayVideoController.swift in Sources */,
 				AFFA0BE42AB9F797008D2CAD /* CLCellItemProtocol.swift in Sources */,
 				AFFA10422ABA8350008D2CAD /* CLChatInputToolBar.swift in Sources */,
 				AFFA10A82ABA8724008D2CAD /* CLActivityButton.swift in Sources */,
@@ -1807,6 +2041,7 @@
 				AFFA0BCF2AB9F796008D2CAD /* UILabel+Extension.swift in Sources */,
 				AFFA11022ABA9812008D2CAD /* CLiWatchAnimationController.swift in Sources */,
 				AFFA0BCD2AB9F796008D2CAD /* Data+Gzip.swift in Sources */,
+				AFFA11552ABAA84E008D2CAD /* CLPlayGifController.swift in Sources */,
 				AFFA0FDA2ABA80A7008D2CAD /* CLChangeLanguageController.swift in Sources */,
 				AFFA10002ABA8324008D2CAD /* CLFlowLayout.swift in Sources */,
 				AFFA0BD52AB9F796008D2CAD /* AutoScale+Extension.swift in Sources */,
@@ -1821,6 +2056,7 @@
 				AFFA0F112ABA7E88008D2CAD /* CLController.swift in Sources */,
 				AFFA10F32ABA923F008D2CAD /* CLHoneycombContentView.swift in Sources */,
 				AFFA0FC12ABA805F008D2CAD /* CLFlopPrizeView.swift in Sources */,
+				AFFA112D2ABAA6B5008D2CAD /* CLVideoPlayer.swift in Sources */,
 				AFFA0FB92ABA805F008D2CAD /* CLPopupFoodPickerController.swift in Sources */,
 				AFFA0FCF2ABA805F008D2CAD /* CLPopupHudController.swift in Sources */,
 				AFFA0FC72ABA805F008D2CAD /* CLYearMonthDayHourMinuteDataPickerView.swift in Sources */,
