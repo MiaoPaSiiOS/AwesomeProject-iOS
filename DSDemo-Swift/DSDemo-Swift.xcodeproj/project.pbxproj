@@ -256,6 +256,29 @@
 		AFFA11732ABAD2FF008D2CAD /* CLTagsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA116C2ABAD2FF008D2CAD /* CLTagsItem.swift */; };
 		AFFA11742ABAD2FF008D2CAD /* CLTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA116D2ABAD2FF008D2CAD /* CLTagsView.swift */; };
 		AFFA11752ABAD2FF008D2CAD /* CLTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA116E2ABAD2FF008D2CAD /* CLTagsCell.swift */; };
+		AFFA11832ABAD935008D2CAD /* CLRecordVernierCaliperItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11782ABAD934008D2CAD /* CLRecordVernierCaliperItem.swift */; };
+		AFFA11842ABAD935008D2CAD /* CLRecordVernierCaliperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA117B2ABAD934008D2CAD /* CLRecordVernierCaliperCell.swift */; };
+		AFFA11852ABAD935008D2CAD /* CLVernierCaliperHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA117D2ABAD934008D2CAD /* CLVernierCaliperHeaderCell.swift */; };
+		AFFA11862ABAD935008D2CAD /* CLVernierCaliperMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA117E2ABAD935008D2CAD /* CLVernierCaliperMiddleCell.swift */; };
+		AFFA11872ABAD935008D2CAD /* CLIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA117F2ABAD935008D2CAD /* CLIndexView.swift */; };
+		AFFA11882ABAD935008D2CAD /* CLVernierCaliperFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11802ABAD935008D2CAD /* CLVernierCaliperFooterCell.swift */; };
+		AFFA11892ABAD935008D2CAD /* CLVernierCaliperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11812ABAD935008D2CAD /* CLVernierCaliperView.swift */; };
+		AFFA118A2ABAD935008D2CAD /* CLVernierCaliperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11822ABAD935008D2CAD /* CLVernierCaliperController.swift */; };
+		AFFA11942ABAD94D008D2CAD /* CLPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA118C2ABAD94C008D2CAD /* CLPasswordController.swift */; };
+		AFFA11952ABAD94D008D2CAD /* CLPasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA118D2ABAD94C008D2CAD /* CLPasswordInputView.swift */; };
+		AFFA11962ABAD94D008D2CAD /* CLRotateAnimationSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA118F2ABAD94D008D2CAD /* CLRotateAnimationSwiftController.swift */; };
+		AFFA11972ABAD94D008D2CAD /* CLSectorAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11912ABAD94D008D2CAD /* CLSectorAnimationView.swift */; };
+		AFFA11982ABAD94D008D2CAD /* CLRoundAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11922ABAD94D008D2CAD /* CLRoundAnimationView.swift */; };
+		AFFA11992ABAD94D008D2CAD /* CLRotateAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11932ABAD94D008D2CAD /* CLRotateAnimationView.swift */; };
+		AFFA11A12ABADCB7008D2CAD /* CLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA119C2ABADCB6008D2CAD /* CLTextView.swift */; };
+		AFFA11A22ABADCB7008D2CAD /* CLTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA119D2ABADCB6008D2CAD /* CLTextViewViewController.swift */; };
+		AFFA11A32ABADCB7008D2CAD /* CLWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA119F2ABADCB7008D2CAD /* CLWaveView.swift */; };
+		AFFA11A42ABADCB7008D2CAD /* CLWaveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11A02ABADCB7008D2CAD /* CLWaveController.swift */; };
+		AFFA11A92ABADD6B008D2CAD /* CLRotatingPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11A62ABADD6B008D2CAD /* CLRotatingPictureViewController.swift */; };
+		AFFA11AA2ABADD6B008D2CAD /* CLTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11A82ABADD6B008D2CAD /* CLTransitionViewController.swift */; };
+		AFFA11B32ABADE8E008D2CAD /* CLPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11AF2ABADE8E008D2CAD /* CLPopoverView.swift */; };
+		AFFA11B42ABADE8E008D2CAD /* CLPopoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11B02ABADE8E008D2CAD /* CLPopoverController.xib */; };
+		AFFA11B52ABADE8E008D2CAD /* CLPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11B12ABADE8E008D2CAD /* CLPopoverController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -515,6 +538,29 @@
 		AFFA116C2ABAD2FF008D2CAD /* CLTagsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTagsItem.swift; sourceTree = "<group>"; };
 		AFFA116D2ABAD2FF008D2CAD /* CLTagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTagsView.swift; sourceTree = "<group>"; };
 		AFFA116E2ABAD2FF008D2CAD /* CLTagsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTagsCell.swift; sourceTree = "<group>"; };
+		AFFA11782ABAD934008D2CAD /* CLRecordVernierCaliperItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRecordVernierCaliperItem.swift; sourceTree = "<group>"; };
+		AFFA117B2ABAD934008D2CAD /* CLRecordVernierCaliperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRecordVernierCaliperCell.swift; sourceTree = "<group>"; };
+		AFFA117D2ABAD934008D2CAD /* CLVernierCaliperHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVernierCaliperHeaderCell.swift; sourceTree = "<group>"; };
+		AFFA117E2ABAD935008D2CAD /* CLVernierCaliperMiddleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVernierCaliperMiddleCell.swift; sourceTree = "<group>"; };
+		AFFA117F2ABAD935008D2CAD /* CLIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIndexView.swift; sourceTree = "<group>"; };
+		AFFA11802ABAD935008D2CAD /* CLVernierCaliperFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVernierCaliperFooterCell.swift; sourceTree = "<group>"; };
+		AFFA11812ABAD935008D2CAD /* CLVernierCaliperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVernierCaliperView.swift; sourceTree = "<group>"; };
+		AFFA11822ABAD935008D2CAD /* CLVernierCaliperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLVernierCaliperController.swift; sourceTree = "<group>"; };
+		AFFA118C2ABAD94C008D2CAD /* CLPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPasswordController.swift; sourceTree = "<group>"; };
+		AFFA118D2ABAD94C008D2CAD /* CLPasswordInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPasswordInputView.swift; sourceTree = "<group>"; };
+		AFFA118F2ABAD94D008D2CAD /* CLRotateAnimationSwiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRotateAnimationSwiftController.swift; sourceTree = "<group>"; };
+		AFFA11912ABAD94D008D2CAD /* CLSectorAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLSectorAnimationView.swift; sourceTree = "<group>"; };
+		AFFA11922ABAD94D008D2CAD /* CLRoundAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRoundAnimationView.swift; sourceTree = "<group>"; };
+		AFFA11932ABAD94D008D2CAD /* CLRotateAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRotateAnimationView.swift; sourceTree = "<group>"; };
+		AFFA119C2ABADCB6008D2CAD /* CLTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTextView.swift; sourceTree = "<group>"; };
+		AFFA119D2ABADCB6008D2CAD /* CLTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTextViewViewController.swift; sourceTree = "<group>"; };
+		AFFA119F2ABADCB7008D2CAD /* CLWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaveView.swift; sourceTree = "<group>"; };
+		AFFA11A02ABADCB7008D2CAD /* CLWaveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaveController.swift; sourceTree = "<group>"; };
+		AFFA11A62ABADD6B008D2CAD /* CLRotatingPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRotatingPictureViewController.swift; sourceTree = "<group>"; };
+		AFFA11A82ABADD6B008D2CAD /* CLTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTransitionViewController.swift; sourceTree = "<group>"; };
+		AFFA11AF2ABADE8E008D2CAD /* CLPopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPopoverView.swift; sourceTree = "<group>"; };
+		AFFA11B02ABADE8E008D2CAD /* CLPopoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLPopoverController.xib; sourceTree = "<group>"; };
+		AFFA11B12ABADE8E008D2CAD /* CLPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPopoverController.swift; sourceTree = "<group>"; };
 		D66BCA6BB96EDD03E3981907 /* Pods-DSDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -760,7 +806,9 @@
 		AFFA0CDC2ABA7E82008D2CAD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA11AD2ABADE8E008D2CAD /* [展示]气泡弹框 */,
 				AFFA11692ABAD2FF008D2CAD /* [展示]标签动态排布 */,
+				AFFA119E2ABADCB7008D2CAD /* [展示]波浪视图 */,
 				AFFA10662ABA8672008D2CAD /* [展示]抽屉效果 */,
 				AFFA0FE12ABA8323008D2CAD /* [展示]动画按钮 */,
 				AFFA0FE52ABA8323008D2CAD /* [展示]动画渐变 */,
@@ -768,6 +816,7 @@
 				AFFA105B2ABA8672008D2CAD /* [展示]翻转动画 */,
 				AFFA10D72ABA923F008D2CAD /* [展示]蜂窝布局 */,
 				AFFA0FEB2ABA8324008D2CAD /* [展示]广播轮播 */,
+				AFFA11A72ABADD6B008D2CAD /* [展示]过渡动画 */,
 				AFFA10932ABA8724008D2CAD /* [展示]汉字转拼音 */,
 				AFFA11562ABABC97008D2CAD /* [展示]滑动动画 */,
 				AFFA10912ABA8724008D2CAD /* [展示]灰度图 */,
@@ -777,10 +826,15 @@
 				AFFA0FD52ABA80A6008D2CAD /* [展示]切换语言 */,
 				AFFA10BF2ABA9133008D2CAD /* [展示]三级联动+模糊搜索 */,
 				AFFA0FE72ABA8323008D2CAD /* [展示]修改字号 */,
+				AFFA11A52ABADD6B008D2CAD /* [展示]旋转图片 */,
 				AFFA10792ABA8723008D2CAD /* [展示]夜间模式 */,
+				AFFA11762ABAD934008D2CAD /* [展示]游标卡尺 */,
 				AFFA10AB2ABA8961008D2CAD /* [展示]柱状图 */,
 				AFFA11592ABABC97008D2CAD /* [展示]转盘菜单 */,
+				AFFA118E2ABAD94D008D2CAD /* [展示]转子动画 */,
 				AFFA0F8C2ABA805F008D2CAD /* [展示]自定义弹窗 */,
+				AFFA118B2ABAD94C008D2CAD /* [展示]自定义密码框 */,
+				AFFA119A2ABADCB6008D2CAD /* [展示]自定义输入框-限制字数 */,
 				AFFA10F52ABA9812008D2CAD /* [展示]iWatch动画 */,
 				AFFA10B52ABA8F84008D2CAD /* [展示]UILabel截断 */,
 				AFFA112E2ABAA84E008D2CAD /* [展示]UITableView 播放Gif */,
@@ -1745,6 +1799,141 @@
 			path = "[展示]标签动态排布";
 			sourceTree = "<group>";
 		};
+		AFFA11762ABAD934008D2CAD /* [展示]游标卡尺 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11772ABAD934008D2CAD /* Item */,
+				AFFA11792ABAD934008D2CAD /* View */,
+				AFFA11822ABAD935008D2CAD /* CLVernierCaliperController.swift */,
+			);
+			path = "[展示]游标卡尺";
+			sourceTree = "<group>";
+		};
+		AFFA11772ABAD934008D2CAD /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11782ABAD934008D2CAD /* CLRecordVernierCaliperItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		AFFA11792ABAD934008D2CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA117A2ABAD934008D2CAD /* Cell */,
+				AFFA117C2ABAD934008D2CAD /* CLVernierCaliperView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA117A2ABAD934008D2CAD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA117B2ABAD934008D2CAD /* CLRecordVernierCaliperCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AFFA117C2ABAD934008D2CAD /* CLVernierCaliperView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA117D2ABAD934008D2CAD /* CLVernierCaliperHeaderCell.swift */,
+				AFFA117E2ABAD935008D2CAD /* CLVernierCaliperMiddleCell.swift */,
+				AFFA117F2ABAD935008D2CAD /* CLIndexView.swift */,
+				AFFA11802ABAD935008D2CAD /* CLVernierCaliperFooterCell.swift */,
+				AFFA11812ABAD935008D2CAD /* CLVernierCaliperView.swift */,
+			);
+			path = CLVernierCaliperView;
+			sourceTree = "<group>";
+		};
+		AFFA118B2ABAD94C008D2CAD /* [展示]自定义密码框 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA118C2ABAD94C008D2CAD /* CLPasswordController.swift */,
+				AFFA118D2ABAD94C008D2CAD /* CLPasswordInputView.swift */,
+			);
+			path = "[展示]自定义密码框";
+			sourceTree = "<group>";
+		};
+		AFFA118E2ABAD94D008D2CAD /* [展示]转子动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA118F2ABAD94D008D2CAD /* CLRotateAnimationSwiftController.swift */,
+				AFFA11902ABAD94D008D2CAD /* View */,
+			);
+			path = "[展示]转子动画";
+			sourceTree = "<group>";
+		};
+		AFFA11902ABAD94D008D2CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11912ABAD94D008D2CAD /* CLSectorAnimationView.swift */,
+				AFFA11922ABAD94D008D2CAD /* CLRoundAnimationView.swift */,
+				AFFA11932ABAD94D008D2CAD /* CLRotateAnimationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA119A2ABADCB6008D2CAD /* [展示]自定义输入框-限制字数 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA119B2ABADCB6008D2CAD /* CLTextView */,
+				AFFA119D2ABADCB6008D2CAD /* CLTextViewViewController.swift */,
+			);
+			path = "[展示]自定义输入框-限制字数";
+			sourceTree = "<group>";
+		};
+		AFFA119B2ABADCB6008D2CAD /* CLTextView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA119C2ABADCB6008D2CAD /* CLTextView.swift */,
+			);
+			path = CLTextView;
+			sourceTree = "<group>";
+		};
+		AFFA119E2ABADCB7008D2CAD /* [展示]波浪视图 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA119F2ABADCB7008D2CAD /* CLWaveView.swift */,
+				AFFA11A02ABADCB7008D2CAD /* CLWaveController.swift */,
+			);
+			path = "[展示]波浪视图";
+			sourceTree = "<group>";
+		};
+		AFFA11A52ABADD6B008D2CAD /* [展示]旋转图片 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11A62ABADD6B008D2CAD /* CLRotatingPictureViewController.swift */,
+			);
+			path = "[展示]旋转图片";
+			sourceTree = "<group>";
+		};
+		AFFA11A72ABADD6B008D2CAD /* [展示]过渡动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11A82ABADD6B008D2CAD /* CLTransitionViewController.swift */,
+			);
+			path = "[展示]过渡动画";
+			sourceTree = "<group>";
+		};
+		AFFA11AD2ABADE8E008D2CAD /* [展示]气泡弹框 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11AE2ABADE8E008D2CAD /* CLPopoverView */,
+				AFFA11B02ABADE8E008D2CAD /* CLPopoverController.xib */,
+				AFFA11B12ABADE8E008D2CAD /* CLPopoverController.swift */,
+			);
+			path = "[展示]气泡弹框";
+			sourceTree = "<group>";
+		};
+		AFFA11AE2ABADE8E008D2CAD /* CLPopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11AF2ABADE8E008D2CAD /* CLPopoverView.swift */,
+			);
+			path = CLPopoverView;
+			sourceTree = "<group>";
+		};
 		C8473876A766088FE8D17C16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1860,6 +2049,7 @@
 				AFFA11472ABAA84E008D2CAD /* 4.gif in Resources */,
 				AFFA11212ABAA6B4008D2CAD /* 3.mp4 in Resources */,
 				AFFA114A2ABAA84E008D2CAD /* 6.gif in Resources */,
+				AFFA11B42ABADE8E008D2CAD /* CLPopoverController.xib in Resources */,
 				AFFA094E2AB9A25C008D2CAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1916,6 +2106,7 @@
 				AFFA112A2ABAA6B4008D2CAD /* CLPlayVideoCell.swift in Sources */,
 				AFFA0BD82AB9F796008D2CAD /* Result+Extension.swift in Sources */,
 				AFFA10D22ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift in Sources */,
+				AFFA11A32ABADCB7008D2CAD /* CLWaveView.swift in Sources */,
 				AFFA10CF2ABA9133008D2CAD /* CLIngredients.swift in Sources */,
 				AFFA0FBA2ABA805F008D2CAD /* CLPopupFoodPickerModel.swift in Sources */,
 				AFFA10762ABA8673008D2CAD /* CLDrawerTransitionDelegate.swift in Sources */,
@@ -1924,6 +2115,7 @@
 				AFFA112C2ABAA6B5008D2CAD /* CLVideoOperation.swift in Sources */,
 				AFFA10B32ABA8961008D2CAD /* CLHistogramIndexView.swift in Sources */,
 				AFFA10EB2ABA923F008D2CAD /* CLHoneycombLayout.swift in Sources */,
+				AFFA11942ABAD94D008D2CAD /* CLPasswordController.swift in Sources */,
 				AFFA103E2ABA8350008D2CAD /* CLIntrinsicTableView.swift in Sources */,
 				AFFA10502ABA8350008D2CAD /* CLChatVoiceCell.swift in Sources */,
 				AFFA0BDB2AB9F796008D2CAD /* UIBezierPath+Extension.swift in Sources */,
@@ -1934,7 +2126,9 @@
 				AFFA11602ABABC97008D2CAD /* CLScrollAnimationController.swift in Sources */,
 				AFFA10EA2ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift in Sources */,
 				AFFA0BC92AB9F796008D2CAD /* NSAttributedString+Extension.swift in Sources */,
+				AFFA11B52ABADE8E008D2CAD /* CLPopoverController.swift in Sources */,
 				AFFA10512ABA8350008D2CAD /* CLChatImageProgressView.swift in Sources */,
+				AFFA11AA2ABADD6B008D2CAD /* CLTransitionViewController.swift in Sources */,
 				AFFA0BCE2AB9F796008D2CAD /* Date+Extension.swift in Sources */,
 				AFFA10462ABA8350008D2CAD /* CLChatPhotoAlbumImageCache.swift in Sources */,
 				AFFA10582ABA8351008D2CAD /* CLChatTipsItem.swift in Sources */,
@@ -1945,12 +2139,15 @@
 				AFFA0FD22ABA805F008D2CAD /* CLPopupMessageController.swift in Sources */,
 				AFFA0FD12ABA805F008D2CAD /* CLPopupLoadingController.swift in Sources */,
 				AFFA0FC32ABA805F008D2CAD /* CLMomentumView.swift in Sources */,
+				AFFA11892ABAD935008D2CAD /* CLVernierCaliperView.swift in Sources */,
 				AFFA0BD32AB9F796008D2CAD /* NSDecimalNumber+Extension.swift in Sources */,
 				AFFA11752ABAD2FF008D2CAD /* CLTagsCell.swift in Sources */,
 				AFFA10412ABA8350008D2CAD /* CLChatRecordTipsView.swift in Sources */,
 				AFFA0BD02AB9F796008D2CAD /* UIView+Extension.swift in Sources */,
+				AFFA11A42ABADCB7008D2CAD /* CLWaveController.swift in Sources */,
 				AFFA111A2ABAA6B4008D2CAD /* CLPlayVideoitem.swift in Sources */,
 				AFFA116F2ABAD2FF008D2CAD /* CLStartsController.swift in Sources */,
+				AFFA11972ABAD94D008D2CAD /* CLSectorAnimationView.swift in Sources */,
 				AFFA0BD72AB9F796008D2CAD /* NSMutableAttributedString+Extension.swift in Sources */,
 				AFFA11712ABAD2FF008D2CAD /* CLTagsController.swift in Sources */,
 				AFFA11742ABAD2FF008D2CAD /* CLTagsView.swift in Sources */,
@@ -1980,6 +2177,8 @@
 				AFFA0FF92ABA8324008D2CAD /* CLAnimationButton.swift in Sources */,
 				AFFA0FB82ABA805F008D2CAD /* CLPopupManager.swift in Sources */,
 				AFFA10012ABA8324008D2CAD /* CLBroadcastViewController.swift in Sources */,
+				AFFA11A12ABADCB7008D2CAD /* CLTextView.swift in Sources */,
+				AFFA11852ABAD935008D2CAD /* CLVernierCaliperHeaderCell.swift in Sources */,
 				AFFA0FCB2ABA805F008D2CAD /* CLDataPickerTitleView.swift in Sources */,
 				AFFA11702ABAD2FF008D2CAD /* CLStartsView.swift in Sources */,
 				AFFA10712ABA8672008D2CAD /* CLMarqueeHorizontalCell.swift in Sources */,
@@ -1994,6 +2193,7 @@
 				AFFA0FD92ABA80A7008D2CAD /* CLLanguageManager.swift in Sources */,
 				AFFA10B22ABA8961008D2CAD /* CLHistogramCell.swift in Sources */,
 				AFFA10D62ABA9133008D2CAD /* CLIngredientRightTitleCell.swift in Sources */,
+				AFFA11A92ABADD6B008D2CAD /* CLRotatingPictureViewController.swift in Sources */,
 				AFFA10772ABA8673008D2CAD /* CLDrawerSlideAnimation.swift in Sources */,
 				AFFA0BE82AB9F797008D2CAD /* CLFontManager.swift in Sources */,
 				AFFA0BE62AB9F797008D2CAD /* CLPermissionInterface.swift in Sources */,
@@ -2021,6 +2221,7 @@
 				AFFA0BC72AB9F796008D2CAD /* CLUserDefaultStorage.swift in Sources */,
 				AFFA0BC52AB9F796008D2CAD /* CLConst.swift in Sources */,
 				AFFA0FFE2ABA8324008D2CAD /* CLInfiniteView.swift in Sources */,
+				AFFA11842ABAD935008D2CAD /* CLRecordVernierCaliperCell.swift in Sources */,
 				AFFA11432ABAA84E008D2CAD /* CLGifOperation.swift in Sources */,
 				AFFA11452ABAA84E008D2CAD /* CLPlayGifCell.swift in Sources */,
 				AFFA0FC92ABA805F008D2CAD /* CLHourMinuteDataPickerView.swift in Sources */,
@@ -2029,10 +2230,12 @@
 				AFFA10552ABA8351008D2CAD /* CLChatTextCell.swift in Sources */,
 				AFFA0FBD2ABA805F008D2CAD /* CLPopupFoodPickerContentCell.swift in Sources */,
 				AFFA10D32ABA9133008D2CAD /* CLIngredientSearchCell.swift in Sources */,
+				AFFA11862ABAD935008D2CAD /* CLVernierCaliperMiddleCell.swift in Sources */,
 				AFFA0BDF2AB9F796008D2CAD /* UITableView+Extension.swift in Sources */,
 				AFFA0BD42AB9F796008D2CAD /* URL+Extension.swift in Sources */,
 				AFFA0FD42ABA805F008D2CAD /* CLPopupController.swift in Sources */,
 				AFFA0BD22AB9F796008D2CAD /* UIControl+Extension.swift in Sources */,
+				AFFA11B32ABADE8E008D2CAD /* CLPopoverView.swift in Sources */,
 				AFFA0FC02ABA805F008D2CAD /* CLFlopBottomView.swift in Sources */,
 				AFFA10402ABA8350008D2CAD /* CLChatRecordTimeView.swift in Sources */,
 				AFFA11002ABA9812008D2CAD /* HexagonalPattern.swift in Sources */,
@@ -2042,6 +2245,8 @@
 				AFFA10B82ABA8F84008D2CAD /* CLTruncationController.swift in Sources */,
 				AFFA106F2ABA8672008D2CAD /* CLDrawMarqueeController.swift in Sources */,
 				AFFA106D2ABA8672008D2CAD /* CLFlipView.swift in Sources */,
+				AFFA11872ABAD935008D2CAD /* CLIndexView.swift in Sources */,
+				AFFA11832ABAD935008D2CAD /* CLRecordVernierCaliperItem.swift in Sources */,
 				AFFA104B2ABA8350008D2CAD /* CLChatEmojiView.swift in Sources */,
 				AFFA0BDC2AB9F796008D2CAD /* CGRect+Extension.swift in Sources */,
 				AFFA0FC82ABA805F008D2CAD /* CLPopupDataPickerController.swift in Sources */,
@@ -2051,6 +2256,7 @@
 				AFFA0FCD2ABA805F008D2CAD /* CLOnePickerView.swift in Sources */,
 				AFFA10D52ABA9133008D2CAD /* CLIngredientRightTitleHead.swift in Sources */,
 				AFFA0FC52ABA805F008D2CAD /* CLPopupMomentumController.swift in Sources */,
+				AFFA11962ABAD94D008D2CAD /* CLRotateAnimationSwiftController.swift in Sources */,
 				AFFA0FBE2ABA805F008D2CAD /* CLPopupFoodPickerContentView.swift in Sources */,
 				AFFA10572ABA8351008D2CAD /* CLChatImageItem.swift in Sources */,
 				AFFA10EE2ABA923F008D2CAD /* CLHoneycombCustomCell.swift in Sources */,
@@ -2060,6 +2266,7 @@
 				AFFA10EC2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift in Sources */,
 				AFFA0F0A2ABA7E88008D2CAD /* CLTitleCell.swift in Sources */,
 				AFFA0FF62ABA8324008D2CAD /* CLBreakPointResumeItem.swift in Sources */,
+				AFFA11882ABAD935008D2CAD /* CLVernierCaliperFooterCell.swift in Sources */,
 				AFFA0BE22AB9F797008D2CAD /* CLLogManager.swift in Sources */,
 				AFFA0FFD2ABA8324008D2CAD /* CLSubsectionSlider.swift in Sources */,
 				AFFA0FC62ABA805F008D2CAD /* CLPopupTwoInputController.swift in Sources */,
@@ -2079,12 +2286,14 @@
 				AFFA10722ABA8672008D2CAD /* CLMarqueeView.swift in Sources */,
 				AFFA10B12ABA8961008D2CAD /* CLHistogramView.swift in Sources */,
 				AFFA0FCE2ABA805F008D2CAD /* CLPopupOneInputController.swift in Sources */,
+				AFFA11982ABAD94D008D2CAD /* CLRoundAnimationView.swift in Sources */,
 				AFFA10A72ABA8724008D2CAD /* CLGrayscaleController.swift in Sources */,
 				AFFA112B2ABAA6B5008D2CAD /* CLPlayVideoController.swift in Sources */,
 				AFFA0BE42AB9F797008D2CAD /* CLCellItemProtocol.swift in Sources */,
 				AFFA10422ABA8350008D2CAD /* CLChatInputToolBar.swift in Sources */,
 				AFFA10A82ABA8724008D2CAD /* CLActivityButton.swift in Sources */,
 				AFFA0CD62AB9F798008D2CAD /* CLTheme.swift in Sources */,
+				AFFA11992ABAD94D008D2CAD /* CLRotateAnimationView.swift in Sources */,
 				AFFA10442ABA8350008D2CAD /* CLChatPhotoAlbumContentView.swift in Sources */,
 				AFFA10B42ABA8961008D2CAD /* CLHistogramConroller.swift in Sources */,
 				AFFA10A92ABA8724008D2CAD /* CLHanziPinyinController.swift in Sources */,
@@ -2094,12 +2303,14 @@
 				AFFA0BCD2AB9F796008D2CAD /* Data+Gzip.swift in Sources */,
 				AFFA11552ABAA84E008D2CAD /* CLPlayGifController.swift in Sources */,
 				AFFA0FDA2ABA80A7008D2CAD /* CLChangeLanguageController.swift in Sources */,
+				AFFA11952ABAD94D008D2CAD /* CLPasswordInputView.swift in Sources */,
 				AFFA10002ABA8324008D2CAD /* CLFlowLayout.swift in Sources */,
 				AFFA0BD52AB9F796008D2CAD /* AutoScale+Extension.swift in Sources */,
 				AFFA10482ABA8350008D2CAD /* CLChatPhotoView.swift in Sources */,
 				AFFA0FF42ABA8324008D2CAD /* CLBreakPointResumeOperation.swift in Sources */,
 				AFFA0BCA2AB9F796008D2CAD /* UISpringTimingParameters+Extension.swift in Sources */,
 				AFFA11732ABAD2FF008D2CAD /* CLTagsItem.swift in Sources */,
+				AFFA118A2ABAD935008D2CAD /* CLVernierCaliperController.swift in Sources */,
 				AFFA10D12ABA9133008D2CAD /* CLIngredientSearchView.swift in Sources */,
 				AFFA0BCB2AB9F796008D2CAD /* UIColor+Extension.swift in Sources */,
 				AFFA0FBC2ABA805F008D2CAD /* CLPopupFoodPickerView.swift in Sources */,
@@ -2113,6 +2324,7 @@
 				AFFA0FCF2ABA805F008D2CAD /* CLPopupHudController.swift in Sources */,
 				AFFA0FC72ABA805F008D2CAD /* CLYearMonthDayHourMinuteDataPickerView.swift in Sources */,
 				AFFA105A2ABA8351008D2CAD /* CLChatItem.swift in Sources */,
+				AFFA11A22ABADCB7008D2CAD /* CLTextViewViewController.swift in Sources */,
 				AFFA0F882ABA8010008D2CAD /* CLMealController.swift in Sources */,
 				AFFA10532ABA8351008D2CAD /* CLChatTipsCell.swift in Sources */,
 			);
