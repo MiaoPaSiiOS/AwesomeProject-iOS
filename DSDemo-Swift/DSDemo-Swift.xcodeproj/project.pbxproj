@@ -764,6 +764,7 @@
 				AFFA10792ABA8723008D2CAD /* [展示]夜间模式 */,
 				AFFA10AB2ABA8961008D2CAD /* [展示]柱状图 */,
 				AFFA11592ABABC97008D2CAD /* [展示]转盘菜单 */,
+				AFFA0F8C2ABA805F008D2CAD /* [展示]自定义弹窗 */,
 				AFFA10F52ABA9812008D2CAD /* [展示]iWatch动画 */,
 				AFFA10B52ABA8F84008D2CAD /* [展示]UILabel截断 */,
 				AFFA112E2ABAA84E008D2CAD /* [展示]UITableView 播放Gif */,
@@ -773,7 +774,6 @@
 				AFFA0E0D2ABA7E85008D2CAD /* CLHomePageController */,
 				AFFA0F862ABA8010008D2CAD /* CLMealController */,
 				AFFA0F892ABA801F008D2CAD /* CLMeController */,
-				AFFA0F8C2ABA805F008D2CAD /* CLPopupController */,
 				AFFA0F832ABA7FFD008D2CAD /* CLRecordController */,
 			);
 			path = Class;
@@ -907,13 +907,13 @@
 			path = CLMeController;
 			sourceTree = "<group>";
 		};
-		AFFA0F8C2ABA805F008D2CAD /* CLPopupController */ = {
+		AFFA0F8C2ABA805F008D2CAD /* [展示]自定义弹窗 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0F8D2ABA805F008D2CAD /* CLPopupManager */,
 				AFFA0FB62ABA805F008D2CAD /* CLPopupController.swift */,
 			);
-			path = CLPopupController;
+			path = "[展示]自定义弹窗";
 			sourceTree = "<group>";
 		};
 		AFFA0F8D2ABA805F008D2CAD /* CLPopupManager */ = {

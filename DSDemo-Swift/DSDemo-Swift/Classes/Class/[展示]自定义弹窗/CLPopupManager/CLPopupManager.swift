@@ -154,7 +154,7 @@ extension CLPopupManager {
                 share.semaphore = DispatchSemaphore(value: 0)
                 share.semaphore.signal()
                 share.currentWait = 1
-            }else if controller.configure.isWait {
+            } else if controller.configure.isWait {
                 share.currentWait += 1
             }
             if controller.configure.isWait || controller.configure.isDissmissBefore {
