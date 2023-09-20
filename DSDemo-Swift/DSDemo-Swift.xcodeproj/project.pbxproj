@@ -279,6 +279,20 @@
 		AFFA11B32ABADE8E008D2CAD /* CLPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11AF2ABADE8E008D2CAD /* CLPopoverView.swift */; };
 		AFFA11B42ABADE8E008D2CAD /* CLPopoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA11B02ABADE8E008D2CAD /* CLPopoverController.xib */; };
 		AFFA11B52ABADE8E008D2CAD /* CLPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11B12ABADE8E008D2CAD /* CLPopoverController.swift */; };
+		AFFA11CC2ABADF96008D2CAD /* CLCircleRetroTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11B92ABADF96008D2CAD /* CLCircleRetroTransitionController.swift */; };
+		AFFA11CD2ABADF96008D2CAD /* CLCABasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11BB2ABADF96008D2CAD /* CLCABasicAnimation.swift */; };
+		AFFA11CE2ABADF96008D2CAD /* CLCircleRetroTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11BC2ABADF96008D2CAD /* CLCircleRetroTransition.swift */; };
+		AFFA11CF2ABADF96008D2CAD /* CLCircleRetroPushTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11BD2ABADF96008D2CAD /* CLCircleRetroPushTransitionController.swift */; };
+		AFFA11D02ABADF96008D2CAD /* CLCircleRetroPresentTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11BE2ABADF96008D2CAD /* CLCircleRetroPresentTransitionController.swift */; };
+		AFFA11D12ABADF96008D2CAD /* CLBubbleTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C02ABADF96008D2CAD /* CLBubbleTransitionController.swift */; };
+		AFFA11D22ABADF96008D2CAD /* CLBubbleInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C22ABADF96008D2CAD /* CLBubbleInteractiveTransition.swift */; };
+		AFFA11D32ABADF96008D2CAD /* CLBubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C32ABADF96008D2CAD /* CLBubbleTransition.swift */; };
+		AFFA11D42ABADF96008D2CAD /* CLBubbleTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C42ABADF96008D2CAD /* CLBubbleTransitionDelegate.swift */; };
+		AFFA11D52ABADF96008D2CAD /* CLBubbleTransitionPresentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C52ABADF96008D2CAD /* CLBubbleTransitionPresentController.swift */; };
+		AFFA11D62ABADF96008D2CAD /* CLTiledFlipRetroPushTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C72ABADF96008D2CAD /* CLTiledFlipRetroPushTransitionController.swift */; };
+		AFFA11D72ABADF96008D2CAD /* CLTiledFlipRetroTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11C82ABADF96008D2CAD /* CLTiledFlipRetroTransitionController.swift */; };
+		AFFA11D82ABADF96008D2CAD /* CLTiledFlipRetroTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11CA2ABADF96008D2CAD /* CLTiledFlipRetroTransition.swift */; };
+		AFFA11D92ABADF96008D2CAD /* CLCustomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11CB2ABADF96008D2CAD /* CLCustomTransitionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -561,6 +575,20 @@
 		AFFA11AF2ABADE8E008D2CAD /* CLPopoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPopoverView.swift; sourceTree = "<group>"; };
 		AFFA11B02ABADE8E008D2CAD /* CLPopoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLPopoverController.xib; sourceTree = "<group>"; };
 		AFFA11B12ABADE8E008D2CAD /* CLPopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLPopoverController.swift; sourceTree = "<group>"; };
+		AFFA11B92ABADF96008D2CAD /* CLCircleRetroTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCircleRetroTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11BB2ABADF96008D2CAD /* CLCABasicAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCABasicAnimation.swift; sourceTree = "<group>"; };
+		AFFA11BC2ABADF96008D2CAD /* CLCircleRetroTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCircleRetroTransition.swift; sourceTree = "<group>"; };
+		AFFA11BD2ABADF96008D2CAD /* CLCircleRetroPushTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCircleRetroPushTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11BE2ABADF96008D2CAD /* CLCircleRetroPresentTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCircleRetroPresentTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11C02ABADF96008D2CAD /* CLBubbleTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLBubbleTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11C22ABADF96008D2CAD /* CLBubbleInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLBubbleInteractiveTransition.swift; sourceTree = "<group>"; };
+		AFFA11C32ABADF96008D2CAD /* CLBubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLBubbleTransition.swift; sourceTree = "<group>"; };
+		AFFA11C42ABADF96008D2CAD /* CLBubbleTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLBubbleTransitionDelegate.swift; sourceTree = "<group>"; };
+		AFFA11C52ABADF96008D2CAD /* CLBubbleTransitionPresentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLBubbleTransitionPresentController.swift; sourceTree = "<group>"; };
+		AFFA11C72ABADF96008D2CAD /* CLTiledFlipRetroPushTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTiledFlipRetroPushTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11C82ABADF96008D2CAD /* CLTiledFlipRetroTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTiledFlipRetroTransitionController.swift; sourceTree = "<group>"; };
+		AFFA11CA2ABADF96008D2CAD /* CLTiledFlipRetroTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTiledFlipRetroTransition.swift; sourceTree = "<group>"; };
+		AFFA11CB2ABADF96008D2CAD /* CLCustomTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCustomTransitionController.swift; sourceTree = "<group>"; };
 		D66BCA6BB96EDD03E3981907 /* Pods-DSDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -806,6 +834,7 @@
 		AFFA0CDC2ABA7E82008D2CAD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA11B62ABADF96008D2CAD /* [展示]自定义转场动画 */,
 				AFFA11AD2ABADE8E008D2CAD /* [展示]气泡弹框 */,
 				AFFA11692ABAD2FF008D2CAD /* [展示]标签动态排布 */,
 				AFFA119E2ABADCB7008D2CAD /* [展示]波浪视图 */,
@@ -1934,6 +1963,83 @@
 			path = CLPopoverView;
 			sourceTree = "<group>";
 		};
+		AFFA11B62ABADF96008D2CAD /* [展示]自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11B72ABADF96008D2CAD /* Controller */,
+			);
+			path = "[展示]自定义转场动画";
+			sourceTree = "<group>";
+		};
+		AFFA11B72ABADF96008D2CAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11B82ABADF96008D2CAD /* CLCircleRetroTransitionController */,
+				AFFA11BF2ABADF96008D2CAD /* CLBubbleTransitionController */,
+				AFFA11C62ABADF96008D2CAD /* CLTiledFlipRetroTransitionController */,
+				AFFA11CB2ABADF96008D2CAD /* CLCustomTransitionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFFA11B82ABADF96008D2CAD /* CLCircleRetroTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11BE2ABADF96008D2CAD /* CLCircleRetroPresentTransitionController.swift */,
+				AFFA11BD2ABADF96008D2CAD /* CLCircleRetroPushTransitionController.swift */,
+				AFFA11BA2ABADF96008D2CAD /* CLCircleRetroTransition */,
+				AFFA11B92ABADF96008D2CAD /* CLCircleRetroTransitionController.swift */,
+			);
+			path = CLCircleRetroTransitionController;
+			sourceTree = "<group>";
+		};
+		AFFA11BA2ABADF96008D2CAD /* CLCircleRetroTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11BB2ABADF96008D2CAD /* CLCABasicAnimation.swift */,
+				AFFA11BC2ABADF96008D2CAD /* CLCircleRetroTransition.swift */,
+			);
+			path = CLCircleRetroTransition;
+			sourceTree = "<group>";
+		};
+		AFFA11BF2ABADF96008D2CAD /* CLBubbleTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11C12ABADF96008D2CAD /* CLBubbleTransition */,
+				AFFA11C02ABADF96008D2CAD /* CLBubbleTransitionController.swift */,
+				AFFA11C52ABADF96008D2CAD /* CLBubbleTransitionPresentController.swift */,
+			);
+			path = CLBubbleTransitionController;
+			sourceTree = "<group>";
+		};
+		AFFA11C12ABADF96008D2CAD /* CLBubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11C22ABADF96008D2CAD /* CLBubbleInteractiveTransition.swift */,
+				AFFA11C32ABADF96008D2CAD /* CLBubbleTransition.swift */,
+				AFFA11C42ABADF96008D2CAD /* CLBubbleTransitionDelegate.swift */,
+			);
+			path = CLBubbleTransition;
+			sourceTree = "<group>";
+		};
+		AFFA11C62ABADF96008D2CAD /* CLTiledFlipRetroTransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11C72ABADF96008D2CAD /* CLTiledFlipRetroPushTransitionController.swift */,
+				AFFA11C82ABADF96008D2CAD /* CLTiledFlipRetroTransitionController.swift */,
+				AFFA11C92ABADF96008D2CAD /* CLTiledFlipRetroTransition */,
+			);
+			path = CLTiledFlipRetroTransitionController;
+			sourceTree = "<group>";
+		};
+		AFFA11C92ABADF96008D2CAD /* CLTiledFlipRetroTransition */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11CA2ABADF96008D2CAD /* CLTiledFlipRetroTransition.swift */,
+			);
+			path = CLTiledFlipRetroTransition;
+			sourceTree = "<group>";
+		};
 		C8473876A766088FE8D17C16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2120,6 +2226,7 @@
 				AFFA10502ABA8350008D2CAD /* CLChatVoiceCell.swift in Sources */,
 				AFFA0BDB2AB9F796008D2CAD /* UIBezierPath+Extension.swift in Sources */,
 				AFFA10B92ABA8F84008D2CAD /* CLTruncationLabel.swift in Sources */,
+				AFFA11D52ABADF96008D2CAD /* CLBubbleTransitionPresentController.swift in Sources */,
 				AFFA0BC82AB9F796008D2CAD /* CLCalculateHepler.swift in Sources */,
 				AFFA0BD62AB9F796008D2CAD /* String+Extension.swift in Sources */,
 				AFFA11012ABA9812008D2CAD /* HexagonalItemView.swift in Sources */,
@@ -2136,6 +2243,7 @@
 				AFFA10472ABA8350008D2CAD /* CLChatPhotoCellButton.swift in Sources */,
 				AFFA10EF2ABA923F008D2CAD /* CLHoneycombView.swift in Sources */,
 				AFFA11722ABAD2FF008D2CAD /* CLTagsFrameHelper.swift in Sources */,
+				AFFA11D92ABADF96008D2CAD /* CLCustomTransitionController.swift in Sources */,
 				AFFA0FD22ABA805F008D2CAD /* CLPopupMessageController.swift in Sources */,
 				AFFA0FD12ABA805F008D2CAD /* CLPopupLoadingController.swift in Sources */,
 				AFFA0FC32ABA805F008D2CAD /* CLMomentumView.swift in Sources */,
@@ -2154,6 +2262,7 @@
 				AFFA11642ABABC97008D2CAD /* CLWheelMenuView.swift in Sources */,
 				AFFA10542ABA8351008D2CAD /* CLChatCell.swift in Sources */,
 				AFFA11632ABABC97008D2CAD /* CLWheelMenuCell.swift in Sources */,
+				AFFA11D72ABADF96008D2CAD /* CLTiledFlipRetroTransitionController.swift in Sources */,
 				AFFA0BE12AB9F797008D2CAD /* CLGCDTimer.swift in Sources */,
 				AFFA10752ABA8673008D2CAD /* CLDrawerController.swift in Sources */,
 				AFFA0BE02AB9F796008D2CAD /* Array+Extension.swift in Sources */,
@@ -2163,11 +2272,13 @@
 				AFFA10CE2ABA9133008D2CAD /* CLIngredientController.swift in Sources */,
 				AFFA0BDD2AB9F796008D2CAD /* Codable +Extension.swift in Sources */,
 				AFFA094B2AB9A25C008D2CAD /* ViewController.swift in Sources */,
+				AFFA11D42ABADF96008D2CAD /* CLBubbleTransitionDelegate.swift in Sources */,
 				AFFA10432ABA8350008D2CAD /* CLChatPhotoAlbumCell.swift in Sources */,
 				AFFA0BE72AB9F797008D2CAD /* CLPermissions.swift in Sources */,
 				AFFA10022ABA8324008D2CAD /* CLCarouselView.swift in Sources */,
 				AFFA10F22ABA923F008D2CAD /* CLHoneycombDelegate.swift in Sources */,
 				AFFA0FF82ABA8324008D2CAD /* CLBreakPointResumeCell.swift in Sources */,
+				AFFA11D02ABADF96008D2CAD /* CLCircleRetroPresentTransitionController.swift in Sources */,
 				AFFA10F02ABA923F008D2CAD /* CLHoneycombCell.swift in Sources */,
 				AFFA0FCC2ABA805F008D2CAD /* CLYearMonthDayDataPickerView.swift in Sources */,
 				AFFA11622ABABC97008D2CAD /* CLWheelMenuController.swift in Sources */,
@@ -2177,6 +2288,7 @@
 				AFFA0FF92ABA8324008D2CAD /* CLAnimationButton.swift in Sources */,
 				AFFA0FB82ABA805F008D2CAD /* CLPopupManager.swift in Sources */,
 				AFFA10012ABA8324008D2CAD /* CLBroadcastViewController.swift in Sources */,
+				AFFA11CF2ABADF96008D2CAD /* CLCircleRetroPushTransitionController.swift in Sources */,
 				AFFA11A12ABADCB7008D2CAD /* CLTextView.swift in Sources */,
 				AFFA11852ABAD935008D2CAD /* CLVernierCaliperHeaderCell.swift in Sources */,
 				AFFA0FCB2ABA805F008D2CAD /* CLDataPickerTitleView.swift in Sources */,
@@ -2193,12 +2305,14 @@
 				AFFA0FD92ABA80A7008D2CAD /* CLLanguageManager.swift in Sources */,
 				AFFA10B22ABA8961008D2CAD /* CLHistogramCell.swift in Sources */,
 				AFFA10D62ABA9133008D2CAD /* CLIngredientRightTitleCell.swift in Sources */,
+				AFFA11CE2ABADF96008D2CAD /* CLCircleRetroTransition.swift in Sources */,
 				AFFA11A92ABADD6B008D2CAD /* CLRotatingPictureViewController.swift in Sources */,
 				AFFA10772ABA8673008D2CAD /* CLDrawerSlideAnimation.swift in Sources */,
 				AFFA0BE82AB9F797008D2CAD /* CLFontManager.swift in Sources */,
 				AFFA0BE62AB9F797008D2CAD /* CLPermissionInterface.swift in Sources */,
 				AFFA103F2ABA8350008D2CAD /* CLChatRecordView.swift in Sources */,
 				AFFA104C2ABA8350008D2CAD /* CLChatEmojiFlowLayout.swift in Sources */,
+				AFFA11D62ABADF96008D2CAD /* CLTiledFlipRetroPushTransitionController.swift in Sources */,
 				AFFA0FFF2ABA8324008D2CAD /* CLInfiniteViewCell.swift in Sources */,
 				AFFA0BDA2AB9F796008D2CAD /* UITextField+Extension.swift in Sources */,
 				AFFA0FFC2ABA8324008D2CAD /* CLChangeFontSizeController.swift in Sources */,
@@ -2244,6 +2358,7 @@
 				AFFA0FFB2ABA8324008D2CAD /* CLAnimatedGradientController.swift in Sources */,
 				AFFA10B82ABA8F84008D2CAD /* CLTruncationController.swift in Sources */,
 				AFFA106F2ABA8672008D2CAD /* CLDrawMarqueeController.swift in Sources */,
+				AFFA11D82ABADF96008D2CAD /* CLTiledFlipRetroTransition.swift in Sources */,
 				AFFA106D2ABA8672008D2CAD /* CLFlipView.swift in Sources */,
 				AFFA11872ABAD935008D2CAD /* CLIndexView.swift in Sources */,
 				AFFA11832ABAD935008D2CAD /* CLRecordVernierCaliperItem.swift in Sources */,
@@ -2260,6 +2375,7 @@
 				AFFA0FBE2ABA805F008D2CAD /* CLPopupFoodPickerContentView.swift in Sources */,
 				AFFA10572ABA8351008D2CAD /* CLChatImageItem.swift in Sources */,
 				AFFA10EE2ABA923F008D2CAD /* CLHoneycombCustomCell.swift in Sources */,
+				AFFA11CC2ABADF96008D2CAD /* CLCircleRetroTransitionController.swift in Sources */,
 				AFFA0FD32ABA805F008D2CAD /* CLPopupBMIInputController.swift in Sources */,
 				AFFA0BDE2AB9F796008D2CAD /* CALayer+Extension.swift in Sources */,
 				AFFA09492AB9A25C008D2CAD /* SceneDelegate.swift in Sources */,
@@ -2278,11 +2394,13 @@
 				AFFA0F082ABA7E88008D2CAD /* CLHomePageModel.swift in Sources */,
 				AFFA0CD52AB9F798008D2CAD /* CLRecorder.m in Sources */,
 				AFFA11462ABAA84E008D2CAD /* CLGifPlayer.swift in Sources */,
+				AFFA11D22ABADF96008D2CAD /* CLBubbleInteractiveTransition.swift in Sources */,
 				AFFA10F42ABA923F008D2CAD /* CLHoneycombScrollViewController.swift in Sources */,
 				AFFA0BD12AB9F796008D2CAD /* UIImage+Extension.swift in Sources */,
 				AFFA0F8B2ABA8020008D2CAD /* CLMeController.swift in Sources */,
 				AFFA11612ABABC97008D2CAD /* CLWheelMenuItem.swift in Sources */,
 				AFFA0F0D2ABA7E88008D2CAD /* CLTabBarController.swift in Sources */,
+				AFFA11D32ABADF96008D2CAD /* CLBubbleTransition.swift in Sources */,
 				AFFA10722ABA8672008D2CAD /* CLMarqueeView.swift in Sources */,
 				AFFA10B12ABA8961008D2CAD /* CLHistogramView.swift in Sources */,
 				AFFA0FCE2ABA805F008D2CAD /* CLPopupOneInputController.swift in Sources */,
@@ -2298,6 +2416,7 @@
 				AFFA10B42ABA8961008D2CAD /* CLHistogramConroller.swift in Sources */,
 				AFFA10A92ABA8724008D2CAD /* CLHanziPinyinController.swift in Sources */,
 				AFFA0BE32AB9F797008D2CAD /* CLCellProtocol.swift in Sources */,
+				AFFA11CD2ABADF96008D2CAD /* CLCABasicAnimation.swift in Sources */,
 				AFFA0BCF2AB9F796008D2CAD /* UILabel+Extension.swift in Sources */,
 				AFFA11022ABA9812008D2CAD /* CLiWatchAnimationController.swift in Sources */,
 				AFFA0BCD2AB9F796008D2CAD /* Data+Gzip.swift in Sources */,
@@ -2321,6 +2440,7 @@
 				AFFA0FC12ABA805F008D2CAD /* CLFlopPrizeView.swift in Sources */,
 				AFFA112D2ABAA6B5008D2CAD /* CLVideoPlayer.swift in Sources */,
 				AFFA0FB92ABA805F008D2CAD /* CLPopupFoodPickerController.swift in Sources */,
+				AFFA11D12ABADF96008D2CAD /* CLBubbleTransitionController.swift in Sources */,
 				AFFA0FCF2ABA805F008D2CAD /* CLPopupHudController.swift in Sources */,
 				AFFA0FC72ABA805F008D2CAD /* CLYearMonthDayHourMinuteDataPickerView.swift in Sources */,
 				AFFA105A2ABA8351008D2CAD /* CLChatItem.swift in Sources */,

@@ -9,7 +9,7 @@ import UIKit
 
 
 //MARK: - JmoVxia---类-属性
-class CLCircleRetroPushTransitionController: CLController {
+class CLCircleRetroPresentTransitionController : CLController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -20,7 +20,7 @@ class CLCircleRetroPushTransitionController: CLController {
     }
 }
 //MARK: - JmoVxia---生命周期
-extension CLCircleRetroPushTransitionController {
+extension CLCircleRetroPresentTransitionController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -43,9 +43,9 @@ extension CLCircleRetroPushTransitionController {
     }
 }
 //MARK: - JmoVxia---布局
-private extension CLCircleRetroPushTransitionController {
+private extension CLCircleRetroPresentTransitionController {
     func initUI() {
-        view.backgroundColor = .hex("#996699")
+        view.backgroundColor = .init("#996699")
     }
     func makeConstraints() {
     }
