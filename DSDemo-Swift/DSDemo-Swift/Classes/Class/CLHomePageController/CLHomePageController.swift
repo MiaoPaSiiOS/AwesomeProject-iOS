@@ -82,16 +82,21 @@ private extension CLHomePageController {
         else {
             return
         }
+        
         for model in array {
-            guard let type = NSClassFromString("DSDemo_Swift.\(model.class)") as? CLController.Type else { break }
+//            guard let type = NSClassFromString("DSDemo_Swift.\(model.class)") as? CLController.Type else {
+//                break
+//            }
+            if let type = NSClassFromString("DSDemo_Swift.\(model.class)") as? CLController.Type {
+                let item = CLTitleCellItem(title: model.title.localized, type: type)
+                item.accessoryType = .disclosureIndicator
+                item.didSelectCellCallback = {[weak self, weak item] (value) in
+                    guard let self = self, let item = item else { return }
+                    self.push(item.type, title: item.title)
+                }
+                tableViewHepler.dataSource.append(item)
 
-            let item = CLTitleCellItem(title: model.title.localized, type: type)
-            item.accessoryType = .disclosureIndicator
-            item.didSelectCellCallback = {[weak self, weak item] (value) in
-                guard let self = self, let item = item else { return }
-                self.push(item.type, title: item.title)
             }
-            tableViewHepler.dataSource.append(item)
         }
         tableView.reloadData()
     }

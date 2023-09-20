@@ -172,6 +172,38 @@
 		AFFA10A82ABA8724008D2CAD /* CLActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10952ABA8724008D2CAD /* CLActivityButton.swift */; };
 		AFFA10A92ABA8724008D2CAD /* CLHanziPinyinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10962ABA8724008D2CAD /* CLHanziPinyinController.swift */; };
 		AFFA10AA2ABA8724008D2CAD /* CLHanziPinyinController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA10972ABA8724008D2CAD /* CLHanziPinyinController.xib */; };
+		AFFA10B12ABA8961008D2CAD /* CLHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10AD2ABA8961008D2CAD /* CLHistogramView.swift */; };
+		AFFA10B22ABA8961008D2CAD /* CLHistogramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10AE2ABA8961008D2CAD /* CLHistogramCell.swift */; };
+		AFFA10B32ABA8961008D2CAD /* CLHistogramIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10AF2ABA8961008D2CAD /* CLHistogramIndexView.swift */; };
+		AFFA10B42ABA8961008D2CAD /* CLHistogramConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10B02ABA8961008D2CAD /* CLHistogramConroller.swift */; };
+		AFFA10B82ABA8F84008D2CAD /* CLTruncationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10B62ABA8F84008D2CAD /* CLTruncationController.swift */; };
+		AFFA10B92ABA8F84008D2CAD /* CLTruncationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10B72ABA8F84008D2CAD /* CLTruncationLabel.swift */; };
+		AFFA10CE2ABA9133008D2CAD /* CLIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10C12ABA9133008D2CAD /* CLIngredientController.swift */; };
+		AFFA10CF2ABA9133008D2CAD /* CLIngredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10C32ABA9133008D2CAD /* CLIngredients.swift */; };
+		AFFA10D02ABA9133008D2CAD /* CLIngredients.json in Resources */ = {isa = PBXBuildFile; fileRef = AFFA10C42ABA9133008D2CAD /* CLIngredients.json */; };
+		AFFA10D12ABA9133008D2CAD /* CLIngredientSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10C72ABA9133008D2CAD /* CLIngredientSearchView.swift */; };
+		AFFA10D22ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10C92ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift */; };
+		AFFA10D32ABA9133008D2CAD /* CLIngredientSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10CA2ABA9133008D2CAD /* CLIngredientSearchCell.swift */; };
+		AFFA10D42ABA9133008D2CAD /* CLIngredientLeftTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10CB2ABA9133008D2CAD /* CLIngredientLeftTitleCell.swift */; };
+		AFFA10D52ABA9133008D2CAD /* CLIngredientRightTitleHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10CC2ABA9133008D2CAD /* CLIngredientRightTitleHead.swift */; };
+		AFFA10D62ABA9133008D2CAD /* CLIngredientRightTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10CD2ABA9133008D2CAD /* CLIngredientRightTitleCell.swift */; };
+		AFFA10EA2ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10D92ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift */; };
+		AFFA10EB2ABA923F008D2CAD /* CLHoneycombLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10DB2ABA923F008D2CAD /* CLHoneycombLayout.swift */; };
+		AFFA10EC2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10DD2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift */; };
+		AFFA10ED2ABA923F008D2CAD /* CLHoneycombController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10DF2ABA923F008D2CAD /* CLHoneycombController.swift */; };
+		AFFA10EE2ABA923F008D2CAD /* CLHoneycombCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E22ABA923F008D2CAD /* CLHoneycombCustomCell.swift */; };
+		AFFA10EF2ABA923F008D2CAD /* CLHoneycombView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E42ABA923F008D2CAD /* CLHoneycombView.swift */; };
+		AFFA10F02ABA923F008D2CAD /* CLHoneycombCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E52ABA923F008D2CAD /* CLHoneycombCell.swift */; };
+		AFFA10F12ABA923F008D2CAD /* CLHoneycombDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E62ABA923F008D2CAD /* CLHoneycombDataSource.swift */; };
+		AFFA10F22ABA923F008D2CAD /* CLHoneycombDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E72ABA923F008D2CAD /* CLHoneycombDelegate.swift */; };
+		AFFA10F32ABA923F008D2CAD /* CLHoneycombContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E82ABA923F008D2CAD /* CLHoneycombContentView.swift */; };
+		AFFA10F42ABA923F008D2CAD /* CLHoneycombScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10E92ABA923F008D2CAD /* CLHoneycombScrollViewController.swift */; };
+		AFFA10FD2ABA9812008D2CAD /* HexagonalItemViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10F72ABA9812008D2CAD /* HexagonalItemViewAppearance.swift */; };
+		AFFA10FE2ABA9812008D2CAD /* HexagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10F82ABA9812008D2CAD /* HexagonalView.swift */; };
+		AFFA10FF2ABA9812008D2CAD /* HexagonalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10F92ABA9812008D2CAD /* HexagonalDirection.swift */; };
+		AFFA11002ABA9812008D2CAD /* HexagonalPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FA2ABA9812008D2CAD /* HexagonalPattern.swift */; };
+		AFFA11012ABA9812008D2CAD /* HexagonalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FB2ABA9812008D2CAD /* HexagonalItemView.swift */; };
+		AFFA11022ABA9812008D2CAD /* CLiWatchAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA10FC2ABA9812008D2CAD /* CLiWatchAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -347,6 +379,38 @@
 		AFFA10952ABA8724008D2CAD /* CLActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLActivityButton.swift; sourceTree = "<group>"; };
 		AFFA10962ABA8724008D2CAD /* CLHanziPinyinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHanziPinyinController.swift; sourceTree = "<group>"; };
 		AFFA10972ABA8724008D2CAD /* CLHanziPinyinController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLHanziPinyinController.xib; sourceTree = "<group>"; };
+		AFFA10AD2ABA8961008D2CAD /* CLHistogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHistogramView.swift; sourceTree = "<group>"; };
+		AFFA10AE2ABA8961008D2CAD /* CLHistogramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHistogramCell.swift; sourceTree = "<group>"; };
+		AFFA10AF2ABA8961008D2CAD /* CLHistogramIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHistogramIndexView.swift; sourceTree = "<group>"; };
+		AFFA10B02ABA8961008D2CAD /* CLHistogramConroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHistogramConroller.swift; sourceTree = "<group>"; };
+		AFFA10B62ABA8F84008D2CAD /* CLTruncationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTruncationController.swift; sourceTree = "<group>"; };
+		AFFA10B72ABA8F84008D2CAD /* CLTruncationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTruncationLabel.swift; sourceTree = "<group>"; };
+		AFFA10C12ABA9133008D2CAD /* CLIngredientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientController.swift; sourceTree = "<group>"; };
+		AFFA10C32ABA9133008D2CAD /* CLIngredients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredients.swift; sourceTree = "<group>"; };
+		AFFA10C42ABA9133008D2CAD /* CLIngredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CLIngredients.json; sourceTree = "<group>"; };
+		AFFA10C72ABA9133008D2CAD /* CLIngredientSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientSearchView.swift; sourceTree = "<group>"; };
+		AFFA10C92ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientLeftTitleHead.swift; sourceTree = "<group>"; };
+		AFFA10CA2ABA9133008D2CAD /* CLIngredientSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientSearchCell.swift; sourceTree = "<group>"; };
+		AFFA10CB2ABA9133008D2CAD /* CLIngredientLeftTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientLeftTitleCell.swift; sourceTree = "<group>"; };
+		AFFA10CC2ABA9133008D2CAD /* CLIngredientRightTitleHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientRightTitleHead.swift; sourceTree = "<group>"; };
+		AFFA10CD2ABA9133008D2CAD /* CLIngredientRightTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLIngredientRightTitleCell.swift; sourceTree = "<group>"; };
+		AFFA10D92ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombCollectionViewController.swift; sourceTree = "<group>"; };
+		AFFA10DB2ABA923F008D2CAD /* CLHoneycombLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombLayout.swift; sourceTree = "<group>"; };
+		AFFA10DD2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombCollectionViewCell.swift; sourceTree = "<group>"; };
+		AFFA10DF2ABA923F008D2CAD /* CLHoneycombController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombController.swift; sourceTree = "<group>"; };
+		AFFA10E22ABA923F008D2CAD /* CLHoneycombCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombCustomCell.swift; sourceTree = "<group>"; };
+		AFFA10E42ABA923F008D2CAD /* CLHoneycombView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombView.swift; sourceTree = "<group>"; };
+		AFFA10E52ABA923F008D2CAD /* CLHoneycombCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombCell.swift; sourceTree = "<group>"; };
+		AFFA10E62ABA923F008D2CAD /* CLHoneycombDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombDataSource.swift; sourceTree = "<group>"; };
+		AFFA10E72ABA923F008D2CAD /* CLHoneycombDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombDelegate.swift; sourceTree = "<group>"; };
+		AFFA10E82ABA923F008D2CAD /* CLHoneycombContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombContentView.swift; sourceTree = "<group>"; };
+		AFFA10E92ABA923F008D2CAD /* CLHoneycombScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHoneycombScrollViewController.swift; sourceTree = "<group>"; };
+		AFFA10F72ABA9812008D2CAD /* HexagonalItemViewAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalItemViewAppearance.swift; sourceTree = "<group>"; };
+		AFFA10F82ABA9812008D2CAD /* HexagonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalView.swift; sourceTree = "<group>"; };
+		AFFA10F92ABA9812008D2CAD /* HexagonalDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalDirection.swift; sourceTree = "<group>"; };
+		AFFA10FA2ABA9812008D2CAD /* HexagonalPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalPattern.swift; sourceTree = "<group>"; };
+		AFFA10FB2ABA9812008D2CAD /* HexagonalItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonalItemView.swift; sourceTree = "<group>"; };
+		AFFA10FC2ABA9812008D2CAD /* CLiWatchAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLiWatchAnimationController.swift; sourceTree = "<group>"; };
 		D66BCA6BB96EDD03E3981907 /* Pods-DSDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -592,21 +656,26 @@
 		AFFA0CDC2ABA7E82008D2CAD /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA0FDB2ABA8323008D2CAD /* [展示]断点续传 */,
+				AFFA10D72ABA923F008D2CAD /* [展示]蜂窝布局 */,
+				AFFA10932ABA8724008D2CAD /* [展示]汉字转拼音 */,
+				AFFA10912ABA8724008D2CAD /* [展示]灰度图 */,
+				AFFA10042ABA834F008D2CAD /* [展示]聊天框架 */,
+				AFFA0FD52ABA80A6008D2CAD /* [展示]切换语言 */,
+				AFFA10BF2ABA9133008D2CAD /* [展示]三级联动+模糊搜索 */,
+				AFFA0FE72ABA8323008D2CAD /* [展示]修改字号 */,
+				AFFA10792ABA8723008D2CAD /* [展示]夜间模式 */,
+				AFFA10F52ABA9812008D2CAD /* [展示]iWatch动画 */,
+				AFFA10B52ABA8F84008D2CAD /* [展示]UILabel截断 */,
 				AFFA0E192ABA7E85008D2CAD /* Base */,
 				AFFA0FE52ABA8323008D2CAD /* CLAnimatedGradientController */,
 				AFFA0FE12ABA8323008D2CAD /* CLAnimationButtonController */,
-				AFFA0FDB2ABA8323008D2CAD /* CLBreakPointResumeController */,
 				AFFA0FEB2ABA8324008D2CAD /* CLBroadcastViewController */,
-				AFFA0FE72ABA8323008D2CAD /* CLChangeFontSizeController */,
-				AFFA0FD52ABA80A6008D2CAD /* CLChangeLanguageController */,
 				AFFA0F802ABA7FE6008D2CAD /* CLChatContactController */,
-				AFFA10042ABA834F008D2CAD /* CLChatController */,
-				AFFA10792ABA8723008D2CAD /* CLDarkModeController */,
 				AFFA10662ABA8672008D2CAD /* CLDrawerController */,
 				AFFA105E2ABA8672008D2CAD /* CLDrawMarqueeController */,
 				AFFA105B2ABA8672008D2CAD /* CLFlipController */,
-				AFFA10912ABA8724008D2CAD /* CLGrayscaleController */,
-				AFFA10932ABA8724008D2CAD /* CLHanziPinyinController */,
+				AFFA10AB2ABA8961008D2CAD /* CLHistogramConroller */,
 				AFFA0E0D2ABA7E85008D2CAD /* CLHomePageController */,
 				AFFA0F862ABA8010008D2CAD /* CLMealController */,
 				AFFA0F892ABA801F008D2CAD /* CLMeController */,
@@ -877,13 +946,13 @@
 			path = CLPopupBMIInputController;
 			sourceTree = "<group>";
 		};
-		AFFA0FD52ABA80A6008D2CAD /* CLChangeLanguageController */ = {
+		AFFA0FD52ABA80A6008D2CAD /* [展示]切换语言 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FD62ABA80A6008D2CAD /* CLLanguageManager */,
 				AFFA0FD82ABA80A6008D2CAD /* CLChangeLanguageController.swift */,
 			);
-			path = CLChangeLanguageController;
+			path = "[展示]切换语言";
 			sourceTree = "<group>";
 		};
 		AFFA0FD62ABA80A6008D2CAD /* CLLanguageManager */ = {
@@ -894,7 +963,7 @@
 			path = CLLanguageManager;
 			sourceTree = "<group>";
 		};
-		AFFA0FDB2ABA8323008D2CAD /* CLBreakPointResumeController */ = {
+		AFFA0FDB2ABA8323008D2CAD /* [展示]断点续传 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FDC2ABA8323008D2CAD /* CLBreakPointResumeOperation.swift */,
@@ -903,7 +972,7 @@
 				AFFA0FDF2ABA8323008D2CAD /* CLBreakPointResumeController.swift */,
 				AFFA0FE02ABA8323008D2CAD /* CLBreakPointResumeCell.swift */,
 			);
-			path = CLBreakPointResumeController;
+			path = "[展示]断点续传";
 			sourceTree = "<group>";
 		};
 		AFFA0FE12ABA8323008D2CAD /* CLAnimationButtonController */ = {
@@ -931,13 +1000,13 @@
 			path = CLAnimatedGradientController;
 			sourceTree = "<group>";
 		};
-		AFFA0FE72ABA8323008D2CAD /* CLChangeFontSizeController */ = {
+		AFFA0FE72ABA8323008D2CAD /* [展示]修改字号 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA0FE82ABA8323008D2CAD /* CLChangeFontSizeController.swift */,
 				AFFA0FE92ABA8323008D2CAD /* View */,
 			);
-			path = CLChangeFontSizeController;
+			path = "[展示]修改字号";
 			sourceTree = "<group>";
 		};
 		AFFA0FE92ABA8323008D2CAD /* View */ = {
@@ -977,14 +1046,15 @@
 			path = CLCarouselView;
 			sourceTree = "<group>";
 		};
-		AFFA10042ABA834F008D2CAD /* CLChatController */ = {
+		AFFA10042ABA834F008D2CAD /* [展示]聊天框架 */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA11032ABAA236008D2CAD /* Assets */,
 				AFFA10052ABA834F008D2CAD /* Controller */,
 				AFFA10072ABA834F008D2CAD /* AnimationJson */,
 				AFFA100C2ABA8350008D2CAD /* View */,
 			);
-			path = CLChatController;
+			path = "[展示]聊天框架";
 			sourceTree = "<group>";
 		};
 		AFFA10052ABA834F008D2CAD /* Controller */ = {
@@ -1219,30 +1289,30 @@
 			path = CLDrawerTransition;
 			sourceTree = "<group>";
 		};
-		AFFA10792ABA8723008D2CAD /* CLDarkModeController */ = {
+		AFFA10792ABA8723008D2CAD /* [展示]夜间模式 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA107A2ABA8723008D2CAD /* CLDarkModeController.swift */,
 			);
-			path = CLDarkModeController;
+			path = "[展示]夜间模式";
 			sourceTree = "<group>";
 		};
-		AFFA10912ABA8724008D2CAD /* CLGrayscaleController */ = {
+		AFFA10912ABA8724008D2CAD /* [展示]灰度图 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA10922ABA8724008D2CAD /* CLGrayscaleController.swift */,
 			);
-			path = CLGrayscaleController;
+			path = "[展示]灰度图";
 			sourceTree = "<group>";
 		};
-		AFFA10932ABA8724008D2CAD /* CLHanziPinyinController */ = {
+		AFFA10932ABA8724008D2CAD /* [展示]汉字转拼音 */ = {
 			isa = PBXGroup;
 			children = (
 				AFFA10942ABA8724008D2CAD /* View */,
 				AFFA10962ABA8724008D2CAD /* CLHanziPinyinController.swift */,
 				AFFA10972ABA8724008D2CAD /* CLHanziPinyinController.xib */,
 			);
-			path = CLHanziPinyinController;
+			path = "[展示]汉字转拼音";
 			sourceTree = "<group>";
 		};
 		AFFA10942ABA8724008D2CAD /* View */ = {
@@ -1251,6 +1321,192 @@
 				AFFA10952ABA8724008D2CAD /* CLActivityButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA10AB2ABA8961008D2CAD /* CLHistogramConroller */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10AC2ABA8961008D2CAD /* CLHistogramView */,
+				AFFA10B02ABA8961008D2CAD /* CLHistogramConroller.swift */,
+			);
+			path = CLHistogramConroller;
+			sourceTree = "<group>";
+		};
+		AFFA10AC2ABA8961008D2CAD /* CLHistogramView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10AD2ABA8961008D2CAD /* CLHistogramView.swift */,
+				AFFA10AE2ABA8961008D2CAD /* CLHistogramCell.swift */,
+				AFFA10AF2ABA8961008D2CAD /* CLHistogramIndexView.swift */,
+			);
+			path = CLHistogramView;
+			sourceTree = "<group>";
+		};
+		AFFA10B52ABA8F84008D2CAD /* [展示]UILabel截断 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10B62ABA8F84008D2CAD /* CLTruncationController.swift */,
+				AFFA10B72ABA8F84008D2CAD /* CLTruncationLabel.swift */,
+			);
+			path = "[展示]UILabel截断";
+			sourceTree = "<group>";
+		};
+		AFFA10BF2ABA9133008D2CAD /* [展示]三级联动+模糊搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C02ABA9133008D2CAD /* Controller */,
+				AFFA10C22ABA9133008D2CAD /* Model */,
+				AFFA10C52ABA9133008D2CAD /* View */,
+			);
+			path = "[展示]三级联动+模糊搜索";
+			sourceTree = "<group>";
+		};
+		AFFA10C02ABA9133008D2CAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C12ABA9133008D2CAD /* CLIngredientController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFFA10C22ABA9133008D2CAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C32ABA9133008D2CAD /* CLIngredients.swift */,
+				AFFA10C42ABA9133008D2CAD /* CLIngredients.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFFA10C52ABA9133008D2CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C62ABA9133008D2CAD /* CLSearchView */,
+				AFFA10C82ABA9133008D2CAD /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA10C62ABA9133008D2CAD /* CLSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C72ABA9133008D2CAD /* CLIngredientSearchView.swift */,
+			);
+			path = CLSearchView;
+			sourceTree = "<group>";
+		};
+		AFFA10C82ABA9133008D2CAD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10C92ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift */,
+				AFFA10CA2ABA9133008D2CAD /* CLIngredientSearchCell.swift */,
+				AFFA10CB2ABA9133008D2CAD /* CLIngredientLeftTitleCell.swift */,
+				AFFA10CC2ABA9133008D2CAD /* CLIngredientRightTitleHead.swift */,
+				AFFA10CD2ABA9133008D2CAD /* CLIngredientRightTitleCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AFFA10D72ABA923F008D2CAD /* [展示]蜂窝布局 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10D82ABA923F008D2CAD /* CLHoneycombCollectionViewController */,
+				AFFA10DE2ABA923F008D2CAD /* CLHoneycombController */,
+				AFFA10E02ABA923F008D2CAD /* CLHoneycombScrollViewController */,
+			);
+			path = "[展示]蜂窝布局";
+			sourceTree = "<group>";
+		};
+		AFFA10D82ABA923F008D2CAD /* CLHoneycombCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10D92ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift */,
+				AFFA10DA2ABA923F008D2CAD /* CLHoneycombLayout */,
+				AFFA10DC2ABA923F008D2CAD /* View */,
+			);
+			path = CLHoneycombCollectionViewController;
+			sourceTree = "<group>";
+		};
+		AFFA10DA2ABA923F008D2CAD /* CLHoneycombLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10DB2ABA923F008D2CAD /* CLHoneycombLayout.swift */,
+			);
+			path = CLHoneycombLayout;
+			sourceTree = "<group>";
+		};
+		AFFA10DC2ABA923F008D2CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10DD2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA10DE2ABA923F008D2CAD /* CLHoneycombController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10DF2ABA923F008D2CAD /* CLHoneycombController.swift */,
+			);
+			path = CLHoneycombController;
+			sourceTree = "<group>";
+		};
+		AFFA10E02ABA923F008D2CAD /* CLHoneycombScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10E12ABA923F008D2CAD /* View */,
+				AFFA10E92ABA923F008D2CAD /* CLHoneycombScrollViewController.swift */,
+			);
+			path = CLHoneycombScrollViewController;
+			sourceTree = "<group>";
+		};
+		AFFA10E12ABA923F008D2CAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10E22ABA923F008D2CAD /* CLHoneycombCustomCell.swift */,
+				AFFA10E32ABA923F008D2CAD /* CLHoneycombView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFFA10E32ABA923F008D2CAD /* CLHoneycombView */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10E42ABA923F008D2CAD /* CLHoneycombView.swift */,
+				AFFA10E52ABA923F008D2CAD /* CLHoneycombCell.swift */,
+				AFFA10E62ABA923F008D2CAD /* CLHoneycombDataSource.swift */,
+				AFFA10E72ABA923F008D2CAD /* CLHoneycombDelegate.swift */,
+				AFFA10E82ABA923F008D2CAD /* CLHoneycombContentView.swift */,
+			);
+			path = CLHoneycombView;
+			sourceTree = "<group>";
+		};
+		AFFA10F52ABA9812008D2CAD /* [展示]iWatch动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10F62ABA9812008D2CAD /* Hexacon */,
+				AFFA10FC2ABA9812008D2CAD /* CLiWatchAnimationController.swift */,
+			);
+			path = "[展示]iWatch动画";
+			sourceTree = "<group>";
+		};
+		AFFA10F62ABA9812008D2CAD /* Hexacon */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA10F72ABA9812008D2CAD /* HexagonalItemViewAppearance.swift */,
+				AFFA10F82ABA9812008D2CAD /* HexagonalView.swift */,
+				AFFA10F92ABA9812008D2CAD /* HexagonalDirection.swift */,
+				AFFA10FA2ABA9812008D2CAD /* HexagonalPattern.swift */,
+				AFFA10FB2ABA9812008D2CAD /* HexagonalItemView.swift */,
+			);
+			path = Hexacon;
+			sourceTree = "<group>";
+		};
+		AFFA11032ABAA236008D2CAD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C8473876A766088FE8D17C16 /* Pods */ = {
@@ -1329,6 +1585,7 @@
 				AFFA09532AB9A25E008D2CAD /* LaunchScreen.storyboard in Resources */,
 				AFFA0CD82AB9F798008D2CAD /* sentencepinyin.txt in Resources */,
 				AFFA0FBB2ABA805F008D2CAD /* food.json in Resources */,
+				AFFA10D02ABA9133008D2CAD /* CLIngredients.json in Resources */,
 				AFFA0FD02ABA805F008D2CAD /* loading.json in Resources */,
 				AFFA103A2ABA8350008D2CAD /* recoredWave_dk.json in Resources */,
 				AFFA0CDA2AB9F798008D2CAD /* sentencepinyin in Resources */,
@@ -1392,14 +1649,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFA0BD82AB9F796008D2CAD /* Result+Extension.swift in Sources */,
+				AFFA10D22ABA9133008D2CAD /* CLIngredientLeftTitleHead.swift in Sources */,
+				AFFA10CF2ABA9133008D2CAD /* CLIngredients.swift in Sources */,
 				AFFA0FBA2ABA805F008D2CAD /* CLPopupFoodPickerModel.swift in Sources */,
 				AFFA10762ABA8673008D2CAD /* CLDrawerTransitionDelegate.swift in Sources */,
+				AFFA10FD2ABA9812008D2CAD /* HexagonalItemViewAppearance.swift in Sources */,
 				AFFA10782ABA8673008D2CAD /* CLDrawerPresentationController.swift in Sources */,
+				AFFA10B32ABA8961008D2CAD /* CLHistogramIndexView.swift in Sources */,
+				AFFA10EB2ABA923F008D2CAD /* CLHoneycombLayout.swift in Sources */,
 				AFFA103E2ABA8350008D2CAD /* CLIntrinsicTableView.swift in Sources */,
 				AFFA10502ABA8350008D2CAD /* CLChatVoiceCell.swift in Sources */,
 				AFFA0BDB2AB9F796008D2CAD /* UIBezierPath+Extension.swift in Sources */,
+				AFFA10B92ABA8F84008D2CAD /* CLTruncationLabel.swift in Sources */,
 				AFFA0BC82AB9F796008D2CAD /* CLCalculateHepler.swift in Sources */,
 				AFFA0BD62AB9F796008D2CAD /* String+Extension.swift in Sources */,
+				AFFA11012ABA9812008D2CAD /* HexagonalItemView.swift in Sources */,
+				AFFA10EA2ABA923F008D2CAD /* CLHoneycombCollectionViewController.swift in Sources */,
 				AFFA0BC92AB9F796008D2CAD /* NSAttributedString+Extension.swift in Sources */,
 				AFFA10512ABA8350008D2CAD /* CLChatImageProgressView.swift in Sources */,
 				AFFA0BCE2AB9F796008D2CAD /* Date+Extension.swift in Sources */,
@@ -1407,6 +1672,7 @@
 				AFFA10582ABA8351008D2CAD /* CLChatTipsItem.swift in Sources */,
 				AFFA104A2ABA8350008D2CAD /* CKDChatEmojiCellProtocol.swift in Sources */,
 				AFFA10472ABA8350008D2CAD /* CLChatPhotoCellButton.swift in Sources */,
+				AFFA10EF2ABA923F008D2CAD /* CLHoneycombView.swift in Sources */,
 				AFFA0FD22ABA805F008D2CAD /* CLPopupMessageController.swift in Sources */,
 				AFFA0FD12ABA805F008D2CAD /* CLPopupLoadingController.swift in Sources */,
 				AFFA0FC32ABA805F008D2CAD /* CLMomentumView.swift in Sources */,
@@ -1418,14 +1684,18 @@
 				AFFA0BE12AB9F797008D2CAD /* CLGCDTimer.swift in Sources */,
 				AFFA10752ABA8673008D2CAD /* CLDrawerController.swift in Sources */,
 				AFFA0BE02AB9F796008D2CAD /* Array+Extension.swift in Sources */,
+				AFFA10D42ABA9133008D2CAD /* CLIngredientLeftTitleCell.swift in Sources */,
 				AFFA10982ABA8724008D2CAD /* CLDarkModeController.swift in Sources */,
 				AFFA10452ABA8350008D2CAD /* CLChatPhotoAlbumBottomBar.swift in Sources */,
+				AFFA10CE2ABA9133008D2CAD /* CLIngredientController.swift in Sources */,
 				AFFA0BDD2AB9F796008D2CAD /* Codable +Extension.swift in Sources */,
 				AFFA094B2AB9A25C008D2CAD /* ViewController.swift in Sources */,
 				AFFA10432ABA8350008D2CAD /* CLChatPhotoAlbumCell.swift in Sources */,
 				AFFA0BE72AB9F797008D2CAD /* CLPermissions.swift in Sources */,
 				AFFA10022ABA8324008D2CAD /* CLCarouselView.swift in Sources */,
+				AFFA10F22ABA923F008D2CAD /* CLHoneycombDelegate.swift in Sources */,
 				AFFA0FF82ABA8324008D2CAD /* CLBreakPointResumeCell.swift in Sources */,
+				AFFA10F02ABA923F008D2CAD /* CLHoneycombCell.swift in Sources */,
 				AFFA0FCC2ABA805F008D2CAD /* CLYearMonthDayDataPickerView.swift in Sources */,
 				AFFA10592ABA8351008D2CAD /* CLChatVoiceItem.swift in Sources */,
 				AFFA0BC62AB9F796008D2CAD /* Regex.swift in Sources */,
@@ -1434,6 +1704,7 @@
 				AFFA10012ABA8324008D2CAD /* CLBroadcastViewController.swift in Sources */,
 				AFFA0FCB2ABA805F008D2CAD /* CLDataPickerTitleView.swift in Sources */,
 				AFFA10712ABA8672008D2CAD /* CLMarqueeHorizontalCell.swift in Sources */,
+				AFFA10ED2ABA923F008D2CAD /* CLHoneycombController.swift in Sources */,
 				AFFA0FB72ABA805F008D2CAD /* CLPopupTipsController.swift in Sources */,
 				AFFA0F0B2ABA7E88008D2CAD /* CLTitleCellItem.swift in Sources */,
 				AFFA0F822ABA7FE7008D2CAD /* CLChatContactController.swift in Sources */,
@@ -1442,6 +1713,8 @@
 				AFFA10392ABA8350008D2CAD /* CLChatController.swift in Sources */,
 				AFFA10492ABA8350008D2CAD /* CKDChatEmojiTextCell.swift in Sources */,
 				AFFA0FD92ABA80A7008D2CAD /* CLLanguageManager.swift in Sources */,
+				AFFA10B22ABA8961008D2CAD /* CLHistogramCell.swift in Sources */,
+				AFFA10D62ABA9133008D2CAD /* CLIngredientRightTitleCell.swift in Sources */,
 				AFFA10772ABA8673008D2CAD /* CLDrawerSlideAnimation.swift in Sources */,
 				AFFA0BE82AB9F797008D2CAD /* CLFontManager.swift in Sources */,
 				AFFA0BE62AB9F797008D2CAD /* CLPermissionInterface.swift in Sources */,
@@ -1451,6 +1724,7 @@
 				AFFA0BDA2AB9F796008D2CAD /* UITextField+Extension.swift in Sources */,
 				AFFA0FFC2ABA8324008D2CAD /* CLChangeFontSizeController.swift in Sources */,
 				AFFA10562ABA8351008D2CAD /* CLChatTextItem.swift in Sources */,
+				AFFA10FF2ABA9812008D2CAD /* HexagonalDirection.swift in Sources */,
 				AFFA106E2ABA8672008D2CAD /* CLFlipController.swift in Sources */,
 				AFFA0F102ABA7E88008D2CAD /* CLNavigationController.swift in Sources */,
 				AFFA09472AB9A25C008D2CAD /* AppDelegate.swift in Sources */,
@@ -1473,15 +1747,18 @@
 				AFFA10522ABA8350008D2CAD /* CLChatImageCell.swift in Sources */,
 				AFFA10552ABA8351008D2CAD /* CLChatTextCell.swift in Sources */,
 				AFFA0FBD2ABA805F008D2CAD /* CLPopupFoodPickerContentCell.swift in Sources */,
+				AFFA10D32ABA9133008D2CAD /* CLIngredientSearchCell.swift in Sources */,
 				AFFA0BDF2AB9F796008D2CAD /* UITableView+Extension.swift in Sources */,
 				AFFA0BD42AB9F796008D2CAD /* URL+Extension.swift in Sources */,
 				AFFA0FD42ABA805F008D2CAD /* CLPopupController.swift in Sources */,
 				AFFA0BD22AB9F796008D2CAD /* UIControl+Extension.swift in Sources */,
 				AFFA0FC02ABA805F008D2CAD /* CLFlopBottomView.swift in Sources */,
 				AFFA10402ABA8350008D2CAD /* CLChatRecordTimeView.swift in Sources */,
+				AFFA11002ABA9812008D2CAD /* HexagonalPattern.swift in Sources */,
 				AFFA104F2ABA8350008D2CAD /* CLChatTextView.swift in Sources */,
 				AFFA0CDB2AB9F798008D2CAD /* CLHanziToPinyin.swift in Sources */,
 				AFFA0FFB2ABA8324008D2CAD /* CLAnimatedGradientController.swift in Sources */,
+				AFFA10B82ABA8F84008D2CAD /* CLTruncationController.swift in Sources */,
 				AFFA106F2ABA8672008D2CAD /* CLDrawMarqueeController.swift in Sources */,
 				AFFA106D2ABA8672008D2CAD /* CLFlipView.swift in Sources */,
 				AFFA104B2ABA8350008D2CAD /* CLChatEmojiView.swift in Sources */,
@@ -1490,27 +1767,33 @@
 				AFFA0FF72ABA8324008D2CAD /* CLBreakPointResumeController.swift in Sources */,
 				AFFA0FF52ABA8324008D2CAD /* CLBreakPointResumeManager.swift in Sources */,
 				AFFA0FCD2ABA805F008D2CAD /* CLOnePickerView.swift in Sources */,
+				AFFA10D52ABA9133008D2CAD /* CLIngredientRightTitleHead.swift in Sources */,
 				AFFA0FC52ABA805F008D2CAD /* CLPopupMomentumController.swift in Sources */,
 				AFFA0FBE2ABA805F008D2CAD /* CLPopupFoodPickerContentView.swift in Sources */,
 				AFFA10572ABA8351008D2CAD /* CLChatImageItem.swift in Sources */,
+				AFFA10EE2ABA923F008D2CAD /* CLHoneycombCustomCell.swift in Sources */,
 				AFFA0FD32ABA805F008D2CAD /* CLPopupBMIInputController.swift in Sources */,
 				AFFA0BDE2AB9F796008D2CAD /* CALayer+Extension.swift in Sources */,
 				AFFA09492AB9A25C008D2CAD /* SceneDelegate.swift in Sources */,
+				AFFA10EC2ABA923F008D2CAD /* CLHoneycombCollectionViewCell.swift in Sources */,
 				AFFA0F0A2ABA7E88008D2CAD /* CLTitleCell.swift in Sources */,
 				AFFA0FF62ABA8324008D2CAD /* CLBreakPointResumeItem.swift in Sources */,
 				AFFA0BE22AB9F797008D2CAD /* CLLogManager.swift in Sources */,
 				AFFA0FFD2ABA8324008D2CAD /* CLSubsectionSlider.swift in Sources */,
 				AFFA0FC62ABA805F008D2CAD /* CLPopupTwoInputController.swift in Sources */,
+				AFFA10FE2ABA9812008D2CAD /* HexagonalView.swift in Sources */,
 				AFFA104D2ABA8350008D2CAD /* CLChatEmojiItemProtocol.swift in Sources */,
 				AFFA10702ABA8672008D2CAD /* CLMarqueeVerticalCell.swift in Sources */,
 				AFFA0F072ABA7E88008D2CAD /* CLHomePageController.swift in Sources */,
 				AFFA0BD92AB9F796008D2CAD /* Data+Extension.swift in Sources */,
 				AFFA0F082ABA7E88008D2CAD /* CLHomePageModel.swift in Sources */,
 				AFFA0CD52AB9F798008D2CAD /* CLRecorder.m in Sources */,
+				AFFA10F42ABA923F008D2CAD /* CLHoneycombScrollViewController.swift in Sources */,
 				AFFA0BD12AB9F796008D2CAD /* UIImage+Extension.swift in Sources */,
 				AFFA0F8B2ABA8020008D2CAD /* CLMeController.swift in Sources */,
 				AFFA0F0D2ABA7E88008D2CAD /* CLTabBarController.swift in Sources */,
 				AFFA10722ABA8672008D2CAD /* CLMarqueeView.swift in Sources */,
+				AFFA10B12ABA8961008D2CAD /* CLHistogramView.swift in Sources */,
 				AFFA0FCE2ABA805F008D2CAD /* CLPopupOneInputController.swift in Sources */,
 				AFFA10A72ABA8724008D2CAD /* CLGrayscaleController.swift in Sources */,
 				AFFA0BE42AB9F797008D2CAD /* CLCellItemProtocol.swift in Sources */,
@@ -1518,9 +1801,11 @@
 				AFFA10A82ABA8724008D2CAD /* CLActivityButton.swift in Sources */,
 				AFFA0CD62AB9F798008D2CAD /* CLTheme.swift in Sources */,
 				AFFA10442ABA8350008D2CAD /* CLChatPhotoAlbumContentView.swift in Sources */,
+				AFFA10B42ABA8961008D2CAD /* CLHistogramConroller.swift in Sources */,
 				AFFA10A92ABA8724008D2CAD /* CLHanziPinyinController.swift in Sources */,
 				AFFA0BE32AB9F797008D2CAD /* CLCellProtocol.swift in Sources */,
 				AFFA0BCF2AB9F796008D2CAD /* UILabel+Extension.swift in Sources */,
+				AFFA11022ABA9812008D2CAD /* CLiWatchAnimationController.swift in Sources */,
 				AFFA0BCD2AB9F796008D2CAD /* Data+Gzip.swift in Sources */,
 				AFFA0FDA2ABA80A7008D2CAD /* CLChangeLanguageController.swift in Sources */,
 				AFFA10002ABA8324008D2CAD /* CLFlowLayout.swift in Sources */,
@@ -1528,10 +1813,13 @@
 				AFFA10482ABA8350008D2CAD /* CLChatPhotoView.swift in Sources */,
 				AFFA0FF42ABA8324008D2CAD /* CLBreakPointResumeOperation.swift in Sources */,
 				AFFA0BCA2AB9F796008D2CAD /* UISpringTimingParameters+Extension.swift in Sources */,
+				AFFA10D12ABA9133008D2CAD /* CLIngredientSearchView.swift in Sources */,
 				AFFA0BCB2AB9F796008D2CAD /* UIColor+Extension.swift in Sources */,
 				AFFA0FBC2ABA805F008D2CAD /* CLPopupFoodPickerView.swift in Sources */,
+				AFFA10F12ABA923F008D2CAD /* CLHoneycombDataSource.swift in Sources */,
 				AFFA0FBF2ABA805F008D2CAD /* CLTwoSidedView.swift in Sources */,
 				AFFA0F112ABA7E88008D2CAD /* CLController.swift in Sources */,
+				AFFA10F32ABA923F008D2CAD /* CLHoneycombContentView.swift in Sources */,
 				AFFA0FC12ABA805F008D2CAD /* CLFlopPrizeView.swift in Sources */,
 				AFFA0FB92ABA805F008D2CAD /* CLPopupFoodPickerController.swift in Sources */,
 				AFFA0FCF2ABA805F008D2CAD /* CLPopupHudController.swift in Sources */,
