@@ -1,0 +1,6 @@
+framework module DarkStarShootVideoKit {
+  umbrella header "DarkStarShootVideoKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

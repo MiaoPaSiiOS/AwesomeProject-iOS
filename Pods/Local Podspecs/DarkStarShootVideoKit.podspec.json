@@ -18,5 +18,45 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "DarkStarShootVideoKit/Classes/**/*"
+  "source_files": "DarkStarShootVideoKit/Classes/**/*",
+  "resource_bundles": {
+    "DarkStarShootVideoKit": [
+      "DarkStarShootVideoKit/Assets/*"
+    ],
+    "DarkStarShootVideoKitExt": [
+      "DarkStarShootVideoKit/AssetsExt/*"
+    ]
+  },
+  "dependencies": {
+    "JXCategoryView": [
+
+    ],
+    "GPUImage": [
+
+    ],
+    "YYCache": [
+
+    ],
+    "YYImage": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "CTMediator": [
+
+    ],
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarGeneralTools": [
+
+    ],
+    "DarkStarUIKit": [
+
+    ],
+    "DarkStarUIComponents": [
+
+    ]
+  }
 }

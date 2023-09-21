@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarShootVideoKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarShootVideoKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarShootVideoKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarShootVideoKit: a869f6e2060a91ed77cdab0c6f5199a53a4e8b13
+
+PODFILE CHECKSUM: 9f1bafb8cbb69a082ac501648a869f0423f66f0f
+
+COCOAPODS: 1.11.3

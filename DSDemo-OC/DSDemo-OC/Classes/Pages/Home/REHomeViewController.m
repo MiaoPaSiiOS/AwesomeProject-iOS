@@ -6,12 +6,14 @@
 //
 
 #import "REHomeViewController.h"
+#import <CTMediator/CTMediator.h>
 #import <DarkStarFeedKit/DarkStarFeedKit.h>
 #import <DarkStarAccountKit/DarkStarAccountKit.h>
 #import <DarkStarWebKit/DarkStarWebKit.h>
 #import <DarkStarAwesomeKit/DarkStarAwesomeKit.h>
 #import <DarkStarEnjoyCameraKit/DarkStarEnjoyCameraKit.h>
-#import <CTMediator/CTMediator.h>
+#import <DarkStarShootVideoKit/DarkStarShootVideoKit.h>
+
 
 @interface REHomeViewController ()
 
@@ -29,10 +31,13 @@
         DS_BUTTON_WITH_ACTION(@"webview相关", openWebView)
         DS_BUTTON_WITH_ACTION(@"Awesome", goAwesome)
         DS_BUTTON_WITH_ACTION(@"EnjoyCamera", goEnjoyCamera)
+        DS_BUTTON_WITH_ACTION(@"ShootVideo", goShootVideo)
     }, self.dsView);
 
 }
-
+-(void)goShootVideo {
+    [[CTMediator sharedInstance] mediator_ShowShootVideoViewController:@{}];
+}
 -(void)goEnjoyCamera {
     [[CTMediator sharedInstance] mediator_showQMCameraViewController:@{}];
 }

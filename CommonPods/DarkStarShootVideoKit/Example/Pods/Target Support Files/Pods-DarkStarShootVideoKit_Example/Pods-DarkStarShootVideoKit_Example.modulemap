@@ -1,0 +1,6 @@
+framework module Pods_DarkStarShootVideoKit_Example {
+  umbrella header "Pods-DarkStarShootVideoKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
