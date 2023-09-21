@@ -1,6 +1,0 @@
-framework module IU_GCD {
-  umbrella header "IU_GCD-umbrella.h"
-
-  export *
-  module * { export * }
-}

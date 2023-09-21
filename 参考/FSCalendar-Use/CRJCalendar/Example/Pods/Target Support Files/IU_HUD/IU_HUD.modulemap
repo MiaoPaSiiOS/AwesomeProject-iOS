@@ -1,6 +1,0 @@
-framework module IU_HUD {
-  umbrella header "IU_HUD-umbrella.h"
-
-  export *
-  module * { export * }
-}
