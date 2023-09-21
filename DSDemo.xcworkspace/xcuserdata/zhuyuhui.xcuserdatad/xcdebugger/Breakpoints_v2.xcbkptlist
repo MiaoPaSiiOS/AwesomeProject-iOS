@@ -20,5 +20,21 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E8753DB-3D84-4F73-9CAF-EA52DF1BE790"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CommonPods/DarkStarEnjoyCameraKit/DarkStarEnjoyCameraKit/Classes/Modules/PhotoEffect/Controller/QMPhotoEffectViewController.m"
+            startingColumnNumber = "13"
+            endingColumnNumber = "29"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
+            landmarkName = "-buttonTapped:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -55,6 +55,19 @@ PODS:
     - AFNetworking
     - DarkStarBaseKit
     - FMDB
+  - DarkStarEnjoyCameraKit (0.1.0):
+    - CTMediator
+    - DarkStarBaseKit
+    - DarkStarGeneralTools
+    - DGActivityIndicatorView
+    - GPUImage
+    - Masonry
+    - ReactiveObjC
+    - SDWebImage
+    - TOCropViewController
+    - TZImagePickerController
+    - YYCache
+    - YYModel
   - DarkStarFeedKit (0.1.0):
     - CTMediator
     - DarkStarBaseKit
@@ -100,6 +113,7 @@ PODS:
     - DarkStarAuthorityKit
     - DarkStarBaseKit
     - ZBarSDK
+  - DarkStarShootVideoKit (0.1.0)
   - DarkStarThirdPartyKit (0.1.0):
     - Masonry
   - DarkStarUIComponents (0.1.0):
@@ -210,6 +224,7 @@ PODS:
     - MJExtension
     - SDWebImage
   - DateToolsSwift (5.0.0)
+  - DGActivityIndicatorView (2.1.1)
   - DoraemonKit (3.1.3):
     - DoraemonKit/Core (= 3.1.3)
   - DoraemonKit/Core (3.1.3):
@@ -228,6 +243,7 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
+  - GPUImage (0.1.7)
   - iCarousel (1.8.3)
   - JXCategoryView (1.6.1)
   - Kingfisher (6.3.1)
@@ -249,6 +265,7 @@ PODS:
     - lottie-ios
     - SnapKit
   - pop (1.0.12)
+  - ReactiveObjC (3.1.1)
   - RealReachability (1.4.1):
     - RealReachability/Connection (= 1.4.1)
     - RealReachability/Ping (= 1.4.1)
@@ -265,6 +282,7 @@ PODS:
   - SnapKit (5.6.0)
   - SSZipArchive (2.4.3)
   - SwiftyJSON (5.0.1)
+  - TOCropViewController (2.6.1)
   - TTTAttributedLabel (2.0.0)
   - TZImagePickerController (3.8.3):
     - TZImagePickerController/Basic (= 3.8.3)
@@ -289,6 +307,7 @@ DEPENDENCIES:
   - DarkStarCrypto (from `./CommonPods/DarkStarCrypto/`)
   - DarkStarDataStoreKit (from `./CommonPods/DarkStarDataStoreKit/`)
   - DarkStarDownloadManagerKit (from `./CommonPods/DarkStarDownloadManagerKit/`)
+  - DarkStarEnjoyCameraKit (from `./CommonPods/DarkStarEnjoyCameraKit/`)
   - DarkStarFeedKit (from `./CommonPods/DarkStarFeedKit/`)
   - DarkStarGeneralTools (from `./CommonPods/DarkStarGeneralTools/`)
   - DarkStarGrayViewKit (from `./CommonPods/DarkStarGrayViewKit/`)
@@ -298,6 +317,7 @@ DEPENDENCIES:
   - DarkStarQMUI (from `./CommonPods/DarkStarQMUI/`)
   - DarkStarResourceKit (from `./CommonPods/DarkStarResourceKit/`)
   - DarkStarScanKit (from `./CommonPods/DarkStarScanKit/`)
+  - DarkStarShootVideoKit (from `./CommonPods/DarkStarShootVideoKit/`)
   - DarkStarThirdPartyKit (from `./CommonPods/DarkStarThirdPartyKit/`)
   - DarkStarUIComponents (from `./CommonPods/DarkStarUIComponents/`)
   - DarkStarUIKit (from `./CommonPods/DarkStarUIKit/`)
@@ -326,10 +346,12 @@ SPEC REPOS:
     - CryptoSwift
     - CTMediator
     - DateToolsSwift
+    - DGActivityIndicatorView
     - DoraemonKit
     - FDFullscreenPopGesture
     - FMDB
     - GCDWebServer
+    - GPUImage
     - iCarousel
     - JXCategoryView
     - Kingfisher
@@ -340,6 +362,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - pop
+    - ReactiveObjC
     - RealReachability
     - RegExCategories
     - SDWebImage
@@ -348,6 +371,7 @@ SPEC REPOS:
     - SnapKit
     - SSZipArchive
     - SwiftyJSON
+    - TOCropViewController
     - TTTAttributedLabel
     - TZImagePickerController
     - YYCache
@@ -374,6 +398,8 @@ EXTERNAL SOURCES:
     :path: "./CommonPods/DarkStarDataStoreKit/"
   DarkStarDownloadManagerKit:
     :path: "./CommonPods/DarkStarDownloadManagerKit/"
+  DarkStarEnjoyCameraKit:
+    :path: "./CommonPods/DarkStarEnjoyCameraKit/"
   DarkStarFeedKit:
     :path: "./CommonPods/DarkStarFeedKit/"
   DarkStarGeneralTools:
@@ -392,6 +418,8 @@ EXTERNAL SOURCES:
     :path: "./CommonPods/DarkStarResourceKit/"
   DarkStarScanKit:
     :path: "./CommonPods/DarkStarScanKit/"
+  DarkStarShootVideoKit:
+    :path: "./CommonPods/DarkStarShootVideoKit/"
   DarkStarThirdPartyKit:
     :path: "./CommonPods/DarkStarThirdPartyKit/"
   DarkStarUIComponents:
@@ -418,6 +446,7 @@ SPEC CHECKSUMS:
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
   DarkStarDataStoreKit: fdd86c2480e05907dfe78749ecf588d0cefd54fe
   DarkStarDownloadManagerKit: cdb2faf2af557712e99b3898d67746452d697504
+  DarkStarEnjoyCameraKit: 96f9d59b5090b1ec3862dee17035ec8fb0dcd7b7
   DarkStarFeedKit: f00d4235cd7a42b81d6cbe761a6d8ee7b01f8d00
   DarkStarGeneralTools: f5eddfdaade3e40ee58c17d8719a7d2da555a94a
   DarkStarGrayViewKit: c575d2e90ce904e5a065027d9d160045bf50c9a6
@@ -427,16 +456,19 @@ SPEC CHECKSUMS:
   DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
   DarkStarResourceKit: ef31e632492cff66b055dbaf47ae3d081dddf91b
   DarkStarScanKit: a3c1e43ef7e84985b48f135ca8d0b62c4759b61c
+  DarkStarShootVideoKit: a869f6e2060a91ed77cdab0c6f5199a53a4e8b13
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
   DarkStarUIComponents: fab80d0910b94ee4fece3a71ae3fafd809e554fc
   DarkStarUIKit: 1c1ae9ff1f9dcd9cbb201c59d3e5dd23da5ab674
   DarkStarUpdateSDK: 11fc5648acba0aeae11a3742b50af71cba3b0a9b
   DarkStarWebKit: e430aeac413c910b233f991ef5200370a7cda691
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
@@ -448,6 +480,7 @@ SPEC CHECKSUMS:
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   NrLottieBridge: ecc2fd4c2d9a4958ba20b1a6b4e0a5cb3034cf69
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
   RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
   SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
@@ -456,6 +489,7 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
@@ -463,6 +497,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 595131b33a55608c627d3e1fc4171da648f739b8
+PODFILE CHECKSUM: b099f3399c0b985bc85062cb46044ed5eed0ace0
 
 COCOAPODS: 1.11.3

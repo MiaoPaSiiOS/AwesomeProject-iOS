@@ -1,0 +1,16 @@
+PODS:
+  - DarkStarEnjoyCameraKit (0.1.0)
+
+DEPENDENCIES:
+  - DarkStarEnjoyCameraKit (from `../`)
+
+EXTERNAL SOURCES:
+  DarkStarEnjoyCameraKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DarkStarEnjoyCameraKit: 960db5574bf73785a1f7de2e97feaf402eb3212c
+
+PODFILE CHECKSUM: 5901f1fcc441cfc55295d68805cf0fe8ff31ba3a
+
+COCOAPODS: 1.11.3

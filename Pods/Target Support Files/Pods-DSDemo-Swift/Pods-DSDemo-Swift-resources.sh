@@ -97,12 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/DateToolsSwift/DateToolsSwift/DateTools/DateTools.bundle"
   install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
+  install_resource "${PODS_ROOT}/DateToolsSwift/DateToolsSwift/DateTools/DateTools.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/DateToolsSwift/DateToolsSwift/DateTools/DateTools.bundle"
   install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
+  install_resource "${PODS_ROOT}/DateToolsSwift/DateToolsSwift/DateTools/DateTools.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

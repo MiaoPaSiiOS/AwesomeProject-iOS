@@ -1,0 +1,6 @@
+framework module DarkStarEnjoyCameraKit {
+  umbrella header "DarkStarEnjoyCameraKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

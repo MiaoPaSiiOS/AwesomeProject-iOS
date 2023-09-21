@@ -32,6 +32,9 @@ target 'DSDemo-OC' do
   pod 'DarkStarAwesomeKit', :path => './CommonPods/DarkStarAwesomeKit/'
   pod 'DarkStarDownloadManagerKit', :path => './CommonPods/DarkStarDownloadManagerKit/'
   pod 'DarkStarPhotoBrowserKit', :path => './CommonPods/DarkStarPhotoBrowserKit/'
+  pod 'DarkStarShootVideoKit', :path => './CommonPods/DarkStarShootVideoKit/'
+  pod 'DarkStarEnjoyCameraKit', :path => './CommonPods/DarkStarEnjoyCameraKit/'
+
   
   #NrLottieBridge使用Swift版本，NrLottieMixView使用OC版本；这两个库不能同时用
   pod 'NrLottieBridge', :path => './CommonPods/NrLottieBridge/'

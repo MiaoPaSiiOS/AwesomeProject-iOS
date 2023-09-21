@@ -10,6 +10,7 @@
 #import <DarkStarAccountKit/DarkStarAccountKit.h>
 #import <DarkStarWebKit/DarkStarWebKit.h>
 #import <DarkStarAwesomeKit/DarkStarAwesomeKit.h>
+#import <DarkStarEnjoyCameraKit/DarkStarEnjoyCameraKit.h>
 #import <CTMediator/CTMediator.h>
 
 @interface REHomeViewController ()
@@ -27,8 +28,13 @@
         DS_BUTTON_WITH_ACTION(@"微博、推特Feed流展示", goToFeed)
         DS_BUTTON_WITH_ACTION(@"webview相关", openWebView)
         DS_BUTTON_WITH_ACTION(@"Awesome", goAwesome)
+        DS_BUTTON_WITH_ACTION(@"EnjoyCamera", goEnjoyCamera)
     }, self.dsView);
 
+}
+
+-(void)goEnjoyCamera {
+    [[CTMediator sharedInstance] mediator_showQMCameraViewController:@{}];
 }
 
 -(void)goAwesome {

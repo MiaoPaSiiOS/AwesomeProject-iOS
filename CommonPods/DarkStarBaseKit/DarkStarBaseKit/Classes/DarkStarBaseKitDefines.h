@@ -147,6 +147,49 @@ result += [[UIApplication sharedApplication] keyWindow].safeAreaInsets.bottom;\
 #define kStrongSelf __strong __typeof(&*weakSelf) strongSelf = weakSelf;
 #endif
 
+/**
+ Synthsize a weak or strong reference.
+ 
+ Example:
+    @iUweakify(self)
+    [self doSomething^{
+        @iUstrongify(self)
+        if (!self) return;
+        ...
+    }];
+
+ */
+#ifndef iUweakify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define iUweakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define iUweakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define iUweakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define iUweakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+        #endif
+    #endif
+#endif
+
+#ifndef iUstrongify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define iUstrongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+        #else
+        #define iUstrongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define iUstrongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+        #else
+        #define iUstrongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+        #endif
+    #endif
+#endif
 
 
 

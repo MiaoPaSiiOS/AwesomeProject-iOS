@@ -1,6 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
+${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAccountKit/DarkStarAccountKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAudioRecorderKit/DarkStarAudioRecorderKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarAuthorityKit/DarkStarAuthorityKit.framework
@@ -10,6 +11,7 @@ ${BUILT_PRODUCTS_DIR}/DarkStarConfiguration/DarkStarConfiguration.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarCrypto/DarkStarCrypto.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarDataStoreKit/DarkStarDataStoreKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit.framework
+${BUILT_PRODUCTS_DIR}/DarkStarEnjoyCameraKit/DarkStarEnjoyCameraKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarFeedKit/DarkStarFeedKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGeneralTools/DarkStarGeneralTools.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarGrayViewKit/DarkStarGrayViewKit.framework
@@ -19,6 +21,7 @@ ${BUILT_PRODUCTS_DIR}/DarkStarPhotoBrowserKit/DarkStarPhotoBrowserKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarQMUI/DarkStarQMUI.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarResourceKit/DarkStarResourceKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarScanKit/DarkStarScanKit.framework
+${BUILT_PRODUCTS_DIR}/DarkStarShootVideoKit/DarkStarShootVideoKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarThirdPartyKit/DarkStarThirdPartyKit.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarUIComponents/DarkStarUIComponents.framework
 ${BUILT_PRODUCTS_DIR}/DarkStarUIKit/DarkStarUIKit.framework
@@ -28,12 +31,14 @@ ${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework
 ${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework
+${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework
 ${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/NrLottieBridge/NrLottieBridge.framework
+${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/RealReachability/RealReachability.framework
 ${BUILT_PRODUCTS_DIR}/RegExCategories/RegExCategories.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
@@ -41,7 +46,9 @@ ${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework
 ${BUILT_PRODUCTS_DIR}/SIAlertView/SIAlertView.framework
 ${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit-framework/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework
 ${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework
+${BUILT_PRODUCTS_DIR}/TZImagePickerController-framework/TZImagePickerController.framework
 ${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
 ${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework
 ${BUILT_PRODUCTS_DIR}/YYText/YYText.framework
