@@ -96,7 +96,10 @@ PODS:
   - DarkStarQMUI/UIKitExtensions (0.1.0)
   - DarkStarResourceKit (0.1.0):
     - DarkStarBaseKit
-  - DarkStarScanKit (0.1.0)
+  - DarkStarScanKit (0.1.0):
+    - DarkStarAuthorityKit
+    - DarkStarBaseKit
+    - ZBarSDK
   - DarkStarThirdPartyKit (0.1.0):
     - Masonry
   - DarkStarUIComponents (0.1.0):
@@ -271,6 +274,7 @@ PODS:
   - YYCache (1.0.4)
   - YYModel (1.0.4)
   - YYText (1.0.7)
+  - ZBarSDK (1.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
@@ -349,6 +353,7 @@ SPEC REPOS:
     - YYCache
     - YYModel
     - YYText
+    - ZBarSDK
 
 EXTERNAL SOURCES:
   DarkStarAccountKit:
@@ -421,7 +426,7 @@ SPEC CHECKSUMS:
   DarkStarPhotoBrowserKit: 506c07a143bdd079cdc52395dadda9772b27deb6
   DarkStarQMUI: c7a5bcb5a64316debefefb33d818f44e228f41b8
   DarkStarResourceKit: ef31e632492cff66b055dbaf47ae3d081dddf91b
-  DarkStarScanKit: 9dbecbe270c0dac45929139147850a292a1eae3a
+  DarkStarScanKit: a3c1e43ef7e84985b48f135ca8d0b62c4759b61c
   DarkStarThirdPartyKit: 2dd0907c9027a7ace0a89e85087aa351142a275f
   DarkStarUIComponents: fab80d0910b94ee4fece3a71ae3fafd809e554fc
   DarkStarUIKit: 1c1ae9ff1f9dcd9cbb201c59d3e5dd23da5ab674
@@ -456,6 +461,7 @@ SPEC CHECKSUMS:
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
 PODFILE CHECKSUM: 595131b33a55608c627d3e1fc4171da648f739b8
 

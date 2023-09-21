@@ -25,6 +25,7 @@
 #import "NSTimer+DarkStar.h"
 #import "PHAsset+DarkStar.h"
 #import "UIButton+DarkStarEnlarge.h"
+#import "UICollectionView+DarkStarExtension.h"
 #import "UIColor+DarkStar.h"
 #import "UIControl+DarkStar.h"
 #import "UIDevice+DarkStar.h"

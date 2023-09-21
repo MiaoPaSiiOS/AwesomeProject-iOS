@@ -18,5 +18,21 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "DarkStarScanKit/Classes/**/*"
+  "source_files": "DarkStarScanKit/Classes/**/*",
+  "resource_bundles": {
+    "DarkStarScanKit": [
+      "DarkStarScanKit/Assets/*"
+    ]
+  },
+  "dependencies": {
+    "DarkStarBaseKit": [
+
+    ],
+    "DarkStarAuthorityKit": [
+
+    ],
+    "ZBarSDK": [
+
+    ]
+  }
 }

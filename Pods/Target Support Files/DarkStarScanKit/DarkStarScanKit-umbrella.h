@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "DarkStarScanKit.h"
+#import "DSDetectorQRImage.h"
+#import "DSScanEventLog.h"
+#import "DSScanner.h"
+#import "DSScannerTool.h"
+#import "DSScanView.h"
 
 FOUNDATION_EXPORT double DarkStarScanKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DarkStarScanKitVersionString[];

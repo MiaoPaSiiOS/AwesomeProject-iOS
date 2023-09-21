@@ -30,6 +30,25 @@
 		AFFA0A0C2AB9A6A8008D2CAD /* REUITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C42AB9A6A8008D2CAD /* REUITabBar.m */; };
 		AFFA0A0D2AB9A6A8008D2CAD /* REUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09C52AB9A6A8008D2CAD /* REUINavigationController.m */; };
 		AFFA0A112AB9A6A8008D2CAD /* REGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA09D22AB9A6A8008D2CAD /* REGlobal.m */; };
+		AFFA12162ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11DD2ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.m */; };
+		AFFA12172ABBCFBA008D2CAD /* AMENURLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11E02ABBCFBA008D2CAD /* AMENURLConfig.m */; };
+		AFFA12182ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11E42ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.m */; };
+		AFFA12192ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11E82ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.m */; };
+		AFFA121A2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11EB2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.m */; };
+		AFFA121B2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11ED2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.m */; };
+		AFFA121C2ABBCFBA008D2CAD /* AMEMDataCacheMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11F02ABBCFBA008D2CAD /* AMEMDataCacheMgr.m */; };
+		AFFA121D2ABBCFBA008D2CAD /* AMENSystemAdaptMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11F42ABBCFBA008D2CAD /* AMENSystemAdaptMgr.m */; };
+		AFFA121E2ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11F72ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.m */; };
+		AFFA121F2ABBCFBA008D2CAD /* BCMCheckReviewAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11FA2ABBCFBA008D2CAD /* BCMCheckReviewAlert.m */; };
+		AFFA12202ABBCFBA008D2CAD /* AMENCheckReviewMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11FB2ABBCFBA008D2CAD /* AMENCheckReviewMgr.m */; };
+		AFFA12212ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA11FF2ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.m */; };
+		AFFA12222ABBCFBA008D2CAD /* AMENStartAdMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12022ABBCFBA008D2CAD /* AMENStartAdMgr.m */; };
+		AFFA12232ABBCFBA008D2CAD /* AMENStartAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12052ABBCFBA008D2CAD /* AMENStartAdView.m */; };
+		AFFA12242ABBCFBA008D2CAD /* AMENLaunchAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12092ABBCFBA008D2CAD /* AMENLaunchAnimationView.m */; };
+		AFFA12252ABBCFBA008D2CAD /* AMENLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA120C2ABBCFBA008D2CAD /* AMENLaunchViewController.m */; };
+		AFFA12262ABBCFBA008D2CAD /* AMENVersionCompareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12112ABBCFBA008D2CAD /* AMENVersionCompareTool.m */; };
+		AFFA12272ABBCFBA008D2CAD /* AMENPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12122ABBCFBA008D2CAD /* AMENPrivacyView.m */; };
+		AFFA12282ABBCFBA008D2CAD /* AMENCheckVersionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFA12152ABBCFBA008D2CAD /* AMENCheckVersionMgr.m */; };
 		F0B598C0EBB794000805254D /* Pods_DSDemo_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19212673F58B728C025538F /* Pods_DSDemo_OC.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +105,44 @@
 		AFFA09E42AB9A6A8008D2CAD /* REUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REUIConfig.h; sourceTree = "<group>"; };
 		AFFA09E52AB9A6A8008D2CAD /* UIStyleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleConfig.h; sourceTree = "<group>"; };
 		AFFA0A182AB9A880008D2CAD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AFFA11DC2ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NetStateRechability.h"; sourceTree = "<group>"; };
+		AFFA11DD2ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NetStateRechability.m"; sourceTree = "<group>"; };
+		AFFA11DF2ABBCFBA008D2CAD /* AMENURLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENURLConfig.h; sourceTree = "<group>"; };
+		AFFA11E02ABBCFBA008D2CAD /* AMENURLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENURLConfig.m; sourceTree = "<group>"; };
+		AFFA11E42ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AMENMenuItemShortCuts.m"; sourceTree = "<group>"; };
+		AFFA11E52ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AMENMenuItemShortCuts.h"; sourceTree = "<group>"; };
+		AFFA11E72ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENWidgetkitCalendarMgr.h; sourceTree = "<group>"; };
+		AFFA11E82ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENWidgetkitCalendarMgr.m; sourceTree = "<group>"; };
+		AFFA11EA2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AMEN3DTouch.h"; sourceTree = "<group>"; };
+		AFFA11EB2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AMEN3DTouch.m"; sourceTree = "<group>"; };
+		AFFA11ED2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AMENDataCollection.m"; sourceTree = "<group>"; };
+		AFFA11EE2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AMENDataCollection.h"; sourceTree = "<group>"; };
+		AFFA11F02ABBCFBA008D2CAD /* AMEMDataCacheMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEMDataCacheMgr.m; sourceTree = "<group>"; };
+		AFFA11F12ABBCFBA008D2CAD /* AMEMDataCacheMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEMDataCacheMgr.h; sourceTree = "<group>"; };
+		AFFA11F32ABBCFBA008D2CAD /* AMENSystemAdaptMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENSystemAdaptMgr.h; sourceTree = "<group>"; };
+		AFFA11F42ABBCFBA008D2CAD /* AMENSystemAdaptMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENSystemAdaptMgr.m; sourceTree = "<group>"; };
+		AFFA11F62ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AMENAdKeyPopups.h"; sourceTree = "<group>"; };
+		AFFA11F72ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AMENAdKeyPopups.m"; sourceTree = "<group>"; };
+		AFFA11F92ABBCFBA008D2CAD /* AMENCheckReviewMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENCheckReviewMgr.h; sourceTree = "<group>"; };
+		AFFA11FA2ABBCFBA008D2CAD /* BCMCheckReviewAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMCheckReviewAlert.m; sourceTree = "<group>"; };
+		AFFA11FB2ABBCFBA008D2CAD /* AMENCheckReviewMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENCheckReviewMgr.m; sourceTree = "<group>"; };
+		AFFA11FC2ABBCFBA008D2CAD /* BCMCheckReviewAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMCheckReviewAlert.h; sourceTree = "<group>"; };
+		AFFA11FE2ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AMENScreenshotCheck.h"; sourceTree = "<group>"; };
+		AFFA11FF2ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AMENScreenshotCheck.m"; sourceTree = "<group>"; };
+		AFFA12022ABBCFBA008D2CAD /* AMENStartAdMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENStartAdMgr.m; sourceTree = "<group>"; };
+		AFFA12032ABBCFBA008D2CAD /* AMENStartAdMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENStartAdMgr.h; sourceTree = "<group>"; };
+		AFFA12052ABBCFBA008D2CAD /* AMENStartAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENStartAdView.m; sourceTree = "<group>"; };
+		AFFA12062ABBCFBA008D2CAD /* AMENStartAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENStartAdView.h; sourceTree = "<group>"; };
+		AFFA12092ABBCFBA008D2CAD /* AMENLaunchAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENLaunchAnimationView.m; sourceTree = "<group>"; };
+		AFFA120A2ABBCFBA008D2CAD /* AMENLaunchAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENLaunchAnimationView.h; sourceTree = "<group>"; };
+		AFFA120C2ABBCFBA008D2CAD /* AMENLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENLaunchViewController.m; sourceTree = "<group>"; };
+		AFFA120D2ABBCFBA008D2CAD /* AMENLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENLaunchViewController.h; sourceTree = "<group>"; };
+		AFFA120F2ABBCFBA008D2CAD /* AMENVersionCompareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENVersionCompareTool.h; sourceTree = "<group>"; };
+		AFFA12102ABBCFBA008D2CAD /* AMENPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENPrivacyView.h; sourceTree = "<group>"; };
+		AFFA12112ABBCFBA008D2CAD /* AMENVersionCompareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENVersionCompareTool.m; sourceTree = "<group>"; };
+		AFFA12122ABBCFBA008D2CAD /* AMENPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENPrivacyView.m; sourceTree = "<group>"; };
+		AFFA12142ABBCFBA008D2CAD /* AMENCheckVersionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMENCheckVersionMgr.h; sourceTree = "<group>"; };
+		AFFA12152ABBCFBA008D2CAD /* AMENCheckVersionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMENCheckVersionMgr.m; sourceTree = "<group>"; };
 		F19212673F58B728C025538F /* Pods_DSDemo_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSDemo_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +217,7 @@
 		AFFA095A2AB9A6A7008D2CAD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AFFA11DA2ABBCFB9008D2CAD /* 基础 */,
 				AFFA09742AB9A6A7008D2CAD /* Crypt */,
 				AFFA09772AB9A6A7008D2CAD /* Network */,
 				AFFA09AF2AB9A6A7008D2CAD /* Pages */,
@@ -297,6 +355,219 @@
 			path = BaseDefine;
 			sourceTree = "<group>";
 		};
+		AFFA11DA2ABBCFB9008D2CAD /* 基础 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11DB2ABBCFBA008D2CAD /* 网络状态监测 */,
+				AFFA11DE2ABBCFBA008D2CAD /* URL配置 */,
+				AFFA11E12ABBCFBA008D2CAD /* 启动流程 */,
+			);
+			path = "基础";
+			sourceTree = "<group>";
+		};
+		AFFA11DB2ABBCFBA008D2CAD /* 网络状态监测 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11DC2ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.h */,
+				AFFA11DD2ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.m */,
+			);
+			path = "网络状态监测";
+			sourceTree = "<group>";
+		};
+		AFFA11DE2ABBCFBA008D2CAD /* URL配置 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11DF2ABBCFBA008D2CAD /* AMENURLConfig.h */,
+				AFFA11E02ABBCFBA008D2CAD /* AMENURLConfig.m */,
+			);
+			path = "URL配置";
+			sourceTree = "<group>";
+		};
+		AFFA11E12ABBCFBA008D2CAD /* 启动流程 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11E22ABBCFBA008D2CAD /* 系统功能 */,
+				AFFA11EC2ABBCFBA008D2CAD /* 数据采集 */,
+				AFFA11EF2ABBCFBA008D2CAD /* 历史版本数据清理 */,
+				AFFA11F22ABBCFBA008D2CAD /* 系统兼容处理 */,
+				AFFA11F52ABBCFBA008D2CAD /* 口令弹框 */,
+				AFFA11F82ABBCFBA008D2CAD /* 评价 */,
+				AFFA11FD2ABBCFBA008D2CAD /* 截屏检测 */,
+				AFFA12002ABBCFBA008D2CAD /* 启动广告 */,
+				AFFA12072ABBCFBA008D2CAD /* 启动页 */,
+				AFFA12132ABBCFBA008D2CAD /* 版本检测 */,
+			);
+			path = "启动流程";
+			sourceTree = "<group>";
+		};
+		AFFA11E22ABBCFBA008D2CAD /* 系统功能 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11E32ABBCFBA008D2CAD /* 快捷指令 */,
+				AFFA11E62ABBCFBA008D2CAD /* 小组件 */,
+				AFFA11E92ABBCFBA008D2CAD /* 3DTouch */,
+			);
+			path = "系统功能";
+			sourceTree = "<group>";
+		};
+		AFFA11E32ABBCFBA008D2CAD /* 快捷指令 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11E52ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.h */,
+				AFFA11E42ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.m */,
+			);
+			path = "快捷指令";
+			sourceTree = "<group>";
+		};
+		AFFA11E62ABBCFBA008D2CAD /* 小组件 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11E72ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.h */,
+				AFFA11E82ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.m */,
+			);
+			path = "小组件";
+			sourceTree = "<group>";
+		};
+		AFFA11E92ABBCFBA008D2CAD /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11EA2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.h */,
+				AFFA11EB2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.m */,
+			);
+			path = 3DTouch;
+			sourceTree = "<group>";
+		};
+		AFFA11EC2ABBCFBA008D2CAD /* 数据采集 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11EE2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.h */,
+				AFFA11ED2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.m */,
+			);
+			path = "数据采集";
+			sourceTree = "<group>";
+		};
+		AFFA11EF2ABBCFBA008D2CAD /* 历史版本数据清理 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11F12ABBCFBA008D2CAD /* AMEMDataCacheMgr.h */,
+				AFFA11F02ABBCFBA008D2CAD /* AMEMDataCacheMgr.m */,
+			);
+			path = "历史版本数据清理";
+			sourceTree = "<group>";
+		};
+		AFFA11F22ABBCFBA008D2CAD /* 系统兼容处理 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11F32ABBCFBA008D2CAD /* AMENSystemAdaptMgr.h */,
+				AFFA11F42ABBCFBA008D2CAD /* AMENSystemAdaptMgr.m */,
+			);
+			path = "系统兼容处理";
+			sourceTree = "<group>";
+		};
+		AFFA11F52ABBCFBA008D2CAD /* 口令弹框 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11F62ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.h */,
+				AFFA11F72ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.m */,
+			);
+			path = "口令弹框";
+			sourceTree = "<group>";
+		};
+		AFFA11F82ABBCFBA008D2CAD /* 评价 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11F92ABBCFBA008D2CAD /* AMENCheckReviewMgr.h */,
+				AFFA11FB2ABBCFBA008D2CAD /* AMENCheckReviewMgr.m */,
+				AFFA11FC2ABBCFBA008D2CAD /* BCMCheckReviewAlert.h */,
+				AFFA11FA2ABBCFBA008D2CAD /* BCMCheckReviewAlert.m */,
+			);
+			path = "评价";
+			sourceTree = "<group>";
+		};
+		AFFA11FD2ABBCFBA008D2CAD /* 截屏检测 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA11FE2ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.h */,
+				AFFA11FF2ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.m */,
+			);
+			path = "截屏检测";
+			sourceTree = "<group>";
+		};
+		AFFA12002ABBCFBA008D2CAD /* 启动广告 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12012ABBCFBA008D2CAD /* 获取广告数据 */,
+				AFFA12042ABBCFBA008D2CAD /* 展示广告 */,
+			);
+			path = "启动广告";
+			sourceTree = "<group>";
+		};
+		AFFA12012ABBCFBA008D2CAD /* 获取广告数据 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12032ABBCFBA008D2CAD /* AMENStartAdMgr.h */,
+				AFFA12022ABBCFBA008D2CAD /* AMENStartAdMgr.m */,
+			);
+			path = "获取广告数据";
+			sourceTree = "<group>";
+		};
+		AFFA12042ABBCFBA008D2CAD /* 展示广告 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12062ABBCFBA008D2CAD /* AMENStartAdView.h */,
+				AFFA12052ABBCFBA008D2CAD /* AMENStartAdView.m */,
+			);
+			path = "展示广告";
+			sourceTree = "<group>";
+		};
+		AFFA12072ABBCFBA008D2CAD /* 启动页 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12082ABBCFBA008D2CAD /* 启动动画 */,
+				AFFA120B2ABBCFBA008D2CAD /* 启动页控制器 */,
+				AFFA120E2ABBCFBA008D2CAD /* 隐私政策 */,
+			);
+			path = "启动页";
+			sourceTree = "<group>";
+		};
+		AFFA12082ABBCFBA008D2CAD /* 启动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA120A2ABBCFBA008D2CAD /* AMENLaunchAnimationView.h */,
+				AFFA12092ABBCFBA008D2CAD /* AMENLaunchAnimationView.m */,
+			);
+			path = "启动动画";
+			sourceTree = "<group>";
+		};
+		AFFA120B2ABBCFBA008D2CAD /* 启动页控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA120D2ABBCFBA008D2CAD /* AMENLaunchViewController.h */,
+				AFFA120C2ABBCFBA008D2CAD /* AMENLaunchViewController.m */,
+			);
+			path = "启动页控制器";
+			sourceTree = "<group>";
+		};
+		AFFA120E2ABBCFBA008D2CAD /* 隐私政策 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12102ABBCFBA008D2CAD /* AMENPrivacyView.h */,
+				AFFA12122ABBCFBA008D2CAD /* AMENPrivacyView.m */,
+				AFFA120F2ABBCFBA008D2CAD /* AMENVersionCompareTool.h */,
+				AFFA12112ABBCFBA008D2CAD /* AMENVersionCompareTool.m */,
+			);
+			path = "隐私政策";
+			sourceTree = "<group>";
+		};
+		AFFA12132ABBCFBA008D2CAD /* 版本检测 */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA12142ABBCFBA008D2CAD /* AMENCheckVersionMgr.h */,
+				AFFA12152ABBCFBA008D2CAD /* AMENCheckVersionMgr.m */,
+			);
+			path = "版本检测";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,24 +682,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFA12212ABBCFBA008D2CAD /* AppDelegate+AMENScreenshotCheck.m in Sources */,
 				AFFA0A092AB9A6A8008D2CAD /* REMineViewController.m in Sources */,
 				AFFA0A082AB9A6A8008D2CAD /* RENewsViewController.m in Sources */,
+				AFFA12192ABBCFBA008D2CAD /* AMENWidgetkitCalendarMgr.m in Sources */,
 				AFFA09292AB9A233008D2CAD /* ViewController.m in Sources */,
+				AFFA121E2ABBCFBA008D2CAD /* AppDelegate+AMENAdKeyPopups.m in Sources */,
+				AFFA12182ABBCFBA008D2CAD /* AppDelegate+AMENMenuItemShortCuts.m in Sources */,
+				AFFA12242ABBCFBA008D2CAD /* AMENLaunchAnimationView.m in Sources */,
+				AFFA121F2ABBCFBA008D2CAD /* BCMCheckReviewAlert.m in Sources */,
 				AFFA09F02AB9A6A8008D2CAD /* KLUploadFile.m in Sources */,
+				AFFA12172ABBCFBA008D2CAD /* AMENURLConfig.m in Sources */,
 				AFFA09232AB9A233008D2CAD /* AppDelegate.m in Sources */,
+				AFFA12252ABBCFBA008D2CAD /* AMENLaunchViewController.m in Sources */,
 				AFFA0A112AB9A6A8008D2CAD /* REGlobal.m in Sources */,
+				AFFA12272ABBCFBA008D2CAD /* AMENPrivacyView.m in Sources */,
 				AFFA09342AB9A235008D2CAD /* main.m in Sources */,
 				AFFA0A0D2AB9A6A8008D2CAD /* REUINavigationController.m in Sources */,
 				AFFA0A0C2AB9A6A8008D2CAD /* REUITabBar.m in Sources */,
 				AFFA0A0B2AB9A6A8008D2CAD /* REUITabBarController.m in Sources */,
+				AFFA12282ABBCFBA008D2CAD /* AMENCheckVersionMgr.m in Sources */,
 				AFFA0A0A2AB9A6A8008D2CAD /* RESettingViewController.m in Sources */,
 				AFFA0A062AB9A6A8008D2CAD /* REStrollViewController.m in Sources */,
 				AFFA09EF2AB9A6A8008D2CAD /* DataEncrypt.m in Sources */,
+				AFFA12162ABBCFBA008D2CAD /* AppDelegate+NetStateRechability.m in Sources */,
+				AFFA12222ABBCFBA008D2CAD /* AMENStartAdMgr.m in Sources */,
+				AFFA12232ABBCFBA008D2CAD /* AMENStartAdView.m in Sources */,
+				AFFA121D2ABBCFBA008D2CAD /* AMENSystemAdaptMgr.m in Sources */,
 				AFFA0A052AB9A6A8008D2CAD /* REHomeViewController.m in Sources */,
+				AFFA121A2ABBCFBA008D2CAD /* AppDelegate+AMEN3DTouch.m in Sources */,
+				AFFA12202ABBCFBA008D2CAD /* AMENCheckReviewMgr.m in Sources */,
+				AFFA12262ABBCFBA008D2CAD /* AMENVersionCompareTool.m in Sources */,
 				AFFA09262AB9A233008D2CAD /* SceneDelegate.m in Sources */,
+				AFFA121B2ABBCFBA008D2CAD /* AppDelegate+AMENDataCollection.m in Sources */,
 				AFFA09F32AB9A6A8008D2CAD /* KLRequestGenerator.m in Sources */,
 				AFFA09F12AB9A6A8008D2CAD /* KLResponse.m in Sources */,
 				AFFA09F42AB9A6A8008D2CAD /* KLNetWorkManager.m in Sources */,
+				AFFA121C2ABBCFBA008D2CAD /* AMEMDataCacheMgr.m in Sources */,
 				AFFA09F22AB9A6A8008D2CAD /* KLRequest.m in Sources */,
 				AFFA0A072AB9A6A8008D2CAD /* REShopCartViewController.m in Sources */,
 			);
