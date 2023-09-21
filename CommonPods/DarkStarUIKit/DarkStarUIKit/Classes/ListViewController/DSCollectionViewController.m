@@ -7,7 +7,7 @@
 
 #import "DSCollectionViewController.h"
 #import <Masonry/Masonry.h>
-#import "MJRefresh.h"
+#import <MJRefresh/MJRefresh.h>
 #import <DarkStarBaseKit/DarkStarBaseKit.h>
 @interface DSCollectionViewController ()
 

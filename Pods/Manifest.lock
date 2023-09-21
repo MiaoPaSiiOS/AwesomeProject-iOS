@@ -35,7 +35,10 @@ PODS:
     - DarkStarUIComponents/CardSwitch
     - DarkStarUIComponents/CollectionViewLayout
     - DarkStarUIComponents/DialogSingleChoice
+    - DarkStarUIComponents/Toast
+    - DarkStarUIComponents/Waitview
     - DarkStarUIKit
+    - FSCalendar
     - JXCategoryView
     - Masonry
     - MJExtension
@@ -246,6 +249,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - FSCalendar (2.8.4)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
@@ -363,6 +367,7 @@ SPEC REPOS:
     - DoraemonKit
     - FDFullscreenPopGesture
     - FMDB
+    - FSCalendar
     - GCDWebServer
     - GPUImage
     - iCarousel
@@ -454,7 +459,7 @@ SPEC CHECKSUMS:
   DarkStarAccountKit: e0c451b086b695d6cb9d5ca93c9813d9d9eac9d9
   DarkStarAudioRecorderKit: 51ecc179d93f14b609226690b20c073eb28bfb2c
   DarkStarAuthorityKit: 83e2fb5f20bec293dbcf8394253a8795e7f1843d
-  DarkStarAwesomeKit: a742171dab287fb1e474d3586793ea8c7f032b07
+  DarkStarAwesomeKit: 70c83aab600b2cad0fd7285a6e65e0b908ee5305
   DarkStarBaseKit: a9e1f1de452160f6be958b91bc222970a711cff5
   DarkStarConfiguration: db60400f8bfd62ad7863fb96e7c391652cb33d1b
   DarkStarCrypto: fea9adb2c135ccac83622db093af293a03fd3cab
@@ -481,6 +486,7 @@ SPEC CHECKSUMS:
   DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f

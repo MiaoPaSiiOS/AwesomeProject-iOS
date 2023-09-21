@@ -3,38 +3,4 @@
    uuid = "41CE08BF-7330-460F-B6B3-3F5458C3B8BE"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5FA3612E-FCD5-486C-B9BD-4FC857DF416B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DSDemo-Swift/DSDemo-Swift/Classes/Class/CLChangeLanguageController/CLChangeLanguageController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "initData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1E8753DB-3D84-4F73-9CAF-EA52DF1BE790"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CommonPods/DarkStarEnjoyCameraKit/DarkStarEnjoyCameraKit/Classes/Modules/PhotoEffect/Controller/QMPhotoEffectViewController.m"
-            startingColumnNumber = "13"
-            endingColumnNumber = "29"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
-            landmarkName = "-buttonTapped:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

@@ -30,6 +30,7 @@ ${BUILT_PRODUCTS_DIR}/DarkStarWebKit/DarkStarWebKit.framework
 ${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework
 ${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
 ${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework
 ${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework
 ${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework

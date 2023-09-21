@@ -1,0 +1,6 @@
+framework module IU_GeneralTools {
+  umbrella header "IU_GeneralTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

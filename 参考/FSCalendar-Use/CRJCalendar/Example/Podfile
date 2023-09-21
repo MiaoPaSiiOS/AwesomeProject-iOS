@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'CRJCalendar_Example' do
+  pod 'CRJCalendar', :path => '../'
+  pod 'MJRefresh'
+  pod 'IU_MobileFramework'
+  pod 'IU_Categories'
+  pod 'IU_GeneralTools'
+  target 'CRJCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

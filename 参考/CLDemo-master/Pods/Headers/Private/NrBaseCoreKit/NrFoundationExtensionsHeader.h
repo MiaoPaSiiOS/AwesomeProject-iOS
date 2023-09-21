@@ -1,1 +1,0 @@
-../../../NrBaseCoreKit/NrBaseCoreKit/Classes/Categorys/Foundation/NrFoundationExtensionsHeader.h

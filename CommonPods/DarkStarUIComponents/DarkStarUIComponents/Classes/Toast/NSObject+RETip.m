@@ -42,7 +42,7 @@
 }
 
 - (MBProgressHUD *)re_showHUDMessage:(NSString *)message toView:(UIView *)view {
-    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    if (view == nil) view = [self find_window];
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = message;
@@ -57,7 +57,7 @@
 
 - (void)re_hideHUDForView:(UIView *)view
 {
-    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    if (view == nil) view = [self find_window];
     [MBProgressHUD hideHUDForView:view animated:YES];
 }
 
@@ -69,7 +69,7 @@
 #pragma mark Private
 - (void)re_show:(NSString *)text icon:(UIImage *)icon view:(UIView *)view
 {
-    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    if (view == nil) view = [self find_window];
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = text;
@@ -87,7 +87,7 @@
 
 - (void)re_showMSG:(NSString *)text view:(UIView *)view
 {
-    if (view == nil) view = [[UIApplication sharedApplication].windows lastObject];
+    if (view == nil) view = [self find_window];
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = text;
@@ -101,6 +101,20 @@
     
     // 1秒之后再消失
     [hud hideAnimated:YES afterDelay:1.3];
+}
+
+- (nullable UIWindow *)find_window {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal) {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for (UIWindow *tmpWin in windows) {
+            if (tmpWin.windowLevel == UIWindowLevelNormal) {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    return window;
 }
 
 @end

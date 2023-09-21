@@ -1,0 +1,6 @@
+framework module IU_Categories {
+  umbrella header "IU_Categories-umbrella.h"
+
+  export *
+  module * { export * }
+}

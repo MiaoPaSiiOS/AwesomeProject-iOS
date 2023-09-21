@@ -1,1 +1,0 @@
-../../../NrBaseCoreKit/NrBaseCoreKit/Classes/DataObject/NrNItem.h

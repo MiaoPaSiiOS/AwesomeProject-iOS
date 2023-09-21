@@ -128,6 +128,11 @@
             @"classStr":@"CLBubbleViewController",
             @"extParmers":@{}
         },
+        @{
+            @"title":@"[展示]FSCalendar使用",
+            @"classStr":@"DisplayFSCalendarUseViewController",
+            @"extParmers":@{}
+        },
         
     ]];
     

@@ -34,6 +34,15 @@
     "DarkStarUIKit": [
 
     ],
+    "DarkStarGeneralTools": [
+
+    ],
+    "DarkStarDownloadManagerKit": [
+
+    ],
+    "DarkStarPhotoBrowserKit": [
+
+    ],
     "DarkStarUIComponents/Button": [
 
     ],
@@ -46,13 +55,10 @@
     "DarkStarUIComponents/CardSwitch": [
 
     ],
-    "DarkStarGeneralTools": [
+    "DarkStarUIComponents/Waitview": [
 
     ],
-    "DarkStarDownloadManagerKit": [
-
-    ],
-    "DarkStarPhotoBrowserKit": [
+    "DarkStarUIComponents/Toast": [
 
     ],
     "CTMediator": [
@@ -77,6 +83,9 @@
 
     ],
     "pop": [
+
+    ],
+    "FSCalendar": [
 
     ]
   }

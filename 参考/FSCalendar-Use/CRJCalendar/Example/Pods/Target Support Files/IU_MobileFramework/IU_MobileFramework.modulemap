@@ -1,0 +1,6 @@
+framework module IU_MobileFramework {
+  umbrella header "IU_MobileFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
