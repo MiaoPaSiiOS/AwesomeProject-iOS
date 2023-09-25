@@ -1,0 +1,6 @@
+framework module Pods_test_channel_pack_test_channel_packUITests {
+  umbrella header "Pods-test-channel-pack-test-channel-packUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

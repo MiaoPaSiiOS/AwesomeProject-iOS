@@ -1,0 +1,6 @@
+framework module Pods_test_channel_pack {
+  umbrella header "Pods-test-channel-pack-umbrella.h"
+
+  export *
+  module * { export * }
+}
