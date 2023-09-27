@@ -49,7 +49,7 @@ static NSInteger const kRowNUM = 10;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.backgroundColor = kRandomColor;
+    cell.backgroundColor = [DSCommonMethods randomColor];
     cell.textLabel.text=[NSString stringWithFormat:@"%ld",(long)indexPath.row];
     return cell;
 }

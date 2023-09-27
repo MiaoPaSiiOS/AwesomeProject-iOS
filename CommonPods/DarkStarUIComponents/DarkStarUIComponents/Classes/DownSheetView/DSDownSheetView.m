@@ -135,7 +135,7 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16.0f];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.textColor = kHexColor(0x222222);
+        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
         _titleLabel.adjustsFontSizeToFitWidth = YES;
         _titleLabel.text = self.title;
     }
@@ -146,7 +146,7 @@
 - (UIButton *)leftButton {
     if (!_leftButton) {
         _leftButton = [[UIButton alloc] init];
-        [_leftButton setTitleColor:kHexColor(0x2072cf) forState:UIControlStateNormal];
+        [_leftButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"]  forState:UIControlStateNormal];
         _leftButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
         if (safeString(self.leftTitle).length) {
             [_leftButton setTitle:self.leftTitle forState:UIControlStateNormal];
@@ -163,7 +163,7 @@
 - (UIButton *)rightButton {
     if (!_rightButton) {
         _rightButton = [[UIButton alloc] init];
-        [_rightButton setTitleColor:kHexColor(0x2072cf) forState:UIControlStateNormal];
+        [_rightButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"] forState:UIControlStateNormal];
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
         if (safeString(self.rightTitle).length) {
             [_rightButton setTitle:self.rightTitle forState:UIControlStateNormal];
@@ -185,7 +185,7 @@
         _listView.dataSource = self;
         _listView.bounces = NO;
         _listView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-        _listView.separatorColor = kHexColor(0xe8e8e8);
+        _listView.separatorColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
         _listView.estimatedRowHeight = 0;
         _listView.estimatedSectionHeaderHeight = 0;
         _listView.estimatedSectionFooterHeight = 0;

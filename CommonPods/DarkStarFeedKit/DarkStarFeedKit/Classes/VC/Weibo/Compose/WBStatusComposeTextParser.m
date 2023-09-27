@@ -15,7 +15,7 @@
     self = [super init];
     _font = [UIFont systemFontOfSize:17];
     _textColor = [UIColor colorWithWhite:0.2 alpha:1];
-    _highlightTextColor = kHexColor(0x527ead);
+    _highlightTextColor = [DSCommonMethods colorWithHexString:@"0x527ead"];
     return self;
 }
 

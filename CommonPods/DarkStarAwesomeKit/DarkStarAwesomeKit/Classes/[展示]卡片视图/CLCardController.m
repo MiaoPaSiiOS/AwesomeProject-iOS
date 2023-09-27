@@ -37,7 +37,7 @@
 }
 -(CLCardViewCell *)cardView:(CLCardView *)cardView cellForRowAtIndexIndex:(NSInteger)index {
     CLCardViewCell * cell = [cardView dequeueReusableViewWithIdentifier:@"Identifier"];
-    cell.backgroundColor = kRandomColor;
+    cell.backgroundColor = [DSCommonMethods randomColor];
     cell.layer.cornerRadius = 10;
     cell.text = [NSString stringWithFormat:@"我是第%ld个",index];
     return cell;

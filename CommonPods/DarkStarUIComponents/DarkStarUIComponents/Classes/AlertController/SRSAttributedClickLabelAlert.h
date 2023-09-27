@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_END
      NSString *full = [NSString stringWithFormat:@"请阅读并同意%@",linkArray.firstObject];;
      [SRSAttributedClickLabelAlert alertWithConfigLable:^(TTTAttributedLabel * _Nonnull lable) {
          //赋值
-         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:full attributes: @{NSForegroundColorAttributeName: kHexColor(0x333333),NSFontAttributeName: FONT_REGULAR(16)}];
+         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:full attributes: @{NSForegroundColorAttributeName: [DSCommonMethods colorWithHexString:@"0x333333"],NSFontAttributeName: FONT_REGULAR(16)}];
          for (NSString *url in linkArray) {
              NSRange text_range = [[attributedString string] rangeOfString:url];
              [attributedString setAttributes:@{

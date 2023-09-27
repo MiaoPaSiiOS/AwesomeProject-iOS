@@ -547,7 +547,7 @@
     _conversationTopJoin.userInteractionEnabled = NO;
     _conversationTopJoin.hidden = YES;
     _conversationTopJoin.width = 3;
-    _conversationTopJoin.backgroundColor = kHexColor(0xe1e8ed);
+    _conversationTopJoin.backgroundColor = [DSCommonMethods colorWithHexString:@"0xe1e8ed"];
     _conversationTopJoin.clipsToBounds = YES;
     _conversationTopJoin.layer.cornerRadius = _conversationTopJoin.width / 2;
     _conversationTopJoin.centerX = _avatarView.centerX;

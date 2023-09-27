@@ -48,7 +48,7 @@
 }
 
 - (void)changeToErrorStatus {
-    self.textView.textColor = kHexColor(0xFF4D29);
+    self.textView.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
     self.clearBtn.alpha = 0;
 }
 
@@ -58,7 +58,7 @@
     if (self = [super init]) {
         
         self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, (82));
-        self.backgroundColor = kHexColor(0xFFFFFF);
+        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
         
         [self addSubview:self.titleLabel];
         [self addSubview:self.textView];
@@ -122,14 +122,14 @@
 - (void)textViewDidChange:(UITextView *)textView {
     self.clearBtn.alpha = textView.text.length ? 1 : 0;
     self.placeholderLabel.alpha = textView.text.length ? 0 : 1;
-    self.textView.textColor = kHexColor(0x222222);
+    self.textView.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     if (self.srsMultiLineDelegate && [self.srsMultiLineDelegate respondsToSelector:@selector(textViewDidChange:)]) {
         [self.srsMultiLineDelegate textViewDidChange:textView];
     }
 }
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
-    self.textView.textColor = kHexColor(0x222222);
+    self.textView.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     self.clearBtn.alpha = textView.text.length ? 1 : 0;
     if (self.srsMultiLineDelegate && [self.srsMultiLineDelegate respondsToSelector:@selector(textViewShouldBeginEditing:)]) {
         return [self.srsMultiLineDelegate textViewShouldBeginEditing:textView];
@@ -208,7 +208,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _titleLabel.textColor = kHexColor(0x333333);
+        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
     }
     return _titleLabel;
 }
@@ -216,7 +216,7 @@
 - (UIView *)lineView {
     if (!_lineView) {
         _lineView = [[UIView alloc] init];
-        _lineView.backgroundColor = kHexColor(0xE8E8E8);
+        _lineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
     }
     return _lineView;
 }
@@ -225,7 +225,7 @@
     if (!_textView) {
         _textView = [[UITextView alloc] init];
         _textView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _textView.textColor = kHexColor(0x222222);
+        _textView.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
         _textView.delegate = self;
         _textView.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
@@ -246,7 +246,7 @@
     if (!_placeholderLabel) {
         _placeholderLabel = [[UILabel alloc] init];
         _placeholderLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _placeholderLabel.textColor = kHexColor(0xCCCCCC);
+        _placeholderLabel.textColor = [DSCommonMethods colorWithHexString:@"0xCCCCCC"];
         _placeholderLabel.textAlignment = NSTextAlignmentLeft;
     }
     return _placeholderLabel;

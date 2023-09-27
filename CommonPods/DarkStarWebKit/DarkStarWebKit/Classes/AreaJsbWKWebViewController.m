@@ -66,7 +66,7 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = kHexColor(0xf4f6f8);
+    self.view.backgroundColor = [DSCommonMethods colorWithHexString:@"0xf4f6f8"];
     // 第一次进入展示返回按钮
     self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
     // Do any additional setup after loading the view.
@@ -807,7 +807,7 @@
     }
     closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
     closeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-    [closeBtn setTitleColor:kHexColor(0x333333) forState:UIControlStateNormal];
+    [closeBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x333333"] forState:UIControlStateNormal];
     [closeBtn addTarget:self action: @selector(closeWebview)forControlEvents:UIControlEventTouchUpInside];
     [self.appBar addSubview:closeBtn];
 }

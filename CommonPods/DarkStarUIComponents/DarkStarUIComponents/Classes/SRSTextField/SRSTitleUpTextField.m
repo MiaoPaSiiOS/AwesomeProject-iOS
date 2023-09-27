@@ -61,16 +61,16 @@
 - (void)changeTextFieldStatus:(SRSTextFieldStatus)status {
     [super changeTextFieldStatus:status];
     if (status == SRSTextFieldStatusNormal) { // 正常
-        self.lineLabel.backgroundColor = kHexColor(0x444444);
-        self.titleLabel.textColor = kHexColor(0x333333);
+        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
+        self.titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
         self.titleLabel.text = self.title;
     } else if (status == SRSTextFieldStatusInput) { // 输入
-        self.lineLabel.backgroundColor = kHexColor(0x4586FF);
-        self.titleLabel.textColor = kHexColor(0x333333);
+        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x4586FF"];
+        self.titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
         self.titleLabel.text = self.title;
     } else if (status == SRSTextFieldStatusError) { // 报错
-        self.lineLabel.backgroundColor = kHexColor(0xFF4D29);
-        self.titleLabel.textColor = kHexColor(0xFF4D29);
+        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
+        self.titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
         self.titleLabel.text = self.errorTitle;
     } else {
         
@@ -86,7 +86,7 @@
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    self.textField.textColor = kHexColor(0x222222);
+    self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     return [super textFieldShouldBeginEditing:textField];
 }
 
@@ -124,7 +124,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(16)];
-        _titleLabel.textColor = kHexColor(0x333333);
+        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
         _titleLabel.textAlignment = NSTextAlignmentLeft;
     }
     return _titleLabel;
@@ -133,7 +133,7 @@
 - (UILabel *)lineLabel {
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc] init];
-        _lineLabel.backgroundColor = kHexColor(0x444444);
+        _lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
     }
     return _lineLabel;
 }

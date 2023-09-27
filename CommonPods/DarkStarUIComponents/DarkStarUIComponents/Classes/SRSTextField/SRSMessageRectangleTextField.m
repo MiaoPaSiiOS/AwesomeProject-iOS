@@ -42,7 +42,7 @@
 }
 
 - (void)changeToErrorStatus {
-    self.textField.textColor = kHexColor(0xFF4D29);
+    self.textField.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
 }
 
 #pragma mark - ui
@@ -149,7 +149,7 @@
 #pragma mark - delegate
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    self.textField.textColor = kHexColor(0x222222);
+    self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     return YES;
 }
 
@@ -170,7 +170,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = kHexColor(0x444444);
+        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x444444"];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
         _titleLabel.text = @"验证码";
     }
@@ -182,7 +182,7 @@
         _textField = [[UITextField alloc] init];
         _textField.placeholder = @"请输入验证码";
         _textField.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _textField.textColor = kHexColor(0x222222);
+        _textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
         _textField.keyboardType = UIKeyboardTypeNumberPad;
         _textField.delegate = self;
     }
@@ -192,7 +192,7 @@
 - (UILabel *)lineLabel {
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc] init];
-        _lineLabel.backgroundColor = kHexColor(0xE8E8E8);
+        _lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
     }
     return _lineLabel;
 }
@@ -201,8 +201,8 @@
     if (!_sendBtn) {
         _sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_sendBtn setTitle:@"发送" forState:UIControlStateNormal];
-        [_sendBtn setTitleColor:kHexColor(0x4586FF) forState:UIControlStateNormal];
-        [_sendBtn setTitleColor:kHexColor(0x888888) forState:UIControlStateDisabled];
+        [_sendBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
+        [_sendBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x888888"] forState:UIControlStateDisabled];
         _sendBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
     }
     return _sendBtn;
@@ -211,7 +211,7 @@
 - (UILabel *)bottomLabel {
     if (!_bottomLabel) {
         _bottomLabel = [[UILabel alloc] init];
-        _bottomLabel.textColor = kHexColor(0x888888);
+        _bottomLabel.textColor = [DSCommonMethods colorWithHexString:@"0x888888"];
         _bottomLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(13)];
     }
     return _bottomLabel;

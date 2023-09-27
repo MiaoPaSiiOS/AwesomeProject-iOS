@@ -63,13 +63,13 @@
 - (void)changeTextFieldStatus:(SRSTextFieldStatus)status {
     [super changeTextFieldStatus:status];
     if (status == SRSTextFieldStatusNormal) {
-        self.textField.textColor = kHexColor(0x222222);
+        self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     } else if (status == SRSTextFieldStatusInput) {
-        self.textField.textColor = kHexColor(0x222222);
+        self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     } else if (status == SRSTextFieldStatusError) {
-        self.textField.textColor = kHexColor(0xFF4D29);
+        self.textField.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
     } else {
-        self.textField.textColor = kHexColor(0x888888);
+        self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x888888"];
     }
 }
 
@@ -82,7 +82,7 @@
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    self.textField.textColor = kHexColor(0x222222);
+    self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
     return [super textFieldShouldBeginEditing:textField];
 }
 
@@ -119,7 +119,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _titleLabel.textColor = kHexColor(0x333333);
+        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
     }
     return _titleLabel;
 }
@@ -127,7 +127,7 @@
 - (UIView *)lineView {
     if (!_lineView) {
         _lineView = [[UIView alloc] init];
-        _lineView.backgroundColor = kHexColor(0xE8E8E8);
+        _lineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
     }
     return _lineView;
 }

@@ -108,7 +108,7 @@
     // 取消按钮
     _cancelButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-    [_cancelButton setTitleColor:kHexColor(0x63dab9) forState:UIControlStateNormal];
+    [_cancelButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x63dab9"] forState:UIControlStateNormal];
     [_cancelButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_cancelButton];
     [_cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -120,7 +120,7 @@
     // 尺寸按钮
     _scaleButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [_scaleButton setTitle:@"3:4" forState:UIControlStateNormal];
-    [_scaleButton setTitleColor:kHexColor(0x63dab9) forState:UIControlStateNormal];
+    [_scaleButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x63dab9"] forState:UIControlStateNormal];
     [_scaleButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_scaleButton];
     [_scaleButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -132,7 +132,7 @@
     // 旋转按钮
     _rotateButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [_rotateButton setTitle:@"旋转" forState:UIControlStateNormal];
-    [_rotateButton setTitleColor:kHexColor(0x63dab9) forState:UIControlStateNormal];
+    [_rotateButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x63dab9"] forState:UIControlStateNormal];
     [_rotateButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_rotateButton];
     [_rotateButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -144,7 +144,7 @@
     // 完成按钮
     _finishButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [_finishButton setTitle:@"完成" forState:UIControlStateNormal];
-    [_finishButton setTitleColor:kHexColor(0x63dab9) forState:UIControlStateNormal];
+    [_finishButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x63dab9"] forState:UIControlStateNormal];
     [_finishButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_finishButton];
     [_finishButton mas_makeConstraints:^(MASConstraintMaker *make) {

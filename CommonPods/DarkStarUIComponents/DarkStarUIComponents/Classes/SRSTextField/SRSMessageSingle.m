@@ -33,7 +33,7 @@
         self.cursor = [[UIImageView alloc] init];
         self.cursor.alpha = 0;
         self.cursor.userInteractionEnabled = YES;
-        self.cursor.backgroundColor = kHexColor(0x4586FF);
+        self.cursor.backgroundColor = [DSCommonMethods colorWithHexString:@"0x4586FF"];
         self.cursor.layer.cornerRadius = (4);
         self.cursor.layer.masksToBounds = YES;
         [self.contentView addSubview:_cursor];
@@ -58,7 +58,7 @@
         
         self.bottomLabel = [[UILabel alloc] init];
         self.bottomLabel.userInteractionEnabled = YES;
-        self.bottomLabel.backgroundColor = kHexColor(0x444444);
+        self.bottomLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
         [self.contentView addSubview:self.bottomLabel];
         
         [self.bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,13 +107,13 @@
     _status = status;
     switch (status) {
             case eSRSBottomLabelStatusError:
-            self.bottomLabel.backgroundColor = kHexColor(0xFF4D29);
+            self.bottomLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
             break;
             case eSRSBottomLabelStatusInput:
-            self.bottomLabel.backgroundColor = kHexColor(0x4586FF);
+            self.bottomLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x4586FF"];
             break;
             case eSRSBottomLabelStatusDefault:
-            self.bottomLabel.backgroundColor = kHexColor(0x444444);
+            self.bottomLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
             break;
     }
 }

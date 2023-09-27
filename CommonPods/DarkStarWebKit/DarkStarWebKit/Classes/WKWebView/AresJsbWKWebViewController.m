@@ -119,7 +119,7 @@
     
 #pragma mark - 进度条
     self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-    self.progressView.tintColor = kHexColor(0x4586ff);
+    self.progressView.tintColor = [DSCommonMethods colorWithHexString:@"0x4586ff"];
     self.progressView.trackTintColor = [UIColor clearColor];
     self.progressView.hidden = YES;
     [self.appBar addSubview:self.progressView];

@@ -114,7 +114,7 @@
     }
     if (placeholderPlainText) {
         NSMutableAttributedString *atr = [[NSMutableAttributedString alloc] initWithString:placeholderPlainText];
-        atr.yy_color = kHexColor(0xb4b4b4);
+        atr.yy_color = [DSCommonMethods colorWithHexString:@"0xb4b4b4"];
         atr.yy_font = [UIFont systemFontOfSize:17];
         _textView.placeholderAttributedText = atr;
     }
@@ -130,7 +130,7 @@
     _toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
     _toolbarBackground = [UIView new];
-    _toolbarBackground.backgroundColor = kHexColor(0xF9F9F9);
+    _toolbarBackground.backgroundColor = [DSCommonMethods colorWithHexString:@"0xF9F9F9"];
     _toolbarBackground.size = CGSizeMake(_toolbar.width, 46);
     _toolbarBackground.bottom = _toolbar.height;
     _toolbarBackground.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
@@ -139,7 +139,7 @@
     _toolbarBackground.height = 300; // extend
     
     UIView *line = [UIView new];
-    line.backgroundColor = kHexColor(0xBFBFBF);
+    line.backgroundColor = [DSCommonMethods colorWithHexString:@"0xBFBFBF"];
     line.width = _toolbarBackground.width;
     line.height = DSCommonMethods.LINE_HEIGHT;
     line.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -151,15 +151,15 @@
     _toolbarPOIButton.left = 5;
     _toolbarPOIButton.clipsToBounds = YES;
     _toolbarPOIButton.layer.cornerRadius = _toolbarPOIButton.height / 2;
-    _toolbarPOIButton.layer.borderColor = kHexColor(0xe4e4e4).CGColor;
+    _toolbarPOIButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
     _toolbarPOIButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
     _toolbarPOIButton.titleLabel.font = [UIFont systemFontOfSize:14];
     _toolbarPOIButton.adjustsImageWhenHighlighted = NO;
     [_toolbarPOIButton setTitle:@"显示位置 " forState:UIControlStateNormal];
-    [_toolbarPOIButton setTitleColor:kHexColor(0x939393) forState:UIControlStateNormal];
+    [_toolbarPOIButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x939393"] forState:UIControlStateNormal];
     [_toolbarPOIButton setImage:[WBStatusHelper imageNamed:@"compose_locatebutton_ready"] forState:UIControlStateNormal];
-    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:kHexColor(0xf8f8f8)] forState:UIControlStateNormal];
-    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:kHexColor(0xe0e0e0)] forState:UIControlStateHighlighted];
+    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
+    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
     [_toolbar addSubview:_toolbarPOIButton];
     
     _toolbarGroupButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -169,15 +169,15 @@
     _toolbarGroupButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
     _toolbarGroupButton.clipsToBounds = YES;
     _toolbarGroupButton.layer.cornerRadius = _toolbarGroupButton.height / 2;
-    _toolbarGroupButton.layer.borderColor = kHexColor(0xe4e4e4).CGColor;
+    _toolbarGroupButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
     _toolbarGroupButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
     _toolbarGroupButton.titleLabel.font = [UIFont systemFontOfSize:14];
     _toolbarGroupButton.adjustsImageWhenHighlighted = NO;
     [_toolbarGroupButton setTitle:@"公开 " forState:UIControlStateNormal];
-    [_toolbarGroupButton setTitleColor:kHexColor(0x527ead) forState:UIControlStateNormal];
+    [_toolbarGroupButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x527ead"] forState:UIControlStateNormal];
     [_toolbarGroupButton setImage:[WBStatusHelper imageNamed:@"compose_publicbutton"] forState:UIControlStateNormal];
-    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:kHexColor(0xf8f8f8)] forState:UIControlStateNormal];
-    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:kHexColor(0xe0e0e0)] forState:UIControlStateHighlighted];
+    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
+    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
     [_toolbar addSubview:_toolbarGroupButton];
     
     _toolbarPictureButton = [self _toolbarButtonWithImage:@"compose_toolbar_picture"
@@ -308,7 +308,7 @@
         _navbarCancleButton.clipsToBounds = YES;
         _navbarCancleButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarCancleButton setTitle:@"取消" forState:UIControlStateNormal];
-        [_navbarCancleButton setTitleColor:kHexColor(0x939393) forState:UIControlStateNormal];
+        [_navbarCancleButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x939393"]forState:UIControlStateNormal];
         [_navbarCancleButton addTarget:self action:@selector(clicknavbarCancleButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _navbarCancleButton;
@@ -322,7 +322,7 @@
         _navbarPublishButton.left = 12;
         _navbarPublishButton.clipsToBounds = YES;
         _navbarPublishButton.layer.cornerRadius = _toolbarPOIButton.height / 2;
-        _navbarPublishButton.layer.borderColor = kHexColor(0xe4e4e4).CGColor;
+        _navbarPublishButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
         _navbarPublishButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
         _navbarPublishButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarPublishButton setTitle:@"发布" forState:UIControlStateNormal];

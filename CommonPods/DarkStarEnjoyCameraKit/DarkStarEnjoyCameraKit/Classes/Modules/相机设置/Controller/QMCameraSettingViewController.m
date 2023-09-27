@@ -28,12 +28,12 @@
 - (void)setupUI
 {
     // Background
-    self.view.backgroundColor = kHexColor(0xF7F8F8);
+    self.view.backgroundColor = [DSCommonMethods colorWithHexString:@"0xF7F8F8"];
     
     // topBar
     UIView *topBar = [[UIView alloc] initWithFrame:CGRectZero];
     topBar.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, DSCommonMethods.screenWidth, DSCommonMethods.naviBarContentHeight);
-    topBar.backgroundColor = kHexColor(0xebedee);
+    topBar.backgroundColor = [DSCommonMethods colorWithHexString:@"0xebedee"];
     [self.view addSubview:topBar];
     
     // title
@@ -62,7 +62,7 @@
     tableView.rowHeight = 55;
     tableView.dataSource = self;
     tableView.delegate = self;
-    tableView.separatorColor = kHexColor(0xebedee);
+    tableView.separatorColor = [DSCommonMethods colorWithHexString:@"0xebedee"];
     
     [tableView registerNib:[AECResouce nibWithNibName:@"QMSettingTableViewCell"] forCellReuseIdentifier:@"QMSettingTableViewCell"];
     [self.view addSubview:tableView];
@@ -117,7 +117,7 @@
 
 -(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
 {
-    ((UITableViewHeaderFooterView *)view).textLabel.textColor = kHexColor(0xbac1c5);
+    ((UITableViewHeaderFooterView *)view).textLabel.textColor = [DSCommonMethods colorWithHexString:@"0xbac1c5"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

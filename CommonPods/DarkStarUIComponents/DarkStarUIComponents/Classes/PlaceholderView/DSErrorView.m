@@ -21,7 +21,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = kHexColor(0xFFFFFF);
+        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
     }
     return self;
 }
@@ -111,7 +111,7 @@
 - (UILabel *)customTextLab {
     if (!_customTextLab) {
         _customTextLab = [[UILabel alloc] init];
-        _customTextLab.textColor = kHexColor(0x333333);
+        _customTextLab.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
         _customTextLab.font = [UIFont systemFontOfSize:14];
         _customTextLab.textAlignment = NSTextAlignmentCenter;
     }

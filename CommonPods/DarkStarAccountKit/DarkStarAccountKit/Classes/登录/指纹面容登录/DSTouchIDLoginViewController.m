@@ -30,7 +30,7 @@ typedef enum {// 按钮tag
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
-    self.dsView.backgroundColor = kHexColor(0xffffff);
+    self.dsView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];
     _isFaceIDDevice = [DSTouchIDInfoUtil returnTheResultOfFaceID];
     if (_isFaceIDDevice) {
         self.title = @"面容ID登录";
@@ -125,7 +125,7 @@ typedef enum {// 按钮tag
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     if (changeColor) {
-        [btn setTitleColor:kHexColor(0x4586ff) forState:UIControlStateNormal];
+        [btn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
     }
     [btn setBackgroundImage:image forState:UIControlStateNormal];
     [btn.titleLabel setFont:font];

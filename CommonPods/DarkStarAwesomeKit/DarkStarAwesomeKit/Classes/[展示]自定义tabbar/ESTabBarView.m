@@ -73,7 +73,7 @@
         DSUIButton * btn = [[DSUIButton alloc] initWithFrame:CGRectMake(i * w, 0, w, self.tabbarHeight)];
         [btn setTitle:titles[i] forState:UIControlStateNormal];
         [btn setTitle:titles[i] forState:UIControlStateSelected];
-        [btn setTitleColor:kRGBColor(51, 51, 51) forState:UIControlStateNormal];
+        [btn setTitleColor:[DSCommonMethods RGBA:51 green:51 blue:51] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         [btn setImage:[DSAwesomeKitTool imageNamed:itemImgNor[i]] forState:UIControlStateNormal];
         [btn setImage:[DSAwesomeKitTool imageNamed:[itemImgNor[i] stringByAppendingString:@"_sel"]]  forState:UIControlStateSelected];

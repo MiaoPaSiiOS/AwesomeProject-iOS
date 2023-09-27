@@ -148,7 +148,7 @@
     if (!_textField) {
         _textField = [[UITextField alloc] init];
         _textField.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(15)];
-        _textField.textColor = kHexColor(0x222222);
+        _textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
         _textField.delegate = self;
     }
     return _textField;

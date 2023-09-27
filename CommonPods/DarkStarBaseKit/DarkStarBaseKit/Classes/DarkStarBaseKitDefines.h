@@ -9,41 +9,6 @@
 #define DarkStarBaseKitDefines_h
 
 
-
-
-/// RGBA 颜色
-#ifndef kRGBAColor
-#define kRGBAColor(redValue, greenValue, blueValue, alphaValue) [UIColor colorWithRed:(redValue)/255.0f green:(greenValue)/255.0f blue:(blueValue)/255.0f alpha:(alphaValue)]
-#endif
-
-
-/// RGB 颜色, alpha 默认为 1.0
-#ifndef kRGBColor
-#define kRGBColor(redValue, greenValue , blueValue) kRGBAColor(redValue, greenValue , blueValue, 1.0)
-#endif
-
-
-/// 十六进制颜色, rgbValue为16进制数字
-#ifndef kHexAColor
-#define kHexAColor(rgbValue, a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
-#endif
-
-
-/// 十六进制颜色, alpha 默认为 1.0
-#ifndef kHexColor
-#define kHexColor(rgbValue) kHexAColor(rgbValue, 1.0)
-#endif
-
-#ifndef kStringColor
-#define kStringColor(colorString) [UIColor ds_colorWithColorString:colorString]
-#endif
-
-
-
-#ifndef kRandomColor
-#define kRandomColor [UIColor colorWithHue:(arc4random() % 256 / 256.0) saturation:((arc4random() % 128 / 256.0) + 0.5) brightness:((arc4random() % 128 / 256.0) + 0.5) alpha:1]
-#endif
-
 /// 弱引用
 #ifndef kWeakSelf
 #define kWeakSelf __weak typeof(self) weakSelf = self;

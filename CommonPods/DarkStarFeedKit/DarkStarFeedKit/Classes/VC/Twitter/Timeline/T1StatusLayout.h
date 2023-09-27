@@ -28,16 +28,16 @@
 #define kT1TextFontSize 14
 #define kT1ActionFontSize 12
 
-#define kT1UserNameColor kHexColor(0x292F33)
-#define kT1UserNameSubColor kHexColor(0x8899A6)
+#define kT1UserNameColor [DSCommonMethods colorWithHexString:@"0x292F33"]
+#define kT1UserNameSubColor [DSCommonMethods colorWithHexString:@"0x8899A6"]
 #define kT1CellBGHighlightColor [UIColor colorWithWhite:0.000 alpha:0.041]
-#define kT1TextColor kHexColor(0x292F33)
-#define kT1TextHighlightedColor kHexColor(0x1A91DA)
-#define kT1TextActionsColor kHexColor(0x8899A6)
-#define kT1TextHighlightedBackgroundColor kHexColor(0xebeef0)
+#define kT1TextColor [DSCommonMethods colorWithHexString:@"0x292F33"]
+#define kT1TextHighlightedColor [DSCommonMethods colorWithHexString:@"0x1A91DA"]
+#define kT1TextActionsColor [DSCommonMethods colorWithHexString:@"0x8899A6"]
+#define kT1TextHighlightedBackgroundColor [DSCommonMethods colorWithHexString:@"0xebeef0"]
 
-#define kT1TextActionRetweetColor kHexColor(0x19CF86)
-#define kT1TextActionFavoriteColor kHexColor(0xFAB81E)
+#define kT1TextActionRetweetColor [DSCommonMethods colorWithHexString:@"0x19CF86"]
+#define kT1TextActionFavoriteColor [DSCommonMethods colorWithHexString:@"0xFAB81E"] 
 
 
 @interface T1StatusLayout : NSObject

@@ -50,7 +50,7 @@
         self.arrowImgV.angle = M_PI;
         
         self.bottomLine = [[UIView alloc] init];
-        self.bottomLine.backgroundColor = kHexColor(0xEEEEEE);
+        self.bottomLine.backgroundColor = [DSCommonMethods colorWithHexString:@"0xEEEEEE"];
         [self.contentView addSubview:self.bottomLine];
         [self.bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.mas_equalTo(0);

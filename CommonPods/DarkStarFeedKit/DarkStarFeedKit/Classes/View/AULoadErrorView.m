@@ -51,7 +51,7 @@
 
 #pragma mark 无数据
 - (void)setDefaultNoData {
-    self.backgroundColor = kHexColor(0xffffff);
+    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.subtitleLab];
@@ -81,7 +81,7 @@
 
 #pragma mark 服务器错误
 - (void)setDefaultServerError {
-    self.backgroundColor = kHexColor(0xffffff);
+    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.subtitleLab];
@@ -117,7 +117,7 @@
 
 #pragma mark 无网络连接
 - (void)setDefaultNetworkNotReachable {
-    self.backgroundColor = kHexColor(0xffffff);
+    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
     [self addSubview:self.networkNotReachableBanner];
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
@@ -195,7 +195,7 @@
         //title
         UILabel *titleLab = [[UILabel alloc] init];
         titleLab.font = [UIFont systemFontOfSize:14];
-        titleLab.textColor = kHexColor(0x4586ff);
+        titleLab.textColor = [DSCommonMethods colorWithHexString:@"0x4586ff"];
         titleLab.text = @"当前网络不可用，请检查你的网络";
         [_networkNotReachableBanner addSubview:titleLab];
         [titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -229,7 +229,7 @@
 - (UILabel *)titleLab {
     if (!_titleLab) {
         _titleLab = [[UILabel alloc] init];
-        _titleLab.textColor = kHexColor(0x000000);
+        _titleLab.textColor = [DSCommonMethods colorWithHexString:@"0x000000"];
         _titleLab.textAlignment = NSTextAlignmentCenter;
         _titleLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
     }
@@ -239,7 +239,7 @@
 - (UILabel *)subtitleLab {
     if (!_subtitleLab) {
         _subtitleLab = [[UILabel alloc] init];
-        _subtitleLab.textColor = kHexColor(0x888888);
+        _subtitleLab.textColor = [DSCommonMethods colorWithHexString:@"0x888888"];
         _subtitleLab.textAlignment = NSTextAlignmentCenter;
         _subtitleLab.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:13];;
     }
@@ -253,10 +253,10 @@
         _reloadBtn.layer.masksToBounds = YES;
         _reloadBtn.layer.cornerRadius = 20;
         _reloadBtn.layer.borderWidth = 1;
-        _reloadBtn.layer.borderColor = kHexColor(0x4586ff).CGColor;
+        _reloadBtn.layer.borderColor = [DSCommonMethods colorWithHexString:@"0x4586ff"].CGColor;
         [_reloadBtn setTitle:@"重新加载" forState:UIControlStateNormal];
-        [_reloadBtn setTitleColor:kHexColor(0x2f71eb) forState:UIControlStateHighlighted];
-        [_reloadBtn setTitleColor:kHexColor(0x4586ff) forState:UIControlStateNormal];
+        [_reloadBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x2f71eb"] forState:UIControlStateHighlighted];
+        [_reloadBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
         [_reloadBtn addTarget:self action:@selector(clickReloadBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _reloadBtn;
