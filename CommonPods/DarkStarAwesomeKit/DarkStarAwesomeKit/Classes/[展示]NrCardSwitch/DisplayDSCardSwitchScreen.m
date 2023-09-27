@@ -28,7 +28,7 @@
     [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_offset(0);
         make.centerX.mas_offset(0);
-        make.width.mas_equalTo(kScreenWidth);
+        make.width.mas_equalTo([DSCommonMethods screenWidth]);
         make.height.mas_equalTo(20);
     }];
     

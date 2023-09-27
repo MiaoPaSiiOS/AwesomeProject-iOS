@@ -18,7 +18,7 @@
     self.clipsToBounds = YES;
     self.layer.cornerRadius = kCornerRaadius;
     self.layer.borderColor = [UIColor colorWithWhite:0.865 alpha:1.000].CGColor;
-    self.layer.borderWidth = LINE_HEIGHT;
+    self.layer.borderWidth = [DSCommonMethods LINE_HEIGHT];
     
     NSMutableArray *imageViews = [NSMutableArray new];
     for (int i = 0; i < 4; i++) {
@@ -152,7 +152,7 @@
     self.width = kT1ContentWidth;
     self.clipsToBounds = YES;
     self.layer.cornerRadius = kCornerRaadius;
-    self.layer.borderWidth = LINE_HEIGHT;
+    self.layer.borderWidth = [DSCommonMethods LINE_HEIGHT];
     self.layer.borderColor = [UIColor colorWithWhite:0.000 alpha:0.108].CGColor;
     self.exclusiveTouch = YES;
     
@@ -505,7 +505,7 @@
 
 - (instancetype)init {
     self = [super init];
-    self.width = kScreenWidth;
+    self.width = [DSCommonMethods screenWidth];
     self.backgroundColor = [UIColor whiteColor];
     self.exclusiveTouch = YES;
     self.clipsToBounds = YES;
@@ -533,7 +533,7 @@
     _avatarView = [DSControl new];
     _avatarView.clipsToBounds = YES;
     _avatarView.layer.cornerRadius = 4;
-    _avatarView.layer.borderWidth = LINE_HEIGHT;
+    _avatarView.layer.borderWidth = [DSCommonMethods LINE_HEIGHT];
     _avatarView.layer.borderColor = [UIColor colorWithWhite:0.000 alpha:0.118].CGColor;
     _avatarView.backgroundColor = [UIColor colorWithWhite:0.908 alpha:1.000];
     _avatarView.contentMode = UIViewContentModeScaleAspectFill;
@@ -621,8 +621,8 @@
     
     
     _topLine = [UIView new];
-    _topLine.width = kScreenWidth;
-    _topLine.height = LINE_HEIGHT;
+    _topLine.width = [DSCommonMethods screenWidth];
+    _topLine.height = [DSCommonMethods LINE_HEIGHT];
     _topLine.backgroundColor = [UIColor colorWithWhite:0.823 alpha:1.000];
     [self addSubview:_topLine];
     

@@ -18,4 +18,6 @@
 #import "DSItem.h"
 #import "DSDataType.h"
 
+#import "DSCommonMethods.h"
+
 #endif /* DarkStarBaseKit_h */

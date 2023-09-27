@@ -8,69 +8,6 @@
 #ifndef DarkStarBaseKitDefines_h
 #define DarkStarBaseKitDefines_h
 
-/// 屏幕宽度
-#ifndef kScreenWidth
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#endif
-
-///主屏幕高度
-#ifndef kScreenHeight
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#endif
-
-///分辨率
-#ifndef kScreenScale
-#define kScreenScale ([[UIScreen mainScreen] scale])
-#endif
-
-
-/// 分割线的高度
-#ifndef LINE_HEIGHT
-#define LINE_HEIGHT 1.0/[UIScreen mainScreen].scale
-#endif
-
-
-/// iOS 系统判断, system为数字
-#ifndef iOSSystem
-#define iOSSystem(system) (([[[UIDevice currentDevice] systemVersion] floatValue] >= system)? (YES):(NO))
-#endif
-
-
-/// iOS 8 判断
-#ifndef isIOS8Later
-#define isIOS8Later  iOSSystem(8.0)
-#endif
-
-
-/// iOS 9 判断
-#ifndef isIOS9Later
-#define isIOS9Later  iOSSystem(9.0)
-#endif
-
-
-/// iOS 10 判断
-#ifndef isIOS10Later
-#define isIOS10Later  iOSSystem(10.0)
-#endif
-
-
-/// iOS 11 判断
-#ifndef isIOS11Later
-#define isIOS11Later  iOSSystem(11.0)
-#endif
-
-
-/// iOS 11.2 判断
-#ifndef isIOS11_2Later
-#define isIOS11_2Later  iOSSystem(11.2)
-#endif
-
-
-/// iPhoneX 判断
-#ifndef isIPHONEX
-#define isIPHONEX  ((CGRectGetHeight([[UIScreen mainScreen] bounds]) >=812.0f)? (YES):(NO))
-#endif
-
 
 /// 状态栏高度
 #ifndef kStatusHeight
@@ -227,7 +164,7 @@ result += [[UIApplication sharedApplication] keyWindow].safeAreaInsets.bottom;\
 /** 按比例适配的宽度 */
 #define DSAutoScale(value) (kAdaptScreenScale(APP_WidthScale * (value)))
 
-#define APP_WidthScale ((MIN(kScreenWidth, kScreenHeight))/375.f)
+#define APP_WidthScale ((MIN([DSCommonMethods screenWidth], [DSCommonMethods screenHeight]))/375.f)
 
 #define kAdaptScreenScale(number) \
 ({\

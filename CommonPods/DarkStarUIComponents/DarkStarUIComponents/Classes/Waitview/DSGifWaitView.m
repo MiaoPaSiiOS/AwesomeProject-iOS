@@ -142,7 +142,7 @@
     if (self = [super init]) {
       
         _supView = viewController.view;
-        self.size = CGSizeMake(kScreenWidth, kScreenHeight - kNaviBarHeight);
+        self.size = CGSizeMake([DSCommonMethods screenWidth], [DSCommonMethods screenHeight] - kNaviBarHeight);
         self.origin = CGPointMake(0, kNaviBarHeight);
 
         [self drawFrame:style];
@@ -156,7 +156,7 @@
     if (self = [super init]) {
         
         _supView = viewController.view;
-        self.size=CGSizeMake(kScreenWidth,kScreenHeight-kNaviBarHeight);
+        self.size=CGSizeMake([DSCommonMethods screenWidth],[DSCommonMethods screenHeight]-kNaviBarHeight);
         self.origin=CGPointMake(0, kNaviBarHeight);
         self.isRotate = rotate;
         [self drawFrame:style];
@@ -187,8 +187,8 @@
         
         UIView *mainview = [[UIView alloc] initWithFrame:CGRectMake((self.width - (75))/2, self.height*0.4 - (75)/2, (75), (75))];
         
-        if(self.height == kScreenHeight - kNaviBarHeight) {
-            mainview.origin = CGPointMake((self.width - (75))/2, kScreenHeight*0.4 - (75)/2 - kNaviBarHeight);
+        if(self.height == [DSCommonMethods screenHeight] - kNaviBarHeight) {
+            mainview.origin = CGPointMake((self.width - (75))/2, [DSCommonMethods screenHeight]*0.4 - (75)/2 - kNaviBarHeight);
         }
         if (self.isRotate) {
             //旋转90度
@@ -230,8 +230,8 @@
         UIView *mainview = [[UIView alloc] initWithFrame:CGRectMake((self.width - (55))/2, self.height*scale - (55)/2, (55), (55))];
         mainview.centerX = self.width/2;
 
-        if(style != PartLoadWaitStyle && self.height == kScreenHeight - kNaviBarHeight) {
-            mainview.origin = CGPointMake((self.width - (55))/2, kScreenHeight*0.4 - (55)/2 - kNaviBarHeight);
+        if(style != PartLoadWaitStyle && self.height == [DSCommonMethods screenHeight] - kNaviBarHeight) {
+            mainview.origin = CGPointMake((self.width - (55))/2, [DSCommonMethods screenHeight]*0.4 - (55)/2 - kNaviBarHeight);
         }
         if (self.isRotate) {
             //旋转90度

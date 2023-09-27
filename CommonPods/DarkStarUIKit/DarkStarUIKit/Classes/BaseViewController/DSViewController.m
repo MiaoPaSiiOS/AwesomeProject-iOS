@@ -128,7 +128,7 @@
 #pragma mark - Lazy Init
 - (DSNavigationBar *)appBar {
     if (!_appBar) {
-        _appBar = [[DSNavigationBar alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kNaviBarHeight)];
+        _appBar = [[DSNavigationBar alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], kNaviBarHeight)];
         _appBar.background.backgroundColor = [UIColor whiteColor];
     }
     return  _appBar;
@@ -136,7 +136,7 @@
 
 - (UIView *)dsView {
     if (!_dsView) {
-        _dsView = [[UIView alloc] initWithFrame:CGRectMake(0, kNaviBarHeight, kScreenWidth, kScreenHeight - kNaviBarHeight)];
+        _dsView = [[UIView alloc] initWithFrame:CGRectMake(0, kNaviBarHeight, [DSCommonMethods screenWidth], [DSCommonMethods screenHeight] - kNaviBarHeight)];
         _dsView.backgroundColor = kHexColor(0xF3F4F6);
     }
     return _dsView;

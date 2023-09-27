@@ -38,7 +38,7 @@
 #pragma mark - SETUP
 - (void)setupVar
 {
-    _cameraViewBottomBGHeight = ((kScreenHeight)-(kScreenWidth)*(4.0f/3.0f));
+    _cameraViewBottomBGHeight = (([DSCommonMethods screenHeight])-([DSCommonMethods screenWidth])*(4.0f/3.0f));
     _currentCameraViewRatio = 1.33f;
 }
 
@@ -49,13 +49,13 @@
     
     // GPUImageView
     _imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-    _imageView.frame = CGRectMake(0, 0, kScreenWidth, kScreenWidth*4.0/3.0);
+    _imageView.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], [DSCommonMethods screenWidth]*4.0/3.0);
     _imageView.image = _image;
     [self.view addSubview:_imageView];
     
     // 顶部背景
     UIView *topBg = [[UIView alloc] initWithFrame:CGRectZero];
-    topBg.frame = CGRectMake(0, kStatusHeight, kScreenWidth, kNaviBarContentHeight);
+    topBg.frame = CGRectMake(0, kStatusHeight, [DSCommonMethods screenWidth], kNaviBarContentHeight);
     topBg.backgroundColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:255.0];
     [self.view addSubview:topBg];
     _topBg = topBg;
@@ -87,7 +87,7 @@
     
     // 底部背景
     UIView *bottomBg = [[UIView alloc] init];
-    bottomBg.frame = CGRectMake(0, kScreenHeight-_cameraViewBottomBGHeight, kScreenWidth, _cameraViewBottomBGHeight);
+    bottomBg.frame = CGRectMake(0, [DSCommonMethods screenHeight]-_cameraViewBottomBGHeight, [DSCommonMethods screenWidth], _cameraViewBottomBGHeight);
     bottomBg.backgroundColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:255.0];
     [self.view addSubview:bottomBg];
     _bottomBg = bottomBg;
@@ -135,8 +135,8 @@
 - (void)setCameraRatio:(CGFloat)ratio
 {
     _currentCameraViewRatio = ratio;
-    float vaW = kScreenWidth;
-    float vaH = kScreenWidth*4.0/3.0;
+    float vaW = [DSCommonMethods screenWidth];
+    float vaH = [DSCommonMethods screenWidth]*4.0/3.0;
     float igW = 0, igH = 0;
     if (ratio == 1) {
         igW = vaW;

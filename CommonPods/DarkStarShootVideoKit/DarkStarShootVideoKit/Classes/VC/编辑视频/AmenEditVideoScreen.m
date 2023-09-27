@@ -219,10 +219,10 @@
     [self updateMovieMusicState_pause:YES];
     
     //计算预览图层缩放比例
-    CGFloat transHeight = kScreenHeight - (50) - (145) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
-    CGFloat transformScale = transHeight / kScreenHeight;
+    CGFloat transHeight = [DSCommonMethods screenHeight] - (50) - (145) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
+    CGFloat transformScale = transHeight / [DSCommonMethods screenHeight];
     //计算缩放后需要平移的量
-    CGFloat offY = kScreenHeight/2 - transHeight/2 - (50);
+    CGFloat offY = [DSCommonMethods screenHeight]/2 - transHeight/2 - (50);
     
     CGAffineTransform scaleTransform = CGAffineTransformMakeScale(transformScale, transformScale);
     CGAffineTransform offYTransform = CGAffineTransformMakeTranslation(0, -offY);;
@@ -260,10 +260,10 @@
     [self.gpuMovie.playerItem seekToTime:CMTimeMakeWithSeconds(self.videoModel.videoCaverLocation, NSEC_PER_SEC)];
     
     //计算预览图层缩放比例
-    CGFloat transHeight = kScreenHeight - (50) - (140) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
-    CGFloat transformScale = transHeight / kScreenHeight;
+    CGFloat transHeight = [DSCommonMethods screenHeight] - (50) - (140) - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
+    CGFloat transformScale = transHeight / [DSCommonMethods screenHeight];
     //计算缩放后需要平移的量
-    CGFloat offY = kScreenHeight/2 - transHeight/2 - (50);
+    CGFloat offY = [DSCommonMethods screenHeight]/2 - transHeight/2 - (50);
     
     CGAffineTransform scaleTransform = CGAffineTransformMakeScale(transformScale, transformScale);
     CGAffineTransform offYTransform = CGAffineTransformMakeTranslation(0, -offY);;
@@ -451,12 +451,12 @@
 #pragma mark - 初始化页面子UI
 -(void)commit_subViews
 {
-    self.topBar = [[EditVideoTopBar alloc] initWithFrame:CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, kScreenWidth, (60))];
+    self.topBar = [[EditVideoTopBar alloc] initWithFrame:CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, [DSCommonMethods screenWidth], (60))];
     self.topBar.delegate = self;
     [self.view addSubview:self.topBar];
     [self.topBar updateCrapBGMItemCanUse:self.videoModel.bgmName.length > 0 ? YES : NO];
     
-    self.bottomBar = [[EditVideoBottomBar alloc] initWithFrame:CGRectMake(0, kScreenHeight - SafeAreaInsetsConstantForDeviceWithNotch.bottom - (75), kScreenWidth, (60))];
+    self.bottomBar = [[EditVideoBottomBar alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight] - SafeAreaInsetsConstantForDeviceWithNotch.bottom - (75), [DSCommonMethods screenWidth], (60))];
     self.bottomBar.delegate = self;
     [self.view addSubview:self.bottomBar];
 }

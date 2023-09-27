@@ -821,7 +821,7 @@
 - (void)initMetaBtn {
     self.metaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.metaBtn.tag = 25;
-    self.metaBtn.frame = CGRectMake(kScreenWidth-45,0,45,44);
+    self.metaBtn.frame = CGRectMake([DSCommonMethods screenWidth]-45,0,45,44);
     self.metaBtn.centerY = kNaviBarContentHeight/2;
     [self.metaBtn setImageEdgeInsets:UIEdgeInsetsMake(12,10,12,15)];
     [self.metaBtn setImage:[UIImage imageNamed:@"blackPoint"] forState:UIControlStateNormal];

@@ -183,7 +183,7 @@
     text.yy_color = kWBCellToolbarTitleColor;
     text.yy_font = [UIFont systemFontOfSize:kWBCellTitlebarFontSize];
     
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(kScreenWidth - 100, kWBCellTitleHeight)];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake([DSCommonMethods screenWidth] - 100, kWBCellTitleHeight)];
     _titleTextLayout = [YYTextLayout layoutWithContainer:container text:text];
     _titleHeight = kWBCellTitleHeight;
 }
@@ -622,7 +622,7 @@
 - (void)_layoutToolbar {
     // should be localized
     UIFont *font = [UIFont systemFontOfSize:kWBCellToolbarFontSize];
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(kScreenWidth, kWBCellToolbarHeight)];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake([DSCommonMethods screenWidth], kWBCellToolbarHeight)];
     container.maximumNumberOfRows = 1;
     
     NSMutableAttributedString *repostText = [[NSMutableAttributedString alloc] initWithString:_status.repostsCount <= 0 ? @"转发" : [WBStatusHelper shortedNumberDesc:_status.repostsCount]];

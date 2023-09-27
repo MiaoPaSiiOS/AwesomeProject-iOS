@@ -17,7 +17,7 @@
         self.clipsToBounds = YES;
         
         
-        self.frame = CGRectMake(0, 0, kScreenWidth, (196/2.));
+        self.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], (196/2.));
         
         [self addSubview:self.titleLabel];
         [self addSubview:self.lineLabel];

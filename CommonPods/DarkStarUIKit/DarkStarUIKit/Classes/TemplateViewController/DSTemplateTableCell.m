@@ -56,7 +56,7 @@
             make.bottom.mas_equalTo(0);
             make.left.mas_equalTo(5);
             make.right.mas_equalTo(-5);
-            make.height.mas_equalTo(LINE_HEIGHT);
+            make.height.mas_equalTo([DSCommonMethods LINE_HEIGHT]);
         }];
 
     }

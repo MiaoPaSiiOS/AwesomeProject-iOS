@@ -37,7 +37,7 @@
         make.top.left.right.mas_offset(0);
         make.height.mas_equalTo(self.tabbarHeight);
     }];
-    if (isIPHONEX) {
+    if ([DSCommonMethods isIPHONEX]) {
         CGFloat HOME_INDICATOR_HEIGHT = kTabBarHeight - kTabBarContentHeight;
         UIView * whiteView = [[UIView alloc] init];
         whiteView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -68,7 +68,7 @@
 //                                        @"tabbar_market",
                                         ];
     self.btnArray = [NSMutableArray new];
-    CGFloat w = kScreenWidth / 5;
+    CGFloat w = [DSCommonMethods screenWidth] / 5;
     for (int i=0; i<titles.count; i++) {
         DSUIButton * btn = [[DSUIButton alloc] initWithFrame:CGRectMake(i * w, 0, w, self.tabbarHeight)];
         [btn setTitle:titles[i] forState:UIControlStateNormal];

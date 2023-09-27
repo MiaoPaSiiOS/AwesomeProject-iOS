@@ -1,0 +1,6 @@
+framework module LDZFTransitionAnimator {
+  umbrella header "LDZFTransitionAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

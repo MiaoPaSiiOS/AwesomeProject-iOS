@@ -300,7 +300,7 @@
         self.aniLab.font = [UIFont boldSystemFontOfSize:40];
         self.aniLab.textAlignment = NSTextAlignmentCenter;
         self.aniLab.frame = CGRectMake(0, 0, 100, 100);
-        self.aniLab.center = CGPointMake(kScreenWidth/2, kScreenHeight/2);
+        self.aniLab.center = CGPointMake([DSCommonMethods screenWidth]/2, [DSCommonMethods screenHeight]/2);
         [self addSubview:self.aniLab];
         
         self.countDown = 4;

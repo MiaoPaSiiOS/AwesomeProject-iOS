@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LDZFTransitionAnimator_Example' do
+  pod 'LDZFTransitionAnimator', :path => '../'
+
+  target 'LDZFTransitionAnimator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

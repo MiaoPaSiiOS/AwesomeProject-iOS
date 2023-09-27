@@ -15,7 +15,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         
-        self.frame = CGRectMake(0, 0, kScreenWidth, (51));
+        self.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], (51));
         
         [self addSubview:self.titleLabel];
         [self addSubview:self.lineView];

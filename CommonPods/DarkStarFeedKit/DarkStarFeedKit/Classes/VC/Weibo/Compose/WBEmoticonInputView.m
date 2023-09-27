@@ -285,9 +285,9 @@ static NSInteger const kOnePageCount = 20;
 - (instancetype)init {
     self = [super init];
     
-    self.frame = CGRectMake(0, 0, kScreenWidth, kViewHeight + SafeAreaInsetsConstantForDeviceWithNotch.bottom);
+    self.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], kViewHeight + SafeAreaInsetsConstantForDeviceWithNotch.bottom);
     self.container = [[UIView alloc] init];
-    self.container.frame = CGRectMake(0, 0, kScreenWidth, kViewHeight);
+    self.container.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], kViewHeight);
     
     [self addSubview:self.container];
     self.backgroundColor = kHexColor(0xf9f9f9);
@@ -328,18 +328,18 @@ static NSInteger const kOnePageCount = 20;
 - (void)_initTopLine {
     UIView *line = [UIView new];
     line.width = self.width;
-    line.height = LINE_HEIGHT;
+    line.height = [DSCommonMethods LINE_HEIGHT];
     line.backgroundColor = kHexColor(0xbfbfbf);
     line.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.container addSubview:line];
 }
 
 - (void)_initCollectionView {
-    CGFloat itemWidth = (kScreenWidth - 10 * 2) / 7.0;
+    CGFloat itemWidth = ([DSCommonMethods screenWidth] - 10 * 2) / 7.0;
     itemWidth = CGFloatPixelRound(itemWidth);
-    CGFloat padding = (kScreenWidth - 7 * itemWidth) / 2.0;
+    CGFloat padding = ([DSCommonMethods screenWidth] - 7 * itemWidth) / 2.0;
     CGFloat paddingLeft = CGFloatPixelRound(padding);
-    CGFloat paddingRight = kScreenWidth - paddingLeft - itemWidth * 7;
+    CGFloat paddingRight = [DSCommonMethods screenWidth] - paddingLeft - itemWidth * 7;
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -348,7 +348,7 @@ static NSInteger const kOnePageCount = 20;
     layout.minimumInteritemSpacing = 0;
     layout.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight);
     
-    _collectionView = [[WBEmoticonScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kOneEmoticonHeight * 3) collectionViewLayout:layout];
+    _collectionView = [[WBEmoticonScrollView alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], kOneEmoticonHeight * 3) collectionViewLayout:layout];
     [_collectionView registerClass:[WBEmoticonCell class] forCellWithReuseIdentifier:@"cell"];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
@@ -356,7 +356,7 @@ static NSInteger const kOnePageCount = 20;
     [self.container addSubview:_collectionView];
     
     _pageControl = [UIView new];
-    _pageControl.size = CGSizeMake(kScreenWidth, 20);
+    _pageControl.size = CGSizeMake([DSCommonMethods screenWidth], 20);
     _pageControl.top = _collectionView.bottom - 5;
     _pageControl.userInteractionEnabled = NO;
     [self.container addSubview:_pageControl];
@@ -365,7 +365,7 @@ static NSInteger const kOnePageCount = 20;
 
 - (void)_initToolbar {
     UIView *toolbar = [UIView new];
-    toolbar.size = CGSizeMake(kScreenWidth, kToolbarHeight);
+    toolbar.size = CGSizeMake([DSCommonMethods screenWidth], kToolbarHeight);
     
     UIImageView *bg = [[UIImageView alloc] initWithImage:[WBStatusHelper imageNamed:@"compose_emotion_table_right_normal"]];
     bg.size = toolbar.size;
@@ -384,7 +384,7 @@ static NSInteger const kOnePageCount = 20;
         WBEmoticonGroup *group = _emoticonGroups[i];
         btn = [self _createToolbarButton];
         [btn setTitle:group.nameCN forState:UIControlStateNormal];
-        btn.left = kScreenWidth / (float)_emoticonGroups.count * i;
+        btn.left = [DSCommonMethods screenWidth] / (float)_emoticonGroups.count * i;
         btn.tag = i;
         [scroll addSubview:btn];
         [btns addObject:btn];
@@ -398,7 +398,7 @@ static NSInteger const kOnePageCount = 20;
 - (UIButton *)_createToolbarButton {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.exclusiveTouch = YES;
-    btn.size = CGSizeMake(kScreenWidth / _emoticonGroups.count, kToolbarHeight);
+    btn.size = CGSizeMake([DSCommonMethods screenWidth] / _emoticonGroups.count, kToolbarHeight);
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btn setTitleColor:kHexColor(0x5D5C5A) forState:UIControlStateSelected];

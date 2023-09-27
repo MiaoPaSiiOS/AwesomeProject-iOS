@@ -1,0 +1,16 @@
+PODS:
+  - LDZFTransitionAnimator (0.1.0)
+
+DEPENDENCIES:
+  - LDZFTransitionAnimator (from `../`)
+
+EXTERNAL SOURCES:
+  LDZFTransitionAnimator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDZFTransitionAnimator: c54b269e612a861852b7989203b4d643d0d946ec
+
+PODFILE CHECKSUM: c47c007640b0ab34835b9bf05d80ffe3f72fe685
+
+COCOAPODS: 1.11.2
