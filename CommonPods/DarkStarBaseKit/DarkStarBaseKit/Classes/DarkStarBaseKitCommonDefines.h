@@ -30,7 +30,7 @@ removeFloatMin(CGFloat floatValue) {
 CG_INLINE CGFloat
 flatSpecificScale(CGFloat floatValue, CGFloat scale) {
     floatValue = removeFloatMin(floatValue);
-    scale = scale ?: [DSCommonMethods screenScale];
+    scale = scale ?: DSCommonMethods.screenScale;
     CGFloat flattedValue = ceil(floatValue * scale) / scale;
     return flattedValue;
 }
@@ -51,7 +51,7 @@ flat(CGFloat floatValue) {
 CG_INLINE CGFloat
 floorInPixel(CGFloat floatValue) {
     floatValue = removeFloatMin(floatValue);
-    CGFloat resultValue = floor(floatValue * [DSCommonMethods screenScale]) / [DSCommonMethods screenScale];
+    CGFloat resultValue = floor(floatValue * DSCommonMethods.screenScale) / DSCommonMethods.screenScale;
     return resultValue;
 }
 

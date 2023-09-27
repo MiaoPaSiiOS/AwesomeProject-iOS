@@ -205,7 +205,7 @@
         }
     }
     
-    ShootFilterChooseView * view = [[ShootFilterChooseView alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], [DSCommonMethods screenHeight]) filterInfo:filterInfo beautiFy:beautifyInfo callBack:callBack hidenHandle:hidenHadle];
+    ShootFilterChooseView * view = [[ShootFilterChooseView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, DSCommonMethods.screenHeight) filterInfo:filterInfo beautiFy:beautifyInfo callBack:callBack hidenHandle:hidenHadle];
     [keywindow addSubview:view];
 }
 @end

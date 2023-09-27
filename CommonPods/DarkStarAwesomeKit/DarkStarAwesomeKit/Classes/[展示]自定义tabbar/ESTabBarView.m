@@ -22,7 +22,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     self.backgroundColor = UIColor.clearColor;
-    self.tabbarHeight = [DSCommonMethods tabBarContentHeight];
+    self.tabbarHeight = DSCommonMethods.tabBarContentHeight;
     [self initBgView];
     [self initBtn];
     return self;
@@ -37,8 +37,8 @@
         make.top.left.right.mas_offset(0);
         make.height.mas_equalTo(self.tabbarHeight);
     }];
-    if ([DSCommonMethods isIPHONEX]) {
-        CGFloat HOME_INDICATOR_HEIGHT = [DSCommonMethods tabBarHeight] - [DSCommonMethods tabBarContentHeight];
+    if (DSCommonMethods.isIPHONEX) {
+        CGFloat HOME_INDICATOR_HEIGHT = DSCommonMethods.tabBarHeight - DSCommonMethods.tabBarContentHeight;
         UIView * whiteView = [[UIView alloc] init];
         whiteView.translatesAutoresizingMaskIntoConstraints = NO;
         whiteView.backgroundColor = UIColor.whiteColor;
@@ -68,7 +68,7 @@
 //                                        @"tabbar_market",
                                         ];
     self.btnArray = [NSMutableArray new];
-    CGFloat w = [DSCommonMethods screenWidth] / 5;
+    CGFloat w = DSCommonMethods.screenWidth / 5;
     for (int i=0; i<titles.count; i++) {
         DSUIButton * btn = [[DSUIButton alloc] initWithFrame:CGRectMake(i * w, 0, w, self.tabbarHeight)];
         [btn setTitle:titles[i] forState:UIControlStateNormal];

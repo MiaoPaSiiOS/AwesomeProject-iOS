@@ -5,7 +5,7 @@
 static CGFloat const kButtonHeight = 44.f;
 static NSInteger const kButtonTag = 74637;
 static NSInteger const kSRSAlertContrllerTag = 837569;
-#define kAlertControllerWidth ([DSCommonMethods screenWidth]-100)
+#define kAlertControllerWidth (DSCommonMethods.screenWidth-100)
 
 @interface SRSAttributedClickLabelAlertButtonsView : UIView
 
@@ -33,7 +33,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
     [self addSubview:topLineView];
     [topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.top.trailing.equalTo(self);
-        make.height.mas_equalTo([DSCommonMethods LINE_HEIGHT]);
+        make.height.mas_equalTo(DSCommonMethods.LINE_HEIGHT);
     }];
     
     for (NSInteger i = 0; i < self.buttonsArray.count; i++) {
@@ -58,7 +58,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
             [middleLine mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.bottom.equalTo(self);
                 make.leading.equalTo(self).mas_equalTo(width);
-                make.width.mas_equalTo([DSCommonMethods LINE_HEIGHT]);
+                make.width.mas_equalTo(DSCommonMethods.LINE_HEIGHT);
             }];
             if (1 == i) {
                 [self emphasizeButton:button];
@@ -67,7 +67,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.leading.trailing.equalTo(self);
                 make.height.mas_equalTo(kButtonHeight);
-                make.width.mas_equalTo([DSCommonMethods screenWidth]-100);
+                make.width.mas_equalTo(DSCommonMethods.screenWidth-100);
                 make.top.equalTo(self).mas_equalTo(kButtonHeight*i);
             }];
             if (0 == i) {
@@ -80,7 +80,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
                 [self addSubview:bottomLineView];
                 [bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.leading.trailing.equalTo(self);
-                    make.height.mas_equalTo([DSCommonMethods LINE_HEIGHT]);
+                    make.height.mas_equalTo(DSCommonMethods.LINE_HEIGHT);
                     make.top.mas_equalTo(kButtonHeight*(i+1));
                 }];
             }
@@ -119,7 +119,7 @@ static SRSAttributedClickLabelAlert *lastAlert;
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], [DSCommonMethods screenHeight]);
+        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, DSCommonMethods.screenHeight);
         self.backgroundColor = kHexAColor(0x000000, 0.4);
     }
     return self;

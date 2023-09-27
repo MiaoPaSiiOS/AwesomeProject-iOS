@@ -57,7 +57,7 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
     } else {
         scanSize = CGSizeMake(265, 265);
     }
-    CGRect a = CGRectMake(([DSCommonMethods screenWidth] - scanSize.width)/2,([DSCommonMethods screenHeight] - scanSize.width)/2, scanSize.width, scanSize.height);
+    CGRect a = CGRectMake((DSCommonMethods.screenWidth - scanSize.width)/2,(DSCommonMethods.screenHeight - scanSize.width)/2, scanSize.width, scanSize.height);
     return [self initWithFrame:frame withScanRect:a withScanTime:3.0 withScanLineHeight:11 withType:type];
 }
 - (void)setupViews{
@@ -107,7 +107,7 @@ static NSString *const scanLineAnimationName = @"scanLineAnimation";
     }
     [self addSubview:self.middleIcon];
     
-    _infolabel = [[UILabel alloc]initWithFrame:CGRectMake(([DSCommonMethods screenWidth]-250)/2,self.middleIcon.bottom+20,250,21)];
+    _infolabel = [[UILabel alloc]initWithFrame:CGRectMake((DSCommonMethods.screenWidth-250)/2,self.middleIcon.bottom+20,250,21)];
     if (self.scannerType == DSScannerTypeQRCode) {
         self.infolabel.text = @"将二维码放入框内进行扫描";
     } else if (self.scannerType == DSScannerTypeBarCode) {

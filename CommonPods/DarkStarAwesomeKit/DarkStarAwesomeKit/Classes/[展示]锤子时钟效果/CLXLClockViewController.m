@@ -15,7 +15,7 @@
     self.isFirst = YES;
     self.title = @"新品";
     _clock = [[XLClock alloc] initWithFrame:CGRectMake(0, 64, 300, 300)];
-    _clock.centerX = [DSCommonMethods screenWidth]/2;
+    _clock.centerX = DSCommonMethods.screenWidth/2;
     [self.dsView addSubview:_clock];
 }
 

@@ -106,7 +106,7 @@
 - (void)JSGetNavigationBarHeight {
     [self registerHandler:@"JSGetNavigationBarHeight" handler:^(id  _Nonnull data, WVJBResponseCallback  _Nonnull responseCallback) {
         NSDictionary *result = @{
-            @"navBarHeight" : [NSString stringWithFormat:@"%f",[DSCommonMethods naviBarHeight]]
+            @"navBarHeight" : [NSString stringWithFormat:@"%f",DSCommonMethods.naviBarHeight]
         };
         responseCallback(result);
     }];

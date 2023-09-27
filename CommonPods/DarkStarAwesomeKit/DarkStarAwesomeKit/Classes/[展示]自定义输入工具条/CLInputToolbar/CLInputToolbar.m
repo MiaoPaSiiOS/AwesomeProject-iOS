@@ -82,7 +82,7 @@
 }
 -(void)initUI {
     self.backgroundColor = [UIColor clearColor];
-    self.frame = CGRectMake(0,0, [DSCommonMethods screenWidth], 50);
+    self.frame = CGRectMake(0,0, DSCommonMethods.screenWidth, 50);
     //顶部线条
     [self addSubview:self.topLine];
     //底部线条
@@ -227,8 +227,8 @@
 }
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.maskView.size = CGSizeMake([DSCommonMethods screenWidth], [DSCommonMethods screenHeight]);
-    self.width = [DSCommonMethods screenWidth];
+    self.maskView.size = CGSizeMake(DSCommonMethods.screenWidth, DSCommonMethods.screenHeight);
+    self.width = DSCommonMethods.screenWidth;
     self.topLine.left = 0;
     self.topLine.top = 0;
     self.topLine.width = self.width;

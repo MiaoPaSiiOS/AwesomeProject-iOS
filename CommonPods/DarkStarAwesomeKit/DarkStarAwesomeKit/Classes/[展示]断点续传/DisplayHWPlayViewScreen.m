@@ -27,7 +27,7 @@
 - (void)creatControl
 {
     // 进度条
-    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50, 400, [DSCommonMethods screenWidth] - 100, 50)];
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50, 400, DSCommonMethods.screenWidth - 100, 50)];
     [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.dsView addSubview:slider];
     
@@ -36,7 +36,7 @@
 
     // 创建显示的图层
     AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
-    playerLayer.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], 400);
+    playerLayer.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, 400);
     [self.dsView.layer addSublayer:playerLayer];
 
     // 播放视频

@@ -101,7 +101,7 @@
 #pragma mark - UIPickerViewDelegate
 // returns width of column and height of row for each component.
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
-    return [DSCommonMethods screenWidth] - 20;
+    return DSCommonMethods.screenWidth - 20;
 }
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
     return 44.f;
@@ -110,7 +110,7 @@
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(nullable UIView *)view {
     DSSingleChoiceDialogReusingView *customView = (DSSingleChoiceDialogReusingView *)view;
     if (customView == nil) {
-        customView = [[DSSingleChoiceDialogReusingView alloc] initWithFrame:CGRectMake(0, 0,[DSCommonMethods screenWidth] - 20,44.f)];
+        customView = [[DSSingleChoiceDialogReusingView alloc] initWithFrame:CGRectMake(0, 0,DSCommonMethods.screenWidth - 20,44.f)];
     }
     
     customView.row       = row;

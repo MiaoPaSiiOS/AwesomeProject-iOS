@@ -114,7 +114,7 @@
     recylerView.backgroundColor = [UIColor clearColor];
     recylerView.showsVerticalScrollIndicator = NO;
     recylerView.showsHorizontalScrollIndicator = NO;
-    recylerView.contentInset = UIEdgeInsetsMake(0, 0, [DSCommonMethods tabBarHeight], 0);
+    recylerView.contentInset = UIEdgeInsetsMake(0, 0, DSCommonMethods.tabBarHeight, 0);
     recylerView.delegate = self;
     recylerView.dataSource = self;
     [recylerView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];

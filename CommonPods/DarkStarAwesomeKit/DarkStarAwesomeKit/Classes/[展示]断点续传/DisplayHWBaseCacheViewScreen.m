@@ -160,7 +160,7 @@
     btn.selected = !btn.selected;
     [self reloadTableView];
     [UIView animateWithDuration:0.25 animations:^{
-        self.tabbarView.top = self.isNavEditing ?  self.dsView.height - [DSCommonMethods tabBarHeight] : self.dsView.height;
+        self.tabbarView.top = self.isNavEditing ?  self.dsView.height - DSCommonMethods.tabBarHeight : self.dsView.height;
     }];
 }
 
@@ -268,7 +268,7 @@
 
 - (UIView *)tabbarView {
     if (!_tabbarView) {
-        _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight], [DSCommonMethods screenWidth], [DSCommonMethods tabBarHeight])];
+        _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, DSCommonMethods.screenHeight, DSCommonMethods.screenWidth, DSCommonMethods.tabBarHeight)];
         _tabbarView.backgroundColor = kHexColor(0xfafafa);
                 
         UIButton *btn_last = nil;
@@ -297,8 +297,8 @@
         
         // 线
         for (int i = 0; i < 2; i++) {
-            UIView *line = [[UIView alloc] initWithFrame:CGRectMake([DSCommonMethods screenWidth] * 0.5, 10, 0.5, 29)];
-            if (i == 1) line.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], 0.5);
+            UIView *line = [[UIView alloc] initWithFrame:CGRectMake(DSCommonMethods.screenWidth * 0.5, 10, 0.5, 29)];
+            if (i == 1) line.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, 0.5);
             line.backgroundColor = kHexColor(0xe5e5e5);
             [_tabbarView addSubview:line];
         }

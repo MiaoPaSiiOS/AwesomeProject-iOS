@@ -68,7 +68,7 @@
                 newAgentStr = [oldAgentStr stringByAppendingString:isWKWebView ? @" WKWebView" : @" UIWebView"];
             }
             
-            if (isWKWebView && [DSCommonMethods isIOS9Later]) {
+            if (isWKWebView && DSCommonMethods.isIOS9Later) {
                 wk.customUserAgent = newAgentStr;
             }
             //register the new agent

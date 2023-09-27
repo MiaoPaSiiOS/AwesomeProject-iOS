@@ -21,8 +21,8 @@
 #define kWBCellProfileHeight 56 // cell 名片高度
 #define kWBCellCardHeight 70    // cell card 视图高度
 #define kWBCellNamePaddingLeft 14 // cell 名字和 avatar 之间留白
-#define kWBCellContentWidth ([DSCommonMethods screenWidth] - 2 * kWBCellPadding) // cell 内容宽度
-#define kWBCellNameWidth ([DSCommonMethods screenWidth] - 110) // cell 名字最宽限制
+#define kWBCellContentWidth (DSCommonMethods.screenWidth - 2 * kWBCellPadding) // cell 内容宽度
+#define kWBCellNameWidth (DSCommonMethods.screenWidth - 110) // cell 名字最宽限制
 
 #define kWBCellTagPadding 8         // tag 上下留白
 #define kWBCellTagNormalHeight 16   // 一般 tag 高度

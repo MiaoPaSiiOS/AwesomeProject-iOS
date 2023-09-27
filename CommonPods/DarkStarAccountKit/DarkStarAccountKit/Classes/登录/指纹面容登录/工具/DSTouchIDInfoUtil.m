@@ -13,13 +13,13 @@
 @implementation DSTouchIDInfoUtil
 #pragma mark - 验证设备是否支持TouchID或者FaceID
 + (BOOL)returnTheResultOfPermissions {
-    if ([self judueIPhonePlatformSupportTouchID:9] && [DSCommonMethods isIOS11Later]) {//iPhone8、8P、X 及以后手机  iOS11及以后系统
+    if ([self judueIPhonePlatformSupportTouchID:9] && DSCommonMethods.isIOS11Later) {//iPhone8、8P、X 及以后手机  iOS11及以后系统
         LAContext *context = [[LAContext alloc] init];
         NSError *error = nil;
 
         LAPolicy temp;
         // 区分是因为指纹被锁的状态下
-        if ([DSCommonMethods isIOS9Later]) {
+        if (DSCommonMethods.isIOS9Later) {
             //iOS 9.0以上支持，包含指纹验证与输入密码的验证方式
             temp = LAPolicyDeviceOwnerAuthentication;
         } else {
@@ -29,7 +29,7 @@
 
         if ([context canEvaluatePolicy:temp error:&error]) {
             //保持原有逻辑，并增加区分TouchID和FaceID
-            if ([DSCommonMethods isIOS11Later]) {
+            if (DSCommonMethods.isIOS11Later) {
                 if (@available(iOS 11.0, *)) {
                     /*
                      iOS11之后LAContext新增biometryType属性，
@@ -73,13 +73,13 @@
             }
         }
     } else {
-        if ([self judueIPhonePlatformSupportTouchID:5] && [DSCommonMethods isIOS8Later]) {//5s及以后手机  iOS8及以后系统
+        if ([self judueIPhonePlatformSupportTouchID:5] && DSCommonMethods.isIOS8Later) {//5s及以后手机  iOS8及以后系统
             LAContext *context = [[LAContext alloc] init];
             NSError *error = nil;
 
             LAPolicy temp;
             // 区分是因为指纹被锁的状态下
-            if ([DSCommonMethods isIOS9Later]) {
+            if (DSCommonMethods.isIOS9Later) {
                 temp = LAPolicyDeviceOwnerAuthentication;
             } else {
                 temp = LAPolicyDeviceOwnerAuthenticationWithBiometrics;
@@ -115,7 +115,7 @@
 
 #pragma mark - 验证设备是否支持FaceID
 + (BOOL)returnTheResultOfFaceID {
-    if ([self judueIPhonePlatformSupportTouchID:9] && [DSCommonMethods isIOS11Later]) {
+    if ([self judueIPhonePlatformSupportTouchID:9] && DSCommonMethods.isIOS11Later) {
         LAContext *context = [[LAContext alloc] init];
         NSError *error = nil;
 
@@ -156,7 +156,7 @@
 + (BOOL)returnStateOfSettingButton {
     LAContext *context = [[LAContext alloc] init];
     NSError *error = nil;
-    if ([self judueIPhonePlatformSupportTouchID:9] && [DSCommonMethods isIOS11Later] && [self returnTheResultOfFaceID]) {
+    if ([self judueIPhonePlatformSupportTouchID:9] && DSCommonMethods.isIOS11Later && [self returnTheResultOfFaceID]) {
         // LAPolicyDeviceOwnerAuthenticationWithBiometrics: 用TouchID/FaceID验证
         // LAPolicyDeviceOwnerAuthentication: 用TouchID/FaceID或密码验证, 默认是错误两次或锁定后, 弹出输入密码界面（本案例使用）
         if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {

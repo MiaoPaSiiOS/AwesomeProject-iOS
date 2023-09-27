@@ -30,7 +30,7 @@ NSInteger const AUActionSheetTag = 47691511;
     self.textLabel.textColor = kHexColor(0x3E73FF);
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], 0.5)];
+    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 0.5)];
     lineView.backgroundColor = kHexColor(0xE8E8E8);
     [self.contentView addSubview:lineView];
 }
@@ -80,7 +80,7 @@ NSInteger const AUActionSheetTag = 47691511;
 #pragma mark - publish methods
 - (instancetype)initWithMessage:(NSString *)message destructive:(BOOL)destructive actionArray:(NSArray<NSString *>*)actionArray cancelTitle:(NSString *)cancelTitle clickIndex:(void(^)(NSInteger index))clickIndexBlock {
     if (self = [super init]) {
-        self.frame = CGRectMake(0, 0, [DSCommonMethods screenWidth], [DSCommonMethods screenHeight]);
+        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, DSCommonMethods.screenHeight);
         self.backgroundColor = kHexAColor(0x000000, 0.4);
         self.alpha = 0;
         _messageStr = message;
@@ -165,7 +165,7 @@ NSInteger const AUActionSheetTag = 47691511;
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self).mas_equalTo(15);
         make.trailing.equalTo(self).mas_equalTo(-15);
-        make.top.mas_equalTo([DSCommonMethods screenHeight]);
+        make.top.mas_equalTo(DSCommonMethods.screenHeight);
     }];
     
     if (self.messageStr.length) {
@@ -309,7 +309,7 @@ NSInteger const AUActionSheetTag = 47691511;
 #pragma mark - 显示时的动画
 - (void)addAnimation {
     [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo([DSCommonMethods screenHeight]-self.contentView.frame.size.height);
+        make.top.mas_equalTo(DSCommonMethods.screenHeight-self.contentView.frame.size.height);
     }];
     [UIView animateWithDuration:.25f delay:.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = 1;
@@ -321,7 +321,7 @@ NSInteger const AUActionSheetTag = 47691511;
 - (void)closeAnimation {
     
     [self.contentView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo([DSCommonMethods screenHeight]);
+        make.top.mas_equalTo(DSCommonMethods.screenHeight);
     }];
     [UIView animateWithDuration:.25f delay:.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = 0;

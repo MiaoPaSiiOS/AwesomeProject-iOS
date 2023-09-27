@@ -298,7 +298,7 @@
             [self initCloseBtn];
         } else {
             closeBtn.frame = CGRectMake(15+35,32,31,20);
-            closeBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+            closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
         }
     }
     // 清空返回的js
@@ -769,7 +769,7 @@
             } else {
                 closeBtn.frame = CGRectMake(15,32,31,20);
             }
-            closeBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+            closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
         }
     } else {
         UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
@@ -805,7 +805,7 @@
     } else {
         closeBtn.frame = CGRectMake(15,32,31,20);
     }
-    closeBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+    closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
     closeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [closeBtn setTitleColor:kHexColor(0x333333) forState:UIControlStateNormal];
     [closeBtn addTarget:self action: @selector(closeWebview)forControlEvents:UIControlEventTouchUpInside];
@@ -821,8 +821,8 @@
 - (void)initMetaBtn {
     self.metaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.metaBtn.tag = 25;
-    self.metaBtn.frame = CGRectMake([DSCommonMethods screenWidth]-45,0,45,44);
-    self.metaBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+    self.metaBtn.frame = CGRectMake(DSCommonMethods.screenWidth-45,0,45,44);
+    self.metaBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
     [self.metaBtn setImageEdgeInsets:UIEdgeInsetsMake(12,10,12,15)];
     [self.metaBtn setImage:[UIImage imageNamed:@"blackPoint"] forState:UIControlStateNormal];
     [self.metaBtn addTarget:self action:@selector(showMetaMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -936,14 +936,14 @@
             UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
             if (closeBtn) {
                 closeBtn.frame = CGRectMake(15,32,31,20);
-                closeBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+                closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
             }
         } else {
             self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
             UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
             if (closeBtn) {
                 closeBtn.frame = CGRectMake(15+35,32,31,20);
-                closeBtn.centerY = [DSCommonMethods naviBarContentHeight]/2;
+                closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
             }
         }
     } else {

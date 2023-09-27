@@ -32,7 +32,7 @@
     
     // topBar
     UIView *topBar = [[UIView alloc] initWithFrame:CGRectZero];
-    topBar.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, [DSCommonMethods screenWidth], [DSCommonMethods naviBarContentHeight]);
+    topBar.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, DSCommonMethods.screenWidth, DSCommonMethods.naviBarContentHeight);
     topBar.backgroundColor = kHexColor(0xebedee);
     [self.view addSubview:topBar];
     

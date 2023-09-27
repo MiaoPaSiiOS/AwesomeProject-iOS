@@ -233,7 +233,7 @@ static NSString *identifier = @"cell";
             // Fallback on earlier versions
         }
         
-        UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], 40)];
+        UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 40)];
         _tableView.tableFooterView = footer;
     }
     return _tableView;

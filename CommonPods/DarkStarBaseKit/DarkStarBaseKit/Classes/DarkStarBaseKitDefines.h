@@ -135,7 +135,7 @@
 /** 按比例适配的宽度 */
 #define DSAutoScale(value) (kAdaptScreenScale(APP_WidthScale * (value)))
 
-#define APP_WidthScale ((MIN([DSCommonMethods screenWidth], [DSCommonMethods screenHeight]))/375.f)
+#define APP_WidthScale ((MIN(DSCommonMethods.screenWidth, DSCommonMethods.screenHeight))/375.f)
 
 #define kAdaptScreenScale(number) \
 ({\

@@ -57,14 +57,14 @@ typedef enum {// 按钮tag
     UIImageView *userHead = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
     userHead.clipsToBounds = YES;
     userHead.layer.cornerRadius = userHead.width / 2;
-    userHead.center = CGPointMake([DSCommonMethods screenWidth] / 2, userHead.height / 2 + 20 + 40);
+    userHead.center = CGPointMake(DSCommonMethods.screenWidth / 2, userHead.height / 2 + 20 + 40);
     //用户头像，根据userId获取用户头像
     userHead.image = [DSAccountTool imageNamed:@"gestureHead"];
     [self.dsView addSubview:userHead];
 
     // 用户名
-    UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], 16)];
-    nameLb.center = CGPointMake([DSCommonMethods screenWidth] / 2, userHead.centerY + userHead.height / 2 + 15 + nameLb.height / 2);
+    UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 16)];
+    nameLb.center = CGPointMake(DSCommonMethods.screenWidth / 2, userHead.centerY + userHead.height / 2 + 15 + nameLb.height / 2);
     nameLb.font = [UIFont systemFontOfSize:15];
     nameLb.textAlignment = NSTextAlignmentCenter;
     nameLb.textColor = [UIColor blackColor];
@@ -73,15 +73,15 @@ typedef enum {// 按钮tag
 
     // 中间指纹按钮
     UIButton *touchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:touchBtn frame:CGRectMake(([DSCommonMethods screenWidth] - 75) / 2, nameLb.bottom + 70, 75, 86) title:nil font:nil image:[DSAccountTool imageNamed:@"touchId"]  tag:buttonTagTouchID changeColor:NO];
+    [self creatButton:touchBtn frame:CGRectMake((DSCommonMethods.screenWidth - 75) / 2, nameLb.bottom + 70, 75, 86) title:nil font:nil image:[DSAccountTool imageNamed:@"touchId"]  tag:buttonTagTouchID changeColor:NO];
 
     // 提示话术按钮
     UIButton *tipButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:tipButton frame:CGRectMake(0, touchBtn.bottom + 10, [DSCommonMethods screenWidth], 20) title:@"点击使用指纹登录" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchID changeColor:NO];
+    [self creatButton:tipButton frame:CGRectMake(0, touchBtn.bottom + 10, DSCommonMethods.screenWidth, 20) title:@"点击使用指纹登录" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchID changeColor:NO];
 
     // 初始化“切换登录方式”按钮
     UIButton *checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:checkButton frame:CGRectMake(0, [DSCommonMethods screenHeight] - 90, [DSCommonMethods screenWidth], 30) title:@"更多登录方式" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchIDCheck changeColor:NO];
+    [self creatButton:checkButton frame:CGRectMake(0, DSCommonMethods.screenHeight - 90, DSCommonMethods.screenWidth, 30) title:@"更多登录方式" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchIDCheck changeColor:NO];
 }
 
 #pragma mark - 初始化FaceID界面
@@ -90,14 +90,14 @@ typedef enum {// 按钮tag
     UIImageView *userHead = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
     userHead.clipsToBounds = YES;
     userHead.layer.cornerRadius = userHead.width / 2;
-    userHead.center = CGPointMake([DSCommonMethods screenWidth] / 2, userHead.height / 2 + 20 + 40);
+    userHead.center = CGPointMake(DSCommonMethods.screenWidth / 2, userHead.height / 2 + 20 + 40);
     //用户头像，根据userId获取用户头像
     userHead.image = [DSAccountTool imageNamed:@"gestureHead"];
     [self.dsView addSubview:userHead];
 
     // 用户名
-    UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], 16)];
-    nameLb.center = CGPointMake([DSCommonMethods screenWidth] / 2, userHead.centerY + userHead.height / 2 + 15 + nameLb.height / 2);
+    UILabel *nameLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 16)];
+    nameLb.center = CGPointMake(DSCommonMethods.screenWidth / 2, userHead.centerY + userHead.height / 2 + 15 + nameLb.height / 2);
     nameLb.font = [UIFont systemFontOfSize:15];
     nameLb.textAlignment = NSTextAlignmentCenter;
     nameLb.textColor = [UIColor blackColor];
@@ -106,15 +106,15 @@ typedef enum {// 按钮tag
 
     // 中间指纹按钮
     UIButton *touchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:touchBtn frame:CGRectMake(([DSCommonMethods screenWidth] - 75) / 2, nameLb.bottom + 70, 75, 86) title:nil font:nil image:[DSAccountTool imageNamed:@"touchId.png"]  tag:buttonTagTouchID changeColor:NO];
+    [self creatButton:touchBtn frame:CGRectMake((DSCommonMethods.screenWidth - 75) / 2, nameLb.bottom + 70, 75, 86) title:nil font:nil image:[DSAccountTool imageNamed:@"touchId.png"]  tag:buttonTagTouchID changeColor:NO];
 
     // 提示话术按钮
     UIButton *tipButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:tipButton frame:CGRectMake(0, touchBtn.bottom + 10, [DSCommonMethods screenWidth], 20) title:@"点击使用指纹登录" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchID changeColor:NO];
+    [self creatButton:tipButton frame:CGRectMake(0, touchBtn.bottom + 10, DSCommonMethods.screenWidth, 20) title:@"点击使用指纹登录" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchID changeColor:NO];
 
     // 初始化“切换登录方式”按钮
     UIButton *checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self creatButton:checkButton frame:CGRectMake(0, [DSCommonMethods screenHeight] - 90, [DSCommonMethods screenWidth], 30) title:@"更多登录方式" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchIDCheck changeColor:NO];
+    [self creatButton:checkButton frame:CGRectMake(0, DSCommonMethods.screenHeight - 90, DSCommonMethods.screenWidth, 30) title:@"更多登录方式" font:[UIFont fontWithName:@"PingFangSC-Regular" size:15.0f] image:nil tag:buttonTagTouchIDCheck changeColor:NO];
 }
 
 
@@ -212,7 +212,7 @@ typedef enum {// 按钮tag
                                           // 身份验证失败
                                           [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                                               // 切换主线程处理
-                                              if ([DSCommonMethods isIOS9Later]) {
+                                              if (DSCommonMethods.isIOS9Later) {
                                                   temp = LAPolicyDeviceOwnerAuthentication;
                                               }
                                           }];
@@ -359,7 +359,7 @@ typedef enum {// 按钮tag
                                           [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                                               // 切换主线程处理
 //                                              [SRSToast toastWithMessage:@"指纹不匹配"];
-                                              if ([DSCommonMethods isIOS9Later]) {
+                                              if (DSCommonMethods.isIOS9Later) {
                                                   temp = LAPolicyDeviceOwnerAuthentication;
                                               }
                                           }];

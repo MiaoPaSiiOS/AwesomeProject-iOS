@@ -173,7 +173,7 @@
         return NO;
     }
     
-    if (![DSCommonMethods isIOS8Later]) {
+    if (!DSCommonMethods.isIOS8Later) {
         if(!isStringEmptyOrNil(pString) && [pString rangeOfString:aString].location != NSNotFound) {
             return YES;
         }

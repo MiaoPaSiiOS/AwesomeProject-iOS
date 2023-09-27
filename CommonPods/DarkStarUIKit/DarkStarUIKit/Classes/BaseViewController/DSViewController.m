@@ -80,11 +80,11 @@
     [self.view addSubview:self.appBar];
     [self.dsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.left.right.mas_offset(0);
-        make.top.mas_offset([DSCommonMethods naviBarHeight]);
+        make.top.mas_offset(DSCommonMethods.naviBarHeight);
     }];
     [self.appBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_offset(0);
-        make.height.mas_equalTo([DSCommonMethods naviBarHeight]);
+        make.height.mas_equalTo(DSCommonMethods.naviBarHeight);
     }];
 }
 
@@ -128,7 +128,7 @@
 #pragma mark - Lazy Init
 - (DSNavigationBar *)appBar {
     if (!_appBar) {
-        _appBar = [[DSNavigationBar alloc] initWithFrame:CGRectMake(0, 0, [DSCommonMethods screenWidth], [DSCommonMethods naviBarHeight])];
+        _appBar = [[DSNavigationBar alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, DSCommonMethods.naviBarHeight)];
         _appBar.background.backgroundColor = [UIColor whiteColor];
     }
     return  _appBar;
@@ -136,7 +136,7 @@
 
 - (UIView *)dsView {
     if (!_dsView) {
-        _dsView = [[UIView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods naviBarHeight], [DSCommonMethods screenWidth], [DSCommonMethods screenHeight] - [DSCommonMethods naviBarHeight])];
+        _dsView = [[UIView alloc] initWithFrame:CGRectMake(0, DSCommonMethods.naviBarHeight, DSCommonMethods.screenWidth, DSCommonMethods.screenHeight - DSCommonMethods.naviBarHeight)];
         _dsView.backgroundColor = kHexColor(0xF3F4F6);
     }
     return _dsView;
