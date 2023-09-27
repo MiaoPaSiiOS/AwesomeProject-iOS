@@ -9,35 +9,6 @@
 #define DarkStarBaseKitDefines_h
 
 
-/// 状态栏高度
-#ifndef kStatusHeight
-#define kStatusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#endif
-
-/// NaviBar内容高度
-#ifndef kNaviBarContentHeight
-#define kNaviBarContentHeight 44.0
-#endif
-
-/// NaviBar 的高度, 已适配iPhone X
-#ifndef kNaviBarHeight
-#define kNaviBarHeight (kNaviBarContentHeight + kStatusHeight)
-#endif
-
-/// TabBar内容高度
-#ifndef kTabBarContentHeight
-#define kTabBarContentHeight 49.0
-#endif
-
-/// TabBar 高度, 已适配iPhone X
-#ifndef kTabBarHeight
-#define kTabBarHeight \
-({\
-CGFloat result = kTabBarContentHeight;\
-if(@available(iOS 11.0, *))\
-result += [[UIApplication sharedApplication] keyWindow].safeAreaInsets.bottom;\
-(result);})
-#endif
 
 
 /// RGBA 颜色

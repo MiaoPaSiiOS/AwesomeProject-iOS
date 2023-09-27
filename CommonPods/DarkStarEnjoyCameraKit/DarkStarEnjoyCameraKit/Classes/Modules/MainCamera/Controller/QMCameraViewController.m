@@ -163,7 +163,7 @@
     
     // 顶部背景
     UIView *topBg = [[UIView alloc] initWithFrame:CGRectZero];
-    topBg.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, [DSCommonMethods screenWidth], kNaviBarContentHeight);
+    topBg.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, [DSCommonMethods screenWidth], [DSCommonMethods naviBarContentHeight]);
     topBg.backgroundColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:255.0];
     [self.view addSubview:topBg];
     _topBg = topBg;

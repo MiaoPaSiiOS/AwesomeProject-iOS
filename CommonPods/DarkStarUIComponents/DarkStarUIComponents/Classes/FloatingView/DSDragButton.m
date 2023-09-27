@@ -43,7 +43,7 @@
 - (void)reset {
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 0);
     if (_rootView.width == [DSCommonMethods screenWidth] && _rootView.height == [DSCommonMethods screenHeight]) {
-        inset = UIEdgeInsetsMake(kNaviBarHeight, 0, kTabBarHeight, 0);
+        inset = UIEdgeInsetsMake([DSCommonMethods naviBarHeight], 0, [DSCommonMethods tabBarHeight], 0);
     }
     inset = UIEdgeInsetsConcat(inset, self.areaInset);
     
@@ -94,7 +94,7 @@
     }
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 0);
     if (_rootView.width == [DSCommonMethods screenWidth] && _rootView.height == [DSCommonMethods screenHeight]) {
-        inset = UIEdgeInsetsMake(kNaviBarHeight, 0, kTabBarHeight, 0);
+        inset = UIEdgeInsetsMake([DSCommonMethods naviBarHeight], 0, [DSCommonMethods tabBarHeight], 0);
     }
     inset = UIEdgeInsetsConcat(inset, self.areaInset);
     

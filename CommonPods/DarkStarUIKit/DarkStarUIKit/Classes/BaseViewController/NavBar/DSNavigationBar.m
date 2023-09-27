@@ -27,7 +27,7 @@
         }];
         [self.navigationBar mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.bottom.mas_offset(0);
-            make.height.mas_equalTo(kNaviBarContentHeight);
+            make.height.mas_equalTo([DSCommonMethods naviBarContentHeight]);
         }];
         
         _leftBarButton = [[DSBarButton alloc] initWithFrame:CGRectZero];

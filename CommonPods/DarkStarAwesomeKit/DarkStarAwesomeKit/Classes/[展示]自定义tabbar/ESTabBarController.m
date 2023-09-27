@@ -42,7 +42,7 @@
         [controllers addObject:vc];
     }
     self.viewControllers = controllers;
-    self.tabbarView = [[ESTabBarView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight] - kTabBarHeight, [DSCommonMethods screenWidth], kTabBarHeight)];
+    self.tabbarView = [[ESTabBarView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight] - [DSCommonMethods tabBarHeight], [DSCommonMethods screenWidth], [DSCommonMethods tabBarHeight])];
     self.tabbarView.delegate = self;
 
     [self.view addSubview:self.tabbarView];
@@ -88,7 +88,7 @@
     [self.view addSubview:self.giftBtn];
     self.giftBtn.centerX = self.view.width / 2.0;
 
-    self.initBottomValue = [DSCommonMethods screenHeight] - kTabBarHeight + 20;
+    self.initBottomValue = [DSCommonMethods screenHeight] - [DSCommonMethods tabBarHeight] + 20;
     self.giftBtn.bottom = self.initBottomValue;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(giftClick)];

@@ -117,7 +117,7 @@
     recylerView.separatorStyle = UITableViewCellSeparatorStyleNone;
     recylerView.showsVerticalScrollIndicator = NO;
     recylerView.showsHorizontalScrollIndicator = NO;
-    recylerView.contentInset = UIEdgeInsetsMake(0, 0, kTabBarHeight, 0);
+    recylerView.contentInset = UIEdgeInsetsMake(0, 0, [DSCommonMethods tabBarHeight], 0);
     recylerView.scrollIndicatorInsets = recylerView.contentInset;
     recylerView.delegate = self;
     recylerView.dataSource = self;

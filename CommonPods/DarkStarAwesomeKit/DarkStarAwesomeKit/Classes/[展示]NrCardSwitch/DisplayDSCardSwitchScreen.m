@@ -21,7 +21,7 @@
     // Do any additional setup after loading the view.
     [self.dsView addSubview:self.cardSwitch];
     [self.cardSwitch mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.dsView).insets(UIEdgeInsetsMake(0, 0, kTabBarHeight, 0));
+        make.edges.equalTo(self.dsView).insets(UIEdgeInsetsMake(0, 0, [DSCommonMethods tabBarHeight], 0));
     }];
     
     [self.cardSwitch addSubview:self.pageControl];

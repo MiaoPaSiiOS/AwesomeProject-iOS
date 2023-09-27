@@ -22,7 +22,7 @@
 //            make.top.mas_offset(0);
 //            make.left.mas_offset(32);
 //            make.right.mas_offset(-32);
-//            make.height.mas_equalTo(kTabBarContentHeight);
+//            make.height.mas_equalTo([DSCommonMethods tabBarContentHeight]);
 //        }];
 //    }
 //    return self;
@@ -51,7 +51,7 @@
 //    if (!_background) {
 //        _background = [[UIView alloc] init];
 //        _background.backgroundColor = [UIColor whiteColor];
-//        _background.layer.cornerRadius = kTabBarContentHeight/2;
+//        _background.layer.cornerRadius = [DSCommonMethods tabBarContentHeight]/2;
 ////        _background.layer.masksToBounds = YES;
 //        _background.layer.shadowColor = [UIColor lightGrayColor].CGColor;
 //        _background.layer.shadowOffset = CGSizeMake(0,0.5);

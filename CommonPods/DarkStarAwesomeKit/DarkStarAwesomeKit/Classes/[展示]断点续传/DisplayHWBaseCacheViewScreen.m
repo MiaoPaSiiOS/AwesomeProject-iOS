@@ -160,7 +160,7 @@
     btn.selected = !btn.selected;
     [self reloadTableView];
     [UIView animateWithDuration:0.25 animations:^{
-        self.tabbarView.top = self.isNavEditing ?  self.dsView.height - kTabBarHeight : self.dsView.height;
+        self.tabbarView.top = self.isNavEditing ?  self.dsView.height - [DSCommonMethods tabBarHeight] : self.dsView.height;
     }];
 }
 
@@ -268,7 +268,7 @@
 
 - (UIView *)tabbarView {
     if (!_tabbarView) {
-        _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight], [DSCommonMethods screenWidth], kTabBarHeight)];
+        _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, [DSCommonMethods screenHeight], [DSCommonMethods screenWidth], [DSCommonMethods tabBarHeight])];
         _tabbarView.backgroundColor = kHexColor(0xfafafa);
                 
         UIButton *btn_last = nil;

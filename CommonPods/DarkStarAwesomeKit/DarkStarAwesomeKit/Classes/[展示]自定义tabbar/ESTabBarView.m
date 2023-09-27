@@ -22,7 +22,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     self.backgroundColor = UIColor.clearColor;
-    self.tabbarHeight = kTabBarContentHeight;
+    self.tabbarHeight = [DSCommonMethods tabBarContentHeight];
     [self initBgView];
     [self initBtn];
     return self;
@@ -38,7 +38,7 @@
         make.height.mas_equalTo(self.tabbarHeight);
     }];
     if ([DSCommonMethods isIPHONEX]) {
-        CGFloat HOME_INDICATOR_HEIGHT = kTabBarHeight - kTabBarContentHeight;
+        CGFloat HOME_INDICATOR_HEIGHT = [DSCommonMethods tabBarHeight] - [DSCommonMethods tabBarContentHeight];
         UIView * whiteView = [[UIView alloc] init];
         whiteView.translatesAutoresizingMaskIntoConstraints = NO;
         whiteView.backgroundColor = UIColor.whiteColor;
