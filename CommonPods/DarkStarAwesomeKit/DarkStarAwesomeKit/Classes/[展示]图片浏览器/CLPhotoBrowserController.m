@@ -31,7 +31,7 @@
     return [DSAwesomeKitTool imageNamed:name inDirectory:@"[展示]图片浏览器"];
 }
 - (NSString *)imagePathWithNamed:(NSString *)name {
-    return safeString([DSAwesomeKitTool imagePathWithNamed:name inDirectory:@"[展示]图片浏览器"]);
+    return [DSCommonMethods safeString:([DSAwesomeKitTool imagePathWithNamed:name inDirectory:@"[展示]图片浏览器"])];
 }
 
 

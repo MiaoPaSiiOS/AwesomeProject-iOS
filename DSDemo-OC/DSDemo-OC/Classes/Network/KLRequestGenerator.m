@@ -217,7 +217,7 @@
     NSMutableString *cookieString = [[NSMutableString alloc] init];
     
     if (requestModel.params[@"ut"] != nil) {
-        [cookieString appendFormat:@"%@=%@;", @"ut", safeString(requestModel.params[@"ut"])];
+        [cookieString appendFormat:@"%@=%@;", @"ut", [DSCommonMethods safeString:(requestModel.params[@"ut"])]];
     } else {
 //        if (safeString([REDataManagement shared].token).length) {
 //            [cookieString appendFormat:@"%@=%@;", @"ut", safeString([REDataManagement shared].token)];

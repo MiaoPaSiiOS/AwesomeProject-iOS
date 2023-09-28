@@ -21,8 +21,8 @@
     reqModel.forbiddenGesture  = parameter[@"forbiddenGesture"] ? [parameter[@"forbiddenGesture"] boolValue] : NO;
     
     NSString *loadType = parameter[@"loadType"];
-    if (isStringEmptyOrNil(loadType)) {
-        if (isStringEmptyOrNil(parameter[@"url"])) return;
+    if ([DSCommonMethods isStringEmptyOrNil:(loadType)]) {
+        if ([DSCommonMethods isStringEmptyOrNil:(parameter[@"url"])]) return;
         reqModel.loadType          = AresJsbWKWebViewLoadRequest;
         reqModel.requestFullURL    = parameter[@"url"];
 
@@ -34,7 +34,7 @@
         reqModel.readAccessURL = parameter[@"readAccessURL"];
 
     } else if ([loadType isEqualToString:@"2"]) {
-        if (isStringEmptyOrNil(parameter[@"htmlString"])) return;
+        if ([DSCommonMethods isStringEmptyOrNil:(parameter[@"htmlString"])]) return;
         reqModel.loadType      = AresJsbWKWebViewLoadHTMLString;
         reqModel.baseURL       = parameter[@"baseURL"];
         reqModel.htmlString    = parameter[@"htmlString"];
@@ -42,8 +42,8 @@
     } else if ([loadType isEqualToString:@"3"]) {
         if (!parameter[@"data"] || ![parameter[@"data"] isKindOfClass:NSData.class]) return;
         if (!parameter[@"baseURL"] || ![parameter[@"baseURL"] isKindOfClass:NSURL.class]) return;
-        if (isStringEmptyOrNil(parameter[@"MIMEType"])) return;
-        if (isStringEmptyOrNil(parameter[@"characterEncodingName"])) return;
+        if ([DSCommonMethods isStringEmptyOrNil:(parameter[@"MIMEType"])]) return;
+        if ([DSCommonMethods isStringEmptyOrNil:(parameter[@"characterEncodingName"])]) return;
         reqModel.loadType      = AresJsbWKWebViewLoadData;
         reqModel.characterEncodingName = parameter[@"characterEncodingName"];
         reqModel.data          = parameter[@"data"];

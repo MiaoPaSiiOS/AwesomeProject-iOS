@@ -34,21 +34,21 @@
 }
 
 - (void)pushTouchIDLoginViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
-    if (isDictEmptyOrNil(parameter)) return;
+    if ([DSCommonMethods isDictEmptyOrNil:(parameter)]) return;
     DSTouchIDLoginViewController *vocalLoginVC = [[DSTouchIDLoginViewController alloc] init];
     vocalLoginVC.touchIDLoginBlock = ^(BOOL success, NSString *error) {
         if (callback) {
             callback(@{
-                @"success": safeString(([NSString stringWithFormat:@"%d", success])),
-                @"error": safeString(error)
+                @"success": [DSCommonMethods safeString:(([NSString stringWithFormat:@"%d", success]))],
+                @"error": [DSCommonMethods safeString:(error)]
             });
         }
     };
     
-    if ([safeString(parameter[@"popStyle"]) isEqualToString:@"push"]) {
+    if ([[DSCommonMethods safeString:(parameter[@"popStyle"])] isEqualToString:@"push"]) {
         UINavigationController *nvc = [self findNavFromParmer:parameter];
         [nvc pushViewController:vocalLoginVC animated:YES];
-    } else if ([safeString(parameter[@"popStyle"]) isEqualToString:@"present"]) {
+    } else if ([[DSCommonMethods safeString:(parameter[@"popStyle"])] isEqualToString:@"present"]) {
         UINavigationController *nvc = [self findNavFromParmer:parameter];
         UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:vocalLoginVC];
         naviVC.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -57,7 +57,7 @@
 }
 
 - (void)pushTouchIDSettingViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
-    if (isDictEmptyOrNil(parameter)) return;
+    if ([DSCommonMethods isDictEmptyOrNil:(parameter)]) return;
     UINavigationController *nvc = [self findNavFromParmer:parameter];
     DSTouchIDSettingViewController *vc = [[DSTouchIDSettingViewController alloc] init];
     [nvc pushViewController:vc animated:YES];
@@ -66,7 +66,7 @@
 #pragma mark - VocalApp
 - (void)Action_VocalApp:(nullable NSDictionary *)routerParameters;
 {
-    if (isDictEmptyOrNil(routerParameters)) return;
+    if ([DSCommonMethods isDictEmptyOrNil:(routerParameters)]) return;
     NSString *type = routerParameters[@"vocalType"];
     IUBoolBlock_id callback = routerParameters[@"callback"];
     if ([type isEqualToString:@"0"]) {
@@ -85,7 +85,7 @@
 
 - (void)getVocalPrintInfo:(nullable IUBoolBlock_id)callback {
     [DSVocalPrintInfoUtil vocalOpenStatusDes:^(NSDictionary * _Nullable dict) {
-        if (isDictEmptyOrNil(dict)) {
+        if ([DSCommonMethods isDictEmptyOrNil:(dict)]) {
             NSDictionary *callBackDict = @{@"VocalRouterModuleAction" : @"vocalPrintInfoResponse"};
             if (callback) {
                 callback(callBackDict);
@@ -109,21 +109,21 @@
 
 
 - (void)pushVocalLoginViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
-    if (isDictEmptyOrNil(parameter)) return;
+    if ([DSCommonMethods isDictEmptyOrNil:(parameter)]) return;
     DSVocalLoginViewController *vocalLoginVC = [[DSVocalLoginViewController alloc] init];
     vocalLoginVC.vocalLoginBlock = ^(BOOL success, NSString *error) {
         if (callback) {
             callback(@{
-                @"success": safeString(([NSString stringWithFormat:@"%d", success])),
-                @"error": safeString(error)
+                @"success": [DSCommonMethods safeString:(([NSString stringWithFormat:@"%d", success]))],
+                @"error": [DSCommonMethods safeString:(error)]
             });
         }
     };
     
-    if ([safeString(parameter[@"popStyle"]) isEqualToString:@"push"]) {
+    if ([[DSCommonMethods safeString:(parameter[@"popStyle"])] isEqualToString:@"push"]) {
         UINavigationController *nvc = [self findNavFromParmer:parameter];
         [nvc pushViewController:vocalLoginVC animated:YES];
-    } else if ([safeString(parameter[@"popStyle"]) isEqualToString:@"present"]) {
+    } else if ([[DSCommonMethods safeString:(parameter[@"popStyle"])] isEqualToString:@"present"]) {
         UINavigationController *nvc = [self findNavFromParmer:parameter];
         UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:vocalLoginVC];
         naviVC.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -132,7 +132,7 @@
 }
 
 - (void)pushVocalPrintSecretViewController:(NSDictionary *)parameter callback:(nullable IUBoolBlock_id)callback {
-    if (isDictEmptyOrNil(parameter)) return;
+    if ([DSCommonMethods isDictEmptyOrNil:(parameter)]) return;
     UINavigationController *nvc = [self findNavFromParmer:parameter];
     DSVocalPrintSecretViewController *vc = [[DSVocalPrintSecretViewController alloc] init];
     [nvc pushViewController:vc animated:YES];
@@ -169,7 +169,7 @@
 
 #pragma mark - private
 - (UINavigationController *)findNavFromParmer:(NSDictionary *)routerParameters {
-    if (isDictEmptyOrNil(routerParameters)) return nil;
+    if ([DSCommonMethods isDictEmptyOrNil:(routerParameters)]) return nil;
     if ([routerParameters objectForKey:@"nav"] && [[routerParameters objectForKey:@"nav"] isKindOfClass:[UINavigationController class]]) {
         return (UINavigationController *)[routerParameters objectForKey:@"nav"];;
     } else {

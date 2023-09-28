@@ -139,7 +139,7 @@
 #pragma mark - loadRequest
 - (void)loadRequest {
     if (self.reqModel.loadType == AresJsbWKWebViewLoadRequest) {
-        if (!isStringEmptyOrNil(self.strReloadUrl)) {
+        if (![DSCommonMethods isStringEmptyOrNil:(self.strReloadUrl)]) {
             self.reqModel.requestFullURL = self.strReloadUrl;
         }
         //URL 中含空格将其转码
@@ -346,17 +346,17 @@
     [self.baseWebView evaluateJavaScript:@"document.title" completionHandler:^(id _Nullable title, NSError * _Nullable error) {
         kStrongSelf
         NSString *titleStr = (title && [title isKindOfClass:[NSString class]]) ? (NSString *)title : @"";
-        if(!isStringEmptyOrNil(titleStr)) {
+        if(![DSCommonMethods isStringEmptyOrNil:(titleStr)]) {
             if(titleStr.length>8) {
                 titleStr = [titleStr stringByReplacingCharactersInRange:NSMakeRange(8,titleStr.length-8) withString:@"..."];
             }
         } else {
             titleStr = @"";
         }
-        if (isStringEmptyOrNil(titleStr)) {
+        if([DSCommonMethods isStringEmptyOrNil:(titleStr)]) {
             [strongSelf setupNavTitleView:nil];
         } else {
-            NSDictionary * dict = @{@"type":@"1",@"title":safeString(titleStr)};
+            NSDictionary * dict = @{@"type":@"1",@"title":[DSCommonMethods safeString:(titleStr)]};
             strongSelf.title = @"";
             strongSelf.aTitleView.showUrl = strongSelf.baseWebView.URL.absoluteString;
             [strongSelf.aTitleView configWithDict:dict];
@@ -482,7 +482,7 @@
                     NSDictionary *paramsDic = [DSWebKitGlobal parseParams:url.query];
                     if (paramsDic) {
                         NSString *nameValueStr = paramsDic[@"name"];
-                        if (isStringEmptyOrNil(nameValueStr)) {
+                        if ([DSCommonMethods isStringEmptyOrNil:(nameValueStr)]) {
                             messageStr = @"请前往应用市场下载APP";
                         } else {
                             messageStr = nameValueStr;
@@ -493,7 +493,7 @@
                     UIWindow *keywindow = [[UIApplication sharedApplication] keyWindow];
                     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:keywindow animated:YES];
                     hud.mode = MBProgressHUDModeText;
-                    hud.label.text = safeString(messageStr);
+                    hud.label.text = [DSCommonMethods safeString:(messageStr)];
                     [hud hideAnimated:YES afterDelay:2.f];
                 }
             }
@@ -543,13 +543,13 @@
         [self commonPopViewController];
         return;
     }
-    if (!isStringEmptyOrNil(self.backJSFunc)) {
+    if (![DSCommonMethods isStringEmptyOrNil:(self.backJSFunc)]) {
         [self.baseWebView evaluateJavaScript:self.backJSFunc completionHandler:nil];
         self.backJSFunc = nil;
         return;
     }
     
-    if (!isStringEmptyOrNil(self.gobackLoadUrl)) {
+    if (![DSCommonMethods isStringEmptyOrNil:(self.gobackLoadUrl)]) {
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:self.gobackLoadUrl] cachePolicy:(NSURLRequestReloadIgnoringLocalAndRemoteCacheData) timeoutInterval:30.f];
         [self.baseWebView loadRequest:request];
         self.gobackLoadUrl = @"";
@@ -570,7 +570,7 @@
     } else {
         if (self.loadError) {
             [self.codeErrorView removeFromSuperview];
-            if (isStringEmptyOrNil(self.strReloadUrl)) {
+            if ([DSCommonMethods isStringEmptyOrNil:(self.strReloadUrl)]) {
                 [self commonPopViewController];
             } else {
                 [self loadRequest];
@@ -856,7 +856,7 @@
     kWeakSelf
     [self srsAchiveJSMethodWithName: @"nativeright" completionHandler:^(NSString * _Nullable content, NSError * _Nullable error) {
         kStrongSelf
-        if (!error && [content isKindOfClass:[NSString class]] && !isStringEmptyOrNil(content)) {
+        if (!error && [content isKindOfClass:[NSString class]] && ![DSCommonMethods isStringEmptyOrNil:(content)]) {
 //            NSArray *arr = [content ds_JSONValue];
 //            if (arr && [arr isKindOfClass:[NSArray class]]) {
 //                NSDictionary *dict = [NSDictionary dictionaryWithObject:arr forKey:@"content"];

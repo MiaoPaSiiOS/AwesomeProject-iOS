@@ -18,10 +18,10 @@
         if (parseError) {
             self.success    = NO;
         } else {
-            if (isDictEmptyOrNil(responseObject)) {
+            if ([DSCommonMethods isDictEmptyOrNil:(responseObject)]) {
                 self.success    = NO;
             } else {
-                NSString *code = safeString(responseObject[@"code"]);                
+                NSString *code = [DSCommonMethods safeString:(responseObject[@"code"])];
                 if ([code isEqualToString:@"0"]) {
                     self.success    = YES;
                 } else {
@@ -41,7 +41,7 @@
     if (self.error) {
         return [NSString stringWithFormat:@"%@",self.error.localizedDescription];
     } else if (self.responseObject) {
-        return [NSString stringWithFormat:@"%@",safeString(self.responseObject[@"message"])];
+        return [NSString stringWithFormat:@"%@",[DSCommonMethods safeString:(self.responseObject[@"message"])]];
     }
     return nil;
 }

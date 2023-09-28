@@ -37,9 +37,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!isArrayEmptyOrNil(self.templates)) {
+    if (![DSCommonMethods isArrayEmptyOrNil:(self.templates)]) {
         DSTemplate *model = [self.templates ds_objectWithIndex:indexPath.row];
-        if (!isDictEmptyOrNil(model.extParmers)) {
+        if (![DSCommonMethods isDictEmptyOrNil:(model.extParmers)]) {
             NSString *type = [model.extParmers valueForKey:@"type"];
             if ([type isEqualToString:@"0"]) {
                 [[CTMediator sharedInstance] mediator_pushWebViewController:@{

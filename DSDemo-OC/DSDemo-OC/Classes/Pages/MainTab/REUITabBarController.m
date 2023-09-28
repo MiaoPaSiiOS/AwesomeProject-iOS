@@ -106,7 +106,7 @@ typedef NS_ENUM(NSUInteger,MHTabBarItemTagType) {
     for (int i = 0; i < dataSource.count; i++) {
         NSDictionary *vcInfo = dataSource[i];
         NSString *className = vcInfo[@"className"];
-        if(safeString(className).length && NSClassFromString(className)){
+        if([DSCommonMethods safeString:(className)].length && NSClassFromString(className)){
             UIViewController *viewController = [[NSClassFromString(className) alloc] init];
             UINavigationController *scene = ({
                 [self _configViewController:viewController

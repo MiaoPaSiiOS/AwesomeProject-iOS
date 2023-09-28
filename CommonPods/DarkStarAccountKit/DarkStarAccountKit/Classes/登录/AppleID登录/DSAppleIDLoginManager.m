@@ -85,11 +85,11 @@ API_AVAILABLE(ios(13.0))
 - (void)checkThirdPartyIsBind:(ASAuthorizationAppleIDCredential *)credential {
     NSDictionary *dic = [[NSDictionary alloc] init];
     NSString *identityToken = [[NSString alloc] initWithData:credential.identityToken encoding:NSUTF8StringEncoding];
-    dic = @{ @"thirdPtyType": @"1", @"thirdPtyAuthCodeOrToken": safeString(identityToken) };
+    dic = @{ @"thirdPtyType": @"1", @"thirdPtyAuthCodeOrToken": [DSCommonMethods safeString:(identityToken)] };
     NSMutableDictionary *parm = [NSMutableDictionary dictionaryWithDictionary:@{
-                                     @"thirdAccountId": safeString(credential.user),
-                                     @"thirdAccountEmail": safeString(credential.email),
-                                     @"UN": safeString(credential.user)
+        @"thirdAccountId": [DSCommonMethods safeString:(credential.user)],
+        @"thirdAccountEmail": [DSCommonMethods safeString:(credential.email)],
+        @"UN": [DSCommonMethods safeString:(credential.user)]
     }];
     __weak __typeof(self)weakSelf = self;
     [MBProgressHUD showHUDAddedTo:[DSCommonMethods findTopViewController].view animated:YES];

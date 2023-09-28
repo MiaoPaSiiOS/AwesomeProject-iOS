@@ -29,7 +29,7 @@
         NSDictionary *functionList = [self loadDefaultJsonWithName:@"visualmenufunctionlist"];
         //网络白名单
         NSArray *PAGEWHITELIST = [functionList objectForKey:@"PAGEWHITELIST"];
-        if (!isArrayEmptyOrNil(PAGEWHITELIST)) {
+        if (![DSCommonMethods isArrayEmptyOrNil:(PAGEWHITELIST)]) {
             self.pageWhiteList = PAGEWHITELIST;
         } else {
             NSDictionary *SRSdic = @{@"description" : @"从缓存/服务器获取的网络白名单为空"};
@@ -37,7 +37,7 @@
         }
         //h5缓存名单列表
         NSArray *WEBCACHEWHITELIST = [functionList objectForKey:@"WEBCACHEWHITELIST"];
-        if (!isArrayEmptyOrNil(WEBCACHEWHITELIST)) {
+        if (![DSCommonMethods isArrayEmptyOrNil:(WEBCACHEWHITELIST)]) {
             self.webCacheWhiteList = WEBCACHEWHITELIST;
         } else {
             NSDictionary *SRSdic = @{@"description" : @"从缓存/服务器获取的h5缓存名单列表为空"};
@@ -71,7 +71,7 @@
 
 #pragma mark - 特殊情况url判断
 + (BOOL)SpecialIOSListFlag:(NSString *)netUrl {
-    if (isStringEmptyOrNil(netUrl)) {
+    if ([DSCommonMethods isStringEmptyOrNil:(netUrl)]) {
         return YES;
     }
     NSMutableArray *netPageUrl=[[NSMutableArray alloc]init];
@@ -116,7 +116,7 @@
         netUrl = [netUrl stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSURL *url = [NSURL URLWithString:[netUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
         NSString *host = [url host];
-        if (isStringEmptyOrNil(host)) {
+        if ([DSCommonMethods isStringEmptyOrNil:(host)]) {
             return NO;
         }
         if ([host isEqualToString:@"apps.apple.com"]) {
@@ -174,7 +174,7 @@
     }
     
     if (!DSDeviceInfo.isIOS8Later) {
-        if(!isStringEmptyOrNil(pString) && [pString rangeOfString:aString].location != NSNotFound) {
+        if(![DSCommonMethods isStringEmptyOrNil:(pString)] && [pString rangeOfString:aString].location != NSNotFound) {
             return YES;
         }
     }else{

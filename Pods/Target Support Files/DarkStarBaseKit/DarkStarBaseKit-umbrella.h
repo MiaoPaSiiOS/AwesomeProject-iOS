@@ -41,9 +41,8 @@
 #import "DSDataView.h"
 #import "DSItem.h"
 #import "DSNavItem.h"
-#import "DSDeviceInfo.h"
+#import "DSCommonMethods.h"
 #import "DSComputer.h"
-#import "DSDataType.h"
 #import "DSDeviceInfo.h"
 
 FOUNDATION_EXPORT double DarkStarBaseKitVersionNumber;

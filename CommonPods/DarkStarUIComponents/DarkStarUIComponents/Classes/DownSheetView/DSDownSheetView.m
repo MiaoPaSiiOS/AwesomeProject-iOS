@@ -62,10 +62,10 @@
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.titleView];
     [self.titleView addSubview:self.titleLabel];
-    if (safeString(self.leftTitle).length || self.leftImage) {
+    if ([DSCommonMethods safeString:(self.leftTitle)].length || self.leftImage) {
         [self.titleView addSubview:self.leftButton];
     }
-    if (safeString(self.rightTitle).length || self.rightImage) {
+    if ([DSCommonMethods safeString:(self.rightTitle)].length || self.rightImage) {
         [self.titleView addSubview:self.rightButton];
     }
     [self.contentView addSubview:self.listView];
@@ -92,8 +92,8 @@
         make.height.mas_equalTo(self.contentHeight - (44));
     }];
     
-    BOOL hasLeftButton = safeString(self.leftTitle).length || self.leftImage;
-    BOOL hasRightButton = safeString(self.rightTitle).length || self.rightImage;
+    BOOL hasLeftButton = [DSCommonMethods safeString:(self.leftTitle)].length || self.leftImage;
+    BOOL hasRightButton = [DSCommonMethods safeString:(self.rightTitle)].length || self.rightImage;
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.titleView);
         make.left.greaterThanOrEqualTo(hasLeftButton ? self.leftButton : self.titleView).offset((15));
@@ -148,7 +148,7 @@
         _leftButton = [[UIButton alloc] init];
         [_leftButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"]  forState:UIControlStateNormal];
         _leftButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-        if (safeString(self.leftTitle).length) {
+        if ([DSCommonMethods safeString:(self.leftTitle)].length) {
             [_leftButton setTitle:self.leftTitle forState:UIControlStateNormal];
         }
         if (self.leftImage) {
@@ -165,7 +165,7 @@
         _rightButton = [[UIButton alloc] init];
         [_rightButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"] forState:UIControlStateNormal];
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-        if (safeString(self.rightTitle).length) {
+        if ([DSCommonMethods safeString:(self.rightTitle)].length) {
             [_rightButton setTitle:self.rightTitle forState:UIControlStateNormal];
         }
         if (self.rightImage) {

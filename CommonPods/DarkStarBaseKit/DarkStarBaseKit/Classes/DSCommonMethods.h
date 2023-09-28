@@ -7,7 +7,36 @@
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark -
+#pragma mark - 常用Block定义
+typedef void (^IUVoidBlock)(void);
+typedef BOOL (^IUBoolBlock)(void);
+typedef int  (^IUIntBlock) (void);
+typedef id   (^IUIDBlock)  (void);
+
+typedef void (^IUVoidBlock_int)(int);
+typedef BOOL (^IUBoolBlock_int)(int);
+typedef int  (^IUIntBlock_int) (int);
+typedef id   (^IUIDBlock_int)  (int);
+
+typedef void (^IUVoidBlock_string)(NSString *);
+typedef BOOL (^IUBoolBlock_string)(NSString *);
+typedef int  (^IUIntBlock_string) (NSString *);
+typedef id   (^IUIDBlock_string)  (NSString *);
+
+typedef void (^IUVoidBlock_id)(id);
+typedef BOOL (^IUBoolBlock_id)(id);
+typedef int  (^IUIntBlock_id) (id);
+typedef id   (^IUIDBlock_id)  (id);
+
 
 @interface DSCommonMethods : NSObject
 #pragma mark - 颜色
@@ -17,44 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)RGBA:(CGFloat)r green:(CGFloat)g blue:(CGFloat)b;
 + (UIColor *)colorWithColorString:(NSString *)colorString;
 + (UIColor *)randomColor;
-
-//#pragma mark - 设备常用参数
-///// 屏幕宽度
-//+ (CGFloat)screenWidth;
-/////主屏幕高度
-//+ (CGFloat)screenHeight;
-/////分辨率
-//+ (CGFloat)screenScale;
-///// 分割线的高度
-//+ (CGFloat)LINE_HEIGHT;
-///// 状态栏高度
-//+ (CGFloat)statusBarHeight;
-///// NaviBar内容高度
-//+ (CGFloat)naviBarContentHeight;
-///// NaviBar 的高度, 已适配iPhone X
-//+ (CGFloat)naviBarHeight;
-///// TabBar内容高度
-//+ (CGFloat)tabBarContentHeight;
-///// TabBar 高度, 已适配iPhone X
-//+ (CGFloat)tabBarHeight;
-
-//#pragma mark - 系统判断
-//+ (BOOL)iOSSystem:(CGFloat)system;
-///// iOS 8 判断
-//+ (BOOL)isIOS8Later;
-///// iOS 9 判断
-//+ (BOOL)isIOS9Later;
-///// iOS 10 判断
-//+ (BOOL)isIOS10Later;
-///// iOS 11 判断
-//+ (BOOL)isIOS11Later;
-///// iOS 11.2 判断
-//+ (BOOL)isIOS11_2Later;
-
-#pragma mark - 机型判断
-/// iPhoneX 判断
-+ (BOOL)isIPHONEX;
-
 
 #pragma mark - UIWindow | UIViewController
 + (nullable UIWindow *)findWindow;
