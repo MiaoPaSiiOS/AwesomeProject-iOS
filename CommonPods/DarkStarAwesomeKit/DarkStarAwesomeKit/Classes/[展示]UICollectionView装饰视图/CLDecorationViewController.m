@@ -107,7 +107,7 @@
             int sectionNUM = [self getRandomNumber:3 to:10];
             for (int i = 0; i < sectionNUM; i++) {
                 SectionCardModel *section = [[SectionCardModel alloc] init];
-//                section.backgroundColor = [DSCommonMethods randomColor];
+//                section.backgroundColor = [DSHelper randomColor];
                 section.backgroundUrl = backgroundUrls[i % backgroundUrls.count];
                 NSMutableArray *warfs = [NSMutableArray array];
                 for (int i = 0; i < 5; i++) {

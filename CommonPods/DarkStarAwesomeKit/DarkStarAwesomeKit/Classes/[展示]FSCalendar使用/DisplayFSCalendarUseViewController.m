@@ -371,7 +371,7 @@
         NSString * time = [formater stringFromDate:date];
 
         headerCell.titleLabel.text = [NSString stringWithFormat:@"   %@",time];
-        headerCell.titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x979797"];
+        headerCell.titleLabel.textColor = [DSHelper colorWithHexString:@"0x979797"];
         headerCell.titleLabel.font = [UIFont systemFontOfSize:13];
         headerCell.titleLabel.textAlignment = NSTextAlignmentLeft;
         return headerCell;

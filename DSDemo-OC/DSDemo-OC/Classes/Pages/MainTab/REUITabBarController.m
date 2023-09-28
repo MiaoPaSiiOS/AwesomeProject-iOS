@@ -16,8 +16,8 @@ typedef NS_ENUM(NSUInteger,MHTabBarItemTagType) {
     MHTabBarItemTagTypeProfile,             /// 我的
 };
 
-#define MH_NormalItemColor [DSCommonMethods colorWithHexString:@"0x333333"]
-#define MH_SelectedItemColor [DSCommonMethods colorWithHexString:@"0xE00514"]
+#define MH_NormalItemColor [DSHelper colorWithHexString:@"0x333333"]
+#define MH_SelectedItemColor [DSHelper colorWithHexString:@"0xE00514"]
 
 
 @interface REUITabBarController ()<UITabBarControllerDelegate>
@@ -106,7 +106,7 @@ typedef NS_ENUM(NSUInteger,MHTabBarItemTagType) {
     for (int i = 0; i < dataSource.count; i++) {
         NSDictionary *vcInfo = dataSource[i];
         NSString *className = vcInfo[@"className"];
-        if([DSCommonMethods safeString:(className)].length && NSClassFromString(className)){
+        if([DSHelper safeString:(className)].length && NSClassFromString(className)){
             UIViewController *viewController = [[NSClassFromString(className) alloc] init];
             UINavigationController *scene = ({
                 [self _configViewController:viewController
@@ -160,8 +160,8 @@ typedef NS_ENUM(NSUInteger,MHTabBarItemTagType) {
      tabbar设置
      设置ShadowImage或者BackgroundImage后，UITabBarController中的子控制器的View的frame将不会占满全屏！！！
      */
-    [self.centerTabBar setShadowImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xEEEEEE"]]];
-    [self.centerTabBar setBackgroundImage:[UIImage ds_imageWithColor:[DSCommonMethods colorWithHexString:@"0xFFFFFF"]]];
+    [self.centerTabBar setShadowImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xEEEEEE"]]];
+    [self.centerTabBar setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xFFFFFF"]]];
     if (@available(iOS 13.0, *)) {
         self.centerTabBar.tintColor = MH_SelectedItemColor;
         self.centerTabBar.unselectedItemTintColor = MH_NormalItemColor;

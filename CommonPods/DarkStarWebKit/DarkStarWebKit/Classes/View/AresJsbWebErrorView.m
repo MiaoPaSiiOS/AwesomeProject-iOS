@@ -48,7 +48,7 @@
 
 #pragma mark 无数据
 - (void)setDefaultNoData {
-    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
+    self.backgroundColor = [DSHelper colorWithHexString:@"0xffffff"];;
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.subtitleLab];
@@ -78,7 +78,7 @@
 
 #pragma mark 服务器错误
 - (void)setDefaultServerError {
-    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
+    self.backgroundColor = [DSHelper colorWithHexString:@"0xffffff"];;
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.subtitleLab];
@@ -114,7 +114,7 @@
 
 #pragma mark 无网络连接
 - (void)setDefaultNetworkNotReachable {
-    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
+    self.backgroundColor = [DSHelper colorWithHexString:@"0xffffff"];;
     [self addSubview:self.imageView];
     [self addSubview:self.titleLab];
     [self addSubview:self.subtitleLab];
@@ -176,7 +176,7 @@
 - (UILabel *)titleLab {
     if (!_titleLab) {
         _titleLab = [[UILabel alloc] init];
-        _titleLab.textColor = [DSCommonMethods colorWithHexString:@"0x000000"];
+        _titleLab.textColor = [DSHelper colorWithHexString:@"0x000000"];
         _titleLab.textAlignment = NSTextAlignmentCenter;
         _titleLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:17];
     }
@@ -186,7 +186,7 @@
 - (UILabel *)subtitleLab {
     if (!_subtitleLab) {
         _subtitleLab = [[UILabel alloc] init];
-        _subtitleLab.textColor = [DSCommonMethods colorWithHexString:@"0x888888"];
+        _subtitleLab.textColor = [DSHelper colorWithHexString:@"0x888888"];
         _subtitleLab.textAlignment = NSTextAlignmentCenter;
         _subtitleLab.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:13];;
     }
@@ -200,10 +200,10 @@
         _reloadBtn.layer.masksToBounds = YES;
         _reloadBtn.layer.cornerRadius = 20;
         _reloadBtn.layer.borderWidth = 1;
-        _reloadBtn.layer.borderColor = [DSCommonMethods colorWithHexString:@"0x4586ff"].CGColor;
+        _reloadBtn.layer.borderColor = [DSHelper colorWithHexString:@"0x4586ff"].CGColor;
         [_reloadBtn setTitle:@"重新加载" forState:UIControlStateNormal];
-        [_reloadBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x2f71eb"] forState:UIControlStateHighlighted];
-        [_reloadBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
+        [_reloadBtn setTitleColor:[DSHelper colorWithHexString:@"0x2f71eb"] forState:UIControlStateHighlighted];
+        [_reloadBtn setTitleColor:[DSHelper colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
         [_reloadBtn addTarget:self action:@selector(clickReloadBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _reloadBtn;

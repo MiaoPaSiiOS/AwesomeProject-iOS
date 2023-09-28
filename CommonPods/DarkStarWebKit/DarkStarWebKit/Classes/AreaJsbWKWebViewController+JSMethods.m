@@ -122,9 +122,9 @@
     [self registerHandler:@"JSSetScreenBrightness" handler:^(id  _Nonnull data, WVJBResponseCallback  _Nonnull responseCallback) {
         NSDictionary *parameters = data;
         // 0表示恢复亮度，1表示高亮
-        if ([[DSCommonMethods safeString:(parameters[@"status"])] isEqualToString:@"0"]) {
+        if ([[DSHelper safeString:(parameters[@"status"])] isEqualToString:@"0"]) {
             [UIScreen mainScreen].brightness = brightnessSave;
-        }else if([[DSCommonMethods safeString:(parameters[@"status"])] isEqualToString:@"1"]){
+        }else if([[DSHelper safeString:(parameters[@"status"])] isEqualToString:@"1"]){
             [UIScreen mainScreen].brightness = 0.9;
         }
     }];
@@ -154,7 +154,7 @@
     [self registerHandler:@"JSCanOpenURL" handler:^(id  _Nonnull data, WVJBResponseCallback  _Nonnull responseCallback) {
         NSDictionary *parameters = data;
         NSString *canOpen = @"NO";
-        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[DSCommonMethods safeString:(parameters[@"url"])]]]) {
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[DSHelper safeString:(parameters[@"url"])]]]) {
             canOpen = @"YES";
         }
         
@@ -168,8 +168,8 @@
 - (void)JSOpenURL {
     [self registerHandler:@"JSOpenURL" handler:^(id  _Nonnull data, WVJBResponseCallback  _Nonnull responseCallback) {
         NSDictionary *parameters = data;
-        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[DSCommonMethods safeString:(parameters[@"url"])]]]) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[DSCommonMethods safeString:(parameters[@"url"])]]];
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[DSHelper safeString:(parameters[@"url"])]]]) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[DSHelper safeString:(parameters[@"url"])]]];
         }
     }];
 }

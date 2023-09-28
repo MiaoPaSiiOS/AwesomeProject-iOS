@@ -13,6 +13,6 @@
 
 - (void)Action_pushAwesomeKitController:(nullable NSDictionary *)parameter {
     DSAwesomeKitViewController *webController = [[DSAwesomeKitViewController alloc] init];
-    [[DSCommonMethods findTopViewController].navigationController pushViewController:webController animated:YES];
+    [[DSHelper findTopViewController].navigationController pushViewController:webController animated:YES];
 }
 @end

@@ -137,7 +137,7 @@
 - (UIView *)dsView {
     if (!_dsView) {
         _dsView = [[UIView alloc] initWithFrame:CGRectMake(0, DSDeviceInfo.naviBarHeight, DSDeviceInfo.screenWidth, DSDeviceInfo.screenHeight - DSDeviceInfo.naviBarHeight)];
-        _dsView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xF3F4F6"];
+        _dsView.backgroundColor = [DSHelper colorWithHexString:@"0xF3F4F6"];
     }
     return _dsView;
 }

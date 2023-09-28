@@ -34,7 +34,7 @@ NSInteger SRSAlertContrllerTag = 837458;
 
 - (void)initSubviews {
     UIView *topLineView = [[UIView alloc] init];
-    topLineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+    topLineView.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
     [self addSubview:topLineView];
     [topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.top.trailing.equalTo(self);
@@ -46,7 +46,7 @@ NSInteger SRSAlertContrllerTag = 837458;
         button.tag = kButtonTag+i;
         button.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16.f];
         [button setTitle:self.buttonsArray[i] forState:UIControlStateNormal];
-        [button setTitleColor:[DSCommonMethods colorWithHexString:@"0x3E73FF"] forState:UIControlStateNormal];
+        [button setTitleColor:[DSHelper colorWithHexString:@"0x3E73FF"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         if (self.buttonsArray.count == 2) {
@@ -58,7 +58,7 @@ NSInteger SRSAlertContrllerTag = 837458;
                 make.leading.equalTo(self).mas_equalTo(i*width);
             }];
             UIView *middleLine = [[UIView alloc] init];
-            middleLine.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+            middleLine.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
             [self addSubview:middleLine];
             [middleLine mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.bottom.equalTo(self);
@@ -81,7 +81,7 @@ NSInteger SRSAlertContrllerTag = 837458;
             
             if (self.buttonsArray.count > 2 && i != self.buttonsArray.count-1) {
                 UIView *bottomLineView = [[UIView alloc] init];
-                bottomLineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+                bottomLineView.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
                 [self addSubview:bottomLineView];
                 [bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.leading.trailing.equalTo(self);
@@ -128,7 +128,7 @@ static SRSAlertController *lastAlert;
 - (instancetype)init {
     if (self = [super init]) {
         self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, DSDeviceInfo.screenHeight);
-        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0x000000" alpha:0.4];
+        self.backgroundColor = [DSHelper colorWithHexString:@"0x000000" alpha:0.4];
     }
     return self;
 }
@@ -181,7 +181,7 @@ static SRSAlertController *lastAlert;
     if (self.titleStr.length) {
         self.titleLbl = [[UILabel alloc] init];
         self.titleLbl.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16.f];
-        self.titleLbl.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
+        self.titleLbl.textColor = [DSHelper colorWithHexString:@"0x333333"];
         self.titleLbl.numberOfLines = 0;
         self.titleLbl.textAlignment = NSTextAlignmentCenter;
         self.titleLbl.text = self.titleStr;
@@ -197,7 +197,7 @@ static SRSAlertController *lastAlert;
     
     self.messageLbl = [[UILabel alloc] init];
     self.messageLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14.f];
-    self.messageLbl.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
+    self.messageLbl.textColor = [DSHelper colorWithHexString:@"0x333333"];
     self.messageLbl.text = self.messageStr;
     [self.messageLbl sizeToFit];
     self.messageLbl.numberOfLines = 0;
@@ -266,7 +266,7 @@ static SRSAlertController *lastAlert;
     
     
     self.messageLbl = [[UILabel alloc] init];
-    self.messageLbl.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+    self.messageLbl.textColor = [DSHelper colorWithHexString:@"0x222222"];
     if (attrMessage.length) {
         self.messageLbl.attributedText = attrMessage;
     } else if (message.length) {

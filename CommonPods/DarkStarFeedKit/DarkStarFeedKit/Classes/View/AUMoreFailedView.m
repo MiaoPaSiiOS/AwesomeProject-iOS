@@ -18,7 +18,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
+        self.backgroundColor = [DSHelper colorWithHexString:@"0xffffff"];;
         [self buildUI];
     }
     return self;
@@ -26,13 +26,13 @@
 
 - (void)buildUI {
     self.retryButton = [[DSUIButton alloc] init];
-    self.retryButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0x4586ff" alpha:1].CGColor;
+    self.retryButton.layer.borderColor = [DSHelper colorWithHexString:@"0x4586ff" alpha:1].CGColor;
     self.retryButton.layer.borderWidth = 1;
     self.retryButton.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:12];
     self.retryButton.layer.cornerRadius = 14;
     [self.retryButton setTitle:@"加载失败，点我再试试" forState:UIControlStateNormal];
-    [self.retryButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
-    [self.retryButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586ff" alpha:0.5]forState:UIControlStateHighlighted];
+    [self.retryButton setTitleColor:[DSHelper colorWithHexString:@"0x4586ff"] forState:UIControlStateNormal];
+    [self.retryButton setTitleColor:[DSHelper colorWithHexString:@"0x4586ff" alpha:0.5]forState:UIControlStateHighlighted];
     [self.retryButton setImage:[AmenFeedTool imageNamed:@"activites_reset_icon"] forState:UIControlStateNormal];
     self.retryButton.imagePosition = DSUIButtonImagePositionLeft;
     self.retryButton.spacingBetweenImageAndTitle = 4;

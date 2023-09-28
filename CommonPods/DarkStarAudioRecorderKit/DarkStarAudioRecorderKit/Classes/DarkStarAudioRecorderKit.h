@@ -76,7 +76,7 @@
                  self.msgL.text = @"录音时间太短，请重新录制";
                  self.msgL.textColor = kHexColor(0xFF4D29);
                  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                     self.msgL.textColor = [DSCommonMethods colorWithHexString:@"0x666666"];
+                     self.msgL.textColor = [DSHelper colorWithHexString:@"0x666666"];
                      self.msgL.text = @"请按住按钮，用普通话匀速读出文字";
                  });
              }
@@ -178,7 +178,7 @@
          _msgL.backgroundColor = [UIColor whiteColor];
          _msgL.textAlignment = NSTextAlignmentCenter;
          _msgL.font = [UIFont fontWithName:@"PingFangSC-Regular" size:15];
-         _msgL.textColor = [DSCommonMethods colorWithHexString:@"0x666666"];
+         _msgL.textColor = [DSHelper colorWithHexString:@"0x666666"];
          _msgL.text = @"请按住按钮，用普通话匀速读出文字";
          _msgL.numberOfLines = 3;
          _msgL.lineBreakMode = NSLineBreakByCharWrapping;

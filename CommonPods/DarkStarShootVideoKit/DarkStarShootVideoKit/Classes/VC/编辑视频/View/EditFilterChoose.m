@@ -75,7 +75,7 @@
 }
 +(void)showWithCurentFilter:(MHFilterInfo *)curentfilter callBack:(EditFilterChooseCallBack)callBack hidenHanlde:(EditFilterChooseHidenHandle)hidenHandle
 {
-    UIWindow * keywindow = [DSCommonMethods findWindow];
+    UIWindow * keywindow = [DSHelper findWindow];
     for (UIView * subView in keywindow.subviews) {
         if ([subView isKindOfClass:[EditFilterChoose class]]) {
             [subView removeFromSuperview];

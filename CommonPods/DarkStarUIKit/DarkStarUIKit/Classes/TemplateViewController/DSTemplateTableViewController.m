@@ -22,7 +22,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if ([DSCommonMethods isArrayEmptyOrNil:(self.templates)]) {
+    if ([DSHelper isArrayEmptyOrNil:(self.templates)]) {
         return 0;
     }
     return self.templates.count;
@@ -35,16 +35,16 @@
         cell = [[DSTemplateTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    if (![DSCommonMethods isArrayEmptyOrNil:(self.templates)]) {
+    if (![DSHelper isArrayEmptyOrNil:(self.templates)]) {
         cell.model = [self.templates ds_objectWithIndex:indexPath.row];
     }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (![DSCommonMethods isArrayEmptyOrNil:(self.templates)]) {
+    if (![DSHelper isArrayEmptyOrNil:(self.templates)]) {
         DSTemplate *model = [self.templates ds_objectWithIndex:indexPath.row];
-        if (![DSCommonMethods isStringEmptyOrNil:(model.classStr)]) {
+        if (![DSHelper isStringEmptyOrNil:(model.classStr)]) {
             Class cla = NSClassFromString(model.classStr);
             if (!cla) return;
             if ([cla isSubclassOfClass:DSViewController.class]) {

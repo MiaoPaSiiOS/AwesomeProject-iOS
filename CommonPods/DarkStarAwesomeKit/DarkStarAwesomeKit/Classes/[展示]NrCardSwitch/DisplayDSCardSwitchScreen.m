@@ -78,8 +78,8 @@
 - (UIPageControl *)pageControl {
     if (!_pageControl) {
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectZero];
-        _pageControl.pageIndicatorTintColor = [DSCommonMethods colorWithHexString:@"0x000000" alpha:0.4];
-        _pageControl.currentPageIndicatorTintColor = [DSCommonMethods colorWithHexString:@"0x000000"];
+        _pageControl.pageIndicatorTintColor = [DSHelper colorWithHexString:@"0x000000" alpha:0.4];
+        _pageControl.currentPageIndicatorTintColor = [DSHelper colorWithHexString:@"0x000000"];
     }
     return _pageControl;
 }

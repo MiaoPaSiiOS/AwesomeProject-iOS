@@ -16,7 +16,7 @@
 }
 
 + (NSMutableURLRequest *)achiveRequestWithURL:(NSURL *)url timeoutInterval:(NSTimeInterval)timeInterval {
-    NSString *requestUrl = [DSCommonMethods safeString:(url.absoluteString)];
+    NSString *requestUrl = [DSHelper safeString:(url.absoluteString)];
     NSURLRequestCachePolicy cachePolicy = NSURLRequestReloadIgnoringLocalAndRemoteCacheData;
     NSString *str = [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"ENABLE_WEB_CACHE_IOS"]];
     
@@ -28,7 +28,7 @@
                 NSString *str = [NSString stringWithFormat:@"%@",aDict[@"DOMAIN"]];
                 if ([requestUrl hasPrefix:str]) {
                     NSDictionary *trackDict = @{
-                        @"cache_url":[DSCommonMethods safeString:(requestUrl)],
+                        @"cache_url":[DSHelper safeString:(requestUrl)],
                         @"desc":@"webview缓存白名单列表"
                     };
                     NSLog(@"%@",trackDict);

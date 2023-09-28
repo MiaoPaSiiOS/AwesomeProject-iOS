@@ -42,22 +42,22 @@
 #define kWBCellToolbarFontSize 14 // 工具栏字体大小
 
 // 颜色
-#define kWBCellNameNormalColor [DSCommonMethods colorWithHexString:@"0x333333"] // 名字颜色
-#define kWBCellNameOrangeColor [DSCommonMethods colorWithHexString:@"0xf26220"] // 橙名颜色 (VIP)
-#define kWBCellTimeNormalColor [DSCommonMethods colorWithHexString:@"0x828282"] // 时间颜色
-#define kWBCellTimeOrangeColor [DSCommonMethods colorWithHexString:@"0xf28824"] // 橙色时间 (最新刷出)
+#define kWBCellNameNormalColor [DSHelper colorWithHexString:@"0x333333"] // 名字颜色
+#define kWBCellNameOrangeColor [DSHelper colorWithHexString:@"0xf26220"] // 橙名颜色 (VIP)
+#define kWBCellTimeNormalColor [DSHelper colorWithHexString:@"0x828282"] // 时间颜色
+#define kWBCellTimeOrangeColor [DSHelper colorWithHexString:@"0xf28824"] // 橙色时间 (最新刷出)
 
-#define kWBCellTextNormalColor [DSCommonMethods colorWithHexString:@"0x333333"] // 一般文本色
-#define kWBCellTextSubTitleColor [DSCommonMethods colorWithHexString:@"0x5d5d5d"] // 次要文本色
-#define kWBCellTextHighlightColor [DSCommonMethods colorWithHexString:@"0x527ead"] // Link 文本色
-#define kWBCellTextHighlightBackgroundColor [DSCommonMethods colorWithHexString:@"0xbfdffe"] // Link 点击背景色
-#define kWBCellToolbarTitleColor [DSCommonMethods colorWithHexString:@"0x929292"] // 工具栏文本色
-#define kWBCellToolbarTitleHighlightColor [DSCommonMethods colorWithHexString:@"0xdf422d"] // 工具栏文本高亮色
+#define kWBCellTextNormalColor [DSHelper colorWithHexString:@"0x333333"] // 一般文本色
+#define kWBCellTextSubTitleColor [DSHelper colorWithHexString:@"0x5d5d5d"] // 次要文本色
+#define kWBCellTextHighlightColor [DSHelper colorWithHexString:@"0x527ead"] // Link 文本色
+#define kWBCellTextHighlightBackgroundColor [DSHelper colorWithHexString:@"0xbfdffe"] // Link 点击背景色
+#define kWBCellToolbarTitleColor [DSHelper colorWithHexString:@"0x929292"] // 工具栏文本色
+#define kWBCellToolbarTitleHighlightColor [DSHelper colorWithHexString:@"0xdf422d"] // 工具栏文本高亮色
 
-#define kWBCellBackgroundColor [DSCommonMethods colorWithHexString:@"0xf2f2f2"]    // Cell背景灰色
-#define kWBCellHighlightColor [DSCommonMethods colorWithHexString:@"0xf0f0f0"]     // Cell高亮时灰色
-#define kWBCellInnerViewColor [DSCommonMethods colorWithHexString:@"0xf7f7f7"]   // Cell内部卡片灰色
-#define kWBCellInnerViewHighlightColor  [DSCommonMethods colorWithHexString:@"0xf0f0f0"] // Cell内部卡片高亮时灰色
+#define kWBCellBackgroundColor [DSHelper colorWithHexString:@"0xf2f2f2"]    // Cell背景灰色
+#define kWBCellHighlightColor [DSHelper colorWithHexString:@"0xf0f0f0"]     // Cell高亮时灰色
+#define kWBCellInnerViewColor [DSHelper colorWithHexString:@"0xf7f7f7"]   // Cell内部卡片灰色
+#define kWBCellInnerViewHighlightColor  [DSHelper colorWithHexString:@"0xf0f0f0"] // Cell内部卡片高亮时灰色
 #define kWBCellLineColor [UIColor colorWithWhite:0.000 alpha:0.09] //线条颜色
 
 #define kWBLinkHrefName @"href" //NSString

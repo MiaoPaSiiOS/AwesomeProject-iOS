@@ -111,11 +111,11 @@
 - (void)changeTextFieldStatus:(SRSTextFieldStatus)status {
     [super changeTextFieldStatus:status];
     if (status == SRSTextFieldStatusNormal) { // 正常
-        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
+        self.lineLabel.backgroundColor = [DSHelper colorWithHexString:@"0x444444"];
     } else if (status == SRSTextFieldStatusInput) { // 输入
-        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x4586FF"];
+        self.lineLabel.backgroundColor = [DSHelper colorWithHexString:@"0x4586FF"];
     } else if (status == SRSTextFieldStatusError) { // 报错
-        self.lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
+        self.lineLabel.backgroundColor = [DSHelper colorWithHexString:@"0xFF4D29"];
     } else {
         
     }
@@ -130,7 +130,7 @@
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    self.textField.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+    self.textField.textColor = [DSHelper colorWithHexString:@"0x222222"];
     return [super textFieldShouldBeginEditing:textField];
 }
 
@@ -202,7 +202,7 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(13)];
         _titleLabel.textAlignment = NSTextAlignmentLeft;
-        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+        _titleLabel.textColor = [DSHelper colorWithHexString:@"0x222222"];
     }
     return _titleLabel;
 }
@@ -211,7 +211,7 @@
     if (!_flagLabel) {
         _flagLabel = [[UILabel alloc] init];
         _flagLabel.font = [UIFont fontWithName:@"DINAlternate-Bold" size:(24)];
-        _flagLabel.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+        _flagLabel.textColor = [DSHelper colorWithHexString:@"0x222222"];
     }
     return _flagLabel;
 }
@@ -219,7 +219,7 @@
 - (UILabel *)lineLabel {
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc] init];
-        _lineLabel.backgroundColor = [DSCommonMethods colorWithHexString:@"0x444444"];
+        _lineLabel.backgroundColor = [DSHelper colorWithHexString:@"0x444444"];
     }
     return _lineLabel;
 }
@@ -234,7 +234,7 @@
 - (UIButton *)bottomBtn {
     if (!_bottomBtn) {
         _bottomBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_bottomBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
+        [_bottomBtn setTitleColor:[DSHelper colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
         [_bottomBtn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         _bottomBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(13)];
     }

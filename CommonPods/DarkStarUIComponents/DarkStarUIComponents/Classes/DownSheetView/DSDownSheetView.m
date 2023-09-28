@@ -62,10 +62,10 @@
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.titleView];
     [self.titleView addSubview:self.titleLabel];
-    if ([DSCommonMethods safeString:(self.leftTitle)].length || self.leftImage) {
+    if ([DSHelper safeString:(self.leftTitle)].length || self.leftImage) {
         [self.titleView addSubview:self.leftButton];
     }
-    if ([DSCommonMethods safeString:(self.rightTitle)].length || self.rightImage) {
+    if ([DSHelper safeString:(self.rightTitle)].length || self.rightImage) {
         [self.titleView addSubview:self.rightButton];
     }
     [self.contentView addSubview:self.listView];
@@ -92,8 +92,8 @@
         make.height.mas_equalTo(self.contentHeight - (44));
     }];
     
-    BOOL hasLeftButton = [DSCommonMethods safeString:(self.leftTitle)].length || self.leftImage;
-    BOOL hasRightButton = [DSCommonMethods safeString:(self.rightTitle)].length || self.rightImage;
+    BOOL hasLeftButton = [DSHelper safeString:(self.leftTitle)].length || self.leftImage;
+    BOOL hasRightButton = [DSHelper safeString:(self.rightTitle)].length || self.rightImage;
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.titleView);
         make.left.greaterThanOrEqualTo(hasLeftButton ? self.leftButton : self.titleView).offset((15));
@@ -135,7 +135,7 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16.0f];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+        _titleLabel.textColor = [DSHelper colorWithHexString:@"0x222222"];
         _titleLabel.adjustsFontSizeToFitWidth = YES;
         _titleLabel.text = self.title;
     }
@@ -146,9 +146,9 @@
 - (UIButton *)leftButton {
     if (!_leftButton) {
         _leftButton = [[UIButton alloc] init];
-        [_leftButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"]  forState:UIControlStateNormal];
+        [_leftButton setTitleColor:[DSHelper colorWithHexString:@"0x2072cf"]  forState:UIControlStateNormal];
         _leftButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-        if ([DSCommonMethods safeString:(self.leftTitle)].length) {
+        if ([DSHelper safeString:(self.leftTitle)].length) {
             [_leftButton setTitle:self.leftTitle forState:UIControlStateNormal];
         }
         if (self.leftImage) {
@@ -163,9 +163,9 @@
 - (UIButton *)rightButton {
     if (!_rightButton) {
         _rightButton = [[UIButton alloc] init];
-        [_rightButton setTitleColor:[DSCommonMethods colorWithHexString:@"0x2072cf"] forState:UIControlStateNormal];
+        [_rightButton setTitleColor:[DSHelper colorWithHexString:@"0x2072cf"] forState:UIControlStateNormal];
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
-        if ([DSCommonMethods safeString:(self.rightTitle)].length) {
+        if ([DSHelper safeString:(self.rightTitle)].length) {
             [_rightButton setTitle:self.rightTitle forState:UIControlStateNormal];
         }
         if (self.rightImage) {
@@ -185,7 +185,7 @@
         _listView.dataSource = self;
         _listView.bounces = NO;
         _listView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-        _listView.separatorColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+        _listView.separatorColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
         _listView.estimatedRowHeight = 0;
         _listView.estimatedSectionHeaderHeight = 0;
         _listView.estimatedSectionFooterHeight = 0;

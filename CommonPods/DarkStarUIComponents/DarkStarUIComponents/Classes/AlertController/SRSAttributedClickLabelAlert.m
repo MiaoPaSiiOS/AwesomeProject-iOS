@@ -29,7 +29,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
 
 - (void)initSubviews {
     UIView *topLineView = [[UIView alloc] init];
-    topLineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+    topLineView.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
     [self addSubview:topLineView];
     [topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.top.trailing.equalTo(self);
@@ -41,7 +41,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
         button.tag = kButtonTag+i;
         button.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16.f];
         [button setTitle:self.buttonsArray[i] forState:UIControlStateNormal];
-        [button setTitleColor:[DSCommonMethods colorWithHexString:@"0x3E73FF"] forState:UIControlStateNormal];
+        [button setTitleColor:[DSHelper colorWithHexString:@"0x3E73FF"] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         if (self.buttonsArray.count == 2) {
@@ -53,7 +53,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
                 make.leading.equalTo(self).mas_equalTo(i*width);
             }];
             UIView *middleLine = [[UIView alloc] init];
-            middleLine.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+            middleLine.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
             [self addSubview:middleLine];
             [middleLine mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.bottom.equalTo(self);
@@ -76,7 +76,7 @@ static NSInteger const kSRSAlertContrllerTag = 837569;
             
             if (self.buttonsArray.count > 2 && i != self.buttonsArray.count-1) {
                 UIView *bottomLineView = [[UIView alloc] init];
-                bottomLineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+                bottomLineView.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
                 [self addSubview:bottomLineView];
                 [bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.leading.trailing.equalTo(self);
@@ -120,7 +120,7 @@ static SRSAttributedClickLabelAlert *lastAlert;
 - (instancetype)init {
     if (self = [super init]) {
         self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, DSDeviceInfo.screenHeight);
-        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0x000000" alpha:0.4];
+        self.backgroundColor = [DSHelper colorWithHexString:@"0x000000" alpha:0.4];
     }
     return self;
 }

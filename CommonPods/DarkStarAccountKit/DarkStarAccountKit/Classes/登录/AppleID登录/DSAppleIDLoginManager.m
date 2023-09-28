@@ -72,7 +72,7 @@ API_AVAILABLE(ios(13.0))
             errorMsg = @"授权请求失败未知原因";
             break;
     }
-    [[DSCommonMethods findTopViewController] ds_showAlertControllerWithTitle:nil message:errorMsg alertClick:^(NSInteger clickNumber) {
+    [[DSHelper findTopViewController] ds_showAlertControllerWithTitle:nil message:errorMsg alertClick:^(NSInteger clickNumber) {
         
     }];
 }
@@ -85,22 +85,22 @@ API_AVAILABLE(ios(13.0))
 - (void)checkThirdPartyIsBind:(ASAuthorizationAppleIDCredential *)credential {
     NSDictionary *dic = [[NSDictionary alloc] init];
     NSString *identityToken = [[NSString alloc] initWithData:credential.identityToken encoding:NSUTF8StringEncoding];
-    dic = @{ @"thirdPtyType": @"1", @"thirdPtyAuthCodeOrToken": [DSCommonMethods safeString:(identityToken)] };
+    dic = @{ @"thirdPtyType": @"1", @"thirdPtyAuthCodeOrToken": [DSHelper safeString:(identityToken)] };
     NSMutableDictionary *parm = [NSMutableDictionary dictionaryWithDictionary:@{
-        @"thirdAccountId": [DSCommonMethods safeString:(credential.user)],
-        @"thirdAccountEmail": [DSCommonMethods safeString:(credential.email)],
-        @"UN": [DSCommonMethods safeString:(credential.user)]
+        @"thirdAccountId": [DSHelper safeString:(credential.user)],
+        @"thirdAccountEmail": [DSHelper safeString:(credential.email)],
+        @"UN": [DSHelper safeString:(credential.user)]
     }];
     __weak __typeof(self)weakSelf = self;
-    [MBProgressHUD showHUDAddedTo:[DSCommonMethods findTopViewController].view animated:YES];
+    [MBProgressHUD showHUDAddedTo:[DSHelper findTopViewController].view animated:YES];
     [[DSNetWorkManager sharedInstance] dataTaskWithUrlPath:@"" requestType:DSNetworkRequestTypeGET header:nil params:nil completionHandler:^(DSNetResponse *response) {
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [MBProgressHUD hideHUDForView:[DSCommonMethods findTopViewController].view animated:YES];
+        [MBProgressHUD hideHUDForView:[DSHelper findTopViewController].view animated:YES];
         NSDictionary *responseDic = (NSDictionary *)response;
         if (response.error) {
             NSString *errorCode = [NSString stringWithFormat:@"%ld", (long)response.error.code];
             NSString *errorMsg = [NSString stringWithFormat:@"%@", response.error.localizedDescription];
-            [[DSCommonMethods findTopViewController] ds_showAlertControllerWithTitle:nil message:[NSString stringWithFormat:@"%@(%@)",errorMsg,errorCode] alertClick:^(NSInteger clickNumber) {}];
+            [[DSHelper findTopViewController] ds_showAlertControllerWithTitle:nil message:[NSString stringWithFormat:@"%@(%@)",errorMsg,errorCode] alertClick:^(NSInteger clickNumber) {}];
 
         } else {
             if ([[responseDic objectForKey:@"bindAmen"] isEqualToString:@"true"]) { //Apple ID绑定账户

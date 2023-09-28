@@ -1,5 +1,5 @@
 //
-//  DSCommonMethods.h
+//  DSHelper.h
 //  DarkStarBaseKit
 //
 //  Created by zhuyuhui on 2023/9/27.
@@ -38,7 +38,7 @@ typedef int  (^IUIntBlock_id) (id);
 typedef id   (^IUIDBlock_id)  (id);
 
 
-@interface DSCommonMethods : NSObject
+@interface DSHelper : NSObject
 #pragma mark - 颜色
 + (UIColor *)colorWithHexString:(NSString *)hexString;
 + (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;

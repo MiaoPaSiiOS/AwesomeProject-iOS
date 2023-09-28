@@ -27,11 +27,11 @@ NSInteger const AUActionSheetTag = 47691511;
 - (void)initSubviews {
     self.textLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:15.f];
     self.textLabel.textAlignment = NSTextAlignmentCenter;
-    self.textLabel.textColor = [DSCommonMethods colorWithHexString:@"0x3E73FF"];
+    self.textLabel.textColor = [DSHelper colorWithHexString:@"0x3E73FF"];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSDeviceInfo.screenWidth, 0.5)];
-    lineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"];
+    lineView.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"];
     [self.contentView addSubview:lineView];
 }
 
@@ -43,9 +43,9 @@ NSInteger const AUActionSheetTag = 47691511;
 - (void)setDestructive:(BOOL)destructive {
     _destructive = destructive;
     if (destructive) {
-        self.textLabel.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
+        self.textLabel.textColor = [DSHelper colorWithHexString:@"0xFF4D29"];
     } else {
-        self.textLabel.textColor = [DSCommonMethods colorWithHexString:@"0x3E73FF"];
+        self.textLabel.textColor = [DSHelper colorWithHexString:@"0x3E73FF"];
     }
 }
 
@@ -81,7 +81,7 @@ NSInteger const AUActionSheetTag = 47691511;
 - (instancetype)initWithMessage:(NSString *)message destructive:(BOOL)destructive actionArray:(NSArray<NSString *>*)actionArray cancelTitle:(NSString *)cancelTitle clickIndex:(void(^)(NSInteger index))clickIndexBlock {
     if (self = [super init]) {
         self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, DSDeviceInfo.screenHeight);
-        self.backgroundColor = [DSCommonMethods colorWithHexString:@"0x000000" alpha:0.5];
+        self.backgroundColor = [DSHelper colorWithHexString:@"0x000000" alpha:0.5];
         self.alpha = 0;
         _messageStr = message;
         _destructive = destructive;
@@ -174,7 +174,7 @@ NSInteger const AUActionSheetTag = 47691511;
         [self.contentView addSubview:self.messageView];
         UILabel *messageLbl = [[UILabel alloc] init];
         messageLbl.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13.f];
-        messageLbl.textColor = [DSCommonMethods colorWithHexString:@"0x000000"];
+        messageLbl.textColor = [DSHelper colorWithHexString:@"0x000000"];
         messageLbl.text = self.messageStr;
         messageLbl.textAlignment = NSTextAlignmentCenter;
         messageLbl.numberOfLines = 0;
@@ -223,7 +223,7 @@ NSInteger const AUActionSheetTag = 47691511;
     cancelBtn.layer.masksToBounds = YES;
     cancelBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:15.f];
     [cancelBtn setTitle:self.cancelTitleStr forState:UIControlStateNormal];
-    [cancelBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:[DSHelper colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
     [cancelBtn addTarget:self action:@selector(cancelAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:cancelBtn];
     [cancelBtn mas_makeConstraints:^(MASConstraintMaker *make) {

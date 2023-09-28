@@ -16,7 +16,7 @@
 #import "DSItem.h"
 
 
-#import "DSCommonMethods.h"
+#import "DSHelper.h"
 #import "DSDeviceInfo.h"
 #import "DSComputer.h"
 

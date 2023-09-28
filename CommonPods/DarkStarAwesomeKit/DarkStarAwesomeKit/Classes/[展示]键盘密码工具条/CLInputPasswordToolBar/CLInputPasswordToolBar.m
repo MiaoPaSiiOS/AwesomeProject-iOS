@@ -97,14 +97,14 @@
     if (_titleLabel == nil) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.text = @"请输入密码";
-        _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x000000"];
+        _titleLabel.textColor = [DSHelper colorWithHexString:@"0x000000"];
     }
     return _titleLabel;
 }
 - (UIView *) lineView {
     if (_lineView == nil) {
         _lineView = [[UIView alloc] init];
-        _lineView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xEDEDED"];
+        _lineView.backgroundColor = [DSHelper colorWithHexString:@"0xEDEDED"];
     }
     return _lineView;
 }

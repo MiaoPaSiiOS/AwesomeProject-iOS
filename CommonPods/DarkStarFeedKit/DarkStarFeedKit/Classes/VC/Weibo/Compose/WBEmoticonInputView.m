@@ -290,7 +290,7 @@ static NSInteger const kOnePageCount = 20;
     self.container.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, kViewHeight);
     
     [self addSubview:self.container];
-    self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xf9f9f9"];
+    self.backgroundColor = [DSHelper colorWithHexString:@"0xf9f9f9"];
     [self _initGroups];
     [self _initTopLine];
     [self _initCollectionView];
@@ -329,7 +329,7 @@ static NSInteger const kOnePageCount = 20;
     UIView *line = [UIView new];
     line.width = self.width;
     line.height = DSDeviceInfo.LINE_HEIGHT;
-    line.backgroundColor = [DSCommonMethods colorWithHexString:@"0xbfbfbf"];
+    line.backgroundColor = [DSHelper colorWithHexString:@"0xbfbfbf"];
     line.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.container addSubview:line];
 }
@@ -401,7 +401,7 @@ static NSInteger const kOnePageCount = 20;
     btn.size = CGSizeMake(DSDeviceInfo.screenWidth / _emoticonGroups.count, kToolbarHeight);
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [btn setTitleColor:[DSCommonMethods colorWithHexString:@"0x5D5C5A"] forState:UIControlStateSelected];
+    [btn setTitleColor:[DSHelper colorWithHexString:@"0x5D5C5A"] forState:UIControlStateSelected];
     
     UIImage *img;
     img = [WBStatusHelper imageNamed:@"compose_emotion_table_left_normal"];
@@ -503,9 +503,9 @@ static NSInteger const kOnePageCount = 20;
         layer.viewSize = CGSizeMake(width, height);
         layer.cornerRadius = 1;
         if (page - curGroupPageIndex == i) {
-            layer.backgroundColor = [DSCommonMethods colorWithHexString:@"0xfd8225"].CGColor;
+            layer.backgroundColor = [DSHelper colorWithHexString:@"0xfd8225"].CGColor;
         } else {
-            layer.backgroundColor = [DSCommonMethods colorWithHexString:@"0xdedede"].CGColor;
+            layer.backgroundColor = [DSHelper colorWithHexString:@"0xdedede"].CGColor;
         }
         layer.centerY = _pageControl.height / 2;
         layer.left = (_pageControl.width - pageControlWidth) / 2 + i * (width + 2 * padding) + padding;

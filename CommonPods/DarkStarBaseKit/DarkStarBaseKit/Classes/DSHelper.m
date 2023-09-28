@@ -1,13 +1,13 @@
 //
-//  DSCommonMethods.m
+//  DSHelper.m
 //  DarkStarBaseKit
 //
 //  Created by zhuyuhui on 2023/9/27.
 //
 
-#import "DSCommonMethods.h"
+#import "DSHelper.h"
 
-@implementation DSCommonMethods
+@implementation DSHelper
 #pragma mark - 颜色
 //默认alpha值为1
 + (UIColor *)colorWithHexString:(NSString *)color {

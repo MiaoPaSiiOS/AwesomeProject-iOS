@@ -66,7 +66,7 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [DSCommonMethods colorWithHexString:@"0xf4f6f8"];
+    self.view.backgroundColor = [DSHelper colorWithHexString:@"0xf4f6f8"];
     // 第一次进入展示返回按钮
     self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
     // Do any additional setup after loading the view.
@@ -139,7 +139,7 @@
 #pragma mark - loadRequest
 - (void)loadRequest {
     if (self.reqModel.loadType == AresJsbWKWebViewLoadRequest) {
-        if (![DSCommonMethods isStringEmptyOrNil:(self.strReloadUrl)]) {
+        if (![DSHelper isStringEmptyOrNil:(self.strReloadUrl)]) {
             self.reqModel.requestFullURL = self.strReloadUrl;
         }
         //URL 中含空格将其转码
@@ -346,17 +346,17 @@
     [self.baseWebView evaluateJavaScript:@"document.title" completionHandler:^(id _Nullable title, NSError * _Nullable error) {
         kStrongSelf
         NSString *titleStr = (title && [title isKindOfClass:[NSString class]]) ? (NSString *)title : @"";
-        if(![DSCommonMethods isStringEmptyOrNil:(titleStr)]) {
+        if(![DSHelper isStringEmptyOrNil:(titleStr)]) {
             if(titleStr.length>8) {
                 titleStr = [titleStr stringByReplacingCharactersInRange:NSMakeRange(8,titleStr.length-8) withString:@"..."];
             }
         } else {
             titleStr = @"";
         }
-        if([DSCommonMethods isStringEmptyOrNil:(titleStr)]) {
+        if([DSHelper isStringEmptyOrNil:(titleStr)]) {
             [strongSelf setupNavTitleView:nil];
         } else {
-            NSDictionary * dict = @{@"type":@"1",@"title":[DSCommonMethods safeString:(titleStr)]};
+            NSDictionary * dict = @{@"type":@"1",@"title":[DSHelper safeString:(titleStr)]};
             strongSelf.title = @"";
             strongSelf.aTitleView.showUrl = strongSelf.baseWebView.URL.absoluteString;
             [strongSelf.aTitleView configWithDict:dict];
@@ -482,7 +482,7 @@
                     NSDictionary *paramsDic = [DSWebKitGlobal parseParams:url.query];
                     if (paramsDic) {
                         NSString *nameValueStr = paramsDic[@"name"];
-                        if ([DSCommonMethods isStringEmptyOrNil:(nameValueStr)]) {
+                        if ([DSHelper isStringEmptyOrNil:(nameValueStr)]) {
                             messageStr = @"请前往应用市场下载APP";
                         } else {
                             messageStr = nameValueStr;
@@ -493,7 +493,7 @@
                     UIWindow *keywindow = [[UIApplication sharedApplication] keyWindow];
                     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:keywindow animated:YES];
                     hud.mode = MBProgressHUDModeText;
-                    hud.label.text = [DSCommonMethods safeString:(messageStr)];
+                    hud.label.text = [DSHelper safeString:(messageStr)];
                     [hud hideAnimated:YES afterDelay:2.f];
                 }
             }
@@ -543,13 +543,13 @@
         [self commonPopViewController];
         return;
     }
-    if (![DSCommonMethods isStringEmptyOrNil:(self.backJSFunc)]) {
+    if (![DSHelper isStringEmptyOrNil:(self.backJSFunc)]) {
         [self.baseWebView evaluateJavaScript:self.backJSFunc completionHandler:nil];
         self.backJSFunc = nil;
         return;
     }
     
-    if (![DSCommonMethods isStringEmptyOrNil:(self.gobackLoadUrl)]) {
+    if (![DSHelper isStringEmptyOrNil:(self.gobackLoadUrl)]) {
         NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:self.gobackLoadUrl] cachePolicy:(NSURLRequestReloadIgnoringLocalAndRemoteCacheData) timeoutInterval:30.f];
         [self.baseWebView loadRequest:request];
         self.gobackLoadUrl = @"";
@@ -570,7 +570,7 @@
     } else {
         if (self.loadError) {
             [self.codeErrorView removeFromSuperview];
-            if ([DSCommonMethods isStringEmptyOrNil:(self.strReloadUrl)]) {
+            if ([DSHelper isStringEmptyOrNil:(self.strReloadUrl)]) {
                 [self commonPopViewController];
             } else {
                 [self loadRequest];
@@ -697,7 +697,7 @@
             kStrongSelf
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *titleInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
-                NSDictionary *aDict = [DSCommonMethods JSON_OBJ_FROM_STRING:titleInfoStr];
+                NSDictionary *aDict = [DSHelper JSON_OBJ_FROM_STRING:titleInfoStr];
                 [strongSelf navTitleView:aDict];
                 
             }
@@ -731,7 +731,7 @@
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *closeInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
                 if (closeInfoStr && closeInfoStr.length) {
-                    NSDictionary *closeDict = [DSCommonMethods JSON_OBJ_FROM_STRING:closeInfoStr];
+                    NSDictionary *closeDict = [DSHelper JSON_OBJ_FROM_STRING:closeInfoStr];
                     [strongSelf closeBtnView:closeDict];
                     
                 } else {
@@ -809,7 +809,7 @@
     }
     closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
     closeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-    [closeBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x333333"] forState:UIControlStateNormal];
+    [closeBtn setTitleColor:[DSHelper colorWithHexString:@"0x333333"] forState:UIControlStateNormal];
     [closeBtn addTarget:self action: @selector(closeWebview)forControlEvents:UIControlEventTouchUpInside];
     [self.appBar addSubview:closeBtn];
 }
@@ -856,7 +856,7 @@
     kWeakSelf
     [self srsAchiveJSMethodWithName: @"nativeright" completionHandler:^(NSString * _Nullable content, NSError * _Nullable error) {
         kStrongSelf
-        if (!error && [content isKindOfClass:[NSString class]] && ![DSCommonMethods isStringEmptyOrNil:(content)]) {
+        if (!error && [content isKindOfClass:[NSString class]] && ![DSHelper isStringEmptyOrNil:(content)]) {
 //            NSArray *arr = [content ds_JSONValue];
 //            if (arr && [arr isKindOfClass:[NSArray class]]) {
 //                NSDictionary *dict = [NSDictionary dictionaryWithObject:arr forKey:@"content"];
@@ -921,7 +921,7 @@
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *backInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
                 if (backInfoStr && backInfoStr.length) {
-                    NSDictionary *closeDict = [DSCommonMethods JSON_OBJ_FROM_STRING:backInfoStr];;
+                    NSDictionary *closeDict = [DSHelper JSON_OBJ_FROM_STRING:backInfoStr];;
                     [strongSelf backBtnView:closeDict];
                 } else {
                     [strongSelf backBtnView:nil];

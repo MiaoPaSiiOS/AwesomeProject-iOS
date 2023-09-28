@@ -32,7 +32,7 @@
         SRSMessageSingle * aView = (SRSMessageSingle *)[self viewWithTag:1000+i];
         aView.status = eSRSBottomLabelStatusError;
     }
-    self.textLabel.textColor = [DSCommonMethods colorWithHexString:@"0xFF4D29"];
+    self.textLabel.textColor = [DSHelper colorWithHexString:@"0xFF4D29"];
     self.textLabel.text = @"短信验证码输入错误";
 }
 
@@ -151,7 +151,7 @@
         [aView startAnimatuon];
         aView.status = eSRSBottomLabelStatusInput;
     }
-    self.textLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
+    self.textLabel.textColor = [DSHelper colorWithHexString:@"0x333333"];
     self.textLabel.text = @"请输入6位短信验证码";
 }
 
@@ -202,7 +202,7 @@
     if (!_textLabel) {
         _textLabel = [[UILabel alloc] init];
         _textLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(16)];
-        _textLabel.textColor = [DSCommonMethods colorWithHexString:@"0x333333"];
+        _textLabel.textColor = [DSHelper colorWithHexString:@"0x333333"];
         _textLabel.textAlignment = NSTextAlignmentLeft;
     }
     return _textLabel;
@@ -221,8 +221,8 @@
     if (!_sendBtn) {
         _sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_sendBtn setTitle:@"发送" forState:UIControlStateNormal];
-        [_sendBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
-        [_sendBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x888888"] forState:UIControlStateDisabled];
+        [_sendBtn setTitleColor:[DSHelper colorWithHexString:@"0x4586FF"] forState:UIControlStateNormal];
+        [_sendBtn setTitleColor:[DSHelper colorWithHexString:@"0x888888"] forState:UIControlStateDisabled];
         _sendBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:(13)];
     }
     return _sendBtn;

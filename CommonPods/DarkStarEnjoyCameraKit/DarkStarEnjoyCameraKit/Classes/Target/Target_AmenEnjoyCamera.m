@@ -15,7 +15,7 @@
     
     QMBaseNavigationController *nav = [[QMBaseNavigationController alloc] initWithRootViewController:vc];
     nav.modalPresentationStyle = UIModalPresentationFullScreen;
-    [[DSCommonMethods findTopViewController].navigationController presentViewController:nav animated:YES completion:nil];
+    [[DSHelper findTopViewController].navigationController presentViewController:nav animated:YES completion:nil];
 }
 
 @end

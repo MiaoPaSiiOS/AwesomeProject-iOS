@@ -16,7 +16,7 @@
     configure.passwordNum = 6;
     configure.pointRadius = 18 * 0.5;
     configure.spaceMultiple = 5;
-    configure.rectColor = [DSCommonMethods colorWithHexString:@"0xb2b2b2"];
+    configure.rectColor = [DSHelper colorWithHexString:@"0xb2b2b2"];
     configure.pointColor = [UIColor blackColor];
     configure.rectBackgroundColor = [UIColor whiteColor];
     configure.backgroundColor = [UIColor whiteColor];

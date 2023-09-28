@@ -113,7 +113,7 @@
     _titleLabel.font = [UIFont systemFontOfSize:16];
     _titleLabel.textColor = [UIColor grayColor];
     _subtitleLabel.font = [UIFont systemFontOfSize:10];
-    _subtitleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x5E5E5E"];
+    _subtitleLabel.textColor = [DSHelper colorWithHexString:@"0x5E5E5E"];
 
     /// title
     _titleLabel.text = self.model.title;
@@ -121,9 +121,9 @@
         _titleLabel.textColor = [UIColor whiteColor];
     } else {
         if (self.model.hasEvent) {
-            _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x222222"];
+            _titleLabel.textColor = [DSHelper colorWithHexString:@"0x222222"];
         } else {
-            _titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x979797"];
+            _titleLabel.textColor = [DSHelper colorWithHexString:@"0x979797"];
         }
     }
     
@@ -135,8 +135,8 @@
     }
     
     // 设置选中
-    UIColor *borderColor = [DSCommonMethods colorWithHexString:@"0x00C771"];
-    UIColor *fillColor = [DSCommonMethods colorWithHexString:@"0x00C771"];;
+    UIColor *borderColor = [DSHelper colorWithHexString:@"0x00C771"];
+    UIColor *fillColor = [DSHelper colorWithHexString:@"0x00C771"];;
     BOOL shouldHideShapeLayer = YES;
     if (self.model.selected) {
         shouldHideShapeLayer = NO;

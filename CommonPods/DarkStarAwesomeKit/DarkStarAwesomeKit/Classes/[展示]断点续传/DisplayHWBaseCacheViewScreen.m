@@ -269,7 +269,7 @@
 - (UIView *)tabbarView {
     if (!_tabbarView) {
         _tabbarView = [[UIView alloc] initWithFrame:CGRectMake(0, DSDeviceInfo.screenHeight, DSDeviceInfo.screenWidth, DSDeviceInfo.tabBarHeight)];
-        _tabbarView.backgroundColor = [DSCommonMethods colorWithHexString:@"0xfafafa"];
+        _tabbarView.backgroundColor = [DSHelper colorWithHexString:@"0xfafafa"];
         
         UIButton *btn_last = nil;
         NSArray *titleArray = @[@"全选", @"删除"];
@@ -299,7 +299,7 @@
         for (int i = 0; i < 2; i++) {
             UIView *line = [[UIView alloc] initWithFrame:CGRectMake(DSDeviceInfo.screenWidth * 0.5, 10, 0.5, 29)];
             if (i == 1) line.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, 0.5);
-            line.backgroundColor = [DSCommonMethods colorWithHexString:@"0xe5e5e5"];
+            line.backgroundColor = [DSHelper colorWithHexString:@"0xe5e5e5"];
             [_tabbarView addSubview:line];
         }
     }

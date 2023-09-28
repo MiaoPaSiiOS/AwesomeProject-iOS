@@ -99,7 +99,7 @@
 
 - (UIViewController *)initSubVC {
     UIViewController *vc = [UIViewController new];
-    vc.view.backgroundColor = [DSCommonMethods randomColor];
+    vc.view.backgroundColor = [DSHelper randomColor];
     return vc;
 }
 

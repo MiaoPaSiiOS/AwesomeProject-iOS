@@ -184,7 +184,7 @@
     UILabel * titleLabel = [[UILabel alloc] initWithFrame:view.frame];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.text = @"没有更多啦";
-    titleLabel.textColor = [DSCommonMethods colorWithHexString:@"0x000000"];
+    titleLabel.textColor = [DSHelper colorWithHexString:@"0x000000"];
     titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:13];
     [view addSubview:titleLabel];
     self.recylerView.tableFooterView = view;

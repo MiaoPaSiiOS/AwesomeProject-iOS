@@ -96,7 +96,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self didInitialize];
-        self.tintColor = [DSCommonMethods RGBA:49 green:189 blue:243];
+        self.tintColor = [DSHelper RGBA:49 green:189 blue:243];
         if (!self.adjustsTitleTintColorAutomatically) {
             [self setTitleColor:self.tintColor forState:UIControlStateNormal];
         }

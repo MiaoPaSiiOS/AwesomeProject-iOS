@@ -350,7 +350,7 @@
 }
 + (void)showCounrDownTimerWIthCallBack:(CountDownTimerCallBack)callBack
 {
-    UIWindow * keywindow = [DSCommonMethods findWindow];
+    UIWindow * keywindow = [DSHelper findWindow];
     for (UIView * subView in keywindow.subviews) {
         if ([subView isKindOfClass:[CountDownTimer class]]) {
             [subView removeFromSuperview];

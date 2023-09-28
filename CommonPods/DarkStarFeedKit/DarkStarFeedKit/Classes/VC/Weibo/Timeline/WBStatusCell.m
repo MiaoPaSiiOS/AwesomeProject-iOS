@@ -379,7 +379,7 @@
     _bottomLine = [CALayer layer];
     _bottomLine.viewSize = _topLine.viewSize;
     _bottomLine.bottom = self.height;
-    _bottomLine.backgroundColor = [DSCommonMethods colorWithHexString:@"0xE8E8E8"].CGColor;
+    _bottomLine.backgroundColor = [DSHelper colorWithHexString:@"0xE8E8E8"].CGColor;
     
     [self addSubview:_repostButton];
     [self addSubview:_commentButton];

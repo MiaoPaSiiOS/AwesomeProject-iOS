@@ -27,7 +27,7 @@ static CGFloat SRSFloatWindowMaxHeight = 445.f;
     self = [super init];
     if (self) {
         _type = SRSFloatElementViewTypeDefault;
-        self.backgroundColor = [DSCommonMethods RGBA:0 green:0 blue:0 alpha:0.4];
+        self.backgroundColor = [DSHelper RGBA:0 green:0 blue:0 alpha:0.4];
         [self baseInit];
         [self defaultTypeInit];
     }
@@ -39,7 +39,7 @@ static CGFloat SRSFloatWindowMaxHeight = 445.f;
     self = [super initWithFrame:frame];
     if (self) {
         _type = SRSFloatElementViewTypeDefault;
-        self.backgroundColor = [DSCommonMethods RGBA:0 green:0 blue:0 alpha:0.4];
+        self.backgroundColor = [DSHelper RGBA:0 green:0 blue:0 alpha:0.4];
         [self baseInit];
         [self defaultTypeInit];
     }
@@ -51,7 +51,7 @@ static CGFloat SRSFloatWindowMaxHeight = 445.f;
     self = [super initWithFrame:CGRectZero];
     if (self) {
         _type = type;
-        self.backgroundColor = [DSCommonMethods RGBA:0 green:0 blue:0 alpha:0.4];
+        self.backgroundColor = [DSHelper RGBA:0 green:0 blue:0 alpha:0.4];
         [self baseInit];
         if (type == SRSFloatElementViewTypeDefault) {
             [self defaultTypeInit];
