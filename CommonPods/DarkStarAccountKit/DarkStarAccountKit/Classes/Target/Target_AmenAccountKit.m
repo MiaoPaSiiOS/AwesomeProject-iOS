@@ -173,7 +173,7 @@
     if ([routerParameters objectForKey:@"nav"] && [[routerParameters objectForKey:@"nav"] isKindOfClass:[UINavigationController class]]) {
         return (UINavigationController *)[routerParameters objectForKey:@"nav"];;
     } else {
-        return self.ds_topViewController.navigationController;
+        return [DSCommonMethods findTopViewController].navigationController;
     }
 }
 

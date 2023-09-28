@@ -14,7 +14,7 @@
 #define kCameraFilterCollectionLabelTag           101
 #define kCameraFilterCollectionMaskViewTag        102
 
-#define kCameraFilterViewHeight                   (DSCommonMethods.screenHeight-DSCommonMethods.screenWidth*4.0f/3.0f)
+#define kCameraFilterViewHeight                   (DSDeviceInfo.screenHeight-DSDeviceInfo.screenWidth*4.0f/3.0f)
 #define kCameraFilterViewItemSize                 60
 #define kCameraFilterCollectionViewHeight         100
 
@@ -78,13 +78,13 @@
 - (void)toggleSliderView
 {
     if (!self.slider) {
-        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(30, self.frame.origin.y-45, DSCommonMethods.screenWidth-60, 30)];
+        self.slider = [[UISlider alloc] initWithFrame:CGRectMake(30, self.frame.origin.y-45, DSDeviceInfo.screenWidth-60, 30)];
         self.slider.hidden = YES;
         self.slider.tintColor = [UIColor colorWithRed:8/255.0 green:157/255.0 blue:184/255.0 alpha:1.0];
         self.slider.maximumTrackTintColor = [UIColor whiteColor];
         [self.superview addSubview:self.slider];
         
-        self.sliderLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.slider.frame.origin.x+self.slider.value*(DSCommonMethods.screenWidth-90)-8, self.slider.frame.origin.y-30, 40, 30)];
+        self.sliderLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.slider.frame.origin.x+self.slider.value*(DSDeviceInfo.screenWidth-90)-8, self.slider.frame.origin.y-30, 40, 30)];
         self.sliderLabel.textAlignment = NSTextAlignmentCenter;
         self.sliderLabel.font = [UIFont systemFontOfSize:22];
         self.sliderLabel.textColor = [UIColor whiteColor];
@@ -94,13 +94,13 @@
         __weak __typeof(self)weakSelf = self;
         [[self.slider rac_signalForControlEvents:UIControlEventValueChanged] subscribeNext:^(__kindof UIControl * _Nullable x) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
-            strongSelf.sliderLabel.frame = CGRectMake(strongSelf.slider.frame.origin.x+strongSelf.slider.value*(DSCommonMethods.screenWidth-90)-8, strongSelf.slider.frame.origin.y-30, 40, 30);
+            strongSelf.sliderLabel.frame = CGRectMake(strongSelf.slider.frame.origin.x+strongSelf.slider.value*(DSDeviceInfo.screenWidth-90)-8, strongSelf.slider.frame.origin.y-30, 40, 30);
             strongSelf.sliderLabel.text = [NSString stringWithFormat:@"%.0f", floor(strongSelf.slider.value*100)];
         }];
         
         [RACObserve(self.slider, value) subscribeNext:^(id  _Nullable x) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
-            strongSelf.sliderLabel.frame = CGRectMake(strongSelf.slider.frame.origin.x+strongSelf.slider.value*(DSCommonMethods.screenWidth-90)-8, strongSelf.slider.frame.origin.y-30, 40, 30);
+            strongSelf.sliderLabel.frame = CGRectMake(strongSelf.slider.frame.origin.x+strongSelf.slider.value*(DSDeviceInfo.screenWidth-90)-8, strongSelf.slider.frame.origin.y-30, 40, 30);
             strongSelf.sliderLabel.text = [NSString stringWithFormat:@"%.0f", floor(strongSelf.slider.value*100)];
         }];
         

@@ -216,7 +216,7 @@
         contentInsets.bottom += fontSize * scale;
         contentInsets.left += fontSize * scale;
         contentInsets.right += fontSize * scale;
-        contentInsets = UIEdgeInsetPixelFloor(contentInsets);
+        contentInsets = [DSComputer UIEdgeInsetPixelFloor:(contentInsets)];
         attachment.contentInsets = contentInsets;
     }
     

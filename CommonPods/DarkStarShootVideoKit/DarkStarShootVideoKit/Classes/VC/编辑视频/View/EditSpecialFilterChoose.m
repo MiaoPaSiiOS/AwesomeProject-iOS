@@ -218,7 +218,7 @@
 }
 +(void)showWithVideoPath:(NSString *)videoPath commonFilter:(MHFilterInfo *)commonFilterInfo specialfilter:(MHFilterInfo *)specialFilterInfo callBack:(SpecialFilterChooseCallBack)callBack
 {
-    UIWindow * keywindow = [UIWindow ds_window];
+    UIWindow * keywindow = [DSCommonMethods findWindow];
     for (UIView * subView in keywindow.subviews) {
         if ([subView isKindOfClass:[EditSpecialFilterChoose class]]) {
             [subView removeFromSuperview];

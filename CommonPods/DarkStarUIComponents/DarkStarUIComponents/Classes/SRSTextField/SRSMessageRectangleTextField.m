@@ -23,18 +23,18 @@
 
 - (void)showBottomView {
     [self.bottomContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(DSCommonMethods.screenWidth, (87/2.)));
+        make.size.mas_equalTo(CGSizeMake(DSDeviceInfo.screenWidth, (87/2.)));
     }];
     self.bottomLabel.hidden = NO;
-    self.size = CGSizeMake(DSCommonMethods.screenWidth, (51)+(87/2.));
+    self.size = CGSizeMake(DSDeviceInfo.screenWidth, (51)+(87/2.));
 }
 
 - (void)hidenBottomView {
     [self.bottomContentView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(DSCommonMethods.screenWidth, 0));
+        make.size.mas_equalTo(CGSizeMake(DSDeviceInfo.screenWidth, 0));
     }];
     self.bottomLabel.hidden = YES;
-    self.size = CGSizeMake(DSCommonMethods.screenWidth, (51));
+    self.size = CGSizeMake(DSDeviceInfo.screenWidth, (51));
 }
 
 - (NSString *)achiveMessageText {
@@ -49,7 +49,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         
-        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, (51));
+        self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, (51));
         self.clipsToBounds = YES;
         [self addSubview:self.topView];
         [self.topView addSubview:self.titleLabel];
@@ -108,7 +108,7 @@
         
         [self.bottomContentView mas_makeConstraints:^(MASConstraintMaker *make) {
             kStrongSelf
-            make.size.mas_equalTo(CGSizeMake(DSCommonMethods.screenWidth, (87/2.)));
+            make.size.mas_equalTo(CGSizeMake(DSDeviceInfo.screenWidth, (87/2.)));
             make.left.and.right.equalTo(strongSelf);
             make.top.equalTo(strongSelf.topView.mas_bottom);
         }];

@@ -142,8 +142,8 @@
     if (self = [super init]) {
       
         _supView = viewController.view;
-        self.size = CGSizeMake(DSCommonMethods.screenWidth, DSCommonMethods.screenHeight - DSCommonMethods.naviBarHeight);
-        self.origin = CGPointMake(0, DSCommonMethods.naviBarHeight);
+        self.size = CGSizeMake(DSDeviceInfo.screenWidth, DSDeviceInfo.screenHeight - DSDeviceInfo.naviBarHeight);
+        self.origin = CGPointMake(0, DSDeviceInfo.naviBarHeight);
 
         [self drawFrame:style];
     
@@ -156,8 +156,8 @@
     if (self = [super init]) {
         
         _supView = viewController.view;
-        self.size=CGSizeMake(DSCommonMethods.screenWidth,DSCommonMethods.screenHeight-DSCommonMethods.naviBarHeight);
-        self.origin=CGPointMake(0, DSCommonMethods.naviBarHeight);
+        self.size=CGSizeMake(DSDeviceInfo.screenWidth,DSDeviceInfo.screenHeight-DSDeviceInfo.naviBarHeight);
+        self.origin=CGPointMake(0, DSDeviceInfo.naviBarHeight);
         self.isRotate = rotate;
         [self drawFrame:style];
         
@@ -187,8 +187,8 @@
         
         UIView *mainview = [[UIView alloc] initWithFrame:CGRectMake((self.width - (75))/2, self.height*0.4 - (75)/2, (75), (75))];
         
-        if(self.height == DSCommonMethods.screenHeight - DSCommonMethods.naviBarHeight) {
-            mainview.origin = CGPointMake((self.width - (75))/2, DSCommonMethods.screenHeight*0.4 - (75)/2 - DSCommonMethods.naviBarHeight);
+        if(self.height == DSDeviceInfo.screenHeight - DSDeviceInfo.naviBarHeight) {
+            mainview.origin = CGPointMake((self.width - (75))/2, DSDeviceInfo.screenHeight*0.4 - (75)/2 - DSDeviceInfo.naviBarHeight);
         }
         if (self.isRotate) {
             //旋转90度
@@ -230,8 +230,8 @@
         UIView *mainview = [[UIView alloc] initWithFrame:CGRectMake((self.width - (55))/2, self.height*scale - (55)/2, (55), (55))];
         mainview.centerX = self.width/2;
 
-        if(style != PartLoadWaitStyle && self.height == DSCommonMethods.screenHeight - DSCommonMethods.naviBarHeight) {
-            mainview.origin = CGPointMake((self.width - (55))/2, DSCommonMethods.screenHeight*0.4 - (55)/2 - DSCommonMethods.naviBarHeight);
+        if(style != PartLoadWaitStyle && self.height == DSDeviceInfo.screenHeight - DSDeviceInfo.naviBarHeight) {
+            mainview.origin = CGPointMake((self.width - (55))/2, DSDeviceInfo.screenHeight*0.4 - (55)/2 - DSDeviceInfo.naviBarHeight);
         }
         if (self.isRotate) {
             //旋转90度

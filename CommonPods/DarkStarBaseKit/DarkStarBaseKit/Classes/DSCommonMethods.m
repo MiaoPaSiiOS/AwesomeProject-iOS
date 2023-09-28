@@ -182,6 +182,204 @@
 + (BOOL)isIPHONEX {
     return ((CGRectGetHeight([[UIScreen mainScreen] bounds]) >=812.0f)? (YES):(NO));
 }
+
+#pragma mark - UIWindow | UIViewController
++ (nullable UIWindow *)findWindow {
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal) {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for (UIWindow *tmpWin in windows) {
+            if (tmpWin.windowLevel == UIWindowLevelNormal) {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    return window;
+}
+
++ (nullable UIViewController *)findTopViewController {
+    UIWindow * window = [self findWindow];
+    return [self findTopViewController:window.rootViewController];
+}
+
++ (nullable UIViewController *)findTopViewController:(UIViewController *)rootViewController {
+    if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)rootViewController;
+        return [self findTopViewController:[navigationController.viewControllers lastObject]];
+    }
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabController = (UITabBarController *)rootViewController;
+        return [self findTopViewController:tabController.selectedViewController];
+    }
+    if (rootViewController.presentedViewController) {
+        return [self findTopViewController:rootViewController.presentedViewController];
+    }
+    return rootViewController;
+}
+
++ (nullable UIViewController *)findCurrentViewControllerAtView:(UIView *)view{
+    for (UIView *next = [view superview]; next; next = next.superview) {
+        UIResponder *nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (id)nextResponder;
+        }
+    }
+    return nil;
+}
+
+#pragma mark - NSString
+
+/**
+ 判断对象是否存在, 是否为 NSString 类型
+
+ @param obj 要判断的对象
+ @return 对象为 NSString 类型: YES, 对象不存在或不是 NSString 类型: NO
+ */
++(BOOL)isString:(id)obj {
+    if (obj && [obj isKindOfClass:NSString.class]) {
+        return YES;
+    }
+    return NO;
+}
+
+/**
+ 判断对象是否存在, 是否为 NSString 类型, 是否有数据, 是否为 nil
+ 
+ @param obj 要判断的对象
+ @return 对象不存在 或不是 NSString 类型 或没有数据 或为 nil: YES, 其他情况: NO
+ */
++(BOOL)isStringEmptyOrNil:(id)obj {
+    if (!obj || ![self isString:(obj)] || [obj length] < 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+/**
+ 直接取值
+
+ @param obj 要判断的对象
+ @return 对象不存在 或不是 NSString 类型 或没有数据 或为 nil: 空字符串, 其他情况: 原值
+ */
++(NSString* )safeString:(id)obj {
+    if (obj && (NSNull *)obj != [NSNull null]) {
+        if ([obj isKindOfClass:[NSString class]]) {
+            return obj;
+        } else if ([obj isKindOfClass:[NSNumber class]]) {
+            return [obj stringValue];
+        } else if([obj isKindOfClass:[NSObject class]]){
+            return [obj description];
+        }
+    }
+    return @"";
+}
+
+#pragma mark - NSArray
+
+/**
+ 判断对象是否存在, 是否为 NSArray 类型
+
+ @param obj 要判断的对象
+ @return 对象存在为 NSArray 类型: YES, 对象不存在或不是 NSArray 类型: NO
+ */
++(BOOL)isArray:(id)obj {
+    if (obj && [obj isKindOfClass:NSArray.class]) {
+        return YES;
+    }
+    return NO;
+}
+
+/**
+ 判断对象是否存在, 是否为 NSArray 类型, 是否有数据 是否为 nil
+ 
+ @param obj 要判断的对象
+ @return 对象不存在 或不是 NSArray 类型 或数组为空 或为nil: YES, 其他情况: NO
+ */
++(BOOL)isArrayEmptyOrNil:(id)obj {
+    if (!obj || ![self isArray:(obj)] || [obj count] < 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+#pragma mark - NSDictionary
+
+
+/**
+ 判断对象是否存在, 是否为 NSDictionary 类型
+
+ @param obj 要判断的对象
+ @return 对象存在为 NSDictionary 类型: YES, 对象不存在或不是 NSDictionary 类型: NO
+ */
++(BOOL)isDictionary:(id)obj {
+    if (obj && [obj isKindOfClass:NSDictionary.class]) {
+        return YES;
+    }
+    return NO;
+}
+
+/**
+ 判断对象是否存在, 是否为 NSDictionary 类型, 是否有数据
+
+ @param obj 要判断的对象
+ @return 对象存在为 NSDictionary 类型且字典不为空: 原对象字典, 其他情况: 空字典
+ */
++(NSDictionary *)isEmptyDict:(id)obj {
+    if(![self isDictEmptyOrNil:(obj)]){
+        return obj;
+    } else {
+        return @{};
+    }
+}
+
+
+/**
+ 判断对象是否存在, 是否为 NSDictionary 类型, 是否有数据, 是否为 nil
+ 
+ @param obj 要判断的对象
+ @return 对象不存在 或不是 NSDictionary 类型 或字典为空 或为 nil: YES, 其他情况: NO
+ */
++(BOOL)isDictEmptyOrNil:(id)obj {
+    if (!obj || ![self isDictionary:(obj)] || [obj allKeys].count < 1) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+#pragma mark - JSON & STRING
++(NSDictionary*)JSON_OBJ_FROM_STRING:(NSString *)jsonString {
+    if ([self isStringEmptyOrNil:(jsonString)]) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *parseError;
+    id JSONObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&parseError];
+    if (parseError || ![self isDictionary:(JSONObject)]) {
+        NSLog(@"json解析失败：%@",parseError);
+        return nil;
+    }
+    return JSONObject;
+}
+
++(NSString*)JSON_STRING_FROM_OBJ:(NSDictionary *)dic {
+    if ([self isDictEmptyOrNil:(dic)]) {
+        return nil;
+    }
+    if (![NSJSONSerialization isValidJSONObject:dic]) {
+        return nil;
+    }
+    NSError *parseError = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:0 error:&parseError];
+    if (parseError || !jsonData) {
+        NSLog(@"json解析失败：%@",parseError);
+        return nil;
+    }
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
 @end
 
 

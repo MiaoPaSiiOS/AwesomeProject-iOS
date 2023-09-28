@@ -32,7 +32,7 @@
 - (void)creatControl
 {
     // 正在缓存按钮
-    UIButton *downloadingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 30)];
+    UIButton *downloadingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, DSDeviceInfo.screenWidth, 30)];
     downloadingBtn.hidden = YES;
     downloadingBtn.backgroundColor = [[UIColor blueColor] colorWithAlphaComponent:0.4];
     downloadingBtn.titleLabel.font = [UIFont systemFontOfSize:12];

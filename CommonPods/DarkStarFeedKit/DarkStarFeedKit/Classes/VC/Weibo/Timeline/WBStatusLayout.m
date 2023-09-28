@@ -183,7 +183,7 @@
     text.yy_color = kWBCellToolbarTitleColor;
     text.yy_font = [UIFont systemFontOfSize:kWBCellTitlebarFontSize];
     
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSCommonMethods.screenWidth - 100, kWBCellTitleHeight)];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSDeviceInfo.screenWidth - 100, kWBCellTitleHeight)];
     _titleTextLayout = [YYTextLayout layoutWithContainer:container text:text];
     _titleHeight = kWBCellTitleHeight;
 }
@@ -396,14 +396,14 @@
     CGFloat picHeight = 0;
     
     CGFloat len1_3 = (kWBCellContentWidth + kWBCellPaddingPic) / 3 - kWBCellPaddingPic;
-    len1_3 = CGFloatPixelRound(len1_3);
+    len1_3 = [DSComputer CGFloatPixelRound:(len1_3)];
     switch (status.pics.count) {
         case 1: {
             WBPicture *pic = _status.pics.firstObject;
             WBPictureMetadata *bmiddle = pic.bmiddle;
             if (pic.keepSize || bmiddle.width < 1 || bmiddle.height < 1) {
                 CGFloat maxLen = kWBCellContentWidth / 2.0;
-                maxLen = CGFloatPixelRound(maxLen);
+                maxLen = [DSComputer CGFloatPixelRound:(maxLen)];
                 picSize = CGSizeMake(maxLen, maxLen);
                 picHeight = maxLen;
             } else {
@@ -415,7 +415,7 @@
                     picSize.width = maxLen;
                     picSize.height = (float)bmiddle.height / (float)bmiddle.width * maxLen;
                 }
-                picSize = CGSizePixelRound(picSize);
+                picSize = [DSComputer CGSizePixelRound:(picSize)];
                 picHeight = picSize.height;
             }
         } break;
@@ -622,26 +622,26 @@
 - (void)_layoutToolbar {
     // should be localized
     UIFont *font = [UIFont systemFontOfSize:kWBCellToolbarFontSize];
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSCommonMethods.screenWidth, kWBCellToolbarHeight)];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSDeviceInfo.screenWidth, kWBCellToolbarHeight)];
     container.maximumNumberOfRows = 1;
     
     NSMutableAttributedString *repostText = [[NSMutableAttributedString alloc] initWithString:_status.repostsCount <= 0 ? @"转发" : [WBStatusHelper shortedNumberDesc:_status.repostsCount]];
     repostText.yy_font = font;
     repostText.yy_color = kWBCellToolbarTitleColor;
     _toolbarRepostTextLayout = [YYTextLayout layoutWithContainer:container text:repostText];
-    _toolbarRepostTextWidth = CGFloatPixelRound(_toolbarRepostTextLayout.textBoundingRect.size.width);
+    _toolbarRepostTextWidth = [DSComputer CGFloatPixelRound:(_toolbarRepostTextLayout.textBoundingRect.size.width)];
     
     NSMutableAttributedString *commentText = [[NSMutableAttributedString alloc] initWithString:_status.commentsCount <= 0 ? @"评论" : [WBStatusHelper shortedNumberDesc:_status.commentsCount]];
     commentText.yy_font = font;
     commentText.yy_color = kWBCellToolbarTitleColor;
     _toolbarCommentTextLayout = [YYTextLayout layoutWithContainer:container text:commentText];
-    _toolbarCommentTextWidth = CGFloatPixelRound(_toolbarCommentTextLayout.textBoundingRect.size.width);
+    _toolbarCommentTextWidth = [DSComputer CGFloatPixelRound:(_toolbarCommentTextLayout.textBoundingRect.size.width)];
     
     NSMutableAttributedString *likeText = [[NSMutableAttributedString alloc] initWithString:_status.attitudesCount <= 0 ? @"赞" : [WBStatusHelper shortedNumberDesc:_status.attitudesCount]];
     likeText.yy_font = font;
     likeText.yy_color = _status.attitudesStatus ? kWBCellToolbarTitleHighlightColor : kWBCellToolbarTitleColor;
     _toolbarLikeTextLayout = [YYTextLayout layoutWithContainer:container text:likeText];
-    _toolbarLikeTextWidth = CGFloatPixelRound(_toolbarLikeTextLayout.textBoundingRect.size.width);
+    _toolbarLikeTextWidth = [DSComputer CGFloatPixelRound:(_toolbarLikeTextLayout.textBoundingRect.size.width)];
 }
 
 
@@ -835,7 +835,7 @@
         contentInsets.bottom += fontSize * scale;
         contentInsets.left += fontSize * scale;
         contentInsets.right += fontSize * scale;
-        contentInsets = UIEdgeInsetPixelFloor(contentInsets);
+        contentInsets = [DSComputer UIEdgeInsetPixelFloor:(contentInsets)];
         attachment.contentInsets = contentInsets;
     }
     
@@ -866,9 +866,9 @@
         contentInsets.bottom += fontSize * scale;
         contentInsets.left += fontSize * scale;
         contentInsets.right += fontSize * scale;
-        contentInsets = UIEdgeInsetPixelFloor(contentInsets);
+        contentInsets = [DSComputer UIEdgeInsetPixelFloor:(contentInsets)];
         size = CGSizeMake(fontSize - fontSize * scale * 2, fontSize - fontSize * scale * 2);
-        size = CGSizePixelRound(size);
+        size = [DSComputer CGSizePixelRound:(size)];
     }
     
     YYTextRunDelegate *delegate = [YYTextRunDelegate new];

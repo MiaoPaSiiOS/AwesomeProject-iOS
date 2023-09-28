@@ -31,7 +31,7 @@
 }
 
 - (void)setupUI {
-    _scaView = [[SystemCompassView alloc] initWithFrame:CGRectMake(30, 64, DSCommonMethods.screenWidth - 60, DSCommonMethods.screenWidth - 60)];
+    _scaView = [[SystemCompassView alloc] initWithFrame:CGRectMake(30, 64, DSDeviceInfo.screenWidth - 60, DSDeviceInfo.screenWidth - 60)];
     _scaView.backgroundColor = [UIColor blackColor];
     [self.dsView addSubview:_scaView];
 

@@ -133,7 +133,7 @@
 }
 +(void)showHasBGM:(BOOL)hasBGM originalVolume:(CGFloat)originalVolume bgmVolume:(CGFloat)bgmVolume callBack:(VideoVolumeEditCallBack)callBack
 {
-    UIWindow * keywindow = [UIWindow ds_window];
+    UIWindow * keywindow = [DSCommonMethods findWindow];
 
     for (UIView * subView in keywindow.subviews) {
         if ([subView isKindOfClass:[EditVideoVolumeView class]]) {

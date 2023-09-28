@@ -14,7 +14,7 @@
 {
     FeedappViewController *vc = [[FeedappViewController alloc] init];
     vc.parameter = parameter;
-    [self.ds_topViewController.navigationController pushViewController:vc animated:YES];
+    [[DSCommonMethods findTopViewController].navigationController pushViewController:vc animated:YES];
 }
 
 

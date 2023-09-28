@@ -10,7 +10,7 @@
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
         _barButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_barButton setFrame:DSFrameAllInset(frame)];
+        [_barButton setFrame:self.bounds];
         [_barButton setBackgroundColor:[UIColor clearColor]];
         [_barButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
         [_barButton setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
@@ -39,7 +39,7 @@
         /*
          *使用边框填充视图
          */
-        [_barButton setFrame:DSFrameInset(frame, self.inset)];
+        [_barButton setFrame:[DSComputer CGRectInsetEdges:frame insets:self.inset]];
         //自定视图按钮
         if (self.item.style == DSBarButtonItemStyleCustom) {
             if (self.item.customView) {
@@ -48,7 +48,7 @@
                     [self addSubview:self.item.customView];
                 }
                 /*填充矩形框*/
-                [self.item.customView setFrame:DSFrameInset(frame, self.inset)];
+                [self.item.customView setFrame:[DSComputer CGRectInsetEdges:frame insets:self.inset]];
             }
         }
         //普通按钮

@@ -298,7 +298,7 @@
             [self initCloseBtn];
         } else {
             closeBtn.frame = CGRectMake(15+35,32,31,20);
-            closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+            closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
         }
     }
     // 清空返回的js
@@ -697,8 +697,9 @@
             kStrongSelf
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *titleInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
-                NSDictionary *aDict = [titleInfoStr ds_JSONValue];
+                NSDictionary *aDict = [DSCommonMethods JSON_OBJ_FROM_STRING:titleInfoStr];
                 [strongSelf navTitleView:aDict];
+                
             }
         }];
     }
@@ -730,8 +731,9 @@
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *closeInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
                 if (closeInfoStr && closeInfoStr.length) {
-                    NSDictionary *closeDict = [closeInfoStr ds_JSONValue];
+                    NSDictionary *closeDict = [DSCommonMethods JSON_OBJ_FROM_STRING:closeInfoStr];
                     [strongSelf closeBtnView:closeDict];
+                    
                 } else {
                     [strongSelf closeBtnView:nil];
                 }
@@ -769,7 +771,7 @@
             } else {
                 closeBtn.frame = CGRectMake(15,32,31,20);
             }
-            closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+            closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
         }
     } else {
         UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
@@ -805,7 +807,7 @@
     } else {
         closeBtn.frame = CGRectMake(15,32,31,20);
     }
-    closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+    closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
     closeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [closeBtn setTitleColor:[DSCommonMethods colorWithHexString:@"0x333333"] forState:UIControlStateNormal];
     [closeBtn addTarget:self action: @selector(closeWebview)forControlEvents:UIControlEventTouchUpInside];
@@ -821,8 +823,8 @@
 - (void)initMetaBtn {
     self.metaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.metaBtn.tag = 25;
-    self.metaBtn.frame = CGRectMake(DSCommonMethods.screenWidth-45,0,45,44);
-    self.metaBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+    self.metaBtn.frame = CGRectMake(DSDeviceInfo.screenWidth-45,0,45,44);
+    self.metaBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
     [self.metaBtn setImageEdgeInsets:UIEdgeInsetsMake(12,10,12,15)];
     [self.metaBtn setImage:[UIImage imageNamed:@"blackPoint"] forState:UIControlStateNormal];
     [self.metaBtn addTarget:self action:@selector(showMetaMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -855,11 +857,12 @@
     [self srsAchiveJSMethodWithName: @"nativeright" completionHandler:^(NSString * _Nullable content, NSError * _Nullable error) {
         kStrongSelf
         if (!error && [content isKindOfClass:[NSString class]] && !isStringEmptyOrNil(content)) {
-            NSArray *arr = [content ds_JSONValue];
-            if (arr && [arr isKindOfClass:[NSArray class]]) {
-                NSDictionary *dict = [NSDictionary dictionaryWithObject:arr forKey:@"content"];
-                strongSelf.metaDict = dict;
-            }
+//            NSArray *arr = [content ds_JSONValue];
+//            if (arr && [arr isKindOfClass:[NSArray class]]) {
+//                NSDictionary *dict = [NSDictionary dictionaryWithObject:arr forKey:@"content"];
+//                strongSelf.metaDict = dict;
+//            }
+            
         }
     }];
 }
@@ -918,7 +921,7 @@
             if (!error && [str isKindOfClass:[NSString class]]) {
                 NSString *backInfoStr = [str isKindOfClass:[NSString class]] ? (NSString *)str : @"";
                 if (backInfoStr && backInfoStr.length) {
-                    NSDictionary *closeDict = [backInfoStr ds_JSONValue];
+                    NSDictionary *closeDict = [DSCommonMethods JSON_OBJ_FROM_STRING:backInfoStr];;
                     [strongSelf backBtnView:closeDict];
                 } else {
                     [strongSelf backBtnView:nil];
@@ -936,14 +939,14 @@
             UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
             if (closeBtn) {
                 closeBtn.frame = CGRectMake(15,32,31,20);
-                closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+                closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
             }
         } else {
             self.appBar.leftBarButtonItem = [[DSBarButtonItem alloc] initBackWithTarget:self action:@selector(backToPrev)];
             UIButton *closeBtn=(UIButton *)[self.appBar viewWithTag:23];
             if (closeBtn) {
                 closeBtn.frame = CGRectMake(15+35,32,31,20);
-                closeBtn.centerY = DSCommonMethods.naviBarContentHeight/2;
+                closeBtn.centerY = DSDeviceInfo.naviBarContentHeight/2;
             }
         }
     } else {

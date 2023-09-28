@@ -57,7 +57,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         
-        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, (82));
+        self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, (82));
         self.backgroundColor = [DSCommonMethods colorWithHexString:@"0xffffff"];;
         
         [self addSubview:self.titleLabel];

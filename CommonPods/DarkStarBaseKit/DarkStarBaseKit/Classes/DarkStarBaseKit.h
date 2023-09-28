@@ -8,16 +8,17 @@
 #ifndef DarkStarBaseKit_h
 #define DarkStarBaseKit_h
 #import "DarkStarBaseKitDefines.h"
-#import "DarkStarBaseKitCommonDefines.h"
 #import "DarkStarCategorysHeader.h"
 
-#import "DSDeviceInfo.h"
 
 #import "DSDataView.h"
 #import "DSNavItem.h"
 #import "DSItem.h"
 #import "DSDataType.h"
 
+
 #import "DSCommonMethods.h"
+#import "DSDeviceInfo.h"
+#import "DSComputer.h"
 
 #endif /* DarkStarBaseKit_h */

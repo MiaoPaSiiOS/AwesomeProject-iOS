@@ -54,7 +54,7 @@
 {
     DSUIButton * item = [DSUIButton buttonWithType:0];
     item.imagePosition = DSUIButtonImagePositionTop;
-    item.frame = CGRectMake(DSCommonMethods.screenWidth - (15) - (60) - (60)*index, 0, (60), (60));
+    item.frame = CGRectMake(DSDeviceInfo.screenWidth - (15) - (60) - (60)*index, 0, (60), (60));
     [item setTitle:title forState:0];
     [item setTitleColor:[UIColor grayColor] forState:0];
     item.titleLabel.font = [UIFont systemFontOfSize:14];

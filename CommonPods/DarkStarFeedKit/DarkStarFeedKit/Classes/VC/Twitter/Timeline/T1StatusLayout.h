@@ -18,7 +18,7 @@
 #define kT1ImagePadding 4
 #define kT1ConversationSplitHeight 25
 #define kT1ContentLeft (kT1CellPadding + kT1AvatarSize + kT1CellInnerPadding)
-#define kT1ContentWidth ((DSCommonMethods.screenWidth) - 2 * kT1CellPadding - kT1AvatarSize - kT1CellInnerPadding)
+#define kT1ContentWidth ((DSDeviceInfo.screenWidth) - 2 * kT1CellPadding - kT1AvatarSize - kT1CellInnerPadding)
 #define kT1QuoteContentWidth (kT1ContentWidth - 2 * kT1CellPadding)
 #define kT1ActionsHeight 6
 #define kT1TextContainerInset 4

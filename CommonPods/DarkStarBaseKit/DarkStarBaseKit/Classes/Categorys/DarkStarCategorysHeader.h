@@ -10,7 +10,6 @@
 
 #import "NSDate+DarkStar.h"
 #import "NSArray+DarkStar.h"
-#import "NSObject+DarkStar.h"
 #import "NSString+DarkStarDeal.h"
 #import "NSString+DarkStarValid.h"
 #import "NSString+DarkStarSize.h"

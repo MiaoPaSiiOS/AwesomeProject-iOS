@@ -182,13 +182,13 @@
     NSInteger index = idx.integerValue;
     //如果就是在index栈的情况下
     if ([REGlobal sharedInstance].globalTbc.selectedIndex == index) {
-        [[self ds_topViewController].navigationController popToRootViewControllerAnimated:YES];
+        [[DSCommonMethods findTopViewController].navigationController popToRootViewControllerAnimated:YES];
     } else {
         //如果是在一级页面，则直接跳转到index；非一级页面，给个延迟再跳转
-        if (![self ds_topViewController].tabBarController.tabBar.hidden) {
+        if (![DSCommonMethods findTopViewController].tabBarController.tabBar.hidden) {
             [[REGlobal sharedInstance].globalTbc enterHomeWithIndex:idx];
         } else {
-            [[self ds_topViewController].navigationController popToRootViewControllerAnimated:YES];
+            [[DSCommonMethods findTopViewController].navigationController popToRootViewControllerAnimated:YES];
             dispatch_time_t time = dispatch_time ( DISPATCH_TIME_NOW , 0.05 * NSEC_PER_SEC ) ;
             dispatch_after ( time , dispatch_get_main_queue ( ) , ^ {
                 [[REGlobal sharedInstance].globalTbc enterHomeWithIndex:idx];

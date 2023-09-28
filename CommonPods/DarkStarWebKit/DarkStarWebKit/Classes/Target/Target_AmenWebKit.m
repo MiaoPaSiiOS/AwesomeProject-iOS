@@ -55,11 +55,11 @@
 
     AreaJsbWKWebViewController *webController = [[AreaJsbWKWebViewController alloc] init];
     webController.reqModel = reqModel;
-    [self.ds_topViewController.navigationController pushViewController:webController animated:YES];
+    [[DSCommonMethods findTopViewController].navigationController pushViewController:webController animated:YES];
 }
 
 - (void)Action_pushWebViewDemoController:(nullable NSDictionary *)parameter {
     AreaJsbWKWebViewDemoController *webController = [[AreaJsbWKWebViewDemoController alloc] init];
-    [self.ds_topViewController.navigationController pushViewController:webController animated:YES];
+    [[DSCommonMethods findTopViewController].navigationController pushViewController:webController animated:YES];
 }
 @end

@@ -11,12 +11,12 @@
 @implementation WBStatusTitleView
 - (instancetype)initWithFrame:(CGRect)frame {
     if (frame.size.width == 0 && frame.size.height == 0) {
-        frame.size.width = DSCommonMethods.screenWidth;
+        frame.size.width = DSDeviceInfo.screenWidth;
         frame.size.height = kWBCellTitleHeight;
     }
     self = [super initWithFrame:frame];
     _titleLabel = [YYLabel new];
-    _titleLabel.size = CGSizeMake(DSCommonMethods.screenWidth - 100, self.height);
+    _titleLabel.size = CGSizeMake(DSDeviceInfo.screenWidth - 100, self.height);
     _titleLabel.left = kWBCellPadding;
     _titleLabel.displaysAsynchronously = YES;
     _titleLabel.ignoreCommonProperties = YES;
@@ -25,7 +25,7 @@
     [self addSubview:_titleLabel];
     
     CALayer *line = [CALayer layer];
-    line.viewSize = CGSizeMake(self.width, DSCommonMethods.LINE_HEIGHT);
+    line.viewSize = CGSizeMake(self.width, DSDeviceInfo.LINE_HEIGHT);
     line.bottom = self.height;
     line.backgroundColor = kWBCellLineColor.CGColor;
     [self.layer addSublayer:line];
@@ -45,7 +45,7 @@
 }
 - (instancetype)initWithFrame:(CGRect)frame {
     if (frame.size.width == 0 && frame.size.height == 0) {
-        frame.size.width = DSCommonMethods.screenWidth;
+        frame.size.width = DSDeviceInfo.screenWidth;
         frame.size.height = kWBCellProfileHeight;
     }
     self = [super initWithFrame:frame];
@@ -60,11 +60,11 @@
     
     CALayer *avatarBorder = [CALayer layer];
     avatarBorder.frame = _avatarView.bounds;
-    avatarBorder.borderWidth = DSCommonMethods.LINE_HEIGHT;
+    avatarBorder.borderWidth = DSDeviceInfo.LINE_HEIGHT;
     avatarBorder.borderColor = [UIColor colorWithWhite:0.000 alpha:0.090].CGColor;
     avatarBorder.cornerRadius = _avatarView.height / 2;
     avatarBorder.shouldRasterize = YES;
-    avatarBorder.rasterizationScale = DSCommonMethods.screenScale;
+    avatarBorder.rasterizationScale = DSDeviceInfo.screenScale;
     [_avatarView.layer addSublayer:avatarBorder];
     
     _avatarBadgeView = [UIImageView new];
@@ -161,7 +161,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (frame.size.width == 0 && frame.size.height == 0){
-        frame.size.width = DSCommonMethods.screenWidth;
+        frame.size.width = DSDeviceInfo.screenWidth;
         frame.origin.x = kWBCellPadding;
     }
     self = [super initWithFrame:frame];
@@ -186,7 +186,7 @@
     [self addSubview:_label];
     [self addSubview:_button];
     self.backgroundColor = kWBCellInnerViewColor;
-    self.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
+    self.layer.borderWidth = DSDeviceInfo.LINE_HEIGHT;
     self.layer.borderColor = [UIColor colorWithWhite:0.000 alpha:0.070].CGColor;
     return self;
 }
@@ -288,7 +288,7 @@
 @implementation WBStatusToolbarView
 - (instancetype)initWithFrame:(CGRect)frame {
     if (frame.size.width == 0 && frame.size.height == 0) {
-        frame.size.width = DSCommonMethods.screenWidth;
+        frame.size.width = DSDeviceInfo.screenWidth;
         frame.size.height = kWBCellToolbarHeight;
     }
     self = [super initWithFrame:frame];
@@ -296,19 +296,19 @@
     
     _repostButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _repostButton.exclusiveTouch = YES;
-    _repostButton.size = CGSizeMake(CGFloatPixelRound(self.width / 3.0), self.height);
+    _repostButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
     [_repostButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _commentButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _commentButton.exclusiveTouch = YES;
-    _commentButton.size = CGSizeMake(CGFloatPixelRound(self.width / 3.0), self.height);
-    _commentButton.left = CGFloatPixelRound(self.width / 3.0);
+    _commentButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
+    _commentButton.left = [DSComputer CGFloatPixelRound:(self.width / 3.0)];
     [_commentButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _likeButton.exclusiveTouch = YES;
-    _likeButton.size = CGSizeMake(CGFloatPixelRound(self.width / 3.0), self.height);
-    _likeButton.left = CGFloatPixelRound(self.width / 3.0 * 2.0);
+    _likeButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
+    _likeButton.left = [DSComputer CGFloatPixelRound:(self.width / 3.0 * 2.0)];
     [_likeButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _repostImageView = [[UIImageView alloc] initWithImage:[WBStatusHelper imageNamed:@"timeline_icon_retweet"]];
@@ -361,7 +361,7 @@
     _line1.locations = locations;
     _line1.startPoint = CGPointMake(0, 0);
     _line1.endPoint = CGPointMake(0, 1);
-    _line1.viewSize = CGSizeMake(DSCommonMethods.LINE_HEIGHT, self.height);
+    _line1.viewSize = CGSizeMake(DSDeviceInfo.LINE_HEIGHT, self.height);
     _line1.left = _repostButton.right;
     
     _line2 = [CAGradientLayer layer];
@@ -369,11 +369,11 @@
     _line2.locations = locations;
     _line2.startPoint = CGPointMake(0, 0);
     _line2.endPoint = CGPointMake(0, 1);
-    _line2.viewSize = CGSizeMake(DSCommonMethods.LINE_HEIGHT, self.height);
+    _line2.viewSize = CGSizeMake(DSDeviceInfo.LINE_HEIGHT, self.height);
     _line2.left = _commentButton.right;
     
     _topLine = [CALayer layer];
-    _topLine.viewSize = CGSizeMake(self.width, DSCommonMethods.LINE_HEIGHT);
+    _topLine.viewSize = CGSizeMake(self.width, DSDeviceInfo.LINE_HEIGHT);
     _topLine.backgroundColor = kWBCellLineColor.CGColor;
     
     _bottomLine = [CALayer layer];
@@ -455,8 +455,8 @@
     CGFloat labelWidth = label.width;
     CGFloat paddingMid = 5;
     CGFloat paddingSide = (button.width - imageWidth - labelWidth - paddingMid) / 2.0;
-    image.centerX = CGFloatPixelRound(paddingSide + imageWidth / 2);
-    label.right = CGFloatPixelRound(button.width - paddingSide);
+    image.centerX = [DSComputer CGFloatPixelRound:(paddingSide + imageWidth / 2)];
+    label.right = [DSComputer CGFloatPixelRound:(button.width - paddingSide)];
 }
 
 - (void)setLiked:(BOOL)liked withAnimation:(BOOL)animation {
@@ -471,7 +471,7 @@
     NSString *newCountDesc = newCount > 0 ? [WBStatusHelper shortedNumberDesc:newCount] : @"赞";
     
     UIFont *font = [UIFont systemFontOfSize:kWBCellToolbarFontSize];
-    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSCommonMethods.screenWidth, kWBCellToolbarHeight)];
+    YYTextContainer *container = [YYTextContainer containerWithSize:CGSizeMake(DSDeviceInfo.screenWidth, kWBCellToolbarHeight)];
     container.maximumNumberOfRows = 1;
     NSMutableAttributedString *likeText = [[NSMutableAttributedString alloc] initWithString:newCountDesc];
     likeText.yy_font = font;
@@ -484,7 +484,7 @@
     
     if (!animation) {
         _likeImageView.image = image;
-        _likeLabel.width = CGFloatPixelRound(textLayout.textBoundingRect.size.width);
+        _likeLabel.width = [DSComputer CGFloatPixelRound:(textLayout.textBoundingRect.size.width)];
         _likeLabel.textLayout = layout.toolbarLikeTextLayout;
         [self adjustImage:_likeImageView label:_likeLabel inButton:_likeButton];
         return;
@@ -495,7 +495,7 @@
     } completion:^(BOOL finished) {
         
         self->_likeImageView.image = image;
-        self->_likeLabel.width = CGFloatPixelRound(textLayout.textBoundingRect.size.width);
+        self->_likeLabel.width = [DSComputer CGFloatPixelRound:(textLayout.textBoundingRect.size.width)];
         self->_likeLabel.textLayout = layout.toolbarLikeTextLayout;
         [self adjustImage:self->_likeImageView label:self->_likeLabel inButton:self->_likeButton];
         
@@ -589,7 +589,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (frame.size.width == 0 && frame.size.height == 0) {
-        frame.size.width = DSCommonMethods.screenWidth;
+        frame.size.width = DSDeviceInfo.screenWidth;
         frame.size.height = 1;
     }
     self = [super initWithFrame:frame];
@@ -598,7 +598,7 @@
     kWeakSelf
     
     _contentView = [UIView new];
-    _contentView.width = DSCommonMethods.screenWidth;
+    _contentView.width = DSDeviceInfo.screenWidth;
     _contentView.height = 1;
     _contentView.backgroundColor = [UIColor whiteColor];
     static UIImage *topLineBG, *bottomLineBG;
@@ -639,7 +639,7 @@
     [_contentView addSubview:_profileView];
     
     _vipBackgroundView = [UIImageView new];
-    _vipBackgroundView.size = CGSizeMake(DSCommonMethods.screenWidth, 14.0);
+    _vipBackgroundView.size = CGSizeMake(DSDeviceInfo.screenWidth, 14.0);
     _vipBackgroundView.top = -2;
     _vipBackgroundView.contentMode = UIViewContentModeTopRight;
     [_contentView addSubview:_vipBackgroundView];
@@ -661,7 +661,7 @@
     
     _retweetBackgroundView = [UIView new];
     _retweetBackgroundView.backgroundColor = kWBCellInnerViewColor;
-    _retweetBackgroundView.width = DSCommonMethods.screenWidth;
+    _retweetBackgroundView.width = DSDeviceInfo.screenWidth;
     [_contentView addSubview:_retweetBackgroundView];
     
     _textLabel = [YYLabel new];

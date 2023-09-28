@@ -66,7 +66,7 @@
 
 
 + (NSString *)deviceModel {
-    if ([DSDeviceInfo isSimulator]) {
+    if ([self isSimulator]) {
         // Simulator doesn't return the identifier for the actual physical model, but returns it as an environment variable
         // 模拟器不返回物理机器信息，但会通过环境变量的方式返回
         return [NSString stringWithFormat:@"%s", getenv("SIMULATOR_MODEL_IDENTIFIER")];
@@ -229,7 +229,7 @@
         };
         name = dict[model];
         if (!name) name = model;
-        if ([DSDeviceInfo isSimulator]) name = [name stringByAppendingString:@" Simulator"];
+        if ([self isSimulator]) name = [name stringByAppendingString:@" Simulator"];
     });
     return name;
 }
@@ -273,7 +273,7 @@ static NSInteger isSimulator = -1;
     return isSimulator > 0;
 }
 
-static NSInteger isNotchedScreen = -1;
+//static NSInteger isNotchedScreen = -1;
 + (BOOL)isNotchedScreen {
     if (@available(iOS 11.0, *)) {
         UIWindow *window = UIApplication.sharedApplication.keyWindow;
@@ -311,6 +311,74 @@ static NSInteger isNotchedScreen = -1;
         default:
             return UIEdgeInsetsMake(44, 0, 34, 0);
     }
+}
+
+#pragma mark - 设备常用参数
+/// 屏幕宽度
++ (CGFloat)screenWidth {
+    return [UIScreen mainScreen].bounds.size.width;
+}
+///主屏幕高度
++ (CGFloat)screenHeight {
+    return [UIScreen mainScreen].bounds.size.height;
+}
+///分辨率
++ (CGFloat)screenScale {
+    return [[UIScreen mainScreen] scale];
+}
+/// 分割线的高度
++ (CGFloat)LINE_HEIGHT {
+    return 1.0/[UIScreen mainScreen].scale;
+}
+/// 状态栏高度
++ (CGFloat)statusBarHeight {
+    return [self safeAreaInsetsForDeviceWithNotch].top;
+//    return [[UIApplication sharedApplication] statusBarFrame].size.height;
+}
+/// NaviBar内容高度
++ (CGFloat)naviBarContentHeight {
+    return 44.0;
+}
+/// NaviBar 的高度, 已适配iPhone X
++ (CGFloat)naviBarHeight {
+    return [self statusBarHeight] + [self naviBarContentHeight];
+}
+/// TabBar内容高度
++ (CGFloat)tabBarContentHeight {
+    return 49.0;
+}
+/// TabBar 高度, 已适配iPhone X
++ (CGFloat)tabBarHeight {
+    CGFloat result = [self tabBarContentHeight];
+    if(@available(iOS 11.0, *)){
+        result += [[UIApplication sharedApplication] keyWindow].safeAreaInsets.bottom;
+    }
+    return result;
+}
+
+#pragma mark - 系统判断
++ (BOOL)iOSSystem:(CGFloat)system {
+    return (([[[UIDevice currentDevice] systemVersion] floatValue] >= system)? (YES):(NO));
+}
+/// iOS 8 判断
++ (BOOL)isIOS8Later {
+    return [self iOSSystem:8.0];
+}
+/// iOS 9 判断
++ (BOOL)isIOS9Later {
+    return [self iOSSystem:9.0];
+}
+/// iOS 10 判断
++ (BOOL)isIOS10Later {
+    return [self iOSSystem:10.0];
+}
+/// iOS 11 判断
++ (BOOL)isIOS11Later {
+    return [self iOSSystem:11.0];
+}
+/// iOS 11.2 判断
++ (BOOL)isIOS11_2Later {
+    return [self iOSSystem:11.2];
 }
 
 @end

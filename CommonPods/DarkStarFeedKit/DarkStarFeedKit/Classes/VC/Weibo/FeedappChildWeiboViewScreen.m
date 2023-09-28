@@ -181,7 +181,7 @@
 
 #pragma mark - 没有更多页面
 - (void)noMoreData{
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, (50))];
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSDeviceInfo.screenWidth, (50))];
     UILabel * titleLabel = [[UILabel alloc] initWithFrame:view.frame];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.text = @"没有更多啦";
@@ -463,7 +463,7 @@
 #pragma mark - 加载更多失败
 - (AUMoreFailedView *)moreFailedView{
     if (!_moreFailedView) {
-        _moreFailedView = [[AUMoreFailedView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 68)];
+        _moreFailedView = [[AUMoreFailedView alloc] initWithFrame:CGRectMake(0, 0, DSDeviceInfo.screenWidth, 68)];
         kWeakSelf
         [_moreFailedView setRetryBlock:^{
             kStrongSelf

@@ -41,7 +41,7 @@
 - (instancetype)initWithText:(NSString *)text {
     if (self = [super init]) {
         
-        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, (196/2.));
+        self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, (196/2.));
         self.textLabel.text = @"请输入6位短信验证码";
 
         self.textField.text = text;

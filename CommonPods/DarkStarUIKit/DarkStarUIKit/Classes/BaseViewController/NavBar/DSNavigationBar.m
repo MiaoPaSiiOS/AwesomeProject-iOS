@@ -27,7 +27,7 @@
         }];
         [self.navigationBar mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.bottom.mas_offset(0);
-            make.height.mas_equalTo(DSCommonMethods.naviBarContentHeight);
+            make.height.mas_equalTo(DSDeviceInfo.naviBarContentHeight);
         }];
         
         _leftBarButton = [[DSBarButton alloc] initWithFrame:CGRectZero];
@@ -121,11 +121,10 @@
     CGFloat y = 0;
     CGFloat w = self.navigationBar.width/3+15;
     CGFloat h = self.navigationBar.height - y;
-    [_topView setFrame:DSFrameAll(0,y,w,h)];
+    [_topView setFrame:CGRectMake(0,y,w,h)];
     [_topView setCenterX:self.navigationBar.centerX];
-   
-    [_topTitleView setFrame:DSFrameInset(_topView.frame,self.inset)];
-    [_topImageView setFrame:DSFrameInset(_topView.frame,self.inset)];
+    [_topTitleView setFrame:[DSComputer CGRectInsetEdges:_topView.frame insets:self.inset]];
+    [_topImageView setFrame:[DSComputer CGRectInsetEdges:_topView.frame insets:self.inset]];
     //  设置标题视图
     if (self.topItem) {
         [self setLogoImgView:y];

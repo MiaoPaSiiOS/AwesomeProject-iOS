@@ -300,7 +300,7 @@
         self.aniLab.font = [UIFont boldSystemFontOfSize:40];
         self.aniLab.textAlignment = NSTextAlignmentCenter;
         self.aniLab.frame = CGRectMake(0, 0, 100, 100);
-        self.aniLab.center = CGPointMake(DSCommonMethods.screenWidth/2, DSCommonMethods.screenHeight/2);
+        self.aniLab.center = CGPointMake(DSDeviceInfo.screenWidth/2, DSDeviceInfo.screenHeight/2);
         [self addSubview:self.aniLab];
         
         self.countDown = 4;
@@ -350,7 +350,7 @@
 }
 + (void)showCounrDownTimerWIthCallBack:(CountDownTimerCallBack)callBack
 {
-    UIWindow * keywindow = [UIWindow ds_window];
+    UIWindow * keywindow = [DSCommonMethods findWindow];
     for (UIView * subView in keywindow.subviews) {
         if ([subView isKindOfClass:[CountDownTimer class]]) {
             [subView removeFromSuperview];

@@ -66,54 +66,6 @@
 
 
 
-//  Frame
-//////////////////////////////////////////////////
-
-/**
- *    @brief    矩形框.
- */
-#ifndef DSFrameAll
-#define DSFrameAll(x,y,w,h) CGRectMake((x), (y), (w), (h))
-#endif
-
-/**
- *    @brief    坐标为(0, 0)的矩形框.
- */
-#ifndef DSFrame
-#define DSFrame(w,h) DSFrameAll(0,0,w,h)
-#endif
-
-/**
- *    @brief    完整填充frame的矩形框.
- */
-#ifndef DSFrameAllInset
-#define DSFrameAllInset(frame) DSFrame(frame.size.width,frame.size.height)
-#endif
-/**
- *    @brief    以inset填充矩形框.
- */
-#ifndef DSFrameInset
-#define DSFrameInset(frame,inset) CGRectMake(inset.left, inset.top, frame.size.width - inset.left - inset.right, frame.size.height - inset.top - inset.bottom)
-#endif
-
-
-/** 按比例适配的宽度 */
-#define DSAutoScale(value) (kAdaptScreenScale(APP_WidthScale * (value)))
-
-#define APP_WidthScale ((MIN(DSCommonMethods.screenWidth, DSCommonMethods.screenHeight))/375.f)
-
-#define kAdaptScreenScale(number) \
-({\
-CGFloat result = number;\
-CGFloat scale = [UIScreen mainScreen].scale;\
-CGFloat delta = 1/(scale*2);\
-result += delta;\
-NSInteger intNumber = (NSInteger)(result);\
-CGFloat decimalNumber = result - intNumber;\
-NSUInteger count = (NSUInteger)(decimalNumber/delta);\
-result = (CGFloat)(intNumber + (count/2)/scale);\
-(result);})\
-
 
 ////////////////////////快速创建测试按钮
 #define DS_BUTTON_WITH_ACTION(_title, _sel)  \

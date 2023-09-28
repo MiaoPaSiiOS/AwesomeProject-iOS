@@ -141,7 +141,7 @@
     UIView *line = [UIView new];
     line.backgroundColor = [DSCommonMethods colorWithHexString:@"0xBFBFBF"];
     line.width = _toolbarBackground.width;
-    line.height = DSCommonMethods.LINE_HEIGHT;
+    line.height = DSDeviceInfo.LINE_HEIGHT;
     line.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [_toolbarBackground addSubview:line];
     
@@ -152,7 +152,7 @@
     _toolbarPOIButton.clipsToBounds = YES;
     _toolbarPOIButton.layer.cornerRadius = _toolbarPOIButton.height / 2;
     _toolbarPOIButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
-    _toolbarPOIButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
+    _toolbarPOIButton.layer.borderWidth = DSDeviceInfo.LINE_HEIGHT;
     _toolbarPOIButton.titleLabel.font = [UIFont systemFontOfSize:14];
     _toolbarPOIButton.adjustsImageWhenHighlighted = NO;
     [_toolbarPOIButton setTitle:@"显示位置 " forState:UIControlStateNormal];
@@ -170,7 +170,7 @@
     _toolbarGroupButton.clipsToBounds = YES;
     _toolbarGroupButton.layer.cornerRadius = _toolbarGroupButton.height / 2;
     _toolbarGroupButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
-    _toolbarGroupButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
+    _toolbarGroupButton.layer.borderWidth = DSDeviceInfo.LINE_HEIGHT;
     _toolbarGroupButton.titleLabel.font = [UIFont systemFontOfSize:14];
     _toolbarGroupButton.adjustsImageWhenHighlighted = NO;
     [_toolbarGroupButton setTitle:@"公开 " forState:UIControlStateNormal];
@@ -197,7 +197,7 @@
     _toolbarTopicButton.centerX = one * 2.5;
     _toolbarEmoticonButton.centerX = one * 3.5;
     _toolbarExtraButton.centerX = one * 4.5;
-    _toolbar.bottom = DSCommonMethods.screenHeight - self.appBar.height - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
+    _toolbar.bottom = DSDeviceInfo.screenHeight - self.appBar.height - SafeAreaInsetsConstantForDeviceWithNotch.bottom;
     [self.dsView addSubview:_toolbar];
 }
 
@@ -304,7 +304,7 @@
     if (!_navbarCancleButton) {
         _navbarCancleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _navbarCancleButton.size = CGSizeMake(60, 44);
-        _navbarCancleButton.right = DSCommonMethods.screenWidth - 12;
+        _navbarCancleButton.right = DSDeviceInfo.screenWidth - 12;
         _navbarCancleButton.clipsToBounds = YES;
         _navbarCancleButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarCancleButton setTitle:@"取消" forState:UIControlStateNormal];
@@ -323,7 +323,7 @@
         _navbarPublishButton.clipsToBounds = YES;
         _navbarPublishButton.layer.cornerRadius = _toolbarPOIButton.height / 2;
         _navbarPublishButton.layer.borderColor = [DSCommonMethods colorWithHexString:@"0xe4e4e4"].CGColor;
-        _navbarPublishButton.layer.borderWidth = DSCommonMethods.LINE_HEIGHT;
+        _navbarPublishButton.layer.borderWidth = DSDeviceInfo.LINE_HEIGHT;
         _navbarPublishButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarPublishButton setTitle:@"发布" forState:UIControlStateNormal];
         [_navbarPublishButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

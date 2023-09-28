@@ -91,7 +91,7 @@
 #pragma mark - SETUP
 - (void)setupVar
 {
-    _cameraViewBottomBGHeight = ((DSCommonMethods.screenHeight)-(DSCommonMethods.screenWidth)*(4.0f/3.0f));
+    _cameraViewBottomBGHeight = ((DSDeviceInfo.screenHeight)-(DSDeviceInfo.screenWidth)*(4.0f/3.0f));
     _cameraTakePhotoIconSize = 75;
     _currentCameraViewRatio = 1.33f;
     _currentFlashModel = AVCaptureFlashModeOff;
@@ -104,7 +104,7 @@
     // GPUImageView
     _imageView = [[CKStillCameraPreview alloc] initWithFrame:CGRectZero];
     _imageView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
-    _imageView.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, DSCommonMethods.screenWidth*4.0/3.0);
+    _imageView.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, DSDeviceInfo.screenWidth*4.0/3.0);
     [self.view addSubview:_imageView];
         
     // 自动对焦
@@ -163,7 +163,7 @@
     
     // 顶部背景
     UIView *topBg = [[UIView alloc] initWithFrame:CGRectZero];
-    topBg.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, DSCommonMethods.screenWidth, DSCommonMethods.naviBarContentHeight);
+    topBg.frame = CGRectMake(0, SafeAreaInsetsConstantForDeviceWithNotch.top, DSDeviceInfo.screenWidth, DSDeviceInfo.naviBarContentHeight);
     topBg.backgroundColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:255.0];
     [self.view addSubview:topBg];
     _topBg = topBg;
@@ -270,7 +270,7 @@
     
     // 底部背景
     UIView *bottomBg = [[UIView alloc] init];
-    bottomBg.frame = CGRectMake(0,DSCommonMethods.screenHeight-_cameraViewBottomBGHeight,DSCommonMethods.screenWidth, _cameraViewBottomBGHeight);
+    bottomBg.frame = CGRectMake(0,DSDeviceInfo.screenHeight-_cameraViewBottomBGHeight,DSDeviceInfo.screenWidth, _cameraViewBottomBGHeight);
     bottomBg.backgroundColor = [UIColor colorWithRed:20/255.0 green:20/255.0 blue:20/255.0 alpha:255.0];
     [self.view addSubview:bottomBg];
     _bottomBg = bottomBg;
@@ -339,11 +339,11 @@
         [UIView animateWithDuration:0.3f animations:^{
             picBtn.alpha = 0.0f;
             filterBtn.alpha = 0.0f;
-            self.takePhotoBtn.frame = CGRectMake(DSCommonMethods.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSCommonMethods.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
+            self.takePhotoBtn.frame = CGRectMake(DSDeviceInfo.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSDeviceInfo.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
         } completion:^(BOOL finished) {
             // 再移动
             [UIView animateWithDuration:0.1f animations:^{
-                self.takePhotoBtn.frame = CGRectMake(DSCommonMethods.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSCommonMethods.screenHeight - (self->_cameraViewBottomBGHeight - 84)/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
+                self.takePhotoBtn.frame = CGRectMake(DSDeviceInfo.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSDeviceInfo.screenHeight - (self->_cameraViewBottomBGHeight - 84)/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
             } completion:^(BOOL finished) {
                 // 最后交换层顺序
                 [self.view bringSubviewToFront:self.takePhotoBtn];
@@ -359,13 +359,13 @@
         [self.view insertSubview:self.takePhotoBtn belowSubview:[self cameraFilterView]];
         // 先回到原来位置
         [UIView animateWithDuration:0.2f animations:^{
-            self.takePhotoBtn.frame = CGRectMake(DSCommonMethods.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSCommonMethods.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
+            self.takePhotoBtn.frame = CGRectMake(DSDeviceInfo.screenWidth/2 - self->_cameraTakePhotoIconSize/4, DSDeviceInfo.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/4, self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize/2);
         } completion:^(BOOL finished) {
             // 再放大
             [UIView animateWithDuration:0.3f animations:^{
                 picBtn.alpha = 1.0f;
                 filterBtn.alpha = 1.0f;
-                self.takePhotoBtn.frame = CGRectMake(DSCommonMethods.screenWidth/2 - self->_cameraTakePhotoIconSize/2, DSCommonMethods.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize, self->_cameraTakePhotoIconSize);
+                self.takePhotoBtn.frame = CGRectMake(DSDeviceInfo.screenWidth/2 - self->_cameraTakePhotoIconSize/2, DSDeviceInfo.screenHeight - self->_cameraViewBottomBGHeight/2 - self->_cameraTakePhotoIconSize/2, self->_cameraTakePhotoIconSize, self->_cameraTakePhotoIconSize);
             }];
         }];
     }];
@@ -465,8 +465,8 @@
 - (void)setCameraRatio:(CGFloat)ratio
 {
     _currentCameraViewRatio = ratio;
-    float vaW = DSCommonMethods.screenWidth;
-    float vaH = DSCommonMethods.screenWidth*4.0/3.0;
+    float vaW = DSDeviceInfo.screenWidth;
+    float vaH = DSDeviceInfo.screenWidth*4.0/3.0;
     float igW = 0, igH = 0;
     if (ratio == 1) {
         igW = vaW;

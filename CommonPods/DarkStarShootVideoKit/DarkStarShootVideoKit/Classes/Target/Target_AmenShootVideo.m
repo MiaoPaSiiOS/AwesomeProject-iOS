@@ -15,7 +15,7 @@
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self.ds_topViewController.navigationController presentViewController:nav animated:YES completion:nil];
+    [[DSCommonMethods findTopViewController].navigationController presentViewController:nav animated:YES completion:nil];
 }
 
 @end

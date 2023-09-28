@@ -113,7 +113,7 @@
 {
     if (!_luminanceView) {
         __weak __typeof(self)weakSelf = self;
-        _luminanceView = [[QMCustomSlider alloc] initWithFrame:CGRectMake(30, DSCommonMethods.screenWidth*4.0f/3.0f-60, DSCommonMethods.screenWidth-60, 30)];
+        _luminanceView = [[QMCustomSlider alloc] initWithFrame:CGRectMake(30, DSDeviceInfo.screenWidth*4.0f/3.0f-60, DSDeviceInfo.screenWidth-60, 30)];
         _luminanceView.hidden = YES;
         [_luminanceView setThumbImage:[AECResouce imageNamed:@"qmkit_luminance_adjust"]];
         [self.superview addSubview:_luminanceView];

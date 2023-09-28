@@ -42,10 +42,10 @@
 
 - (void)reset {
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 0);
-    if (_rootView.width == DSCommonMethods.screenWidth && _rootView.height == DSCommonMethods.screenHeight) {
-        inset = UIEdgeInsetsMake(DSCommonMethods.naviBarHeight, 0, DSCommonMethods.tabBarHeight, 0);
+    if (_rootView.width == DSDeviceInfo.screenWidth && _rootView.height == DSDeviceInfo.screenHeight) {
+        inset = UIEdgeInsetsMake(DSDeviceInfo.naviBarHeight, 0, DSDeviceInfo.tabBarHeight, 0);
     }
-    inset = UIEdgeInsetsConcat(inset, self.areaInset);
+    inset = [DSComputer UIEdgeInsetsConcat:inset insets2:self.areaInset];
     
     CGFloat centerX = inset.left + self.width/2;
     CGFloat centerY = inset.top + self.height/2;
@@ -93,10 +93,10 @@
         return;
     }
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, 0, 0);
-    if (_rootView.width == DSCommonMethods.screenWidth && _rootView.height == DSCommonMethods.screenHeight) {
-        inset = UIEdgeInsetsMake(DSCommonMethods.naviBarHeight, 0, DSCommonMethods.tabBarHeight, 0);
+    if (_rootView.width == DSDeviceInfo.screenWidth && _rootView.height == DSDeviceInfo.screenHeight) {
+        inset = UIEdgeInsetsMake(DSDeviceInfo.naviBarHeight, 0, DSDeviceInfo.tabBarHeight, 0);
     }
-    inset = UIEdgeInsetsConcat(inset, self.areaInset);
+    inset = [DSComputer UIEdgeInsetsConcat:inset insets2: self.areaInset];
     
     CGFloat W = _rootView.width;
     CGFloat H = _rootView.height;//622

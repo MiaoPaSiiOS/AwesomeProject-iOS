@@ -21,7 +21,7 @@
         [self addSubview:self.bottomLabel];
         
         
-        self.frame = CGRectMake(0, 0, DSCommonMethods.screenWidth, (281/2.));
+        self.frame = CGRectMake(0, 0, DSDeviceInfo.screenWidth, (281/2.));
 
         self.textField.font = [UIFont fontWithName:@"DINAlternate-Bold" size:(73/2.)];
         self.textField.keyboardType = UIKeyboardTypeNumberPad;

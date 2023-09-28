@@ -158,7 +158,7 @@
 
 #pragma mark - header
 - (UIView *)viewForHeaderInSection:(NSInteger)section {
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSCommonMethods.screenWidth, 30)];
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DSDeviceInfo.screenWidth, 30)];
     UILabel *titleLab = [[UILabel alloc] init];
     titleLab.font = [UIFont systemFontOfSize:13];
     titleLab.textColor = [UIColor blackColor];
