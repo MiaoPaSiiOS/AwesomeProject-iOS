@@ -35,7 +35,7 @@
      */
     [session setActive:YES error:nil];
     
-    NSURL *url = [[NSBundle ds_bundleName:@"DSKeepAliveManager" inPod:@"DSKeepAliveManager"] URLForResource:@"bg" withExtension:@"mp3"];
+    NSURL *url = [[DSHelper findBundleWithBundleName:@"DSKeepAliveManager" podName:@"DSKeepAliveManager"] URLForResource:@"bg" withExtension:@"mp3"];
     if (url) {
         _tool = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
         [_tool prepareToPlay];

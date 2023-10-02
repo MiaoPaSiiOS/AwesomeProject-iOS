@@ -420,7 +420,7 @@ typedef enum {// 按钮tag
             case LAErrorTouchIDNotEnrolled: {
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                     //其他情况，切换主线程处理
-                    [self ds_showAlertControllerWithTitle:nil message:@"指纹信息发生变更，请重新添加指纹后返回解锁或直接使用密码登录" buttonTitles:@[@"取消", @"切换登录方式"] alertClick:^(NSInteger clickNumber) {
+                    [DSHelper showAlertControllerWithTitle:nil message:@"指纹信息发生变更，请重新添加指纹后返回解锁或直接使用密码登录" buttonTitles:@[@"取消", @"切换登录方式"] alertClick:^(int clickNumber) {
                         if (clickNumber == 1) {
                             // 切换普通方式登录
                         }
@@ -447,16 +447,14 @@ typedef enum {// 按钮tag
 
 #pragma mark - 发起登录
 - (void)doTouchOrFaceLogin {
-    [self ds_showAlertControllerWithTitle:nil message:@"发起登录" alertClick:^(NSInteger clickNumber) {
-        
-    }];
+    [DSHelper showAlertControllerWithTitle:nil message:@"发起登录" alertClick:nil];
 }
 
 
 - (void)dealWithClosedFaceID {
     // 根据用户登录模式，清空指纹token信息,存储关闭指纹登录标识
     //面容ID功能已关闭，请使用密码\n登录
-    [self ds_showAlertControllerWithTitle:nil message:@"面容ID功能已关闭，请使用密码\n登录" buttonTitles:@[@"取消", @"密码登录"] alertClick:^(NSInteger clickNumber) {
+    [DSHelper showAlertControllerWithTitle:nil message:@"面容ID功能已关闭，请使用密码\n登录" buttonTitles:@[@"取消", @"密码登录"] alertClick:^(int clickNumber) {
         if (clickNumber == 1) {
             // 切换普通方式登录
         }

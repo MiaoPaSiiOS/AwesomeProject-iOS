@@ -210,7 +210,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarWebKit" inPod:@"DarkStarWebKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarWebKit" podName:@"DarkStarWebKit"];
     });
     return bundle;
 }

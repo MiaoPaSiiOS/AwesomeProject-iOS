@@ -12,7 +12,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarScanKit" inPod:@"DarkStarScanKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarScanKit" podName:@"DarkStarScanKit"];
     });
     return bundle;
 }

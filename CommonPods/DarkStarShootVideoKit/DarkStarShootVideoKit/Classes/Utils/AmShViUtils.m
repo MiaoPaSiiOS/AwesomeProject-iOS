@@ -12,7 +12,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarShootVideoKit" inPod:@"DarkStarShootVideoKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarShootVideoKit" podName:@"DarkStarShootVideoKit"];
     });
     return bundle;
 }
@@ -21,7 +21,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarShootVideoKitExt" inPod:@"DarkStarShootVideoKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarShootVideoKitExt" podName:@"DarkStarShootVideoKit"];
     });
     return bundle;
 }

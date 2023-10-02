@@ -26,7 +26,7 @@
 
 - (void)createTimer {
     __weak __typeof(self)weakSelf = self;
-    _timer = [NSTimer timerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
+    _timer = [DSHelper timerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
         [weakSelf updateTimeLabel];
     } repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];

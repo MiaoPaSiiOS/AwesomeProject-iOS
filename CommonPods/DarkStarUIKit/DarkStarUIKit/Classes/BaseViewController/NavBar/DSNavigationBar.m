@@ -7,6 +7,7 @@
 
 #import "DSNavigationBar.h"
 #import <Masonry/Masonry.h>
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 
 @interface DSNavigationBar ()
 @property (nonatomic, strong) DSDataView *topView;
@@ -123,8 +124,13 @@
     CGFloat h = self.navigationBar.height - y;
     [_topView setFrame:CGRectMake(0,y,w,h)];
     [_topView setCenterX:self.navigationBar.centerX];
-    [_topTitleView setFrame:[DSComputer CGRectInsetEdges:_topView.frame insets:self.inset]];
-    [_topImageView setFrame:[DSComputer CGRectInsetEdges:_topView.frame insets:self.inset]];
+    [_topTitleView setFrame:[DSComputer CGRectFrameInset:_topView.frame insets:self.inset]];
+    [_topImageView setFrame:[DSComputer CGRectFrameInset:_topView.frame insets:self.inset]];
+    
+    _topView.layer.borderColor = [UIColor redColor].CGColor;
+    _topView.layer.borderWidth = 2;
+    
+    
     //  设置标题视图
     if (self.topItem) {
         [self setLogoImgView:y];

@@ -1,5 +1,5 @@
 
-#import <DarkStarBaseKit/DarkStarBaseKit.h>
+#import "DSItem.h"
 /*!
  *  @brief  绘制边界的类
  */

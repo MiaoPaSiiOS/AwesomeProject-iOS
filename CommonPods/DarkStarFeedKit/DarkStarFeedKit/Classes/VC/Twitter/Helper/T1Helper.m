@@ -39,7 +39,7 @@
     NSString *ext = name.pathExtension;
     if (ext.length == 0) ext = @"png";
     // 获取图片资源的路径
-    NSString *path = [[self bundle] pathForScaledResource:name ofType:ext];
+    NSString *path = [DSHelper pathForScaledResourceWithBundle:[self bundle] name:name ofType:ext];
     if (!path) return nil;
     image = [UIImage imageWithContentsOfFile:path];
     if (!image) return nil;

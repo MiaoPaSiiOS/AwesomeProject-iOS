@@ -310,7 +310,7 @@
     if (!toContainer) return;
     _fromView = fromView;
     _toContainerView = toContainer;
-    _blurBackground.image = [UIImage ds_squareImageWithColor:[UIColor blackColor] targetSize:CGSizeMake(1, 1)];
+    _blurBackground.image = [DSHelper squareImageWithColor:[UIColor blackColor] targetSize:CGSizeMake(1, 1)];
     NSInteger page = -1;
     for (NSUInteger i = 0; i < self.groupItems.count; i++) {
         if (fromView == ((YYPhotoGroupItem *)self.groupItems[i]).thumbView) {
@@ -464,7 +464,7 @@
     
     
     if (isFromImageClipped) {
-        [cell ds_scrollToTopAnimated:NO];
+        [DSHelper scrollToTop:cell animated:NO];
     }
     
     [UIView animateWithDuration:animated ? 0.2 : 0 delay:0 options:UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseOut animations:^{
@@ -705,9 +705,9 @@
     if ([activityViewController respondsToSelector:@selector(popoverPresentationController)]) {
         activityViewController.popoverPresentationController.sourceView = self;
     }
-
-    UIViewController *toVC = self.toContainerView.ds_viewController;
-    if (!toVC) toVC = self.ds_viewController;
+    
+    UIViewController *toVC = [DSHelper findCurrentViewControllerAtView:self.toContainerView];
+    if (!toVC) toVC = [DSHelper findCurrentViewControllerAtView:self];
     [toVC presentViewController:activityViewController animated:YES completion:nil];
 }
 

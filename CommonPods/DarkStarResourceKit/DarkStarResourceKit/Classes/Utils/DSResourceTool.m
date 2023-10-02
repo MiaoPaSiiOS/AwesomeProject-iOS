@@ -14,7 +14,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarResourceKit" inPod:@"DarkStarResourceKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarResourceKit" podName:@"DarkStarResourceKit"];
     });
     return bundle;
 }

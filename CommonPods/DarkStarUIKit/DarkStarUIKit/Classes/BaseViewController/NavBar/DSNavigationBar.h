@@ -5,17 +5,16 @@
 //  Created by zhuyuhui on 2022/6/16.
 //
 
-#import <DarkStarBaseKit/DarkStarBaseKit.h>
+#import "DSDataView.h"
 #import "DSBarButtonItem.h"
 #import "DSBarButton.h"
 #import "DSBarItem.h"
+#import "DSNavItem.h"
 @interface DSNavigationBar : DSDataView
-@property (nonatomic, strong) UILabel *topTitleView;
 /**
  *    @brief    左导航按钮数据项.
  */
 @property (nonatomic, strong) DSBarButtonItem *leftBarButtonItem;
-@property (nonatomic, strong) DSBarButton *leftBarButton;
 /**
  *    @brief    右导航按钮数据项.
  */
@@ -31,4 +30,6 @@
 @property (nonatomic, strong) UIImage *bgImg;
 @property (nonatomic, strong) UIImageView *background;
 @property (nonatomic, strong) UIView *navigationBar;
+@property (nonatomic, strong) UILabel *topTitleView;
+@property (nonatomic, strong) DSBarButton *leftBarButton;
 @end

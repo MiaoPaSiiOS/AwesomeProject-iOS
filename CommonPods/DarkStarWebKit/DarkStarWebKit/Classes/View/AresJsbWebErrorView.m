@@ -71,7 +71,7 @@
         make.centerX.equalTo(self);
     }];
     
-    self.imageView.image = [UIImage ds_imageWithColor:[UIColor lightGrayColor]];
+    self.imageView.image = [DSHelper imageWithColor:[UIColor lightGrayColor]];
     self.titleLab.text = @"哎呀！暂无数据";
     self.subtitleLab.text = @"稍后再试试吧～";
 }
@@ -107,7 +107,7 @@
         make.size.mas_equalTo(CGSizeMake(130, 40));
     }];
     
-    self.imageView.image = [UIImage ds_imageWithColor:[UIColor lightGrayColor]];
+    self.imageView.image = [DSHelper imageWithColor:[UIColor lightGrayColor]];
     self.titleLab.text = @"哎呀！加载失败";
     self.subtitleLab.text = @"稍后再试试吧～";
 }
@@ -143,7 +143,7 @@
         make.size.mas_equalTo(CGSizeMake(130, 40));
     }];
     
-    self.imageView.image = [UIImage ds_imageWithColor:[UIColor lightGrayColor]];
+    self.imageView.image = [DSHelper imageWithColor:[UIColor lightGrayColor]];
     self.titleLab.text = @"哎呀！没信号了呢";
     self.subtitleLab.text = @"刷新一下试试吧～";
     

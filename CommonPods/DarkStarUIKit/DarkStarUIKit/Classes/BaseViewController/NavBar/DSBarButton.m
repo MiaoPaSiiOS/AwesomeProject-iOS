@@ -1,7 +1,7 @@
 
 #import "DSBarButton.h"
 #import "DSBarButtonItem.h"
-
+#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @implementation DSBarButton
 
 - (id)initWithFrame:(CGRect)frame

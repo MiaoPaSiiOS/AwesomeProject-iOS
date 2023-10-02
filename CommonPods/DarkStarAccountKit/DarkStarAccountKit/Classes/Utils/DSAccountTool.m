@@ -15,7 +15,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarAccountKit" inPod:@"DarkStarAccountKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarAccountKit" podName:@"DarkStarAccountKit"];
     });
     return bundle;
 }

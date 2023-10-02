@@ -15,7 +15,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarDownloadManagerKit" inPod:@"DarkStarDownloadManagerKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarDownloadManagerKit" podName:@"DarkStarDownloadManagerKit"];
     });
     return bundle;
 }

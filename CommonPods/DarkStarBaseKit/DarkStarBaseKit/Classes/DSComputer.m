@@ -342,6 +342,11 @@
     return UIEdgeInsetsInsetRect(rect, insets);
 }
 
+/// 以inset填充矩形框.
++(CGRect)CGRectFrameInset:(CGRect)rect insets:(UIEdgeInsets)insets {
+    return CGRectMake(insets.left, insets.top, rect.size.width - insets.left - insets.right, rect.size.height - insets.top - insets.bottom);
+}
+
 /// 传入size，返回一个x/y为0的CGRect
 +(CGRect)CGRectMakeWithSize:(CGSize)size {
     return CGRectMake(0, 0, size.width, size.height);

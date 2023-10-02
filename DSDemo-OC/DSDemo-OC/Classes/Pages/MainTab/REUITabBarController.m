@@ -160,8 +160,8 @@ typedef NS_ENUM(NSUInteger,MHTabBarItemTagType) {
      tabbar设置
      设置ShadowImage或者BackgroundImage后，UITabBarController中的子控制器的View的frame将不会占满全屏！！！
      */
-    [self.centerTabBar setShadowImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xEEEEEE"]]];
-    [self.centerTabBar setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xFFFFFF"]]];
+    [self.centerTabBar setShadowImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xEEEEEE"]]];
+    [self.centerTabBar setBackgroundImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xFFFFFF"]]];
     if (@available(iOS 13.0, *)) {
         self.centerTabBar.tintColor = MH_SelectedItemColor;
         self.centerTabBar.unselectedItemTintColor = MH_NormalItemColor;

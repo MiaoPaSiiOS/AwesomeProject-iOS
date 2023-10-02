@@ -49,7 +49,7 @@
     NSString *ext = name.pathExtension;
     if (ext.length == 0) ext = @"png";
     // 获取图片资源的路径
-    NSString *path = [[self bundle] pathForScaledResource:name ofType:ext];
+    NSString *path = [DSHelper pathForScaledResourceWithBundle:[self bundle] name:name ofType:ext];
     if (!path) return nil;
     image = [UIImage imageWithContentsOfFile:path];
     if (!image) return nil;
@@ -63,7 +63,7 @@
     if (image) return image;
     if (path.pathScale == 1) {
         // 查找 @2x @3x 的图片
-        NSArray *scales = [NSBundle preferredScales];
+        NSArray *scales = [DSHelper preferredScales];
         for (NSNumber *scale in scales) {
             image = [UIImage imageWithContentsOfFile:[path stringByAppendingPathScale:scale.floatValue]];
             if (image) break;

@@ -1,29 +1,29 @@
 
-#import "UIButton+DarkStarEnlarge.h"
+#import "UIButton+DarkStar.h"
 #import <objc/runtime.h>
 
-@implementation UIButton (DarkStarEnlarge)
+@implementation UIButton (DarkStar)
 #pragma mark - 点击范围放大
 static char topNameKey;
 static char rightNameKey;
 static char bottomNameKey;
 static char leftNameKey;
 
-- (void)setEnlargeEdge:(CGFloat)size {
+- (void)ds_setEnlargeEdge:(CGFloat)size {
     objc_setAssociatedObject(self, &topNameKey, [NSNumber numberWithFloat:size], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &rightNameKey, [NSNumber numberWithFloat:size], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &bottomNameKey, [NSNumber numberWithFloat:size], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &leftNameKey, [NSNumber numberWithFloat:size], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (void)setEnlargeEdgeWithTop:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom left:(CGFloat)left {
+- (void)ds_setEnlargeEdgeWithTop:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom left:(CGFloat)left {
     objc_setAssociatedObject(self, &topNameKey, [NSNumber numberWithFloat:top], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &rightNameKey, [NSNumber numberWithFloat:right], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &bottomNameKey, [NSNumber numberWithFloat:bottom], OBJC_ASSOCIATION_COPY_NONATOMIC);
     objc_setAssociatedObject(self, &leftNameKey, [NSNumber numberWithFloat:left], OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (CGRect)enlargedRect {
+- (CGRect)ds_enlargedRect {
     NSNumber* topEdge = objc_getAssociatedObject(self, &topNameKey);
     NSNumber* rightEdge = objc_getAssociatedObject(self, &rightNameKey);
     NSNumber* bottomEdge = objc_getAssociatedObject(self, &bottomNameKey);
@@ -39,7 +39,7 @@ static char leftNameKey;
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    CGRect rect = [self enlargedRect];
+    CGRect rect = [self ds_enlargedRect];
     if (CGRectEqualToRect(rect, self.bounds)) {
         return [super pointInside:point withEvent:event];
     }

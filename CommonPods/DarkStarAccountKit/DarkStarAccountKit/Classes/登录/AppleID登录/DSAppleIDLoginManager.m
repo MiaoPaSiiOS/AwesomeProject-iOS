@@ -72,9 +72,7 @@ API_AVAILABLE(ios(13.0))
             errorMsg = @"授权请求失败未知原因";
             break;
     }
-    [[DSHelper findTopViewController] ds_showAlertControllerWithTitle:nil message:errorMsg alertClick:^(NSInteger clickNumber) {
-        
-    }];
+    [DSHelper showAlertControllerWithTitle:nil message:errorMsg alertClick:nil];
 }
 
 - (nonnull ASPresentationAnchor)presentationAnchorForAuthorizationController:(nonnull ASAuthorizationController *)controller {
@@ -100,7 +98,7 @@ API_AVAILABLE(ios(13.0))
         if (response.error) {
             NSString *errorCode = [NSString stringWithFormat:@"%ld", (long)response.error.code];
             NSString *errorMsg = [NSString stringWithFormat:@"%@", response.error.localizedDescription];
-            [[DSHelper findTopViewController] ds_showAlertControllerWithTitle:nil message:[NSString stringWithFormat:@"%@(%@)",errorMsg,errorCode] alertClick:^(NSInteger clickNumber) {}];
+            [DSHelper showAlertControllerWithTitle:nil message:[NSString stringWithFormat:@"%@(%@)",errorMsg,errorCode] alertClick:nil];
 
         } else {
             if ([[responseDic objectForKey:@"bindAmen"] isEqualToString:@"true"]) { //Apple ID绑定账户

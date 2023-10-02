@@ -29,8 +29,8 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self.background ds_addGradientLayer:self.background.bounds withStartColor:self.startColor?self.startColor:[UIColor clearColor] withendColor:self.endColor?self.endColor:[UIColor clearColor] startPoint:self.startPoint endPoint:self.endPoint];
-    [self.background ds_addRectCornerWith:self.reCorner radius:self.reRadius];
+    [DSHelper addGradientLayerToView:self.background frame:self.background.bounds startColor:self.startColor?self.startColor:[UIColor clearColor] endColor:self.endColor?self.endColor:[UIColor clearColor] startPoint:self.startPoint endPoint:self.endPoint];
+    [DSHelper addCornerToView:self.background corner:self.reCorner radius:self.reRadius];
 }
 
 - (void)setReBackgroundColor:(UIColor *)reBackgroundColor {

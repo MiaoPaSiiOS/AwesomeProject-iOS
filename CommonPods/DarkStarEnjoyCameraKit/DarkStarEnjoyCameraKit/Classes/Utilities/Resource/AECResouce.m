@@ -14,7 +14,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarEnjoyCameraKit" inPod:@"DarkStarEnjoyCameraKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarEnjoyCameraKit" podName:@"DarkStarEnjoyCameraKit"];
     });
     return bundle;
 }
@@ -23,7 +23,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarEnjoyCameraKitExt" inPod:@"DarkStarEnjoyCameraKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarEnjoyCameraKitExt" podName:@"DarkStarEnjoyCameraKit"];
     });
     return bundle;
 }

@@ -66,7 +66,7 @@ static NSInteger const kOnePageCount = 20;
             NSNumber *num = [NSNumber numberWithString:_emoticon.code];
             NSString *str = [NSString stringWithUTF32Char:num.unsignedIntValue];
             if (str) {
-                UIImage *img = [UIImage imageWithEmoji:str size:_imageView.width];
+                UIImage *img = [DSHelper imageWithEmoji:str size:_imageView.width];
                 _imageView.image = img;
             }
         } else if (_emoticon.group.groupID && _emoticon.png){
@@ -229,7 +229,7 @@ static NSInteger const kOnePageCount = 20;
 - (void)startBackspaceTimer {
     [self endBackspaceTimer];
     kWeakSelf
-    _backspaceTimer = [NSTimer timerWithTimeInterval:0.1 block:^(NSTimer *timer) {
+    _backspaceTimer = [DSHelper timerWithTimeInterval:0.1 block:^(NSTimer *timer) {
         kStrongSelf
         if (!strongSelf) return;
         WBEmoticonCell *cell = strongSelf->_currentMagnifierCell;

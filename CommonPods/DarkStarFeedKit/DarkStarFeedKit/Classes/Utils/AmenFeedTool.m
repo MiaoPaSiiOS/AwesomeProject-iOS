@@ -15,7 +15,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarFeedKit" inPod:@"DarkStarFeedKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarFeedKit" podName:@"DarkStarFeedKit"];
     });
     return bundle;
 }
@@ -24,7 +24,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarFeedKit-Twitter" inPod:@"DarkStarFeedKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarFeedKit-Twitter" podName:@"DarkStarFeedKit"];
     });
     return bundle;
 }
@@ -33,7 +33,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarFeedKit-Weibo" inPod:@"DarkStarFeedKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarFeedKit-Weibo" podName:@"DarkStarFeedKit"];
     });
     return bundle;
 }

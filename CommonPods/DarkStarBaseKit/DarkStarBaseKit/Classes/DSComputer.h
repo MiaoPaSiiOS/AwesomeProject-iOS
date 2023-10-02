@@ -184,7 +184,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 为给定的rect往内部缩小insets的大小（系统那个方法的命名太难联想了，所以定义了一个新函数）
 +(CGRect)CGRectInsetEdges:(CGRect)rect insets:(UIEdgeInsets)insets;
-
+/// 以inset填充矩形框.
++(CGRect)CGRectFrameInset:(CGRect)rect insets:(UIEdgeInsets)insets;
 /// 传入size，返回一个x/y为0的CGRect
 +(CGRect)CGRectMakeWithSize:(CGSize)size;
 

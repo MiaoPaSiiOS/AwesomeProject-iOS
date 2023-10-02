@@ -10,12 +10,6 @@
 #import "DarkStarBaseKitDefines.h"
 #import "DarkStarCategorysHeader.h"
 
-
-#import "DSDataView.h"
-#import "DSNavItem.h"
-#import "DSItem.h"
-
-
 #import "DSHelper.h"
 #import "DSDeviceInfo.h"
 #import "DSComputer.h"

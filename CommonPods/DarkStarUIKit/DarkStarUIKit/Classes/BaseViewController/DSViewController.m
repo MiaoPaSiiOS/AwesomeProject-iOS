@@ -6,9 +6,6 @@
 //
 
 #import "DSViewController.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
-#import <Masonry/Masonry.h>
-#import <DarkStarBaseKit/DarkStarBaseKit.h>
 @interface DSViewController ()
 @property(nonatomic, strong, readwrite) DSNavigationBar *appBar;
 @end

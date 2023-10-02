@@ -17,5 +17,7 @@
 #import "DSListCollectionView.h"
 #import "DSListTabView.h"
 
-
+#import "DSDataView.h"
+#import "DSNavItem.h"
+#import "DSItem.h"
 #endif /* DarkStarUIKit_h */

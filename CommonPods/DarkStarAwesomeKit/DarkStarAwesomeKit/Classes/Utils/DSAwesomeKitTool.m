@@ -14,7 +14,7 @@
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        bundle = [NSBundle ds_bundleName:@"DarkStarAwesomeKit" inPod:@"DarkStarAwesomeKit"];
+        bundle = [DSHelper findBundleWithBundleName:@"DarkStarAwesomeKit" podName:@"DarkStarAwesomeKit"];
     });
     return bundle;
 }
@@ -33,7 +33,7 @@
     if (ext.length == 0) ext = @"png";
     NSString *path;
     if ([ext isEqualToString:@"png"]) {
-        path = [[self AssetsBundle] pathForScaledResource:name ofType:ext inDirectory:subpath];
+        path = [DSHelper pathForScaledResourceWithBundle:[self AssetsBundle] name:name ofType:ext inDirectory:subpath];
     } else {
         // 获取文件名（不包括扩展名）
         NSString *imageName = [name stringByDeletingPathExtension];
@@ -51,7 +51,7 @@
     if (ext.length == 0) ext = @"png";
     NSString *path;
     if ([ext isEqualToString:@"png"]) {
-        path = [[self AssetsBundle] pathForScaledResource:name ofType:ext inDirectory:subpath];
+        path = [DSHelper pathForScaledResourceWithBundle:[self AssetsBundle] name:name ofType:ext inDirectory:subpath];
     } else {
         // 获取文件名（不包括扩展名）
         NSString *imageName = [name stringByDeletingPathExtension];

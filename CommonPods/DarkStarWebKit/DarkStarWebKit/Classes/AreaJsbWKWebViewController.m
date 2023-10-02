@@ -176,7 +176,8 @@
 
 // Alert Method
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    [self ds_showAlertControllerWithTitle:nil message:message buttonTitles:@[@"确定"] alertClick:^(NSInteger clickNumber) {
+    
+    [DSHelper showAlertControllerWithTitle:nil message:message buttonTitles:@[@"确定"] alertClick:^(int clickNumber) {
         
     }];
     completionHandler();
@@ -184,7 +185,7 @@
 
 // Confirm Panel Method
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler {
-    [self ds_showAlertControllerWithTitle:nil message:message buttonTitles:@[@"取消", @"确定"] alertClick:^(NSInteger clickNumber) {
+    [DSHelper showAlertControllerWithTitle:nil message:message buttonTitles:@[@"取消", @"确定"] alertClick:^(int clickNumber) {
         if (0 == clickNumber) {
             completionHandler(NO);
         } else if (1 == clickNumber) {
@@ -519,7 +520,7 @@
         if (![DSWebKitGlobal DomainFlag:strUrl]) {
             [mStr appendString:@", 该链接不在白名单中"];
         }
-        [self ds_showAlertControllerWithTitle:nil message:mStr.copy buttonTitles:array alertClick:^(NSInteger clickNumber) {
+        [DSHelper showAlertControllerWithTitle:nil message:mStr.copy buttonTitles:array alertClick:^(int clickNumber) {
             [self clearInterceptInfo];
             if (clickNumber == 1) {
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:strUrl]];
@@ -599,14 +600,14 @@
 }
 
 - (void)userDidTakeScreenshot {
-    [self ds_showAlertControllerWithTitle:@"温馨提示" message:@"为保护个人信息安全，请勿分享截屏" buttonTitles:@[@"确定"] alertClick:nil];
+    [DSHelper showAlertControllerWithTitle:@"温馨提示" message:@"为保护个人信息安全，请勿分享截屏" buttonTitles:@[@"确定"] alertClick:nil];
 }
 
 - (void)tipsVideoRecord {
     if (@available(iOS 11.0,*)) {
         UIScreen * sc = [UIScreen mainScreen];
         if (sc.isCaptured) {
-            [self ds_showAlertControllerWithTitle:@"温馨提示" message:@"为保护个人信息安全，请勿录屏" buttonTitles:@[@"确定"] alertClick:nil];
+            [DSHelper showAlertControllerWithTitle:@"温馨提示" message:@"为保护个人信息安全，请勿录屏" buttonTitles:@[@"确定"] alertClick:nil];
         }
     }
 }

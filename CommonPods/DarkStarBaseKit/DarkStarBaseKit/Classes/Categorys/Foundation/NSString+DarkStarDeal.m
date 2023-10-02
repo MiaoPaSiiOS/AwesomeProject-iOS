@@ -6,9 +6,8 @@
 //
 
 #import "NSString+DarkStarDeal.h"
-#import "NSString+DarkStarValid.h"
 #import <CommonCrypto/CommonDigest.h>
-
+#import "DSHelper.h"
 @implementation NSString (DarkStarDeal)
 #pragma mark - 空格处理
 - (NSString *)ds_removeBothEndsWhitespace {
@@ -129,7 +128,7 @@
 
 #pragma mark - 金额处理
 - (NSString *)ds_transformToMoneyType {
-    if (![NSString ds_isEmpty:self]) {
+    if (![DSHelper checkIsEmpty:self]) {
         NSString *string = (NSString *)self;
         if ([string containsString:@","]) {
             string = [string stringByReplacingOccurrencesOfString:@"," withString:@""];

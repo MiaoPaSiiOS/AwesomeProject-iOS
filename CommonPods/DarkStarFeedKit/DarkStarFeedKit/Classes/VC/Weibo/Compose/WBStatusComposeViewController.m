@@ -158,8 +158,8 @@
     [_toolbarPOIButton setTitle:@"显示位置 " forState:UIControlStateNormal];
     [_toolbarPOIButton setTitleColor:[DSHelper colorWithHexString:@"0x939393"] forState:UIControlStateNormal];
     [_toolbarPOIButton setImage:[WBStatusHelper imageNamed:@"compose_locatebutton_ready"] forState:UIControlStateNormal];
-    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
-    [_toolbarPOIButton setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
+    [_toolbarPOIButton setBackgroundImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
+    [_toolbarPOIButton setBackgroundImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
     [_toolbar addSubview:_toolbarPOIButton];
     
     _toolbarGroupButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -176,8 +176,8 @@
     [_toolbarGroupButton setTitle:@"公开 " forState:UIControlStateNormal];
     [_toolbarGroupButton setTitleColor:[DSHelper colorWithHexString:@"0x527ead"] forState:UIControlStateNormal];
     [_toolbarGroupButton setImage:[WBStatusHelper imageNamed:@"compose_publicbutton"] forState:UIControlStateNormal];
-    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
-    [_toolbarGroupButton setBackgroundImage:[UIImage ds_imageWithColor:[DSHelper colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
+    [_toolbarGroupButton setBackgroundImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xf8f8f8"]] forState:UIControlStateNormal];
+    [_toolbarGroupButton setBackgroundImage:[DSHelper imageWithColor:[DSHelper colorWithHexString:@"0xe0e0e0"]] forState:UIControlStateHighlighted];
     [_toolbar addSubview:_toolbarGroupButton];
     
     _toolbarPictureButton = [self _toolbarButtonWithImage:@"compose_toolbar_picture"
@@ -327,8 +327,8 @@
         _navbarPublishButton.titleLabel.font = [UIFont systemFontOfSize:16];
         [_navbarPublishButton setTitle:@"发布" forState:UIControlStateNormal];
         [_navbarPublishButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_navbarPublishButton setBackgroundImage:[UIImage ds_imageWithColor:UIColor.orangeColor] forState:UIControlStateNormal];
-        [_navbarPublishButton setBackgroundImage:[UIImage ds_imageWithColor:UIColor.orangeColor] forState:UIControlStateHighlighted];
+        [_navbarPublishButton setBackgroundImage:[DSHelper imageWithColor:UIColor.orangeColor] forState:UIControlStateNormal];
+        [_navbarPublishButton setBackgroundImage:[DSHelper imageWithColor:UIColor.orangeColor] forState:UIControlStateHighlighted];
         [_navbarPublishButton addTarget:self action:@selector(clicknavbarPublishButton) forControlEvents:UIControlEventTouchUpInside];
     }
     return _navbarPublishButton;

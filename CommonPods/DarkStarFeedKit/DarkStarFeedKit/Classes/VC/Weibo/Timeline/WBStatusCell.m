@@ -297,19 +297,19 @@
     _repostButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _repostButton.exclusiveTouch = YES;
     _repostButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
-    [_repostButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
+    [_repostButton setBackgroundImage:[DSHelper imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _commentButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _commentButton.exclusiveTouch = YES;
     _commentButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
     _commentButton.left = [DSComputer CGFloatPixelRound:(self.width / 3.0)];
-    [_commentButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
+    [_commentButton setBackgroundImage:[DSHelper imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _likeButton.exclusiveTouch = YES;
     _likeButton.size = CGSizeMake([DSComputer CGFloatPixelRound:(self.width / 3.0)], self.height);
     _likeButton.left = [DSComputer CGFloatPixelRound:(self.width / 3.0 * 2.0)];
-    [_likeButton setBackgroundImage:[UIImage ds_imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
+    [_likeButton setBackgroundImage:[DSHelper imageWithColor:kWBCellHighlightColor] forState:UIControlStateHighlighted];
     
     _repostImageView = [[UIImageView alloc] initWithImage:[WBStatusHelper imageNamed:@"timeline_icon_retweet"]];
     _repostImageView.centerY = self.height / 2;
@@ -518,8 +518,8 @@
     self = [super initWithFrame:frame];
     kWeakSelf
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_button setBackgroundImage:[UIImage ds_imageWithColor:kWBCellBackgroundColor] forState:UIControlStateNormal];
-    [_button setBackgroundImage:[UIImage ds_imageWithColor:[UIColor colorWithWhite:0.000 alpha:0.200]] forState:UIControlStateHighlighted];
+    [_button setBackgroundImage:[DSHelper imageWithColor:kWBCellBackgroundColor] forState:UIControlStateNormal];
+    [_button setBackgroundImage:[DSHelper imageWithColor:[UIColor colorWithWhite:0.000 alpha:0.200]] forState:UIControlStateHighlighted];
     [_button addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
         kStrongSelf
         if ([strongSelf.cell.delegate respondsToSelector:@selector(cellDidClickTag:)]) {
@@ -604,13 +604,13 @@
     static UIImage *topLineBG, *bottomLineBG;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        topLineBG = [UIImage ds_imageWithSize:CGSizeMake(1, 3) drawBlock:^(CGContextRef context) {
+        topLineBG = [DSHelper imageWithSize:CGSizeMake(1, 3) drawBlock:^(CGContextRef context) {
             CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
             CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0.8, [UIColor colorWithWhite:0 alpha:0.08].CGColor);
             CGContextAddRect(context, CGRectMake(-2, 3, 4, 4));
             CGContextFillPath(context);
         }];
-        bottomLineBG = [UIImage ds_imageWithSize:CGSizeMake(1, 3) drawBlock:^(CGContextRef context) {
+        bottomLineBG = [DSHelper imageWithSize:CGSizeMake(1, 3) drawBlock:^(CGContextRef context) {
             CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
             CGContextSetShadowWithColor(context, CGSizeMake(0, 0.4), 2, [UIColor colorWithWhite:0 alpha:0.08].CGColor);
             CGContextAddRect(context, CGRectMake(-2, -2, 4, 2));
@@ -767,7 +767,7 @@
     /// 圆角头像
     [_profileView.avatarView sd_setImageWithURL:layout.status.user.avatarLarge completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         if (image) {
-            self->_profileView.avatarView.image =  [image ds_imageByRoundCornerRadius:100]; // a large value
+            self->_profileView.avatarView.image =  [DSHelper image:image radius:100]; // a large value
         }
     }];
 

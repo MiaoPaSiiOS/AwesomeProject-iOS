@@ -224,7 +224,7 @@
 
 #pragma mark - 判定设备类型是iPhone 5s以上
 + (BOOL)judueIPhonePlatformSupportTouchID:(NSInteger)supportPlatform {
-    if ([UIDevice ds_isIPhone]) {
+    if ([DSDeviceInfo isIPhone]) {
         if ([self platform].length > 6) {
             NSArray *arr = [[self platform] componentsSeparatedByString:@"iPhone"];
             NSString *str = arr.lastObject;
