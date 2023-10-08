@@ -37,7 +37,7 @@ static NSString *kBCMMyApplicationKey = @"PNCMyApplicationKey";
     } else {
         SDMajletModel *myApply = [SDMajletModel mj_objectWithKeyValues:@{
             @"code": @"-10000",
-            @"childApplications": @[],
+            @"child": @[],
         }];
         return myApply;
     }
@@ -46,7 +46,7 @@ static NSString *kBCMMyApplicationKey = @"PNCMyApplicationKey";
 /// 是否存在本地应用
 + (BOOL)hasMyApplicationInfo {
     SDMajletModel *myApply = [self createMyApplyModel];
-    if (![DSHelper isArrayEmptyOrNil:(myApply.childApplications)]) {
+    if (![DSHelper isArrayEmptyOrNil:(myApply.child)]) {
         return YES;
     } else {
         return NO;
@@ -59,13 +59,13 @@ static NSString *kBCMMyApplicationKey = @"PNCMyApplicationKey";
         SDMajletModel *group = [SDMajletModel mj_objectWithKeyValues:@{}];
         group.code = [NSString stringWithFormat:@"group-%d",i];
         group.name = [NSString stringWithFormat:@"组-%d",i];
-        group.childApplications = @[].mutableCopy;
+        group.child = @[].mutableCopy;
         NSInteger randomValue = [DSHelper getRandomNumber:3 max:15];
         for (NSInteger i = 0; i < randomValue; i++) {
             SDMajletModel *item = [SDMajletModel mj_objectWithKeyValues:@{}];
             item.code = [NSString stringWithFormat:@"item-%ld",(long)i];
             item.name = [NSString stringWithFormat:@"子选项-%ld",(long)i];
-            [group.childApplications addObject:item];
+            [group.child addObject:item];
         }
         [LIST addObject:group];
     }

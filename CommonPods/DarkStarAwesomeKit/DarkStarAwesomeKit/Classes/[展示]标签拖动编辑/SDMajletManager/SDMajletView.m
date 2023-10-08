@@ -255,10 +255,10 @@ SDMajletViewCollectionViewFlowLayoutDelegate
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     SDMajletModel *group = self.dataArray[section];
-    if ([DSHelper isArrayEmptyOrNil:(group.childApplications)]) {
+    if ([DSHelper isArrayEmptyOrNil:(group.child)]) {
         return 1;
     }
-    return group.childApplications.count;
+    return group.child.count;
 }
 
 -(UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -298,8 +298,8 @@ SDMajletViewCollectionViewFlowLayoutDelegate
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section < self.dataArray.count) {
         SDMajletModel *group = self.dataArray[indexPath.section];
-        if (indexPath.item < group.childApplications.count) {
-            SDMajletModel *itemModel = group.childApplications[indexPath.row];
+        if (indexPath.item < group.child.count) {
+            SDMajletModel *itemModel = group.child[indexPath.row];
             static NSString *cellID = @"SDMajletCell";
             SDMajletCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
             cell.font = 12;
@@ -340,25 +340,25 @@ SDMajletViewCollectionViewFlowLayoutDelegate
     } else {
         SDMajletModel *first_group = self.dataArray[0];
         SDMajletModel *group = self.dataArray[indexPath.section];
-        if ([DSHelper isArrayEmptyOrNil:(group.childApplications)]) {
+        if ([DSHelper isArrayEmptyOrNil:(group.child)]) {
             return;;
         }
-        SDMajletModel *itemModel = group.childApplications[indexPath.item];
+        SDMajletModel *itemModel = group.child[indexPath.item];
         if (indexPath.section == 0) {
 //            //只剩一个的时候不可删除
 //            if ([_collectionView numberOfItemsInSection:0] == 1) {
 //                return;
 //            }
-            [group.childApplications removeObject:itemModel];
+            [group.child removeObject:itemModel];
             [_collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
            
         } else {
-            if (first_group.childApplications.count >= 10) {
+            if (first_group.child.count >= 10) {
                 [DSHelper showAlertControllerWithTitle:nil message:@"最多添加10个常用功能" alertClick:nil];
                 return;
             }
             if (![self hasContainsObject:itemModel]) {
-                [first_group.childApplications  addObject:itemModel];
+                [first_group.child  addObject:itemModel];
                 [_collectionView reloadSections:[NSIndexSet indexSetWithIndex:0] ];
             } else {
                 [DSHelper showAlertControllerWithTitle:nil message:@"该功能已加入到常用应用" alertClick:nil];
@@ -375,8 +375,8 @@ SDMajletViewCollectionViewFlowLayoutDelegate
     BOOL has = NO;
     if (![DSHelper isArrayEmptyOrNil:(self.dataArray)]) {
         SDMajletModel *first_group = self.dataArray[0];
-        if (![DSHelper isArrayEmptyOrNil:(first_group.childApplications)]) {
-            for (SDMajletModel *subItem in first_group.childApplications) {
+        if (![DSHelper isArrayEmptyOrNil:(first_group.child)]) {
+            for (SDMajletModel *subItem in first_group.child) {
                 if ([model.code isEqualToString:subItem.code]) {
                     has = YES;
                 }
@@ -391,9 +391,9 @@ SDMajletViewCollectionViewFlowLayoutDelegate
 -(void)uplogadInusesTitles{
     NSInteger section = _dragingFromindexPath.section;
     SDMajletModel *group = self.dataArray[section];
-    id obj = [group.childApplications objectAtIndex:_dragingFromindexPath.row];
-    [group.childApplications removeObject:obj];
-    [group.childApplications insertObject:obj atIndex:_dragingToindexPaht.row];
+    id obj = [group.child objectAtIndex:_dragingFromindexPath.row];
+    [group.child removeObject:obj];
+    [group.child insertObject:obj atIndex:_dragingToindexPaht.row];
 }
 
 

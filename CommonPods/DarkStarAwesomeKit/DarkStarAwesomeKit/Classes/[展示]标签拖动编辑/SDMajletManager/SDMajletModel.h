@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) NSString *name;
 @property(nonatomic, copy) NSString *icon;
 @property(nonatomic, copy) NSString *code;
-@property(nonatomic, strong) NSMutableArray *childApplications;
+@property(nonatomic, strong) NSMutableArray *child;
 @property(nonatomic, assign) BOOL edit;
 
 @end
@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_END
  {
      "code": "0",
      "data": [{
-         "childApplications": [{
+         "child": [{
              "code": "100100",
              "icon": "https://wuliangye-jxc.obs.png",
              "name": "开单收银",

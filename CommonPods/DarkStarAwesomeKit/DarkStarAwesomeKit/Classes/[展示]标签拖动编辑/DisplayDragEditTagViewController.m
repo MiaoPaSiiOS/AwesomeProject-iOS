@@ -85,8 +85,8 @@
 - (void)handleDidSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section < self.collectionView.dataArray.count) {
         SDMajletModel *group = self.collectionView.dataArray[indexPath.section];
-        if (indexPath.item < group.childApplications.count) {
-            SDMajletModel *itemModel = group.childApplications[indexPath.row];
+        if (indexPath.item < group.child.count) {
+            SDMajletModel *itemModel = group.child[indexPath.row];
             NSLog(@"%@",itemModel);
         }
     }

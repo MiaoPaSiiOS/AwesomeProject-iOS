@@ -22,7 +22,7 @@
 }
 
 + (NSDictionary *)mj_objectClassInArray {
-    return @{@"childApplications":[SDMajletModel class]};
+    return @{@"child":[SDMajletModel class]};
 }
 
 
