@@ -25,6 +25,7 @@
 #import "UIView+DarkStarGlowView.h"
 #import "UIView+DarkStarShake.h"
 #import "UIControl+DarkStar.h"
+#import "UIImagePickerController+DarkStar.h"
 
 
 #endif /* DarkStarCategorysHeader_h */
