@@ -126,9 +126,7 @@
     [_topView setCenterX:self.navigationBar.centerX];
     [_topTitleView setFrame:[DSComputer CGRectFrameInset:_topView.frame insets:self.inset]];
     [_topImageView setFrame:[DSComputer CGRectFrameInset:_topView.frame insets:self.inset]];
-    
-    _topView.layer.borderColor = [UIColor redColor].CGColor;
-    _topView.layer.borderWidth = 2;
+
     
     
     //  设置标题视图

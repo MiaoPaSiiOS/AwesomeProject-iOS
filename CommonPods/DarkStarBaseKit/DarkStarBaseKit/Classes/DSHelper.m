@@ -1547,6 +1547,18 @@
     return [NSString stringWithFormat:@"%.1fB", number / 1000.0 / 1000.0 / 1000.0];
 }
 
++ (NSInteger)getRandomNumber:(NSInteger)min max:(NSInteger)max {
+    // 确保最小值不大于最大值
+    if (min > max) {
+        NSInteger temp = min;
+        min = max;
+        max = temp;
+    }
+    
+    // 计算范围内的随机数
+    NSInteger randomNumber = min + arc4random_uniform((uint32_t)(max - min + 1));
+    return randomNumber;
+}
 @end
 
 

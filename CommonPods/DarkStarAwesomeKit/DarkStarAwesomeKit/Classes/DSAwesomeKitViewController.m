@@ -133,7 +133,11 @@
             @"classStr":@"DisplayFSCalendarUseViewController",
             @"extParmers":@{}
         },
-        
+        @{
+            @"title":@"[展示]标签拖动编辑",
+            @"classStr":@"DisplayDragEditTagViewController",
+            @"extParmers":@{}
+        },
     ]];
     
 }

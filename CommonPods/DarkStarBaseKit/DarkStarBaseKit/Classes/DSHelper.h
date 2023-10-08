@@ -404,4 +404,9 @@ typedef id   (^IUIDBlock_id)  (id);
 /// 日期转换（类似朋友圈）
 /// @param date date description
 + (NSString *)stringWithTimelineDate:(NSDate *)date;
+
+#pragma mark - ???
++ (NSString *)shortedNumberDesc:(NSUInteger)number;
+/// 生成 [min, max] 区间的随机数
++ (NSInteger)getRandomNumber:(NSInteger)min max:(NSInteger)max;
 @end
