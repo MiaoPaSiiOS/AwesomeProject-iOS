@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '10.0'
+ platform :ios, '11.0'
 
 
 workspace 'DSDemo.xcworkspace' 
@@ -70,3 +70,13 @@ target 'DSDemo-Swift' do
 
 end
 
+
+# 当我们升级XCode到14.3之后，我们原先的工程，引入的一些pod库，可能就会报一些签名错误
+# 在Podfile脚本中设置CODE_SIGN_IDENTITY为空来避免报错
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['CODE_SIGN_IDENTITY'] = ''
+    end
+  end
+end

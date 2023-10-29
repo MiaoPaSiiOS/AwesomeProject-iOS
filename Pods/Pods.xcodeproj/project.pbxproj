@@ -27459,6 +27459,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56E66A77E7E4DCCB83E869BB343D92AB /* SDWebImageWebPCoder.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27489,47 +27490,11 @@
 			};
 			name = Release;
 		};
-		00B748DD215935FDD77FE1E40C266BB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8D3AB0F7E0A7CBF000EFFAA26594BDB /* Pods-DSDemo-OC.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		02477400351A0DFFF22FF70E276D939A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 776A41730F9757E3DDBCD1A3B11F8AEA /* TZImagePickerController-framework.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27564,6 +27529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-QQ-DarkStarFeedKit-Info.plist";
@@ -27580,6 +27546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC41795C55CA416490D1996A5C3683D2 /* DarkStarResourceKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarResourceKit";
 				IBSC_MODULE = DarkStarResourceKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarResourceKit/ResourceBundle-DarkStarResourceKit-Ext-DarkStarResourceKit-Info.plist";
@@ -27596,6 +27563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 543202EF993E2633FBBBEEB0391CD155 /* DateToolsSwift.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27620,6 +27588,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98BB8A0292E0CE5E511BDC45AF82B306 /* GPUImage.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27654,6 +27623,7 @@
 			baseConfigurationReference = 374A0A58605ABFB86F348B3B3A137E6D /* SnapKit-framework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27688,6 +27658,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88C4FF15761061D1C74D1A29DAF92B43 /* DarkStarEnjoyCameraKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarEnjoyCameraKit";
 				IBSC_MODULE = DarkStarEnjoyCameraKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarEnjoyCameraKit/ResourceBundle-DarkStarEnjoyCameraKitExt-DarkStarEnjoyCameraKit-Info.plist";
@@ -27704,6 +27675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFE6E071C7B255DCA0328C247F526BE7 /* YYModel.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27738,6 +27710,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BE4A70520806178CA3017965F0F2D23 /* lottie-ios-framework.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27773,6 +27746,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E3EA38F754212AD9C99144DA94988DD /* SSZipArchive.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27806,6 +27780,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A9625ED268575D655BA132C50D8BE04 /* DarkStarResourceKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarResourceKit";
 				IBSC_MODULE = DarkStarResourceKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarResourceKit/ResourceBundle-DarkStarResourceKit-Ext-DarkStarResourceKit-Info.plist";
@@ -27823,6 +27798,7 @@
 			baseConfigurationReference = ECFD160F208FFFFC174021E50A049665 /* DarkStarGrayViewKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27857,6 +27833,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 233DEFDE6DF1C81AE384D2DC37E30C0F /* DarkStarAccountKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAccountKit";
 				IBSC_MODULE = DarkStarAccountKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAccountKit/ResourceBundle-DarkStarAccountKit-DarkStarAccountKit-Info.plist";
@@ -27873,6 +27850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24D310247A06D746FEC1F076793F0B86 /* DarkStarWebKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarWebKit";
 				IBSC_MODULE = DarkStarWebKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarWebKit/ResourceBundle-DarkStarWebKit-Ext-DarkStarWebKit-Info.plist";
@@ -27890,6 +27868,7 @@
 			baseConfigurationReference = 92BF458F6BED08665DCE44EFA8DEB784 /* DarkStarGrayViewKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27924,6 +27903,7 @@
 			baseConfigurationReference = B700F0E521AB4435409AC7E15BFB9C24 /* DarkStarConfiguration.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27957,6 +27937,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA7E55DF5CB19B1657508F89469B7D5B /* FMDB.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -27991,6 +27972,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1BC37B28813586622486FCE926E5D3D /* libwebp.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28025,6 +28007,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9729DCEEF186D1C22368E5972963E37 /* RegExCategories.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28059,6 +28042,7 @@
 			baseConfigurationReference = FC41795C55CA416490D1996A5C3683D2 /* DarkStarResourceKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28093,6 +28077,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D75F5A655C2CC4DE22FFA4DD90B1D8DA /* iCarousel.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28126,6 +28111,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A4F74D069F4352273CEC8432323B198 /* DarkStarDownloadManagerKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
 				IBSC_MODULE = DarkStarDownloadManagerKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-Ext-DarkStarDownloadManagerKit-Info.plist";
@@ -28142,6 +28128,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D2D824083F2CEFB15AB507FB3E70C9B /* YYText.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28175,6 +28162,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A617D2F68C0C1631CF635BBF3FA81DB2 /* pop.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28209,6 +28197,7 @@
 			baseConfigurationReference = 5302A220E627A4E72BD576FC5209E2C3 /* DarkStarPhotoBrowserKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28243,6 +28232,7 @@
 			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28278,6 +28268,7 @@
 			baseConfigurationReference = 5A9625ED268575D655BA132C50D8BE04 /* DarkStarResourceKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28311,6 +28302,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9DB6DDF5B04A5567CB6568D2013D3A1 /* DoraemonKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DoraemonKit";
 				IBSC_MODULE = DoraemonKit;
 				INFOPLIST_FILE = "Target Support Files/DoraemonKit/ResourceBundle-DoraemonKit-DoraemonKit-Info.plist";
@@ -28327,6 +28319,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FD7BDD264EF58330C8758E6C68D36A0 /* TOCropViewController.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28361,6 +28354,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 621F6E86C675656A9D00865FDFAFD629 /* SDWebImage.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28394,6 +28388,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E9B745DBDCB9D91D0EE99BF63A5B920 /* libwebp.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28427,6 +28422,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 755D63F4FB66E42F27633A628466F6FE /* SIAlertView.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28460,6 +28456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06F8DA964323BD4EFDC0E915D7AC408D /* DarkStarUIComponents.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
 				IBSC_MODULE = DarkStarUIComponents;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrSRSTextFieldAssets-DarkStarUIComponents-Info.plist";
@@ -28477,6 +28474,7 @@
 			baseConfigurationReference = F6CD6AE6D5C9EFC4279713121908980E /* DarkStarAwesomeKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28512,6 +28510,7 @@
 			baseConfigurationReference = 69CABA42554A92E296D847D7D1EAFE85 /* DarkStarUpdateSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28545,6 +28544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78DC7C248746F9AC1C17114C93D398EC /* JXCategoryView.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28580,6 +28580,7 @@
 			baseConfigurationReference = 3E229E3D44929C006AD9BBEA539BEE8E /* DarkStarUpdateSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28614,6 +28615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CFE8CAF32FB53A737A8C9BCB5FDAD98 /* MJExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28648,6 +28650,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22F877EC7C9BACA4F0ABE14259A6F3EB /* DarkStarWebKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarWebKit";
 				IBSC_MODULE = DarkStarWebKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarWebKit/ResourceBundle-DarkStarWebKit-Ext-DarkStarWebKit-Info.plist";
@@ -28665,6 +28668,7 @@
 			baseConfigurationReference = 2AAD935AEEC5A8EE71975DFAA9F179A7 /* DarkStarShootVideoKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28699,6 +28703,7 @@
 			baseConfigurationReference = 88C4FF15761061D1C74D1A29DAF92B43 /* DarkStarEnjoyCameraKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28732,6 +28737,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AB8E4F45015C72C12E88523BD36CBC1 /* GCDWebServer.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28766,6 +28772,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEAB2D4B0EADB7576B082F39507D92CD /* lottie-ios-framework.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28801,6 +28808,7 @@
 			baseConfigurationReference = E1E5E9B17AE999127367B318D3A0F86E /* DarkStarAudioRecorderKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28836,6 +28844,7 @@
 			baseConfigurationReference = 756E1B28E2281D23CEE0D56617716631 /* DarkStarBaseKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28871,6 +28880,7 @@
 			baseConfigurationReference = 24D310247A06D746FEC1F076793F0B86 /* DarkStarWebKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28905,6 +28915,7 @@
 			baseConfigurationReference = F883800C15F576ACF862E936AB2D263D /* NrLottieBridge.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28941,6 +28952,7 @@
 			baseConfigurationReference = 79205CB3BB43DAFE8C94BC4005C6BF5F /* DarkStarScanKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -28975,6 +28987,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABBB215E9A1F5C1389D1C3CF0FFC22AC /* lottie-ios-library.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29000,6 +29013,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A9625ED268575D655BA132C50D8BE04 /* DarkStarResourceKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarResourceKit";
 				IBSC_MODULE = DarkStarResourceKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarResourceKit/ResourceBundle-DarkStarResourceKit-DarkStarResourceKit-Info.plist";
@@ -29016,6 +29030,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-Twitter-DarkStarFeedKit-Info.plist";
@@ -29032,6 +29047,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C7FA1256D8255356E74C95DF8E08BC0 /* DarkStarAwesomeKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAwesomeKit";
 				IBSC_MODULE = DarkStarAwesomeKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/ResourceBundle-DarkStarAwesomeKit-Ext-DarkStarAwesomeKit-Info.plist";
@@ -29048,6 +29064,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC098FE282AC9C25722A01CF78D57241 /* Masonry.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29082,6 +29099,7 @@
 			baseConfigurationReference = CE243D494249CA748320E736C722C246 /* SnapKit-library.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29106,6 +29124,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C17D181D329A1CFD9A158C9713556D5 /* TTTAttributedLabel.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29140,6 +29159,7 @@
 			baseConfigurationReference = F6CDC9213D224D55286E2A2837B9AEAA /* DarkStarUIComponents.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29175,6 +29195,7 @@
 			baseConfigurationReference = F9FBA8FECA3F0F8687D182EA6E361C27 /* DarkStarPhotoBrowserKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29209,6 +29230,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298631E885688616BA910BC5E7C1327A /* DarkStarEnjoyCameraKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarEnjoyCameraKit";
 				IBSC_MODULE = DarkStarEnjoyCameraKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarEnjoyCameraKit/ResourceBundle-DarkStarEnjoyCameraKitExt-DarkStarEnjoyCameraKit-Info.plist";
@@ -29225,6 +29247,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6CD6AE6D5C9EFC4279713121908980E /* DarkStarAwesomeKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAwesomeKit";
 				IBSC_MODULE = DarkStarAwesomeKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/ResourceBundle-DarkStarAwesomeKit-Ext-DarkStarAwesomeKit-Info.plist";
@@ -29241,6 +29264,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71E20FF0FEF6FA4D4576E7B82F063BE3 /* lottie-ios-library.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29265,6 +29289,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69F0FE9470A2D4DF466EA91F89FB6EB5 /* DarkStarKeepAliveManager.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarKeepAliveManager";
 				IBSC_MODULE = DarkStarKeepAliveManager;
 				INFOPLIST_FILE = "Target Support Files/DarkStarKeepAliveManager/ResourceBundle-DarkStarKeepAliveManager-DarkStarKeepAliveManager-Info.plist";
@@ -29281,6 +29306,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6CDC9213D224D55286E2A2837B9AEAA /* DarkStarUIComponents.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
 				IBSC_MODULE = DarkStarUIComponents;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrFloatAssets-DarkStarUIComponents-Info.plist";
@@ -29298,6 +29324,7 @@
 			baseConfigurationReference = 3B348225A7739BE2086018DCDE6AA1E6 /* DarkStarAudioRecorderKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29331,6 +29358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-DarkStarFeedKit-Info.plist";
@@ -29347,6 +29375,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E229E3D44929C006AD9BBEA539BEE8E /* DarkStarUpdateSDK.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUpdateSDK";
 				IBSC_MODULE = DarkStarUpdateSDK;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUpdateSDK/ResourceBundle-DarkStarUpdateSDK-DarkStarUpdateSDK-Info.plist";
@@ -29363,6 +29392,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFCCCABC243B7615C508B95DFB44F481 /* FMDB.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29396,6 +29426,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06F8DA964323BD4EFDC0E915D7AC408D /* DarkStarUIComponents.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
 				IBSC_MODULE = DarkStarUIComponents;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrDialogMultiChoiceAssets-DarkStarUIComponents-Info.plist";
@@ -29408,32 +29439,11 @@
 			};
 			name = Debug;
 		};
-		5916DD85EC527E8C23BA5C6448304863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1A0B0F93264FA073C8B2C45599D10E3 /* Pods-DSDemo-Swift.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		5C2FB465920FF6F76B7257517FD94BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7F0C70276725D5B128F9E8838EA76A0 /* YYImage.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29467,6 +29477,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D3301305383CC27F4F891BF960FEA09 /* GCDWebServer.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29501,6 +29512,7 @@
 			baseConfigurationReference = 5CD58D0ED822426407C101C92BA7DF46 /* NrLottieBridge.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29536,6 +29548,7 @@
 			baseConfigurationReference = 77B6E9026F16F024EB2748220175C46D /* DarkStarQMUI.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29571,6 +29584,7 @@
 			baseConfigurationReference = C38D940F29FAA95E4CA490BA444057BD /* DarkStarDataStoreKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29605,6 +29619,7 @@
 			baseConfigurationReference = D48444E57A68E22CD8C81F2B6C45E8F8 /* DarkStarNetWorkKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29638,6 +29653,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A300B0B3C84C57D47F6D16697D1C4D4 /* CryptoSwift.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29663,6 +29679,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C77857013AECDA609FFEA5996D7A4EC9 /* TOCropViewController.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
 				IBSC_MODULE = TOCropViewController;
 				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-TOCropViewController-Info.plist";
@@ -29679,6 +29696,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC02C7298F22D8EA9908DC540BCF7F28 /* MBProgressHUD.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29712,6 +29730,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6B2E923249E7BD2D8ECB9B0B33E131B /* DarkStarAccountKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAccountKit";
 				IBSC_MODULE = DarkStarAccountKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAccountKit/ResourceBundle-DarkStarAccountKit-DarkStarAccountKit-Info.plist";
@@ -29729,6 +29748,7 @@
 			baseConfigurationReference = 4E4B5146B7EA155B0DC0709D303B3E24 /* Kingfisher.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29754,6 +29774,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 513F3D17C1DC7FC810B0FE6D20DD1995 /* DGActivityIndicatorView.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29787,6 +29808,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E81637B2508BBEE31372135CB4738693 /* RealReachability.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29820,6 +29842,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8592B931FBC25CD00F39125A24EA2414 /* RealReachability.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29854,6 +29877,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 298631E885688616BA910BC5E7C1327A /* DarkStarEnjoyCameraKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarEnjoyCameraKit";
 				IBSC_MODULE = DarkStarEnjoyCameraKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarEnjoyCameraKit/ResourceBundle-DarkStarEnjoyCameraKit-DarkStarEnjoyCameraKit-Info.plist";
@@ -29870,6 +29894,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AAD935AEEC5A8EE71975DFAA9F179A7 /* DarkStarShootVideoKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
 				IBSC_MODULE = DarkStarShootVideoKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKit-DarkStarShootVideoKit-Info.plist";
@@ -29886,6 +29911,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B035A3A9D5FC136D462A1933DC339B82 /* DoraemonKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DoraemonKit";
 				IBSC_MODULE = DoraemonKit;
 				INFOPLIST_FILE = "Target Support Files/DoraemonKit/ResourceBundle-DoraemonKit-DoraemonKit-Info.plist";
@@ -29902,6 +29928,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 199E74ACEF6F820EFF1C268ACBC4508C /* FSCalendar.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29937,6 +29964,7 @@
 			baseConfigurationReference = 8707C09F676D6329E55727801EE78182 /* DarkStarAuthorityKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -29971,6 +29999,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22F877EC7C9BACA4F0ABE14259A6F3EB /* DarkStarWebKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarWebKit";
 				IBSC_MODULE = DarkStarWebKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarWebKit/ResourceBundle-DarkStarWebKit-DarkStarWebKit-Info.plist";
@@ -29987,6 +30016,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2AAD935AEEC5A8EE71975DFAA9F179A7 /* DarkStarShootVideoKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
 				IBSC_MODULE = DarkStarShootVideoKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKitExt-DarkStarShootVideoKit-Info.plist";
@@ -30003,6 +30033,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC55E4B80B671A92B9C6287309FBBC8A /* YYText.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30033,7 +30064,302 @@
 			};
 			name = Release;
 		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+		80344A194E5B0B3EC11B1DFCF0360690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F580284764D7326C50121DF8F6AD520 /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8278D62FC339944F553A60EA5B19F56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3792E63E0E1CB502515ADA6BBC1AE7AC /* TZImagePickerController-library.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController-library/TZImagePickerController-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TZImagePickerController;
+				PRODUCT_NAME = "TZImagePickerController-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8298EE1188126E79F7AFAEF708E13B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A4F9F9A51A973805FA10A121AC38E8 /* DarkStarKeepAliveManager.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarKeepAliveManager;
+				PRODUCT_NAME = DarkStarKeepAliveManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83A0D5E21B211AF2F14BF4FF741DB887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8DD20EF8A877FF7C655B31AA80289D /* DarkStarThirdPartyKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarThirdPartyKit;
+				PRODUCT_NAME = DarkStarThirdPartyKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8404581ABAF5D434C273448D9FD64000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBD7A9E8D61E47B8D8384793A8F3759 /* DarkStarShootVideoKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
+				IBSC_MODULE = DarkStarShootVideoKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKitExt-DarkStarShootVideoKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarShootVideoKitExt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		879E66A5CDB1657569E008304716A225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D310247A06D746FEC1F076793F0B86 /* DarkStarWebKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarWebKit";
+				IBSC_MODULE = DarkStarWebKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarWebKit/ResourceBundle-DarkStarWebKit-DarkStarWebKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarWebKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		88A2D591FDE58A59935FB9C9F73A2897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6394BF3B3E823603EA7CE876D0386C /* DarkStarUIKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIKit/DarkStarUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarUIKit;
+				PRODUCT_NAME = DarkStarUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A0844351724BC11EDFA8DAF08328228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
+				IBSC_MODULE = DarkStarDownloadManagerKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-DarkStarDownloadManagerKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarDownloadManagerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8AB5F16949CFD318513B0DEC71325E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD308033A107DBC1E2BE75163FC892D /* SnapKit-library.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit-library/SnapKit-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = "Headers/Public/SnapKit/SnapKit-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = "SnapKit-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE403F141C9956A2B3AFA2379670FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B956D8717DAF57383416C0CDD3DDAE /* MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D8914C11244B106F321AE2DD5F87097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
+				IBSC_MODULE = DarkStarFeedKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-QQ-DarkStarFeedKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "DarkStarFeedKit-QQ";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -30083,7 +30409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -30095,294 +30421,11 @@
 			};
 			name = Release;
 		};
-		80344A194E5B0B3EC11B1DFCF0360690 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F580284764D7326C50121DF8F6AD520 /* AFNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8278D62FC339944F553A60EA5B19F56F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3792E63E0E1CB502515ADA6BBC1AE7AC /* TZImagePickerController-library.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController-library/TZImagePickerController-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = TZImagePickerController;
-				PRODUCT_NAME = "TZImagePickerController-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		8298EE1188126E79F7AFAEF708E13B19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A4F9F9A51A973805FA10A121AC38E8 /* DarkStarKeepAliveManager.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarKeepAliveManager/DarkStarKeepAliveManager.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarKeepAliveManager;
-				PRODUCT_NAME = DarkStarKeepAliveManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		83A0D5E21B211AF2F14BF4FF741DB887 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE8DD20EF8A877FF7C655B31AA80289D /* DarkStarThirdPartyKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarThirdPartyKit/DarkStarThirdPartyKit.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarThirdPartyKit;
-				PRODUCT_NAME = DarkStarThirdPartyKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8404581ABAF5D434C273448D9FD64000 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EBD7A9E8D61E47B8D8384793A8F3759 /* DarkStarShootVideoKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
-				IBSC_MODULE = DarkStarShootVideoKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKitExt-DarkStarShootVideoKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarShootVideoKitExt;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		879E66A5CDB1657569E008304716A225 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24D310247A06D746FEC1F076793F0B86 /* DarkStarWebKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarWebKit";
-				IBSC_MODULE = DarkStarWebKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarWebKit/ResourceBundle-DarkStarWebKit-DarkStarWebKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarWebKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		88A2D591FDE58A59935FB9C9F73A2897 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6394BF3B3E823603EA7CE876D0386C /* DarkStarUIKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIKit/DarkStarUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarUIKit;
-				PRODUCT_NAME = DarkStarUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A0844351724BC11EDFA8DAF08328228 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
-				IBSC_MODULE = DarkStarDownloadManagerKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-DarkStarDownloadManagerKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarDownloadManagerKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		8AB5F16949CFD318513B0DEC71325E59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFD308033A107DBC1E2BE75163FC892D /* SnapKit-library.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit-library/SnapKit-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = "Headers/Public/SnapKit/SnapKit-library.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SnapKit;
-				PRODUCT_NAME = "SnapKit-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8BE403F141C9956A2B3AFA2379670FDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79B956D8717DAF57383416C0CDD3DDAE /* MBProgressHUD.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = MBProgressHUD;
-				PRODUCT_NAME = MBProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8D8914C11244B106F321AE2DD5F87097 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
-				IBSC_MODULE = DarkStarFeedKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-QQ-DarkStarFeedKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = "DarkStarFeedKit-QQ";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		916711FF1607ADA9D969350808EE60AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-temp-DarkStarFeedKit-Info.plist";
@@ -30399,6 +30442,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-DarkStarFeedKit-Info.plist";
@@ -30416,6 +30460,7 @@
 			baseConfigurationReference = 298631E885688616BA910BC5E7C1327A /* DarkStarEnjoyCameraKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30450,6 +30495,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 02443CC5B376505516105B72D4C1840D /* JXCategoryView.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30483,6 +30529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F846428DFDB208402374C096B1B304BE /* DarkStarScanKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarScanKit";
 				IBSC_MODULE = DarkStarScanKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarScanKit/ResourceBundle-DarkStarScanKit-DarkStarScanKit-Info.plist";
@@ -30499,6 +30546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC41795C55CA416490D1996A5C3683D2 /* DarkStarResourceKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarResourceKit";
 				IBSC_MODULE = DarkStarResourceKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarResourceKit/ResourceBundle-DarkStarResourceKit-DarkStarResourceKit-Info.plist";
@@ -30516,6 +30564,7 @@
 			baseConfigurationReference = EA17B42E555E8FFBD7A8C2943427F484 /* DarkStarThirdPartyKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30550,6 +30599,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A2DA30E9CF488E1298C001F6F07D951 /* MJRefresh.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30583,6 +30633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 901C753E694FC0F44872AF82AFAE0809 /* GPUImage.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30617,6 +30668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69CABA42554A92E296D847D7D1EAFE85 /* DarkStarUpdateSDK.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUpdateSDK";
 				IBSC_MODULE = DarkStarUpdateSDK;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUpdateSDK/ResourceBundle-DarkStarUpdateSDK-DarkStarUpdateSDK-Info.plist";
@@ -30634,6 +30686,7 @@
 			baseConfigurationReference = C6B2E923249E7BD2D8ECB9B0B33E131B /* DarkStarAccountKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30664,34 +30717,12 @@
 			};
 			name = Release;
 		};
-		A966EDBAF46C99DD25DAC9BAAA7259B8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EA1000EED6AB3842540768755F84E76 /* Pods-DSDemo-Swift.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		AB361C36737EACE5C65A28BBEEF7D017 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A615441E77364735C341F22CC83E168 /* DarkStarGeneralTools.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30727,6 +30758,7 @@
 			baseConfigurationReference = 22F877EC7C9BACA4F0ABE14259A6F3EB /* DarkStarWebKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30761,6 +30793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 87DD7FA1B1C198422CC0114B6AB0D46A /* MJExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30794,6 +30827,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEF808DA62D0EC3F866D6677848EE826 /* TZImagePickerController-library.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30819,6 +30853,7 @@
 			baseConfigurationReference = A07E55CADAC43222597922C58D607C48 /* DarkStarDataStoreKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30853,6 +30888,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 998CF79A2959E01CA924BDAFEDD1064D /* FDFullscreenPopGesture.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30886,6 +30922,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CC582E1A39039FCEE2CD9A969AC925C /* YYCache.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30919,6 +30956,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9DB6DDF5B04A5567CB6568D2013D3A1 /* DoraemonKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -30952,6 +30990,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 233DEFDE6DF1C81AE384D2DC37E30C0F /* DarkStarAccountKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAccountKit";
 				IBSC_MODULE = DarkStarAccountKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAccountKit/ResourceBundle-DarkStarAccountKit-Ext-DarkStarAccountKit-Info.plist";
@@ -30968,6 +31007,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20DFEF88E15A87F90759935666BFD127 /* Masonry.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31003,6 +31043,7 @@
 			baseConfigurationReference = 3EBD7A9E8D61E47B8D8384793A8F3759 /* DarkStarShootVideoKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31037,6 +31078,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0FD7BDD264EF58330C8758E6C68D36A0 /* TOCropViewController.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
 				IBSC_MODULE = TOCropViewController;
 				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-TOCropViewController-Info.plist";
@@ -31053,6 +31095,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3474E1E9ADBF2B628DA67F146A78B99C /* SwiftyJSON.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31077,6 +31120,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7A4F9F9A51A973805FA10A121AC38E8 /* DarkStarKeepAliveManager.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarKeepAliveManager";
 				IBSC_MODULE = DarkStarKeepAliveManager;
 				INFOPLIST_FILE = "Target Support Files/DarkStarKeepAliveManager/ResourceBundle-DarkStarKeepAliveManager-DarkStarKeepAliveManager-Info.plist";
@@ -31089,10 +31133,49 @@
 			};
 			name = Release;
 		};
+		B26AB4CBC71184F673F2973BE1002806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D3AB0F7E0A7CBF000EFFAA26594BDB /* Pods-DSDemo-OC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B364A345A961A4D13E8283D4BDAFE3FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F590B73CE7495FAB8E8A02EDE98D3EC /* FDFullscreenPopGesture.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31123,680 +31206,7 @@
 			};
 			name = Release;
 		};
-		B5285A41B28559A6683FFCB2D9501201 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7CEA4FE842EE87CD2A4A4CAE2081EBD /* ReactiveObjC.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				PRODUCT_MODULE_NAME = ReactiveObjC;
-				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B57F33A02384DA94BA58DFF4CDD58E64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9AB5DA9EBFEA3EBA368D0CEDFC0DE40 /* CTMediator.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CTMediator/CTMediator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
-				PRODUCT_MODULE_NAME = CTMediator;
-				PRODUCT_NAME = CTMediator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B66C1B3126A54AB0F46DD6B9849A1AB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarDownloadManagerKit;
-				PRODUCT_NAME = DarkStarDownloadManagerKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B713BBD4E5A9BD0093C636238B00BC21 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6CDC9213D224D55286E2A2837B9AEAA /* DarkStarUIComponents.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
-				IBSC_MODULE = DarkStarUIComponents;
-				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrDialogMultiChoiceAssets-DarkStarUIComponents-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = NrDialogMultiChoiceAssets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B8389AADE8444651B6B86CC21D846E12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EBD7A9E8D61E47B8D8384793A8F3759 /* DarkStarShootVideoKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
-				IBSC_MODULE = DarkStarShootVideoKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKit-DarkStarShootVideoKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarShootVideoKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B96E375A6EE06BB6D93B31AEEA47BC6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C7FA1256D8255356E74C95DF8E08BC0 /* DarkStarAwesomeKit.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarAwesomeKit;
-				PRODUCT_NAME = DarkStarAwesomeKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BA5DD3DE634E7860C26130F2714A1F40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ECE8FF8BFD7CA7C095EBD9856886483 /* TTTAttributedLabel.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
-				PRODUCT_MODULE_NAME = TTTAttributedLabel;
-				PRODUCT_NAME = TTTAttributedLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BBFBC4EE7A448267AE5B0A9B07490444 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B2771DBFE9A4071579A591C2EAFBF72 /* SSZipArchive.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
-				PRODUCT_MODULE_NAME = SSZipArchive;
-				PRODUCT_NAME = SSZipArchive;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BC221E980352FDEA3510C1DB2773437C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C77857013AECDA609FFEA5996D7A4EC9 /* TOCropViewController.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TOCropViewController/TOCropViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TOCropViewController/TOCropViewController.modulemap";
-				PRODUCT_MODULE_NAME = TOCropViewController;
-				PRODUCT_NAME = TOCropViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD663FB0BFC765EAB28C1F211640E737 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06F8DA964323BD4EFDC0E915D7AC408D /* DarkStarUIComponents.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarUIComponents;
-				PRODUCT_NAME = DarkStarUIComponents;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BEBC2D4CC88BD2F1E86FBA868E8F1C12 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A39545A33AC9EE1C9CC605E5F36A6188 /* DarkStarUIKit.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIKit/DarkStarUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarUIKit;
-				PRODUCT_NAME = DarkStarUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C42841F426EACF3C6B86FAB0DB7FF2F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63C66E2703CCA4BC36D81B5210347BA3 /* DarkStarCrypto.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarCrypto/DarkStarCrypto-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarCrypto/DarkStarCrypto-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarCrypto/DarkStarCrypto.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarCrypto;
-				PRODUCT_NAME = DarkStarCrypto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C5122B115AC1238211E6FEA9F5E3C250 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 040877C2A17948ED1C13BA62F2D9731E /* TZImagePickerController-framework.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework.modulemap";
-				PRODUCT_MODULE_NAME = TZImagePickerController;
-				PRODUCT_NAME = TZImagePickerController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C5E1A27391895579D55096B0B6585315 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2904A8932DF232FC60FE84C6D0164E4 /* DarkStarGeneralTools.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools.modulemap";
-				PRODUCT_MODULE_NAME = DarkStarGeneralTools;
-				PRODUCT_NAME = DarkStarGeneralTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C67F112614D9966B049180E0CEB06871 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
-				IBSC_MODULE = DarkStarDownloadManagerKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-Ext-DarkStarDownloadManagerKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = "DarkStarDownloadManagerKit-Ext";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		C709BF6B78A53724C0DCB8A654299E03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79205CB3BB43DAFE8C94BC4005C6BF5F /* DarkStarScanKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarScanKit";
-				IBSC_MODULE = DarkStarScanKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarScanKit/ResourceBundle-DarkStarScanKit-DarkStarScanKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarScanKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		C9A0DAEC9A2676AF25DB4911F66DD0D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
-				IBSC_MODULE = DarkStarFeedKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-temp-DarkStarFeedKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = "DarkStarFeedKit-temp";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		C9A57F73FA141DF491C01EAD936A0D41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A4F74D069F4352273CEC8432323B198 /* DarkStarDownloadManagerKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
-				IBSC_MODULE = DarkStarDownloadManagerKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-DarkStarDownloadManagerKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = DarkStarDownloadManagerKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		CA80F57066EBB776BE96DE1A60A8B12D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6B2E923249E7BD2D8ECB9B0B33E131B /* DarkStarAccountKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAccountKit";
-				IBSC_MODULE = DarkStarAccountKit;
-				INFOPLIST_FILE = "Target Support Files/DarkStarAccountKit/ResourceBundle-DarkStarAccountKit-Ext-DarkStarAccountKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = "DarkStarAccountKit-Ext";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		CA931690AA9BAD1774BB4E90C5498D37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCFF49C5F58F6F3B5F4835724E76DB43 /* ZBarSDK.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZBarSDK/ZBarSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZBarSDK/ZBarSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ZBarSDK/ZBarSDK.modulemap";
-				PRODUCT_MODULE_NAME = ZBarSDK;
-				PRODUCT_NAME = ZBarSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CB3FC83813BB8F6477B8C324834C71A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D11FB5AF040A06DF01B9BFE510CF4F /* SDWebImageWebPCoder.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder.modulemap";
-				PRODUCT_MODULE_NAME = SDWebImageWebPCoder;
-				PRODUCT_NAME = SDWebImageWebPCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CBA98EE2BAC0E2FC64F74152A2E6BC3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A4C51F2FC3B4237769E402F1AAEBB1D /* SwiftyJSON.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CBDECE993A18C285EEAA987B4766288C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6928E9977F90966BAF9C41513CAB2098 /* ReactiveObjC.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				PRODUCT_MODULE_NAME = ReactiveObjC;
-				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CE82259E8755F62223B25EE70D0CEAB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3066092320028353EFEC13ADA33AE2 /* AFNetworking.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -31849,7 +31259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -31862,10 +31272,747 @@
 			};
 			name = Debug;
 		};
+		B5285A41B28559A6683FFCB2D9501201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CEA4FE842EE87CD2A4A4CAE2081EBD /* ReactiveObjC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveObjC;
+				PRODUCT_NAME = ReactiveObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57F33A02384DA94BA58DFF4CDD58E64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AB5DA9EBFEA3EBA368D0CEDFC0DE40 /* CTMediator.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTMediator/CTMediator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
+				PRODUCT_MODULE_NAME = CTMediator;
+				PRODUCT_NAME = CTMediator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B66C1B3126A54AB0F46DD6B9849A1AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarDownloadManagerKit/DarkStarDownloadManagerKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarDownloadManagerKit;
+				PRODUCT_NAME = DarkStarDownloadManagerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B713BBD4E5A9BD0093C636238B00BC21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6CDC9213D224D55286E2A2837B9AEAA /* DarkStarUIComponents.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
+				IBSC_MODULE = DarkStarUIComponents;
+				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrDialogMultiChoiceAssets-DarkStarUIComponents-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = NrDialogMultiChoiceAssets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B8389AADE8444651B6B86CC21D846E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EBD7A9E8D61E47B8D8384793A8F3759 /* DarkStarShootVideoKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarShootVideoKit";
+				IBSC_MODULE = DarkStarShootVideoKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarShootVideoKit/ResourceBundle-DarkStarShootVideoKit-DarkStarShootVideoKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarShootVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B96E375A6EE06BB6D93B31AEEA47BC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7FA1256D8255356E74C95DF8E08BC0 /* DarkStarAwesomeKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarAwesomeKit/DarkStarAwesomeKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarAwesomeKit;
+				PRODUCT_NAME = DarkStarAwesomeKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA5DD3DE634E7860C26130F2714A1F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECE8FF8BFD7CA7C095EBD9856886483 /* TTTAttributedLabel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
+				PRODUCT_MODULE_NAME = TTTAttributedLabel;
+				PRODUCT_NAME = TTTAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBFBC4EE7A448267AE5B0A9B07490444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2771DBFE9A4071579A591C2EAFBF72 /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC221E980352FDEA3510C1DB2773437C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77857013AECDA609FFEA5996D7A4EC9 /* TOCropViewController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/TOCropViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TOCropViewController/TOCropViewController.modulemap";
+				PRODUCT_MODULE_NAME = TOCropViewController;
+				PRODUCT_NAME = TOCropViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD663FB0BFC765EAB28C1F211640E737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F8DA964323BD4EFDC0E915D7AC408D /* DarkStarUIComponents.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarUIComponents/DarkStarUIComponents.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarUIComponents;
+				PRODUCT_NAME = DarkStarUIComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEBC2D4CC88BD2F1E86FBA868E8F1C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39545A33AC9EE1C9CC605E5F36A6188 /* DarkStarUIKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarUIKit/DarkStarUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarUIKit/DarkStarUIKit.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarUIKit;
+				PRODUCT_NAME = DarkStarUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C42841F426EACF3C6B86FAB0DB7FF2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C66E2703CCA4BC36D81B5210347BA3 /* DarkStarCrypto.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarCrypto/DarkStarCrypto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarCrypto/DarkStarCrypto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarCrypto/DarkStarCrypto.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarCrypto;
+				PRODUCT_NAME = DarkStarCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5122B115AC1238211E6FEA9F5E3C250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040877C2A17948ED1C13BA62F2D9731E /* TZImagePickerController-framework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TZImagePickerController-framework/TZImagePickerController-framework.modulemap";
+				PRODUCT_MODULE_NAME = TZImagePickerController;
+				PRODUCT_NAME = TZImagePickerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5E1A27391895579D55096B0B6585315 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2904A8932DF232FC60FE84C6D0164E4 /* DarkStarGeneralTools.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DarkStarGeneralTools/DarkStarGeneralTools.modulemap";
+				PRODUCT_MODULE_NAME = DarkStarGeneralTools;
+				PRODUCT_NAME = DarkStarGeneralTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C67F112614D9966B049180E0CEB06871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8DC7FF22486B6FB6D5A6ABA8A80D83 /* DarkStarDownloadManagerKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
+				IBSC_MODULE = DarkStarDownloadManagerKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-Ext-DarkStarDownloadManagerKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "DarkStarDownloadManagerKit-Ext";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C709BF6B78A53724C0DCB8A654299E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79205CB3BB43DAFE8C94BC4005C6BF5F /* DarkStarScanKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarScanKit";
+				IBSC_MODULE = DarkStarScanKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarScanKit/ResourceBundle-DarkStarScanKit-DarkStarScanKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarScanKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C9A0DAEC9A2676AF25DB4911F66DD0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
+				IBSC_MODULE = DarkStarFeedKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-temp-DarkStarFeedKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "DarkStarFeedKit-temp";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C9A57F73FA141DF491C01EAD936A0D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A4F74D069F4352273CEC8432323B198 /* DarkStarDownloadManagerKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarDownloadManagerKit";
+				IBSC_MODULE = DarkStarDownloadManagerKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarDownloadManagerKit/ResourceBundle-DarkStarDownloadManagerKit-DarkStarDownloadManagerKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = DarkStarDownloadManagerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CA80F57066EBB776BE96DE1A60A8B12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B2E923249E7BD2D8ECB9B0B33E131B /* DarkStarAccountKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAccountKit";
+				IBSC_MODULE = DarkStarAccountKit;
+				INFOPLIST_FILE = "Target Support Files/DarkStarAccountKit/ResourceBundle-DarkStarAccountKit-Ext-DarkStarAccountKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = "DarkStarAccountKit-Ext";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CA931690AA9BAD1774BB4E90C5498D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFF49C5F58F6F3B5F4835724E76DB43 /* ZBarSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZBarSDK/ZBarSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZBarSDK/ZBarSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ZBarSDK/ZBarSDK.modulemap";
+				PRODUCT_MODULE_NAME = ZBarSDK;
+				PRODUCT_NAME = ZBarSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB3FC83813BB8F6477B8C324834C71A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D11FB5AF040A06DF01B9BFE510CF4F /* SDWebImageWebPCoder.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SDWebImageWebPCoder/SDWebImageWebPCoder.modulemap";
+				PRODUCT_MODULE_NAME = SDWebImageWebPCoder;
+				PRODUCT_NAME = SDWebImageWebPCoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBA98EE2BAC0E2FC64F74152A2E6BC3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4C51F2FC3B4237769E402F1AAEBB1D /* SwiftyJSON.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBDECE993A18C285EEAA987B4766288C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6928E9977F90966BAF9C41513CAB2098 /* ReactiveObjC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
+				PRODUCT_MODULE_NAME = ReactiveObjC;
+				PRODUCT_NAME = ReactiveObjC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC757955EA4E051704916598F5C3F979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9576633AE58C2A755271F6EBBE007000 /* Pods-DSDemo-OC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE82259E8755F62223B25EE70D0CEAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF3066092320028353EFEC13ADA33AE2 /* AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D324DD1AB5D2A8368D0A59966E0C27EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E80BA7F3C89D81BFDB9738E79ED95FFE /* DateToolsSwift.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31891,6 +32038,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6CD6AE6D5C9EFC4279713121908980E /* DarkStarAwesomeKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAwesomeKit";
 				IBSC_MODULE = DarkStarAwesomeKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/ResourceBundle-DarkStarAwesomeKit-DarkStarAwesomeKit-Info.plist";
@@ -31907,6 +32055,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6CDC9213D224D55286E2A2837B9AEAA /* DarkStarUIComponents.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
 				IBSC_MODULE = DarkStarUIComponents;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrSRSTextFieldAssets-DarkStarUIComponents-Info.plist";
@@ -31923,6 +32072,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDB1F7A9D5BFD50ADF2E3B7C6B72CFAF /* YYCache.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31957,6 +32107,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 170FD8B39D7F025B3448C9A3CDD03D1A /* RegExCategories.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -31991,6 +32142,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33F58DCCAE9C3F78DE6A246E7EFA11E2 /* FSCalendar.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32024,6 +32176,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D55D2812C87113EA90AE29BDEB881A6 /* DarkStarFeedKit.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-Weibo-DarkStarFeedKit-Info.plist";
@@ -32040,6 +32193,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B39BC79D36A5B7EB0DD2071FB0FC3FA /* DGActivityIndicatorView.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32074,6 +32228,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C7FA1256D8255356E74C95DF8E08BC0 /* DarkStarAwesomeKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarAwesomeKit";
 				IBSC_MODULE = DarkStarAwesomeKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarAwesomeKit/ResourceBundle-DarkStarAwesomeKit-DarkStarAwesomeKit-Info.plist";
@@ -32091,6 +32246,7 @@
 			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32125,6 +32281,7 @@
 			baseConfigurationReference = 0E0B7AA3F7169A7808BBC57434FD5E6D /* DarkStarCrypto.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32159,6 +32316,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F70B292EF90D1C54156344EA5F4CAC7 /* CTMediator.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32193,6 +32351,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-Twitter-DarkStarFeedKit-Info.plist";
@@ -32209,6 +32368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2E824A96E4BC5FFCEF85270839B54D8 /* YYModel.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32242,6 +32402,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B176A2F5B17C01828A33B9AC7C4CBD59 /* iCarousel.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32276,6 +32437,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC7DF5237CB282705B03708AAD22B483 /* CryptoSwift.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32300,6 +32462,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48699B4214513E30B4715669F25D67F5 /* pop.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32335,6 +32498,7 @@
 			baseConfigurationReference = D268DCECEF2C6FA00CB5D1A6AE21A736 /* Kingfisher.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32359,6 +32523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4FCB6800B02EEAB4D0BDD5F60D585BD /* MJRefresh.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32394,6 +32559,7 @@
 			baseConfigurationReference = D5779C75CEC1479CFC23A55F2D30A338 /* DarkStarQMUI.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32427,6 +32593,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4210F7E6E7CF8AEE8E8DC1683284E01F /* YYImage.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32462,6 +32629,7 @@
 			baseConfigurationReference = C90F8802DD392710D418D7DEEFC4BDCC /* DarkStarNetWorkKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32496,6 +32664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9FE0F7FA920CE418117E499A1A1277EC /* ZBarSDK.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32530,6 +32699,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88C4FF15761061D1C74D1A29DAF92B43 /* DarkStarEnjoyCameraKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarEnjoyCameraKit";
 				IBSC_MODULE = DarkStarEnjoyCameraKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarEnjoyCameraKit/ResourceBundle-DarkStarEnjoyCameraKit-DarkStarEnjoyCameraKit-Info.plist";
@@ -32547,6 +32717,7 @@
 			baseConfigurationReference = 69F0FE9470A2D4DF466EA91F89FB6EB5 /* DarkStarKeepAliveManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32580,6 +32751,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B035A3A9D5FC136D462A1933DC339B82 /* DoraemonKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32608,11 +32780,35 @@
 			};
 			name = Debug;
 		};
+		EF49C1B185B0C3EE83240BEF471F6FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A0B0F93264FA073C8B2C45599D10E3 /* Pods-DSDemo-Swift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		F2577820D3C4668A09DBBD303F3610FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BD3DE3E021AE85A928D576B60188DA2 /* SnapKit-framework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32649,6 +32845,7 @@
 			baseConfigurationReference = 8879428DB5F1FE3FC3DBE6DF34D8B29A /* DarkStarBaseKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32678,10 +32875,35 @@
 			};
 			name = Debug;
 		};
+		F322326D319F787E00897C0B5D3BB914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA1000EED6AB3842540768755F84E76 /* Pods-DSDemo-Swift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-Swift/Pods-DSDemo-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F36B782EBE098B9E3F3A827E48AA01AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C5368406EFDA0D1AE34BAD74852F919 /* DarkStarFeedKit.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarFeedKit";
 				IBSC_MODULE = DarkStarFeedKit;
 				INFOPLIST_FILE = "Target Support Files/DarkStarFeedKit/ResourceBundle-DarkStarFeedKit-Weibo-DarkStarFeedKit-Info.plist";
@@ -32699,6 +32921,7 @@
 			baseConfigurationReference = E930B358A920D86E95B6BEC7BFFD5026 /* DarkStarConfiguration.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32733,6 +32956,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06F8DA964323BD4EFDC0E915D7AC408D /* DarkStarUIComponents.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/DarkStarUIComponents";
 				IBSC_MODULE = DarkStarUIComponents;
 				INFOPLIST_FILE = "Target Support Files/DarkStarUIComponents/ResourceBundle-NrFloatAssets-DarkStarUIComponents-Info.plist";
@@ -32750,6 +32974,7 @@
 			baseConfigurationReference = 233DEFDE6DF1C81AE384D2DC37E30C0F /* DarkStarAccountKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32783,6 +33008,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 973E9A441F4D20B0FECAD450F9DEA49E /* SIAlertView.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32818,6 +33044,7 @@
 			baseConfigurationReference = 0A4F74D069F4352273CEC8432323B198 /* DarkStarDownloadManagerKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32853,6 +33080,7 @@
 			baseConfigurationReference = F846428DFDB208402374C096B1B304BE /* DarkStarScanKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32882,48 +33110,11 @@
 			};
 			name = Debug;
 		};
-		FA6AE6C4F775A24C3A3FE3B428BA34E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9576633AE58C2A755271F6EBBE007000 /* Pods-DSDemo-OC.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DSDemo-OC/Pods-DSDemo-OC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FAAD405A7B5AAE0A639835F861DBF351 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA75ADF08B494EE44CC45DC6AE5FDD7F /* SDWebImage.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -32959,6 +33150,7 @@
 			baseConfigurationReference = 12B28CFAD53AE7EB726448FFB2827AC1 /* DarkStarAuthorityKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -33192,8 +33384,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -33282,8 +33474,8 @@
 		64BFA000E0D2BE7C48B8030BBF39F597 /* Build configuration list for PBXNativeTarget "Pods-DSDemo-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5916DD85EC527E8C23BA5C6448304863 /* Debug */,
-				A966EDBAF46C99DD25DAC9BAAA7259B8 /* Release */,
+				EF49C1B185B0C3EE83240BEF471F6FB6 /* Debug */,
+				F322326D319F787E00897C0B5D3BB914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -33372,8 +33564,8 @@
 		825FB3AED3AC0CAB3F4698FBC2FD7292 /* Build configuration list for PBXNativeTarget "Pods-DSDemo-OC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00B748DD215935FDD77FE1E40C266BB7 /* Debug */,
-				FA6AE6C4F775A24C3A3FE3B428BA34E7 /* Release */,
+				B26AB4CBC71184F673F2973BE1002806 /* Debug */,
+				CC757955EA4E051704916598F5C3F979 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

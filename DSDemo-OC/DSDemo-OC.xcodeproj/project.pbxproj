@@ -797,7 +797,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -850,7 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -870,12 +870,20 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DSDemo-OC/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSDemo-OC/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "需要您的同意，才能访问媒体资料库，用于打开音频播放的功能";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要您的同意，才能使用相机，用于图片上传或视频录制的功能";
+				INFOPLIST_KEY_NSContactsUsageDescription = "需要您的同意，才能访问通讯录，便于开启查询联系人的服务";
+				INFOPLIST_KEY_NSLocationUsageDescription = "需要您的同意，才能开启定位服务，便于准确获取您当前的地理位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要您的同意，在使用期间开启定位服务，便于准确获取您当前的地理位置";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要您的同意，在录制视频的过程中需要打开麦克风进行录音";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要您的同意，才能实现保存网络图片到本地图库的服务";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要您的同意，才能访问相册权限，便于选择图片上传的服务";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -904,12 +912,20 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DSDemo-OC/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DSDemo-OC/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "需要您的同意，才能访问媒体资料库，用于打开音频播放的功能";
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要您的同意，才能使用相机，用于图片上传或视频录制的功能";
+				INFOPLIST_KEY_NSContactsUsageDescription = "需要您的同意，才能访问通讯录，便于开启查询联系人的服务";
+				INFOPLIST_KEY_NSLocationUsageDescription = "需要您的同意，才能开启定位服务，便于准确获取您当前的地理位置";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "需要您的同意，在使用期间开启定位服务，便于准确获取您当前的地理位置";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要您的同意，在录制视频的过程中需要打开麦克风进行录音";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要您的同意，才能实现保存网络图片到本地图库的服务";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要您的同意，才能访问相册权限，便于选择图片上传的服务";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
